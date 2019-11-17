@@ -1,0 +1,37 @@
+{
+  "name": "gabrielcuallado",
+  "version": "1.0.0",
+  "description": "gabrielcuallado's personnal website",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "run-s clean build:parcel build:hugo",
+    "start": "run-s clean dev",
+    "dev": "run-p dev:**",
+    "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F",
+    "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/index.js",
+    "build:hugo": "cross-env NODE_ENV=production hugo -d ../dist -s site --gc --minify",
+    "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/index.js --experimental-scope-hoisting  --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexiscolin/GabrielCuallado.git"
+  },
+  "author": "Alexis Colin (DJDB)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexiscolin/GabrielCuallado/issues"
+  },
+  "homepage": "https://github.com/alexiscolin/GabrielCuallado#readme",
+  "engines": {
+    "node": ">= 10.16.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.3"
+  },
+  "dependencies": {}
+}
