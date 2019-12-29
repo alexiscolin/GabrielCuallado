@@ -1,4 +1,14 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "Gabriel Cuallado"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[languages]
+    [languages.en]
+        weight = 1
+
+    [languages.es]
+        weight = 2
+
+    [languages.fr]
+        weight = 3

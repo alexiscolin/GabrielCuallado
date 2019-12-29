@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gabriel Cuallado</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/fr/</link>
     <description>Recent content on Gabriel Cuallado</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>serie 1</title>
-      <link>http://localhost:1313/serie1/</link>
+      <link>http://localhost:1313/fr/serie1/</link>
       <pubDate>Thu, 23 Mar 2017 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/serie1/</guid>
+      <guid>http://localhost:1313/fr/serie1/</guid>
       <description>blabla</description>
     </item>
     
     <item>
       <title>serie 2</title>
-      <link>http://localhost:1313/serie2/</link>
+      <link>http://localhost:1313/fr/serie2/</link>
       <pubDate>Thu, 23 Mar 2017 00:00:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/serie2/</guid>
+      <guid>http://localhost:1313/fr/serie2/</guid>
       <description>blabla</description>
     </item>
     

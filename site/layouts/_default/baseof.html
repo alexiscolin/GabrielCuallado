@@ -11,6 +11,10 @@
     {{ end }}
   </head>
   <body>
+    {{ block "navigation" . }}
+        <!-- default nav -->
+        {{ partial "navigation.html" .}}
+      {{ end }}
     <div class="container">
       <div class="main">
         {{ block "main" . }}{{ end }}
