@@ -6264,6 +6264,10 @@ var homepageTransition = {
         next = _ref3.next,
         trigger = _ref3.trigger;
 
+    _gsap.gsap.set("#js-loader-slider", {
+      scaleY: 0
+    });
+
     _gsap.gsap.from(next.container, {
       autoAlpha: 0,
       duration: 1
@@ -7232,16 +7236,41 @@ function (_module) {
         section: this.el,
         touchSpeed: 2,
         jump: 120
-      };
+      }; // this.isActivated = true;
+
       this.parallax = new _Parallax.default(this.el);
-      this.scroll = new _smoothScrollr.SmoothScroll(opts, 'fixedClass');
-    }
+      this.scroll = window.innerWidth > 640 ? new _smoothScrollr.SmoothScroll(opts, 'fixedClass') : null; // this.bindEvents()
+    } // bindEvents () {
+    //     this.resizeFunc = this.resize.bind(this);
+    //     window.addEventListener('resize', this.resizeFunc, false);
+    // }
+    // resize () {
+    //     if("matchMedia" in window) { 
+    //         if(window.matchMedia("(max-width:640px)").matches) {
+    //             if(this.isActivated === true) {
+    //                 this.destroyScroll();
+    //                 console.log('in')
+    //             }
+    //             this.isActivated = false;
+    //         } else {
+    //             if(this.isActivated === false) {
+    //                 this.init()
+    //             }
+    //             this.isActivated = true;
+    //         }
+    //       }
+    // }
+    // destroyScroll () {
+    //     this.scroll.destroy();
+    // }
+
   }, {
     key: "destroy",
     value: function destroy() {
       console.log('end scroll');
       this.parallax.destroy();
-      this.scroll.destroy();
+      this.scroll.destroy(); // this.destroyScroll();
+      // window.removeEventListener('resize', this.resizeFunc, false);
 
       for (var prop in this) {
         if (!Object.prototype.hasOwnProperty.call(this, prop)) continue;
@@ -7456,11 +7485,13 @@ function (_module) {
         duration: 1
       });
 
-      console.log('open');
+      console.log('open/close');
     }
   }, {
     key: "destroy",
-    value: function destroy() {}
+    value: function destroy() {
+      console.log('end nav');
+    }
   }]);
 
   return _default;
@@ -7604,7 +7635,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55155" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

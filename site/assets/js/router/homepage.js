@@ -33,6 +33,7 @@ const homepageTransition = {
         })
     },
     enter({ current, next, trigger }) {
+        gsap.set("#js-loader-slider", {scaleY: 0});
         gsap.from(next.container, {autoAlpha: 0, duration: 1})
     },
 }

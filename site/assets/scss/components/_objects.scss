@@ -68,18 +68,30 @@
 }
 
 .o-img {
-    max-height: 90vh;
-    height: 100%;
+    max-width: 100%;
+    @include media( '>medium' ) {
+        max-height: 90vh;
+        height: 100%;
+        max-width: initial;
+    }
 }
 
 .o-title {
     @include font-weight(bold);
     font-size: 60px;
     letter-spacing: 4px;
+    margin-top: 4rem;
+    @include media( '>medium' ) {
+        margin-top: 0;
+    }
 }
 
 .o-text {
     white-space: normal;
+    margin-top: 2rem;
+    @include media( '>medium' ) {
+        margin-top: 0;
+    }
 }
 
 .o-subtitle {

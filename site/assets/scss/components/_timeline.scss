@@ -3,25 +3,39 @@
 
     &_section {
         position: relative;
-        width: 45vw;
-        height: 100vh;
+        width: 100%;
+        height: 50vh;
         display: flex;
         flex-direction: column;
 
+        @include media( '>medium' ) {
+            width: 45vw;
+            height: 100vh;
+        }
+
         &_line {
-            height: 2px;
             position: absolute;
-            border-bottom: dashed 2px white;
-            top: 50%;
-            width: 100%; 
-            z-index: 3;  
+            z-index: 3; 
+            height: 100%;
+            left: 90%;
+            width: 2px;
+            border-left: dashed 1px white; 
+
+            @include media( '>medium' ) {
+                height: 2px;
+                left: initial;
+                top: 50%;
+                width: 100%;
+                border-bottom: dashed 2px white;
+                border-left: none;
+            }
         }
     }
 
     &_date {
         position: absolute;
-        top: 40%;
-        left: 50%;
+        top: 50%;
+        right: 5%;
         transform: translate3d(-50%, -50%, 0);
         font-size: 90px;
         font-style: italic;
@@ -29,6 +43,12 @@
         letter-spacing: 6px;
         z-index: 3;  
         cursor: pointer;
+
+        @include media( '>medium' ) {
+            top: 40%;
+            left: 50%;
+            right: initial;
+        }
 
         &:hover {
             & ~ .c-timeline_img {
@@ -41,15 +61,22 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 62%;
-        max-width: 30vw;
-        left: calc(50% - 10px);
-        transform: translate3d(0, -50%, 0);
+        top: 60%;
+        max-width: 50%;
+        right: 10%;
         font-size: 26px;
         @include font-weight(bold);
         letter-spacing: 6px;
         z-index: 2;
         cursor: pointer;
+
+        @include media( '>medium' ) {
+            max-width: 30vw;
+            left: calc(50% - 10px);
+            right: initial;
+            top: 62%;
+            transform: translate3d(0, -50%, 0);
+        }
 
         &:hover {
             & ~ .c-timeline_img {
@@ -81,19 +108,33 @@
         background-color: white;
         border-radius: 20px;
         top: calc(50% - 10px);
-        left: calc(50% - 10px);
-        z-index: 3;  
+        left: calc(90% - 10px);
+        z-index: 3; 
+        
+        @include media( '>medium' ) {
+            left: calc(50% - 10px);
+        }
     }
 
     &:first-child {
-        margin-left: 10vw;
+        @include media( '>medium' ) {
+            margin-left: 10vw;
+        }
         & .c-timeline_section_line {
-            width: 52%;
-            left: 50%;
+            height: 52%;
+            top: 50%;
+
+            @include media( '>medium' ) {
+                height: 2px;
+                width: 52%;
+                left: 50%;
+            }
         }
     }
     &:last-child {
-        margin-right: 10vw;
+        @include media( '>medium' ) {
+            margin-right: 10vw;
+        }
         & .c-timeline_section_line {
             width: 52%;
             right: 50%;
@@ -102,12 +143,17 @@
 
     &:nth-child(2n) {
         & .c-timeline_date {
-            top: 62%;
+            
+            @include media( '>medium' ) {
+                top: 62%;
+            }
         }
         & .c-timeline_name {
-            bottom: 63%;
-            top: inherit;
-            transform: translate3d(0, 50%, 0);
+            @include media( '>medium' ) {
+                bottom: 63%;
+                top: inherit;
+                transform: translate3d(0, 50%, 0);
+            }
         }
 
         & .c-timeline_img {

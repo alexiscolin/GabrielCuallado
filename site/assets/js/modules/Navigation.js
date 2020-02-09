@@ -23,9 +23,10 @@ export default class extends module {
     toogleNav () {
         this.isOpen = !this.isOpen;
         gsap.to(this.menu, {autoAlpha: this.isOpen ? 1 : 0, duration: 1});
-        console.log('open');
-
+        console.log('open/close');
     }
 
-    destroy() {}
+    destroy() {
+        console.log('end nav')
+    }
 }
