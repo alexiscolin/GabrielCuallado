@@ -323,6 +323,7 @@ a {
     flex-wrap: nowrap;
     width: auto;
     flex-direction: row;
+    padding: 0;
   }
 }
 
