@@ -12,11 +12,6 @@
     {{ end }}
   </head>
   <body data-barba="wrapper" data-module-load>
-    {{ block "loader" . }}
-      <!-- loader -->
-      {{ partial "loader.html" .}}
-    {{ end }}
-
     <div data-barba="container" data-barba-namespace="{{ .Params.namespace }}">
      
       {{ block "header" . }}

@@ -663,11 +663,17 @@ a {
 }
 .c-main_pic {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 50%;
   left: 50%;
-  max-width: 95vw;
+  width: 95vw;
   transform: translate3d(-50%, -50%, 0);
   z-index: 1;
+}
+.c-main_pic_img {
+  max-width: 100%;
 }
 .c-main_container {
   position: relative;
