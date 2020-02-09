@@ -21,6 +21,7 @@
             position: absolute;
             font-size: 70px;
             left: 50%;
+            top: 2vw;
             transform: translate3d(-50%, 0, 0);
         }
     }
@@ -42,10 +43,11 @@
 
         &:not(.c-header_item--nav){
             display: none;
+            @include media( '>medium' ) {
+                display: block;
+            }
         }
-        @include media( '>medium' ) {
-            display: block;
-        }
+        
 
         &:hover {
             transform: scale(1.2);

@@ -14,8 +14,6 @@
     opacity: 0;
     visibility: hidden;
 
-    // display: none;
-
     &_title {
         position: absolute;
         @include font-weight(black);
@@ -42,14 +40,6 @@
             -webkit-text-stroke-color: color(typography, 1);
         }
     }
-
-    // &_close {
-    //     font-size: 40px;
-    //     position: absolute;
-    //     bottom: 2rem;
-    //     right: 2rem;
-    //     color: color(typography, 1);
-    // }
 
     &_list {
         position: relative;

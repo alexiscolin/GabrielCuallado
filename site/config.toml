@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://hardcore-mahavira-4cfa79.netlify.com/"
 DefaultContentLanguage = "en"
 title = "Gabriel Cuallado"
 disableKinds = ["taxonomy", "taxonomyTerm"]
