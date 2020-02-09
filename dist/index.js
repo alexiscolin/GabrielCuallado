@@ -6219,8 +6219,8 @@ var homepageTransition = {
       opacity: .8,
       duration: 1
     });
-    loader.from("#js-loader-slider", {
-      scaleY: 1,
+    loader.to("#js-loader-slider", {
+      scaleY: 0,
       duration: 1,
       ease: "Power2.easeInOut"
     }, "-=.5");
@@ -6243,7 +6243,7 @@ var homepageTransition = {
     loader.from(".js-header", {
       opacity: 0,
       duration: 1
-    }, "-=0.5");
+    }, "-=1");
   },
   leave: function leave(_ref2) {
     var current = _ref2.current,

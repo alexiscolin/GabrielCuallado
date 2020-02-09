@@ -359,7 +359,7 @@ a {
   top: 0;
   background: #FFFFFF;
   z-index: 0;
-  transform: scaleY(0);
+  transform: scaleY(1);
   transform-origin: 50% 0;
 }
 
