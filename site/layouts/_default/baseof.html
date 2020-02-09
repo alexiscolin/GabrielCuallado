@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="pinterest" content="nopin" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ .Site.Title }} - {{.Page.Title}}</title>
     {{ $assets := .Site.Data.assets }}
@@ -10,14 +11,21 @@
     <link href="{{ relURL . }}" rel="stylesheet" />
     {{ end }}
   </head>
-  <body>
-    {{ block "navigation" . }}
-        <!-- default nav -->
-        {{ partial "navigation.html" .}}
+  <body data-barba="wrapper" data-module-load>
+    {{ block "loader" . }}
+      <!-- loader -->
+      {{ partial "loader.html" .}}
+    {{ end }}
+
+    <div data-barba="container" data-barba-namespace="{{ .Params.namespace }}">
+     
+      {{ block "header" . }}
+        <!-- default header -->
+        {{ partial "header.html" .}}
       {{ end }}
-    <div class="container">
-      <div class="main">
-        {{ block "main" . }}{{ end }}
+      
+      <div class="o-wrapper">
+          {{ block "main" . }}{{ end }}
       </div>
     </div>
 

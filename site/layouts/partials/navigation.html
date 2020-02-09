@@ -1,45 +1,57 @@
+<nav class="c-nav" data-navigation="menu">
 
-<ul>
-    <li class="menu-nav__list__item"><a href="{{ "/" | absLangURL }}">Homepage</a></li>
-    <li class="menu-nav__list__item"><a href="{{ "serie1" | absLangURL }}">Gallery</a></li>
-{{ range .Site.Menus.main }}
-    <li class="menu-nav__list__item"><a href="{{.URL | absLangURL}}">{{ .Name }}</a></li>
-{{ end }}
-</ul>
-<ul>
-{{ range .Site.Menus.secondary }}
-    <li class="menu-nav__list__item"><a href="{{.URL | absLangURL}}">{{ .Name }}</a></li>
-{{ end }}
-</ul>
+    <div class="c-nav_title">GABRIEL CUALLADO</div>
+    <!-- <div class="c-nav_close">close</div> -->
 
- <!-- langues disponibles -->
-<ul>
-    {{ if eq .Lang "en"}}
-        <!-- liste des langue en ordre => toujours anglais devant d'ou le if -->
-        <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
-        {{ range .Translations }}
-            <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
-        {{ end}}
+    <ul class="c-nav_mainlist c-nav_list">
+        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}">Homepage</a></li>
+        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "serie1" | absLangURL }}">Gallery</a></li>
+    {{ range .Site.Menus.main }}
+        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{.URL | absLangURL}}">{{ .Name }}</a></li>
     {{ end }}
-    {{ if eq .Lang "es"}}
-        <!-- liste des langue en ordre => toujours espanol milleur d'ou le double range + if -->
-        {{ range .Translations }}
+    </ul>
+
+    <!-- langues disponibles -->
+    <div class="c-nav_openlist c-nav_list">
+        <span class="c-nav_openlist_title c-nav_link">LANGUAGE</span>
+        <ul class="c-nav_openlist_items">
             {{ if eq .Lang "en"}}
-                <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                <!-- liste des langue en ordre => toujours anglais devant d'ou le if -->
+                <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                {{ range .Translations }}
+                    <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                {{ end}}
             {{ end }}
-        {{ end}}
-        <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
-        {{ range .Translations }}
+            {{ if eq .Lang "es"}}
+                <!-- liste des langue en ordre => toujours espanol milleur d'ou le double range + if -->
+                {{ range .Translations }}
+                    {{ if eq .Lang "en"}}
+                        <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                    {{ end }}
+                {{ end}}
+                <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                {{ range .Translations }}
+                    {{ if eq .Lang "fr"}}
+                        <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                    {{ end }}
+                {{ end}}
+            {{ end }}
             {{ if eq .Lang "fr"}}
-                <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                <!-- liste des langue en ordre => toujours francais derière d'ou le if -->
+                {{ range .Translations }}
+                    <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                {{ end}}
+                <li class="c-nav_lang"><a class="c-nav_lang_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
             {{ end }}
-        {{ end}}
-    {{ end }}
-    {{ if eq .Lang "fr"}}
-        <!-- liste des langue en ordre => toujours francais derière d'ou le if -->
-        {{ range .Translations }}
-            <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
-        {{ end}}
-        <li class="menu-nav__lang"><a href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
-    {{ end }}
-</ul>
+        </ul>
+    </div>
+
+     <!-- Second menu -->
+    <ul class="c-nav_secondlist c-nav_list">
+        <li class="c-nav_secondlist_item"><a class="c-nav_secondlist_item_link c-nav_link" href="#">instagram</a></li>
+
+        {{ range .Site.Menus.secondary }}
+            <li class="c-nav_secondlist_item"><a class="c-nav_secondlist_item_link c-nav_link" href="{{.URL | absLangURL}}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>

@@ -1,6 +1,7 @@
 +++
 Title = "About"
-menu = ["main"]
+menu = ["main", "header"]
+namespace = "about"
 +++
 
 About contenu en

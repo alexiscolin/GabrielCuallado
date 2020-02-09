@@ -1,0 +1,59 @@
+.c-loader_title {
+    mix-blend-mode: difference;
+    opacity: 0;
+}
+.c-main {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    &_pic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 95vw;
+        transform: translate3d(-50%,-50%,0);
+        z-index: 1;
+    }
+
+    &_container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;   
+        z-index: 2;
+    }
+
+    &_title {
+        position: relative;
+        width: 100%;
+        margin: 2vw 0;
+    }
+
+    &_dates {
+        position: relative;
+        display: flex;
+        align-self: flex-end;
+        margin-right: 5.5vw;
+    }
+
+    &_cuallado {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+
+        &--outlined {
+            @supports (-webkit-text-stroke: .5px color(typography, 2)) {
+                -webkit-text-stroke-width: .5px;
+                -webkit-text-stroke-color: color(typography, 2);
+            }
+            color: transparent;
+            opacity: 1;
+            mix-blend-mode: unset;
+        }
+    }
+}
+

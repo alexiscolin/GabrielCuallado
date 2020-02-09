@@ -1,7 +1,8 @@
 +++
 Title = "A propos"
-menu = ["main"]
+menu = ["main", "header"]
 url = "/fr/a-propos"
+namespace = "about"
 +++
 
 A propos contenu fr

@@ -1,7 +1,8 @@
 +++
 Title = "Exposition"
-menu = ["main"]
+menu = ["main", "header"]
 url = "/fr/expositions"
+namespace = "exhibitions"
 +++
 
 expo contenu fr

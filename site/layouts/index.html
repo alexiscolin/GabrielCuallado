@@ -1,21 +1,42 @@
 {{ define "main" }}
-    <main aria-role="main">
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
-        {{ end }}
-      </header>
 
-      <div class="homepage-content">
-        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-        {{.Content}}
-      </div>
-      <div>
-        <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
+<!-- <div data-module-home>
+  <button data-home="one">One</button>
+  <button data-home="all">All</button>
+</div> -->
+
+    <main aria-role="main" class="c-main">
+      <div class="c-loader" id="js-loader">
+        <div class="c-loader__container">
+            <!-- 
+			<span class="c-loader__title" id="js-loader-title">GABRIEL CUALLADO</span>
+			<span class="c-loader__title c-loader__title--outlined" id="js-loader-title-out">GABRIEL CUALLADO</span> 
+			-->
+			<img class="c-main_pic js-hp-img" src="/img/hp/F0191-AUTORRETRATO.jpg" alt="">
+
+			<div class="c-main_container">
+				<div class="c-main_dates o-dates js-loader-infos">
+					<time datetime="1925-01-01T00:00:00">1925</time> – <time datetime="2003-05-30T00:00:00">2003</time>
+				</div>
+				<div class="c-main_title">
+					<span class="o-cuallado c-main_cuallado c-loader_title" id="js-loader-title">GABRIEL CUALLADO</span>
+					<span class="o-cuallado c-main_cuallado--outlined c-loader_title" id="js-loader-title-out">GABRIEL CUALLADO</span>	
+					<span class="o-cuallado o-cuallado--rel o-cuallado--invisible">GABRIEL CUALLADO</span>	
+				</div>
+				<!-- <div class="o-cuallado o-cuallado--rel c-main_cuallado">GABRIEL CUALLADO</div> -->
+				<div class="o-job js-loader-infos">Photographer</div>
+				<div class="c-loader__slider" id="js-loader-slider"></div>
+			</div>
+
+        </div>
+    </div>
+
+      
+
+        <!-- boucle sur les séries -->
         {{ range where .Pages "Type" "serie" }}
-        <a href="{{.Permalink}}" class="">{{ .Title }}</a>
+        <!-- <a href="{{.Permalink}}" class="">{{ .Title }}</a> -->
         {{ end }}
-      </div>
+     
     </main>
 {{ end }}

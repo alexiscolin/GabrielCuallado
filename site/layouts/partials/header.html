@@ -1,0 +1,20 @@
+<header class="c-header" data-module-navigation="main">
+    <a class="c-header_name js-header" href="{{ "/" | absLangURL }}">Gabriel Cuallado</a>
+    <ul class="c-header_nav">
+        {{ range .Site.Menus.header }}
+            <li class="c-header_item c-header_item--about js-header">
+                <a class="c-header_link" href="{{.URL | absLangURL}}">{{ .Name }}</a>
+            </li>
+        {{ end }}
+
+        <li class="c-header_item c-header_item--nav js-menu" data-navigation="menuToogle">
+            <span class="c-header_item--nav_bar"></span>
+            <span class="c-header_item--nav_bar"></span>
+        </li>
+    </ul>
+
+    {{ block "navigation" . }}
+    <!-- default nav -->
+        {{ partial "navigation.html" .}}
+    {{ end }}
+</header>

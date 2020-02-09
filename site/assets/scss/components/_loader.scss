@@ -1,0 +1,58 @@
+// .c-loader_title {
+//     // mix-blend-mode: difference;
+//     // color: color(typography, 2);
+//     // opacity: 0;
+// }
+
+.c-loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+    background: color(bg, 1);
+    //display: none;
+
+    &__container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;   
+    }
+
+    &__title {
+        position: absolute;
+        @include font-weight(black);
+        letter-spacing: 1.6vw;
+        font-size: 17vw;
+        text-align: center;
+        padding-left: 2vw;
+        z-index: 1;
+        mix-blend-mode: difference;
+        color: color(typography, 2);
+        opacity: 0;
+
+        &--outlined {
+            @supports (-webkit-text-stroke: 1px color(typography, 2)) {
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: color(typography, 2);
+            }
+            color: transparent;
+            opacity: 1;
+            mix-blend-mode: unset;
+        }
+    }
+
+    &__slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: color(bg, 2);        
+        z-index: 0;
+        transform: scaleY(0);
+        transform-origin: 50% 0;
+    }
+}

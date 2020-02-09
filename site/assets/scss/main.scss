@@ -15,3 +15,22 @@
 @import 'bases/normalize',
         'bases/typo',
         'bases/layout';
+
+
+// --------------------------------------------
+// Components ---------------------------------
+// --------------------------------------------
+
+@import 'components/loader';
+@import 'components/navigation';
+@import 'components/header';
+@import 'components/homepage';
+@import 'components/series';
+@import 'components/content';
+@import 'components/timeline';
+
+// --------------------------------------------
+// Objects ------------------------------------
+// --------------------------------------------
+
+@import 'components/objects';

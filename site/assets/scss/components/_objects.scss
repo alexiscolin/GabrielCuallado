@@ -1,0 +1,90 @@
+.o-cuallado {
+    position: absolute;
+    @include font-weight(black);
+    letter-spacing: 1.6vw;
+    font-size: 18vw;
+    text-align: center;
+    // padding-left: 2vw;
+    z-index: 1;
+    left: 50%;
+    transform: translate3d(-50%, 0,0);
+    width: 100%;
+    // opacity: 1;
+    
+    // @supports (-webkit-text-stroke: .5px color(typography, 2)) {
+    //     -webkit-text-stroke-width: .5px;
+    //     -webkit-text-stroke-color: color(typography, 2);
+    // }
+
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        margin-top: -5.6vw; // negative line height space on font
+    }
+
+    &::before {
+        margin: 0 0 -2vw 0;
+    }
+}
+
+.o-cuallado--rel {
+    position: relative;
+}
+
+.o-cuallado--invisible {
+    opacity: 0;
+}
+
+.o-cuallado--transparent {
+    color: transparent;
+}
+
+.o-job {
+    text-transform: uppercase;
+    @include font-weight(light);
+    font-size: 5vw;
+    letter-spacing: 6.8vw;
+    text-align: center;
+    padding-left: 5vw;
+
+    @include media( '>medium' ) {
+        font-size: 2vw;
+        letter-spacing: 7.4vw;
+        padding-left: 6.8vw;
+    }
+}
+
+.o-dates {
+    @include font-weight(light);
+    font-size: 24px;
+    letter-spacing: 10px;
+
+    @include media( '>medium' ) {
+        font-size: 35px;
+    }
+}
+
+.o-img {
+    max-height: 90vh;
+    height: 100%;
+}
+
+.o-title {
+    @include font-weight(bold);
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.o-text {
+    white-space: normal;
+}
+
+.o-subtitle {
+    @include font-weight(light);
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 2px;
+}

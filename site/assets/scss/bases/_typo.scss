@@ -28,19 +28,19 @@
 
 @font-face {
     font-family: 'Morganite';
-    src: url('../fonts/Morganite-Medium.woff2') format('woff2'),
-        url('../fonts/Morganite-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+    src: url('../fonts/Morganite-Medium.woff2') format('woff2-variations')
+    //     url('../fonts/Morganite-Medium.woff') format('woff');
+    // font-weight: 500;
+    // font-style: normal;
 }
 
 
 @font-face {
     font-family: 'Morganite';
-    src: url('../fonts/Morganite-Light.woff2') format('woff2'),
-        url('../fonts/Morganite-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+    src: url('../fonts/Morganite-Light.woff2') format('woff2-variations')
+        // url('../fonts/Morganite-Light.woff') format('woff');
+    // font-weight: 300;
+    // font-style: normal;
 }
 
 @font-face {

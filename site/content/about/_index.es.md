@@ -1,7 +1,8 @@
 +++
 Title = "Acerca"
-menu = ["main"]
+menu = ["main", "header"]
 url = "/es/acerca"
+namespace = "about"
 +++
 
 Acerca contenu es

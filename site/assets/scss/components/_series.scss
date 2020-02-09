@@ -1,0 +1,48 @@
+.c-serie {
+    
+
+    &_def {
+        margin: 1rem 0 0 -2rem;
+        font-size: 24px;
+        @include font-weight(light);
+        font-style: italic;
+    }
+}
+
+.c-serie1_img1 {
+    position: relative;
+    top: 10vh;
+    height: 50vh;
+    left: 10vw;
+}
+.c-serie1_img2 {
+    position: relative;
+    left: 0;
+    top: -10vh;
+    height: 50vh;
+}
+.c-serie1_img3 {
+    position: relative;
+    left: -5vw;
+    top: 10vh;
+    height: 30vh;
+}
+
+.c-serie1_img4 {
+    position: relative;
+    height: 80vh;
+}
+
+.c-serie1_img5 {
+    position: relative;
+    height: 30vh;
+    top: -5vh;
+    z-index: 5;
+}
+.c-serie1_img6 {
+    position: relative;
+    height: 60vh;
+    top: 6vh;
+    left: -5vw;
+    z-index: 4;
+}

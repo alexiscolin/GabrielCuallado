@@ -1,0 +1,126 @@
+.c-timeline {
+    padding: 0;
+
+    &_section {
+        position: relative;
+        width: 45vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        &_line {
+            height: 2px;
+            position: absolute;
+            border-bottom: dashed 2px white;
+            top: 50%;
+            width: 100%; 
+            z-index: 3;  
+        }
+    }
+
+    &_date {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        font-size: 90px;
+        font-style: italic;
+        @include font-weight(bold);
+        letter-spacing: 6px;
+        z-index: 3;  
+        cursor: pointer;
+
+        &:hover {
+            & ~ .c-timeline_img {
+                opacity: 1;
+            }
+        }
+    }
+
+    &_name {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 62%;
+        max-width: 30vw;
+        left: calc(50% - 10px);
+        transform: translate3d(0, -50%, 0);
+        font-size: 26px;
+        @include font-weight(bold);
+        letter-spacing: 6px;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover {
+            & ~ .c-timeline_img {
+                opacity: 1;
+            }
+        }
+
+        &_place {
+            font-size: 20px;
+            @include font-weight(light);
+        }
+    }
+
+    &_img {
+        position: absolute;
+        transform: translate3d(-40%,-50%,0);
+        max-width: 50%;
+        left: 50%;
+        top: 65%;
+        opacity: .4;
+        transition: opacity 1s ease;
+        z-index: 1;
+    }
+
+    &_point {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 20px;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+        z-index: 3;  
+    }
+
+    &:first-child {
+        margin-left: 10vw;
+        & .c-timeline_section_line {
+            width: 52%;
+            left: 50%;
+        }
+    }
+    &:last-child {
+        margin-right: 10vw;
+        & .c-timeline_section_line {
+            width: 52%;
+            right: 50%;
+        }
+    }
+
+    &:nth-child(2n) {
+        & .c-timeline_date {
+            top: 62%;
+        }
+        & .c-timeline_name {
+            bottom: 63%;
+            top: inherit;
+            transform: translate3d(0, 50%, 0);
+        }
+
+        & .c-timeline_img {
+            top: inherit;
+            bottom: 60%;
+            transform: translate3d(-30%, 50%, 0);
+        }
+    }
+    &:nth-child(3n) {
+        & .c-timeline_img {
+            top: inherit;
+            bottom: 50%;
+            transform: translate3d(-40%, 50%, 0);
+        }
+    }
+}

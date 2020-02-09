@@ -1,11 +1,103 @@
-{{ define "main" }}
-<section id="main">
-  <h1 id="title">exhibitions – {{ .Title }}</h1>
-  <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
-  </div>
-</section>
 
+{{ define "main" }}
+<!-- <div data-module-serie>
+  <button data-serie="one">One</button>
+  <button data-serie="all">All</button>
+</div> -->
+  <nav class="c-innernav">
+    <a class="c-innernav_link c-innernav_link--active" href="#">Individual</a>
+    <a class="c-innernav_link" href="#">Collective</a>
+  </nav>
+  
+  <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
+    <div class="container">
+      <section class="o-section c-timeline js-section" data-scroll-section>
+        <div class="c-timeline_section">
+
+          <div class="c-timeline_section_line"></div>
+
+          <div class="c-timeline_date">2019</div>
+          <div class="c-timeline_point"></div>
+          <div class="c-timeline_name">
+            <span>“Cuallado Essential” La Pedrera</span>
+            <span class="c-timeline_name_place">BARCELONA</span>
+          </div>
+          <img class="c-timeline_img" src="/img/asturias/F0567-PEPE CON-CABALLO-BLANCO.jpg" data-parallaxe>
+
+        </div>
+      </section>
+      <section class="o-section c-timeline js-section" data-scroll-section>
+        <div class="c-timeline_section">
+          <div class="c-timeline_section_line"></div>
+
+          <div class="c-timeline_date">2019</div>
+          <div class="c-timeline_point"></div>
+          <div class="c-timeline_name">
+            <span>“Cuallado Essentiel”, Salle Canal Isabel II, Communauté Autonome de Madrid</span>
+            <span class="c-timeline_name_place">BARCELONA</span>
+          </div>
+          <img class="c-timeline_img" src="/img/asturias/F0562-HIJA-DE-JESUS.jpg" data-parallaxe>
+
+        </div>
+      </section>
+      <section class="o-section c-timeline js-section" data-scroll-section>
+        <div class="c-timeline_section">
+          <div class="c-timeline_section_line"></div>
+
+          <div class="c-timeline_date">2019</div>
+          <div class="c-timeline_point"></div>
+          <div class="c-timeline_name">
+            <span>“Cuallado Essential” La Pedrera</span>
+            <span class="c-timeline_name_place">BARCELONA</span>
+          </div>
+          <img class="c-timeline_img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg" data-parallaxe>
+
+        </div>
+      </section>
+      <section class="o-section c-timeline js-section" data-scroll-section>
+        <div class="c-timeline_section">
+
+          <div class="c-timeline_section_line"></div>
+
+          <div class="c-timeline_date">2019</div>
+          <div class="c-timeline_point"></div>
+          <div class="c-timeline_name">
+            <span>“Cuallado Essential” La Pedrera</span>
+            <span class="c-timeline_name_place">BARCELONA</span>
+          </div>
+          <img class="c-timeline_img" src="/img/asturias/F0567-PEPE CON-CABALLO-BLANCO.jpg" data-parallaxe>
+
+
+        </div>
+      </section>
+      <section class="o-section c-timeline js-section" data-scroll-section>
+        <div class="c-timeline_section">
+          <div class="c-timeline_section_line"></div>
+
+          <div class="c-timeline_date">2019</div>
+          <div class="c-timeline_point"></div>
+          <div class="c-timeline_name">
+            <span>“Cuallado Essentiel”, Salle Canal Isabel II, Communauté Autonome de Madrid</span>
+            <span class="c-timeline_name_place">BARCELONA</span>
+          </div>
+          <img class="c-timeline_img" src="/img/asturias/F0562-HIJA-DE-JESUS.jpg" data-parallaxe>
+
+        </div>
+      </section>
+      <section class="o-section c-timeline js-section" data-scroll-section>
+        <div class="c-timeline_section">
+          <div class="c-timeline_section_line"></div>
+
+          <div class="c-timeline_date">2019</div>
+          <div class="c-timeline_point"></div>
+          <div class="c-timeline_name">
+            <span>“Cuallado Essential” La Pedrera</span>
+            <span class="c-timeline_name_place">BARCELONA</span>
+          </div>
+          <img class="c-timeline_img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg" data-parallaxe>
+
+        </div>
+      </section>
+    </div>
+  </section>
 {{ end }}

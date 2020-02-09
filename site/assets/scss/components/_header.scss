@@ -1,0 +1,109 @@
+.c-header {
+    &_name {
+        position: relative;
+        top: 14vw;
+        margin: auto;
+        display: block;
+        text-align: center;
+        font-size: 45px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        @include font-weight(black);
+        color: transparent;
+        text-decoration: none;
+        z-index: 12;
+        @supports (-webkit-text-stroke: .5px color(typography, 2)) {
+            -webkit-text-stroke-width: .5px;
+            -webkit-text-stroke-color: color(typography, 2);
+        }
+
+        @include media( '>medium' ) {
+            position: absolute;
+            font-size: 70px;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
+
+    &_nav {
+        list-style: none;
+        
+    }
+
+    &_item {
+        position: absolute;
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        @include font-weight(light);
+        z-index: 99;
+        transition: .4s ease all;
+        transform: scale(1);
+
+        &:not(.c-header_item--nav){
+            display: none;
+        }
+        @include media( '>medium' ) {
+            display: block;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            // @include font-weight(black);
+        }
+
+        &:nth-child(1) {
+            left: 2vw;
+            top: 2vw;
+            transform: rotate(-90deg) translate3d(-25%, -50%, 0);
+            &:hover {
+                transform: scale(1.2) rotate(-90deg) translate3d(-25%, -50%, 0);;
+            }
+        }
+
+        &:nth-child(3) {
+            right: 2vw;
+            top: 2vw;
+        }
+
+        &:nth-child(2){
+            left: 2vw;
+            bottom: 2vw;
+        }
+
+        &--nav {
+            right: 5vw;
+            top: 4vw;
+            width: 25px;
+            height: 25px;
+            cursor:pointer;
+            z-index: 9999;
+
+            @include media( '>medium' ) {
+                width: 40px;
+                bottom: 2vw;
+                top: initial;
+                right: 2vw;
+            }
+
+            &_bar {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: white;
+
+                &:nth-child(1) {
+                    top: 35%;
+                }
+                &:nth-child(2) {
+                    top: 65%;
+                }
+            } 
+        }
+    }
+
+    &_link {
+        text-decoration: none;
+        
+    }
+}

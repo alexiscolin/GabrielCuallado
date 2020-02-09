@@ -1,41 +1,37 @@
-
+<!-- 
 {{ define "main" }}
-<section id="main">
-  <h1 id="title">SERIE SINGLE {{ .Title }}</h1>
-  <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
-  </div>
-</section>
-<aside id="meta">
-    <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-    </section>
-    {{ with .Params.topics }}
-    <ul id="topics">
-      {{ range . }}
-        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-    {{ with .Params.tags }}
-    <ul id="tags">
-      {{ range . }}
-        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
+<div data-module-serie>
+  <button data-serie="one">One</button>
+  <button data-serie="all">All</button>
+</div>
+
+  <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
+    <div class="container">
+      <section class="o-section js-section" data-scroll-section>
+        <img src="/img/asturias/F0467-PEPE-LUIS.jpg" >
+        <img src="/img/asturias/F0560-BODEGA-EN-ASTURIAS.jpg" >
+      </section>
+      <section class="o-section js-section" data-scroll-section>
+        <img src="/img/asturias/F0562-HIJA-DE-JESUS.jpg">
+      </section>
+      <section class="o-section js-section" data-scroll-section>
+        <img src="/img/asturias/F0567-PEPE CON-CABALLO-BLANCO.jpg" data-parallaxe>
+      </section>
+      <section class="o-section js-section" data-scroll-section>
+        <img src="/img/asturias/F0570-FAMILIA-CAMPESINA-ASTURIANA.jpg">
+        <img src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg">
+      </section>
     </div>
-    <div>
-        {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-        {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-    </div>
-</aside>
-{{ end }}
+  </section>
+
+  <aside id="meta">
+      <div>
+          {{ with .PrevInSection }}
+            <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+          {{ with .NextInSection }}
+            <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+      </div>
+    </aside>
+{{ end }} -->

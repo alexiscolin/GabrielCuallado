@@ -1,6 +1,7 @@
 +++
-Title = "Legal"
+Title = "Legal Notice"
 menu = ["secondary"]
+namespace = "section"
 +++
 
 My legal

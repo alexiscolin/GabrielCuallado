@@ -1,0 +1,151 @@
+.c-section_para {
+    font-family: sans-serif;
+    @include font-weight(light);
+    width: 35vw;
+    max-width: 500px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding-right: 5em;
+    line-height: 2;
+
+    &--columns {
+        width: 60vw;
+        columns: 2;
+        max-width: 90%;
+
+        & > .o-text {
+            margin: 0;
+        }
+    }
+}
+
+.c-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    opacity: 0;
+
+}
+
+.c-quote {
+    position: absolute;
+    width: 40vw;
+
+    &_cite {
+        @include font-weight(bold);
+        font-size: 60px;
+        letter-spacing: 30px;
+        font-style: italic;
+    }
+
+    &_author {
+        display: block;
+        @include font-weight(light);
+        font-size: 40px;
+        letter-spacing: 10px;
+        margin-top: .3em;
+    }
+}
+
+.c-about_img1 {
+    position: relative;
+    height: 35vh;
+    left: 5vw;
+}
+.c-about_txt1 {
+    position: relative;
+    left: -2vw;
+    top: 4vh;
+}
+
+.c-about_img2 {
+    height: 50vh;
+    top: 15vh;
+
+    &_img {
+        margin-left: 20vw;
+
+    }
+}
+
+.c-quote_about1 {
+    margin-top: 5vh;
+}
+
+.c-about_txt2 {
+    position: relative;
+    left: -2vw;
+    top: 20vh;
+}
+
+.c-innernav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    &_link {
+        font-size: 45px;
+        @include font-weight(bold);
+        text-transform: uppercase;
+        text-decoration: none;
+        opacity: .5;
+        transition: opacity 1s ease;
+
+        &--active {
+            opacity: 1;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.c-static {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.c-list {
+    height: 40vh;
+    // margin-left: 5vw;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+    min-width: 20vw;
+    justify-content: space-between;
+
+    &_item {
+        list-style: none;
+        margin: 0 2vh;
+    }
+
+    &_link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_title {
+        font-size: 30px;
+        @include font-weight(bold);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    &_subtitle {
+        font-size: 26px;
+        @include font-weight(light);
+    }
+}
