@@ -26,6 +26,7 @@ export default class extends module {
 
         
         this.scroll = window.innerWidth > 640 ? new SmoothScroll(opts, 'fixedClass') : null;
+        // this.scroll =  new SmoothScroll(opts, 'fixedClass');
 
         // this.bindEvents()
 
@@ -60,7 +61,7 @@ export default class extends module {
     destroy() {
         console.log('end scroll')
         this.parallax.destroy();
-        this.scroll.destroy();
+        this.scroll && this.scroll.destroy();
         // this.destroyScroll();
         // window.removeEventListener('resize', this.resizeFunc, false);
 

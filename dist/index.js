@@ -7239,7 +7239,8 @@ function (_module) {
       }; // this.isActivated = true;
 
       this.parallax = new _Parallax.default(this.el);
-      this.scroll = window.innerWidth > 640 ? new _smoothScrollr.SmoothScroll(opts, 'fixedClass') : null; // this.bindEvents()
+      this.scroll = window.innerWidth > 640 ? new _smoothScrollr.SmoothScroll(opts, 'fixedClass') : null; // this.scroll =  new SmoothScroll(opts, 'fixedClass');
+      // this.bindEvents()
     } // bindEvents () {
     //     this.resizeFunc = this.resize.bind(this);
     //     window.addEventListener('resize', this.resizeFunc, false);
@@ -7269,7 +7270,7 @@ function (_module) {
     value: function destroy() {
       console.log('end scroll');
       this.parallax.destroy();
-      this.scroll.destroy(); // this.destroyScroll();
+      this.scroll && this.scroll.destroy(); // this.destroyScroll();
       // window.removeEventListener('resize', this.resizeFunc, false);
 
       for (var prop in this) {
