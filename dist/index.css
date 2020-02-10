@@ -881,6 +881,8 @@ a {
   .c-about_img2 {
     height: 50vh;
     top: 15vh;
+  }
+  .c-about_img2 > img {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
   .c-about_img2_img {
@@ -993,7 +995,7 @@ a {
   position: absolute;
   z-index: 3;
   height: 100%;
-  left: 90%;
+  right: 10%;
   width: 2px;
   border-left: dashed 1px white;
 }
@@ -1103,10 +1105,6 @@ a {
   .c-timeline:last-child {
     margin-right: 10vw;
   }
-}
-.c-timeline:last-child .c-timeline_section_line {
-  width: 52%;
-  right: 50%;
 }
 @media (min-width: 641px) {
   .c-timeline:nth-child(2n) .c-timeline_date {

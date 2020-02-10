@@ -98,7 +98,10 @@
     .c-about_img2 {
         height: 50vh;
         top: 15vh;
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+
+        & > img {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        }
 
 
         &_img {

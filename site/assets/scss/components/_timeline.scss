@@ -17,7 +17,7 @@
             position: absolute;
             z-index: 3; 
             height: 100%;
-            left: 90%;
+            right: 10%;
             width: 2px;
             border-left: dashed 1px white; 
 
@@ -135,10 +135,10 @@
         @include media( '>medium' ) {
             margin-right: 10vw;
         }
-        & .c-timeline_section_line {
-            width: 52%;
-            right: 50%;
-        }
+        // & .c-timeline_section_line {
+        //     width: 52%;
+        //     right: 50%;
+        // }
     }
 
     &:nth-child(2n) {
