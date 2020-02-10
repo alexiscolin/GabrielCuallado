@@ -37,13 +37,13 @@ export default class {
     // intersection observer zone (section et els)
     isInVew (entries) {
         // récupérer la target pour les éléments visibles
-        const elements = entries.filter(entry => (entry.intersectionRatio > 0)).map(entry => entry.target);
+        console.log(entries)
+        const elements = entries.filter(entry => (entry.isIntersecting === true)).map(entry => entry.target);
         elements.forEach(entry => this.observer.unobserve(entry));
 
         if(elements.length > 0) {
             // metter un forEach de l'array et changer le timer ddedans
             elements.forEach(element => {
-                console.log(element.dataset.parallaxe)
                 // gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
                 if(element.dataset.parallaxe === "img") {
                     gsap.to(element, {clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});

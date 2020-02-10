@@ -820,17 +820,19 @@ a {
   }
 }
 
+[data-parallaxe=img] {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+[data-parallaxe=text] {
+  opacity: 0;
+}
+
 .c-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: baseline;
-}
-.c-container [data-parallaxe=img] {
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-}
-.c-container [data-parallaxe=text] {
-  opacity: 0;
 }
 @media (min-width: 641px) {
   .c-container .c-serie_def {
@@ -865,6 +867,8 @@ a {
     position: relative;
     height: 35vh;
     left: 5vw;
+  }
+  .c-about_img1 > img {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
 

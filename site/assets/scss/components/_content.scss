@@ -26,18 +26,20 @@
     }
 }
 
+[data-parallaxe="img"] {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+[data-parallaxe="text"] {
+    opacity: 0;
+}
+
 .c-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: baseline;
 
-    & [data-parallaxe="img"] {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    }
-    & [data-parallaxe="text"] {
-        opacity: 0;
-    }
+    
 
 
 
@@ -81,7 +83,10 @@
         position: relative;
         height: 35vh;
         left: 5vw;
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+
+        & > img {
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        }
 
     }
     .c-about_txt1 {
@@ -98,7 +103,6 @@
 
         &_img {
             margin-left: 20vw;
-
         }
     }
 

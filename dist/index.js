@@ -7126,8 +7126,9 @@ function () {
       var _this2 = this;
 
       // récupérer la target pour les éléments visibles
+      console.log(entries);
       var elements = entries.filter(function (entry) {
-        return entry.intersectionRatio > 0;
+        return entry.isIntersecting === true;
       }).map(function (entry) {
         return entry.target;
       });
@@ -7138,8 +7139,7 @@ function () {
       if (elements.length > 0) {
         // metter un forEach de l'array et changer le timer ddedans
         elements.forEach(function (element) {
-          console.log(element.dataset.parallaxe); // gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
-
+          // gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
           if (element.dataset.parallaxe === "img") {
             _gsap.gsap.to(element, {
               clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)",
