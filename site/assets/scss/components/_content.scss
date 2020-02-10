@@ -55,6 +55,7 @@
     }
 }
 
+
 @include media( '>medium' ) {
     .c-about_img1 {
         position: relative;
@@ -124,10 +125,13 @@
     left: 0;
     top: 0;
     bottom: 0;
+
+    &_pic {
+        max-width: 90%;
+    } 
 }
 
 .c-list {
-    height: 40vh;
     // margin-left: 5vw;
     display: flex;
     flex-flow: column wrap;
@@ -136,9 +140,16 @@
     min-width: 20vw;
     justify-content: space-between;
 
+    @include media( '>medium' ) {
+        height: 40vh;
+    }
+
     &_item {
         list-style: none;
-        margin: 0 2vh;
+        margin: 2vh 2vh;
+        @include media( '>medium' ) {
+            margin: 0 2vh;
+        }
     }
 
     &_link {
