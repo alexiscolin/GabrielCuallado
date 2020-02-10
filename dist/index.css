@@ -825,7 +825,21 @@ a {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+}
+.c-container [data-parallaxe=img] {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+.c-container [data-parallaxe=text] {
   opacity: 0;
+}
+@media (min-width: 641px) {
+  .c-container .c-serie_def {
+    opacity: 0;
+    transition: 1s ease all;
+  }
+  .c-container:hover .c-serie_def {
+    opacity: 1;
+  }
 }
 
 .c-quote {
@@ -851,6 +865,7 @@ a {
     position: relative;
     height: 35vh;
     left: 5vw;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
 
   .c-about_txt1 {
@@ -862,6 +877,7 @@ a {
   .c-about_img2 {
     height: 50vh;
     top: 15vh;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
   .c-about_img2_img {
     margin-left: 20vw;

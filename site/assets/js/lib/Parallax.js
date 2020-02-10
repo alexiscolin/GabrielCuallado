@@ -43,7 +43,14 @@ export default class {
         if(elements.length > 0) {
             // metter un forEach de l'array et changer le timer ddedans
             elements.forEach(element => {
-                gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+                console.log(element.dataset.parallaxe)
+                // gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+                if(element.dataset.parallaxe === "img") {
+                    gsap.to(element, {clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+                } else {
+                    gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+                }
+
                 this.timer = this.timer + .2;
 
             })

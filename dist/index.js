@@ -7138,15 +7138,29 @@ function () {
       if (elements.length > 0) {
         // metter un forEach de l'array et changer le timer ddedans
         elements.forEach(function (element) {
-          _gsap.gsap.to(element, {
-            autoAlpha: 1,
-            duration: 1,
-            delay: _this2.timer,
-            ease: "Power3.easeInOut",
-            onComplete: function onComplete(_) {
-              return _this2.timer -= .2;
-            }
-          });
+          console.log(element.dataset.parallaxe); // gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+
+          if (element.dataset.parallaxe === "img") {
+            _gsap.gsap.to(element, {
+              clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)",
+              duration: 1,
+              delay: _this2.timer,
+              ease: "Power3.easeInOut",
+              onComplete: function onComplete(_) {
+                return _this2.timer -= .2;
+              }
+            });
+          } else {
+            _gsap.gsap.to(element, {
+              autoAlpha: 1,
+              duration: 1,
+              delay: _this2.timer,
+              ease: "Power3.easeInOut",
+              onComplete: function onComplete(_) {
+                return _this2.timer -= .2;
+              }
+            });
+          }
 
           _this2.timer = _this2.timer + .2;
         });
