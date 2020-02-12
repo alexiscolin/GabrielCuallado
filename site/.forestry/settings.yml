@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: site/content/exhibitions
-  label: Exposition
-  create: all
-  match: "**/*"
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
 - type: document
@@ -17,40 +12,9 @@ sections:
 - type: document
   path: site/content/collectors/_index.fr.md
   label: Collections
-- type: directory
-  path: "./site/content"
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
-  path: "./site/content/collectors"
-  label: Collectors
-  create: all
-  match: "**/*"
-- type: directory
-  path: "./site/content/credits"
-  label: Credits
-  create: all
-  match: "**/*"
-- type: directory
-  path: "./site/content/serie1"
-  label: Serie1
-  create: all
-  match: "**/*"
-- type: directory
-  path: "./site/content/contact"
-  label: Contact
-  create: all
-  match: "**/*"
-- type: directory
-  path: "./site/content/about"
-  label: About
-  create: documents
-  match: "**/*"
-- type: directory
-  path: "./site/content/exhibitions"
-  label: Exhibitions
-  create: all
+- type: document
+  path: site/content/exhibitions/_index.fr.md
+  label: Expositions
   match: "**/*"
 upload_dir: "./site/static/uploads"
 public_path: "/uploads"
