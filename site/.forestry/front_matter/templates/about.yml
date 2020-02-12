@@ -40,3 +40,17 @@ fields:
       format: markdown
   label: zone texte 2
   description: 2nd paragraphe
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: Url relatif de la page
+  hidden: true
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: Namespace
+  description: type de page
+  hidden: true
