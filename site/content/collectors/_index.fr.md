@@ -1,6 +1,6 @@
 +++
 Title = "Collection"
-menu = []
+menu = ["asideAbout"]
 namespace = "collectors"
 [[collector]]
 collectorname = "NATIONAL LIBRARY OF FRANCE (BNF)"
