@@ -37,9 +37,5 @@ fields:
     required: false
   label: Namespace
   hidden: true
-- name: menu
-  type: tag_list
-  default: []
-  label: menu
 pages:
 - site/content/collectors/_index.fr.md
