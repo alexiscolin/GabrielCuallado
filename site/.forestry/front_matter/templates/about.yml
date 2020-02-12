@@ -55,5 +55,6 @@ fields:
   description: type de page
   hidden: true
 pages:
+- site/content/about/_index.en.md
 - site/content/about/_index.es.md
 - site/content/about/_index.fr.md
