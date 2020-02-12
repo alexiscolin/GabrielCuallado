@@ -10,17 +10,39 @@ sections:
   path: site/content/about/_index.fr.md
   label: A Propos
 - type: document
-  path: site/content/collectors/_index.fr.md
-  label: Collections
-- type: document
   path: site/content/exhibitions/_index.fr.md
   label: Expositions
   match: "**/*"
+- type: document
+  path: site/content/collectors/_index.fr.md
+  label: Collections
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: document
   path: site/content/about/_index.es.md
   label: Acerca
+  match: "**/*"
+- type: document
+  path: site/content/exhibitions/_index.es.md
+  label: Exhibitiones
+  match: "**/*"
+- type: document
+  path: site/content/collectors/_index.es.md
+  label: Colección
+  match: "**/*"
+- type: heading
+  label: "English \U0001F1EC\U0001F1E7"
+- type: document
+  path: site/content/about/_index.en.md
+  label: About
+  match: "**/*"
+- type: document
+  path: site/content/exhibitions/_index.en.md
+  label: Exhibitions
+  match: "**/*"
+- type: document
+  path: site/content/collectors/_index.en.md
+  label: Collectors
   match: "**/*"
 upload_dir: "./site/static/uploads"
 public_path: "/uploads"
