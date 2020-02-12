@@ -25,3 +25,5 @@ fields:
     max: 
     labelField: 
   label: Collector
+pages:
+- site/content/collectors/_index.fr.md

@@ -1,7 +1,7 @@
 +++
 Title = "Collectors"
-menu = ["asideAbout"]
+collector = []
 namespace = "collectors"
-+++
 
++++
 About contenu en
