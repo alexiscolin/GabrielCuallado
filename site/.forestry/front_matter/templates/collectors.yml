@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: false
-  label: Title
+  label: Titre de page
   description: Titre de page
 - name: collector
   type: field_group_list
@@ -30,7 +30,7 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Collector
+  label: Collection
 - name: namespace
   type: text
   config:
