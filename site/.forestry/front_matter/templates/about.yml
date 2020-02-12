@@ -54,3 +54,5 @@ fields:
   label: Namespace
   description: type de page
   hidden: true
+pages:
+- site/content/about/_index.fr.md
