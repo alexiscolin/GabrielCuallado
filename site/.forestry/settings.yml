@@ -12,7 +12,6 @@ sections:
 - type: document
   path: site/content/exhibitions/_index.fr.md
   label: Expositions
-  match: "**/*"
 - type: document
   path: site/content/collectors/_index.fr.md
   label: Collections
@@ -21,29 +20,23 @@ sections:
 - type: document
   path: site/content/about/_index.es.md
   label: Acerca
-  match: "**/*"
 - type: document
   path: site/content/exhibitions/_index.es.md
   label: Exhibitiones
-  match: "**/*"
 - type: document
   path: site/content/collectors/_index.es.md
   label: Colección
-  match: "**/*"
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: document
   path: site/content/about/_index.en.md
   label: About
-  match: "**/*"
 - type: document
   path: site/content/exhibitions/_index.en.md
   label: Exhibitions
-  match: "**/*"
 - type: document
   path: site/content/collectors/_index.en.md
   label: Collectors
-  match: "**/*"
 upload_dir: "./site/static/uploads"
 public_path: "/uploads"
 front_matter_path: ''
@@ -53,10 +46,9 @@ build:
   preview_env:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.63.2
-  preview_output_directory: public
+  preview_output_directory: dist
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+  instant_preview_command: npm start
 version: 0.63.2
