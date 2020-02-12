@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
+- type: document
+  path: "./site/content/about/_index.fr.md"
+  label: A propos
+  match: "**/*"
 - type: directory
   path: "./site/content"
   label: Pages
