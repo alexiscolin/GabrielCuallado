@@ -1,9 +1,8 @@
 +++
 Title = "Collection"
-menu = ["asideAbout"]
 namespace = "collectors"
 [[collector]]
-collectorname = "NATIONAL LIBRARY OF FRANCE (BNF)"
+collectorname = "Bibliothèque Nationale de France (BNF)"
 country = "France"
 link = "#"
 
