@@ -38,9 +38,11 @@ fields:
   label: Namespace
   hidden: true
 - name: menu
-  type: tag_list
-  default: []
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
   label: menu
-  hidden: true
 pages:
 - site/content/collectors/_index.fr.md
