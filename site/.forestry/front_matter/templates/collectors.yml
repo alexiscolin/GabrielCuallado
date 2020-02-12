@@ -2,6 +2,12 @@
 label: Collectors
 hide_body: true
 fields:
+- name: Title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Titre de page
 - name: collector
   type: field_group_list
   fields:
@@ -25,5 +31,16 @@ fields:
     max: 
     labelField: 
   label: Collector
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: Namespace
+  hidden: true
+- name: menu
+  type: tag_list
+  default: []
+  label: menu
+  hidden: true
 pages:
 - site/content/collectors/_index.fr.md
