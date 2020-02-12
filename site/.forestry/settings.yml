@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: "./site/content/about"
+  label: A-propos
+  create: documents
+  match: "**/*"
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
 - type: directory
