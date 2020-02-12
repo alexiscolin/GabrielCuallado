@@ -45,4 +45,5 @@ fields:
   label: menu
   hidden: true
 pages:
+- site/content/collectors/_index.es.md
 - site/content/collectors/_index.fr.md
