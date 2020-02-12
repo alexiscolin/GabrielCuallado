@@ -7,6 +7,10 @@ namespace = "collectors"
 collectorname = "Bibliothèque Nationale de France (BNF)"
 country = "France"
 link = "#"
+[[collector]]
+collectorname = "MAISON EUROPÉENNE DE LA PHOTOGRAPHIE"
+country = "France"
+link = "#"
 
 +++
 About contenu en
