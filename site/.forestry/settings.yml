@@ -9,15 +9,11 @@ sections:
 - type: document
   path: "./site/content/about/_index.fr.md"
   label: A propos
-  match: "**/*"
 - type: directory
   path: "./site/content"
   label: Pages
   create: all
   match: "*"
-- type: document
-  path: "./site/content/about/_index.en.md"
-  label: About 2
 - type: directory
   path: "./site/content/collectors"
   label: Collectors
