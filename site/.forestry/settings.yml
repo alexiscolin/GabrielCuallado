@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: "./site/content/about/*"
+  label: About 2
+  match: "**/*"
 - type: directory
   path: "./site/content"
   label: Pages
@@ -32,7 +36,7 @@ sections:
 - type: directory
   path: "./site/content/about"
   label: About
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: "./site/content/exhibitions"
