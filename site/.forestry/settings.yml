@@ -16,6 +16,12 @@ sections:
   path: site/content/exhibitions/_index.fr.md
   label: Expositions
   match: "**/*"
+- type: heading
+  label: "Español \U0001F1EA\U0001F1F8"
+- type: document
+  path: site/content/about/_index.es.md
+  label: Acerca
+  match: "**/*"
 upload_dir: "./site/static/uploads"
 public_path: "/uploads"
 front_matter_path: ''
