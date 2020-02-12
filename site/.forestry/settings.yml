@@ -5,9 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: "./site/content/about/_index.fr.md"
+  path: content/about/_index.fr.md
   label: test
-  match: "**/*"
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
 - type: directory
