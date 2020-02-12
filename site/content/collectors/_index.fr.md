@@ -1,6 +1,6 @@
 +++
 Title = "Collection"
-menu = []
+menu = [" asideAbout"]
 menuss = ""
 namespace = "collectors"
 [[collector]]
