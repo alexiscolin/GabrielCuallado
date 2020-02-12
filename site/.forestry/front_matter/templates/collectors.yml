@@ -2,7 +2,7 @@
 label: Collectors
 hide_body: true
 fields:
-- name: tewt
+- name: collector
   type: field_group_list
   fields:
   - name: link
@@ -24,24 +24,4 @@ fields:
     min: 
     max: 
     labelField: 
-  label: tewt
-- name: collection
-  type: field_group
-  config: {}
-  fields:
-  - name: link
-    type: text
-    config:
-      required: false
-    label: Lien
-  - name: collectorname
-    type: text
-    config:
-      required: false
-    label: Nom de la collection
-  - name: country
-    type: text
-    config:
-      required: false
-    label: Pays
-  label: Collection
+  label: Collector
