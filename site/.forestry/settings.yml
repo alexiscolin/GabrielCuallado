@@ -1,0 +1,55 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: heading
+  label: "Français \U0001F1EB\U0001F1F7"
+- type: document
+  path: site/content/about/_index.fr.md
+  label: A Propos
+- type: document
+  path: site/content/exhibitions/_index.fr.md
+  label: Expositions
+- type: document
+  path: site/content/collectors/_index.fr.md
+  label: Collections
+- type: heading
+  label: "Español \U0001F1EA\U0001F1F8"
+- type: document
+  path: site/content/about/_index.es.md
+  label: Acerca
+- type: document
+  path: site/content/exhibitions/_index.es.md
+  label: Exhibitiones
+- type: document
+  path: site/content/collectors/_index.es.md
+  label: Colección
+- type: heading
+  label: "English \U0001F1EC\U0001F1E7"
+- type: document
+  path: site/content/about/_index.en.md
+  label: About
+- type: document
+  path: site/content/exhibitions/_index.en.md
+  label: Exhibitions
+- type: document
+  path: site/content/collectors/_index.en.md
+  label: Collectors
+upload_dir: "./site/static/uploads"
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.63.2
+  preview_output_directory: dist
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm start
+version: 0.63.2

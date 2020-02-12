@@ -1,0 +1,60 @@
+---
+label: About
+hide_body: true
+fields:
+- name: Title
+  type: text
+  config:
+    required: false
+  label: Nom de la page
+  description: Nom de la page
+- name: pagetitle
+  type: text
+  config:
+    required: false
+  label: Titre
+  description: Titre sur la page
+- name: pagesubtitle
+  type: text
+  config:
+    required: false
+  label: Sous titre
+  description: Sous tittre principal
+- name: textzone1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: zone texte 1
+  description: 1er paragraphe
+- name: textzone2
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: zone texte 2
+  description: 2nd paragraphe
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: Url relatif de la page
+  hidden: true
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: Namespace
+  description: type de page
+  hidden: true
+pages:
+- site/content/about/_index.en.md
+- site/content/about/_index.es.md
+- site/content/about/_index.fr.md
