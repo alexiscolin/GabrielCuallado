@@ -11,11 +11,6 @@ fields:
 - name: collector
   type: field_group_list
   fields:
-  - name: link
-    type: text
-    config:
-      required: false
-    label: Lien
   - name: collectorname
     type: text
     config:
@@ -26,6 +21,11 @@ fields:
     config:
       required: false
     label: Pays
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Lien
   config:
     min: 
     max: 
