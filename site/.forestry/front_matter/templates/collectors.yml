@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: false
-  label: Titre de page
+  label: Nom de la page
   description: Titre de page
 - name: collector
   type: field_group_list
