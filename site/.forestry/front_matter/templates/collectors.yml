@@ -37,5 +37,17 @@ fields:
     required: false
   label: Namespace
   hidden: true
+- name: menuss
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: menuss
 pages:
 - site/content/collectors/_index.fr.md
