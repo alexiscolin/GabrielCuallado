@@ -37,6 +37,7 @@ fields:
     required: false
   label: Namespace
   hidden: true
+  default: collectors
 - name: menu
   type: tag_list
   default:
