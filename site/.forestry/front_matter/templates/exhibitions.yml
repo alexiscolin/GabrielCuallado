@@ -1,4 +1,33 @@
 ---
 label: Exhibitions
 hide_body: true
-fields: []
+fields:
+- name: exhibition
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Nom
+    description: Nom de l'exposition
+  - name: date
+    type: datetime
+    label: Date
+    description: Année de l'exposition
+    config:
+      required: false
+      date_format: YYYY
+      time_format: 
+      display_utc: false
+  - name: place
+    type: text
+    config:
+      required: false
+    label: Lieu
+    description: Ville d'exposition
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: exhibition
