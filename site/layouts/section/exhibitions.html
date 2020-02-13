@@ -11,6 +11,7 @@
   
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">
+      {{ range .Params.exhibition }}
       <section class="o-section c-timeline js-section" data-scroll-section>
         <div class="c-timeline_section">
 
@@ -26,7 +27,8 @@
 
         </div>
       </section>
-      <section class="o-section c-timeline js-section" data-scroll-section>
+      {{ end }}
+      <!-- <section class="o-section c-timeline js-section" data-scroll-section>
         <div class="c-timeline_section">
           <div class="c-timeline_section_line"></div>
 
@@ -97,7 +99,7 @@
           <img class="c-timeline_img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg" data-parallaxe="img">
 
         </div>
-      </section>
+      </section> -->
     </div>
   </section>
 {{ end }}
