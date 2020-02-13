@@ -1,0 +1,49 @@
+---
+label: Collectors
+hide_body: true
+fields:
+- name: Title
+  type: text
+  config:
+    required: false
+  label: Nom de la page
+  description: Titre de page
+- name: collector
+  type: field_group_list
+  fields:
+  - name: collectorname
+    type: text
+    config:
+      required: false
+    label: " Nom de la collection"
+  - name: country
+    type: text
+    config:
+      required: false
+    label: Pays
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Lien
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Collection
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: Namespace
+  hidden: true
+  default: collectors
+- name: menu
+  type: tag_list
+  default:
+  - asideAbout
+  label: menu
+  hidden: true
+pages:
+- site/content/collectors/_index.es.md
+- site/content/collectors/_index.fr.md

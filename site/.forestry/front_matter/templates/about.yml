@@ -54,6 +54,13 @@ fields:
   label: Namespace
   description: type de page
   hidden: true
+- name: menu
+  type: tag_list
+  default:
+  - main
+  - " header"
+  label: menu
+  hidden: true
 pages:
 - site/content/about/_index.en.md
 - site/content/about/_index.es.md

@@ -1,7 +1,11 @@
 +++
 Title = "Collectors"
 menu = ["asideAbout"]
-namespace = "collectors" 
-+++
+namespace = "collectors"
+[[collector]]
+collectorname = "test"
+country = "france"
+link = "#"
 
++++
 About contenu en
