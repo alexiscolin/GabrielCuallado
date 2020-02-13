@@ -49,3 +49,5 @@ fields:
   - header
   label: menu
   hidden: true
+pages:
+- site/content/exhibitions/_index.fr.md
