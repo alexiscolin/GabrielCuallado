@@ -17,11 +17,11 @@
 
           <div class="c-timeline_section_line"></div>
 
-          <div class="c-timeline_date" data-parallaxe="text">2019</div>
+          <div class="c-timeline_date" data-parallaxe="text">{{ dateFormat "2006" .date }}</div>
           <div class="c-timeline_point"></div>
           <div class="c-timeline_name" data-parallaxe="text">
-            <span>“Cuallado Essential” La Pedrera</span>
-            <span class="c-timeline_name_place">BARCELONA</span>
+            <span>{{ .name }}</span>
+            <span class="c-timeline_name_place">{{ .place }}</span>
           </div>
           <img class="c-timeline_img" src="/img/asturias/F0567-PEPE CON-CABALLO-BLANCO.jpg" data-parallaxe="img">
 
