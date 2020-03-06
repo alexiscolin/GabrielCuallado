@@ -1,7 +1,6 @@
 +++
-Title = "exhibitiones"
-menu = ["main", "header"]
-namespace = "exhibitions"
-+++
+Title = "Exposiciones"
+namespace = "Exposiciones"
 
++++
 exhibitions contenu es
