@@ -34,7 +34,7 @@ fields:
   - name: illustration
     type: file
     config:
-      maxSize: 250
+      maxSize: 64
     label: illustration
     description: Illustration de l'exposition
   config:
