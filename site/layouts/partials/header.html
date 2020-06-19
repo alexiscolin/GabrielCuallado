@@ -1,5 +1,5 @@
 <header class="c-header" data-module-navigation="main">
-    <a class="c-header_name js-header" href="{{ "/" | absLangURL }}">Gabriel Cuallado</a>
+    {{ if not .IsHome }}<a class="c-header_name js-header" href="{{ "/" | absLangURL }}">Gabriel Cuallado</a>{{ end }}
     <ul class="c-header_nav">
         {{ range .Site.Menus.header }}
             <li class="c-header_item c-header_item--about js-header">

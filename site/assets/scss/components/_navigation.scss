@@ -43,18 +43,25 @@
 
     &_list {
         position: relative;
-        margin: 0;
-        padding: 0 40px;
+        margin: 0 40px;
+        padding: 0;
         z-index: 2;
         list-style: none;
 
+        &:hover > li > a {
+            color: transparent;
+            -webkit-text-stroke-width: .5px;
+            -webkit-text-stroke-color: color(typography, 1);
+        }
+
         @include media( '>medium' ) {
-            padding: 0 80px;
+            margin: 0 80px;
         }
     }
 
     &_mainlist {
         &_item {
+            
             &_link {
                 font-size: 50px;
                 line-height: 1.1;
@@ -106,6 +113,30 @@
         display: flex;
         margin-bottom: 1.5rem;
 
+        &:hover  {
+            .c-nav_link {
+                color: color(typography, 1) !important;
+    
+                & > span {
+                    &::after, &::before {
+                        transform: scaleX(1);
+                    }
+                    & > span {
+                        &::after, &::before {
+                            transform: scaleY(1);
+                        }
+                    }
+                }
+            }
+            .c-nav_lang {
+                opacity: .4;
+            }
+
+            .c-nav_openlist_title::before {
+                transform: rotate(180deg);
+            }
+        }
+
         &_title {
             position: relative;
             font-size: 50px;
@@ -118,7 +149,6 @@
                 letter-spacing: 1px;
             }
 
-
             &::before {
                 content: '';
                 position: absolute;
@@ -130,7 +160,7 @@
                 border-style: solid;
                 border-width: 6px 0 6px 8px;
                 border-color: transparent transparent transparent color(bg, 1);
-
+                transition: .5s ease all;
             }
         }
 
@@ -149,6 +179,22 @@
         height: 30px;
         background: color(bg, 1);
         margin-right: 5px;
+        opacity: 0;
+        transition: .5s ease opacity;
+        transition-delay: 0;
+
+        &:nth-child(2) {
+            transition-delay: .1s;
+        }
+        &:nth-child(3) {
+            transition-delay: .2s;
+         
+        }
+
+        &:hover {
+            transition-delay: 0s !important;
+            opacity: 1 !important;
+        }
         
         &_link {
             display: flex;
@@ -166,12 +212,76 @@
 }
 
 .c-nav_link {
-    display: inline-block;
+    position: relative;
+    display: block;
+    width: 100%;
     color: color(typography, 1);
     text-transform: uppercase;
     text-decoration: none;
     margin: .5rem 0;
+    // padding: 1rem 0;
+    cursor: pointer;
+
+    & > span {
+        position: relative;
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: -.3rem;
+            width: calc(100% + .6rem);
+            height: 1px;
+            background-color: color(typography, 1);
+            transform: scaleX(0);
+            transition: .4s ease transform;
+            transform-origin: 0 50%;
+        }
     
+        &::after {
+            top: initial;
+            bottom: 1rem;
+            transform-origin: 100% 50%;
+        }
+
+        & > span {
+            position: relative;
+            &::after, &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: -.2rem;
+                left: 0;
+                height: calc(100% - .6rem);
+                width: 1px;
+                background-color: color(typography, 1);
+                transform: scaleY(0);
+                transition: .4s ease transform;
+                transform-origin: 50% 0%;
+            }
+
+            &::after {
+                left: initial;
+                right: 0;
+                transform-origin: 50% 100%;
+            }
+        }
+    }
+    
+    &:hover  {
+        color: color(typography, 1) !important;
+
+        & > span {
+            &::after, &::before {
+                transform: scaleX(1);
+            }
+            & > span {
+                &::after, &::before {
+                    transform: scaleY(1);
+                }
+            }
+        }
+    }
 
     @include media( '>medium' ) {
         -webkit-text-stroke-width: .5px;
@@ -183,11 +293,7 @@
         display: block;
         height: 0;
         width: 0;
-        margin-top: -.8rem; // negative line height space on font
-
-        @include media( '>medium' ) {
-            margin-top: -1rem; // negative line height space on font
-        }
+        margin-top: -.5rem; // negative line height space on font
     }
 
     &:hover {

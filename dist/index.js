@@ -6676,7 +6676,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
   this.DOM = {};
   this.config = {};
   this.move = {};
-  this.prlxItems = [];
+  this.callback = false;
   this.init(config, viewPortclass);
 };
 
@@ -6773,7 +6773,10 @@ SmoothScroll.prototype = function () {
       } // this.DOM.scroller.style.transform = this.enableSmoothScroll && !this.prevent && `translate3D(${this.config.direction === 'horizontal' ? moveTo : 0}px,${this.config.direction === 'vertical' ? moveTo : 0}px, 0)`;
 
 
-      this.prlxItems && this.prlxItems.update(moveTo);
+      if (typeof this.callback === "function") {
+        this.callback(moveTo, this.move.prev);
+      }
+
       this.move.prev = Math.round(this.move.current);
     } else {
       this.config.ticking = false;
@@ -6822,6 +6825,7 @@ SmoothScroll.prototype = function () {
   /* */
   _preload = function () {
     const medias = [...this.DOM.scroller.querySelectorAll('img, video')];
+    console.log(medias);
     if (medias.length <= 0) return;
     const isPromise = window.Promise ? true : false;
     const loading = isPromise ? [] : null;
@@ -6852,6 +6856,11 @@ SmoothScroll.prototype = function () {
     });
     isPromise && Promise.all(loading).then(values => {
       getSize();
+      this.resize(); // start all function called in initFunc array
+
+      if (this.config.initFunc.length > 0) {
+        this.config.initFunc.forEach(fn => fn());
+      }
     });
   },
 
@@ -6896,6 +6905,7 @@ SmoothScroll.prototype = function () {
       } else {
         sectionData.offset = sectionData.boundrect.left - window.innerWidth * 1.5 - _getTranslate(sectionData.el).x;
         sectionData.limit = sectionData.offset + sectionData.boundrect.width + window.innerWidth * 2;
+        console.log(sectionData.limit);
       } // add section info
 
 
@@ -6950,14 +6960,15 @@ SmoothScroll.prototype = function () {
       speed: config.speed || 1,
       touchSpeed: config.touchSpeed || 1.5,
       jump: config.jump || 110,
-      parallax: config.parallax || false,
+      callback: config.callback || false,
       touch: config.touch || false,
       fixedClass: viewPortclass || false,
       resize: config.resize || true,
       preload: config.preload || true,
       multFirefox: 15,
       scrollMax: 0,
-      ticking: false
+      ticking: false,
+      initFunc: config.initFunc || []
     }; // movement refresh variables
 
     this.move = {
@@ -6977,7 +6988,7 @@ SmoothScroll.prototype = function () {
     this.deviceHasEvents = _deviceDetectEvent();
     this.enableSmoothScroll = !this.deviceHasEvents.touch || this.config.touch; // if parallax, get elements to move
 
-    this.prlxItems = this.config.parallax ? new Parallax() : null; //bind events
+    this.callback = this.config.callback; //bind events
 
     bindEvent.call(this);
   },
@@ -7031,11 +7042,10 @@ SmoothScroll.prototype = function () {
 
   /* */
   destroy = function () {
-    if (this.prlx) {
-      this.prlx = this.prlx.destroy();
-      delete this.prlx;
-    }
-
+    // if (this.prlx) {
+    //     this.prlx = this.prlx.destroy();
+    //     delete this.prlx;
+    // }
     this.unbindEvent.call(this);
 
     for (let prop in this) {
@@ -7063,133 +7073,7 @@ Object.defineProperty(SmoothScroll.prototype, "preventScroll", {
     this.prevent = state;
   }
 });
-},{}],"js/lib/Parallax.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _gsap = require("gsap");
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var _default =
-/*#__PURE__*/
-function () {
-  function _default(container) {
-    _classCallCheck(this, _default);
-
-    this.container = container;
-    this.els = [];
-    this.tl = _gsap.gsap.timeline();
-    this.timer = 0;
-    this.init();
-  }
-
-  _createClass(_default, [{
-    key: "init",
-    value: function init() {
-      this.addElements();
-    } // sur chaque section foreach des éléments 
-
-  }, {
-    key: "addElements",
-    value: function addElements() {
-      var _this = this;
-
-      this.els = this.container.querySelectorAll('[data-parallaxe]');
-      var options = {
-        root: null,
-        rootMargin: "0px"
-      };
-      this.observer = new IntersectionObserver(function (cb) {
-        return _this.isInVew.call(_this, cb);
-      }, options);
-      this.els.forEach(function (el) {
-        _this.observer.observe(el);
-      });
-    } // Chck if element is inview
-    // detectElement () {
-    //     const els = this.sections[y].el.querySelectorAll(`[data-${this.name}]`);
-    // }
-    // intersection observer zone (section et els)
-
-  }, {
-    key: "isInVew",
-    value: function isInVew(entries) {
-      var _this2 = this;
-
-      // récupérer la target pour les éléments visibles
-      console.log(entries);
-      var elements = entries.filter(function (entry) {
-        return entry.isIntersecting === true;
-      }).map(function (entry) {
-        return entry.target;
-      });
-      elements.forEach(function (entry) {
-        return _this2.observer.unobserve(entry);
-      });
-
-      if (elements.length > 0) {
-        // metter un forEach de l'array et changer le timer ddedans
-        elements.forEach(function (element) {
-          // gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
-          if (element.dataset.parallaxe === "img") {
-            _gsap.gsap.to(element, {
-              clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)",
-              duration: 1,
-              delay: _this2.timer,
-              ease: "Power3.easeInOut",
-              onComplete: function onComplete(_) {
-                return _this2.timer -= .2;
-              }
-            });
-          } else {
-            _gsap.gsap.to(element, {
-              autoAlpha: 1,
-              duration: 1,
-              delay: _this2.timer,
-              ease: "Power3.easeInOut",
-              onComplete: function onComplete(_) {
-                return _this2.timer -= .2;
-              }
-            });
-          }
-
-          _this2.timer = _this2.timer + .2;
-        });
-      }
-    }
-  }, {
-    key: "destroy",
-    value: function destroy() {
-      var _this3 = this;
-
-      this.els.forEach(function (el) {
-        return _this3.observer.unobserve(el);
-      });
-      this.observer.disconnect();
-      this.tl.kill();
-
-      for (var prop in this) {
-        if (!Object.prototype.hasOwnProperty.call(this, prop)) continue;
-        this[prop] = null;
-        delete this[prop];
-      }
-    }
-  }]);
-
-  return _default;
-}();
-
-exports.default = _default;
-},{"gsap":"../../node_modules/gsap/index.js"}],"js/modules/Scroll.js":[function(require,module,exports) {
+},{}],"js/modules/Scroll.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7201,11 +7085,17 @@ var _modujs = require("modujs");
 
 var _smoothScrollr = require("smooth-scrollr");
 
-var _Parallax = _interopRequireDefault(require("../lib/Parallax"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _gsap = require("gsap");
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -7223,6 +7113,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+// import Parallax from '../lib/Parallax';
 var _default =
 /*#__PURE__*/
 function (_module) {
@@ -7235,14 +7126,20 @@ function (_module) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
     console.log('start scroll');
+    _this.container = _this.el;
+    _this.els = [];
+    _this.prlxEls = [];
+    _this.tl = _gsap.gsap.timeline(); // this.timer = 0;
+
     return _this;
   }
 
   _createClass(_default, [{
     key: "init",
     value: function init() {
+      this.addElements();
       var opts = {
-        parallax: false,
+        callback: this.parallax.bind(this),
         touch: false,
         delay: .1,
         direction: "horizontal",
@@ -7250,40 +7147,137 @@ function (_module) {
         section: this.el,
         touchSpeed: 2,
         jump: 120
-      }; // this.isActivated = true;
+      };
+      this.scroll = window.innerWidth > 640 ? new _smoothScrollr.SmoothScroll(opts, 'fixedClass') : null;
+    } // detect all elements
 
-      this.parallax = new _Parallax.default(this.el);
-      this.scroll = window.innerWidth > 640 ? new _smoothScrollr.SmoothScroll(opts, 'fixedClass') : null; // this.scroll =  new SmoothScroll(opts, 'fixedClass');
-      // this.bindEvents()
-    } // bindEvents () {
-    //     this.resizeFunc = this.resize.bind(this);
-    //     window.addEventListener('resize', this.resizeFunc, false);
-    // }
-    // resize () {
-    //     if("matchMedia" in window) { 
-    //         if(window.matchMedia("(max-width:640px)").matches) {
-    //             if(this.isActivated === true) {
-    //                 this.destroyScroll();
-    //                 console.log('in')
-    //             }
-    //             this.isActivated = false;
-    //         } else {
-    //             if(this.isActivated === false) {
-    //                 this.init()
-    //             }
-    //             this.isActivated = true;
-    //         }
-    //       }
-    // }
-    // destroyScroll () {
-    //     this.scroll.destroy();
-    // }
+  }, {
+    key: "addElements",
+    value: function addElements() {
+      var _this2 = this;
 
+      this.els = this.container.querySelectorAll('[data-parallaxe]');
+      this.prlxEls = _toConsumableArray(this.container.querySelectorAll('[data-parallaxe="img"]')).map(function (el) {
+        return {
+          el: el,
+          speed: el.dataset.speed || 0,
+          inView: false
+        };
+      });
+      var options = {
+        root: null,
+        rootMargin: "0px"
+      };
+      this.observer = new IntersectionObserver(function (cb) {
+        return _this2.isInVew.call(_this2, cb);
+      }, options);
+      this.els.forEach(function (el) {
+        _this2.observer.observe(el);
+      });
+    }
+  }, {
+    key: "lerp",
+    value: function lerp(start, end, amt) {
+      return (1 - amt) * start + amt * end;
+    }
+  }, {
+    key: "parallax",
+    value: function parallax(moveTo, movePrev) {
+      var _this3 = this;
+
+      if (this.prlxEls.length > 0) {
+        this.prlxEls.forEach(function (prlxEl) {
+          if (prlxEl.inView) {
+            var lerpX = _this3.lerp(movePrev, moveTo, prlxEl.speed); // prlxEl.el.style.transform = `translate3D(${lerpX}px,0,0)`
+
+
+            prlxEl.el.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,".concat(moveTo * prlxEl.speed, ",0,0,1)");
+          }
+        });
+      }
+    } // intersection observer zone (section et els)
+
+  }, {
+    key: "isInVew",
+    value: function isInVew(entries) {
+      var _this4 = this;
+
+      // récupérer la target pour les éléments visibles
+      var elementsIn = entries.filter(function (entry) {
+        return entry.isIntersecting === true;
+      }).map(function (entry) {
+        return entry.target;
+      });
+      var elementsOut = entries.filter(function (entry) {
+        return entry.isIntersecting === false;
+      }).map(function (entry) {
+        return entry.target;
+      });
+      elementsIn.forEach(function (entry) {
+        return _this4.observer.unobserve(entry);
+      }); // --> ATTENTION LE REMETTRE EN DESTROY
+
+      if (elementsIn.length > 0) {
+        // metter un forEach de l'array et changer le timer ddedans
+        elementsIn.forEach(function (element) {
+          if (element.dataset.parallaxe === "img") {
+            _this4.prlxEls.filter(function (prlxEl) {
+              return prlxEl.el === element;
+            }).forEach(function (item) {
+              return item.inView = true;
+            });
+
+            var el = element.querySelector('.js-prlx-img');
+
+            _gsap.gsap.to(el, {
+              clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)",
+              duration: 1,
+              delay: _this4.timer,
+              ease: "Power3.easeInOut",
+              onComplete: function onComplete(_) {
+                return _this4.timer -= .2;
+              }
+            });
+          } else {
+            _gsap.gsap.to(element, {
+              autoAlpha: 1,
+              duration: 1,
+              delay: _this4.timer,
+              ease: "Power3.easeInOut",
+              onComplete: function onComplete(_) {
+                return _this4.timer -= .2;
+              }
+            });
+          }
+
+          _this4.timer = _this4.timer + .8;
+        });
+      }
+
+      if (elementsOut.length > 0) {
+        elementsOut.forEach(function (element) {
+          if (element.dataset.parallaxe === "img") {
+            _this4.prlxEls.filter(function (prlxEl) {
+              return prlxEl.el === element;
+            }).forEach(function (item) {
+              return item.inView = false;
+            });
+          }
+        });
+      }
+    }
   }, {
     key: "destroy",
     value: function destroy() {
+      var _this5 = this;
+
       console.log('end scroll');
-      this.parallax.destroy();
+      this.els.forEach(function (el) {
+        return _this5.observer.unobserve(el);
+      }); //this.observer.disconnect();
+
+      this.tl.kill(); // this.parallax.destroy();
+
       this.scroll && this.scroll.destroy(); // this.destroyScroll();
       // window.removeEventListener('resize', this.resizeFunc, false);
 
@@ -7299,7 +7293,7 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","smooth-scrollr":"../../node_modules/smooth-scrollr/index.js","../lib/Parallax":"js/lib/Parallax.js"}],"js/modules/Home.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","smooth-scrollr":"../../node_modules/smooth-scrollr/index.js","gsap":"../../node_modules/gsap/index.js"}],"js/modules/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7650,7 +7644,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57728" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61560" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

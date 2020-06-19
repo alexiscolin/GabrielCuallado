@@ -432,14 +432,19 @@ a {
 }
 .c-nav_list {
   position: relative;
-  margin: 0;
-  padding: 0 40px;
+  margin: 0 40px;
+  padding: 0;
   z-index: 2;
   list-style: none;
 }
+.c-nav_list:hover > li > a {
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000000;
+}
 @media (min-width: 641px) {
   .c-nav_list {
-    padding: 0 80px;
+    margin: 0 80px;
   }
 }
 .c-nav_mainlist_item_link {
@@ -494,6 +499,21 @@ a {
   display: flex;
   margin-bottom: 1.5rem;
 }
+.c-nav_openlist:hover .c-nav_link {
+  color: #000000 !important;
+}
+.c-nav_openlist:hover .c-nav_link > span::after, .c-nav_openlist:hover .c-nav_link > span::before {
+  transform: scaleX(1);
+}
+.c-nav_openlist:hover .c-nav_link > span > span::after, .c-nav_openlist:hover .c-nav_link > span > span::before {
+  transform: scaleY(1);
+}
+.c-nav_openlist:hover .c-nav_lang {
+  opacity: 0.4;
+}
+.c-nav_openlist:hover .c-nav_openlist_title::before {
+  transform: rotate(180deg);
+}
 .c-nav_openlist_title {
   position: relative;
   font-size: 50px;
@@ -519,6 +539,7 @@ a {
   border-style: solid;
   border-width: 6px 0 6px 8px;
   border-color: transparent transparent transparent #000000;
+  transition: 0.5s ease all;
 }
 .c-nav_openlist_items {
   display: flex;
@@ -533,6 +554,19 @@ a {
   height: 30px;
   background: #000000;
   margin-right: 5px;
+  opacity: 0;
+  transition: 0.5s ease opacity;
+  transition-delay: 0;
+}
+.c-nav_lang:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.c-nav_lang:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.c-nav_lang:hover {
+  transition-delay: 0s !important;
+  opacity: 1 !important;
 }
 .c-nav_lang_link {
   display: flex;
@@ -548,11 +582,65 @@ a {
 }
 
 .c-nav_link {
-  display: inline-block;
+  position: relative;
+  display: block;
+  width: 100%;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   margin: 0.5rem 0;
+  cursor: pointer;
+}
+.c-nav_link > span {
+  position: relative;
+}
+.c-nav_link > span::after, .c-nav_link > span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -0.3rem;
+  width: calc(100% + .6rem);
+  height: 1px;
+  background-color: #000000;
+  transform: scaleX(0);
+  transition: 0.4s ease transform;
+  transform-origin: 0 50%;
+}
+.c-nav_link > span::after {
+  top: initial;
+  bottom: 1rem;
+  transform-origin: 100% 50%;
+}
+.c-nav_link > span > span {
+  position: relative;
+}
+.c-nav_link > span > span::after, .c-nav_link > span > span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -0.2rem;
+  left: 0;
+  height: calc(100% - .6rem);
+  width: 1px;
+  background-color: #000000;
+  transform: scaleY(0);
+  transition: 0.4s ease transform;
+  transform-origin: 50% 0%;
+}
+.c-nav_link > span > span::after {
+  left: initial;
+  right: 0;
+  transform-origin: 50% 100%;
+}
+.c-nav_link:hover {
+  color: #000000 !important;
+}
+.c-nav_link:hover > span::after, .c-nav_link:hover > span::before {
+  transform: scaleX(1);
+}
+.c-nav_link:hover > span > span::after, .c-nav_link:hover > span > span::before {
+  transform: scaleY(1);
 }
 @media (min-width: 641px) {
   .c-nav_link {
@@ -565,12 +653,7 @@ a {
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.8rem;
-}
-@media (min-width: 641px) {
-  .c-nav_link::after {
-    margin-top: -1rem;
-  }
+  margin-top: -0.5rem;
 }
 .c-nav_link:hover {
   color: transparent;
@@ -761,14 +844,14 @@ a {
 
   .c-serie1_img2 {
     position: relative;
-    left: 0;
+    margin-left: 20vw;
     top: -10vh;
     height: 50vh;
   }
 
   .c-serie1_img3 {
     position: relative;
-    left: -5vw;
+    margin-left: 5vw;
     top: 10vh;
     height: 30vh;
   }
@@ -781,6 +864,7 @@ a {
   .c-serie1_img5 {
     position: relative;
     height: 30vh;
+    margin-left: 8vw;
     top: -5vh;
     z-index: 5;
   }
@@ -789,7 +873,7 @@ a {
     position: relative;
     height: 60vh;
     top: 6vh;
-    left: -5vw;
+    margin-left: -15vw;
     z-index: 4;
   }
 }
@@ -820,7 +904,7 @@ a {
   }
 }
 
-[data-parallaxe=img] {
+[data-parallaxe=img] > .js-prlx-img {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 
@@ -1004,6 +1088,7 @@ a {
     height: 2px;
     left: initial;
     top: 50%;
+    right: 0;
     width: 100%;
     border-bottom: dashed 2px white;
     border-left: none;
@@ -1091,13 +1176,13 @@ a {
   }
 }
 .c-timeline:first-child .c-timeline_section_line {
-  height: 52%;
+  height: 50%;
   top: 50%;
 }
 @media (min-width: 641px) {
   .c-timeline:first-child .c-timeline_section_line {
     height: 2px;
-    width: 52%;
+    width: 50%;
     left: 50%;
   }
 }

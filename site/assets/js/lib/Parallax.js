@@ -39,7 +39,7 @@ export default class {
         // récupérer la target pour les éléments visibles
         console.log(entries)
         const elements = entries.filter(entry => (entry.isIntersecting === true)).map(entry => entry.target);
-        elements.forEach(entry => this.observer.unobserve(entry));
+        // elements.forEach(entry => this.observer.unobserve(entry));
 
         if(elements.length > 0) {
             // metter un forEach de l'array et changer le timer ddedans

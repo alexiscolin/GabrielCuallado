@@ -21,13 +21,13 @@
     }
     .c-serie1_img2 {
         position: relative;
-        left: 0;
+        margin-left: 20vw;
         top: -10vh;
         height: 50vh;
     }
     .c-serie1_img3 {
         position: relative;
-        left: -5vw;
+        margin-left: 5vw;
         top: 10vh;
         height: 30vh;
     }
@@ -40,6 +40,7 @@
     .c-serie1_img5 {
         position: relative;
         height: 30vh;
+        margin-left: 8vw;
         top: -5vh;
         z-index: 5;
     }
@@ -47,7 +48,7 @@
         position: relative;
         height: 60vh;
         top: 6vh;
-        left: -5vw;
+        margin-left: -15vw;
         z-index: 4;
     }
 }
