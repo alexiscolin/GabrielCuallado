@@ -2,7 +2,7 @@
 
     <div class="c-nav_title">GABRIEL CUALLADO</div>
     <!-- <div class="c-nav_close">close</div> -->
-
+    <div class="c-nav_wrapper">
     <ul class="c-nav_mainlist c-nav_list">
         <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}"><span><span>Homepage</span></span></a></li>
         <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "serie1" | absLangURL }}"><span><span>Gallery</span></span></a></li>
@@ -54,4 +54,6 @@
             <li class="c-nav_secondlist_item"><a class="c-nav_secondlist_item_link c-nav_link" href="{{.URL | absLangURL}}">{{ .Name }}</a></li>
         {{ end }}
     </ul>
+    </div>
+
 </nav>
