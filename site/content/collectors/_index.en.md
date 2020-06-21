@@ -22,7 +22,7 @@ link = "#"
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
 link = "#"
-[[collector]]
+[[collector]] 
 collectorname = "National library of france (BNF)"
 country = "France"
 link = "#"

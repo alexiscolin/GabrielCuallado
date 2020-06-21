@@ -1,5 +1,5 @@
 +++
-Title = "Collectors"
+Title = "Coleccionistas"
 menu = ["asideAbout"]
 namespace = "collectors"
 [[collector]]

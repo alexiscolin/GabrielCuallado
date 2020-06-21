@@ -1,7 +1,6 @@
 +++
-Title = "Collection"
-menu = [" asideAbout"]
-menuss = ""
+Title = "Collections"
+menu = ["asideAbout"]
 namespace = "collectors"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"

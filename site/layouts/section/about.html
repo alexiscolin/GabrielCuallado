@@ -5,10 +5,12 @@
   <button data-serie="all">All</button>
 </div> -->
 <nav class="c-innernav">
-  <a class="c-innernav_link c-innernav_link--active" href="#">Biography</a>
-  <a class="c-innernav_link" href="#">Publications</a>
-  <a class="c-innernav_link" href="#">Awards</a>
-  <a class="c-innernav_link" href="/collectors">Collections</a>
+  {{- $currentPage := . -}}
+    {{ range .Site.Menus.asideAbout }}
+      {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
+      <a class="c-innernav_link {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    {{ end }}
+ 
 </nav>
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">

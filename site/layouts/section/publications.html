@@ -1,0 +1,68 @@
+
+{{ define "main" }}
+<!-- <div data-module-serie>
+  <button data-serie="one">One</button>
+  <button data-serie="all">All</button>
+</div> -->
+
+<nav class="c-innernav">
+  <a class="c-innernav_link" href="/about">Biography</a>
+  <a class="c-innernav_link" href="#">Publications</a>
+  <a class="c-innernav_link" href="#">Awards</a>
+  <a class="c-innernav_link c-innernav_link--active" href="/collectors">Collections</a>
+</nav>
+
+<div class="c-static">
+  <img class="c-static_pic" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg">
+</div>
+
+  <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
+    <div class="container">
+      {{/* get range data length */}}
+      {{ $len := (len .Params.collector) }}
+
+      {{/* range over data */}}
+      {{ range $i, $v := .Params.collector }}
+
+        {{/* every 3 items (from 1) */}}
+        {{ if modBool $i 3 }}
+
+          {{/* only from 3rd item */}}
+          {{ if ne 0 $i }}
+            {{/* closed tag */}}
+              </ul>
+            </section>
+          {{ end }}
+
+        {{/* open tag */}}
+        <section class="o-section c-section_list js-section" data-scroll-section>
+          <ul class="c-list">
+        {{ end }}
+            <li class="c-list_item">
+              <a class="c-list_link" href="{{ .link }}">
+                <span class="c-list_title u-link">{{ .collectorname }}</span>
+                <div class="c-list_subtitle">{{ .country }}</div>
+              </a>
+            </li>
+
+        {{/* only for last item */}}
+        {{ if eq (sub $len 1) $i }}
+          {{/* closed tag */}}
+            </ul>
+          </section>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <aside id="meta">
+      <div>
+          {{ with .PrevInSection }}
+            <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+          {{ with .NextInSection }}
+            <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+      </div>
+    </aside>
+{{ end }}
