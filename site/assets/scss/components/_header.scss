@@ -49,18 +49,18 @@
         }
         
 
-        &:hover {
-            transform: scale(1.2);
-            // @include font-weight(black);
-        }
+        // &:hover {
+        //     transform: scale(1.2);
+        //     // @include font-weight(black);
+        // }
 
         &:nth-child(1) {
             left: 2vw;
             top: 2vw;
             transform: rotate(-90deg) translate3d(-25%, -50%, 0);
-            &:hover {
-                transform: scale(1.2) rotate(-90deg) translate3d(-25%, -50%, 0);;
-            }
+            // &:hover {
+            //     transform: scale(1.2) rotate(-90deg) translate3d(-25%, -50%, 0);;
+            // }
         }
 
         &:nth-child(3) {

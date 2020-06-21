@@ -18,123 +18,40 @@
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">
-      <section class="o-section c-section_list js-section" data-scroll-section>
-        <ul class="c-list">
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">National library of france (BNF)</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Maison européenne de la photographie</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Center for creative photography of the university of Tuscon Arizona</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="o-section c-section_list js-section" data-scroll-section>
-        <ul class="c-list">
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">National library of france (BNF)</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Maison européenne de la photographie</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Center for creative photography of the university of Tuscon Arizona</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="o-section c-section_list js-section" data-scroll-section>
-        <ul class="c-list">
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">National library of france (BNF)</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Maison européenne de la photographie</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Center for creative photography of the university of Tuscon Arizona</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="o-section c-section_list js-section" data-scroll-section>
-        <ul class="c-list">
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">National library of france (BNF)</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Maison européenne de la photographie</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Center for creative photography of the university of Tuscon Arizona</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="o-section c-section_list js-section" data-scroll-section>
-        <ul class="c-list">
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title">National library of france</span>
-              <span class="c-list_subtitle">France</span>
-            </a>
-          </li>
-        </ul><ul class="c-list">
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">National library of france (BNF)</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Maison européenne de la photographie</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-          <li class="c-list_item">
-            <a class="c-list_link" href="#">
-              <span class="c-list_title u-link">Center for creative photography of the university of Tuscon Arizona</span>
-              <div class="c-list_subtitle">France</div>
-            </a>
-          </li>
-        </ul>
-      </section>
+      {{/* get range data length */}}
+      {{ $len := (len .Params.collector) }}
+
+      {{/* range over data */}}
+      {{ range $i, $v := .Params.collector }}
+
+        {{/* every 3 items (from 1) */}}
+        {{ if modBool $i 3 }}
+
+          {{/* only from 3rd item */}}
+          {{ if ne 0 $i }}
+            {{/* closed tag */}}
+              </ul>
+            </section>
+          {{ end }}
+
+        {{/* open tag */}}
+        <section class="o-section c-section_list js-section" data-scroll-section>
+          <ul class="c-list">
+        {{ end }}
+            <li class="c-list_item">
+              <a class="c-list_link" href="{{ .link }}">
+                <span class="c-list_title u-link">{{ .collectorname }}</span>
+                <div class="c-list_subtitle">{{ .country }}</div>
+              </a>
+            </li>
+
+        {{/* only for last item */}}
+        {{ if eq (sub $len 1) $i }}
+          {{/* closed tag */}}
+            </ul>
+          </section>
+        {{ end }}
+      {{ end }}
     </div>
   </section>
 

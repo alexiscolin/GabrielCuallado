@@ -3,7 +3,51 @@ Title = "Collectors"
 menu = ["asideAbout"]
 namespace = "collectors"
 [[collector]]
-collectorname = "test"
+collectorname = "Center for creative photography of the university of Tuscon Arizona"
+country = "france"
+link = "#"
+[[collector]]
+collectorname = "National library of france (BNF)"
+country = "France"
+link = "#"
+[[collector]]
+collectorname = "Maison européenne de la photographie"
+country = "France"
+link = "#"
+[[collector]]
+collectorname = "Center for creative photography of the university of Tuscon Arizona"
+country = "france"
+link = "#"
+[[collector]]
+collectorname = "Center for creative photography of the university of Tuscon Arizona"
+country = "france"
+link = "#"
+[[collector]]
+collectorname = "National library of france (BNF)"
+country = "France"
+link = "#"
+[[collector]]
+collectorname = "Maison européenne de la photographie"
+country = "France"
+link = "#"
+[[collector]]
+collectorname = "Center for creative photography of the university of Tuscon Arizona"
+country = "france"
+link = "#"
+[[collector]]
+collectorname = "Center for creative photography of the university of Tuscon Arizona"
+country = "france"
+link = "#"
+[[collector]]
+collectorname = "National library of france (BNF)"
+country = "France"
+link = "#"
+[[collector]]
+collectorname = "Maison européenne de la photographie"
+country = "France"
+link = "#"
+[[collector]]
+collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
 link = "#"
 

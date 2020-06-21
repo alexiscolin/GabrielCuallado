@@ -3,7 +3,7 @@
     <ul class="c-header_nav">
         {{ range .Site.Menus.header }}
             <li class="c-header_item c-header_item--about js-header">
-                <a class="c-header_link" href="{{.URL | absLangURL}}">{{ .Name }}</a>
+                <a class="c-header_link" href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a>
             </li>
         {{ end }}
 
