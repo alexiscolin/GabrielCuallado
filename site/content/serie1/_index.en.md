@@ -1,5 +1,5 @@
 +++
-Title = "Gallerie"
+Title = "Gallery"
 menu = ["serie", "header"]
 namespace = "serie"
 +++

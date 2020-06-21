@@ -1,6 +1,6 @@
 +++
 Title = "exhibitions"
-menu = ["main", "header"]
+menu = ["main", "header", "exhibitions"]
 namespace = "exhibitions"
 +++
 

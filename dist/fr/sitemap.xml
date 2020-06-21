@@ -3,154 +3,173 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/fr/</loc>
+    <loc>http://localhost:60457/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:60457/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/"
+                href="http://localhost:60457/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/"
+                href="http://localhost:60457/fr/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/a-propos/</loc>
+    <loc>http://localhost:60457/fr/a-propos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="http://localhost:60457/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/acerca/"
+                href="http://localhost:60457/es/acerca/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/a-propos/"
+                href="http://localhost:60457/fr/a-propos/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/collectors/</loc>
+    <loc>http://localhost:60457/fr/expositions-collectives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/collectors/"
+                href="http://localhost:60457/exhibitions-collective/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/collectors/"
+                href="http://localhost:60457/es/exposiciones-colectivas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/collectors/"
+                href="http://localhost:60457/fr/expositions-collectives/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/contact/</loc>
+    <loc>http://localhost:60457/fr/collectors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/contact/"
+                href="http://localhost:60457/collectors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/contactos/"
+                href="http://localhost:60457/es/collectors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/contact/"
+                href="http://localhost:60457/fr/collectors/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/credits/</loc>
+    <loc>http://localhost:60457/fr/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/credits/"
+                href="http://localhost:60457/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/credits/"
+                href="http://localhost:60457/es/contactos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/credits/"
+                href="http://localhost:60457/fr/contact/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/expositions/</loc>
+    <loc>http://localhost:60457/fr/credits/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/exhibitions/"
+                href="http://localhost:60457/credits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/exhibitions/"
+                href="http://localhost:60457/es/credits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/expositions/"
+                href="http://localhost:60457/fr/credits/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/legal/</loc>
+    <loc>http://localhost:60457/fr/expositions/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/legal/"
+                href="http://localhost:60457/exhibitions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/legal/"
+                href="http://localhost:60457/es/exposiciones/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/legal/"
+                href="http://localhost:60457/fr/expositions/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/serie1/</loc>
+    <loc>http://localhost:60457/fr/serie1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/serie1/"
+                href="http://localhost:60457/serie1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/serie1/"
+                href="http://localhost:60457/es/serie1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/serie1/"
+                href="http://localhost:60457/fr/serie1/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:60457/fr/legal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:60457/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:60457/es/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:60457/fr/legal/"
                 />
   </url>
   

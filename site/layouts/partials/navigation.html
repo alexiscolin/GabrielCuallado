@@ -5,7 +5,7 @@
     <div class="c-nav_wrapper">
     <ul class="c-nav_mainlist c-nav_list">
         <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}"><span><span>Homepage</span></span></a></li>
-        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "serie1" | absLangURL }}"><span><span>Gallery</span></span></a></li>
+        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "serie1" | absLangURL }}"><span><span>{{ i18n "gallery" }}</span></span></a></li>
     {{ range .Site.Menus.main }}
         <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a></li>
     {{ end }}

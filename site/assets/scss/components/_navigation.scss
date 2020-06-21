@@ -311,17 +311,17 @@
     color: color(typography, 2);
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: transparent;
-    transition: text-shadow .4s ease;
+    
     &:hover {
         color: inherit !important;
-        text-shadow: 1px 1px 0 rgb(255,255,255),
-                    -1px -1px 0 rgb(255,255,255),
-                    1px -1px 0 rgb(255,255,255),
-                    -1px 1px 0 rgb(255,255,255),
-                    -1px 0px 0 rgb(255,255,255),
-                    1px 0px 0 rgb(255,255,255),
-                    0px 1px 0 rgb(255,255,255),
-                    0px -1px 0 rgb(255,255,255);
+        text-shadow: .7px .7px 0 rgb(255,255,255),
+                    -.7px -.7px 0 rgb(255,255,255),
+                    .7px -.7px 0 rgb(255,255,255),
+                    -.7px .5px 0 rgb(255,255,255),
+                    -.7px 0px 0 rgb(255,255,255),
+                    .7px 0px 0 rgb(255,255,255),
+                    0px .7px 0 rgb(255,255,255),
+                    0px -.7px 0 rgb(255,255,255);
     }
 
     & > span {

@@ -5,13 +5,17 @@
   <button data-serie="all">All</button>
 </div> -->
   <nav class="c-innernav">
-    <a class="c-innernav_link c-innernav_link--active" href="#">Individual</a>
-    <a class="c-innernav_link" href="#">Collective</a>
+    <!-- <a class="c-innernav_link c-innernav_link--active" href="{{ "/" | absLangURL }}{{ if eq .Lang "es"}}exposiciones{{ else if eq .Lang "fr"}}expositions{{ else }}exhibitions{{end}}">Individual</a> -->
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.exhibitions }}
+      {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
+      <a class="c-innernav_link {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    {{ end }}
   </nav>
   
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">
-      {{ range .Params.exhibition }}
+      {{ range .Params.exhibition  }}
       <section class="o-section c-timeline js-section" data-scroll-section>
         <div class="c-timeline_section">
 
