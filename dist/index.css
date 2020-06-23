@@ -1082,6 +1082,9 @@ a {
     text-align: left;
   }
 }
+.c-list--centered {
+  justify-content: center;
+}
 .c-list_item {
   list-style: none;
   margin: 2vh 2vh;
@@ -1102,9 +1105,20 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.c-list_title--under {
+  text-transform: initial;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
 .c-list_subtitle {
   font-size: 26px;
   font-weight: 300;
+}
+.c-list_date {
+  font-size: 80px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.05em;
 }
 
 .u-link {

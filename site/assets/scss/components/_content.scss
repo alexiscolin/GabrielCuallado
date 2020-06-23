@@ -172,6 +172,10 @@
     @include media( '>medium' ) {
         height: 40vh;
         text-align: left;
+    }
+
+    &--centered {
+        justify-content: center;
 
     }
 
@@ -194,10 +198,21 @@
         @include font-weight(bold);
         text-transform: uppercase;
         letter-spacing: 2px;
+        &--under {
+            text-transform: initial;
+            @include font-weight(medium);
+            margin-bottom: .8rem;
+        }
     }
     &_subtitle {
         font-size: 26px;
         @include font-weight(light);
+    }
+    &_date {
+        font-size: 80px;
+        @include font-weight(bold);
+        font-style: italic;
+        letter-spacing: .05em;
     }
 }
 

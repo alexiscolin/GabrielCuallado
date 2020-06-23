@@ -13,6 +13,12 @@
 			<span class="c-loader__title c-loader__title--outlined" id="js-loader-title-out">GABRIEL CUALLADO</span> 
 			-->
 			<div class="c-main_pic">
+				{{/* test iteration sur gallery -> marche pas -> type ?? */}}
+				{{ $paginator := .Paginate (where .Data.Pages "Type" "gallery") }}
+				{{ range $paginator.Pages }}
+					
+				{{ end }}
+
 				<img class="c-main_pic_img js-hp-img" src="/img/hp/F0191-AUTORRETRATO.jpg" alt="">
 			</div>
 

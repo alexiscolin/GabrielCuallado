@@ -6,28 +6,29 @@
 </div> -->
 
 <nav class="c-innernav">
-  <a class="c-innernav_link" href="/about">Biography</a>
-  <a class="c-innernav_link" href="#">Publications</a>
-  <a class="c-innernav_link" href="#">Awards</a>
-  <a class="c-innernav_link c-innernav_link--active" href="/collectors">Collections</a>
+  {{- $currentPage := . -}}
+    {{ range .Site.Menus.asideAbout }}
+      {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
+      <a class="c-innernav_link {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    {{ end }}
 </nav>
 
 <div class="c-static">
-  <img class="c-static_pic" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg">
+  <img class="c-static_pic" src="{{ .Params.background }}">
 </div>
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">
       {{/* get range data length */}}
-      {{ $len := (len .Params.collector) }}
+      {{ $len := (len .Params.award) }}
 
-      {{/* range over data */}}
-      {{ range $i, $v := .Params.collector }}
+      {{/* range over data by date  */}}
+      {{ range $i, $v := sort .Params.award "date" "desc"}}
 
-        {{/* every 3 items (from 1) */}}
-        {{ if modBool $i 3 }}
+        {{/* every 1 item (from 1) */}}
+        {{ if modBool $i 1 }}
 
-          {{/* only from 3rd item */}}
+          {{/* only from 1st item */}}
           {{ if ne 0 $i }}
             {{/* closed tag */}}
               </ul>
@@ -36,13 +37,13 @@
 
         {{/* open tag */}}
         <section class="o-section c-section_list js-section" data-scroll-section>
-          <ul class="c-list">
+          <ul class="c-list c-list--centered">
         {{ end }}
             <li class="c-list_item">
-              <a class="c-list_link" href="{{ .link }}">
-                <span class="c-list_title u-link">{{ .collectorname }}</span>
-                <div class="c-list_subtitle">{{ .country }}</div>
-              </a>
+              <div class="c-list_date">{{ dateFormat "2006" .date }}</div>
+              <div class="c-list_title">{{ .name }}</div>
+              <div class="c-list_title c-list_title--under">{{ .from }}</div>
+              <div class="c-list_subtitle">{{ .country }}</div>
             </li>
 
         {{/* only for last item */}}

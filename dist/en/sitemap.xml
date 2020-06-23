@@ -22,6 +22,25 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/gallery/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/gallery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/gallery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/gallery/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -155,21 +174,21 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/serie1/</loc>
+    <loc>http://localhost:1313/gallery/serie1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/serie1/"
+                href="http://localhost:1313/es/gallery/serie1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/serie1/"
+                href="http://localhost:1313/fr/gallery/serie1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/serie1/"
+                href="http://localhost:1313/gallery/serie1/"
                 />
   </url>
   
@@ -208,6 +227,25 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/publications/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/gallery/serie2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/gallery/serie2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/gallery/serie2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/gallery/serie2/"
                 />
   </url>
   

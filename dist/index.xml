@@ -9,5 +9,23 @@
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Gallery</title>
+      <link>http://localhost:1313/gallery/serie1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/gallery/serie1/</guid>
+      <description>Série</description>
+    </item>
+    
+    <item>
+      <title>Serie 2</title>
+      <link>http://localhost:1313/gallery/serie2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/gallery/serie2/</guid>
+      <description>Série</description>
+    </item>
+    
   </channel>
 </rss>

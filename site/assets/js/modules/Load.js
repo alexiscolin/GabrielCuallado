@@ -7,7 +7,8 @@ import { serieView, serieTransition } from '../router/serie.js';
 import { aboutView, aboutTransition } from '../router/about.js';
 import { exhibitionsView, exhibitionsTransition } from '../router/exhibition.js';
 import { collectorsView, collectorsTransition } from '../router/collectors.js';
-
+import { awardsView, awardsTransition } from '../router/awards.js';
+import { publicationsView, publicationsTransition } from '../router/publications.js';
 
 export default class extends module {
     constructor(m) {
@@ -18,14 +19,18 @@ export default class extends module {
             homepageView, 
             aboutView, 
             exhibitionsView, 
-            collectorsView
+            collectorsView,
+            awardsView,
+            publicationsView
         ];
         this.loadedTransition = [
             serieTransition, 
             homepageTransition, 
             aboutTransition, 
             exhibitionsTransition,
-            collectorsTransition
+            collectorsTransition,
+            awardsTransition,
+            publicationsTransition
         ]
         this.views = [];
         this.transitions = [];

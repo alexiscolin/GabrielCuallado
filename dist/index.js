@@ -6515,6 +6515,128 @@ var collectorsTransition = {
   }
 };
 exports.collectorsTransition = collectorsTransition;
+},{"gsap":"../../node_modules/gsap/index.js"}],"js/router/awards.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.awardsTransition = exports.awardsView = void 0;
+
+var _gsap = require("gsap");
+
+var awardsView = {
+  namespace: 'awards',
+  beforeEnter: function beforeEnter(data) {
+    console.log('hello awards barba');
+  },
+  afterEnter: function afterEnter(data) {
+    console.log('haha');
+  }
+};
+exports.awardsView = awardsView;
+var awardsTransition = {
+  name: 'awards-transition',
+  leave: function leave(_ref) {
+    var current = _ref.current,
+        next = _ref.next,
+        trigger = _ref.trigger;
+    return new Promise(function (resolve) {
+      _gsap.gsap.to(current.container, {
+        autoAlpha: 0,
+        duration: .6,
+        onComplete: function onComplete() {
+          resolve();
+        }
+      });
+    });
+  },
+  enter: function enter(_ref2) {
+    var current = _ref2.current,
+        next = _ref2.next,
+        trigger = _ref2.trigger;
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  once: function once(_ref3) {
+    var current = _ref3.current,
+        next = _ref3.next,
+        trigger = _ref3.trigger;
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  to: {
+    namespace: ['awards']
+  }
+};
+exports.awardsTransition = awardsTransition;
+},{"gsap":"../../node_modules/gsap/index.js"}],"js/router/publications.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.publicationsTransition = exports.publicationsView = void 0;
+
+var _gsap = require("gsap");
+
+var publicationsView = {
+  namespace: 'publications',
+  beforeEnter: function beforeEnter(data) {
+    console.log('hello awards barba');
+  },
+  afterEnter: function afterEnter(data) {
+    console.log('haha');
+  }
+};
+exports.publicationsView = publicationsView;
+var publicationsTransition = {
+  name: 'publications-transition',
+  leave: function leave(_ref) {
+    var current = _ref.current,
+        next = _ref.next,
+        trigger = _ref.trigger;
+    return new Promise(function (resolve) {
+      _gsap.gsap.to(current.container, {
+        autoAlpha: 0,
+        duration: .6,
+        onComplete: function onComplete() {
+          resolve();
+        }
+      });
+    });
+  },
+  enter: function enter(_ref2) {
+    var current = _ref2.current,
+        next = _ref2.next,
+        trigger = _ref2.trigger;
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  once: function once(_ref3) {
+    var current = _ref3.current,
+        next = _ref3.next,
+        trigger = _ref3.trigger;
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  to: {
+    namespace: ['publications']
+  }
+};
+exports.publicationsTransition = publicationsTransition;
 },{"gsap":"../../node_modules/gsap/index.js"}],"js/modules/Load.js":[function(require,module,exports) {
 "use strict";
 
@@ -6536,6 +6658,10 @@ var _about = require("../router/about.js");
 var _exhibition = require("../router/exhibition.js");
 
 var _collectors = require("../router/collectors.js");
+
+var _awards = require("../router/awards.js");
+
+var _publications = require("../router/publications.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6568,8 +6694,8 @@ function (_module) {
     _classCallCheck(this, _default);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    _this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView];
-    _this.loadedTransition = [_serie.serieTransition, _homepage.homepageTransition, _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition];
+    _this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView];
+    _this.loadedTransition = [_serie.serieTransition, _homepage.homepageTransition, _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition];
     _this.views = [];
     _this.transitions = [];
     return _this;
@@ -6654,7 +6780,7 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","@barba/core":"../../node_modules/@barba/core/dist/barba.umd.js","../router/homepage.js":"js/router/homepage.js","../router/serie.js":"js/router/serie.js","../router/about.js":"js/router/about.js","../router/exhibition.js":"js/router/exhibition.js","../router/collectors.js":"js/router/collectors.js"}],"../../node_modules/smooth-scrollr/index.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","@barba/core":"../../node_modules/@barba/core/dist/barba.umd.js","../router/homepage.js":"js/router/homepage.js","../router/serie.js":"js/router/serie.js","../router/about.js":"js/router/about.js","../router/exhibition.js":"js/router/exhibition.js","../router/collectors.js":"js/router/collectors.js","../router/awards.js":"js/router/awards.js","../router/publications.js":"js/router/publications.js"}],"../../node_modules/smooth-scrollr/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7507,7 +7633,143 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","gsap":"../../node_modules/gsap/index.js"}],"js/modules.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","gsap":"../../node_modules/gsap/index.js"}],"js/modules/Awards.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _modujs = require("modujs");
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var _default =
+/*#__PURE__*/
+function (_module) {
+  _inherits(_default, _module);
+
+  function _default(m) {
+    var _this;
+
+    _classCallCheck(this, _default);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
+    _this.events = {
+      click: {
+        button: 'doSomething'
+      }
+    };
+    return _this;
+  }
+
+  _createClass(_default, [{
+    key: "init",
+    value: function init() {
+      console.log('hello awards');
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      console.log('end awards');
+    }
+  }, {
+    key: "doSomething",
+    value: function doSomething() {
+      console.log('Hello awards');
+    }
+  }]);
+
+  return _default;
+}(_modujs.module);
+
+exports.default = _default;
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js"}],"js/modules/Publications.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _modujs = require("modujs");
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var _default =
+/*#__PURE__*/
+function (_module) {
+  _inherits(_default, _module);
+
+  function _default(m) {
+    var _this;
+
+    _classCallCheck(this, _default);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
+    _this.events = {
+      click: {
+        button: 'doSomething'
+      }
+    };
+    return _this;
+  }
+
+  _createClass(_default, [{
+    key: "init",
+    value: function init() {
+      console.log('hello publications');
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      console.log('end publications');
+    }
+  }, {
+    key: "doSomething",
+    value: function doSomething() {
+      console.log('Hello publications');
+    }
+  }]);
+
+  return _default;
+}(_modujs.module);
+
+exports.default = _default;
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js"}],"js/modules.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7543,6 +7805,18 @@ Object.defineProperty(exports, "Navigation", {
     return _Navigation.default;
   }
 });
+Object.defineProperty(exports, "Awards", {
+  enumerable: true,
+  get: function () {
+    return _Awards.default;
+  }
+});
+Object.defineProperty(exports, "Publications", {
+  enumerable: true,
+  get: function () {
+    return _Publications.default;
+  }
+});
 
 var _Load = _interopRequireDefault(require("./modules/Load"));
 
@@ -7554,8 +7828,12 @@ var _Serie = _interopRequireDefault(require("./modules/Serie"));
 
 var _Navigation = _interopRequireDefault(require("./modules/Navigation"));
 
+var _Awards = _interopRequireDefault(require("./modules/Awards"));
+
+var _Publications = _interopRequireDefault(require("./modules/Publications"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./modules/Load":"js/modules/Load.js","./modules/Scroll":"js/modules/Scroll.js","./modules/Home":"js/modules/Home.js","./modules/Serie":"js/modules/Serie.js","./modules/Navigation":"js/modules/Navigation.js"}],"index.js":[function(require,module,exports) {
+},{"./modules/Load":"js/modules/Load.js","./modules/Scroll":"js/modules/Scroll.js","./modules/Home":"js/modules/Home.js","./modules/Serie":"js/modules/Serie.js","./modules/Navigation":"js/modules/Navigation.js","./modules/Awards":"js/modules/Awards.js","./modules/Publications":"js/modules/Publications.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./scss/main.scss");
@@ -7644,7 +7922,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59407" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59253" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
