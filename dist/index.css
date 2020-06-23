@@ -306,8 +306,11 @@ a {
   .o-section {
     display: inline-flex;
     flex-direction: row;
-    padding: 0 8vw;
+    padding: 0;
     height: 100vh;
+  }
+  .o-section:first-child {
+    padding-left: 10vw;
   }
 }
 
@@ -683,7 +686,7 @@ a {
 }
 .c-header_link:hover {
   color: inherit !important;
-  text-shadow: 0.7px 0.7px 0 white, -0.7px -0.7px 0 white, 0.7px -0.7px 0 white, -0.7px 0.5px 0 white, -0.7px 0px 0 white, 0.7px 0px 0 white, 0px 0.7px 0 white, 0px -0.7px 0 white;
+  text-shadow: 0.7px 0.7px 0 white, -0.7px -0.7px 0 white, 0.7px -0.7px 0 white, -0.7px 0.7px 0 white, -0.7px 0px 0 white, 0.7px 0px 0 white, 0px 0.7px 0 white, 0px -0.7px 0 white;
 }
 .c-header_link > span::after, .c-header_link > span::before {
   background-color: #FFFFFF;

@@ -13,7 +13,7 @@
   </nav>
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
-    <div class="container" data->
+    <div class="container">
       <!-- <section class="o-section js-section" data-scroll-section>
         <div class="c-container c-serie1_img1" data-parallaxe="img" data-speed="-.1">
           <img class="o-img js-prlx-img" src="/img/asturias/F0467-PEPE-LUIS.jpg" >
@@ -45,7 +45,46 @@
           <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span>
         </div>
       </section> -->
-      <section class="o-section js-section" data-scroll-section>
+
+
+          {{/* get range data length */}}
+          {{ $len := (len .Params.photos) }}
+    
+          {{/* range over data */}}
+          {{ range $i, $v := .Params.photos }}
+    
+            {{/* every 3 items (from 1) */}}
+            {{ if modBool $i 3 }}
+    
+              {{/* only from 3rd item */}}
+              {{ if ne 0 $i }}
+                {{/* closed tag */}}
+                </section>
+              {{ end }}
+    
+            {{/* open tag */}}
+            <section class="o-section js-section" data-scroll-section>
+            {{ end }}
+
+                <div class="c-container c-serie1_img{{ $i }}" data-parallaxe="img" data-speed="{{ .speed }}">
+                  <img class="o-img js-prlx-img" src="{{ .image }}" >
+                  <span class="c-serie_def">{{ .name }}</span class="c-serie_def">
+                </div>
+    
+            {{/* only for last item */}}
+            {{ if eq (sub $len 1) $i }}
+              {{/* closed tag */}}
+              </section>
+            {{ end }}
+          {{ end }}
+        </div>
+      </section>
+
+
+
+
+
+      <!-- <section class="o-section js-section" data-scroll-section>
         <div class="c-container c-serie1_img1" data-parallaxe="img" data-speed="-.1">
           <img class="o-img js-prlx-img" src="/img/sofia/6.jpg" >
           <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span class="c-serie_def">
@@ -75,7 +114,7 @@
           <img class="o-img js-prlx-img" src="/img/sofia/11.jpg">
           <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span>
         </div>
-      </section>
+      </section> -->
     </div>
   </section>
 

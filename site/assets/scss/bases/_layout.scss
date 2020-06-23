@@ -38,8 +38,13 @@ a {
     @include media( '>medium' ) {
         display: inline-flex;
         flex-direction: row;
-        padding: 0 8vw;
+        // padding: 0 8vw;
+        padding: 0;
         height: 100vh;
+
+        &:first-child {
+            padding-left: 10vw;
+        }
     }
 }
 
