@@ -41,3 +41,5 @@ fields:
     description: Ville, Pays
     config:
       required: true
+pages:
+- site/content/awards/_index.fr.md
