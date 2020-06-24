@@ -11,10 +11,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 identifier = "Individual"
                 name = "Individual"
                 url = "/exhibitions/"
+                weight = 1
             [[languages.en.menu.exhibitions]]
                 identifier = "Collective"
                 name = "Collective"
                 url = "/exhibitions-collective/"
+                weight = 2
 
 
     [languages.es]
@@ -24,10 +26,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 identifier = "esIndividual"
                 name = "Individuales"
                 url = "/es/exhibitions/"
+                weight = 1
             [[languages.es.menu.exhibitions]]
                 identifier = "esCollective"
                 name = "Colectivas"
                 url = "/es/exhibitions-collective/" 
+                weight = 2
 
     [languages.fr]
         weight = 3
@@ -36,8 +40,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 identifier = "frIndividual"
                 name = "Individuelles"
                 url = "/fr/exhibitions/"
+                weight = 1
             [[languages.fr.menu.exhibitions]]
                 identifier = "frCollective"
                 name = "Collectives"
                 url = "/fr/exhibitions-collective/" 
+                weight = 2
         
