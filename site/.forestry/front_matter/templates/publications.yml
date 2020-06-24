@@ -4,7 +4,15 @@ hide_body: false
 fields:
 - type: text
   name: Title
-  label: Title
+  label: Titre de la page
+  description: Visible sur le menu latéral
+- name: menu
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: menu
 - type: text
   name: namespace
   label: namespace
@@ -14,16 +22,30 @@ fields:
   fields:
   - type: text
     name: title
-    label: title
+    label: Titre de la publication
   - type: text
     name: logo
-    label: logo
+    label: Logo du média
+    description: lien vers le logo du média ayant rédigé l'article ou affiché la vidéo
   - type: text
     name: image
-    label: image
-  - type: text
-    name: type
-    label: type
+    label: Image d'illustration
+  - name: type
+    type: select
+    default: article
+    config:
+      required: true
+      options:
+      - video
+      - article
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: type de publication
+    description: la publication est-elle une vidéo ou un article ?
   - type: text
     name: link
-    label: link
+    label: Lien de publication
+    description: url externe vers la publication (https://www...)
