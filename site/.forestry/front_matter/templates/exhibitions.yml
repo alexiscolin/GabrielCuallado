@@ -49,7 +49,9 @@ fields:
     min: 
     max: 
     labelField: 
-  label: exhibition
+  label: Expositions
+  description: Ajoutez ici les différentes expositions avant de remplir les champs
+    en cliquant sur l'onglet créé
 - name: url
   type: text
   config:
