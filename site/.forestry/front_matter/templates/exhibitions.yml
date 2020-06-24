@@ -65,4 +65,5 @@ fields:
   hidden: true
 pages:
 - site/content/exhibitions-collective/_index.en.md
+- site/content/exhibitions-collective/_index.fr.md
 - site/content/exhibitions/_index.fr.md
