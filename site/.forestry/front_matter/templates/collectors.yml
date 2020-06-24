@@ -8,6 +8,12 @@ fields:
     required: false
   label: Nom de la page
   description: Titre de page
+- name: background
+  type: text
+  config:
+    required: false
+  label: Image de fond de page
+  description: Lien vers l'image statique au fond de la page
 - name: collector
   type: field_group_list
   fields:
