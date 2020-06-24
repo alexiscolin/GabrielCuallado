@@ -7,7 +7,6 @@ sections:
 - type: document
   path: site/content/publications/_index.en.md
   label: Publications
-  match: "**/*"
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
 - type: directory
@@ -74,14 +73,12 @@ sections:
 - type: document
   path: site/content/exhibitions-collective/_index.en/md
   label: 'Collective exhibitions '
-  match: "**/*"
 - type: document
   path: site/content/about/_index.en.md
   label: About
 - type: document
   path: site/content/awards/_index.en.md
   label: Awards
-  match: "**/*"
 - type: document
   path: site/content/collectors/_index.en.md
   label: Collectors
