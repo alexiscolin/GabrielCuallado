@@ -1,7 +1,7 @@
 +++
 Title = "Prix"
 background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
-menu = ["blabla", "asideAbout"]
+menu = ["asideAbout"]
 namespace = "awards"
 [[award]]
 country = "Madrid, Espagne"
