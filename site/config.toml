@@ -6,9 +6,38 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [languages]
     [languages.en]
         weight = 1
+        [languages.en.menu]
+            [[languages.en.menu.exhibitions]]
+                identifier = "Individual"
+                name = "Individual"
+                url = "/exhibitions/"
+            [[languages.en.menu.exhibitions]]
+                identifier = "Collective"
+                name = "Collective"
+                url = "/exhibitions-collective/"
+
 
     [languages.es]
         weight = 2
+        [languages.es.menu]
+            [[languages.es.menu.exhibitions]]
+                identifier = "esIndividual"
+                name = "Individuales"
+                url = "/es/exhibitions/"
+            [[languages.es.menu.exhibitions]]
+                identifier = "esCollective"
+                name = "Colectivas"
+                url = "/es/exhibitions-collective/" 
 
     [languages.fr]
         weight = 3
+        [languages.fr.menu]
+            [[languages.fr.menu.exhibitions]]
+                identifier = "frIndividual"
+                name = "Individuelles"
+                url = "/fr/exhibitions/"
+            [[languages.fr.menu.exhibitions]]
+                identifier = "frCollective"
+                name = "Collectives"
+                url = "/fr/exhibitions-collective/" 
+        

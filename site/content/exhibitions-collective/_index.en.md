@@ -1,7 +1,6 @@
 +++
 Title = "collective"
 layout = "exhibitions"
-menu = ["main", "header"]
 namespace = "exhibitions"
 url = ""
 [[exhibition]]

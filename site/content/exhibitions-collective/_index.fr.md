@@ -1,7 +1,6 @@
 +++
 Title = "collectif"
 layout = "exhibitions"
-menu = ["main", "header"]
 namespace = "exhibitions"
 url = "/fr/expositions-collectives"
 [[exhibition]]

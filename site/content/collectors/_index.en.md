@@ -2,6 +2,8 @@
 Title = "Collectors"
 menu = ["asideAbout"]
 namespace = "collectors"
+background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
+
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"

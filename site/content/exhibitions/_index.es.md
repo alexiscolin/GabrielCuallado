@@ -1,7 +1,7 @@
 +++
 Title = "Exposiciones"
 namespace = "exhibitions"
-menu = ["main", "header", "exhibitions"]
+menu = ["main", "header"]
 url = "/es/exposiciones"
 [[exhibition]]
 type = "individual"

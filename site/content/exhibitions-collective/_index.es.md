@@ -1,6 +1,5 @@
 +++
 Title = "collective"
-menu = ["exhibitions"]
 namespace = "exhibitions"
 url = "/es/exposiciones-colectivas"
 layout = "exhibitions"
