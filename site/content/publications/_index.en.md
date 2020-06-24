@@ -6,7 +6,7 @@ namespace = "publications"
 image = ""
 link = "#"
 logo = ""
-title = "Center for creative photography of the university of Tuscon Arizona"
+title = "Publication 1"
 type = "video"
 [[publication]]
 image = ""
