@@ -44,3 +44,5 @@ fields:
     - serie
   label: menu
   hidden: false
+pages:
+- site/content/gallery/serie2.fr.md

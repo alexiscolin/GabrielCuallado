@@ -3,41 +3,41 @@ Title = "Serie 2"
 menu = ["serie"]
 namespace = "serie"
 [[photos]]
-name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/6.jpg"
-speed= "-.1"
 link = "#"
-[[photos]]
 name = "El Rastro"
+speed = "-.1"
+[[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/7.jpg"
-speed= ".2"
 link = "#"
-[[photos]]
 name = "El Rastro"
+speed = ".2"
+[[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/8.jpg"
-speed = ".4"
 link = "#"
-[[photos]]
 name = "El Rastro"
+speed = ".4"
+[[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/9.jpg"
-speed = ".2"
 link = "#"
-[[photos]]
 name = "El Rastro"
+speed = ".2"
+[[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/10.jpg"
-speed = ".26"
 link = "#"
-[[photos]]
 name = "El Rastro"
+speed = ".26"
+[[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/11.jpg"
-speed = ".26"
 link = "#"
-+++
+name = "El Rastro"
+speed = ".26"
 
++++
 Série
