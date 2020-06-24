@@ -2,53 +2,46 @@
 Title = "Publicaciones"
 menu = ["asideAbout"]
 namespace = "publications"
-[[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+image = ""
+type = "video"
 link = "#"
-[[collector]]
-collectorname = "National library of france (BNF)"
-country = "France"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+type = "article"
 link = "#"
-[[collector]]
-collectorname = "Maison européenne de la photographie"
-country = "France"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+type = "video"
+image = ""
 link = "#"
-[[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+type = "video"
+image = ""
 link = "#"
-[[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+image = ""
+type = "article"
 link = "#"
-[[collector]]
-collectorname = "National library of france (BNF)"
-country = "France"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+type = "video"
+image = ""
 link = "#"
-[[collector]]
-collectorname = "Maison européenne de la photographie"
-country = "France"
-link = "#"
-[[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
-link = "#"
-[[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
-link = "#"
-[[collector]]
-collectorname = "National library of france (BNF)"
-country = "France"
-link = "#"
-[[collector]]
-collectorname = "Maison européenne de la photographie"
-country = "France"
-link = "#"
-[[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
+[[publication]]
+title = "Center for creative photography of the university of Tuscon Arizona"
+logo = ""
+type = "video"
+image = ""
 link = "#"
 
 +++

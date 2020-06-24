@@ -3,3 +3,9 @@ other = "About"
 
 [gallery]
 other = "Gallery"
+
+[readArticle]
+other = "Read the article"
+
+[watchVideo]
+other = "Watch the video"

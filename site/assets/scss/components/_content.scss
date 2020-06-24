@@ -176,10 +176,37 @@
 
     &--centered {
         justify-content: center;
+    }
 
+    &--horizontal {
+        @include media( '>medium' ) {
+            flex-flow: row nowrap;
+
+            & .c-list_item:nth-child(1){
+                top: 5vw;
+            }
+            & .c-list_item:nth-child(2){
+                top: -5vw;
+            }
+            & .c-list_item:nth-child(3){
+                top: 2vw;
+            }
+            & .c-list_item:nth-child(4){
+                top: -6vw;
+            }
+
+            &_infos {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                bottom: 2vw;
+            }
+        }
     }
 
     &_item {
+        position: relative;
         list-style: none;
         margin: 2vh 2vh;
         @include media( '>medium' ) {
@@ -187,10 +214,69 @@
         }
     }
 
+    &_logo {
+        width: auto;
+        max-width: 20vw;
+        display: none;
+        @include media( '>medium' ) {
+            display: block;
+            max-width: 8vw;
+            margin-right: 2vw;
+        }
+    }
+    &_image {
+        position: relative;
+        & > img {
+            max-width: 80vw;
+            @include media( '>medium' ) {
+                position: relative;
+                max-width: 35vw;
+            }
+        }
+
+        &--player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                transform: translateX(10%);
+                border-style: solid;
+                border-width: 25px 0 25px 43.3px;
+                border-color: transparent transparent transparent #ffffff;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100px;
+                height: 100px;
+                border: 5px solid white;
+                border-radius: 100%;
+                z-index: 99;
+            }
+        }
+    }
+
     &_link {
         text-decoration: none;
         display: block;
         flex-direction: column;
+        align-items: flex-start;
+
+        &--horizontal {
+            margin-bottom: 10vw;
+            @include media( '>medium' ) {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                margin-right: 6vw;
+            }
+        }
     }
 
     &_title {
@@ -202,6 +288,17 @@
             text-transform: initial;
             @include font-weight(medium);
             margin-bottom: .8rem;
+        }
+
+        &--cite {
+            font-size: 35px;
+            text-transform: initial;
+            font-style: italic;
+            @include font-weight(light);
+
+            @include media( '>medium' ) {
+                margin: 0;
+            }
         }
     }
     &_subtitle {

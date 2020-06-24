@@ -3,3 +3,9 @@ other = "A propos"
 
 [gallery]
 other = "Galerie"
+
+[readArticle]
+other = "Lire l'article"
+
+[watchVideo]
+other = "Regarder la vidéo"
