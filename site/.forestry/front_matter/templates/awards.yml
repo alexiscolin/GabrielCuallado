@@ -1,6 +1,6 @@
 ---
 label: Awards
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: Title
@@ -13,6 +13,14 @@ fields:
 - type: file
   name: background
   label: Image de fond de page
+- name: menu
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Menu
+  hidden: true
 - type: field_group_list
   name: award
   label: Liste des prix
