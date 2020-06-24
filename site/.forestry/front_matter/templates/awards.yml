@@ -42,4 +42,5 @@ fields:
     config:
       required: true
 pages:
+- site/content/awards/_index.es.md
 - site/content/awards/_index.fr.md
