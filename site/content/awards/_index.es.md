@@ -10,7 +10,7 @@ from = "Ministère de la culture"
 name = "Nartional Photography Award"
 [[award]]
 country = "Madrid, Espagne"
-date = "1999-01-31T23:00:00+00:00"
+date = "1998-01-31T23:00:00+00:00"
 from = "Ministère de la culture"
 name = "Nartional Photography Award"
 [[award]]
