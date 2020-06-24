@@ -37,7 +37,8 @@ fields:
     label: link
 - name: menu
   type: tag_list
-  default: []
+  default:
+  - serie
   label: menu
 pages:
 - site/content/gallery/serie2.fr.md
