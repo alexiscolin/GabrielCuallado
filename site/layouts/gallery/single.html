@@ -6,11 +6,17 @@
 </div> -->
 
   <nav class="c-innernav">
-    <a class="c-innernav_link c-innernav_link--active" href="#">Séries 1</a>
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.serie }}
+      {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
+      <a class="c-innernav_link {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    {{ end }}
+</nav>
+    <!-- <a class="c-innernav_link c-innernav_link--active" href="#">Séries 1</a>
     <a class="c-innernav_link" href="#">Séries 2</a>
     <a class="c-innernav_link" href="#">Séries 3</a>
     <a class="c-innernav_link" href="#">Séries 4</a>
-  </nav>
+  </nav> -->
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">

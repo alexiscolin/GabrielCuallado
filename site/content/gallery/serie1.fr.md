@@ -1,6 +1,6 @@
 +++
-Title = "Galerie"
-menu = ["serie", "header"]
+Title = "El Rastro"
+menu = ["serie"]
 namespace = "serie"
 [[photos]]
 name = "El Rastro"

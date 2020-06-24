@@ -6,7 +6,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [languages]
     [languages.en]
         weight = 1
+
         [languages.en.menu]
+            [[languages.en.menu.header]]
+                identifier = "Gallery"
+                name = "Gallery"
+                url = "/gallery/serie1/"
             [[languages.en.menu.exhibitions]]
                 identifier = "Individual"
                 name = "Individual"
@@ -22,6 +27,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     [languages.es]
         weight = 2
         [languages.es.menu]
+            [[languages.es.menu.header]]
+                identifier = "Galeria"
+                name = "Galeria"
+                url = "/es/gallery/serie1/"
             [[languages.es.menu.exhibitions]]
                 identifier = "esIndividual"
                 name = "Individuales"
@@ -36,6 +45,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     [languages.fr]
         weight = 3
         [languages.fr.menu]
+            [[languages.fr.menu.header]]
+                identifier = "Galerie"
+                name = "Galerie"
+                url = "/fr/gallery/serie1/"
             [[languages.fr.menu.exhibitions]]
                 identifier = "frIndividual"
                 name = "Individuelles"

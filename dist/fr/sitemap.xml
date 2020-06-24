@@ -136,25 +136,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/fr/expositions/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/exhibitions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/exposiciones/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/expositions/"
-                />
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/fr/gallery/serie1/</loc>
     <xhtml:link
                 rel="alternate"
@@ -170,6 +151,25 @@
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/gallery/serie1/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/fr/expositions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/exhibitions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/exposiciones/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/expositions/"
                 />
   </url>
   
