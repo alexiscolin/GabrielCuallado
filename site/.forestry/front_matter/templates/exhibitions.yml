@@ -62,4 +62,5 @@ fields:
   label: menu
   hidden: true
 pages:
+- site/content/exhibitions-collective/_index.en.md
 - site/content/exhibitions/_index.fr.md
