@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Nom de la page
-  description: Nom de la page
+  description: Visible dans le menu latéral et le menu général
 - name: pagetitle
   type: text
   config:
