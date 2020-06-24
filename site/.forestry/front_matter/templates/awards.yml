@@ -13,6 +13,13 @@ fields:
 - type: file
   name: background
   label: Image de fond de page
+- name: menu
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Menu
 - type: field_group_list
   name: award
   label: Liste des prix
