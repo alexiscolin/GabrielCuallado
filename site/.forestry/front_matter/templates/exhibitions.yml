@@ -7,7 +7,8 @@ fields:
   config:
     required: false
   label: Nom de la page
-  description: Visible dans le menu général
+  description: Visible dans le menu latéral
+  hidden: true
 - name: exhibition
   type: field_group_list
   fields:
