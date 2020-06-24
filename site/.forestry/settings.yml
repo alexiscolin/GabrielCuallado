@@ -65,11 +65,11 @@ sections:
   match: "**/[!_]*.en.md"
   new_doc_ext: en.md
 - type: document
-  path: site/content/exhibitions/_index.en.md
-  label: Individual exhibitions
-- type: document
   path: site/content/exhibitions-collective/_index.en/md
   label: 'Collective exhibitions '
+- type: document
+  path: site/content/exhibitions/_index.en.md
+  label: Individual exhibitions
 - type: document
   path: site/content/about/_index.en.md
   label: About
