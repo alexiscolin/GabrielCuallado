@@ -1,0 +1,29 @@
+---
+label: Awards
+hide_body: false
+fields:
+- type: text
+  name: Title
+  label: Title
+- type: text
+  name: namespace
+  label: namespace
+- type: file
+  name: background
+  label: background
+- type: field_group_list
+  name: award
+  label: award
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: datetime
+    name: date
+    label: date
+  - type: text
+    name: from
+    label: from
+  - type: text
+    name: country
+    label: country
