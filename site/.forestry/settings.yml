@@ -8,7 +8,7 @@ sections:
   label: "Français \U0001F1EB\U0001F1F7"
 - type: directory
   path: site/content/gallery
-  label: Série
+  label: Galerie
   create: all
   match: "**/[!_]*.fr.md"
   new_doc_ext: fr.md
@@ -18,7 +18,6 @@ sections:
 - type: document
   path: site/content/exhibitions-collective/_index.fr.md
   label: Expositions collectives
-  match: "**/*"
 - type: document
   path: site/content/about/_index.fr.md
   label: A Propos
@@ -28,12 +27,17 @@ sections:
 - type: document
   path: site/content/publications/_index.fr.md
   label: Publications
-  match: "**/*"
 - type: document
   path: site/content/collectors/_index.fr.md
   label: Collections
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
+- type: directory
+  path: site/content/gallery
+  label: Galeria
+  create: all
+  match: "**/[!_]*.es.md"
+  new_doc_ext: ".es.md"
 - type: document
   path: site/content/about/_index.es.md
   label: Acerca
@@ -45,6 +49,12 @@ sections:
   label: Colección
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
+- type: directory
+  path: site/content/gallery
+  label: Gallery
+  create: all
+  match: "**/[!_]*.en.md"
+  new_doc_ext: ".en.md"
 - type: document
   path: site/content/about/_index.en.md
   label: About
