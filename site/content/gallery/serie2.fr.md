@@ -1,6 +1,6 @@
 +++
 Title = "Pueblo"
-menu = ["serie"]
+menu = "serie"
 namespace = "serie"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
