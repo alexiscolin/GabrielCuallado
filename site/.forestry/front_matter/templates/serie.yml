@@ -27,14 +27,21 @@ fields:
     label: Date de la photo
     config:
       required: true
+  - name: speed
+    type: number
+    label: Vitesse
+    description: Vitesse de parallaxe
+    default: 1
+    required: true
+    config:
+      min: -3
+      max: 3
+      step: 
   - type: file
     name: image
     label: Photo
     config:
       maxSize: 1
-  - type: text
-    name: link
-    label: link
 - name: menu
   type: tag_list
   default:
