@@ -6,13 +6,14 @@ fields:
   name: Title
   label: Titre de la page
   description: Visible dans le menu latéral
+- type: file
+  name: background
+  label: Image de fond de page
+  description: Lien vers l'image statique au fond de la page
 - type: text
   name: namespace
   label: namespace
   hidden: true
-- type: file
-  name: background
-  label: Image de fond de page
 - name: menu
   type: list
   config:
