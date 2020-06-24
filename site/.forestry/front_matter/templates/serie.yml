@@ -1,26 +1,34 @@
 ---
 label: Serie
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: Title
-  label: Title
+  label: Titre de la série
+  description: Visible sur le menu latéral
 - type: text
   name: namespace
   label: namespace
+  hidden: true
 - type: field_group_list
   name: photos
   label: photos
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom de la photo
+    config:
+      required: true
   - type: datetime
     name: date
-    label: date
+    label: Date de la photo
+    config:
+      required: true
   - type: file
     name: image
     label: image
+    config:
+      maxSize: 1
   - type: text
     name: link
     label: link
