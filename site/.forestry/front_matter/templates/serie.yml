@@ -10,6 +10,9 @@ fields:
   name: namespace
   label: namespace
   hidden: true
+  default: serie
+  config:
+    required: true
 - type: field_group_list
   name: photos
   label: photos
