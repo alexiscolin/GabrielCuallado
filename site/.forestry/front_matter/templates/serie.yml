@@ -32,3 +32,15 @@ fields:
   - type: text
     name: link
     label: link
+- name: menu
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+    options:
+    - serie
+  label: menu
+  hidden: false
