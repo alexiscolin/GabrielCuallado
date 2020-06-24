@@ -1,5 +1,5 @@
 +++
-Title = "Serie 2"
+Title = "Pueblo"
 menu = ["serie"]
 namespace = "serie"
 [[photos]]
