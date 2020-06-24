@@ -37,6 +37,12 @@ fields:
       maxSize: 64
     label: illustration
     description: Illustration de l'exposition
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Lien vers l'exposition
+    description: Url externe vers l'exposition
   config:
     min: 
     max: 
