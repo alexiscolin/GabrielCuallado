@@ -30,7 +30,7 @@ fields:
   - name: logo
     type: file
     config:
-      maxSize: 64
+      maxSize: 0.1
     label: Logo du média
     description: Logo du média ayant rédigé l'article ou publié la vidéo
   - name: image
