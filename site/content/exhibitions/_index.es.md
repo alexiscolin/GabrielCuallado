@@ -1,27 +1,36 @@
 +++
 Title = "Exposiciones"
-namespace = "exhibitions"
 menu = ["main", "header"]
+namespace = "exhibitions"
 url = "/es/exposiciones"
 [[exhibition]]
-type = "individual"
 date = "2019-01-31T23:00:00+00:00"
+illustration = ""
+link = ""
 name = "“Cuallado Essential” La Pedrera"
 place = "Barcellone"
+type = "individual"
 [[exhibition]]
 date = "2018-01-31T23:00:00+00:00"
-type = "individual"
+illustration = ""
+link = ""
 name = "“Cuallado Essentiel”, Salle Canal Isabel II, Communauté Autonome de Madrid"
 place = "Barcelonne"
+type = "individual"
 [[exhibition]]
 date = "2017-01-31T23:00:00+00:00"
-type = "individual"
+illustration = ""
+link = ""
 name = "“Cuallado Essentiel”, Salle Canal Isabel II, Communauté Autonome de Madrid"
 place = "Barcelonne"
+type = "individual"
 [[exhibition]]
 date = "2015-01-31T23:00:00+00:00"
-type = "individual"
+illustration = ""
+link = ""
 name = "“Cuallado Essential” La Pedrera"
 place = "Barcellone"
+type = "individual"
+
 +++
 exhibitions contenu es
