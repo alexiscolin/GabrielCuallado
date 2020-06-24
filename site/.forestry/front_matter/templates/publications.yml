@@ -13,9 +13,11 @@ fields:
     min: 
     max: 
   label: menu
+  hidden: true
 - type: text
   name: namespace
   label: namespace
+  hidden: true
 - type: field_group_list
   name: publication
   label: publication
@@ -23,12 +25,18 @@ fields:
   - type: text
     name: title
     label: Titre de la publication
-  - type: text
-    name: logo
+    config:
+      required: true
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
     label: Logo du média
-    description: lien vers le logo du média ayant rédigé l'article ou affiché la vidéo
-  - type: text
-    name: image
+    description: Logo du média ayant rédigé l'article ou publié la vidéo
+  - name: image
+    type: file
+    config:
+      maxSize: 0.6
     label: Image d'illustration
   - name: type
     type: select
