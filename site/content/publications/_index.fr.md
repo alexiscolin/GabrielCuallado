@@ -3,45 +3,47 @@ Title = "Publications"
 menu = ["asideAbout"]
 namespace = "publications"
 [[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
-logo = ""
 image = ""
-type = "video"
 link = "#"
-[[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
 logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
+type = "video"
+[[publication]]
+image = ""
+link = "#"
+logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
 type = "article"
-link = "#"
 [[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
+image = ""
+link = "#"
 logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
 type = "video"
+[[publication]]
 image = ""
 link = "#"
-[[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
 logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
 type = "video"
+[[publication]]
 image = ""
 link = "#"
-[[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
 logo = ""
-image = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
 type = "article"
-link = "#"
 [[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
-logo = ""
-type = "video"
 image = ""
 link = "#"
-[[publication]]
-title = "Center for creative photography of the university of Tuscon Arizona"
 logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
 type = "video"
+[[publication]]
 image = ""
 link = "#"
+logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
+type = "video"
+
 +++
 About contenu en
