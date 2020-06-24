@@ -10,8 +10,8 @@ sections:
   path: site/content/gallery
   label: Série
   create: all
-  match: "**/*"
-  new_doc_ext: ".fr.md"
+  match: "**/[!_]*.md"
+  new_doc_ext: fr.md
 - type: document
   path: site/content/about/_index.fr.md
   label: A Propos
