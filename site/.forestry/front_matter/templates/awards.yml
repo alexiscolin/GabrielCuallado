@@ -4,26 +4,40 @@ hide_body: false
 fields:
 - type: text
   name: Title
-  label: Title
+  label: Titre de la page
+  description: Visible dans le menu latéral
 - type: text
   name: namespace
   label: namespace
+  hidden: true
 - type: file
   name: background
-  label: background
+  label: Image de fond de page
 - type: field_group_list
   name: award
-  label: award
+  label: Liste des prix
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom du prix
+    config:
+      required: true
   - type: datetime
     name: date
-    label: date
+    label: Date du prix
+    config:
+      date_format: YYYY
+      required: true
+    default: now
   - type: text
     name: from
-    label: from
+    label: 'Établissement '
+    description: Organisme qui a décerné le prix
+    config:
+      required: true
   - type: text
     name: country
-    label: country
+    label: Lieu
+    description: Ville, Pays
+    config:
+      required: true
