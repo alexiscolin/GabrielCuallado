@@ -1,9 +1,8 @@
 +++
 Title = "Collectors"
+background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
 menu = ["asideAbout"]
 namespace = "collectors"
-background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
-
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
@@ -24,7 +23,7 @@ link = "#"
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
 link = "#"
-[[collector]] 
+[[collector]]
 collectorname = "National library of france (BNF)"
 country = "France"
 link = "#"
@@ -54,5 +53,4 @@ country = "france"
 link = "#"
 
 +++
-
 About contenu en
