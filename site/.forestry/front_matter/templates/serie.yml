@@ -1,0 +1,26 @@
+---
+label: Serie
+hide_body: false
+fields:
+- type: text
+  name: Title
+  label: Title
+- type: text
+  name: namespace
+  label: namespace
+- type: field_group_list
+  name: photos
+  label: photos
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: datetime
+    name: date
+    label: date
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: link
+    label: link
