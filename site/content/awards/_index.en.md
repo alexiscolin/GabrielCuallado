@@ -2,6 +2,7 @@
 Title = "Awards"
 background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
 namespace = "awards"
+menu = ["asideAbout"]
 [[award]]
 country = "Madrid, Espagne"
 date = "2002-01-31T23:00:00+00:00"
