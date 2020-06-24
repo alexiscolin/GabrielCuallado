@@ -11,13 +11,17 @@ sections:
   label: Série
   create: all
   match: "**/[!_]*.fr.md"
-  new_doc_ext: ".fr.md"
+  new_doc_ext: fr.md
+- type: document
+  path: site/content/exhibitions/_index.fr.md
+  label: Expositions
 - type: document
   path: site/content/about/_index.fr.md
   label: A Propos
 - type: document
-  path: site/content/exhibitions/_index.fr.md
-  label: Expositions
+  path: site/content/awards/_index.fr.md
+  label: Prix
+  match: "**/*"
 - type: document
   path: site/content/collectors/_index.fr.md
   label: Collections
