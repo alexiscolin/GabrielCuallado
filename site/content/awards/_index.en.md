@@ -62,6 +62,4 @@ country = "Madrid, Espagne"
 date = "2002-01-31T23:00:00+00:00"
 from = "Ministère de la culture"
 name = "Nartional Photography Award"
-
 +++
-About contenu en
