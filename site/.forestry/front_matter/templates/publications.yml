@@ -50,5 +50,6 @@ fields:
     label: Lien de publication
     description: url externe vers la publication (https://www...)
 pages:
+- site/content/publications/_index.en.md
 - site/content/publications/_index.es.md
 - site/content/publications/_index.fr.md
