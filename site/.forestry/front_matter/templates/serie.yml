@@ -36,17 +36,8 @@ fields:
     name: link
     label: link
 - name: menu
-  type: select
-  default: serie
-  config:
-    required: true
-    options:
-    - serie
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
+  type: tag_list
+  default: []
   label: menu
 pages:
 - site/content/gallery/serie2.fr.md
