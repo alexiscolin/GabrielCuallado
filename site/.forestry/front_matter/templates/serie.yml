@@ -33,16 +33,17 @@ fields:
     name: link
     label: link
 - name: menu
-  type: list
+  type: select
+  default: serie
   config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: simple
+    required: true
     options:
     - serie
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: menu
-  hidden: false
 pages:
 - site/content/gallery/serie2.fr.md
