@@ -37,13 +37,25 @@ sections:
   label: Galeria
   create: all
   match: "**/[!_]*.es.md"
-  new_doc_ext: ".es.md"
+  new_doc_ext: es.md
 - type: document
   path: site/content/about/_index.es.md
   label: Acerca
 - type: document
   path: site/content/exhibitions/_index.es.md
-  label: Exhibitiones
+  label: " Exposiciones individuales"
+- type: document
+  path: site/content/exhibitions-collective/_index.es.md
+  label: " Exposiciones públicas"
+  match: "**/*"
+- type: document
+  path: site/content/awards/_index.es.md
+  label: Premios
+  match: "**/*"
+- type: document
+  path: site/content/publications/_index.es.md
+  label: Publicaciones
+  match: "**/*"
 - type: document
   path: site/content/collectors/_index.es.md
   label: Colección
@@ -54,7 +66,7 @@ sections:
   label: Gallery
   create: all
   match: "**/[!_]*.en.md"
-  new_doc_ext: ".en.md"
+  new_doc_ext: en.md
 - type: document
   path: site/content/about/_index.en.md
   label: About
