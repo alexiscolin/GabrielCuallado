@@ -68,7 +68,7 @@ sections:
   path: site/content/exhibitions/_index.en.md
   label: Individual exhibitions
 - type: document
-  path: site/content/exhibitions-collective/_index.en/md
+  path: site/content/exhibitions-collective/_index.en.md
   label: 'Collective exhibitions '
 - type: document
   path: site/content/about/_index.en.md
