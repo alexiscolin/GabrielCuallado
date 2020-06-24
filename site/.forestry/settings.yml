@@ -14,13 +14,20 @@ sections:
   new_doc_ext: fr.md
 - type: document
   path: site/content/exhibitions/_index.fr.md
-  label: Expositions
+  label: Expositions individuelles
+- type: document
+  path: site/content/exhibitions-collective/_index.fr.md
+  label: Expositions collectives
+  match: "**/*"
 - type: document
   path: site/content/about/_index.fr.md
   label: A Propos
 - type: document
   path: site/content/awards/_index.fr.md
   label: Prix
+- type: document
+  path: site/content/publications/_index.fr.md
+  label: Publications
   match: "**/*"
 - type: document
   path: site/content/collectors/_index.fr.md
