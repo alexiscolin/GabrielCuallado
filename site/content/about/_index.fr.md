@@ -31,5 +31,13 @@ template = "about-text"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit."
 title = ""
 top = 0
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085596/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-3_gzo5bl.jpg"
+left = 0
+template = "about-image"
+top = 0
 
 +++
