@@ -1,8 +1,13 @@
 +++
 Title = "Premios"
-background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
-menu = ["asideAbout"]
+background = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
+menu = []
 namespace = "awards"
+[[award]]
+country = "paris"
+date = "2021-06-25T09:04:51+00:00"
+from = "balbla"
+name = "test de prix"
 [[award]]
 country = "Madrid, Espagne"
 date = "2004-01-31T23:00:00+00:00"
