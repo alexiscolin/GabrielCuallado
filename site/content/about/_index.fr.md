@@ -34,6 +34,6 @@ top = nil
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085596/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-3_gzo5bl.jpg"
 template = "about-link"
-url = "https://google.fr"
+url = "https://www.google.fr"
 
 +++
