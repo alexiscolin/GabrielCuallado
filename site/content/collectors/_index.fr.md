@@ -1,6 +1,6 @@
 +++
 Title = "Collections"
-background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
+background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085604/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-132_dt5yp9.jpg"
 namespace = "collectors"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
@@ -18,5 +18,6 @@ link = "#"
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
 link = "#"
+
 +++
 About contenu en
