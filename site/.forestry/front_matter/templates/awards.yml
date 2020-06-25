@@ -14,14 +14,6 @@ fields:
   name: namespace
   label: namespace
   hidden: true
-- name: menu
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Menu
-  hidden: true
 - type: field_group_list
   name: award
   label: Liste des prix
