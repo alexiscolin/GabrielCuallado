@@ -8,6 +8,7 @@ fields:
     required: false
   label: Nom de la page
   description: Titre de page
+  hidden: true
 - name: background
   type: text
   config:
