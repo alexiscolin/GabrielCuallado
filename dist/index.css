@@ -560,9 +560,14 @@ a {
   height: 30px;
   background: #000000;
   margin-right: 5px;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s ease opacity;
   transition-delay: 0;
+}
+@media (min-width: 641px) {
+  .c-nav_lang {
+    opacity: 0;
+  }
 }
 .c-nav_lang:nth-child(2) {
   transition-delay: 0.1s;
