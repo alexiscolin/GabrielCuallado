@@ -14,5 +14,11 @@ fields:
   name: typeform
   label: Script Typeform
   description: 'URL A trouver dans le code généré par Typeform (format : https://form.typeform.com/to/P8Aal4DD)'
+- name: url
+  type: text
+  config:
+    required: false
+  label: url
+  hidden: true
 pages:
 - site/content/contact/_index.fr.md
