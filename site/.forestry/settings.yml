@@ -59,6 +59,10 @@ sections:
 - type: document
   path: site/content/collectors/_index.es.md
   label: Colección
+- type: document
+  path: site/content/contact/_index.es.md
+  label: Contactos
+  match: "**/*"
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: directory
@@ -85,6 +89,10 @@ sections:
 - type: document
   path: site/content/collectors/_index.en.md
   label: Collectors
+- type: document
+  path: site/content/contact/_index.en.md
+  label: Contact
+  match: "**/*"
 upload_dir: ''
 public_path: https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60
 front_matter_path: ''
