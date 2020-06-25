@@ -91,6 +91,10 @@ sections:
 - type: document
   path: site/content/contact/_index.en.md
   label: Contact
+- type: document
+  path: site/data/en/links.toml
+  label: Nav Links
+  match: "**/*"
 upload_dir: ''
 public_path: https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60
 front_matter_path: ''
