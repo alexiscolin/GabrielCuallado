@@ -1293,6 +1293,7 @@ a:hover .u-link::after {
   height: 50vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 641px) {
   .c-timeline_section {
@@ -1338,13 +1339,11 @@ a:hover .u-link::after {
     right: initial;
   }
 }
-.c-timeline_date:hover ~ .c-timeline_img {
+.c-timeline_link:hover .c-timeline_img {
   opacity: 1;
 }
 .c-timeline_name {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   top: 60%;
   max-width: 50%;
   right: 10%;
@@ -1363,22 +1362,18 @@ a:hover .u-link::after {
     transform: translate3d(0, -50%, 0);
   }
 }
-.c-timeline_name:hover ~ .c-timeline_img {
-  opacity: 1;
-}
 .c-timeline_name_place {
   font-size: 20px;
   font-weight: 300;
 }
 .c-timeline_img {
   position: absolute;
-  transform: translate3d(-40%, -50%, 0);
-  max-width: 50%;
-  left: 50%;
-  top: 65%;
   opacity: 0.4;
   transition: opacity 1s ease;
   z-index: 1;
+}
+.c-timeline_img > img {
+  max-width: 50%;
 }
 .c-timeline_point {
   position: absolute;

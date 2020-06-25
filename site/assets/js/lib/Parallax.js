@@ -37,7 +37,6 @@ export default class {
     // intersection observer zone (section et els)
     isInVew (entries) {
         // récupérer la target pour les éléments visibles
-        console.log(entries)
         const elements = entries.filter(entry => (entry.isIntersecting === true)).map(entry => entry.target);
         // elements.forEach(entry => this.observer.unobserve(entry));
 

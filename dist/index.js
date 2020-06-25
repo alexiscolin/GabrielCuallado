@@ -7043,7 +7043,6 @@ SmoothScroll.prototype = function () {
   /* */
   _preload = function () {
     const medias = [...this.DOM.scroller.querySelectorAll('img, video')];
-    console.log(medias);
     if (medias.length <= 0) return;
     const isPromise = window.Promise ? true : false;
     const loading = isPromise ? [] : null;
@@ -7346,6 +7345,7 @@ function (_module) {
     console.log('start scroll');
     _this.container = _this.el;
     _this.els = [];
+    _this.windowWidth = window.innerWidth;
     _this.prlxEls = [];
     _this.tl = _gsap.gsap.timeline(); // this.timer = 0;
 
@@ -7355,7 +7355,8 @@ function (_module) {
   _createClass(_default, [{
     key: "init",
     value: function init() {
-      this.addElements();
+      console.log('inininininini'); //this.addElements() --> dans le preload
+
       var opts = {
         callback: this.parallax.bind(this),
         touch: false,
@@ -7364,135 +7365,145 @@ function (_module) {
         speed: .9,
         section: this.el,
         touchSpeed: 2,
-        jump: 120
+        jump: 120,
+        initFunc: [this.addElements.bind(this), this.parallax.bind(this, 1)]
       };
-      this.scroll = window.innerWidth > 640 ? new _smoothScrollr.SmoothScroll(opts, 'fixedClass') : null;
+
+      if (window.innerWidth > 640) {
+        this.scroll = new _smoothScrollr.SmoothScroll(opts, 'fixedClass');
+        this.parallax(1);
+      } else {
+        this.scroll = null;
+      }
     } // detect all elements
 
   }, {
     key: "addElements",
     value: function addElements() {
-      var _this2 = this;
+      console.log('blabal'); // this.els = this.container.querySelectorAll('[data-parallaxe]');
 
-      this.els = this.container.querySelectorAll('[data-parallaxe]');
-      this.prlxEls = _toConsumableArray(this.container.querySelectorAll('[data-parallaxe="img"]')).map(function (el) {
+      this.els = _toConsumableArray(this.container.querySelectorAll('[data-parallaxe]')).map(function (el) {
         return {
           el: el,
           speed: el.dataset.speed || 0,
-          inView: false
+          inView: false,
+          // every view
+          isView: false,
+          // first view
+          left: el.getBoundingClientRect().left,
+          right: el.getBoundingClientRect().left + el.getBoundingClientRect().width,
+          initLeft: el.getBoundingClientRect().left,
+          initRight: el.getBoundingClientRect().left + el.getBoundingClientRect().width
         };
-      });
-      var options = {
-        root: null,
-        rootMargin: "0px"
-      };
-      this.observer = new IntersectionObserver(function (cb) {
-        return _this2.isInVew.call(_this2, cb);
-      }, options);
-      this.els.forEach(function (el) {
-        _this2.observer.observe(el);
-      });
-    }
-  }, {
-    key: "lerp",
-    value: function lerp(start, end, amt) {
-      return (1 - amt) * start + amt * end;
+      }); // this.prlxEls.forEach(el => {           
+      //     const canvas = el.el.querySelector('.js-prlx-canvas')
+      //     console.log(canvas)
+      // });
+      // const options = {
+      //     root: null,
+      //     rootMargin: "0px"
+      // };
+      // this.observer = new IntersectionObserver(cb => this.isInVew.call(this, cb), options);
+      // this.els.forEach(el => {
+      //     this.observer.observe(el);
+      // })
     }
   }, {
     key: "parallax",
     value: function parallax(moveTo, movePrev) {
-      var _this3 = this;
+      var _this2 = this;
 
-      if (this.prlxEls.length > 0) {
-        this.prlxEls.forEach(function (prlxEl) {
-          if (prlxEl.inView) {
-            var lerpX = _this3.lerp(movePrev, moveTo, prlxEl.speed); // prlxEl.el.style.transform = `translate3D(${lerpX}px,0,0)`
+      // scroll level / viewport
+      var scrollLeft = Math.abs(moveTo);
+      var scrollRight = scrollLeft + this.windowWidth;
 
+      if (this.els.length > 0) {
+        this.els.forEach(function (prlxEl) {
+          if (prlxEl.right > scrollLeft && prlxEl.left < scrollRight) {
+            if (prlxEl.isView === false) {
+              if (prlxEl.el.dataset.parallaxe === "img") {
+                var el = prlxEl.el.querySelector('.js-prlx-img');
+                console.log(el); // const effect = prlxEl.el.querySelector('feDisplacementMap')
+                // const grey = prlxEl.el.querySelector('feColorMatrix')
+                // gsap.to(grey, {attr:{values : "1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"}, duration: 1.5, ease: "Power3.easeInOut"})
 
-            prlxEl.el.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,".concat(moveTo * prlxEl.speed, ",0,0,1)");
+                _gsap.gsap.to(el, {
+                  clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)",
+                  duration: 1,
+                  delay: _this2.timer,
+                  ease: "Power3.easeInOut",
+                  onComplete: function onComplete(_) {
+                    return _this2.timer -= .2;
+                  }
+                }); // gsap.to(effect, {attr:{scale : 0}, duration: 1.5, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => el.setAttribute('filter',  'none')});
+
+              } else {
+                var _el = prlxEl.el;
+
+                _gsap.gsap.to(_el, {
+                  autoAlpha: 1,
+                  duration: 1,
+                  delay: _this2.timer,
+                  ease: "Power3.easeInOut",
+                  onComplete: function onComplete(_) {
+                    return _this2.timer -= .2;
+                  }
+                });
+              }
+
+              prlxEl.isView = true;
+            }
+
+            prlxEl.inView = true;
+          } else {
+            prlxEl.inView = false;
+          }
+
+          if (prlxEl.inView && prlxEl.el.dataset.parallaxe === "img") {
+            var dir = (prlxEl.initLeft - scrollRight) * prlxEl.speed;
+            prlxEl.el.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,".concat(dir, ",0,0,1)");
+            prlxEl.right = prlxEl.el.getBoundingClientRect().left + prlxEl.el.getBoundingClientRect().width + scrollLeft;
+            prlxEl.left = prlxEl.el.getBoundingClientRect().left + scrollLeft;
           }
         });
       }
     } // intersection observer zone (section et els)
+    // isInVew (entries) {
+    //     // récupérer la target pour les éléments visibles
+    //     const elementsIn = entries.filter(entry => (entry.isIntersecting === true)).map(entry => entry.target);
+    //     const elementsOut = entries.filter(entry => (entry.isIntersecting === false)).map(entry => entry.target);
+    //     elementsIn.forEach(entry => this.observer.unobserve(entry)); // --> ATTENTION LE REMETTRE EN DESTROY
+    //     if(elementsIn.length > 0) {
+    //         // metter un forEach de l'array et changer le timer ddedans
+    //         elementsIn.forEach(element => {
+    //             if(element.dataset.parallaxe === "img") {
+    //                 this.prlxEls.filter(prlxEl => prlxEl.el === element).forEach(item => {
+    //                     // item.el.style.transform = `matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,${(item.left - 0) * item.speed },0,0,1)`;
+    //                     return item.inView = true
+    //                 }); 
+    //                 const el = element.querySelector('.js-prlx-img');
+    //                 gsap.to(el, {clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+    //             } else {
+    //                 gsap.to(element, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+    //             }
+    //             this.timer = this.timer + .8;
+    //         })
+    //     }
+    //     if(elementsOut.length > 0) {
+    //         elementsOut.forEach(element => {
+    //             if(element.dataset.parallaxe === "img") {
+    //                 this.prlxEls.filter(prlxEl => prlxEl.el === element).forEach(item => item.inView = false);   
+    //             }
+    //         });
+    //     }
+    // }
 
-  }, {
-    key: "isInVew",
-    value: function isInVew(entries) {
-      var _this4 = this;
-
-      // récupérer la target pour les éléments visibles
-      var elementsIn = entries.filter(function (entry) {
-        return entry.isIntersecting === true;
-      }).map(function (entry) {
-        return entry.target;
-      });
-      var elementsOut = entries.filter(function (entry) {
-        return entry.isIntersecting === false;
-      }).map(function (entry) {
-        return entry.target;
-      });
-      elementsIn.forEach(function (entry) {
-        return _this4.observer.unobserve(entry);
-      }); // --> ATTENTION LE REMETTRE EN DESTROY
-
-      if (elementsIn.length > 0) {
-        // metter un forEach de l'array et changer le timer ddedans
-        elementsIn.forEach(function (element) {
-          if (element.dataset.parallaxe === "img") {
-            _this4.prlxEls.filter(function (prlxEl) {
-              return prlxEl.el === element;
-            }).forEach(function (item) {
-              return item.inView = true;
-            });
-
-            var el = element.querySelector('.js-prlx-img');
-
-            _gsap.gsap.to(el, {
-              clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)",
-              duration: 1,
-              delay: _this4.timer,
-              ease: "Power3.easeInOut",
-              onComplete: function onComplete(_) {
-                return _this4.timer -= .2;
-              }
-            });
-          } else {
-            _gsap.gsap.to(element, {
-              autoAlpha: 1,
-              duration: 1,
-              delay: _this4.timer,
-              ease: "Power3.easeInOut",
-              onComplete: function onComplete(_) {
-                return _this4.timer -= .2;
-              }
-            });
-          }
-
-          _this4.timer = _this4.timer + .8;
-        });
-      }
-
-      if (elementsOut.length > 0) {
-        elementsOut.forEach(function (element) {
-          if (element.dataset.parallaxe === "img") {
-            _this4.prlxEls.filter(function (prlxEl) {
-              return prlxEl.el === element;
-            }).forEach(function (item) {
-              return item.inView = false;
-            });
-          }
-        });
-      }
-    }
   }, {
     key: "destroy",
     value: function destroy() {
-      var _this5 = this;
-
       console.log('end scroll');
-      this.els.forEach(function (el) {
-        return _this5.observer.unobserve(el);
-      }); //this.observer.disconnect();
+      console.log('end bla'); //this.els.forEach(el => this.observer.unobserve(el));
+      //this.observer.disconnect();
 
       this.tl.kill(); // this.parallax.destroy();
 
@@ -7713,7 +7724,6 @@ function (_module) {
   }, {
     key: "toogleNav",
     value: function toogleNav() {
-      console.log(this);
       this.isOpen = !this.isOpen;
 
       _gsap.gsap.to(this.menu, {
@@ -7732,8 +7742,6 @@ function (_module) {
         background: this.isOpen ? '#000' : '#FFF',
         duration: .5
       });
-
-      console.log(this.menuToogle);
     }
   }, {
     key: "destroy",
@@ -8118,7 +8126,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52557" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50698" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
