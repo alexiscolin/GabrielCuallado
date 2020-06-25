@@ -36,7 +36,6 @@ sections:
 - type: document
   path: site/data/fr/links.toml
   label: Nav Links
-  match: "**/*"
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: directory
@@ -69,7 +68,6 @@ sections:
 - type: document
   path: site/data/es/links.toml
   label: Nav Links
-  match: "**/*"
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: directory
