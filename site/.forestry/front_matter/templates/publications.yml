@@ -53,6 +53,12 @@ fields:
     description: url externe vers la publication (https://www...)
     config:
       required: true
+- name: url
+  type: text
+  config:
+    required: false
+  label: url
+  hidden: true
 pages:
 - site/content/publications/_index.en.md
 - site/content/publications/_index.es.md
