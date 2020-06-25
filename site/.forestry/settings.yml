@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: heading
@@ -107,11 +107,10 @@ use_front_matter_path:
 file_template: ":filename:"
 build:
   preview_env:
-  - HUGO_ENV=staging
   - HUGO_VERSION=0.63.2
   preview_output_directory: dist
   install_dependencies_command: npm install
-  preview_docker_image: forestryio/hugo:latest
+  preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm start

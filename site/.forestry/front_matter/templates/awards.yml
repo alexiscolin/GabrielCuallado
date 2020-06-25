@@ -43,6 +43,12 @@ fields:
     description: Ville, Pays
     config:
       required: true
+- name: url
+  type: text
+  config:
+    required: false
+  label: url
+  hidden: true
 pages:
 - site/content/awards/_index.en.md
 - site/content/awards/_index.es.md
