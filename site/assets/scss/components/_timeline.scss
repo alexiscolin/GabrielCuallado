@@ -37,7 +37,7 @@
     &_date {
         position: absolute;
         top: 50%;
-        right: 5%;
+        right: 19%;
         transform: translate3d(-50%, -50%, 0);
         font-size: 90px;
         font-style: italic;
@@ -51,11 +51,10 @@
             left: 50%;
             right: initial;
         }
-
-      
     }
 
     &_link {
+        width: 100%;
         &:hover {
             &  .c-timeline_img {
                 opacity: 1;
@@ -120,6 +119,7 @@
         }
     }
 
+    @include media( '>medium' ) {
     &:first-child {
         @include media( '>medium' ) {
             margin-left: 10vw;
@@ -173,4 +173,5 @@
             transform: translate3d(-40%, 50%, 0);
         }
     }
+}
 }

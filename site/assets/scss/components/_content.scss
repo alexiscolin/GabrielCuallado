@@ -26,11 +26,15 @@
     }
 }
 
-[data-parallaxe="img"] > .js-prlx-img {
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+@include media( '>medium' ) {
+    [data-parallaxe="img"] .js-prlx-img {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
 }
-[data-parallaxe="text"] {
-    opacity: 0;
+@include media( '>medium' ) {
+    [data-parallaxe="text"] {
+        opacity: 0;
+    }
 }
 
 .c-container {
