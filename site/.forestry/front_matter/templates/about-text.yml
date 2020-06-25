@@ -1,4 +1,14 @@
 ---
 label: about-text
 hide_body: true
-fields: []
+fields:
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: text
+  description: Contenu du paragraphe
