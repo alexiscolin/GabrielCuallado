@@ -977,21 +977,22 @@ a {
 }
 
 .c-quote {
-  position: absolute;
-  width: 40vw;
+  position: relative;
+  width: 100%;
+  margin: 1rem 0 2rem;
 }
 .c-quote_cite {
   font-weight: 700;
-  font-size: 60px;
-  letter-spacing: 30px;
+  font-size: 45px;
+  letter-spacing: 8px;
   font-style: italic;
 }
 .c-quote_author {
   display: block;
   font-weight: 300;
   font-size: 40px;
-  letter-spacing: 10px;
-  margin-top: 0.3em;
+  letter-spacing: 0.2px;
+  margin-top: 0;
 }
 
 @media (max-width: 639px) {
@@ -1002,6 +1003,18 @@ a {
   }
 }
 @media (min-width: 641px) {
+  .c-quote {
+    position: absolute;
+    width: 40vw;
+  }
+  .c-quote_cite {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+  .c-quote_author {
+    margin-top: 0.3em;
+  }
+
   .c-about_txt {
     position: relative;
     margin-left: 150px;

@@ -54,13 +54,14 @@
 }
 
 .c-quote {
-    position: absolute;
-    width: 40vw;
+    position: relative;
+    width: 100%;
+    margin: 1rem 0 2rem;
 
     &_cite {
         @include font-weight(bold);
-        font-size: 60px;
-        letter-spacing: 30px;
+        font-size: 45px;
+        letter-spacing: 8px;
         font-style: italic;
     }
 
@@ -68,8 +69,8 @@
         display: block;
         @include font-weight(light);
         font-size: 40px;
-        letter-spacing: 10px;
-        margin-top: .3em;
+        letter-spacing: .2px;
+        margin-top: 0;
     }
 }
 
@@ -83,16 +84,19 @@
 }
 
 @include media( '>medium' ) {
-    // .c-about_img1 {
-    //     position: relative;
-    //     height: 35vh;
-    //     left: 5vw;
-
-    //     & > img {
-    //         clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    //     }
-
-    // }
+    .c-quote {
+        position: absolute;
+        width: 40vw;
+    
+        &_cite {
+            font-size: 60px;
+            letter-spacing: 10px;
+        }
+    
+        &_author {
+            margin-top: .3em;
+        }
+    }
     .c-about_txt {
         position: relative;
         margin-left: 150px;
