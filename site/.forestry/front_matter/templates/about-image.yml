@@ -6,4 +6,27 @@ fields:
   type: file
   config:
     maxSize: 2
-  label: image
+  label: Image
+  description: Ajouter une image
+- name: citation
+  type: boolean
+  label: Citation
+  description: Ajouter un citation à l'image
+- name: citation_author
+  type: text
+  config:
+    required: false
+  label: Auteur de la citation
+  description: Donner un auteur à la citation (facultatif)
+  showOnly:
+    field: citation
+    value: true
+- name: citation_text
+  type: text
+  config:
+    required: false
+  label: Contenu de la citation
+  description: Ajouter la citation (facultatif)
+  showOnly:
+    field: citation
+    value: true
