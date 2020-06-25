@@ -11,7 +11,7 @@ fields:
 - name: citation
   type: boolean
   label: Citation
-  description: Ajouter un citation à l'image
+  description: Ajouter une citation à l'image (facultatif)
 - name: citation_author
   type: text
   config:
