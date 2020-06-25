@@ -33,10 +33,10 @@ title = ""
 top = ""
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
-left = nil
+left = "0"
 link_description = "Voir un lien ici"
 template = "about-link"
-top = nil
+top = "20"
 url = "https://www.google.fr"
 
 +++
