@@ -10,11 +10,10 @@ fields:
   description: Titre de page
   hidden: true
 - name: background
-  type: text
+  type: file
   config:
-    required: false
+    maxSize: 64
   label: Image de fond de page
-  description: Lien vers l'image statique au fond de la page
 - name: collector
   type: field_group_list
   fields:
