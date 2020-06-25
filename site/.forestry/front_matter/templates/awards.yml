@@ -21,7 +21,7 @@ fields:
     min: 
     max: 
   label: Menu
-  hidden: false
+  hidden: true
 - type: field_group_list
   name: award
   label: Liste des prix
