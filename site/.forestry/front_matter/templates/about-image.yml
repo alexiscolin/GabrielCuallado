@@ -34,7 +34,7 @@ fields:
   type: number
   label: Top
   description: Ajustement vertical de l'image
-  default: 35
+  default: 0
   required: true
   config:
     min: -20
