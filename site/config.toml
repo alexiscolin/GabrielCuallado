@@ -14,15 +14,20 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 url = "/about/"
                 weight = 1
             [[languages.en.menu.main]]
+                identifier = "Gallery"
+                name = "Gallery"
+                url = "/gallery/serie1"
+                weight = 2
+            [[languages.en.menu.main]]
                 identifier = "Expositions"
                 name = "Exhibitions"
                 url = "/exhibitions/"
-                weight = 2
+                weight = 3
             [[languages.en.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
                 url = "/contact/"
-                weight = 3
+                weight = 4
 
             [[languages.en.menu.header]]
                 identifier = "About"
@@ -85,15 +90,20 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 url = "/es/acerca/"
                 weight = 1
             [[languages.es.menu.main]]
+                identifier = "Gallery"
+                name = "Galeria"
+                url = "/es/gallery/serie1"
+                weight = 2
+            [[languages.es.menu.main]]
                 identifier = "Expositions"
                 name = "Exposiciones"
                 url = "/es/exposiciones/"
-                weight = 2
+                weight = 3
             [[languages.es.menu.main]]
                 identifier = "Contact"
                 name = "Contactos"
                 url = "/es/contactos/"
-                weight = 3
+                weight = 4
 
 
             [[languages.es.menu.header]]
@@ -155,15 +165,20 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 url = "/fr/a-propos/"
                 weight = 1
             [[languages.fr.menu.main]]
+                identifier = "Gallery"
+                name = "Galerie"
+                url = "/fr/gallery/serie1"
+                weight = 2
+            [[languages.fr.menu.main]]
                 identifier = "Expositions"
                 name = "Expositions"
                 url = "/fr/expositions/"
-                weight = 2
+                weight = 3
             [[languages.fr.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
                 url = "/fr/contact/"
-                weight = 3
+                weight = 4
 
 
             [[languages.fr.menu.header]]
