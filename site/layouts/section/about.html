@@ -28,7 +28,21 @@
                 </div>
               {{ end }}
             </div>
-            {{ end}}
+            {{ else if eq .template "about-image"}}
+            <div class="c-container c-about_img2" >
+              {{ with .image }}
+              <div class="c-serie_container c-about_img2" data-parallaxe="img" >
+                <img class="o-img c-about_img2_img js-prlx-img" src="{{ . }}">
+              </div>
+              {{ end }}
+              {{ if eq .citation true}}
+              <div class="c-quote c-quote_about1" data-parallaxe="text">
+                <span class="c-quote_cite">{{ .citation_text }}</span>
+                <span class="c-quote_author">{{ .citation_author }}</span>
+              </div>
+              {{ end }}
+            </div>
+            {{ end }}
           {{ end}}
         </div>
         <div class="c-serie_container c-about_img1" data-parallaxe="img" >
