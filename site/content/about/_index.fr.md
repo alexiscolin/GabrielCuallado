@@ -18,18 +18,18 @@ left = 0
 template = "about-image"
 top = 20
 [[content]]
-left = nil
+left = 0
 subtitle = ""
 template = "about-text"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius ero."
 title = ""
-top = nil
+top = 0
 [[content]]
-left = nil
+left = 0
 subtitle = ""
 template = "about-text"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit."
 title = ""
-top = nil
+top = 0
 
 +++
