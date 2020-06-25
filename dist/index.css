@@ -881,6 +881,9 @@ a {
     margin: 1rem 0 0 -2rem;
   }
 }
+.c-serie_container {
+  height: 100%;
+}
 
 @media (min-width: 641px) {
   .c-serie1_img1 {
@@ -1023,6 +1026,9 @@ a {
   .c-about_txt + .c-about_txt {
     margin-left: 20px;
   }
+  .c-about_txt:last-child {
+    margin-right: 10vw;
+  }
 
   .c-about_img {
     height: 50vh;
@@ -1030,13 +1036,16 @@ a {
     margin-left: 5vw;
   }
   .c-about_img:nth-child(n+3) {
-    top: 15vh;
+    top: 20vh;
   }
   .c-about_img > img {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
   .c-about_img_img {
     margin-left: 5vw;
+  }
+  .c-about_img:last-child {
+    margin-right: 10vw;
   }
 
   .c-quote_about {

@@ -18,7 +18,7 @@
 
           {{ range .Params.content }}
             {{ if eq .template "about-text" }}
-              <div class="c-container c-about_txt" data-parallaxe="text" style="{{ if ne .top 0 }}top: {{ .top }}vh{{ end }}; {{ with .left }}left: {{ . }}vw{{ end }}">
+              <div class="c-container c-about_txt" data-parallaxe="text" style="{{ if ne .top 0 }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
               {{ with .title }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
               {{ with .subtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
               {{ with .text }}
@@ -28,9 +28,9 @@
               {{ end }}
             </div>
             {{ else if eq .template "about-image"}}
-            <div class="c-container c-about_img" style="{{ if ne .top 0 }}top: {{ .top }}vh{{ end }}; {{ with .left }}left: {{ . }}vw{{ end }}">
+            <div class="c-container c-about_img" style="{{ if ne .top 0 }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
               {{ with .image }}
-              <div class="c-serie_container c-about_img" data-parallaxe="img" >
+              <div class="c-serie_container" data-parallaxe="img" >
                 <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
               </div>
               {{ end }}

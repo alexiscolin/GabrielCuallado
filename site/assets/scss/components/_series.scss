@@ -9,6 +9,10 @@
             margin: 1rem 0 0 -2rem;
         }
     }
+
+    &_container {
+        height: 100%;
+    }
 }
 
 @include media( '>medium' ) {
