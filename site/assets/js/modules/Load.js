@@ -9,6 +9,7 @@ import { exhibitionsView, exhibitionsTransition } from '../router/exhibition.js'
 import { collectorsView, collectorsTransition } from '../router/collectors.js';
 import { awardsView, awardsTransition } from '../router/awards.js';
 import { publicationsView, publicationsTransition } from '../router/publications.js';
+import { contactView, contactTransition } from '../router/contact.js';
 
 export default class extends module {
     constructor(m) {
@@ -21,7 +22,8 @@ export default class extends module {
             exhibitionsView, 
             collectorsView,
             awardsView,
-            publicationsView
+            publicationsView,
+            contactView
         ];
         this.loadedTransition = [
             serieTransition, 
@@ -30,7 +32,8 @@ export default class extends module {
             exhibitionsTransition,
             collectorsTransition,
             awardsTransition,
-            publicationsTransition
+            publicationsTransition,
+            contactTransition
         ]
         this.views = [];
         this.transitions = [];
@@ -71,7 +74,6 @@ export default class extends module {
             const viewAfterFunc = loadedView.afterEnter ? loadedView.afterEnter : null;
             
             /** init barba after function if exist then create Modularjs update func */
-            console
             loadedView.afterEnter = (data) => {
                 viewAfterFunc && viewAfterFunc()
 
