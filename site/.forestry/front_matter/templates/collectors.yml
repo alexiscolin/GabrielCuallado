@@ -44,6 +44,12 @@ fields:
   label: Namespace
   hidden: true
   default: collectors
+- name: url
+  type: text
+  config:
+    required: false
+  label: url
+  hidden: true
 pages:
 - site/content/collectors/_index.en.md
 - site/content/collectors/_index.es.md
