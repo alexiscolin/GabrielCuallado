@@ -83,7 +83,7 @@ sections:
   path: site/content/collectors/_index.en.md
   label: Collectors
 upload_dir: ''
-public_path: https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60
+public_path: https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
