@@ -64,12 +64,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/awards/"
+                href="http://localhost:1313/es/premios/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/awards/"
+                href="http://localhost:1313/fr/prix/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -102,12 +102,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/collectors/"
+                href="http://localhost:1313/es/coleccionistas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/collectors/"
+                href="http://localhost:1313/fr/collections/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -216,7 +216,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/publications/"
+                href="http://localhost:1313/es/publicaciones/"
                 />
     <xhtml:link
                 rel="alternate"

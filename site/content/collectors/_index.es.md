@@ -2,6 +2,7 @@
 Title = "Coleccionistas"
 background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
 namespace = "collectors"
+url = "/es/coleccionistas"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"

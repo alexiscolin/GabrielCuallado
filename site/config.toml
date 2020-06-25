@@ -131,17 +131,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.es.menu.about]]
                 identifier = "Collectors"
                 name = "Coleccionistas"
-                url = "/es/collectors/"
+                url = "/es/coleccionistas/"
                 weight = 2
             [[languages.es.menu.about]]
                 identifier = "Awards"
                 name = "Premios"
-                url = "/es/awards/"
+                url = "/es/premios/"
                 weight = 3
             [[languages.es.menu.about]]
                 identifier = "Publications"
                 name = "Publicaciones"
-                url = "/es/publications/"
+                url = "/es/publicaciones/"
                 weight = 4
 
 
@@ -206,12 +206,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.about]]
                 identifier = "Collectors"
                 name = "Collections"
-                url = "/fr/collectors/"
+                url = "/fr/collections"
                 weight = 2
             [[languages.fr.menu.about]]
                 identifier = "Awards"
                 name = "Prix"
-                url = "/fr/awards/"
+                url = "/fr/prix/"
                 weight = 3
             [[languages.fr.menu.about]]
                 identifier = "Publications"

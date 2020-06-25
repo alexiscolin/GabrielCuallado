@@ -1,6 +1,7 @@
 +++
 Title = "Publicaciones"
 namespace = "publications"
+url = "/es/publicaciones"
 [[publication]]
 image = ""
 link = "#"
