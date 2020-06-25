@@ -15,6 +15,22 @@
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">
       <section class="o-section js-section" data-scroll-section>
+
+        <div>
+          {{ range .Params.content }}
+            {{ if eq .template "about-text" }}
+            <div class="c-container c-about_txt1" data-parallaxe="text">
+              {{ with .title }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
+              {{ with .subtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
+              {{ with .text }}
+                <div class="c-section_para">
+                  <p class="o-text">{{ . }}</p>
+                </div>
+              {{ end }}
+            </div>
+            {{ end}}
+          {{ end}}
+        </div>
         <div class="c-serie_container c-about_img1" data-parallaxe="img" >
           <img class="o-img js-prlx-img" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-68.jpg">
           <!-- <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span class="c-serie_def"> -->
@@ -26,7 +42,6 @@
           <div class="c-section_para">
             <p class="o-text">{{ .Params.textzone1 }}</p>
           </div>
-          <!-- <img class="o-img" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-103.jpg" > -->
         </div>
        
 
