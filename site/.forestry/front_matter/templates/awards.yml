@@ -6,6 +6,7 @@ fields:
   name: Title
   label: Titre de la page
   description: Visible dans le menu latéral
+  hidden: true
 - type: file
   name: background
   label: Image de fond de page
