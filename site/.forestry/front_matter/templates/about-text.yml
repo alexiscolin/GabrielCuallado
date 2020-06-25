@@ -25,22 +25,16 @@ fields:
   label: Texte
   description: Contenu du paragraphe
 - name: top
-  type: number
+  type: text
+  config:
+    required: false
   label: Top
-  description: Ajustement vertical du tete
-  default: 0
-  required: true
-  config:
-    min: -20
-    max: 80
-    step: 
+  description: Ajustement vertical du texte (de 0 à 100)
+  default: '0'
 - name: left
-  type: number
-  label: Left
-  default: 0
-  required: true
+  type: text
   config:
-    min: 
-    max: 
-    step: 
-  description: Ajustement horizontal du texte
+    required: false
+  label: Left
+  description: Ajustement horizontal du texte (de 0 à 100)
+  default: '0'
