@@ -6,14 +6,6 @@ fields:
   name: Title
   label: Titre de la page
   description: Visible sur le menu latéral
-- name: menu
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: menu
-  hidden: true
 - type: text
   name: namespace
   label: namespace
