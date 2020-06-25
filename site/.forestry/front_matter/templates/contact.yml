@@ -5,9 +5,12 @@ fields:
 - type: text
   name: Title
   label: Title
+  hidden: true
 - type: text
   name: namespace
   label: namespace
+  hidden: true
 - type: text
   name: typeform
-  label: typeform
+  label: Script Typeform
+  description: 'URL A trouver dans le code généré par Typeform (format : https://form.typeform.com/to/P8Aal4DD)'
