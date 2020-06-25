@@ -27,10 +27,20 @@ fields:
 - name: top
   type: number
   label: Top
-  description: Ajuster la hauteur de l'élément sur la page
+  description: Ajustement vertical du tete
   default: 0
   required: true
   config:
-    min: -50
-    max: 50
+    min: -20
+    max: 80
     step: 
+- name: left
+  type: number
+  label: Left
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: Ajustement horizontal du texte
