@@ -28,6 +28,7 @@ fields:
   template_types:
   - about-text
   - about-image
+  - about-link
   config:
     min: 
     max: 
