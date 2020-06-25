@@ -8,38 +8,6 @@ fields:
     required: false
   label: Nom de la page
   description: Visible dans le menu latéral et le menu général
-- name: pagetitle
-  type: text
-  config:
-    required: false
-  label: Titre
-  description: Titre sur la page
-- name: pagesubtitle
-  type: text
-  config:
-    required: false
-  label: Sous titre
-  description: Sous tittre principal
-- name: textzone1
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: zone texte 1
-  description: 1er paragraphe
-- name: textzone2
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: zone texte 2
-  description: 2nd paragraphe
 - name: url
   type: text
   config:
