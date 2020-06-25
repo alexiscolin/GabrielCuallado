@@ -7661,6 +7661,14 @@ var _gsap = require("gsap");
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -7688,8 +7696,8 @@ function (_module) {
     _classCallCheck(this, _default);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    console.log('start nav');
     _this.menu = _this.$('menu');
+    _this.menuToogle = _toConsumableArray(_this.$('menuToogle')[0].querySelectorAll('.js-header-bar'));
     _this.isOpen = false;
     _this.events = {
       click: {
@@ -7705,6 +7713,7 @@ function (_module) {
   }, {
     key: "toogleNav",
     value: function toogleNav() {
+      console.log(this);
       this.isOpen = !this.isOpen;
 
       _gsap.gsap.to(this.menu, {
@@ -7712,7 +7721,19 @@ function (_module) {
         duration: 1
       });
 
-      console.log('open/close');
+      _gsap.gsap.to(this.menuToogle[0], {
+        transform: this.isOpen ? 'rotate(45deg) translateY(5px)' : 'rotate(0deg)',
+        background: this.isOpen ? '#000' : '#FFF',
+        duration: .5
+      });
+
+      _gsap.gsap.to(this.menuToogle[1], {
+        transform: this.isOpen ? 'rotate(-45deg) translateY(-5px)' : 'rotate(0deg)',
+        background: this.isOpen ? '#000' : '#FFF',
+        duration: .5
+      });
+
+      console.log(this.menuToogle);
     }
   }, {
     key: "destroy",
@@ -8097,7 +8118,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65285" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64480" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

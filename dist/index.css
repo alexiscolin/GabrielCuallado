@@ -795,8 +795,9 @@ a {
 .c-header_item--nav_bar {
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: white;
+  transform-origin: 50% 50%;
 }
 .c-header_item--nav_bar:nth-child(1) {
   top: 35%;

@@ -4,9 +4,9 @@ import { gsap } from "gsap";
 export default class extends module {
     constructor(m) {
         super(m);
-        console.log('start nav');
 
         this.menu = this.$('menu');
+        this.menuToogle = [...this.$('menuToogle')[0].querySelectorAll('.js-header-bar')];
         this.isOpen = false;
 
         this.events = {
@@ -21,9 +21,13 @@ export default class extends module {
     }
 
     toogleNav () {
+        console.log(this)
         this.isOpen = !this.isOpen;
         gsap.to(this.menu, {autoAlpha: this.isOpen ? 1 : 0, duration: 1});
-        console.log('open/close');
+        gsap.to(this.menuToogle[0], {transform: this.isOpen ? 'rotate(45deg) translateY(5px)' : 'rotate(0deg)', background: this.isOpen ? '#000' : '#FFF', duration: .5});
+        gsap.to(this.menuToogle[1], {transform: this.isOpen ? 'rotate(-45deg) translateY(-5px)' : 'rotate(0deg)', background: this.isOpen ? '#000' : '#FFF', duration: .5});
+
+        console.log(this.menuToogle);
     }
 
     destroy() {
