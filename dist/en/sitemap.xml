@@ -11,11 +11,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/"
                 />
@@ -27,11 +22,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/gallery/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/gallery/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -49,11 +39,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/a-propos/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/about/"
                 />
@@ -65,11 +50,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/awards/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/awards/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -87,11 +67,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/expositions-collectives/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/exhibitions-collective/"
                 />
@@ -103,11 +78,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/collectors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/collectors/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -125,11 +95,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/contact/"
                 />
@@ -141,11 +106,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/credits/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/credits/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -163,11 +123,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/gallery/serie1/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/gallery/serie1/"
                 />
@@ -179,11 +134,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/exposiciones/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/expositions/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -201,11 +151,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/legal/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/legal/"
                 />
@@ -220,11 +165,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/publications/"
                 />
@@ -236,11 +176,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/gallery/serie2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/gallery/serie2/"
                 />
     <xhtml:link
                 rel="alternate"
