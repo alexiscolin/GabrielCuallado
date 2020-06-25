@@ -111,7 +111,7 @@ build:
   - HUGO_VERSION=0.63.2
   preview_output_directory: dist
   install_dependencies_command: npm install
-  preview_docker_image: forestryio/hugo:latest
+  preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm start
