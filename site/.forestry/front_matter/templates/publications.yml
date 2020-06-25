@@ -31,6 +31,7 @@ fields:
     config:
       maxSize: 0.6
     label: Image d'illustration
+    description: "(requis)"
   - name: type
     type: select
     default: article
@@ -50,6 +51,8 @@ fields:
     name: link
     label: Lien de publication
     description: url externe vers la publication (https://www...)
+    config:
+      required: true
 pages:
 - site/content/publications/_index.en.md
 - site/content/publications/_index.es.md
