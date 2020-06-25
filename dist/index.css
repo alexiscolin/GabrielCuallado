@@ -410,6 +410,18 @@ a {
   opacity: 0;
   visibility: hidden;
 }
+.c-nav_credits {
+  color: #000000;
+  margin: 7px 40px 0;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+@media (min-width: 641px) {
+  .c-nav_credits {
+    font-size: 16px;
+    margin: 20px 80px 0;
+  }
+}
 .c-nav_title {
   position: absolute;
   font-weight: 900;
