@@ -1149,6 +1149,7 @@ a {
     align-items: flex-start;
     position: absolute;
     bottom: 2vw;
+    padding-left: 1vw;
   }
 }
 .c-list_item {
@@ -1165,6 +1166,7 @@ a {
   width: auto;
   max-width: 20vw;
   display: none;
+  padding-left: 0.8vw;
 }
 @media (min-width: 641px) {
   .c-list_logo {

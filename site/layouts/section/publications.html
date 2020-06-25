@@ -36,13 +36,15 @@
         {{ end }}
             <li class="c-list_item">
               <a class="c-list_link c-list_link--horizontal" href="{{ .link }}">
-                <img alt="logo" class="c-list_logo" src="/img/logos/test.png">
-                <div class="c-list_image {{ if eq .type "video" }}c-list_image--player{{ end}}"><img alt="{{ .title }}"  src="/img/sofia/6.jpg"></div> 
+                {{ with .logo }}<img alt="logo" class="c-list_logo" src="{{ . }}">{{ end }}
+                {{ if .image}}
+                  <div class="c-list_image {{ if eq .type "video" }}c-list_image--player{{ end}}"><img alt="{{ .title }}"  src="{{ .image }}"></div>
 
-                <div class="c-list--horizontal_infos">
-                  <div class="c-list_title c-list_title--cite">{{ .title }}</div>
-                  <div class="c-list_subtitle u-link">{{ if eq .type "video" }}{{ i18n "watchVideo" }}{{else}}{{ i18n "readArticle" }}{{ end }}</div>  
-                </div>
+                  <div class="c-list--horizontal_infos">
+                    <div class="c-list_title c-list_title--cite">{{ .title }}</div>
+                    <div class="c-list_subtitle u-link">{{ if eq .type "video" }}{{ i18n "watchVideo" }}{{else}}{{ i18n "readArticle" }}{{ end }}</div>  
+                  </div>
+                {{ end }}
               </a>
             </li>
 
