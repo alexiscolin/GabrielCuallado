@@ -1,6 +1,6 @@
 +++
 Title = "Premios"
-background = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
+background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085605/CATALOGO-CUALLADO-EXPO-CANAL-115_odbhf7.jpg"
 namespace = "awards"
 [[award]]
 country = "paris"
