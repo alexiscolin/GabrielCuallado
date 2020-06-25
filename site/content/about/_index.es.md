@@ -1,11 +1,6 @@
 +++
 Title = "Acerca"
 namespace = "about"
-pagesubtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
-pagetitle = "GABRIEL CUALLADO"
-textzone1 = "A concise biography\n\n\n•\tGroup exhibitions (selected):\n\n-\tSeveral exhibitions in Europe (Paris, Berlin, Moscow) as part of the AFAL group (1958)\n-\tFodor museum (Amsterdam) with Albert Renger-Patzsch and Pål-Nils Nilsson (1962)\n-\tExhibition in Moscow Interpress Photo 1966\n-\tArles “Rencontres internationales de la photographie” 1978 \n-\tFotógrafos de la escuela de Madrid obra 1950-1975 Museo Español de Arte Contemporáneo 1978\n-\tLa Photographie Creative, Pavillon des Arts (BnF), Paris, France 1984.\n-\t“Fotografía Actual en España”, Circulo de Bellas Artes 1985\n-\t “4 Direcciones fotografía española contemporánea” Museo Nacional Reina Sofia 1991\n-\tPhotoEspaña “La Palanganaª Circulo de Bellas Artes Madrid 2014\n\n•\tSolo exhibitions (selected):\n\n-\tMuseo de Bellas Artes de Bilbao 1985.\n-\tMuseo Español de Arte Contemporáneo Madrid 1985\n-\tInstituto Valenciano de Arte Moderno 1989\n-\t“Cuallado Puntos de vista” Museo Thyssen Bornemisza. Madrid 1995\n-\tImágenes Cotidianas 1956 – 1995 Museo Español de Arte Contemporáneo Madrid 1996.\n-\tHomenatge a Gabriel Cuallado IVAM Valencia 2003.\n-\tGabriel Cuallado en la colección del IVAM Fundación Astroc PhotoEspaña Madrid 2005 \n››\n•\tAwards and recognitions (selected):\n\n-\tBest european photographer, ICI Photography Award (National Media Museum),     Bradford, England, 1992\n-\tPremio Nacional de Fotografia  (First time awarded) Ministerio de Cultura. 1994\n\n•\tKey Collectors (selected):\n\n-\tMuseo Nacional Reina Sofia (MNCARS)\n-\tInstitutoValenciano de Arte Moderno (IVAM)\n-\tReal Academia de Bellas Artes de San Fernando\n-\tMuseo de Bellas Artes de Bilbao\n-\tFundación Arte Telefónica\n-\tCentro Andaluz de Arte Contemporáneo (CAAC)\n-\tCentro de Arte de Alcobendas\n-\tFototeca Ayuntamiento de Córdoba\n-\tGaleria Colectania.\n-\tBibliothèque National de France (BnF)\n-\tMaison Européenne de la Photographie\n-\tInstiturt d`art contemporain IAC (Rhône Alpes)\n-\tCenter for Creative Photography of the University of Tucson Arizona. \n"
-textzone2 = ""
 url = "/es/acerca"
 
 +++
-Acerca contenu es
