@@ -1,7 +1,6 @@
 +++
 Title = "Collectors"
 background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
-menu = ["asideAbout"]
 namespace = "collectors"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"

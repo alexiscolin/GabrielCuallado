@@ -1,6 +1,5 @@
 +++
 Title = "Exposition"
-menu = ["main", "header"]
 namespace = "exhibitions"
 url = "/fr/expositions"
 [[exhibition]]

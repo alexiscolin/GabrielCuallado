@@ -1,7 +1,6 @@
 +++
 Title = "Premios"
 background = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
-menu = []
 namespace = "awards"
 [[award]]
 country = "paris"

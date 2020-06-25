@@ -1,6 +1,5 @@
 +++
 Title = "Publicaciones"
-menu = ["asideAbout"]
 namespace = "publications"
 [[publication]]
 image = ""

@@ -33,5 +33,3 @@ date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/11.jpg"
 link = "#"
 +++
-
-Série

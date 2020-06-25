@@ -1,6 +1,5 @@
 +++
 Title = "Coleccionistas"
-menu = ["asideAbout"]
 background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
 namespace = "collectors"
 [[collector]]

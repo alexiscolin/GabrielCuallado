@@ -1,6 +1,6 @@
 +++
 Title = "A propos"
-menu = ["main", "header", "asideAbout"]
+
 namespace = "about"
 pagesubtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
 pagetitle = " GABRIEL CUALLADO"

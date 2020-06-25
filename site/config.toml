@@ -8,10 +8,62 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         weight = 1
 
         [languages.en.menu]
+            [[languages.en.menu.main]]
+                identifier = "About"
+                name = "About"
+                url = "/about/"
+                weight = 1
+            [[languages.en.menu.main]]
+                identifier = "Expositions"
+                name = "Exhibitions"
+                url = "/exhibitions/"
+                weight = 2
+            [[languages.en.menu.main]]
+                identifier = "Contact"
+                name = "Contact"
+                url = "/contact/"
+                weight = 3
+
+            [[languages.en.menu.header]]
+                identifier = "About"
+                name = "About"
+                url = "/about/"
+                weight = 1
+            [[languages.en.menu.header]]
+                identifier = "Exhibitions"
+                name = "Exhibitions"
+                url = "/exhibitions/"
+                weight = 2
             [[languages.en.menu.header]]
                 identifier = "Gallery"
                 name = "Gallery"
                 url = "/gallery/serie1/"
+                weight = 3
+
+            
+
+            
+            [[languages.en.menu.about]]
+                identifier = "About"
+                name = "About"
+                url = "/about/"
+                weight = 1
+            [[languages.en.menu.about]]
+                identifier = "Collectors"
+                name = "Collectors"
+                url = "/collectors/"
+                weight = 2
+            [[languages.en.menu.about]]
+                identifier = "Awards"
+                name = "Awards"
+                url = "/awards/"
+                weight = 3
+            [[languages.en.menu.about]]
+                identifier = "Publications"
+                name = "Publications"
+                url = "/publications/"
+                weight = 4
+
             [[languages.en.menu.exhibitions]]
                 identifier = "Individual"
                 name = "Individual"
@@ -27,14 +79,66 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     [languages.es]
         weight = 2
         [languages.es.menu]
+            [[languages.es.menu.main]]
+                identifier = "About"
+                name = "Acerca"
+                url = "/es/acerca/"
+                weight = 1
+            [[languages.es.menu.main]]
+                identifier = "Expositions"
+                name = "Exposiciones"
+                url = "/es/exposiciones/"
+                weight = 2
+            [[languages.es.menu.main]]
+                identifier = "Contact"
+                name = "Contactos"
+                url = "/es/contactos/"
+                weight = 3
+
+
             [[languages.es.menu.header]]
+                identifier = "About"
+                name = "Acerca"
+                url = "/es/acerca/"
+                weight = 1
+            [[languages.es.menu.header]]
+                identifier = "Expositions"
+                name = "Exposiciones"
+                url = "/es/exposiciones/"
+                weight = 2
+             [[languages.es.menu.header]]
                 identifier = "Galeria"
                 name = "Galeria"
                 url = "/es/gallery/serie1/"
+                weight = 3
+                
+
+            [[languages.es.menu.about]]
+                identifier = "About"
+                name = "Acerca"
+                url = "/es/acerca/"
+                weight = 1
+            [[languages.es.menu.about]]
+                identifier = "Collectors"
+                name = "Coleccionistas"
+                url = "/es/collectors/"
+                weight = 2
+            [[languages.es.menu.about]]
+                identifier = "Awards"
+                name = "Premios"
+                url = "/es/awards/"
+                weight = 3
+            [[languages.es.menu.about]]
+                identifier = "Publications"
+                name = "Publicaciones"
+                url = "/es/publications/"
+                weight = 4
+
+
             [[languages.es.menu.exhibitions]]
                 identifier = "esIndividual"
                 name = "Individuales"
-                url = "/es/exhibitions/"
+                url = "/es/exposiciones/"
                 weight = 1
             [[languages.es.menu.exhibitions]]
                 identifier = "esCollective"
@@ -45,10 +149,61 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     [languages.fr]
         weight = 3
         [languages.fr.menu]
+            [[languages.fr.menu.main]]
+                identifier = "About"
+                name = "À Propos"
+                url = "/fr/a-propos/"
+                weight = 1
+            [[languages.fr.menu.main]]
+                identifier = "Expositions"
+                name = "Expositions"
+                url = "/fr/expositions/"
+                weight = 2
+            [[languages.fr.menu.main]]
+                identifier = "Contact"
+                name = "Contact"
+                url = "/fr/contact/"
+                weight = 3
+
+
+            [[languages.fr.menu.header]]
+                identifier = "About"
+                name = "À Propos"
+                url = "/fr/a-propos/"
+                weight = 1
+            [[languages.fr.menu.header]]
+                identifier = "Expositions"
+                name = "Expositions"
+                url = "/fr/expositions/"
+                weight = 2
             [[languages.fr.menu.header]]
                 identifier = "Galerie"
                 name = "Galerie"
                 url = "/fr/gallery/serie1/"
+                weight = 3
+            
+
+            [[languages.fr.menu.about]]
+                identifier = "About"
+                name = "À Propos"
+                url = "/fr/a-propos/"
+                weight = 1
+            [[languages.fr.menu.about]]
+                identifier = "Collectors"
+                name = "Collections"
+                url = "/fr/collectors/"
+                weight = 2
+            [[languages.fr.menu.about]]
+                identifier = "Awards"
+                name = "Prix"
+                url = "/fr/awards/"
+                weight = 3
+            [[languages.fr.menu.about]]
+                identifier = "Publications"
+                name = "Publications"
+                url = "/fr/publications/"
+                weight = 4
+
             [[languages.fr.menu.exhibitions]]
                 identifier = "frIndividual"
                 name = "Individuelles"
