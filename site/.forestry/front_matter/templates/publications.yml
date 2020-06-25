@@ -51,6 +51,8 @@ fields:
     name: link
     label: Lien de publication
     description: url externe vers la publication (https://www...)
+    config:
+      required: true
 pages:
 - site/content/publications/_index.en.md
 - site/content/publications/_index.es.md
