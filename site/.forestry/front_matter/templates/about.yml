@@ -54,13 +54,6 @@ fields:
   label: Namespace
   description: type de page
   hidden: true
-- name: menu
-  type: tag_list
-  default:
-  - main
-  - " header"
-  label: menu
-  hidden: false
 - name: content
   type: blocks
   label: Contenu
@@ -71,6 +64,14 @@ fields:
     min: 
     max: 
   description: Ajouter des blocs de textes ou d'image
+- name: menu
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: menu
+  hidden: true
 pages:
 - site/content/about/_index.en.md
 - site/content/about/_index.es.md
