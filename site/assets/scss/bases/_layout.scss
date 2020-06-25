@@ -46,6 +46,10 @@ a {
             padding-left: 10vw;
         }
     }
+
+    &_content {
+        align-items: flex-start;
+    }
 }
 
 .container {

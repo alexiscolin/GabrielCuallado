@@ -14,12 +14,11 @@
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
     <div class="container">
-      <section class="o-section js-section" data-scroll-section>
+      <section class="o-section o-section_content js-section" data-scroll-section>
 
-        <div>
           {{ range .Params.content }}
             {{ if eq .template "about-text" }}
-            <div class="c-container c-about_txt1" data-parallaxe="text">
+              <div class="c-container c-about_txt" data-parallaxe="text" style="{{ with .top }}top: {{ . }}vh{{ end }} {{ with .left }}left: {{ . }}vw{{ end }}">
               {{ with .title }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
               {{ with .subtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
               {{ with .text }}
@@ -29,14 +28,14 @@
               {{ end }}
             </div>
             {{ else if eq .template "about-image"}}
-            <div class="c-container c-about_img2" >
+            <div class="c-container c-about_img" style="{{ with .top }}top: {{ . }}vh{{ end }} {{ with .left }}left: {{ . }}vw{{ end }}">
               {{ with .image }}
-              <div class="c-serie_container c-about_img2" data-parallaxe="img" >
-                <img class="o-img c-about_img2_img js-prlx-img" src="{{ . }}">
+              <div class="c-serie_container c-about_img" data-parallaxe="img" >
+                <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
               </div>
               {{ end }}
               {{ if eq .citation true}}
-              <div class="c-quote c-quote_about1" data-parallaxe="text">
+              <div class="c-quote c-quote_about" data-parallaxe="text">
                 <span class="c-quote_cite">{{ .citation_text }}</span>
                 <span class="c-quote_author">{{ .citation_author }}</span>
               </div>
@@ -44,10 +43,9 @@
             </div>
             {{ end }}
           {{ end}}
-        </div>
-        <div class="c-serie_container c-about_img1" data-parallaxe="img" >
+       
+        <!-- <div class="c-serie_container c-about_img1" data-parallaxe="img" >
           <img class="o-img js-prlx-img" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-68.jpg">
-          <!-- <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span class="c-serie_def"> -->
         </div>
 
         <div class="c-container c-about_txt1" data-parallaxe="text">
@@ -57,16 +55,14 @@
             <p class="o-text">{{ .Params.textzone1 }}</p>
           </div>
         </div>
-       
+        -->
 
       </section>
-      <section class="o-section js-section" data-scroll-section>
+      <!-- <section class="o-section js-section" data-scroll-section>
         <div class="c-container c-about_img2" >
           <div class="c-serie_container c-about_img2" data-parallaxe="img" >
             <img class="o-img c-about_img2_img js-prlx-img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg">
-            <!-- <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span class="c-serie_def"> -->
           </div>
-          <!-- <img class="o-img c-about_img2_img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg" data-parallaxe="img"> -->
           <div class="c-quote c-quote_about1" data-parallaxe="text">
             <span class="c-quote_cite">AN IMAGE IS SILENCE.</span>
             <span class="c-quote_author">Antonio tabernero</span>
@@ -76,9 +72,8 @@
           <div class="c-section_para c-section_para--columns">
             <p class="o-text ">{{ .Params.textzone2 }}</p>
           </div>
-          <!-- <img class="o-img" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-103.jpg" > -->
         </div>
-      </section>
+      </section> -->
 
 
       <!-- <section class="o-section js-section" data-scroll-section>
