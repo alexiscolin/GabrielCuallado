@@ -13,9 +13,9 @@ template = "about-text"
 text = "blablabla ici"
 title = ""
 [[content]]
-citation = false
-citation_author = ""
-citation_text = ""
+citation = true
+citation_author = "Jean"
+citation_text = "blablabla de citation"
 image = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148825/1_qifzgd.jpg"
 template = "about-image"
 
