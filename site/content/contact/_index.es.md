@@ -1,8 +1,8 @@
 +++
 Title = "Contact"
-url = "/es/contactos"
 namespace = "contact"
 typeform = "https://form.typeform.com/to/P8Aal4DD"
-+++
+url = "/es/contactos"
 
++++
 Contactos contenu es
