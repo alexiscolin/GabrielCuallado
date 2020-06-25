@@ -30,6 +30,10 @@ sections:
 - type: document
   path: site/content/collectors/_index.fr.md
   label: Collections
+- type: document
+  path: site/content/contact/_index.fr.md
+  label: Contact
+  match: "**/*"
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: directory
