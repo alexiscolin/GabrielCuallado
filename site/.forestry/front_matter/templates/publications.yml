@@ -6,6 +6,7 @@ fields:
   name: Title
   label: Titre de la page
   description: Visible sur le menu latéral
+  hidden: true
 - type: text
   name: namespace
   label: namespace
