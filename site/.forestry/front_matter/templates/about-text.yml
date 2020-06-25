@@ -2,6 +2,18 @@
 label: about-text
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Titre
+  description: Ajouter un titre (facultatif)
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: 'Sous titre '
+  description: Ajouter un sous titre (facultatif)
 - name: text
   type: textarea
   default: ''
@@ -10,5 +22,5 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: text
+  label: Texte
   description: Contenu du paragraphe
