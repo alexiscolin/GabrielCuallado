@@ -52,4 +52,3 @@ country = "france"
 link = "#"
 
 +++
-About contenu en

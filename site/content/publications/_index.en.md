@@ -45,4 +45,3 @@ title = "Publication 7"
 type = "video"
 
 +++
-About contenu en

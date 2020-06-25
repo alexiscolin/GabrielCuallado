@@ -40,4 +40,3 @@ place = "Barcellone"
 type = "individual"
 
 +++
-About contenu en

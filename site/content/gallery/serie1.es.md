@@ -39,5 +39,3 @@ image = "/img/sofia/11.jpg"
 speed = ".26"
 link = "#"
 +++
-
-Série

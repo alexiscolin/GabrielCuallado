@@ -45,4 +45,3 @@ title = "Center for creative photography of the university of Tuscon Arizona"
 type = "video"
 
 +++
-About contenu en

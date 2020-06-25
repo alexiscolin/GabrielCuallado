@@ -40,4 +40,3 @@ name = "El Rastro"
 speed = ".26"
 
 +++
-Série
