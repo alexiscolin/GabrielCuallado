@@ -61,15 +61,16 @@ fields:
   - " header"
   label: menu
   hidden: true
-- name: test
+- name: content
   type: blocks
-  label: Test
+  label: Contenu
   template_types:
-  - collectors
-  - about
+  - about-text
+  - about-image
   config:
     min: 
     max: 
+  description: Ajouter des blocs de textes ou d'image
 pages:
 - site/content/about/_index.en.md
 - site/content/about/_index.es.md
