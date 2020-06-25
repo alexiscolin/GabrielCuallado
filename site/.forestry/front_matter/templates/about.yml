@@ -60,7 +60,7 @@ fields:
   - main
   - " header"
   label: menu
-  hidden: true
+  hidden: false
 - name: content
   type: blocks
   label: Contenu
