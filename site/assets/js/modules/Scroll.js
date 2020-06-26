@@ -19,6 +19,7 @@ export default class extends module {
     init() {
         //this.addElements() --> dans le preload
  
+        console.log('init scroll')
         const opts = {
             callback: this.parallax.bind(this),
             touch: false,
