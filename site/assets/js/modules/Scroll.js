@@ -56,8 +56,12 @@ export default class extends module {
                 initLeft: el.getBoundingClientRect().left,
                 initRight: el.getBoundingClientRect().left + el.getBoundingClientRect().width
             }
-
         });
+        console.log('addElement func')
+        console.log(this.els)
+        console.log(' ')
+
+
 
         // this.prlxEls.forEach(el => {           
         //     const canvas = el.el.querySelector('.js-prlx-canvas')
@@ -91,6 +95,7 @@ export default class extends module {
                     
                     if(prlxEl.isView === false) {
                         if(prlxEl.el.dataset.parallaxe === "img") {
+                            
                             const el = prlxEl.el.querySelector('.js-prlx-img');
                             console.log(el)
                             // const effect = prlxEl.el.querySelector('feDisplacementMap')
