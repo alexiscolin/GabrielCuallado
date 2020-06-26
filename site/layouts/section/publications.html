@@ -35,10 +35,10 @@
           <ul class="c-list c-list--horizontal">
         {{ end }}
             <li class="c-list_item">
-              <a class="c-list_link c-list_link--horizontal" href="{{ .link }}">
+              <a class="c-list_link c-list_link--horizontal" href="{{ .link }}" data-parallaxe="text">
                 {{ with .logo }}<img alt="logo" class="c-list_logo" src="{{ . }}">{{ end }}
                 {{ if .image}}
-                  <div class="c-list_image {{ if eq .type "video" }}c-list_image--player{{ end}}"><img alt="{{ .title }}"  src="{{ .image }}"></div>
+                  <div class="c-list_image {{ if eq .type "video" }}c-list_image--player{{ end}}" data-parallaxe="img"><img alt="{{ .title }}" class="js-prlx-img" src="{{ .image }}"></div>
 
                   <div class="c-list--horizontal_infos">
                     <div class="c-list_title c-list_title--cite">{{ .title }}</div>

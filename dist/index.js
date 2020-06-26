@@ -7342,7 +7342,6 @@ function (_module) {
     _classCallCheck(this, _default);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    console.log('start scroll');
     _this.container = _this.el;
     _this.els = [];
     _this.windowWidth = window.innerWidth;
@@ -7355,8 +7354,7 @@ function (_module) {
   _createClass(_default, [{
     key: "init",
     value: function init() {
-      console.log('inininininini'); //this.addElements() --> dans le preload
-
+      //this.addElements() --> dans le preload
       var opts = {
         callback: this.parallax.bind(this),
         touch: false,
@@ -7380,8 +7378,7 @@ function (_module) {
   }, {
     key: "addElements",
     value: function addElements() {
-      console.log('blabal'); // this.els = this.container.querySelectorAll('[data-parallaxe]');
-
+      // this.els = this.container.querySelectorAll('[data-parallaxe]');
       this.els = _toConsumableArray(this.container.querySelectorAll('[data-parallaxe]')).map(function (el) {
         return {
           el: el,

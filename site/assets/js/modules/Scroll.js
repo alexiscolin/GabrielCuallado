@@ -6,7 +6,6 @@ import { gsap } from "gsap";
 export default class extends module {
     constructor(m) {
         super(m);
-        console.log('start scroll');
 
         this.container = this.el;
         this.els = [];
@@ -18,9 +17,6 @@ export default class extends module {
     }
 
     init() {
-
-        console.log('inininininini')
-
         //this.addElements() --> dans le preload
  
         const opts = {
@@ -47,7 +43,6 @@ export default class extends module {
 
     // detect all elements
     addElements () {
-        console.log('blabal')
         // this.els = this.container.querySelectorAll('[data-parallaxe]');
         this.els = [...this.container.querySelectorAll('[data-parallaxe]')].map(el => {
             return {
