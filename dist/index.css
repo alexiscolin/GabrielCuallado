@@ -1190,16 +1190,18 @@ a {
   max-width: 20vw;
   display: none;
   padding-left: 0.8vw;
+  z-index: 2;
 }
 @media (min-width: 641px) {
   .c-list_logo {
     display: block;
     max-width: 8vw;
-    margin-right: 2vw;
+    margin-right: 6vw;
   }
 }
 .c-list_image {
   position: relative;
+  z-index: 1;
 }
 .c-list_image > img {
   max-width: 80vw;
@@ -1257,6 +1259,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  z-index: 2;
 }
 .c-list_title--under {
   text-transform: initial;

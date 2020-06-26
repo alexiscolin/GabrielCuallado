@@ -30,7 +30,7 @@
             {{ else if eq .template "about-image"}}
             <div class="c-container c-about_img" style="{{ if ne .top "0" }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
               {{ with .image }}
-              <div class="c-serie_container" data-parallaxe="img" >
+              <div class="c-serie_container" data-parallaxe="img" data-speed=".08">
                 <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
               </div>
               {{ end }}
@@ -46,7 +46,7 @@
             {{ else if eq .template "about-link"}}
             <div class="c-container c-about_img" style="{{ if ne .top "0" }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
               {{ with .image }}
-              <div class="c-serie_container" data-parallaxe="img" >
+              <div class="c-serie_container" data-parallaxe="img" data-speed=".08">
                 <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
               </div>
               {{ end }}

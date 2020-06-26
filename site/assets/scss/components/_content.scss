@@ -270,14 +270,17 @@
         max-width: 20vw;
         display: none;
         padding-left: .8vw;
+        z-index: 2;
         @include media( '>medium' ) {
             display: block;
             max-width: 8vw;
-            margin-right: 2vw;
+            margin-right: 6vw;
         }
     }
     &_image {
         position: relative;
+        z-index: 1;
+
         & > img {
             max-width: 80vw;
             @include media( '>medium' ) {
@@ -290,6 +293,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             &::after {
                 content: '';
                 position: absolute;
@@ -336,6 +340,8 @@
         @include font-weight(bold);
         text-transform: uppercase;
         letter-spacing: 2px;
+        z-index: 2;
+
         &--under {
             text-transform: initial;
             @include font-weight(medium);
