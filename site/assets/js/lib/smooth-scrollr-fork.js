@@ -1,0 +1,437 @@
+
+/*==============================*/
+/*==============================*/
+/*     MODULE SMOOTHSCROLL      */
+/*==============================*/
+/*==============================*/
+
+var SmoothScroll = function (config = {}, viewPortclass = null) {
+    this.name = 'scroll';
+    this.DOM = {};
+    this.config = {};
+    this.move = {};
+    this.callback = false;
+  
+    this.init(config, viewPortclass);
+  };
+  
+  
+  SmoothScroll.prototype = function () {
+  
+    /***********************
+     ****** PRIVATES ******
+     **********************/
+  
+    /**
+    /*  EVENTS - events binded to the DOM through addEventListener  */
+    /*  @param {object} e - event properties */
+    /* */
+  
+    const _onWheel = function (e) {
+        //   e.preventDefault(); //need it here ?
+        const dir = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+        this.move.dest += (this.runFirefox && e.deltaMode == 1) ? dir * this.config.speed * this.config.multFirefox : dir * this.config.speed;
+  
+        _requestTick.call(this); // start animation
+    };
+  
+    const _onTouchStart = function (e) {
+        const t = (e.targetTouches) ? e.targetTouches[0] : e;
+        this.move.touch = t.pageY;
+    };
+  
+    const _onTouchMove = function (e) {
+        e.preventDefault();
+        const t = (e.targetTouches) ? e.targetTouches[0] : e;
+  
+        this.move.dest += (t.pageY - this.move.touch) * this.config.touchSpeed; //mouvement
+        this.move.touch = t.pageY; // update touch
+  
+        _requestTick.call(this); // start animation
+    };
+  
+    const _onKeydown = function (e) {
+        if (e.keyCode === 38 || e.keyCode === 40) e.preventDefault();
+  
+        // if downKey is pressed, then jump + else if upKey is pressed, then jump - else 0
+        this.move.dest += e.keyCode === 38 ? -this.config.jump : (e.keyCode === 40 ? this.config.jump : 0); // 38 up arrow && 40 down arrow
+  
+        _requestTick.call(this); // start animation
+    };
+  
+    const _onScroll = function (e) {
+        this.move.dest = window.scrollY || window.pageYOffset;
+        _requestTick.call(this); // start animation
+    };
+  
+  
+    /**
+    /*  REQUEST-TICK - request an animation from rAF if rAF is available  */
+    /* */
+    const _requestTick = function () {
+        if (!this.config.ticking) {
+            this.rAF = requestAnimationFrame(_update.bind(this));
+            this.config.ticking = true; // wait for a ticket before request a new rAF
+        }
+    },
+  
+  
+    /**
+    /*  UPDATE - run animation in requestAnimationFrame  */
+    /* */
+    _update = function () {
+  
+        this.rAF = requestAnimationFrame(_update.bind(this));
+        // get scroll Level inside body size
+        this.move.dest = Math.round(Math.max(0, Math.min(this.move.dest, this.config.scrollMax)));
+  
+        // calc new value of scroll if there was a scroll
+        if (this.move.prev !== this.move.dest) {
+            this.move.current += (this.move.dest - this.move.current) * this.config.delay;
+  
+            // update scroll && parallax positions
+            const moveTo = -this.move.current.toFixed(2);
+
+            // iterate over section and update translate and visibility
+            for (let i = this.sections.length - 1; i >= 0; i--) {
+
+                // check if section should move (inView)
+                if (this.move.current > this.sections[i].offset && this.move.current < this.sections[i].limit) {
+                    this.sections[i].el.style.transform = this.enableSmoothScroll && !this.prevent && `translate3D(${this.config.direction === 'horizontal' ? moveTo : 0}px,${this.config.direction === 'vertical' ? moveTo : 0}px, 0)`;
+                    !this.sections[i].isInView && (this.sections[i].el.style.visibility = 'visible');
+                    this.sections[i].isInView = true;
+                } else {
+                    this.sections[i].isInView && (this.sections[i].el.style.visibility = 'hidden');
+                    this.sections[i].isInView = false;
+                }
+            }
+            // this.DOM.scroller.style.transform = this.enableSmoothScroll && !this.prevent && `translate3D(${this.config.direction === 'horizontal' ? moveTo : 0}px,${this.config.direction === 'vertical' ? moveTo : 0}px, 0)`;
+            if (typeof this.callback === "function") {
+                this.callback(moveTo, this.move.prev)
+            }
+  
+            this.move.prev = Math.round(this.move.current);
+        } else {
+            this.config.ticking = false;
+            cancelAnimationFrame(this.rAF);
+        }
+    },
+  
+  
+    /**
+    /*  DOM-EVENT - bind / unbind events to the DOM  */
+    /*  @param {string} method - bind / unbind */
+    /* */
+    _domEvent = function (method = 'bind') {
+  
+        const listener = method === 'bind' ? 'addEventListener' : (method === 'unbind' ? 'removeEventListener' : null);
+        if (listener === null) throw "_domEvent function - wrong method! expect 'bind' || 'unbind' : got " + method;
+  
+        //Add/remove resize event
+        if (this.config.resize === true) {
+            this._resize = this._resize || resize.bind(this)
+            window[listener]('resize', this._resize, false);
+        }
+  
+        // on/off smooth scroll events on device
+        if (this.enableSmoothScroll) {
+  
+            // Events modifications
+            this.deviceHasEvents.wheel && (this._wheelFunc || (this._wheelFunc = _onWheel.bind(this))) && document[listener]('wheel', this._wheelFunc, false);
+            this.deviceHasEvents.mouseWheel && (this._mouWheelFunc || (this._mouWheelFunc = _onWheel.bind(this))) && document[listener]('mousewheel', this._mouWheelFunc, false);
+            this.deviceHasEvents.keys && (this._keysFunc || (this._keysFunc = _onKeydown.bind(this))) && document[listener]('keydown', this._keysFunc, false);
+  
+            if (this.deviceHasEvents.touch) {
+                !this._touchStatFunc && (this._touchStatFunc = _onTouchStart.bind(this));
+                !this._touchMoveFunc && (this._touchMoveFunc = _onTouchMove.bind(this));
+  
+                document[listener]("touchstart", this._touchStatFunc);
+                document[listener]("touchmove", this._touchMoveFunc);
+            }
+  
+        } else if (this.config.parallax) {
+            // bind scroll if touch is disabled and parallax enabled
+            !this._scrollFunc && (this._scrollFunc = _onScroll.bind(this));
+            document[listener]("scroll", this._scrollFunc, false);
+        }
+    },
+  
+  
+    /**
+    /*  PRELOAD - preload medias on the page -> get real height  */
+    /* */
+    _preload = function () {
+        const medias = [...this.DOM.scroller.querySelectorAll('img, video')];
+        if (medias.length <= 0) return;
+  
+        const isPromise = window.Promise ? true : false;
+        const loading = isPromise ? [] : null;
+  
+        const getSize = () => {
+            this.config.scrollMax = this.config.direction === 'vertical' ? (this.DOM.scroller.offsetHeight - (document.documentElement.clientHeight || window.innerHeight)) : (this.DOM.scroller.offsetWidth - (document.documentElement.clientWidth || window.innerWidth));
+        };
+  
+        medias.forEach((media, key, array) => {
+  
+            const eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
+            const el = document.createElement(media.nodeName.toLowerCase());
+  
+            if (isPromise) {
+                const loader = new Promise((resolve, error) => {
+                    el.addEventListener(eventType, () => {
+                        resolve();
+                    }, false);
+                });
+                loading.push(loader);
+  
+            } else {
+                el.onloadstart = el.onload = () => {
+                    array.splice(array.indexOf(media), 1);
+                    array.length === 0 && getSize();
+                };
+            }
+  
+            el.src = media.src;
+        });
+  
+        isPromise && Promise.all(loading).then(values => { 
+            getSize() 
+            this.resize();
+
+            // start all function called in initFunc array
+            if(this.config.initFunc.length > 0) {
+                this.config.initFunc.forEach(fn => fn());
+            }
+        });
+    },
+  
+  
+    /**
+    /*  FIXED-VIEWPORT - block the viewport for smoothscroll with class or inline style */
+    /* */
+    _fixedViewPort = function () {
+  
+        // set the container sticky
+        if (this.config.fixedClass) {
+            this.DOM.container.classList.add(this.config.fixedClass);
+        } else {
+            this.DOM.container.style.overflow = 'hidden';
+            this.DOM.container.style.height = '100vh';
+        }
+        return true;
+    },
+
+
+    /**
+    /*  ADD-SECTION - Create info and observer for section on the page  */
+    /* */
+    _addSection = function () {
+        this.sections = [];
+
+        let sections = this.DOM.scroller.querySelectorAll(`[data-${this.name}-section]`);
+        if (sections.length === 0) {
+           sections = this.DOM.scroller;
+        }
+
+        //create observer and info for each section
+        [...sections].forEach(section => {
+            const sectionData = {};
+            
+            sectionData.isInView = false;
+            sectionData.el = section;
+            sectionData.boundrect = sectionData.el.getBoundingClientRect()
+
+            // set section disposition
+            if (this.config.direction === "vertical") {
+                sectionData.offset = sectionData.boundrect.top - (window.innerHeight * 1.5) - _getTranslate(sectionData.el).y;
+                sectionData.limit = sectionData.offset + sectionData.boundrect.height + (window.innerHeight * 2);
+            } else {
+                sectionData.offset = sectionData.boundrect.left - (window.innerWidth * 1.5) - _getTranslate(sectionData.el).x;
+                sectionData.limit = sectionData.offset + sectionData.boundrect.width + (window.innerWidth * 2);
+                console.log(sectionData.limit)
+            }
+
+            // add section info
+            this.sections.push(sectionData)
+        })
+
+        //generate section order -> in order of apparition
+        this.sections.sort((a, b) => this.config.direction === 'vertical' ? a.boundrect.top - b.boundrect.top : a.boundrect.left - b.boundrect.left);
+    },
+
+
+    /**
+    /*  DEVICE-DETECT-EVENT - get events browsers compatibility  */
+    /* */
+    _deviceDetectEvent = function () {
+        return {
+            wheel: 'onwheel' in document,
+            mouseWheel: 'onmousewheel' in document,
+            touch: 'ontouchstart' in document,
+            keys: 'onkeydown' in document
+        }
+    }, 
+
+
+    /**
+    /*  GET-TRANSLATE - get translation style utility  */
+    /* */
+    _getTranslate = function (el) {
+        const translate = {}
+        if(!window.getComputedStyle) return;
+    
+        const style = getComputedStyle(el);
+        const transform = style.transform || style.webkitTransform || style.mozTransform;
+    
+        let mat = transform.match(/^matrix3d\((.+)\)$/);
+        if(mat) return parseFloat(mat[1].split(', ')[13]);
+    
+        mat = transform.match(/^matrix\((.+)\)$/);
+        translate.x = mat ? parseFloat(mat[1].split(', ')[4]) : 0;
+        translate.y = mat ? parseFloat(mat[1].split(', ')[5]) : 0;
+    
+        return translate;
+    }
+
+    
+  
+  
+    /**********************
+     ****** PUBLICS ******
+     *********************/
+  
+    const init = function (config, viewPortclass) {
+  
+        // DOM elements
+        this.DOM.scroller = config.section;
+        this.DOM.container = this.DOM.scroller.parentNode;
+  
+        // configurations
+        this.config = {
+            delay: config.delay || .1,
+            direction: config.direction || 'vertical',
+            speed: config.speed || 1,
+            touchSpeed: config.touchSpeed || 1.5,
+            jump: config.jump || 110,
+            callback: config.callback || false,
+            touch: config.touch || false,
+            fixedClass: viewPortclass || false,
+            resize: config.resize || true,
+            preload: config.preload || true,
+            multFirefox: 15,
+            scrollMax: 0,
+            ticking: false,
+            initFunc: config.initFunc || []
+        };
+  
+        // movement refresh variables
+        this.move = {
+            current: 0,
+            dest: 0,
+            prev: 0,
+            touch: 0
+        };
+  
+        // preload medias
+        this.config.preload && _preload.call(this);
+  
+        // set scroll module size
+        resize.call(this);
+
+        // _addSection.call(this);
+  
+        // detect if the browser is Firefox
+        this.runFirefox = navigator.userAgent.indexOf("Firefox") > -1;
+  
+        // get event compatibility and allowance for scroll
+        this.deviceHasEvents = _deviceDetectEvent();
+        this.enableSmoothScroll = !this.deviceHasEvents.touch || this.config.touch;
+  
+        // if parallax, get elements to move
+        this.callback = this.config.callback;
+  
+        //bind events
+        bindEvent.call(this);
+    },
+  
+  
+    /**
+    /*  BIND-EVENT - bind events to the DOM && start rAF */
+    /* */
+    bindEvent = function () {
+        this.enableSmoothScroll && _fixedViewPort.call(this);
+        _domEvent.call(this, 'bind');
+    },
+  
+  
+    /**
+    /*  UNBIND-EVENT - unbind events from the DOM && stop rAF */
+    /* */
+    unbindEvent = function () {
+        _domEvent.call(this, 'unbind');
+        if (typeof this.rAF !== 'undefined') {
+            cancelAnimationFrame(this.rAF);
+            this.rAF = null;
+        }
+    },
+  
+  
+    /**
+    /*  SCROLL-TO - scroll to given location */
+    /* */
+    scrollTo = function (dir, immediate = false) {
+        this.move.dest = dir;
+        immediate || (_requestTick.call(this)); // start animation
+        immediate && (this.DOM.scroller.style.transform = this.enableSmoothScroll && `translate3D(${this.config.direction === 'horizontal' ? dir : 0}px,${this.config.direction === 'vertical' ? dir : 0}px, 0)`);
+    },
+  
+  
+    /**
+    /*  RESIZE - recalc vars after a resize */
+    /* */
+    resize = function () {
+        _addSection.call(this);
+        this.config.scrollMax = this.config.direction === 'vertical' ? (this.DOM.scroller.offsetHeight - (document.documentElement.clientHeight || window.innerHeight)) : (this.DOM.scroller.offsetWidth - (document.documentElement.clientWidth || window.innerWidth));
+    },
+  
+  
+    /**
+    /*  DESTROY - destroy content */
+    /* */
+    destroy = function () {
+        // if (this.prlx) {
+        //     this.prlx = this.prlx.destroy();
+        //     delete this.prlx;
+        // }
+  
+        this.unbindEvent.call(this);
+  
+        for (let prop in this) {
+            if (!Object.prototype.hasOwnProperty.call(this, prop)) continue;
+  
+            this[prop] = null;
+            delete this[prop];
+        }
+  
+        return null;
+    };
+  
+  
+    return {
+        init,
+        resize,
+        bindEvent,
+        unbindEvent,
+        scrollTo,
+        destroy
+    }
+  }();
+  
+  // SETTER / GETTER
+  Object.defineProperty(SmoothScroll.prototype, "preventScroll", {
+    set: function (state) { this.prevent = state; }
+  });
+  
+  
+  export { SmoothScroll };
+  

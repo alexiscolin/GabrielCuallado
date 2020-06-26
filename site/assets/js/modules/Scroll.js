@@ -1,5 +1,5 @@
 import { module } from 'modujs';
-import { SmoothScroll } from 'smooth-scrollr';
+import { SmoothScroll } from '../lib/smooth-scrollr-fork';
 import { gsap } from "gsap";
 // import Parallax from '../lib/Parallax';
 
