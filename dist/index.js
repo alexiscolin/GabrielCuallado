@@ -7860,14 +7860,7 @@ function (_module) {
 
     _classCallCheck(this, _default);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m)); // load typeform
-
-    var elTF = document.querySelector('#typeform');
-    var urlTF = elTF.dataset.url;
-    typeformEmbed.makeWidget(elTF, urlTF, {
-      hideHeaders: false,
-      hideFooter: false
-    });
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
     _this.events = {
       click: {
         button: 'doSomething'
@@ -7879,7 +7872,15 @@ function (_module) {
   _createClass(_default, [{
     key: "init",
     value: function init() {
-      console.log('hello contact');
+      // load typeform
+      var elTF = document.querySelectorAll('.typeform');
+      elTF = elTF[elTF.length - 1]; // pour le reload de la meme page, 2 div cibles existent en meme temps
+
+      var urlTF = elTF.dataset.url;
+      typeformEmbed.makeWidget(elTF, urlTF, {
+        hideHeaders: true,
+        hideFooter: true
+      });
     }
   }, {
     key: "destroy",
