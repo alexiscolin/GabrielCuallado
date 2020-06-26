@@ -1,8 +1,7 @@
 .c-header {
     &_name {
         position: relative;
-        top: 14vw;
-        margin: auto;
+        margin: 14vw auto 0;
         display: block;
         text-align: center;
         font-size: 45px;
@@ -22,6 +21,7 @@
             font-size: 70px;
             left: 50%;
             top: 2vw;
+            margin: auto;
             transform: translate3d(-50%, 0, 0);
         }
     }

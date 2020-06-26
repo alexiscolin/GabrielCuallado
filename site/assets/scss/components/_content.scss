@@ -151,21 +151,37 @@
 }
 
 .c-innernav {
-    position: fixed;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    left: 2vw;
-    top: 50%;
-    transform: translateY(-50%);
+    flex-direction: row;
+    justify-content: center;
     z-index: 10;
+    padding: 10px 4vw 0;
+
+
+    @include media( '>medium' ) {
+        position: fixed;
+        flex-direction: column;
+        justify-content: initial;
+        left: 2vw;
+        top: 50%;
+        transform: translateY(-50%);
+    
+    }
 
     &_link {
-        font-size: 45px;
+        font-size: 9vw;
+        margin: 0 1.8vw;
         @include font-weight(bold);
         text-transform: uppercase;
         text-decoration: none;
         opacity: .5;
         transition: opacity 1s ease;
+
+        @include media( '>medium' ) {
+            font-size: 45px;
+            margin: 0;
+        }
 
         &--active {
             opacity: 1;

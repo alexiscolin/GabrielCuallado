@@ -23,9 +23,13 @@ a {
 }
 
 .o-scroll {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+    @include media( '>medium' ) {
+        position: absolute;
+
+    }
 }
 
 .o-section {
@@ -57,7 +61,7 @@ a {
     flex-wrap: wrap;
     width: 100vw;
     flex-direction: column;
-    padding: 130px 0 60px;
+    padding: 20px 0 60px;
 
     @include media( '>medium' ) {
         flex-wrap: nowrap;
