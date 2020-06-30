@@ -6,6 +6,16 @@ fields:
   name: Title
   label: Titre de la série
   description: Visible sur le menu latéral
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta title
+- name: meta_description
+  type: text
+  config:
+    required: false
+  label: Meta description
 - type: text
   name: namespace
   label: namespace
