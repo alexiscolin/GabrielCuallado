@@ -41,6 +41,10 @@ sections:
   label: Nav Links
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
+- type: document
+  path: site/content/_index.es.md
+  label: Homepage
+  match: "**/*"
 - type: directory
   path: site/content/gallery
   label: Galeria
@@ -73,6 +77,10 @@ sections:
   label: Nav Links
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
+- type: document
+  path: site/content/_index.en.md
+  label: Hompage
+  match: "**/*"
 - type: directory
   path: site/content/gallery
   label: Gallery
