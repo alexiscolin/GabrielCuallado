@@ -12,6 +12,11 @@ fields:
   config:
     required: false
   label: Meta description
+- name: background
+  type: file
+  config:
+    maxSize: 64
+  label: Image de fond de page
 - name: namespace
   type: text
   config:
