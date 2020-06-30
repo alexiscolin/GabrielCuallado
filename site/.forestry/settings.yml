@@ -44,7 +44,6 @@ sections:
 - type: document
   path: site/content/_index.es.md
   label: Homepage
-  match: "**/*"
 - type: directory
   path: site/content/gallery
   label: Galeria
@@ -80,7 +79,6 @@ sections:
 - type: document
   path: site/content/_index.en.md
   label: Hompage
-  match: "**/*"
 - type: directory
   path: site/content/gallery
   label: Gallery
