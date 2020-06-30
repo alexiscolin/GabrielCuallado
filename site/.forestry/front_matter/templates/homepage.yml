@@ -19,4 +19,5 @@ fields:
   label: namespace
   hidden: true
 pages:
+- site/content/_index.en.md
 - site/content/_index.fr.md
