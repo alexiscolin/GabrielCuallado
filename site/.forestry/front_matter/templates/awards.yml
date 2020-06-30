@@ -7,6 +7,16 @@ fields:
   label: Titre de la page
   description: Visible dans le menu latéral
   hidden: true
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta title
+- name: meta_description
+  type: text
+  config:
+    required: false
+  label: Meta description
 - type: file
   name: background
   label: Image de fond de page
