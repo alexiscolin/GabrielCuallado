@@ -1,8 +1,8 @@
 +++
 Title = "El Rastro"
 menu = ["serie"]
-meta_description = ""
-meta_title = ""
+meta_description = "Et ma meta description"
+meta_title = "Ma meta title"
 namespace = "serie"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
