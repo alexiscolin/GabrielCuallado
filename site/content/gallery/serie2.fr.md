@@ -1,42 +1,44 @@
 +++
-Title = "Pueblo"
-menu = "serie"
+Title = "Serie 2"
+menu = ["serie"]
+type = "gallery"
 namespace = "serie"
 [[photos]]
+name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/6.jpg"
+speed= "-.1"
 link = "#"
-name = "El Rastro"
-speed = "-.1"
 [[photos]]
+name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/7.jpg"
+speed= ".2"
 link = "#"
-name = "El Rastro"
-speed = ".2"
 [[photos]]
+name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/8.jpg"
-link = "#"
-name = "El Rastro"
 speed = ".4"
+link = "#"
 [[photos]]
+name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/9.jpg"
-link = "#"
-name = "El Rastro"
 speed = ".2"
+link = "#"
 [[photos]]
+name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/10.jpg"
-link = "#"
-name = "El Rastro"
 speed = ".26"
+link = "#"
 [[photos]]
+name = "El Rastro"
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/11.jpg"
-link = "#"
-name = "El Rastro"
 speed = ".26"
-
+link = "#"
 +++
+
+Série

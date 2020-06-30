@@ -1,25 +1,15 @@
 {{ define "main" }}
-
-<!-- <div data-module-home>
-  <button data-home="one">One</button>
-  <button data-home="all">All</button>
-</div> -->
-
-    <main aria-role="main" class="c-main">
+    <main aria-role="main" data-module-homepage="main" class="c-main">
       <div class="c-loader" id="js-loader">
         <div class="c-loader__container">
-            <!-- 
-			<span class="c-loader__title" id="js-loader-title">GABRIEL CUALLADO</span>
-			<span class="c-loader__title c-loader__title--outlined" id="js-loader-title-out">GABRIEL CUALLADO</span> 
-			-->
-			<div class="c-main_pic">
+			<div class="c-main_pic" data-parallaxe="img" data-speed="0">
 				{{/* test iteration sur gallery -> marche pas -> type ?? */}}
 				{{ $paginator := .Paginate (where .Data.Pages "Type" "gallery") }}
 				{{ range $paginator.Pages }}
 					
 				{{ end }}
 
-				<img class="c-main_pic_img js-hp-img" src="/img/hp/F0191-AUTORRETRATO.jpg" alt="">
+				<img class="c-main_pic_img js-hp-img js-prlx-img" src="/img/hp/F0191-AUTORRETRATO.jpg" alt="">
 			</div>
 
 			<div class="c-main_container">

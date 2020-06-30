@@ -1,9 +1,5 @@
 
 {{ define "main" }}
-<!-- <div data-module-serie>
-  <button data-serie="one">One</button>
-  <button data-serie="all">All</button>
-</div> -->
 
 <nav class="c-innernav">
   {{- $currentPage := . -}}
@@ -16,7 +12,7 @@
 
 
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
-    <div class="c-static" data-parallaxe="img" >
+    <div class="c-static">
       <img class="c-static_pic js-prlx-img" src="{{ .Params.background }}">
     </div>
     <div class="container">
@@ -56,15 +52,4 @@
       {{ end }}
     </div>
   </section>
-
-  <aside id="meta">
-      <div>
-          {{ with .PrevInSection }}
-            <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-          {{ end }}
-          {{ with .NextInSection }}
-            <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-          {{ end }}
-      </div>
-    </aside>
 {{ end }}

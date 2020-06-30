@@ -28,7 +28,8 @@
 
 @include media( '>medium' ) {
     [data-parallaxe="img"] .js-prlx-img {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        opacity: 0;
     }
 }
 @include media( '>medium' ) {
@@ -130,9 +131,9 @@
         }
 
 
-        &_img {
-            margin-left: 5vw;
-        }
+        // &_img {
+        //     margin-left: 5vw;
+        // }
 
         &:last-child {
             margin-right: 10vw;

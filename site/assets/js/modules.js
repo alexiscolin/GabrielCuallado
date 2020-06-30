@@ -1,6 +1,6 @@
 export {default as Load} from './modules/Load';
 export {default as Scroll} from './modules/Scroll';
-export {default as Home} from './modules/Home';
+export {default as Homepage} from './modules/Homepage';
 export {default as Serie} from './modules/Serie';
 export {default as Navigation} from './modules/Navigation';
 export {default as Publications} from './modules/Publications';

@@ -1,3 +1,3 @@
 +++
-namespace = "home"
+namespace = "homepage"
 +++

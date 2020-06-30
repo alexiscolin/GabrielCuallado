@@ -1,4 +1,5 @@
 import { module } from 'modujs';
+import gsap from 'gsap';
 import barba from '@barba/core';
 
 
@@ -14,6 +15,14 @@ import { contactView, contactTransition } from '../router/contact.js';
 export default class extends module {
     constructor(m) {
         super(m);
+        
+    }
+
+    /**
+     * MODULE INIT
+     */
+    init(){
+        console.log('start loader');
 
         this.loadedViews = [
             serieView, 
@@ -25,9 +34,10 @@ export default class extends module {
             publicationsView,
             contactView
         ];
+
         this.loadedTransition = [
             serieTransition, 
-            homepageTransition, 
+            homepageTransition(_ => this.call('appear', '', 'Homepage' )), 
             aboutTransition, 
             exhibitionsTransition,
             collectorsTransition,
@@ -37,22 +47,15 @@ export default class extends module {
         ]
         this.views = [];
         this.transitions = [];
-    }
-
-    /**
-     * MODULE INIT
-     */
-    init(){
-        console.log('start loader');
 
         this._updateModules()
         this._createModules('views', this.loadedViews);
         this._createModules('transitions', this.loadedTransition);
 
+
         barba.init({
             views: this.views,
             transitions: this.transitions
-         
         });
     }
 

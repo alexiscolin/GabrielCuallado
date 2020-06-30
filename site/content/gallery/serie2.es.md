@@ -1,6 +1,7 @@
 +++
 Title = "Serie 2"
 menu = ["serie"]
+type = "gallery"
 namespace = "serie"
 [[photos]]
 name = "El Rastro"
@@ -39,3 +40,5 @@ image = "/img/sofia/11.jpg"
 speed = ".26"
 link = "#"
 +++
+
+Série

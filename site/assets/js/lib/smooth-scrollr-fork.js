@@ -248,7 +248,6 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             } else {
                 sectionData.offset = sectionData.boundrect.left - (window.innerWidth * 1.5) - _getTranslate(sectionData.el).x;
                 sectionData.limit = sectionData.offset + sectionData.boundrect.width + (window.innerWidth * 2);
-                console.log(sectionData.limit)
             }
 
             // add section info

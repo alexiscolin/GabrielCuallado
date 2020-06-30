@@ -91,16 +91,13 @@
 
     &_img {
         position: absolute;
-        // transform: translate3d(-40%,-50%,0);
-        
-        // left: 50%;
-        // top: 65%;
         opacity: .4;
         transition: opacity 1s ease;
         z-index: 1;
+        max-width: 50%;
 
         & > img {
-            max-width: 50%;
+            width: 100%;
         }
     }
 
@@ -139,10 +136,6 @@
         @include media( '>medium' ) {
             margin-right: 10vw;
         }
-        // & .c-timeline_section_line {
-        //     width: 52%;
-        //     right: 50%;
-        // }
     }
 
     &:nth-child(2n) {
@@ -162,15 +155,13 @@
 
         & .c-timeline_img {
             top: inherit;
-            bottom: 60%;
-            transform: translate3d(-30%, 50%, 0);
+            bottom: 28%;
         }
     }
     &:nth-child(3n) {
         & .c-timeline_img {
             top: inherit;
-            bottom: 50%;
-            transform: translate3d(-40%, 50%, 0);
+            bottom: 45%;
         }
     }
 }

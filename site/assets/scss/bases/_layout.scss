@@ -42,18 +42,30 @@ a {
     @include media( '>medium' ) {
         display: inline-flex;
         flex-direction: row;
-        // padding: 0 8vw;
         padding: 0;
         height: 100vh;
 
         &:first-child {
             padding-left: 10vw;
         }
+        &:last-child {
+            padding-right: 7vw;
+        }
     }
 
     &_content {
         align-items: flex-start;
     }
+}
+
+#app,
+.dom-gl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 .container {

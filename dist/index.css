@@ -317,9 +317,22 @@ a {
   .o-section:first-child {
     padding-left: 10vw;
   }
+  .o-section:last-child {
+    padding-right: 7vw;
+  }
 }
 .o-section_content {
   align-items: flex-start;
+}
+
+#app,
+.dom-gl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
 .container {
@@ -356,7 +369,6 @@ a {
   height: 100vh;
   top: 0;
   z-index: 999;
-  background: #000000;
 }
 .c-loader__container {
   position: absolute;
@@ -980,7 +992,7 @@ a {
 
 @media (min-width: 641px) {
   [data-parallaxe=img] .js-prlx-img {
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
   }
 }
 @media (min-width: 641px) {
@@ -1065,9 +1077,6 @@ a {
   }
   .c-about_img > img {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  .c-about_img_img {
-    margin-left: 5vw;
   }
   .c-about_img:last-child {
     margin-right: 10vw;
@@ -1400,9 +1409,10 @@ a:hover .u-link::after {
   opacity: 0.4;
   transition: opacity 1s ease;
   z-index: 1;
+  max-width: 50%;
 }
 .c-timeline_img > img {
-  max-width: 50%;
+  width: 100%;
 }
 .c-timeline_point {
   position: absolute;
@@ -1457,15 +1467,13 @@ a:hover .u-link::after {
 @media (min-width: 641px) {
   .c-timeline:nth-child(2n) .c-timeline_img {
     top: inherit;
-    bottom: 60%;
-    transform: translate3d(-30%, 50%, 0);
+    bottom: 28%;
   }
 }
 @media (min-width: 641px) {
   .c-timeline:nth-child(3n) .c-timeline_img {
     top: inherit;
-    bottom: 50%;
-    transform: translate3d(-40%, 50%, 0);
+    bottom: 45%;
   }
 }
 
