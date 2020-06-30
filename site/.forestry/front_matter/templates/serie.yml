@@ -61,5 +61,6 @@ fields:
   description: Ajouter le tag "serie" pour ajouter la série au menu latéral de la
     galerie
 pages:
+- site/content/gallery/serie1.es.md
 - site/content/gallery/serie1.fr.md
 - site/content/gallery/serie2.fr.md
