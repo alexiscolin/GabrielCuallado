@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="notranslate">
+<html lang="{{ .Site.Language.Lang }}" class="notranslate">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="pinterest" content="nopin" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>{{ .Site.Title }} - {{.Page.Title}}</title>
+    <meta name="description" content="{{ if .Params.meta_description }}{{ .Params.meta_description }}{{ else }}{{ .Site.Title }} - {{.Page.Title}}{{end}} " />
+    <title>{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ else }}{{ .Site.Title }} - {{.Page.Title}}{{ end }}</title>
     {{ $assets := .Site.Data.assets }}
     {{ with $assets.css }}
     <link href="{{ relURL . }}" rel="stylesheet" />

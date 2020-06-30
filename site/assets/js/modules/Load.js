@@ -78,7 +78,7 @@ export default class extends module {
             
             /** init barba after function if exist then create Modularjs update func */
             loadedView.afterEnter = (data) => {
-                viewAfterFunc && viewAfterFunc()
+                viewAfterFunc && viewAfterFunc();
 
                 /** if not first load -> modularjs already init in general index.js */
                 if (data.current.container) {
