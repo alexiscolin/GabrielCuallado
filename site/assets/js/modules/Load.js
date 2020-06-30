@@ -21,8 +21,6 @@ export default class extends module {
      * MODULE INIT
      */
     init(){
-        console.log('start loader');
-
         this.loadedViews = [
             serieView, 
             homepageView, 

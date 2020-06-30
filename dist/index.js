@@ -6915,6 +6915,7 @@ function (_module) {
     key: "init",
     value: function init() {
       var _this = this;
+
       this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView, _contact.contactView];
       this.loadedTransition = [_serie.serieTransition, (0, _homepage.homepageTransition)(function (_) {
         return _this.call('appear', '', 'Homepage');
