@@ -6,9 +6,6 @@ import Plane from '../gl/Plane';
 import { preloadImages } from '../utils';
 import { Events } from '../events';
 
-
-// import Parallax from '../lib/Parallax';
-
 export default class extends module {
     constructor(m) {
         super(m);
@@ -23,8 +20,6 @@ export default class extends module {
         console.log('init scroll');
 
         preloadImages().then(() => {
-
-            // setTimeout(() => { 
           
             if (window.innerWidth > 640) {
                 const opts = {
@@ -44,8 +39,6 @@ export default class extends module {
             } else {
                 this.scroll = null;
             }
-
-            // }, 2000)
         }); 
     }
 
@@ -130,12 +123,8 @@ export default class extends module {
             el.glObject.destroy()
         })
 
-        // this.parallax.destroy();
         this.scroll && this.scroll.destroy();
         Gl.scroll = 0;
-
-        // this.destroyScroll();
-        // window.removeEventListener('resize', this.resizeFunc, false);
 
         for (let prop in this) {
             if (!Object.prototype.hasOwnProperty.call(this, prop)) continue;

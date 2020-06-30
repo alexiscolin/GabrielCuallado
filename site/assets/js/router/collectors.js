@@ -3,10 +3,8 @@ import { gsap } from "gsap";
 const collectorsView = {
     namespace: 'collectors',
     beforeEnter(data) {
-        console.log('hello about barba');
     },
     afterEnter(data) {
-        console.log('haha')
     }
 };
 

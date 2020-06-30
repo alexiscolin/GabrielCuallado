@@ -3,10 +3,8 @@ import { gsap } from "gsap";
 const exhibitionsView = {
     namespace: 'exhibitions',
     beforeEnter(data) {
-        console.log('hello exhibitions barba');
     },
     afterEnter(data) {
-        console.log('haha')
     }
 };
 

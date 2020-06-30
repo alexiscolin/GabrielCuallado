@@ -28,6 +28,5 @@ export default class extends module {
     }
 
     destroy() {
-        console.log('end nav')
     }
 }

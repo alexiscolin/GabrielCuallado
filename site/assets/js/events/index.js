@@ -3,7 +3,7 @@ import GlobalRaf from './Raf';
 import GlobalResize from './Resize';
 
 export {
-    Events,
-    GlobalRaf,
+  Events,
+  GlobalRaf,
   GlobalResize,
 };

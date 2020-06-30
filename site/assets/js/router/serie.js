@@ -3,10 +3,8 @@ import { gsap } from "gsap";
 const serieView = {
     namespace: 'serie',
     beforeEnter(data) {
-        // console.log('hello serie barba');
     },
     afterEnter(data) {
-        // console.log('haha')
     }
 };
 

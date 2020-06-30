@@ -3,11 +3,9 @@ import { gsap } from "gsap";
 const contactView = {
     namespace: 'contact',
     beforeEnter(data) {
-        console.log('hello contact barba');
        
     },
     afterEnter(data) {
-        console.log('haha');
     }
 };
 

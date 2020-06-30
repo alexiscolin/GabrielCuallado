@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 const homepageView = {
     namespace: 'homepage',
     beforeEnter(data) {
-        // console.log('hello homepage BARBA');
     }
 };
 
@@ -34,7 +33,6 @@ const homepageTransition = function (imgFunc){
         },
         leave({ current, next, trigger }) {
             return new Promise(resolve => {
-
                 const canvas = document.querySelector('.dom-gl');
                 gsap.to(canvas, {autoAlpha: 0, duration: .5});
                 gsap.to(current.container, {autoAlpha: 0, duration: .6, onComplete: () => {

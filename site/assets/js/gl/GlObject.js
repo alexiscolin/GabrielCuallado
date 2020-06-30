@@ -69,7 +69,6 @@ export default class extends THREE.Object3D {
   }
 
   destroy() {
-        console.log('destroyyyy');
         this.geometry.dispose();
         this.material.dispose();
         gl.scene.remove( this );

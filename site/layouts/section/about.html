@@ -1,9 +1,5 @@
 
 {{ define "main" }}
-<!-- <div data-module-serie>
-  <button data-serie="one">One</button>
-  <button data-serie="all">All</button>
-</div> -->
 <nav class="c-innernav">
   {{- $currentPage := . -}}
     {{ range .Site.Menus.about }}
@@ -56,49 +52,7 @@
             </div>
             {{ end }}
           {{ end}}
-       
-        <!-- <div class="c-serie_container c-about_img1" data-parallaxe="img" >
-          <img class="o-img js-prlx-img" src="/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-68.jpg">
-        </div>
-
-        <div class="c-container c-about_txt1" data-parallaxe="text">
-          <h1 class="o-text o-title">{{ .Params.pagetitle }}</h1>
-          <h2 class="o-text o-subtitle">{{ .Params.pagesubtitle }}</h2>
-          <div class="c-section_para">
-            <p class="o-text">{{ .Params.textzone1 }}</p>
-          </div>
-        </div>
-        -->
-
       </section>
-      <!-- <section class="o-section js-section" data-scroll-section>
-        <div class="c-container c-about_img2" >
-          <div class="c-serie_container c-about_img2" data-parallaxe="img" >
-            <img class="o-img c-about_img2_img js-prlx-img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg">
-          </div>
-          <div class="c-quote c-quote_about1" data-parallaxe="text">
-            <span class="c-quote_cite">AN IMAGE IS SILENCE.</span>
-            <span class="c-quote_author">Antonio tabernero</span>
-          </div>
-        </div>
-        <div class="c-container c-about_txt2" data-parallaxe="text">
-          <div class="c-section_para c-section_para--columns">
-            <p class="o-text ">{{ .Params.textzone2 }}</p>
-          </div>
-        </div>
-      </section> -->
-
-
-      <!-- <section class="o-section js-section" data-scroll-section>
-        <div class="c-container c-serie1_img5">
-          <img class="o-img" src="/img/asturias/F0570-FAMILIA-CAMPESINA-ASTURIANA.jpg">
-          <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span>
-        </div>
-        <div class="c-container c-serie1_img6">
-          <img class="o-img" src="/img/asturias/F0571-PADRE-DE-CARMITA.jpg">
-          <span class="c-serie_def">El Rastro. Madrid, 1980-1981</span>
-        </div>
-      </section> -->
     </div>
   </section>
 {{ end }}

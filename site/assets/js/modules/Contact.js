@@ -3,15 +3,6 @@ import { module } from 'modujs';
 export default class extends module {
     constructor(m) {
         super(m);
-
-       
-
-
-        this.events = { 
-            click: {
-                button: 'doSomething'
-            }
-        }
     }
 
     init(){
@@ -27,10 +18,5 @@ export default class extends module {
     }
 
     destroy() {
-        console.log('end contact');
-    }
-
-    doSomething() {
-        console.log('Hello contact');
     }
 }

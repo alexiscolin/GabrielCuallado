@@ -6227,8 +6227,7 @@ var _gsap = require("gsap");
 
 var homepageView = {
   namespace: 'homepage',
-  beforeEnter: function beforeEnter(data) {// console.log('hello homepage BARBA');
-  }
+  beforeEnter: function beforeEnter(data) {}
 };
 exports.homepageView = homepageView;
 
@@ -6347,10 +6346,8 @@ var _gsap = require("gsap");
 
 var serieView = {
   namespace: 'serie',
-  beforeEnter: function beforeEnter(data) {// console.log('hello serie barba');
-  },
-  afterEnter: function afterEnter(data) {// console.log('haha')
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.serieView = serieView;
 var serieTransition = {
@@ -6424,10 +6421,8 @@ var _gsap = require("gsap");
 
 var aboutView = {
   namespace: 'about',
-  beforeEnter: function beforeEnter(data) {// console.log('hello about barba');
-  },
-  afterEnter: function afterEnter(data) {// console.log('haha')
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.aboutView = aboutView;
 var aboutTransition = {
@@ -6502,12 +6497,8 @@ var _gsap = require("gsap");
 
 var exhibitionsView = {
   namespace: 'exhibitions',
-  beforeEnter: function beforeEnter(data) {
-    console.log('hello exhibitions barba');
-  },
-  afterEnter: function afterEnter(data) {
-    console.log('haha');
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.exhibitionsView = exhibitionsView;
 var exhibitionsTransition = {
@@ -6582,12 +6573,8 @@ var _gsap = require("gsap");
 
 var collectorsView = {
   namespace: 'collectors',
-  beforeEnter: function beforeEnter(data) {
-    console.log('hello about barba');
-  },
-  afterEnter: function afterEnter(data) {
-    console.log('haha');
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.collectorsView = collectorsView;
 var collectorsTransition = {
@@ -6662,12 +6649,8 @@ var _gsap = require("gsap");
 
 var awardsView = {
   namespace: 'awards',
-  beforeEnter: function beforeEnter(data) {
-    console.log('hello awards barba');
-  },
-  afterEnter: function afterEnter(data) {
-    console.log('haha');
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.awardsView = awardsView;
 var awardsTransition = {
@@ -6742,12 +6725,8 @@ var _gsap = require("gsap");
 
 var publicationsView = {
   namespace: 'publications',
-  beforeEnter: function beforeEnter(data) {
-    console.log('hello awards barba');
-  },
-  afterEnter: function afterEnter(data) {
-    console.log('haha');
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.publicationsView = publicationsView;
 var publicationsTransition = {
@@ -6822,12 +6801,8 @@ var _gsap = require("gsap");
 
 var contactView = {
   namespace: 'contact',
-  beforeEnter: function beforeEnter(data) {
-    console.log('hello contact barba');
-  },
-  afterEnter: function afterEnter(data) {
-    console.log('haha');
-  }
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
 };
 exports.contactView = contactView;
 var contactTransition = {
@@ -6940,12 +6915,11 @@ function (_module) {
     key: "init",
     value: function init() {
       var _this = this;
-
-      console.log('start loader');
       this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView, _contact.contactView];
       this.loadedTransition = [_serie.serieTransition, (0, _homepage.homepageTransition)(function (_) {
         return _this.call('appear', '', 'Homepage');
-      }), _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition, _contact.contactTransition];
+      }), //Link modus module method for enterAnimation
+      _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition, _contact.contactTransition];
       this.views = [];
       this.transitions = [];
 
@@ -44747,7 +44721,6 @@ function (_THREE$Object3D) {
   }, {
     key: "destroy",
     value: function destroy() {
-      console.log('destroyyyy');
       this.geometry.dispose();
       this.material.dispose();
 
@@ -44958,7 +44931,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-// import Parallax from '../lib/Parallax';
 var _default =
 /*#__PURE__*/
 function (_module) {
@@ -44984,7 +44956,6 @@ function (_module) {
 
       console.log('init scroll');
       (0, _utils.preloadImages)().then(function () {
-        // setTimeout(() => { 
         if (window.innerWidth > 640) {
           var opts = {
             callback: _this2.parallax.bind(_this2),
@@ -45002,8 +44973,7 @@ function (_module) {
           _this2.parallax(1);
         } else {
           _this2.scroll = null;
-        } // }, 2000)
-
+        }
       });
     } // detect all elements
 
@@ -45098,11 +45068,9 @@ function (_module) {
       this.els.forEach(function (el) {
         if (!el.glObject) return;
         el.glObject.destroy();
-      }); // this.parallax.destroy();
-
+      });
       this.scroll && this.scroll.destroy();
-      _gl.default.scroll = 0; // this.destroyScroll();
-      // window.removeEventListener('resize', this.resizeFunc, false);
+      _gl.default.scroll = 0;
 
       for (var prop in this) {
         if (!Object.prototype.hasOwnProperty.call(this, prop)) continue;
@@ -45174,7 +45142,6 @@ function (_module) {
     value: function init() {
       var _this2 = this;
 
-      console.log('hello home');
       (0, _utils.preloadImages)().then(function () {
         var homeImg = _this2.el.querySelector('[data-parallaxe="img"]');
 
@@ -45247,34 +45214,17 @@ function (_module) {
   _inherits(_default, _module);
 
   function _default(m) {
-    var _this;
-
     _classCallCheck(this, _default);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    _this.events = {
-      click: {
-        button: 'doSomething'
-      }
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
   }
 
   _createClass(_default, [{
     key: "init",
-    value: function init() {
-      console.log('hello serie');
-    }
+    value: function init() {}
   }, {
     key: "destroy",
-    value: function destroy() {
-      console.log('end serie');
-    }
-  }, {
-    key: "doSomething",
-    value: function doSomething() {
-      console.log('Hello serie');
-    }
+    value: function destroy() {}
   }]);
 
   return _default;
@@ -45368,9 +45318,7 @@ function (_module) {
     }
   }, {
     key: "destroy",
-    value: function destroy() {
-      console.log('end nav');
-    }
+    value: function destroy() {}
   }]);
 
   return _default;
@@ -45411,34 +45359,17 @@ function (_module) {
   _inherits(_default, _module);
 
   function _default(m) {
-    var _this;
-
     _classCallCheck(this, _default);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    _this.events = {
-      click: {
-        button: 'doSomething'
-      }
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
   }
 
   _createClass(_default, [{
     key: "init",
-    value: function init() {
-      console.log('hello publications');
-    }
+    value: function init() {}
   }, {
     key: "destroy",
-    value: function destroy() {
-      console.log('end publications');
-    }
-  }, {
-    key: "doSomething",
-    value: function doSomething() {
-      console.log('Hello publications');
-    }
+    value: function destroy() {}
   }]);
 
   return _default;
@@ -45479,17 +45410,9 @@ function (_module) {
   _inherits(_default, _module);
 
   function _default(m) {
-    var _this;
-
     _classCallCheck(this, _default);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    _this.events = {
-      click: {
-        button: 'doSomething'
-      }
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
   }
 
   _createClass(_default, [{
@@ -45507,14 +45430,7 @@ function (_module) {
     }
   }, {
     key: "destroy",
-    value: function destroy() {
-      console.log('end contact');
-    }
-  }, {
-    key: "doSomething",
-    value: function doSomething() {
-      console.log('Hello contact');
-    }
+    value: function destroy() {}
   }]);
 
   return _default;
@@ -45555,34 +45471,17 @@ function (_module) {
   _inherits(_default, _module);
 
   function _default(m) {
-    var _this;
-
     _classCallCheck(this, _default);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
-    _this.events = {
-      click: {
-        button: 'doSomething'
-      }
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
   }
 
   _createClass(_default, [{
     key: "init",
-    value: function init() {
-      console.log('hello awards');
-    }
+    value: function init() {}
   }, {
     key: "destroy",
-    value: function destroy() {
-      console.log('end awards');
-    }
-  }, {
-    key: "doSomething",
-    value: function doSomething() {
-      console.log('Hello awards');
-    }
+    value: function destroy() {}
   }]);
 
   return _default;
@@ -45698,7 +45597,7 @@ var website = website || {};
 
       if (userAgent.indexOf('chrome') > -1) {
         dark += ';';
-        dark += ['padding: 20px 5px 16px 40px', 'background-image: url(http://epic.net/img/signature/epic-logo.png)', 'background-position: 10px 9px', 'background-repeat: no-repeat', 'background-size: 26px 30px'].join(';');
+        dark += ['padding: 20px 5px 16px 40px', 'background-image: url(https://files.de-jaune-et-de-bleu.com/img/signature/djdb-logo-wave.png)', 'background-position: 10px 9px', 'background-repeat: no-repeat', 'background-size: 26px 30px'].join(';');
       }
 
       var white = ['padding: 20px 5px 16px', 'background-color: #FFFFFF', 'color: #000000'].join(';');

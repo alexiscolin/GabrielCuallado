@@ -12,7 +12,6 @@ export default class extends module {
     }
 
     init() {
-        console.log('hello home');
         preloadImages().then(() => {
             const homeImg = this.el.querySelector('[data-parallaxe="img"]');
             this.glObject = new Plane();
@@ -35,5 +34,4 @@ export default class extends module {
         Gl.scroll = 0;
         this.glObject.destroy();
     }
-
 }

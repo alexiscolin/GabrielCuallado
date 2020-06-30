@@ -31,7 +31,7 @@ const website = website || {};
               dark += ';';
               dark += [
                 'padding: 20px 5px 16px 40px',
-                'background-image: url(http://epic.net/img/signature/epic-logo.png)',
+                'background-image: url(https://files.de-jaune-et-de-bleu.com/img/signature/djdb-logo-wave.png)',
                 'background-position: 10px 9px',
                 'background-repeat: no-repeat',
                 'background-size: 26px 30px',

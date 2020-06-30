@@ -15,7 +15,6 @@ import { contactView, contactTransition } from '../router/contact.js';
 export default class extends module {
     constructor(m) {
         super(m);
-        
     }
 
     /**
@@ -37,7 +36,7 @@ export default class extends module {
 
         this.loadedTransition = [
             serieTransition, 
-            homepageTransition(_ => this.call('appear', '', 'Homepage' )), 
+            homepageTransition(_ => this.call('appear', '', 'Homepage' )), //Link modus module method for enterAnimation
             aboutTransition, 
             exhibitionsTransition,
             collectorsTransition,
