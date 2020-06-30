@@ -9,7 +9,6 @@ sections:
 - type: document
   path: site/content/_index.fr.md
   label: Homepage
-  match: "**/*"
 - type: directory
   path: site/content/gallery
   label: Galerie
