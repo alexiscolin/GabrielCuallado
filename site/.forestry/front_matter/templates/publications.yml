@@ -11,6 +11,16 @@ fields:
   name: namespace
   label: namespace
   hidden: true
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta title
+- name: meta_description
+  type: text
+  config:
+    required: false
+  label: Meta description
 - type: field_group_list
   name: publication
   label: publication

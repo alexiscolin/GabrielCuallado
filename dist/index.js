@@ -44397,7 +44397,6 @@ function () {
   }, {
     key: "onScroll",
     value: function onScroll(scroll) {
-      console.log('scroll', scroll.els);
       this.els = scroll.els;
       this.target = scroll.x;
     }
@@ -44413,8 +44412,6 @@ function () {
   }, {
     key: "off",
     value: function off() {
-      console.log('finin');
-
       _gsap.default.ticker.remove(this.tickFunc);
 
       _Events.default.off('stopRaf');
@@ -45014,6 +45011,7 @@ function (_module) {
     key: "addElements",
     value: function addElements() {
       var imageIndex = 0;
+      _gl.default.scroll = 0;
       this.els = _toConsumableArray(this.container.querySelectorAll('[data-parallaxe]')).map(function (el, index) {
         var glObject = null; // init 3Dobj (image) 
 
@@ -45097,13 +45095,13 @@ function (_module) {
     key: "destroy",
     value: function destroy() {
       console.log('end scroll');
-      _gl.default.scroll = 0;
       this.els.forEach(function (el) {
         if (!el.glObject) return;
         el.glObject.destroy();
       }); // this.parallax.destroy();
 
-      this.scroll && this.scroll.destroy(); // this.destroyScroll();
+      this.scroll && this.scroll.destroy();
+      _gl.default.scroll = 0; // this.destroyScroll();
       // window.removeEventListener('resize', this.resizeFunc, false);
 
       for (var prop in this) {
@@ -45752,7 +45750,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53679" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49247" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

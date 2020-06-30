@@ -8,6 +8,16 @@ fields:
     required: false
   label: Titre de la page
   hidden: true
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta title
+- name: meta_description
+  type: text
+  config:
+    required: false
+  label: Meta description
 - name: url
   type: text
   config:

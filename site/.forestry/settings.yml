@@ -6,6 +6,9 @@ webhook_url:
 sections:
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
+- type: document
+  path: site/content/_index.fr.md
+  label: Homepage
 - type: directory
   path: site/content/gallery
   label: Galerie
@@ -38,6 +41,9 @@ sections:
   label: Nav Links
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
+- type: document
+  path: site/content/_index.es.md
+  label: Homepage
 - type: directory
   path: site/content/gallery
   label: Galeria
@@ -70,6 +76,9 @@ sections:
   label: Nav Links
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
+- type: document
+  path: site/content/_index.en.md
+  label: Hompage
 - type: directory
   path: site/content/gallery
   label: Gallery

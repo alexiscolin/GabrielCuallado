@@ -27,7 +27,6 @@ class Raf {
   }
 
   onScroll(scroll) {
-    console.log('scroll', scroll.els)
     this.els = scroll.els;
     this.target = scroll.x;
   }
@@ -39,7 +38,6 @@ class Raf {
   }
 
   off() {
-    console.log('finin')
     gsap.ticker.remove(this.tickFunc);
     Events.off('stopRaf');
     Events.off('tick');

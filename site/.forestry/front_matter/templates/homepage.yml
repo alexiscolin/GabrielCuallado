@@ -1,0 +1,24 @@
+---
+label: Homepage
+hide_body: true
+fields:
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta title
+- name: meta_description
+  type: text
+  config:
+    required: false
+  label: Meta description
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: namespace
+  hidden: true
+pages:
+- site/content/_index.en.md
+- site/content/_index.es.md
+- site/content/_index.fr.md

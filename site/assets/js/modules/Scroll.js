@@ -52,6 +52,8 @@ export default class extends module {
     // detect all elements
     addElements () {
         let imageIndex = 0;
+        Gl.scroll = 0;
+
         this.els = [...this.container.querySelectorAll('[data-parallaxe]')].map((el, index) => {
             let glObject = null;
 
@@ -123,7 +125,6 @@ export default class extends module {
 
     destroy() {
         console.log('end scroll');
-        Gl.scroll = 0;
         this.els.forEach(el => {
             if(!el.glObject) return;
             el.glObject.destroy()
@@ -131,6 +132,8 @@ export default class extends module {
 
         // this.parallax.destroy();
         this.scroll && this.scroll.destroy();
+        Gl.scroll = 0;
+
         // this.destroyScroll();
         // window.removeEventListener('resize', this.resizeFunc, false);
 

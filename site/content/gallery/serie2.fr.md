@@ -1,7 +1,8 @@
 +++
-Title = "Serie 2"
+Title = "Pueblo"
 menu = ["serie"]
-type = "gallery"
+meta_description = ""
+meta_title = ""
 namespace = "serie"
 [[photos]]
 name = "El Rastro"
@@ -40,5 +41,3 @@ image = "/img/sofia/11.jpg"
 speed = ".26"
 link = "#"
 +++
-
-Série
