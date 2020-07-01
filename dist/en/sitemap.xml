@@ -249,4 +249,8 @@
                 />
   </url>
   
+  <url>
+    <loc>http://localhost:1313/gallery/serie3/</loc>
+  </url>
+  
 </urlset>
