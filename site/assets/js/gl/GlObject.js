@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import gl from './index';
 import gsap from 'gsap';
 import { Events } from '../events';
+// import { calcWinsize } from '../utils';
 
 export default class extends THREE.Object3D {  
   init(el) {
@@ -39,8 +40,8 @@ export default class extends THREE.Object3D {
 
   updateSize() {
     this.camUnit = this.calculateUnitSize(gl.camera.position.z - this.position.z);
-    const x = this.bounds.width / window.innerWidth;
-    const y = this.bounds.height / window.innerHeight;
+    const x = this.bounds.width / gl.winSize.width;
+    const y = this.bounds.height / gl.winSize.height;
 
     if (!x || !y) return;
 
@@ -52,18 +53,18 @@ export default class extends THREE.Object3D {
     const { top, height } = this.bounds;
 
     this.position.y = (this.camUnit.height / 2) - (this.scale.y / 2);
-    this.position.y -= ((top - y) / window.innerHeight) * this.camUnit.height;
+    this.position.y -= ((top - y) / gl.winSize.height) * this.camUnit.height;
   }  
 
   updateX(x = 0) {
     const { left } = this.bounds;
 
     this.position.x = -(this.camUnit.width / 2) + (this.scale.x / 2);
-    this.position.x += ((left + x) / window.innerWidth) * this.camUnit.width;
+    this.position.x += ((left + x) / gl.winSize.width) * this.camUnit.width;
   }  
   
   updatePosition(dir, current) {
-    this.updateY(0);
+    this.updateY(0); //-> first placement
     this.dir = dir;
     this.updateX(this.dir + current);
   }

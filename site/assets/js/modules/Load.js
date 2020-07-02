@@ -1,6 +1,7 @@
 import { module } from 'modujs';
 import gsap from 'gsap';
 import barba from '@barba/core';
+import { Events } from '../events';
 
 
 import { homepageView, homepageTransition } from '../router/homepage.js';
@@ -21,6 +22,8 @@ export default class extends module {
      * MODULE INIT
      */
     init(){
+        this.links = [];
+
         this.loadedViews = [
             serieView, 
             homepageView, 
@@ -69,13 +72,38 @@ export default class extends module {
      * INIT MODULES UPDATE (MODUJS across BARBAJS)
      */
     _updateModules () {
+        const cursorEnter = e => { 
+            Events.emit('cursorEnter', {target: e.target})
+        };
+        const cursorLeave = () => { Events.emit('cursorLeave')};
+
         this.loadedViews.forEach(loadedView => {
-            /** Check if barba after function exist then yes save it */
+            /** Check if barba after/before function exist then yes save it */
             const viewAfterFunc = loadedView.afterEnter ? loadedView.afterEnter : null;
-            
+            const viewBeforeFunc = loadedView.beforeLeave ? loadedView.beforeLeave : null;
+
+            loadedView.beforeLeave = (data) => {
+                // GENERAL ACTION : cursor links - remove
+                this.links.forEach(el => {
+                    el.removeEventListener('mouseenter', cursorEnter);
+                    el.removeEventListener('mouseleave', cursorLeave);
+                });
+                this.links = [];
+            };
+
             /** init barba after function if exist then create Modularjs update func */
             loadedView.afterEnter = (data) => {
                 viewAfterFunc && viewAfterFunc();
+
+                // Global Emit
+                Events.emit('pageLoad');
+
+                // GENERAL ACTION : cursor links - add
+                this.links = [...data.next.container.querySelectorAll('a')]
+                this.links.forEach(el => {
+                    el.addEventListener('mouseenter', cursorEnter);
+                    el.addEventListener('mouseleave', cursorLeave);
+                });
 
                 /** if not first load -> modularjs already init in general index.js */
                 if (data.current.container) {

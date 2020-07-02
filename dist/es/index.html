@@ -14,7 +14,7 @@
     
   </head>
   <body data-barba="wrapper" data-module-load>
-    <div data-barba="container" data-barba-namespace="homepage ">
+    <div data-barba="container" data-barba-namespace="homepage">
      
       
         
@@ -27,21 +27,21 @@
             <li class="c-header_item c-header_item--about js-header">
                 
                 
-                    <a class="c-header_link" href="http://localhost:1313/es/acerca/"><span><span>Acerca</span></span></a>
+                    <a class="c-header_link" href="http://localhost:1313/es/acerca/" data-link="menu"><span><span>Acerca</span></span></a>
                 
             </li>
         
             <li class="c-header_item c-header_item--about js-header">
                 
                 
-                    <a class="c-header_link" href="http://localhost:1313/es/exposiciones/"><span><span>Exposiciones</span></span></a>
+                    <a class="c-header_link" href="http://localhost:1313/es/exposiciones/" data-link="menu"><span><span>Exposiciones</span></span></a>
                 
             </li>
         
             <li class="c-header_item c-header_item--about js-header">
                 
                 
-                    <a class="c-header_link" href="http://localhost:1313/es/gallery/serie1/"><span><span>Galeria</span></span></a>
+                    <a class="c-header_link" href="http://localhost:1313/es/gallery/serie1/" data-link="menu"><span><span>Galeria</span></span></a>
                 
             </li>
         
@@ -146,7 +146,6 @@
 				<div class="o-job js-loader-infos">Photographer</div>
 				<div class="c-loader__slider" id="js-loader-slider"></div>
 			</div>
-
         </div>
     </div>
 
@@ -159,7 +158,18 @@
 
           
       </div>
+      
     </div>
+    <svg class="cursor" width="140" height="140" viewBox="0 0 140 140" data-module-cursor="main">
+      <defs>
+        <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" 
+        filterUnits="objectBoundingBox">
+          <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="40" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+      <circle class="cursor__inner" cx="70" cy="70" r="60"/>
+    </svg>
     <script src="https://embed.typeform.com/embed.js"></script>
 
     

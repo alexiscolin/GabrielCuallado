@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 
+
 const aboutView = {
     namespace: 'about',
     beforeEnter(data) {
@@ -7,6 +8,9 @@ const aboutView = {
     afterEnter(data) {
     }
 };
+
+// const cursorEnter = () => { Events.emit('cursorEnter')};
+// const cursorLeave = () => { Events.emit('cursorLeave')};
 
 const aboutTransition = {
     name: 'about-transition',
@@ -23,7 +27,16 @@ const aboutTransition = {
     enter({ current, next, trigger }) {
         const canvas = document.querySelector('.dom-gl');
         gsap.to(canvas, {autoAlpha: 1, duration: .5});
-        gsap.from(next.container, {autoAlpha: 0, duration: 1})
+        gsap.from(next.container, {autoAlpha: 0, duration: 1});
+
+        
+        // this.links = [...document.querySelectorAll('a')]
+        // this.links.forEach(el => {
+        //     el.addEventListener('mouseenter', cursorEnter);
+        //     el.addEventListener('mouseleave', cursorLeave);
+        // });
+
+        // console.log(this.links)
     },
     once({ current, next, trigger }) {
         const canvas = document.querySelector('.dom-gl');

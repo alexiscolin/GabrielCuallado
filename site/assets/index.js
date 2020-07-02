@@ -4,7 +4,6 @@ import './scss/main.scss';
 /** JS */
 import modular from 'modujs';
 import * as modules from './js/modules';
-// import Router from './js/router/index';
 
 
 
@@ -69,7 +68,6 @@ const website = website || {};
   app.init(app);
 
     website.init()
-    // const routerInstance = new Router(app);
 }())
 
 

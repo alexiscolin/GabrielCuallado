@@ -1477,6 +1477,21 @@ a:hover .u-link::after {
   }
 }
 
+@media (any-pointer: fine) {
+  .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    pointer-events: none;
+  }
+
+  .cursor__inner {
+    fill: transparent;
+    stroke: #FFFFFF;
+    stroke-width: 1px;
+  }
+}
 .o-cuallado {
   position: absolute;
   font-weight: 900;

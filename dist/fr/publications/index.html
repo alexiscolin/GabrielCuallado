@@ -107,16 +107,16 @@
           
 <nav class="c-innernav">
       
-      <a class="c-innernav_link " href="http://localhost:1313/fr/a-propos/">À Propos</a>
+      <a class="c-innernav_link " href="http://localhost:1313/fr/a-propos/" data-link="menu">À Propos</a>
     
       
-      <a class="c-innernav_link " href="http://localhost:1313/fr/collections">Collections</a>
+      <a class="c-innernav_link " href="http://localhost:1313/fr/collections" data-link="menu">Collections</a>
     
       
-      <a class="c-innernav_link " href="http://localhost:1313/fr/prix/">Prix</a>
+      <a class="c-innernav_link " href="http://localhost:1313/fr/prix/" data-link="menu">Prix</a>
     
       
-      <a class="c-innernav_link  c-innernav_link--active " href="http://localhost:1313/fr/publications/">Publications</a>
+      <a class="c-innernav_link  c-innernav_link--active " href="http://localhost:1313/fr/publications/" data-link="menu">Publications</a>
     
 </nav>
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
@@ -230,7 +230,18 @@
 
           
       </div>
+      
     </div>
+    <svg class="cursor" width="140" height="140" viewBox="0 0 140 140" data-module-cursor="main">
+      <defs>
+        <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" 
+        filterUnits="objectBoundingBox">
+          <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="40" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+      <circle class="cursor__inner" cx="70" cy="70" r="60"/>
+    </svg>
     <script src="https://embed.typeform.com/embed.js"></script>
 
     

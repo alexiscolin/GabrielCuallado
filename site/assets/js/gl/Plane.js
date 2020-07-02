@@ -28,7 +28,8 @@ export default class extends GlObject {
             uTime: { value: 0 },
             uProg: { value: 1 },
             uFlash: { value: 1 },
-            uClip: { value: 0 }
+            uClip: { value: 0 },
+            uMouse: { value : {x:0, y: 0}}
         }
 
         this.img = img;
@@ -46,6 +47,7 @@ export default class extends GlObject {
         this.add(this.mesh);
         
         Gl.scene.add(this);
+       // this.addEvents();
     }
 
     updateTime(time) {
@@ -76,4 +78,29 @@ export default class extends GlObject {
             ease: 'power.inOut',
         });
     }
+
+    // addEvents() {
+    //     this.mouseMove();
+    //     this.mouseLeave();
+    //   }
+    
+    //   mouseMove() {
+    //     this.el.addEventListener('mousemove', e => {
+    //     //   gsap.to(this.material.uniforms.uMouse, {
+    //     //     // duration: 1,
+    //     //     value: {x: e.clientX, y: e.clientX},
+    //     //     ease: 'power.inOut',
+    //     //   });
+    //     });
+    //   }
+    
+    //   mouseLeave() {
+    //     this.el.addEventListener('mouseleave', () => {
+    //       gsap.to(this.material.uniforms.uProg, {
+    //         // duration: 1,
+    //         value: 0,
+    //         ease: 'power.inOut',
+    //       });
+    //     });
+    //   }
 }

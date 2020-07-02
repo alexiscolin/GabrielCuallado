@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 const homepageView = {
     namespace: 'homepage',
     beforeEnter(data) {
+    },
+    afterEnter(data) {
     }
 };
 

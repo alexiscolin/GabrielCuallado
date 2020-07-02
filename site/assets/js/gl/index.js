@@ -1,14 +1,16 @@
 import * as THREE from 'three';
 import gsap from 'gsap';
 import { Events } from '../events';
+import { calcWinsize } from '../utils';
+
 
 export default new class {
   constructor() {
     this.scene = new THREE.Scene();
-
+    this.winSize = calcWinsize();
     this.camera = new THREE.PerspectiveCamera(
       45,
-      window.innerWidth / window.innerHeight,
+      this.winSize.width / this.winSize.height,
       0.1,
       100
     );
@@ -18,7 +20,7 @@ export default new class {
         alpha: true,
     });
     this.renderer.setPixelRatio(gsap.utils.clamp(1.5, 1, window.devicePixelRatio));
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(this.winSize.width, this.winSize.height);
     this.renderer.setClearColor(0x000000, 0.0);
 
     this.clock = new THREE.Clock();
@@ -61,7 +63,9 @@ export default new class {
     }
 
   resize() {
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.winSize = calcWinsize();
+
+    this.renderer.setSize(this.winSize.width, this.winSize.height);
     this.camera.updateProjectionMatrix();
 
     for (let i = 0; i < this.scene.children.length; i++) {

@@ -31,7 +31,7 @@
             <li class="c-header_item c-header_item--about js-header">
                 
                 
-                    <a class="c-header_link" href="http://localhost:1313/fr/expositions/"><span><span>Expositions</span></span></a>
+                    <a class="c-header_link" href="http://localhost:1313/fr/expositions/" data-link="menu"><span><span>Expositions</span></span></a>
                 
             </li>
         
@@ -109,10 +109,10 @@
           
   <nav class="c-innernav">
       
-      <a class="c-innernav_link  c-innernav_link--active " href="http://localhost:1313/fr/expositions/">Individuelles</a>
+      <a class="c-innernav_link  c-innernav_link--active " href="http://localhost:1313/fr/expositions/" data-link="menu">Individuelles</a>
     
       
-      <a class="c-innernav_link " href="http://localhost:1313/fr/expositions-collectives/">Collectives</a>
+      <a class="c-innernav_link " href="http://localhost:1313/fr/expositions-collectives/" data-link="menu">Collectives</a>
     
   </nav>
   
@@ -219,7 +219,18 @@
 
           
       </div>
+      
     </div>
+    <svg class="cursor" width="140" height="140" viewBox="0 0 140 140" data-module-cursor="main">
+      <defs>
+        <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" 
+        filterUnits="objectBoundingBox">
+          <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="40" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+      <circle class="cursor__inner" cx="70" cy="70" r="60"/>
+    </svg>
     <script src="https://embed.typeform.com/embed.js"></script>
 
     

@@ -107,13 +107,13 @@
           
   <nav class="c-innernav">
       
-      <a class="c-innernav_link " href="http://localhost:1313/gallery/serie1/">El rastro</a>
+      <a class="c-innernav_link " href="http://localhost:1313/gallery/serie1/" data-link="menu">El rastro</a>
     
       
-      <a class="c-innernav_link  c-innernav_link--active " href="http://localhost:1313/gallery/serie2/">Serie 2</a>
+      <a class="c-innernav_link  c-innernav_link--active " href="http://localhost:1313/gallery/serie2/" data-link="menu">Serie 2</a>
     
       
-      <a class="c-innernav_link " href="http://localhost:1313/gallery/serie3/">Série numero 3</a>
+      <a class="c-innernav_link " href="http://localhost:1313/gallery/serie3/" data-link="menu">Série numero 3</a>
     
 </nav>
 
@@ -234,7 +234,18 @@
 
           
       </div>
+      
     </div>
+    <svg class="cursor" width="140" height="140" viewBox="0 0 140 140" data-module-cursor="main">
+      <defs>
+        <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" 
+        filterUnits="objectBoundingBox">
+          <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="40" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+      <circle class="cursor__inner" cx="70" cy="70" r="60"/>
+    </svg>
     <script src="https://embed.typeform.com/embed.js"></script>
 
     

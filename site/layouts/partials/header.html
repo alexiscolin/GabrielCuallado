@@ -7,7 +7,7 @@
             <li class="c-header_item c-header_item--about js-header">
                 {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL) }}
                 {{ if (or (eq $isHome true) (eq $isMenuCurrent true)) }}
-                    <a class="c-header_link" href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a>
+                    <a class="c-header_link" href="{{.URL | absLangURL}}" data-link="menu"><span><span>{{ .Name }}</span></span></a>
                 {{ end }}
             </li>
         {{ end }}

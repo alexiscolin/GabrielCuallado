@@ -17,8 +17,6 @@ export default class extends module {
     }
 
     init() {
-        console.log('init scroll');
-
         preloadImages().then(() => {
           
             if (window.innerWidth > 640) {

@@ -1,0 +1,15 @@
+@media (any-pointer: fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+		//opacity: 0;
+	}
+	.cursor__inner {
+		fill: transparent;
+		stroke: color(typography, 2);
+		stroke-width: 1px;
+	}
+}

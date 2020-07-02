@@ -3,6 +3,7 @@ varying vec2 vUv;
 uniform float uTime;
 uniform float uProg;
 uniform float uIndex;
+uniform vec2 uMouse;
 
 #pragma glslify: noise = require(glsl-noise/simplex/3d) 
 
