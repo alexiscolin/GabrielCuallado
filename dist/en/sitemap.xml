@@ -117,25 +117,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/contactos/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/contact/"
-                />
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/credits/</loc>
     <xhtml:link
                 rel="alternate"

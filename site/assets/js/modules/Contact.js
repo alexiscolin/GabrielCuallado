@@ -1,4 +1,6 @@
 import { module } from 'modujs';
+import { Events } from '../events';
+
 
 export default class extends module {
     constructor(m) {
@@ -6,6 +8,9 @@ export default class extends module {
     }
 
     init(){
+        // disapear cursor
+        Events.emit('cursorDisapear');
+
         // load typeform
         let elTF = document.querySelectorAll('.typeform');
         elTF = elTF[elTF.length - 1]; // pour le reload de la meme page, 2 div cibles existent en meme temps
@@ -18,5 +23,6 @@ export default class extends module {
     }
 
     destroy() {
+        Events.emit('cursorAppear');
     }
 }

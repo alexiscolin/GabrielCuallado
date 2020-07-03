@@ -26,7 +26,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
-                url = "/contact/"
+                url = "https://gabrielcuallado.typeform.com/to/EfepgT"
                 weight = 4
 
             [[languages.en.menu.header]]
@@ -102,7 +102,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.es.menu.main]]
                 identifier = "Contact"
                 name = "Contactos"
-                url = "/es/contactos/"
+                url = "https://gabrielcuallado.typeform.com/to/EfepgT"
                 weight = 4
 
 
@@ -177,7 +177,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
-                url = "/fr/contact/"
+                url = "https://gabrielcuallado.typeform.com/to/EfepgT"
                 weight = 4
 
 

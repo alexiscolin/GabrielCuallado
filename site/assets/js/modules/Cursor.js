@@ -20,7 +20,6 @@ export default class extends module {
     }
 
     init() {
-
         this.DOM = { el: this.el };
         this.DOM.el.style.opacity = 0;
         this.DOM.circleInner = this.DOM.el.querySelector('.cursor__inner');
@@ -92,11 +91,17 @@ export default class extends module {
         });
     }
 
+    disapear() {
+        gsap.to(this.DOM.el, {duration: 0.5, ease: 'Power3.easeOut', opacity: 0});
+    }
+    appear() {
+        gsap.to(this.DOM.el, {duration: 0.5, ease: 'Power3.easeOut', opacity: 1});
+    }
     enter(target) {
         this.renderedStyles['radius'].current = 45;
         this.renderedStyles['stroke'].current = 2;
         if(target.dataset.link === "menu") {
-            gsap.to(this.DOM.el, {duration: 0.5, ease: 'Power3.easeOut', opacity: 0});
+            this.disapear();
         }
         this.tl.restart();
     }
@@ -104,15 +109,20 @@ export default class extends module {
         this.renderedStyles['radius'].current = 60;
         this.renderedStyles['stroke'].current = 1;
         this.tl.progress(1).kill();
-        gsap.to(this.DOM.el, {duration: 0.5, ease: 'Power3.easeOut', opacity: 1});
+        this.appear()
     }
+    
 
 
     listen() {
         Events.on('cursorEnter', ({target}) => this.enter(target));
         Events.on('cursorLeave', () => this.leave());
         Events.on('pageLoad', () => this.leave());
+        Events.on('cursorAppear', () => this.appear());
+        Events.on('cursorDisapear', () => this.disapear());
     }
+
+
 
     destroy() {
     }
