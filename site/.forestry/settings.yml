@@ -33,9 +33,6 @@ sections:
 - type: document
   path: site/content/collectors/_index.fr.md
   label: Collections
-# - type: document
-#   path: site/content/contact/_index.fr.md
-#   label: Contact
 - type: document
   path: site/data/fr/links.toml
   label: Nav Links
@@ -68,9 +65,6 @@ sections:
 - type: document
   path: site/content/collectors/_index.es.md
   label: Colección
-# - type: document
-#   path: site/content/contact/_index.es.md
-#   label: Contactos
 - type: document
   path: site/data/es/links.toml
   label: Nav Links
@@ -103,9 +97,6 @@ sections:
 - type: document
   path: site/content/collectors/_index.en.md
   label: Collectors
-# - type: document
-#   path: site/content/contact/_index.en.md
-#   label: Contact
 - type: document
   path: site/data/en/links.toml
   label: Nav Links
