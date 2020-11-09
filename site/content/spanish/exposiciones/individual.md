@@ -1,8 +1,10 @@
 +++
-Title = "collectif"
-layout = "exhibitions"
+Title = "Individual"
+type = "exhibitions"
+menu = ["exhibitions"]
 namespace = "exhibitions"
-url = "/fr/expositions-collectives"
+translationKey = "exhibitions-individual"
+weight = 1
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""

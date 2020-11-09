@@ -1,8 +1,11 @@
 +++
 Title = "collective"
-layout = "exhibitions"
 namespace = "exhibitions"
-url = "/es/exposiciones-colectivas"
+menu = ["exhibitions"]
+type = "exhibitions"
+translationKey = "exhibitions-collective"
+weight = 2
+
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""

@@ -1,7 +1,17 @@
 +++
-Title = "Exposiciones"
+Title = "collective"
+layout = "exhibitions"
+menu = ["exhibitions"]
 namespace = "exhibitions"
-url = "/es/exposiciones"
+translationKey = "exhibitions-collective"
+weight = 2
+
+[[exhibition]]
+date = "2020-05-31T22:00:00+00:00"
+illustration = ""
+link = "https://google.fr"
+name = "New Exhibition"
+place = "Paris"
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""
@@ -32,4 +42,3 @@ place = "Barcellone"
 type = "individual"
 
 +++
-exhibitions contenu es

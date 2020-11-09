@@ -1,5 +1,5 @@
 +++
 layout = "empty"
-url = "/exhibitions/"
+url = "/es/exposiciones/"
 headless = true
 +++

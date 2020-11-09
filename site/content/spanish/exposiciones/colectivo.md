@@ -1,15 +1,10 @@
 +++
 Title = "collective"
-layout = "exhibitions"
-menu = []
+type = "exhibitions"
+menu = ["exhibitions"]
 namespace = "exhibitions"
-url = ""
-[[exhibition]]
-date = "2020-05-31T22:00:00+00:00"
-illustration = ""
-link = "https://google.fr"
-name = "New Exhibition"
-place = "Paris"
+translationKey = "exhibitions-collective"
+weight = 2
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""

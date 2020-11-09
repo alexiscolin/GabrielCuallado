@@ -1,7 +1,12 @@
 +++
-Title = "Exposition"
+Title = "Individual"
 namespace = "exhibitions"
-url = "/fr/expositions"
+menu = ["exhibitions"]
+type = "exhibitions"
+translationKey = "exhibitions-individual"
+weight = 1
+
+
 [[exhibition]]
 date = "2020-05-31T22:00:00+00:00"
 illustration = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
@@ -38,4 +43,4 @@ place = "Barcellone"
 type = "individual"
 
 +++
-expo contenu fr
+expo contenu en
