@@ -139,40 +139,40 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/awards/</loc>
+    <loc>http://localhost:1313/about/awards/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/premios/"
+                href="http://localhost:1313/es/acerca/premios/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/prix/"
+                href="http://localhost:1313/fr/a-propos/prix/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awards/"
+                href="http://localhost:1313/about/awards/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/collectors/</loc>
+    <loc>http://localhost:1313/about/collectors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/coleccionistas/"
+                href="http://localhost:1313/es/acerca/coleccionistas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/collections/"
+                href="http://localhost:1313/fr/a-propos/collections/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/collectors/"
+                href="http://localhost:1313/about/collectors/"
                 />
   </url>
   
@@ -215,21 +215,21 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>http://localhost:1313/about/publications/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/publicaciones/"
+                href="http://localhost:1313/es/acerca/publicaciones/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/publications/"
+                href="http://localhost:1313/fr/a-propos/publications/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/publications/"
+                href="http://localhost:1313/about/publications/"
                 />
   </url>
   

@@ -58,17 +58,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.about]]
                 identifier = "Collectors"
                 name = "Collectors"
-                url = "/collectors/"
+                url = "/about/collectors/"
                 weight = 2
             [[languages.en.menu.about]]
                 identifier = "Awards"
                 name = "Awards"
-                url = "/awards/"
+                url = "/about/awards/"
                 weight = 3
             [[languages.en.menu.about]]
                 identifier = "Publications"
                 name = "Publications"
-                url = "/publications/"
+                url = "/about/publications/"
                 weight = 4
 
 
@@ -124,17 +124,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.es.menu.about]]
                 identifier = "Collectors"
                 name = "Coleccionistas"
-                url = "/es/coleccionistas/"
+                url = "/es/acerca/coleccionistas/"
                 weight = 2
             [[languages.es.menu.about]]
                 identifier = "Awards"
                 name = "Premios"
-                url = "/es/premios/"
+                url = "/es/acerca/premios/"
                 weight = 3
             [[languages.es.menu.about]]
                 identifier = "Publications"
                 name = "Publicaciones"
-                url = "/es/publicaciones/"
+                url = "/es/acerca/publicaciones/"
                 weight = 4
 
 
@@ -191,17 +191,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.about]]
                 identifier = "Collectors"
                 name = "Collections"
-                url = "/fr/collections"
+                url = "/fr/a-propos/collections/"
                 weight = 2
             [[languages.fr.menu.about]]
                 identifier = "Awards"
                 name = "Prix"
-                url = "/fr/prix/"
+                url = "/fr/a-propos/prix/"
                 weight = 3
             [[languages.fr.menu.about]]
                 identifier = "Publications"
                 name = "Publications"
-                url = "/fr/publications/"
+                url = "/fr/a-propos/publications/"
                 weight = 4
 
             # [[languages.fr.menu.exhibitions]]

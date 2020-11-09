@@ -9,5 +9,32 @@
 	<atom:link href="http://localhost:1313/fr/a-propos/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Collections</title>
+      <link>http://localhost:1313/fr/a-propos/collections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/a-propos/collections/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prix</title>
+      <link>http://localhost:1313/fr/a-propos/prix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/a-propos/prix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/fr/a-propos/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/a-propos/publications/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
