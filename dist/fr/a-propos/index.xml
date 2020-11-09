@@ -19,6 +19,15 @@
     </item>
     
     <item>
+      <title>Presse</title>
+      <link>http://localhost:1313/fr/a-propos/presse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/a-propos/presse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Prix</title>
       <link>http://localhost:1313/fr/a-propos/prix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -28,6 +28,15 @@
     </item>
     
     <item>
+      <title>Prensa</title>
+      <link>http://localhost:1313/es/acerca/prensa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/acerca/prensa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Publicaciones</title>
       <link>http://localhost:1313/es/acerca/publicaciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -201,6 +201,25 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/es/acerca/prensa/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about/press/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/a-propos/presse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/acerca/prensa/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/es/acerca/publicaciones/</loc>
     <xhtml:link
                 rel="alternate"

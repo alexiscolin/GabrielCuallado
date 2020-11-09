@@ -11,6 +11,7 @@ import { exhibitionsView, exhibitionsTransition } from '../router/exhibition.js'
 import { collectorsView, collectorsTransition } from '../router/collectors.js';
 import { awardsView, awardsTransition } from '../router/awards.js';
 import { publicationsView, publicationsTransition } from '../router/publications.js';
+import { pressView, pressTransition } from '../router/press.js';
 import { contactView, contactTransition } from '../router/contact.js';
 
 export default class extends module {
@@ -32,6 +33,7 @@ export default class extends module {
             collectorsView,
             awardsView,
             publicationsView,
+            pressView,
             contactView
         ];
 
@@ -43,6 +45,7 @@ export default class extends module {
             collectorsTransition,
             awardsTransition,
             publicationsTransition,
+            pressTransition,
             contactTransition
         ]
         this.views = [];

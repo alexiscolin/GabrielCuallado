@@ -18,7 +18,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.main]]
                 identifier = "Gallery"
                 name = "Gallery"
-                url = "/gallery/serie1"
+                url = "/gallery/el-rastro"
                 weight = 2
             [[languages.en.menu.main]]
                 identifier = "Expositions"
@@ -44,7 +44,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.header]]
                 identifier = "Gallery"
                 name = "Gallery"
-                url = "/gallery/serie1/"
+                url = "/gallery/el-rastro"
                 weight = 3
 
             
@@ -70,6 +70,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Publications"
                 url = "/about/publications/"
                 weight = 4
+            [[languages.en.menu.about]]
+                identifier = "Press"
+                name = "Press"
+                url = "/about/press/"
+                weight = 5
 
 
     [languages.es]
@@ -136,6 +141,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Publicaciones"
                 url = "/es/acerca/publicaciones/"
                 weight = 4
+            [[languages.es.menu.about]]
+                identifier = "Press"
+                name = "Prensa"
+                url = "/es/acerca/prensa/"
+                weight = 5
 
 
 
@@ -191,7 +201,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.about]]
                 identifier = "Collectors"
                 name = "Collections"
-                url = "/fr/a-propos/collections/"
+                url = "/fr/a-propos/collections"
                 weight = 2
             [[languages.fr.menu.about]]
                 identifier = "Awards"
@@ -203,15 +213,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Publications"
                 url = "/fr/a-propos/publications/"
                 weight = 4
-
-            # [[languages.fr.menu.exhibitions]]
-            #     identifier = "frIndividual"
-            #     name = "Individuelles"
-            #     url = "/fr/expositions/"
-            #     weight = 1
-            # [[languages.fr.menu.exhibitions]]
-            #     identifier = "frCollective"
-            #     name = "Collectives"
-            #     url = "/fr/expositions-collectives/" 
-            #     weight = 2
+            [[languages.fr.menu.about]]
+                identifier = "Press"
+                name = "Presse"
+                url = "/fr/a-propos/presse/"
+                weight = 5
         

@@ -7652,6 +7652,82 @@ var publicationsTransition = {
   }
 };
 exports.publicationsTransition = publicationsTransition;
+},{"gsap":"../../node_modules/gsap/index.js"}],"js/router/press.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.pressTransition = exports.pressView = void 0;
+
+var _gsap = require("gsap");
+
+var pressView = {
+  namespace: 'press',
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
+};
+exports.pressView = pressView;
+var pressTransition = {
+  name: 'press-transition',
+  leave: function leave(_ref) {
+    var current = _ref.current,
+        next = _ref.next,
+        trigger = _ref.trigger;
+    return new Promise(function (resolve) {
+      var canvas = document.querySelector('.dom-gl');
+
+      _gsap.gsap.to(canvas, {
+        autoAlpha: 0,
+        duration: .6
+      });
+
+      _gsap.gsap.to(current.container, {
+        autoAlpha: 0,
+        duration: .6,
+        onComplete: function onComplete() {
+          resolve();
+        }
+      });
+    });
+  },
+  enter: function enter(_ref2) {
+    var current = _ref2.current,
+        next = _ref2.next,
+        trigger = _ref2.trigger;
+    var canvas = document.querySelector('.dom-gl');
+
+    _gsap.gsap.to(canvas, {
+      autoAlpha: 1,
+      duration: .5
+    });
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  once: function once(_ref3) {
+    var current = _ref3.current,
+        next = _ref3.next,
+        trigger = _ref3.trigger;
+    var canvas = document.querySelector('.dom-gl');
+
+    _gsap.gsap.to(canvas, {
+      autoAlpha: 1,
+      duration: .5
+    });
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  to: {
+    namespace: ['press']
+  }
+};
+exports.pressTransition = pressTransition;
 },{"gsap":"../../node_modules/gsap/index.js"}],"js/router/contact.js":[function(require,module,exports) {
 "use strict";
 
@@ -7739,6 +7815,8 @@ var _awards = require("../router/awards.js");
 
 var _publications = require("../router/publications.js");
 
+var _press = require("../router/press.js");
+
 var _contact = require("../router/contact.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -7790,11 +7868,11 @@ function (_module) {
       var _this = this;
 
       this.links = [];
-      this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView, _contact.contactView];
+      this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView, _press.pressView, _contact.contactView];
       this.loadedTransition = [_serie.serieTransition, (0, _homepage.homepageTransition)(function (_) {
         return _this.call('appear', '', 'Homepage');
       }), //Link modus module method for enterAnimation
-      _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition, _contact.contactTransition];
+      _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition, _press.pressTransition, _contact.contactTransition];
       this.views = [];
       this.transitions = [];
 
@@ -7899,7 +7977,7 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","gsap":"../../node_modules/gsap/index.js","@barba/core":"../../node_modules/@barba/core/dist/barba.umd.js","../events":"js/events/index.js","../router/homepage.js":"js/router/homepage.js","../router/serie.js":"js/router/serie.js","../router/about.js":"js/router/about.js","../router/exhibition.js":"js/router/exhibition.js","../router/collectors.js":"js/router/collectors.js","../router/awards.js":"js/router/awards.js","../router/publications.js":"js/router/publications.js","../router/contact.js":"js/router/contact.js"}],"js/modules/Cursor.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","gsap":"../../node_modules/gsap/index.js","@barba/core":"../../node_modules/@barba/core/dist/barba.umd.js","../events":"js/events/index.js","../router/homepage.js":"js/router/homepage.js","../router/serie.js":"js/router/serie.js","../router/about.js":"js/router/about.js","../router/exhibition.js":"js/router/exhibition.js","../router/collectors.js":"js/router/collectors.js","../router/awards.js":"js/router/awards.js","../router/publications.js":"js/router/publications.js","../router/press.js":"js/router/press.js","../router/contact.js":"js/router/contact.js"}],"js/modules/Cursor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45715,6 +45793,57 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js"}],"js/modules/Press.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _modujs = require("modujs");
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var _default =
+/*#__PURE__*/
+function (_module) {
+  _inherits(_default, _module);
+
+  function _default(m) {
+    _classCallCheck(this, _default);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
+  }
+
+  _createClass(_default, [{
+    key: "init",
+    value: function init() {}
+  }, {
+    key: "destroy",
+    value: function destroy() {}
+  }]);
+
+  return _default;
+}(_modujs.module);
+
+exports.default = _default;
 },{"modujs":"../../node_modules/modujs/dist/main.esm.js"}],"js/modules/Awards.js":[function(require,module,exports) {
 "use strict";
 
@@ -45814,6 +45943,12 @@ Object.defineProperty(exports, "Publications", {
     return _Publications.default;
   }
 });
+Object.defineProperty(exports, "Press", {
+  enumerable: true,
+  get: function () {
+    return _Press.default;
+  }
+});
 Object.defineProperty(exports, "Awards", {
   enumerable: true,
   get: function () {
@@ -45835,10 +45970,12 @@ var _Navigation = _interopRequireDefault(require("./modules/Navigation"));
 
 var _Publications = _interopRequireDefault(require("./modules/Publications"));
 
+var _Press = _interopRequireDefault(require("./modules/Press"));
+
 var _Awards = _interopRequireDefault(require("./modules/Awards"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./modules/Load":"js/modules/Load.js","./modules/Cursor":"js/modules/Cursor.js","./modules/Scroll":"js/modules/Scroll.js","./modules/Homepage":"js/modules/Homepage.js","./modules/Serie":"js/modules/Serie.js","./modules/Navigation":"js/modules/Navigation.js","./modules/Publications":"js/modules/Publications.js","./modules/Awards":"js/modules/Awards.js"}],"index.js":[function(require,module,exports) {
+},{"./modules/Load":"js/modules/Load.js","./modules/Cursor":"js/modules/Cursor.js","./modules/Scroll":"js/modules/Scroll.js","./modules/Homepage":"js/modules/Homepage.js","./modules/Serie":"js/modules/Serie.js","./modules/Navigation":"js/modules/Navigation.js","./modules/Publications":"js/modules/Publications.js","./modules/Press":"js/modules/Press.js","./modules/Awards":"js/modules/Awards.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./scss/main.scss");
@@ -45926,7 +46063,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62492" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49728" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
