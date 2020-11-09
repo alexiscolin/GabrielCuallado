@@ -3,6 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://localhost:1313/es/galeria/el-rastro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/gallery/el-rastro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/el-rastro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/galeria/el-rastro/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/es/galeria/paris/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/gallery/paris/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/paris/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/galeria/paris/"
+                />
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/es/</loc>
     <xhtml:link
                 rel="alternate"
@@ -22,22 +60,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/es/gallery/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/gallery/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/gallery/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/gallery/"
-                />
+    <loc>http://localhost:1313/es/galeria/</loc>
   </url>
   
   <url>
@@ -117,25 +140,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/es/gallery/serie1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/gallery/serie1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/gallery/serie1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/gallery/serie1/"
-                />
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/es/exposiciones/</loc>
     <xhtml:link
                 rel="alternate"
@@ -208,25 +212,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/publicaciones/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/es/gallery/serie2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/gallery/serie2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/gallery/serie2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/gallery/serie2/"
                 />
   </url>
   

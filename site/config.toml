@@ -6,6 +6,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [languages]
     [languages.en]
         weight = 1
+        contentDir = "content/english"
+        languageName = "English"
 
         [languages.en.menu]
             [[languages.en.menu.main]]
@@ -83,6 +85,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
     [languages.es]
         weight = 2
+        contentDir = "content/spanish"
+        languageName = "Español"
         [languages.es.menu]
             [[languages.es.menu.main]]
                 identifier = "About"
@@ -92,7 +96,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.es.menu.main]]
                 identifier = "Gallery"
                 name = "Galeria"
-                url = "/es/gallery/serie1"
+                url = "/es/galeria/el-rastro/"
                 weight = 2
             [[languages.es.menu.main]]
                 identifier = "Expositions"
@@ -119,7 +123,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
              [[languages.es.menu.header]]
                 identifier = "Galeria"
                 name = "Galeria"
-                url = "/es/gallery/serie1/"
+                url = "/es/galeria/el-rastro/"
                 weight = 3
                 
 
@@ -158,6 +162,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
     [languages.fr]
         weight = 3
+        contentDir = "content/french"
+        languageName = "Français"
         [languages.fr.menu]
             [[languages.fr.menu.main]]
                 identifier = "About"
@@ -167,7 +173,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.main]]
                 identifier = "Gallery"
                 name = "Galerie"
-                url = "/fr/gallery/serie1"
+                url = "/fr/galerie/el-rastro"
                 weight = 2
             [[languages.fr.menu.main]]
                 identifier = "Expositions"
@@ -194,7 +200,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.header]]
                 identifier = "Galerie"
                 name = "Galerie"
-                url = "/fr/gallery/serie1/"
+                url = "/fr/galerie/el-rastro"
                 weight = 3
             
 

@@ -1,0 +1,24 @@
++++
+Title = "Publicaciones"
+namespace = "publications"
+url = "/es/publicaciones"
+[[publication]]
+image = ""
+link = "#"
+logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
+type = "video"
+[[publication]]
+image = ""
+link = "#"
+logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
+type = "article"
+[[publication]]
+image = ""
+link = "#"
+logo = ""
+title = "Center for creative photography of the university of Tuscon Arizona"
+type = "video"
+
++++
