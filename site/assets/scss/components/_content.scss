@@ -1,9 +1,9 @@
 .c-section_para {
-    font-family: sans-serif;
-    @include font-weight(light);
+    font-family: Raleway;
+    @include font-weight(medium);
     width: 100%;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2;
     margin-bottom: 3rem;
 
@@ -64,6 +64,7 @@
     margin: 1rem 0 2rem;
 
     &_cite {
+        @include font-family(heading);
         @include font-weight(bold);
         font-size: 45px;
         letter-spacing: 8px;
@@ -73,9 +74,10 @@
     &_author {
         display: block;
         @include font-weight(light);
-        font-size: 40px;
+        font-size: 16px;
         letter-spacing: .2px;
         margin-top: 0;
+        font-style: italic;
     }
 }
 
@@ -171,17 +173,19 @@
     }
 
     &_link {
-        font-size: 9vw;
+        font-size: 2.8vw;
         margin: 0 1.8vw;
-        @include font-weight(bold);
+        @include font-weight(semibold);
         text-transform: uppercase;
         text-decoration: none;
         opacity: .5;
+        
         transition: opacity 1s ease;
 
         @include media( '>medium' ) {
-            font-size: 45px;
-            margin: 0;
+            letter-spacing: 2px;
+            font-size: 16px;
+            margin: .6rem 0;
         }
 
         &--active {
@@ -251,7 +255,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 position: absolute;
-                bottom: 2vw;
+                bottom: -1vw;
                 padding-left: 1vw;
             }
         }
@@ -337,22 +341,26 @@
     }
 
     &_title {
-        font-size: 30px;
+        font-size: 20px;
         @include font-weight(bold);
         text-transform: uppercase;
         letter-spacing: 2px;
         z-index: 2;
+        font-style: italic;
 
         &--under {
             text-transform: initial;
+            font-size: 18px;
             @include font-weight(medium);
-            margin-bottom: .8rem;
+            margin: .6rem 0 .8rem;
+            font-style: italic;
         }
 
         &--cite {
-            font-size: 35px;
+            font-size: 30px;
             text-transform: initial;
             font-style: italic;
+            margin-bottom: 1rem;
             @include font-weight(light);
 
             @include media( '>medium' ) {
@@ -361,11 +369,13 @@
         }
     }
     &_subtitle {
-        font-size: 26px;
+        font-size: 16px;
         @include font-weight(light);
+        font-style: italic;
     }
     &_date {
-        font-size: 80px;
+        font-size: 85px;
+        @include font-family(heading);
         @include font-weight(bold);
         font-style: italic;
         letter-spacing: .05em;

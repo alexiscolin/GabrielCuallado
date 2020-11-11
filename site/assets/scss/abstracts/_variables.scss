@@ -33,7 +33,7 @@ $color: (
 $kerning-basis: 20px;
 
 $font__family: (
-	base: 'Morganite, "Helvetica", sans-serif', // font-family(base)
+	base: 'Montserrat, "Helvetica", sans-serif', // font-family(base)
 	heading: 'Morganite, "Helvetica", sans-serif', // font-family(heading)
 	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
 	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
@@ -69,7 +69,9 @@ $font__scale: (
 
 $font__weight: (
 	light: 300, 	// font__weight(light)
+	regular: 400,	// font__weight(regular)
 	medium: 500,	// font__weight(medium)
+	semibold: 600,  // font__weight(semibold)
 	bold: 700,		// font__weight(bold)
 	black: 900 		// font__weight(black)
 );

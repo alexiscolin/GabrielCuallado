@@ -46,6 +46,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Gallery"
                 url = "/gallery/el-rastro"
                 weight = 3
+            [[languages.en.menu.header]]
+                identifier = "Contact"
+                name = "Contact"
+                url = "https://gabrielcuallado.typeform.com/to/EfepgT"
+                weight = 4
 
             
 
@@ -119,6 +124,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Galeria"
                 url = "/es/galeria/el-rastro/"
                 weight = 3
+            [[languages.es.menu.header]]
+                identifier = "Contact"
+                name = "Contactos"
+                url = "https://gabrielcuallado.typeform.com/to/EfepgT"
+                weight = 4
                 
 
             [[languages.es.menu.about]]
@@ -191,6 +201,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Galerie"
                 url = "/fr/galerie/el-rastro"
                 weight = 3
+            [[languages.fr.menu.header]]
+                identifier = "Contact"
+                name = "Contact"
+                url = "https://gabrielcuallado.typeform.com/to/EfepgT"
+                weight = 4
             
 
             [[languages.fr.menu.about]]

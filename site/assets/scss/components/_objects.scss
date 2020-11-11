@@ -1,8 +1,10 @@
 .o-cuallado {
     position: absolute;
+    @include font-family(heading);
     @include font-weight(black);
     letter-spacing: 1.6vw;
-    font-size: 18vw;
+    font-size: 18.2vw;
+    word-spacing: 0vw;
     text-align: center;
     // padding-left: 2vw;
     z-index: 1;
@@ -45,6 +47,7 @@
 .o-job {
     text-transform: uppercase;
     @include font-weight(light);
+    @include font-family(heading);
     font-size: 5vw;
     letter-spacing: 6.8vw;
     text-align: center;
@@ -59,6 +62,7 @@
 
 .o-dates {
     @include font-weight(light);
+    @include font-family(heading);
     font-size: 24px;
     letter-spacing: 10px;
 
@@ -77,8 +81,8 @@
 }
 
 .o-title {
-    @include font-weight(bold);
-    font-size: 60px;
+    @include font-weight(light);
+    font-size: 34px;
     letter-spacing: 4px;
     margin-top: 4rem;
     @include media( '>medium' ) {
@@ -96,7 +100,7 @@
 
 .o-subtitle {
     @include font-weight(light);
-    font-size: 40px;
-    margin: 0;
+    font-size: 18px;
+    margin: .4rem 0 1rem;
     letter-spacing: 2px;
 }

@@ -4,6 +4,7 @@ body {
     background: color(bg, 1);
     color: color(typography, 2);
     @include font-family(base);
+    @include font-weight(light);
     overscroll-behavior: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
