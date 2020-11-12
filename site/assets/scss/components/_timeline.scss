@@ -10,7 +10,7 @@
         justify-content: center;
 
         @include media( '>medium' ) {
-            width: 45vw;
+            width: 60vw;
             height: 100vh;
         }
 
@@ -41,6 +41,7 @@
         transform: translate3d(-50%, -50%, 0);
         font-size: 90px;
         font-style: italic;
+        @include font-family(heading);
         @include font-weight(bold);
         letter-spacing: 6px;
         z-index: 3;  
@@ -67,14 +68,16 @@
         top: 60%;
         max-width: 50%;
         right: 10%;
-        font-size: 26px;
+        font-size: 40px;
+        @include font-family(heading);
         @include font-weight(bold);
         letter-spacing: 6px;
         z-index: 2;
         cursor: pointer;
 
         @include media( '>medium' ) {
-            max-width: 30vw;
+            max-width: 40vw;
+            width: 100%;
             left: calc(50% - 10px);
             right: initial;
             top: 62%;

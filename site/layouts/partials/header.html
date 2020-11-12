@@ -3,13 +3,12 @@
         <a class="c-header_name js-header {{ if not .IsHome }}c-header_name--appear{{ end }}" href="{{ "/" | absLangURL }}">Gabriel Cuallado</a>
         <ul class="c-header_nav">
             {{ $currentPage := . }}
+            
             {{ $isHome := .IsHome  }}
             {{ range .Site.Menus.header }}
                 <li class="c-header_item c-header_item--about js-header">
                     {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL) }}
-                    
-                        <a class="c-header_link" href="{{.URL | absLangURL}}" data-link="menu"><span><span>{{ .Name }}</span></span></a>
-                
+                    <a class="c-header_link" href="{{.URL | absLangURL}}" data-link="menu"><span><span>{{ .Name }}</span></span></a>                    
                 </li>
             {{ end }}
 

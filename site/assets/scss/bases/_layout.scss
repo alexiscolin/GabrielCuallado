@@ -74,7 +74,7 @@ a {
     flex-wrap: wrap;
     width: 100vw;
     flex-direction: column;
-    padding: 20px 0 60px;
+    padding: 60px 0 60px;
 
     @include media( '>medium' ) {
         flex-wrap: nowrap;

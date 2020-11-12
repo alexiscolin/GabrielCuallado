@@ -342,7 +342,7 @@ a {
   flex-wrap: wrap;
   width: 100vw;
   flex-direction: column;
-  padding: 20px 0 60px;
+  padding: 60px 0 60px;
 }
 @media (min-width: 641px) {
   .container {
@@ -1169,7 +1169,7 @@ a {
   }
 }
 .c-innernav_link {
-  font-size: 2.8vw;
+  font-size: 2.5vw;
   margin: 0 1.8vw;
   font-weight: 600;
   text-transform: uppercase;
@@ -1403,7 +1403,7 @@ a:hover .u-link::after {
 }
 @media (min-width: 641px) {
   .c-timeline_section {
-    width: 45vw;
+    width: 60vw;
     height: 100vh;
   }
 }
@@ -1433,6 +1433,7 @@ a:hover .u-link::after {
   transform: translate3d(-50%, -50%, 0);
   font-size: 90px;
   font-style: italic;
+  font-family: Morganite, "Helvetica", sans-serif;
   font-weight: 700;
   letter-spacing: 6px;
   z-index: 3;
@@ -1456,7 +1457,8 @@ a:hover .u-link::after {
   top: 60%;
   max-width: 50%;
   right: 10%;
-  font-size: 26px;
+  font-size: 40px;
+  font-family: Morganite, "Helvetica", sans-serif;
   font-weight: 700;
   letter-spacing: 6px;
   z-index: 2;
@@ -1464,7 +1466,8 @@ a:hover .u-link::after {
 }
 @media (min-width: 641px) {
   .c-timeline_name {
-    max-width: 30vw;
+    max-width: 40vw;
+    width: 100%;
     left: calc(50% - 10px);
     right: initial;
     top: 62%;
