@@ -24,44 +24,29 @@
             
             
             
+            
                 <li class="c-header_item c-header_item--about js-header">
                     
-                    
-                        <a class="c-header_link" href="http://localhost:1313/es/acerca/" data-link="menu"><span><span>Acerca</span></span></a>
-                        <br>
-                        
-                
+                    <a class="c-header_link" href="http://localhost:1313/es/acerca/" data-link="menu"><span><span>Acerca</span></span></a>                    
                 </li>
             
                 <li class="c-header_item c-header_item--about js-header">
                     
-                    
-                        <a class="c-header_link" href="http://localhost:1313/es/exposiciones/" data-link="menu"><span><span>Exposiciones</span></span></a>
-                        <br>
-                        
-                
+                    <a class="c-header_link" href="http://localhost:1313/es/exposiciones/" data-link="menu"><span><span>Exposiciones</span></span></a>                    
                 </li>
             
                 <li class="c-header_item c-header_item--about js-header">
                     
-                    
-                        <a class="c-header_link" href="http://localhost:1313/es/galeria/el-rastro/" data-link="menu"><span><span>Galeria</span></span></a>
-                        <br>
-                        
-                
+                    <a class="c-header_link" href="http://localhost:1313/es/galeria/el-rastro/" data-link="menu"><span><span>Galeria</span></span></a>                    
                 </li>
             
                 <li class="c-header_item c-header_item--about js-header">
                     
-                    
-                        <a class="c-header_link" href="https://gabrielcuallado.typeform.com/to/EfepgT" data-link="menu"><span><span>Contactos</span></span></a>
-                        <br>
-                        
-                
+                    <a class="c-header_link" href="https://gabrielcuallado.typeform.com/to/EfepgT" data-link="menu"><span><span>Contactos</span></span></a>                    
                 </li>
             
 
-            <li class="c-header_item c-header_item--nav js-menu" data-navigation="menuToogle">
+            <li class="c-header_item c-header_item--nav a js-menu" data-navigation="menuToogle">
                 <span class="c-header_item--nav_bar js-header-bar"></span>
                 <span class="c-header_item--nav_bar js-header-bar"></span>
             </li>
@@ -168,8 +153,34 @@
     
   </nav>
 
-  <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
+  <section data-module-scroll="main" data-module-parallaxe data-module-serie="main" class="o-scroll">
+    
+    
+    <section class="c-photo js-photo-section">
+    
+    <svg viewBox="0 0 600 600" class="c-photo_svg" data-serie="svg">
+        <filter id='noise' x='0%' y='0%' width='100%' height='100%' >
+            <feColorMatrix type="matrix" in="SourceGraphic" values=".33 .33 .33 0 0
+                                                          .33 .33 .33 0 0
+                                                          .33 .33 .33 0 0
+                                                          0 0 0 1 0">
+            </feColorMatrix>
+            <feTurbulence type="fractalNoise" baseFrequency="0.01" result="NOISE" numOctaves="1"/>
+            <feDisplacementMap class="js-photo-feDisplacementMap" in="SourceGraphic" in2="NOISE" scale="50" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>
+        </filter>
+            
+        <image filter='url(#noise)' data-serie="zoom" class="distort__img o-img js-photo-zoom" x="0" y="0" href="https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg" height="100%"/>
+    </svg>
+
+    <span class="c-photo_name" data-serie="zoomName"></spanclass>title</span>
+    <button class="c-photo_close a" data-serie="leaveZoom">
+        <span class="c-photo_close_bar js-header-bar"></span>
+        <span class="c-photo_close_bar js-header-bar"></span>
+    </button>
+</section>
+    
     <div class="container">
+   
 
           
           
@@ -190,7 +201,7 @@
 
                 <div class="c-container c-serie1_img0" data-parallaxe="img" data-speed="-.1">
                   
-                  <img class="o-img js-prlx-img" src="/img/sofia/6.jpg" >
+                  <span class="o-img_link a" data-serie="openImg" data-src="/img/sofia/6.jpg" data-name="El Rastro"><img class="o-img js-prlx-img" src="/img/sofia/6.jpg" ></span>
                   <span class="c-serie_def">El Rastro</span class="c-serie_def">
                 </div>
     
@@ -204,7 +215,7 @@
 
                 <div class="c-container c-serie1_img1" data-parallaxe="img" data-speed=".2">
                   
-                  <img class="o-img js-prlx-img" src="/img/sofia/7.jpg" >
+                  <span class="o-img_link a" data-serie="openImg" data-src="/img/sofia/7.jpg" data-name="El Rastro"><img class="o-img js-prlx-img" src="/img/sofia/7.jpg" ></span>
                   <span class="c-serie_def">El Rastro</span class="c-serie_def">
                 </div>
     
@@ -218,7 +229,7 @@
 
                 <div class="c-container c-serie1_img2" data-parallaxe="img" data-speed=".4">
                   
-                  <img class="o-img js-prlx-img" src="/img/sofia/8.jpg" >
+                  <span class="o-img_link a" data-serie="openImg" data-src="/img/sofia/8.jpg" data-name="El Rastro"><img class="o-img js-prlx-img" src="/img/sofia/8.jpg" ></span>
                   <span class="c-serie_def">El Rastro</span class="c-serie_def">
                 </div>
     
@@ -242,7 +253,7 @@
 
                 <div class="c-container c-serie1_img3" data-parallaxe="img" data-speed=".2">
                   
-                  <img class="o-img js-prlx-img" src="/img/sofia/9.jpg" >
+                  <span class="o-img_link a" data-serie="openImg" data-src="/img/sofia/9.jpg" data-name="El Rastro"><img class="o-img js-prlx-img" src="/img/sofia/9.jpg" ></span>
                   <span class="c-serie_def">El Rastro</span class="c-serie_def">
                 </div>
     
@@ -256,7 +267,7 @@
 
                 <div class="c-container c-serie1_img4" data-parallaxe="img" data-speed=".26">
                   
-                  <img class="o-img js-prlx-img" src="/img/sofia/10.jpg" >
+                  <span class="o-img_link a" data-serie="openImg" data-src="/img/sofia/10.jpg" data-name="El Rastro"><img class="o-img js-prlx-img" src="/img/sofia/10.jpg" ></span>
                   <span class="c-serie_def">El Rastro</span class="c-serie_def">
                 </div>
     
@@ -270,7 +281,7 @@
 
                 <div class="c-container c-serie1_img5" data-parallaxe="img" data-speed=".26">
                   
-                  <img class="o-img js-prlx-img" src="/img/sofia/11.jpg" >
+                  <span class="o-img_link a" data-serie="openImg" data-src="/img/sofia/11.jpg" data-name="El Rastro"><img class="o-img js-prlx-img" src="/img/sofia/11.jpg" ></span>
                   <span class="c-serie_def">El Rastro</span class="c-serie_def">
                 </div>
     
@@ -281,6 +292,7 @@
             
           
         </div>
+    
       </section>
 
           

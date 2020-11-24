@@ -6851,6 +6851,46 @@ function calcWinsize() {
 }
 
 ;
+},{}],"js/utils/requestInterval.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.requestInterval = exports.clearRequestInterval = void 0;
+
+var requestInterval = function requestInterval(fn, delay) {
+  if (!window.requestAnimationFrame && !window.webkitRequestAnimationFrame && !(window.mozRequestAnimationFrame && window.mozCancelRequestAnimationFrame) && // Firefox 5 ships without cancel support
+  !window.oRequestAnimationFrame && !window.msRequestAnimationFrame) return window.setInterval(fn, delay);
+  var start = new Date().getTime(),
+      handle = new Object();
+
+  function loop() {
+    var current = new Date().getTime(),
+        delta = current - start;
+
+    if (delta >= delay) {
+      fn.call();
+      start = new Date().getTime();
+    }
+
+    handle.value = requestAnimationFrame(loop);
+  }
+
+  ;
+  handle.value = requestAnimationFrame(loop);
+  return handle;
+};
+
+exports.requestInterval = requestInterval;
+
+var clearRequestInterval = function clearRequestInterval(handle) {
+  window.cancelAnimationFrame ? window.cancelAnimationFrame(handle.value) : window.webkitCancelAnimationFrame ? window.webkitCancelAnimationFrame(handle.value) : window.webkitCancelRequestAnimationFrame ? window.webkitCancelRequestAnimationFrame(handle.value) :
+  /* Support for legacy API */
+  window.mozCancelRequestAnimationFrame ? window.mozCancelRequestAnimationFrame(handle.value) : window.oCancelRequestAnimationFrame ? window.oCancelRequestAnimationFrame(handle.value) : window.msCancelRequestAnimationFrame ? window.msCancelRequestAnimationFrame(handle.value) : clearInterval(handle);
+};
+
+exports.clearRequestInterval = clearRequestInterval;
 },{}],"js/utils/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -6887,6 +6927,18 @@ Object.defineProperty(exports, "calcWinsize", {
     return _winSize.calcWinsize;
   }
 });
+Object.defineProperty(exports, "clearRequestInterval", {
+  enumerable: true,
+  get: function () {
+    return _requestInterval.clearRequestInterval;
+  }
+});
+Object.defineProperty(exports, "requestInterval", {
+  enumerable: true,
+  get: function () {
+    return _requestInterval.requestInterval;
+  }
+});
 
 var _preload = require("./preload");
 
@@ -6897,7 +6949,9 @@ var _throttle = require("./throttle");
 var _mousePos = require("./mousePos");
 
 var _winSize = require("./winSize");
-},{"./preload":"js/utils/preload.js","./lerp":"js/utils/lerp.js","./throttle":"js/utils/throttle.js","./mousePos":"js/utils/mousePos.js","./winSize":"js/utils/winSize.js"}],"js/events/Raf.js":[function(require,module,exports) {
+
+var _requestInterval = require("./requestInterval");
+},{"./preload":"js/utils/preload.js","./lerp":"js/utils/lerp.js","./throttle":"js/utils/throttle.js","./mousePos":"js/utils/mousePos.js","./winSize":"js/utils/winSize.js","./requestInterval":"js/utils/requestInterval.js"}],"js/events/Raf.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7111,12 +7165,8 @@ var homepageTransition = function homepageTransition(imgFunc) {
         duration: 1,
         ease: "Power2.easeInOut"
       }, "-=.5");
-      loader.call(imgFunc, null, "-=.25");
-      loader.from(".js-hp-img", {
-        y: 10,
-        autoAlpha: 0,
-        duration: .8
-      }, "-=.3");
+      loader.call(imgFunc, null, "-=.25"); // loader.from(".js-hp-img", {y: 10, autoAlpha: 0, duration: .8}, "-=.3"); // avant slider
+
       loader.set("#js-loader-title-out", {
         opacity: 1
       }, "-=.5");
@@ -7945,7 +7995,8 @@ function (_module) {
           _events.Events.emit('pageLoad'); // GENERAL ACTION : cursor links - add
 
 
-          _this3.links = _toConsumableArray(data.next.container.querySelectorAll('a'));
+          _this3.linksFaked = _toConsumableArray(data.next.container.querySelectorAll('.a'));
+          _this3.links = _toConsumableArray(data.next.container.querySelectorAll('a')).concat(_this3.linksFaked);
 
           _this3.links.forEach(function (el) {
             el.addEventListener('mouseenter', cursorEnter);
@@ -8322,6 +8373,7 @@ SmoothScroll.prototype = function () {
 
   /* */
   _update = function _update() {
+    cancelAnimationFrame(this.rAF);
     this.rAF = requestAnimationFrame(_update.bind(this)); // get scroll Level inside body size
 
     this.move.dest = Math.round(Math.max(0, Math.min(this.move.dest, this.config.scrollMax))); // calc new value of scroll if there was a scroll
@@ -8398,7 +8450,7 @@ SmoothScroll.prototype = function () {
   _preload = function _preload() {
     var _this = this;
 
-    var medias = _toConsumableArray(this.DOM.scroller.querySelectorAll('img, video'));
+    var medias = _toConsumableArray(this.DOM.scroller.querySelectorAll('img[src], video'));
 
     if (medias.length <= 0) return;
     var isPromise = window.Promise ? true : false;
@@ -8414,8 +8466,8 @@ SmoothScroll.prototype = function () {
 
       if (isPromise) {
         var loader = new Promise(function (resolve, error) {
-          el.addEventListener(eventType, function () {
-            resolve();
+          return el.addEventListener(eventType, function () {
+            return resolve();
           }, false);
         });
         loading.push(loader);
@@ -45035,21 +45087,35 @@ function (_THREE$Object3D) {
   _createClass(_default, [{
     key: "init",
     value: function init(el) {
-      this.el = el;
+      this.el = [el].flat();
       this.dir = 0;
+      this.elArray = [];
       this.resize();
     }
   }, {
     key: "setBounds",
     value: function setBounds() {
-      this.rect = this.el.getBoundingClientRect();
-      this.bounds = {
-        left: this.rect.left - _index.default.scroll - this.dir,
-        //gl.scroll (global scroll) & this.dir (img scroll)
-        top: this.rect.top,
-        width: this.rect.width,
-        height: this.rect.height
+      var _this = this;
+
+      var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+      var boundCalc = function boundCalc(els) {
+        els.forEach(function (el) {
+          var rect = el.getBoundingClientRect();
+          var bounds = {
+            left: rect.left - _index.default.scroll - _this.dir,
+            //gl.scroll (global scroll) & this.dir (img scroll)
+            top: rect.top,
+            width: rect.width,
+            height: rect.height
+          };
+
+          _this.elArray.push(bounds);
+        });
       };
+
+      if (this.elArray.length === 0) boundCalc(this.el);
+      this.bounds = this.elArray[index];
       this.updateSize();
       this.updatePosition(0, this.bounds.left);
     }
@@ -45057,6 +45123,7 @@ function (_THREE$Object3D) {
     key: "resize",
     value: function resize() {
       if (!this.visible) return;
+      this.elArray = [];
       this.setBounds();
     }
   }, {
@@ -45237,7 +45304,17 @@ function (_GlObject) {
       this.mesh.position.z = z;
       this.add(this.mesh);
 
-      _index.default.scene.add(this); // this.addEvents();
+      _index.default.scene.add(this); // this.interval = requestInterval(()=>{
+      //     console.log('blabl');
+      //     // this.texture = loader.load('https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg', (texture) => {
+      //     //     texture.minFilter = THREE.LinearFilter;
+      //     //     texture.generateMipmaps = false;
+      //     //     this.material.uniforms.uTexture.value = texture;
+      //     // })
+      // }, 3000);
+      // setTimeout(() => {
+      //     clearRequestInterval(this.interval);
+      // },20000)
 
     }
   }, {
@@ -45501,7 +45578,296 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","../lib/smooth-scrollr-fork":"js/lib/smooth-scrollr-fork.js","gsap":"../../node_modules/gsap/index.js","../gl":"js/gl/index.js","../gl/Plane":"js/gl/Plane.js","../utils":"js/utils/index.js","../events":"js/events/index.js"}],"js/modules/Homepage.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","../lib/smooth-scrollr-fork":"js/lib/smooth-scrollr-fork.js","gsap":"../../node_modules/gsap/index.js","../gl":"js/gl/index.js","../gl/Plane":"js/gl/Plane.js","../utils":"js/utils/index.js","../events":"js/events/index.js"}],"js/gl/glsl/fragmentSlider.glsl":[function(require,module,exports) {
+module.exports = "precision mediump float;\n#define GLSLIFY 1\nvarying vec2 vUv;\n\nuniform sampler2D uCurrTex;\nuniform sampler2D uNextTex;\nuniform float uFlash;\nuniform float uClip;\nuniform float uTime;\nuniform float uSlide;\nuniform vec4 resolution;\n\nmat2 rotate(float a) {\n\tfloat s = sin(a);\n\tfloat c = cos(a);\n\treturn mat2(c, -s, s, c);\n}\nconst float PI = 3.1415;\nconst float angle1 = PI *0.25;\nconst float angle2 = -PI *0.75;\nconst float noiseSeed = 2.;\nfloat random() { \n\treturn fract(sin(noiseSeed + dot(gl_FragCoord.xy / resolution.xy / 10.0, vec2(12.9898, 4.1414))) * 43758.5453);\n}\nfloat hash(float n) { return fract(sin(n) * 1e4); }\nfloat hash(vec2 p) { return fract(1e4 * sin(17.0 * p.x + p.y * 0.1) * (0.1 + abs(sin(p.y * 13.0 + p.x)))); }\nfloat hnoise(vec2 x) {\n\tvec2 i = floor(x);\n\tvec2 f = fract(x);\n\tfloat a = hash(i);\n\tfloat b = hash(i + vec2(1.0, 0.0));\n\tfloat c = hash(i + vec2(0.0, 1.0));\n\tfloat d = hash(i + vec2(1.0, 1.0));\n\tvec2 u = f * f * (3.0 - 2.0 * f);\n\treturn mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;\n}\n\nvoid main()\t{\n\tvec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);\n\t\t\t\n\tfloat hn = hnoise(newUV.xy * resolution.xy / 100.0);\n\tvec2 d = vec2(0.,normalize(vec2(0.5,0.5) - newUV.xy).y);\n\tvec2 uv1 = newUV + d * uSlide / 5.0 * (1.0 + hn / 2.0);\n\tvec2 uv2 = newUV - d * (1.0 - uSlide) / 5.0 * (1.0 + hn / 2.0);\n\n    // Clip effect with short smoothstep [.0,.005] -> no gradient\n    float clip = smoothstep(.0,.005,(uClip - uv1.y));\n\n    // Flash (alpha channel and mapping texture);\n    float t1r = max(texture2D(uCurrTex, uv1).r, uFlash);\n    float t1g = max(texture2D(uCurrTex, uv1).g, uFlash);\n    float t1b = max(texture2D(uCurrTex, uv1).b, uFlash);\n    vec4 t1 = vec4(t1r, t1g, t1b, clip);\n\n    float t2r = max(texture2D(uNextTex, uv2).r, uFlash);\n    float t2g = max(texture2D(uNextTex, uv2).g, uFlash);\n    float t2b = max(texture2D(uNextTex, uv2).b, uFlash);\n    vec4 t2 = vec4(t2r,t2g,t2b, clip);\n\n\tgl_FragColor = mix(t1, t2, uSlide);\n}\n\n";
+},{}],"../static/img/disp-02.png":[function(require,module,exports) {
+module.exports = "/disp-02.ba5b121c.png";
+},{}],"js/gl/Slider.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var THREE = _interopRequireWildcard(require("three"));
+
+var _index = _interopRequireDefault(require("./index"));
+
+var _GlObject2 = _interopRequireDefault(require("./GlObject"));
+
+var _vertex = _interopRequireDefault(require("./glsl/vertex.glsl"));
+
+var _fragmentSlider = _interopRequireDefault(require("./glsl/fragmentSlider.glsl"));
+
+var _disp = _interopRequireDefault(require("../../../static/img/disp-02.png"));
+
+var _gsap = _interopRequireDefault(require("gsap"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
+
+function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var planeGeometry = new THREE.PlaneBufferGeometry(1, 1, 32, 32);
+var planeMaterial = new THREE.ShaderMaterial({
+  vertexShader: _vertex.default,
+  fragmentShader: _fragmentSlider.default,
+  transparent: true
+});
+var loader = new THREE.TextureLoader();
+
+var _default =
+/*#__PURE__*/
+function (_GlObject) {
+  _inherits(_default, _GlObject);
+
+  function _default() {
+    _classCallCheck(this, _default);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(_default).apply(this, arguments));
+  }
+
+  _createClass(_default, [{
+    key: "init",
+    value: function init(el, index) {
+      var _this = this;
+
+      // DOM
+      this.imgs = _toConsumableArray(el.querySelectorAll('.js-prlx-img')); // ajouter array -done
+
+      this.slideCounter = 0;
+      this.loaded = false;
+      this.anim = {
+        timer: 4
+      };
+
+      _get(_getPrototypeOf(_default.prototype), "init", this).call(this, this.imgs); // Geometry & materials
+
+
+      this.geometry = planeGeometry;
+      this.material = planeMaterial.clone(); // uniforms
+
+      this.material.uniforms = {
+        uCurrTex: {
+          value: 0
+        },
+        uNextTex: {
+          value: 0
+        },
+        resolution: {
+          value: {
+            x: this.elArray[0].width,
+            y: this.elArray[0].height,
+            z: 1,
+            w: 1
+          }
+        },
+        uTime: {
+          value: 0
+        },
+        uProg: {
+          value: 1
+        },
+        uSlide: {
+          value: 0
+        },
+        uFlash: {
+          value: 1
+        },
+        uClip: {
+          value: 0
+        },
+        uMouse: {
+          value: {
+            x: 0,
+            y: 0
+          }
+        }
+      }; // 3D scene
+
+      this.mesh = new THREE.Mesh(this.geometry, this.material);
+      this.add(this.mesh);
+
+      _index.default.scene.add(this); // textures
+
+
+      this.textures = [];
+      this.loadTexture(); // animation
+
+      this.sliderAnim = _gsap.default.timeline({
+        paused: true,
+        onComplete: function onComplete() {
+          _this.material.uniforms.uCurrTex.value = _this.textures[_this.slideCounter];
+        }
+      });
+      this.sliderAnim.to(this.material.uniforms.uProg, {
+        duration: this.anim.timer / 2,
+        value: 2,
+        ease: "power1.in"
+      }, 0);
+      this.sliderAnim.to(this.material.uniforms.uProg, {
+        duration: this.anim.timer / 2,
+        value: 0,
+        ease: "power1.out"
+      }, 1);
+      this.sliderAnim.to(this.material.uniforms.uSlide, {
+        duration: this.anim.timer / 1.5,
+        value: 1,
+        ease: "power1.inOut"
+      }, this.anim.timer / 4);
+    }
+  }, {
+    key: "loadTexture",
+    value: function loadTexture() {
+      var _this2 = this;
+
+      var manager = new THREE.LoadingManager(function () {
+        // Set first texture as default
+        _this2.material.uniforms.uCurrTex.value = _this2.textures[0];
+      });
+      var loader = new THREE.TextureLoader(manager);
+      this.imgs.forEach(function (img, index) {
+        loader.load(img.src, function (texture) {
+          texture.minFilter = THREE.LinearFilter;
+          texture.generateMipmaps = false;
+          _this2.textures[index] = texture;
+        });
+      }); // this.texture = loader.load(this.img.src, (texture) => {
+      //     texture.minFilter = THREE.LinearFilter;
+      //     texture.generateMipmaps = false;
+      //     this.material.uniforms.uTexture.value = texture; // sortir du load ?
+      // })
+    }
+  }, {
+    key: "updateTime",
+    value: function updateTime(time) {
+      this.material.uniforms.uTime.value = time;
+    }
+  }, {
+    key: "updateSize",
+    value: function updateSize() {
+      this.camUnit = _get(_getPrototypeOf(_default.prototype), "calculateUnitSize", this).call(this, _index.default.camera.position.z - this.position.z);
+      var x = this.bounds.width / _index.default.winSize.width;
+      var y = this.bounds.height / _index.default.winSize.height;
+      if (!x || !y) return;
+
+      if (this.loaded) {
+        _gsap.default.to(this.scale, {
+          "x": this.camUnit.width * x,
+          duration: this.anim.timer,
+          ease: "power2.inOut"
+        });
+
+        _gsap.default.to(this.scale, {
+          "y": this.camUnit.height * y,
+          duration: this.anim.timer,
+          ease: "power2.inOut"
+        });
+      } else {
+        this.scale.x = this.camUnit.width * x;
+        this.scale.y = this.camUnit.height * y;
+      }
+    }
+  }, {
+    key: "updateY",
+    value: function updateY() {
+      var y = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+      if (!this.loaded) {
+        _get(_getPrototypeOf(_default.prototype), "updateY", this).call(this);
+      }
+    }
+  }, {
+    key: "updateX",
+    value: function updateX() {
+      var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+      if (!this.loaded) {
+        _get(_getPrototypeOf(_default.prototype), "updateX", this).call(this);
+      }
+    }
+  }, {
+    key: "slide",
+    value: function slide() {
+      this.slideCounter = this.imgs.length - 1 === this.slideCounter ? 0 : this.slideCounter + 1;
+      this.material.uniforms.uNextTex.value = this.textures[this.slideCounter];
+
+      _get(_getPrototypeOf(_default.prototype), "setBounds", this).call(this, this.slideCounter);
+
+      this.sliderAnim.play(0);
+    }
+  }, {
+    key: "isViewed",
+    value: function isViewed() {
+      this.loaded = true; // clip reveal effect
+
+      _gsap.default.to(this.material.uniforms.uClip, {
+        duration: .5,
+        value: 1,
+        ease: 'Power2.inOut'
+      }); // flash effect
+
+
+      _gsap.default.to(this.material.uniforms.uFlash, {
+        duration: 1,
+        value: 0,
+        delay: .2,
+        ease: 'power.inOut'
+      }); // wave effect
+
+
+      _gsap.default.to(this.material.uniforms.uProg, {
+        duration: 2,
+        value: 0,
+        delay: .4,
+        ease: 'power.inOut'
+      }); // gsap.to(this.material.uniforms.uSlide, {
+      //     duration: 2,
+      //     value: 0,
+      //     delay: .4,
+      //     ease: 'power.inOut',
+      // });
+
+    }
+  }]);
+
+  return _default;
+}(_GlObject2.default);
+
+exports.default = _default;
+},{"three":"../../node_modules/three/build/three.module.js","./index":"js/gl/index.js","./GlObject":"js/gl/GlObject.js","./glsl/vertex.glsl":"js/gl/glsl/vertex.glsl","./glsl/fragmentSlider.glsl":"js/gl/glsl/fragmentSlider.glsl","../../../static/img/disp-02.png":"../static/img/disp-02.png","gsap":"../../node_modules/gsap/index.js"}],"js/modules/Homepage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45513,7 +45879,7 @@ var _modujs = require("modujs");
 
 var _gl = _interopRequireDefault(require("../gl"));
 
-var _Plane = _interopRequireDefault(require("../gl/Plane"));
+var _Slider = _interopRequireDefault(require("../gl/Slider"));
 
 var _utils = require("../utils");
 
@@ -45562,7 +45928,7 @@ function (_module) {
       (0, _utils.preloadImages)().then(function () {
         var homeImg = _this2.el.querySelector('[data-parallaxe="img"]');
 
-        _this2.glObject = new _Plane.default();
+        _this2.glObject = new _Slider.default();
 
         _this2.glObject.init(homeImg, 0);
 
@@ -45579,6 +45945,12 @@ function (_module) {
           x: 0
         });
       });
+      this.slider = (0, _utils.requestInterval)(this.slide.bind(this), 5000);
+    }
+  }, {
+    key: "slide",
+    value: function slide() {
+      this.glObject.slide();
     }
   }, {
     key: "appear",
@@ -45588,6 +45960,7 @@ function (_module) {
   }, {
     key: "destroy",
     value: function destroy() {
+      (0, _utils.clearRequestInterval)(this.slider);
       _gl.default.scroll = 0;
       this.glObject.destroy();
     }
@@ -45597,7 +45970,7 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","../gl":"js/gl/index.js","../gl/Plane":"js/gl/Plane.js","../utils":"js/utils/index.js","../events":"js/events/index.js"}],"js/modules/Serie.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","../gl":"js/gl/index.js","../gl/Slider":"js/gl/Slider.js","../utils":"js/utils/index.js","../events":"js/events/index.js"}],"js/modules/Serie.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45606,6 +45979,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _modujs = require("modujs");
+
+var _gsap = _interopRequireDefault(require("gsap"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -45631,14 +46008,101 @@ function (_module) {
   _inherits(_default, _module);
 
   function _default(m) {
+    var _this;
+
     _classCallCheck(this, _default);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
+    _this.events = {
+      click: {
+        openImg: 'openImg',
+        leaveZoom: 'leaveZoom'
+      }
+    };
+
+    _this.init();
+
+    return _this;
   }
 
   _createClass(_default, [{
+    key: "openImg",
+    value: function openImg(e) {
+      var _this2 = this;
+
+      //load ima in svg
+      var img = new Image();
+      img.src = e.currentTarget.dataset.src;
+      img.addEventListener('load', function (e) {
+        _this2.$('svg')[0].setAttribute("viewBox", "0 0 ".concat(e.target.width, " ").concat(e.target.height));
+      });
+      this.photo.setAttribute("href", e.currentTarget.dataset.src); //load text in dfescription
+
+      this.$('zoomName')[0].innerText = e.currentTarget.dataset.name; //reveal
+
+      this.openImageTL.play(0);
+    }
+  }, {
+    key: "leaveZoom",
+    value: function leaveZoom() {
+      this.closeImageTL.play(0);
+    }
+  }, {
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.photo = this.$('zoom')[0]; // get zoomed img el
+
+      this.openImageTL = _gsap.default.timeline({
+        paused: true
+      });
+      this.openImageTL.to('.js-photo-section', {
+        autoAlpha: 1,
+        duration: 1.5
+      });
+      this.openImageTL.to('.js-photo-feDisplacementMap', {
+        attr: {
+          'scale': 0
+        },
+        duration: 2
+      }, 1);
+      this.openImageTL.to(this.$('svg')[0], {
+        autoAlpha: 1,
+        duration: 1
+      }, 1);
+      this.openImageTL.to(this.$('zoomName')[0], {
+        autoAlpha: 1,
+        duration: 1
+      }, 1.2);
+      this.openImageTL.to(this.$('leaveZoom')[0], {
+        autoAlpha: 1,
+        duration: .6
+      }, 1.4);
+      this.closeImageTL = _gsap.default.timeline({
+        paused: true
+      });
+      this.closeImageTL.to('.js-photo-feDisplacementMap', {
+        attr: {
+          'scale': 50
+        },
+        duration: 1
+      }, 0);
+      this.closeImageTL.to(this.$('zoomName')[0], {
+        autoAlpha: 0,
+        duration: 1
+      }, 0);
+      this.closeImageTL.to(this.$('leaveZoom')[0], {
+        autoAlpha: 0,
+        duration: 1
+      }, 0);
+      this.closeImageTL.to(this.$('svg')[0], {
+        autoAlpha: 0,
+        duration: 1
+      }, .4);
+      this.closeImageTL.to('.js-photo-section', {
+        autoAlpha: 0,
+        duration: 1.5
+      }, 1.2);
+    }
   }, {
     key: "destroy",
     value: function destroy() {}
@@ -45648,7 +46112,7 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js"}],"js/modules/Navigation.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","gsap":"../../node_modules/gsap/index.js"}],"js/modules/Navigation.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45885,7 +46349,9 @@ function (_module) {
 
   _createClass(_default, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      console.log('blzbla');
+    }
   }, {
     key: "destroy",
     value: function destroy() {}
@@ -46063,7 +46529,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55735" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55483" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

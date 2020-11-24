@@ -71,13 +71,18 @@
     }
 }
 
-.o-img {
+.o-img, 
+.o-img_link {
     max-width: 100%;
     @include media( '>medium' ) {
         max-height: 90vh;
         height: 100%;
         max-width: initial;
     }
+}
+
+.o-img_link {
+    cursor: pointer;
 }
 
 .o-title {

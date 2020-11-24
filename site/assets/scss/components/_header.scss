@@ -4,6 +4,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 3rem;
+        z-index: 1;
 
         @include media( '>medium' ) {
             justify-content: space-between;
@@ -161,12 +162,13 @@
             height: 25px;
             cursor:pointer;
             z-index: 9999;
+            cursor: pointer;
 
             @include media( '>medium' ) {
                 width: 40px;
                 bottom: 2vw;
                 top: initial;
-                right: 2vw;
+                right: 6vw;
             }
 
             &_bar {

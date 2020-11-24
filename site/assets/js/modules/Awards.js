@@ -6,6 +6,7 @@ export default class extends module {
     }
 
     init(){
+        console.log('blzbla')
     }
 
     destroy() {

@@ -80,7 +80,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
     /*  UPDATE - run animation in requestAnimationFrame  */
     /* */
     _update = function () {
-  
+        cancelAnimationFrame(this.rAF);
         this.rAF = requestAnimationFrame(_update.bind(this));
         // get scroll Level inside body size
         this.move.dest = Math.round(Math.max(0, Math.min(this.move.dest, this.config.scrollMax)));
@@ -161,7 +161,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
     /*  PRELOAD - preload medias on the page -> get real height  */
     /* */
     _preload = function () {
-        const medias = [...this.DOM.scroller.querySelectorAll('img, video')];
+        const medias = [...this.DOM.scroller.querySelectorAll('img[src], video')];
         if (medias.length <= 0) return;
   
         const isPromise = window.Promise ? true : false;
@@ -178,8 +178,8 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
   
             if (isPromise) {
                 const loader = new Promise((resolve, error) => {
-                    el.addEventListener(eventType, () => {
-                        resolve();
+                    return el.addEventListener(eventType, () => {
+                        return resolve();
                     }, false);
                 });
                 loading.push(loader);

@@ -30,14 +30,13 @@ export default class extends GlObject {
             uFlash: { value: 1 },
             uClip: { value: 0 },
             uMouse: { value : {x:0, y: 0}}
-        }
+        } 
 
         this.img = img;
         this.texture = loader.load(this.img.src, (texture) => {
-        texture.minFilter = THREE.LinearFilter;
-        texture.generateMipmaps = false;
-        
-        this.material.uniforms.uTexture.value = texture;
+            texture.minFilter = THREE.LinearFilter;
+            texture.generateMipmaps = false;
+            this.material.uniforms.uTexture.value = texture;
         })
 
         this.mesh = new THREE.Mesh(this.geometry, this.material);
@@ -47,7 +46,19 @@ export default class extends GlObject {
         this.add(this.mesh);
         
         Gl.scene.add(this);
-       // this.addEvents();
+
+        // this.interval = requestInterval(()=>{
+        //     console.log('blabl');
+        //     // this.texture = loader.load('https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg', (texture) => {
+        //     //     texture.minFilter = THREE.LinearFilter;
+        //     //     texture.generateMipmaps = false;
+        //     //     this.material.uniforms.uTexture.value = texture;
+        //     // })
+        // }, 3000);
+
+        // setTimeout(() => {
+        //     clearRequestInterval(this.interval);
+        // },20000)
     }
 
     updateTime(time) {

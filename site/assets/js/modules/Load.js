@@ -102,9 +102,10 @@ export default class extends module {
                 Events.emit('pageLoad');
 
                 // GENERAL ACTION : cursor links - add
-                this.links = [...data.next.container.querySelectorAll('a')]
+                this.linksFaked = [...data.next.container.querySelectorAll('.a')]
+                this.links = [...data.next.container.querySelectorAll('a')].concat(this.linksFaked)
                 this.links.forEach(el => {
-                    el.addEventListener('mouseenter', cursorEnter);
+                    el.addEventListener('mouseenter', cursorEnter); 
                     el.addEventListener('mouseleave', cursorLeave);
                 });
 

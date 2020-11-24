@@ -17,9 +17,9 @@ export default class extends module {
     }
 
     init() {
-        preloadImages().then(() => {
-          
+        preloadImages().then(() => {          
             if (window.innerWidth > 640) {
+
                 const opts = {
                     callback: this.parallax.bind(this),
                     touch: false,

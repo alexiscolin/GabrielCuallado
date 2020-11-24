@@ -6,20 +6,32 @@ import { Events } from '../events';
 
 export default class extends THREE.Object3D {  
   init(el) {
-    this.el = el;
+    this.el = [el].flat();
     this.dir = 0;
+    this.elArray = [];
+
     this.resize();
   }
 
-  setBounds() {
-    this.rect = this.el.getBoundingClientRect();
+  setBounds(index = 0) {
+
+    const boundCalc = (els) => {
+      els.forEach(el => {
+        const rect = el.getBoundingClientRect();
     
-    this.bounds = {
-      left: this.rect.left - gl.scroll - this.dir, //gl.scroll (global scroll) & this.dir (img scroll)
-      top: this.rect.top,
-      width: this.rect.width,
-      height: this.rect.height
-    };
+        const bounds = {
+          left: rect.left - gl.scroll - this.dir, //gl.scroll (global scroll) & this.dir (img scroll)
+          top: rect.top,
+          width: rect.width,
+          height: rect.height
+        };
+
+        this.elArray.push(bounds);
+      });
+    }
+
+    if(this.elArray.length === 0) boundCalc(this.el);
+    this.bounds = this.elArray[index]; 
 
     this.updateSize();
     this.updatePosition(0,this.bounds.left);
@@ -27,6 +39,7 @@ export default class extends THREE.Object3D {
   
   resize() {
     if (!this.visible) return;
+    this.elArray = [];
     this.setBounds();
   }
   

@@ -24,7 +24,7 @@ const homepageTransition = function (imgFunc){
             loader.to("#js-loader-slider", {scaleY: 0, duration: 1, ease: "Power2.easeInOut"}, "-=.5");
             loader.call(imgFunc, null, "-=.25")
 
-            loader.from(".js-hp-img", {y: 10, autoAlpha: 0, duration: .8}, "-=.3");
+            // loader.from(".js-hp-img", {y: 10, autoAlpha: 0, duration: .8}, "-=.3"); // avant slider
             loader.set("#js-loader-title-out", {opacity: 1}, "-=.5");
             loader.from(".js-loader-infos", {opacity: 0, duration: 1}, "-=.2");
             loader.to("#js-loader-title", {opacity: 0, duration: 1}, "-=1");
