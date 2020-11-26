@@ -11,6 +11,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
     this.config = {};
     this.move = {};
     this.callback = false;
+    this.scrollStatut = 'start';
   
     this.init(config, viewPortclass);
   };
@@ -82,9 +83,22 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
     _update = function () {
         cancelAnimationFrame(this.rAF);
         this.rAF = requestAnimationFrame(_update.bind(this));
+        
+        // scroll action in function of scroll position (statut)
+        if(this.move.dest >= this.config.scrollMax && this.scrollStatut !== 'end'){
+            this.config.scrollFuncs.endFunc();
+            this.scrollStatut = 'end';
+        } else if(this.move.dest <= 0 && this.scrollStatut !== 'start') {
+            this.config.scrollFuncs.startFunc();
+            this.scrollStatut = 'start';
+        } else if (this.move.dest > 0 && this.move.dest < this.config.scrollMax && this.scrollStatut !== 'running') {
+            this.config.scrollFuncs.runningFunc();
+            this.scrollStatut = 'running';
+        }
+
         // get scroll Level inside body size
         this.move.dest = Math.round(Math.max(0, Math.min(this.move.dest, this.config.scrollMax)));
-  
+        
         // calc new value of scroll if there was a scroll
         if (this.move.prev !== this.move.dest) {
             this.move.current += (this.move.dest - this.move.current) * this.config.delay;
@@ -199,8 +213,8 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             this.resize();
 
             // start all function called in initFunc array
-            if(this.config.initFunc.length > 0) {
-                this.config.initFunc.forEach(fn => fn());
+            if(this.config.initFuncs.length > 0) {
+                this.config.initFuncs.forEach(fn => fn());
             }
         });
     },
@@ -320,7 +334,8 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             multFirefox: 15,
             scrollMax: 0,
             ticking: false,
-            initFunc: config.initFunc || []
+            initFuncs: config.initFuncs || [],
+            scrollFuncs: config.scrollFuncs || {}
         };
   
         // movement refresh variables
@@ -383,6 +398,16 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         immediate || (_requestTick.call(this)); // start animation
         immediate && (this.DOM.scroller.style.transform = this.enableSmoothScroll && `translate3D(${this.config.direction === 'horizontal' ? dir : 0}px,${this.config.direction === 'vertical' ? dir : 0}px, 0)`);
     },
+
+    /**
+    /*  SCROLL-OF - scroll of given path */
+    /* */
+    scrollOf = function (path, immediate = false) {
+        this.move.dest += path;
+        immediate || (_requestTick.call(this)); // start animation
+        immediate && (this.DOM.scroller.style.transform = this.enableSmoothScroll && `translate3D(${this.config.direction === 'horizontal' ? dir : 0}px,${this.config.direction === 'vertical' ? dir : 0}px, 0)`);
+        return 'true';
+    },
   
   
     /**
@@ -422,6 +447,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         bindEvent,
         unbindEvent,
         scrollTo,
+        scrollOf,
         destroy
     }
   }();

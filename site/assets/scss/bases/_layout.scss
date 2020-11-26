@@ -29,7 +29,28 @@ a {
     left: 0;
     @include media( '>medium' ) {
         position: absolute;
+    }
 
+    &_button {
+        display: none;
+        height: 70vh;
+        top: 17vh;
+        position: fixed;
+        right: 0;
+        background: transparent;
+        width: 10vw;
+        z-index: 7;
+        cursor: pointer;
+
+        @include media( '>medium' ) {
+            display: block;
+        }
+
+        &--prev {
+            right: initial;
+            left: 0;
+            display: none;
+        }
     }
 }
 

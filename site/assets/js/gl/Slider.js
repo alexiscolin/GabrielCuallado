@@ -68,7 +68,7 @@ export default class extends GlObject {
         }});
         this.sliderAnim.to(this.material.uniforms.uProg, {
             duration: this.anim.timer / 2,
-            value: 2,
+            value: 4,
             ease: "power1.in"
         }, 0);
         this.sliderAnim.to(this.material.uniforms.uProg, {

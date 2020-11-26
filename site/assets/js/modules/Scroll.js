@@ -3,7 +3,7 @@ import { SmoothScroll } from '../lib/smooth-scrollr-fork';
 import { gsap } from "gsap";
 import Gl from "../gl";
 import Plane from '../gl/Plane';
-import { preloadImages } from '../utils';
+import { preloadImages, calcWinsize } from '../utils';
 import { Events } from '../events';
 
 export default class extends module {
@@ -14,6 +14,19 @@ export default class extends module {
         this.els = [];
         this.windowWidth = window.innerWidth;
         this.prlxEls = [];
+        this.scrollPath = calcWinsize().width / 3;
+
+        this.events = {
+            click: {
+                scrollof: 'clickToMove'
+            },
+            mouseenter: {
+                scrollof: 'displayArrow'
+            },
+            mouseleave: {
+                scrollof: 'hideArrow'
+            }
+        };
     }
 
     init() {
@@ -29,7 +42,12 @@ export default class extends module {
                     section: this.el,
                     touchSpeed: 2,
                     jump: 120,
-                    initFunc: [this.addElements.bind(this), this.parallax.bind(this, 1)]
+                    initFuncs: [this.addElements.bind(this), this.parallax.bind(this, 1)],
+                    scrollFuncs: {
+                        'startFunc': this.atStart.bind(this),
+                        'runningFunc': this.atRun.bind(this),
+                        'endFunc': this.atEnd.bind(this)
+                    }
                 };
 
                 this.scroll = new SmoothScroll(opts, 'fixedClass');
@@ -37,7 +55,7 @@ export default class extends module {
             } else {
                 this.scroll = null;
             }
-        }); 
+        });
     }
 
     // detect all elements
@@ -72,7 +90,27 @@ export default class extends module {
         });
     }
 
-  
+    displayArrow (e) {
+        this.call('displayArrow', e.currentTarget.dataset.scrollDir, 'Cursor');
+    }
+    hideArrow (e) {
+        this.call('hideArrow', e.currentTarget.dataset.scrollDir, 'Cursor');
+    }
+    clickToMove (e) {
+        const dir = e.currentTarget.dataset.scrollDir === 'next' ? this.scrollPath : -this.scrollPath
+        this.scroll.scrollOf(dir);
+    }
+
+    // function to remove click to scroll depending on scroll position
+    atStart () {
+        [...this.$('scrollof')].filter(el => el.dataset.scrollDir === 'prev')[0].style.display = "none";
+    }
+    atEnd () {
+        [...this.$('scrollof')].filter(el => el.dataset.scrollDir === 'next')[0].style.display = "none";
+    }
+    atRun () {
+        [...this.$('scrollof')].forEach(el => el.style.display = "block");
+    }
 
     parallax (moveTo, movePrev) {
         // scroll level / viewport
@@ -115,7 +153,6 @@ export default class extends module {
 
 
     destroy() {
-        console.log('end scroll');
         this.els.forEach(el => {
             if(!el.glObject) return;
             el.glObject.destroy()

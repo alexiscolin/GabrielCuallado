@@ -29,7 +29,6 @@ export default class extends module {
 
         this.primitiveValues = { turbulence: 0 };
 
-
         this.createTimeline();
 
         this.bounds = this.DOM.el.getBoundingClientRect();
@@ -91,6 +90,17 @@ export default class extends module {
         });
     }
 
+    displayArrow(dir) {
+        gsap.killTweensOf(this.$('arrow'));
+        gsap.to(this.$('arrow'), {autoAlpha: 1, duration: 1});
+        gsap.to(this.$('arrow'), {rotate: dir === "next" ? 90 : -90, transformOrigin:"center", duration: .5});
+    }
+    hideArrow(dir) {
+        gsap.killTweensOf(this.$('arrow'));
+        gsap.to(this.$('arrow'), {autoAlpha: 0, duration: .5});
+        gsap.to(this.$('arrow'), {rotate: 0, duration: .5});
+    }
+
     disapear() {
         gsap.to(this.DOM.el, {duration: 0.5, ease: 'Power3.easeOut', opacity: 0});
     }
@@ -100,7 +110,7 @@ export default class extends module {
     enter(target) {
         this.renderedStyles['radius'].current = 45;
         this.renderedStyles['stroke'].current = 2;
-        if(target.dataset.link === "menu") {
+        if(target && target.dataset.link === "menu") {
             this.disapear();
         }
         this.tl.restart();

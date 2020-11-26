@@ -1,5 +1,4 @@
 import { module } from 'modujs';
-import gsap from 'gsap';
 import barba from '@barba/core';
 import { Events } from '../events';
 
