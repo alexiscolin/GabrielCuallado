@@ -45596,21 +45596,21 @@ function (_module) {
   }, {
     key: "atStart",
     value: function atStart() {
-      _toConsumableArray(this.$('scrollof')).filter(function (el) {
+      this.$('scrollof').length > 0 && (_toConsumableArray(this.$('scrollof')).filter(function (el) {
         return el.dataset.scrollDir === 'prev';
-      })[0].style.display = "none";
+      })[0].style.display = "none");
     }
   }, {
     key: "atEnd",
     value: function atEnd() {
-      _toConsumableArray(this.$('scrollof')).filter(function (el) {
+      this.$('scrollof').length > 0 && (_toConsumableArray(this.$('scrollof')).filter(function (el) {
         return el.dataset.scrollDir === 'next';
-      })[0].style.display = "none";
+      })[0].style.display = "none");
     }
   }, {
     key: "atRun",
     value: function atRun() {
-      _toConsumableArray(this.$('scrollof')).forEach(function (el) {
+      this.$('scrollof').length > 0 && _toConsumableArray(this.$('scrollof')).forEach(function (el) {
         return el.style.display = "block";
       });
     }

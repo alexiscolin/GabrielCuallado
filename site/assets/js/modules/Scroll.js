@@ -103,13 +103,13 @@ export default class extends module {
 
     // function to remove click to scroll depending on scroll position
     atStart () {
-        [...this.$('scrollof')].filter(el => el.dataset.scrollDir === 'prev')[0].style.display = "none";
+        this.$('scrollof').length > 0 && ([...this.$('scrollof')].filter(el => el.dataset.scrollDir === 'prev')[0].style.display = "none");
     }
     atEnd () {
-        [...this.$('scrollof')].filter(el => el.dataset.scrollDir === 'next')[0].style.display = "none";
+        this.$('scrollof').length > 0 && ([...this.$('scrollof')].filter(el => el.dataset.scrollDir === 'next')[0].style.display = "none");
     }
     atRun () {
-        [...this.$('scrollof')].forEach(el => el.style.display = "block");
+        this.$('scrollof').length > 0 && ([...this.$('scrollof')].forEach(el => el.style.display = "block"));
     }
 
     parallax (moveTo, movePrev) {
