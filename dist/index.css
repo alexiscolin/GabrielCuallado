@@ -839,7 +839,7 @@ a {
 }
 @media (min-width: 1025px) {
   .c-header_nav--langs {
-    margin: 0 6vw 0 5vw;
+    margin: 0 6vw 0 7.6vw;
   }
 }
 .c-header_nav--langs_item:not(:first-child) {
