@@ -23,7 +23,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.main]]
                 identifier = "Expositions"
                 name = "Exhibitions"
-                url = "/exhibitions/"
+                url = "/exhibitions/individual/"
                 weight = 3
             [[languages.en.menu.main]]
                 identifier = "Contact"
@@ -117,7 +117,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.es.menu.header]]
                 identifier = "Expositions"
                 name = "Exposiciones"
-                url = "/es/exposiciones/"
+                url = "/es/exposiciones/individual/"
                 weight = 2
              [[languages.es.menu.header]]
                 identifier = "Galeria"
