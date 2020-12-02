@@ -45519,7 +45519,7 @@ function (_module) {
       var _this2 = this;
 
       (0, _utils.preloadImages)().then(function () {
-        if (window.innerWidth > 640) {
+        if (window.matchMedia("(min-width: 640px)").matches) {
           var opts = {
             callback: _this2.parallax.bind(_this2),
             touch: false,

@@ -98,7 +98,7 @@
 
 .o-text {
     white-space: normal;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
     @include media( '>medium' ) {
         margin-top: 0;
@@ -108,7 +108,10 @@
 .o-subtitle {
     @include font-weight(light);
     font-size: 18px;
-    margin: .4rem 0 2rem;
+    margin: .4rem 0 1rem;
     letter-spacing: 2px;
     text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
+    @include media( '>medium' ) {
+        margin: .4rem 0 2rem;
+    }
 }

@@ -300,22 +300,22 @@ a {
   .o-scroll {
     position: absolute;
   }
-}
-.o-scroll::before, .o-scroll::after {
-  content: "";
-  position: fixed;
-  display: block;
-  height: 100%;
-  width: 20vw;
-  left: 0;
-  top: 0;
-  background: linear-gradient(to right, #000000, transparent);
-  z-index: 9;
-}
-.o-scroll::after {
-  left: initial;
-  right: 0;
-  background: linear-gradient(to left, #000000, transparent);
+  .o-scroll::before, .o-scroll::after {
+    content: "";
+    position: fixed;
+    display: block;
+    height: 100%;
+    width: 20vw;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #000000, transparent);
+    z-index: 9;
+  }
+  .o-scroll::after {
+    left: initial;
+    right: 0;
+    background: linear-gradient(to left, #000000, transparent);
+  }
 }
 .o-scroll_button {
   display: none;
@@ -499,7 +499,7 @@ a {
 
 .o-text {
   white-space: normal;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-shadow: 0 0 10px black, 0 0 20px rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 641px) {
@@ -511,9 +511,14 @@ a {
 .o-subtitle {
   font-weight: 300;
   font-size: 18px;
-  margin: 0.4rem 0 2rem;
+  margin: 0.4rem 0 1rem;
   letter-spacing: 2px;
   text-shadow: 0 0 10px black, 0 0 20px rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 641px) {
+  .o-subtitle {
+    margin: 0.4rem 0 2rem;
+  }
 }
 
 .c-loader {
@@ -1329,7 +1334,7 @@ a {
 .c-quote {
   position: relative;
   width: 100%;
-  margin: 1rem 0 2rem;
+  margin: 0;
 }
 .c-quote_cite {
   font-family: Morganite, "Helvetica", sans-serif;
@@ -1352,15 +1357,26 @@ a {
 
 @media (max-width: 639px) {
   .c-about_txt,
-.c-about_img {
-    top: 0 !important;
-    left: 0 !important;
+.c-about_img,
+.c-about_link {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .c-about_img,
+.c-about_link {
+    padding-bottom: 10vw;
   }
 }
+.c-about_txt--intro {
+  padding: 0 20vw 20vw 0;
+}
+
 @media (min-width: 641px) {
   .c-quote {
     position: absolute;
     width: 40vw;
+    margin: 1rem 0 2rem;
   }
   .c-quote_cite {
     font-size: 60px;
@@ -1664,47 +1680,55 @@ a:hover .u-link::after {
 .c-timeline {
   padding: 0;
 }
-.c-timeline .c-timeline_section_line::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1px;
-  height: 50vh;
-  top: -25vh;
-  left: -3px;
-  background: white;
-  transform: scaleX(0.5);
-  transform-origin: center;
+@media (min-width: 641px) {
+  .c-timeline .c-timeline_section_line::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 50vh;
+    top: -25vh;
+    left: -3px;
+    background: white;
+    transform: scaleX(0.5);
+    transform-origin: center;
+  }
 }
 .c-timeline ~ .c-timeline .c-timeline_section_line::before {
   display: none;
 }
-.c-timeline:last-child .c-timeline_section_line::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1px;
-  height: 50vh;
-  top: -25vh;
-  right: -3px;
-  left: initial;
-  background: white;
-  transform: scaleX(0.5);
-  transform-origin: center;
+@media (min-width: 641px) {
+  .c-timeline:last-child .c-timeline_section_line::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 50vh;
+    top: -25vh;
+    right: -3px;
+    left: initial;
+    background: white;
+    transform: scaleX(0.5);
+    transform-origin: center;
+  }
 }
 .c-timeline_section {
   position: relative;
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 2px;
+  padding: 5vw 15vw 5vw 4vw;
+  text-align: right;
 }
 @media (min-width: 641px) {
   .c-timeline_section {
     width: 60vw;
     height: 100vh;
+    margin: 0 2px;
+    padding: 0;
+    text-align: left;
   }
 }
 .c-timeline_section_line {
@@ -1729,10 +1753,7 @@ a:hover .u-link::after {
   }
 }
 .c-timeline_date {
-  position: absolute;
-  top: 50%;
-  right: 19%;
-  transform: translate3d(-50%, -50%, 0);
+  position: relative;
   font-size: 90px;
   font-style: italic;
   font-family: Morganite, "Helvetica", sans-serif;
@@ -1743,22 +1764,22 @@ a:hover .u-link::after {
 }
 @media (min-width: 641px) {
   .c-timeline_date {
-    top: 40%;
+    position: absolute;
+    top: 34%;
     left: 50%;
     right: initial;
   }
 }
 .c-timeline_link {
+  text-decoration: none;
   width: 100%;
 }
 .c-timeline_link:hover .c-timeline_img {
   opacity: 1;
 }
 .c-timeline_name {
-  position: absolute;
-  top: 60%;
-  max-width: 50%;
-  right: 10%;
+  position: relative;
+  max-width: 100%;
   font-size: 40px;
   font-family: Morganite, "Helvetica", sans-serif;
   font-weight: 700;
@@ -1768,11 +1789,12 @@ a:hover .u-link::after {
 }
 @media (min-width: 641px) {
   .c-timeline_name {
+    position: absolute;
     max-width: 40vw;
     width: 100%;
     left: calc(50% - 10px);
     right: initial;
-    top: 62%;
+    top: 60%;
     transform: translate3d(0, -50%, 0);
   }
 }
@@ -1790,8 +1812,16 @@ a:hover .u-link::after {
 .c-timeline_img > img {
   width: 100%;
 }
-.c-timeline_img.c-about_img > img {
-  width: auto;
+.c-timeline_img.c-about_img {
+  position: relative;
+  max-width: 100%;
+  opacity: 1;
+}
+@media (max-width: 639px) {
+  .c-timeline_img.c-about_img {
+    top: 0 !important;
+    left: 0 !important;
+  }
 }
 .c-timeline_point {
   position: absolute;
@@ -1833,12 +1863,12 @@ a:hover .u-link::after {
 }
 @media (min-width: 641px) and (min-width: 641px) {
   .c-timeline:nth-child(2n) .c-timeline_date {
-    top: 62%;
+    top: 56%;
   }
 }
 @media (min-width: 641px) and (min-width: 641px) {
   .c-timeline:nth-child(2n) .c-timeline_name {
-    bottom: 63%;
+    bottom: 60%;
     top: inherit;
     transform: translate3d(0, 50%, 0);
   }

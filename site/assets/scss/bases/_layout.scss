@@ -27,28 +27,50 @@ a {
     position: relative;
     top: 0;
     left: 0;
+    // &::before,
+    // &::after {
+    //     content: '';
+    //     position: fixed;
+    //     display: block;
+    //     height: 20vh;
+    //     width: 100%;
+    //     left: 0;
+    //     top: 0;
+    //     background: linear-gradient(to bottom, $color1, transparent);
+    //     z-index: 9;
+    // }
+
+    // &::after{
+    //     top: initial;
+    //     bottom: 0;
+    //     background: linear-gradient(to top, $color1, transparent);
+    // } 
+
+
     @include media( '>medium' ) {
         position: absolute;
+
+        &::before,
+        &::after {
+            content: '';
+            position: fixed;
+            display: block;
+            height: 100%;
+            width: 20vw;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to right, $color1, transparent);
+            z-index: 9;
+        }
+
+        &::after{
+            left: initial;
+            right: 0;
+            background: linear-gradient(to left, $color1, transparent);
+        }   
     }
 
-    &::before,
-    &::after {
-        content: '';
-        position: fixed;
-        display: block;
-        height: 100%;
-        width: 20vw;
-        left: 0;
-        top: 0;
-        background: linear-gradient(to right, $color1, transparent);
-        z-index: 9;
-    }
-
-    &::after{
-        left: initial;
-        right: 0;
-        background: linear-gradient(to left, $color1, transparent);
-    } 
+    
 
     &_button {
         display: none;

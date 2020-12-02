@@ -61,7 +61,7 @@
 .c-quote {
     position: relative;
     width: 100%;
-    margin: 1rem 0 2rem;
+    margin: 0;
 
     &_cite {
         @include font-family(heading);
@@ -87,16 +87,27 @@
 
 @include media( '<medium' ) {
     .c-about_txt,
-    .c-about_img {
-        top: 0 !important;
-        left: 0 !important;
+    .c-about_img,
+    .c-about_link {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
     }
+
+    .c-about_img,
+    .c-about_link {
+        padding-bottom: 10vw;
+    }
+}
+
+.c-about_txt--intro {
+    padding: 0 20vw 20vw 0;
 }
 
 @include media( '>medium' ) {
     .c-quote {
         position: absolute;
         width: 40vw;
+        margin: 1rem 0 2rem;
     
         &_cite {
             font-size: 60px;

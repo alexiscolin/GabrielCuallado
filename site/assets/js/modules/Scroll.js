@@ -31,7 +31,7 @@ export default class extends module {
 
     init() {
         preloadImages().then(() => {          
-            if (window.innerWidth > 640) {
+            if (window.matchMedia("(min-width: 640px)").matches) {
 
                 const opts = {
                     callback: this.parallax.bind(this),

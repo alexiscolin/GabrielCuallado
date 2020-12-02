@@ -2,17 +2,19 @@
     padding: 0;
 
     & &_section_line {
-        &::before {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 1px;
-            height: 50vh;
-            top: -25vh;
-            left: -3px;
-            background: white;
-            transform: scaleX(.5);
-            transform-origin: center;
+        @include media( '>medium' ) {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 1px;
+                height: 50vh;
+                top: -25vh;
+                left: -3px;
+                background: white;
+                transform: scaleX(.5);
+                transform-origin: center;
+            }
         }
     }
     & ~ & &_section_line{
@@ -22,18 +24,20 @@
     }
     &:last-child {
         .c-timeline_section_line{
-            &::before {
-                content: '';
-                position: absolute;
-                display: block;
-                width: 1px;
-                height: 50vh;
-                top: -25vh;
-                right: -3px;
-                left: initial;
-                background: white;
-                transform: scaleX(.5);
-                transform-origin: center;
+            @include media( '>medium' ) {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 1px;
+                    height: 50vh;
+                    top: -25vh;
+                    right: -3px;
+                    left: initial;
+                    background: white;
+                    transform: scaleX(.5);
+                    transform-origin: center;
+                }
             }
         }
     }
@@ -41,15 +45,19 @@
     &_section {
         position: relative;
         width: 100%;
-        height: 50vh;
+        min-height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 2px;
+        padding: 5vw 15vw 5vw 4vw;
+        text-align: right;
 
         @include media( '>medium' ) {
             width: 60vw;
             height: 100vh;
+            margin: 0 2px;
+            padding: 0;
+            text-align: left;
         }
 
         &_line {
@@ -75,10 +83,10 @@
     }
 
     &_date {
-        position: absolute;
-        top: 50%;
-        right: 19%;
-        transform: translate3d(-50%, -50%, 0);
+        position: relative;
+        // top: 50%;
+        // right: 19%;
+        // transform: translate3d(-50%, -50%, 0);
         font-size: 90px;
         font-style: italic;
         @include font-family(heading);
@@ -88,13 +96,15 @@
         cursor: pointer;
 
         @include media( '>medium' ) {
-            top: 40%;
+            position: absolute;
+            top: 34%;
             left: 50%;
             right: initial;
         }
     }
 
     &_link {
+        text-decoration: none;
         width: 100%;
         &:hover {
             &  .c-timeline_img {
@@ -104,10 +114,10 @@
     }
 
     &_name {
-        position: absolute;
-        top: 60%;
-        max-width: 50%;
-        right: 10%;
+        position: relative;
+        // top: 60%;
+        max-width: 100%;
+        // right: 10%;
         font-size: 40px;
         @include font-family(heading);
         @include font-weight(bold);
@@ -116,11 +126,12 @@
         cursor: pointer;
 
         @include media( '>medium' ) {
+            position: absolute;
             max-width: 40vw;
             width: 100%;
             left: calc(50% - 10px);
             right: initial;
-            top: 62%;
+            top: 60%;
             transform: translate3d(0, -50%, 0);
         }
 
@@ -143,8 +154,15 @@
             width: 100%;
         }
 
-        &.c-about_img > img {
-            width: auto;
+        &.c-about_img {
+            position: relative;
+            max-width: 100%;
+            opacity: 1;
+
+            @include media( '<medium' ) {
+                top: 0 !important;
+                left: 0 !important;
+            }
         }
     }
 
@@ -189,12 +207,12 @@
         & .c-timeline_date {
             
             @include media( '>medium' ) {
-                top: 62%;
+                top: 56%;
             }
         }
         & .c-timeline_name {
             @include media( '>medium' ) {
-                bottom: 63%;
+                bottom: 60%;
                 top: inherit;
                 transform: translate3d(0, 50%, 0);
             }
