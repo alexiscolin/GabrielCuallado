@@ -1,6 +1,43 @@
 .c-timeline {
     padding: 0;
 
+    & &_section_line {
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 50vh;
+            top: -25vh;
+            left: -3px;
+            background: white;
+            transform: scaleX(.5);
+            transform-origin: center;
+        }
+    }
+    & ~ & &_section_line{
+        &::before {
+            display: none;
+        }
+    }
+    &:last-child {
+        .c-timeline_section_line{
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 1px;
+                height: 50vh;
+                top: -25vh;
+                right: -3px;
+                left: initial;
+                background: white;
+                transform: scaleX(.5);
+                transform-origin: center;
+            }
+        }
+    }
+
     &_section {
         position: relative;
         width: 100%;
@@ -8,6 +45,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 2px;
 
         @include media( '>medium' ) {
             width: 60vw;
@@ -27,8 +65,10 @@
                 left: initial;
                 top: 50%;
                 right: 0;
-                width: 100%;
-                border-bottom: dashed 2px white;
+                width: 50%;
+                border-bottom: dashed 1px white;
+                transform: scaleX(2) scaleY(.7);
+                transform-origin: 100% 50%;
                 border-left: none;
             }
         }
@@ -102,20 +142,24 @@
         & > img {
             width: 100%;
         }
+
+        &.c-about_img > img {
+            width: auto;
+        }
     }
 
     &_point {
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 12px;
+        height: 12px;
         background-color: white;
         border-radius: 20px;
-        top: calc(50% - 10px);
-        left: calc(90% - 10px);
+        top: calc(50% - 6px);
+        left: calc(90% - 6px);
         z-index: 3; 
         
         @include media( '>medium' ) {
-            left: calc(50% - 10px);
+            left: calc(50% - 6px);
         }
     }
 

@@ -12,24 +12,60 @@
     <div class="container">
       <section class="o-section o-section_content js-section" data-scroll-section>
 
-          {{ range .Params.content }}
+        <div class="c-container c-about_img c-about_img--intro">
+          {{ with .Params.introImage }}
+          <div class="c-serie_container" data-parallaxe="img" data-speed="-.15">
+            <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
+          </div>
+          {{ end }}
+        </div>
+        <div class="c-container c-about_txt c-about_txt--intro" data-parallaxe="text">
+          {{ with .Params.introTitle }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
+          {{ with .Params.introSubtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
+          {{ with .Params.introText }}
+            <div class="c-section_para">
+              <p class="o-text">{{ . }}</p>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+
+      {{ range .Params.content }}
+        <section class="o-section c-timeline js-section" data-scroll-section>
             {{ if eq .template "about-text" }}
-              <div class="c-container c-about_txt" data-parallaxe="text" style="{{ if ne .top "0" }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
-              {{ with .title }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
-              {{ with .subtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
+              {{ $left := .left}}
+              {{ $top := .top}}
+              <div class="c-container c-timeline_section c-about_txt">
+                <div class="c-about_txt_titles" data-parallaxe="text">
+                  {{ with .title }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
+                  {{ with .subtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
+                </div>
+
+              <div class="c-timeline_section_line"></div>
+
               {{ with .text }}
-                <div class="c-section_para">
+                <div class="c-section_para c-about_txt_content" data-parallaxe="text">
                   <p class="o-text">{{ . }}</p>
                 </div>
               {{ end }}
-            </div>
-            {{ else if eq .template "about-image"}}
-            <div class="c-container c-about_img" style="{{ if ne .top "0" }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
-              {{ with .image }}
-              <div class="c-serie_container" data-parallaxe="img" data-speed=".08">
-                <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
+              {{ with .image}} 
+              <div class="c-timeline_img  c-about_img" data-parallaxe="img" data-speed="-.15" style="{{ if ne $top "0" }}top: {{ $top }}vh;{{ end }}{{ with $left }}left: {{ . }}vw{{ end }}">
+                <img class="js-prlx-img c-about_img_timeline" src="{{ . }}" >
               </div>
               {{ end }}
+            </div>
+
+            {{ else if eq .template "about-image"}}
+              {{ $left := .left}}
+              {{ $top := .top}}
+            <div class="c-container c-timeline_section" >
+              {{ with .image }}
+              <div class="c-serie_container c-about_img" data-parallaxe="img" data-speed="-.15" style="{{ if ne $top "0" }}margin-top: {{ $top }}vh;{{ end }}{{ with $left }}margin-left: {{ . }}vw{{ end }}">
+                <img class="o-img c-about_img--alone js-prlx-img" src="{{ . }}">
+              </div>
+              {{ end }}
+              <div class="c-timeline_section_line"></div>
+
               {{ if eq .citation true}}
               <div class="c-quote c-quote_about" data-parallaxe="text">
                 <span class="c-quote_cite">{{ .citation_text }}</span>
@@ -40,19 +76,23 @@
             
 
             {{ else if eq .template "about-link"}}
-            <div class="c-container c-about_img" style="{{ if ne .top "0" }}top: {{ .top }}vh;{{ end }}{{ with .left }}left: {{ . }}vw{{ end }}">
+            {{ $left := .left}}
+            {{ $top := .top}}
+            <div class="c-container  c-timeline_section" >
               {{ with .image }}
-              <div class="c-serie_container" data-parallaxe="img" data-speed=".08">
-                <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
+              <div class="c-serie_container c-about_link" data-parallaxe="img" data-speed="-.15" style="{{ if ne $top "0" }}margin-top: {{ $top }}vh;{{ end }}{{ with $left }}margin-left: {{ . }}vw{{ end }}">
+                <img class="o-img js-prlx-img" src="{{ . }}">
               </div>
               {{ end }}
+              <div class="c-timeline_section_line"></div>
+
               <div class="c-quote c-quote_about" data-parallaxe="text">
-                <a class="c-quote_cite" href="{{ .url }}">{{ .link_description }}</a>
+                <a class="c-quote_cite" href="{{ .url }}"><span class="u-link">{{ .link_description }}</span></a>
               </div>
             </div>
             {{ end }}
-          {{ end}}
-      </section>
+          </section>
+        {{ end}}
     </div>
   </section>
 {{ end }}
