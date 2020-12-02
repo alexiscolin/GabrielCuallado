@@ -158,6 +158,11 @@
             position: relative;
             max-width: 100%;
             opacity: 1;
+            @include media( '>medium' ) {
+                & > img {
+                    width: auto;
+                }
+            }
 
             @include media( '<medium' ) {
                 top: 0 !important;

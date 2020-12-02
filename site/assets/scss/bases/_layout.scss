@@ -157,5 +157,15 @@ a {
             margin-right: 15vw;
         }
     }
-    
+}
+
+::selection {
+    background: $color2; /* WebKit/Blink Browsers */
+    color: $color1;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: $color2; /* WebKit/Blink Browsers */
+    color: $color1;
+    text-shadow: none;
 }

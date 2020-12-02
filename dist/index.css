@@ -402,6 +402,20 @@ a {
   }
 }
 
+::selection {
+  background: #FFFFFF;
+  /* WebKit/Blink Browsers */
+  color: #000000;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #FFFFFF;
+  /* WebKit/Blink Browsers */
+  color: #000000;
+  text-shadow: none;
+}
+
 .o-cuallado {
   position: absolute;
   font-family: Morganite, "Helvetica", sans-serif;
@@ -1816,6 +1830,11 @@ a:hover .u-link::after {
   position: relative;
   max-width: 100%;
   opacity: 1;
+}
+@media (min-width: 641px) {
+  .c-timeline_img.c-about_img > img {
+    width: auto;
+  }
 }
 @media (max-width: 639px) {
   .c-timeline_img.c-about_img {
