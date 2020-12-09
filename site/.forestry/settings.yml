@@ -30,7 +30,6 @@ sections:
 - type: document
   path: site/content/french/a-propos/presse.md
   label: Presse
-  match: "**/*"
 - type: document
   path: site/content/french/a-propos/publications.md
   label: Publications
@@ -43,7 +42,7 @@ sections:
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: document
-  path: site/content/_index.es.md
+  path: site/content/spanish/_index.es.md
   label: Homepage
 - type: directory
   path: site/content/gallery
