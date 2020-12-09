@@ -68,7 +68,6 @@ sections:
 - type: document
   path: site/content/spanish/acerca/prensa.md
   label: Prensa
-  match: "**/*"
 - type: document
   path: site/content/spanish/acerca/coleccionistas.md
   label: Colección
@@ -78,7 +77,7 @@ sections:
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: document
-  path: site/content/_index.en.md
+  path: site/content/english/_index.en.md
   label: Hompage
 - type: directory
   path: site/content/gallery
