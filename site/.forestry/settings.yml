@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
 - type: document
-  path: site/content/_index.fr.md
+  path: site/content/french/_index.fr.md
   label: Homepage
 - type: directory
   path: site/content/gallery

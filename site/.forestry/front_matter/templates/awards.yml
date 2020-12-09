@@ -59,7 +59,3 @@ fields:
     required: false
   label: url
   hidden: true
-pages:
-- site/content/awards/_index.en.md
-- site/content/awards/_index.es.md
-- site/content/awards/_index.fr.md

@@ -43,7 +43,3 @@ fields:
     min: 
     max: 
   description: Ajouter des blocs de textes ou d'image
-pages:
-- site/content/about/_index.en.md
-- site/content/about/_index.es.md
-- site/content/about/_index.fr.md
