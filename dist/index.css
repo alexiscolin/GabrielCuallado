@@ -1009,6 +1009,9 @@ a {
     font-size: 14px;
   }
 }
+.c-header_nav--langs_item_link--current {
+  font-weight: 700;
+}
 .c-header_nav--langs_item_link:hover {
   color: inherit !important;
   text-shadow: 0.7px 0.7px 0 white, -0.7px -0.7px 0 white, 0.7px -0.7px 0 white, -0.7px 0.7px 0 white, -0.7px 0px 0 white, 0.7px 0px 0 white, 0px 0.7px 0 white, 0px -0.7px 0 white;
@@ -1566,7 +1569,7 @@ a {
 }
 @media (min-width: 641px) {
   .c-list {
-    height: 40vh;
+    height: 50vh;
     text-align: left;
   }
 }
@@ -1605,7 +1608,7 @@ a {
 }
 @media (min-width: 641px) {
   .c-list_item {
-    margin: 0 2vh;
+    margin: 0 5vh;
   }
 }
 .c-list_logo {
@@ -1722,7 +1725,7 @@ a {
   font-family: Morganite, "Helvetica", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 32px;
   letter-spacing: 4.5px;
   text-decoration: none;
 }

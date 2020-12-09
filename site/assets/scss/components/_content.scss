@@ -344,7 +344,7 @@
     justify-content: space-between;
 
     @include media( '>medium' ) {
-        height: 40vh;
+        height: 50vh;
         text-align: left;
     }
 
@@ -385,7 +385,7 @@
         list-style: none;
         margin: 2vh 2vh;
         @include media( '>medium' ) {
-            margin: 0 2vh;
+            margin: 0 5vh;
         }
     }
 
@@ -506,7 +506,7 @@
     @include font-family(heading);
     @include font-weight(bold);
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: 4.5px;
     text-decoration: none;
     &::after {

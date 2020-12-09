@@ -39,11 +39,11 @@
               <div class="c-publication_illu" data-parallaxe="illu" data-speed="-.07">
                 <img class="c-publication_illu_img" src="{{ .img }}">
               </div>
-              <div class="c-publication_wording" data-parallaxe="text" data-delay=".2">
-                <div class="c-publication_wording_date">{{ .date }}</div>
-                <div class="c-publication_wording_title">{{ .title }}</div>
-                <div class="c-publication_wording_editor">{{ .editor }}</div>
-                <a class="c-publication_wording_link u-link" href="{{ .link }}">{{ .cta }}</a>
+              <div class="c-publication_wording">
+                <div class="c-publication_wording_date" data-parallaxe="text" data-delay=".2">{{ .date }}</div>
+                <div class="c-publication_wording_title" data-parallaxe="text" data-delay=".35">{{ .title }}</div>
+                <div class="c-publication_wording_editor" data-parallaxe="text" data-delay=".5">{{ .editor }}</div>
+                <a class="c-publication_wording_link u-link" href="{{ .link }}" data-parallaxe="text" data-delay=".65">{{ .cta }}</a>
               </div>
             </li>
 

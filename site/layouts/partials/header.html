@@ -20,34 +20,38 @@
   
 
         <ul class="c-header_nav c-header_nav--langs">
+            {{ $currentLang := .Site.Language.Lang }}
             {{ if eq .Lang "en"}}
                 <!-- liste des langue en ordre => toujours anglais devant d'ou le if -->
-                <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
                 {{ range .Translations }}
-                    <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                    <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
                 {{ end}}
             {{ end }}
             {{ if eq .Lang "es"}}
                 <!-- liste des langue en ordre => toujours espanol milleur d'ou le double range + if -->
                 {{ range .Translations }}
                     {{ if eq .Lang "en"}}
-                        <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                        <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
                     {{ end }}
                 {{ end}}
-                <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li> 
                 {{ range .Translations }}
                     {{ if eq .Lang "fr"}}
-                        <li class="c-header_item c-header_nav--langs_item"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                        <li class="c-header_item c-header_nav--langs_item"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
                     {{ end }}
                 {{ end}}
             {{ end }}
             {{ if eq .Lang "fr"}}
                 <!-- liste des langue en ordre => toujours francais derière d'ou le if -->
                 {{ range .Translations }}
-                    <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                    <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
                 {{ end}}
-                <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
+                <li class="c-header_item c-header_nav--langs_item js-header"><a class="c-header_nav--langs_item_link {{ if eq $currentLang .Lang }} c-header_nav--langs_item_link--current {{ end }}" href="{{ .URL | absURL}}">{{ .Lang }}</a></li>
             {{ end }}
+
+            
+            
         </ul>
 
         {{ block "navigation" . }}
