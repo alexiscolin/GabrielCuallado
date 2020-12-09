@@ -14,7 +14,7 @@ sections:
   label: Galerie
   create: all
   match: "**/[!_]*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: document
   path: site/content/french/expositions/individuelle.md
   label: Expo individuelles
@@ -45,11 +45,11 @@ sections:
   path: site/content/spanish/_index.es.md
   label: Homepage
 - type: directory
-  path: site/content/spanish/gallery
+  path: site/content/spanish/galeria
   label: Galeria
   create: all
   match: "**/[!_]*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: document
   path: site/content/spanish/exposiciones/individual.md
   label: " Expo individuales"
@@ -63,14 +63,14 @@ sections:
   path: site/content/spanish/acerca/premios.md
   label: Premios
 - type: document
+  path: site/content/spanish/acerca/coleccionistas.md
+  label: Colección
+- type: document
   path: site/content/spanish/acerca/publicaciones.md
   label: Publicaciones
 - type: document
   path: site/content/spanish/acerca/prensa.md
   label: Prensa
-- type: document
-  path: site/content/spanish/acerca/coleccionistas.md
-  label: Colección
 - type: document
   path: site/data/es/links.toml
   label: Nav Links
@@ -84,7 +84,7 @@ sections:
   label: Gallery
   create: all
   match: "**/[!_]*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: document
   path: site/content/english/exhibitions/individual.md
   label: Individual exhibitions
