@@ -30,7 +30,3 @@ fields:
     required: false
   label: url
   hidden: true
-pages:
-- site/content/contact/_index.en.md
-- site/content/contact/_index.es.md
-- site/content/contact/_index.fr.md
