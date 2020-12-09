@@ -28,6 +28,10 @@ sections:
   path: site/content/french/a-propos/prix.md
   label: Prix
 - type: document
+  path: site/content/french/a-propos/presse.md
+  label: Presse
+  match: "**/*"
+- type: document
   path: site/content/french/a-propos/publications.md
   label: Publications
 - type: document
