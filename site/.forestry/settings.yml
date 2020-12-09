@@ -25,13 +25,13 @@ sections:
   path: site/content/french/a-propos/_index.md
   label: A Propos
 - type: document
-  path: site/content/awards/_index.fr.md
+  path: site/content/french/a-propos/prix.md
   label: Prix
 - type: document
-  path: site/content/publications/_index.fr.md
+  path: site/content/french/a-propos/publications.md
   label: Publications
 - type: document
-  path: site/content/collectors/_index.fr.md
+  path: site/content/french/a-propos/collections.md
   label: Collections
 - type: document
   path: site/data/fr/links.toml
