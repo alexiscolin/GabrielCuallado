@@ -80,7 +80,6 @@ sections:
 - type: document
   path: site/data/es/presskits.toml
   label: PressKit
-  match: "**/*"
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: document
@@ -119,7 +118,6 @@ sections:
 - type: document
   path: site/data/en/presskits.toml
   label: Presskit
-  match: "**/*"
 upload_dir: ''
 public_path: https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60
 front_matter_path: ''
