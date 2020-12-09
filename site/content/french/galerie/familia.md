@@ -7,6 +7,7 @@ namespace = "serie"
 translationKey = "serie3"
 type = "gallery"
 weight = 3
+section = "galerie"
 
 [[photos]]
 name = "El Rastro"

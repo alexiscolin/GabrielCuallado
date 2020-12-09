@@ -5,6 +5,7 @@ menu = ["exhibitions"]
 namespace = "exhibitions"
 translationKey = "exhibitions-individual"
 weight = 1
+section = "exposiciones"
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""

@@ -3,6 +3,7 @@ Title = "Publicaciones"
 namespace = "publications"
 type = "publications"
 translationKey = "publications"
+section = "acerca"
 [[publication]]
 image = ""
 link = "#"

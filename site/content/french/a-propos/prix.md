@@ -4,6 +4,8 @@ background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_l
 namespace = "awards"
 translationKey = "awards"
 type = "awards"
+section = "à propos"
+
 
 [[award]]
 country = "Madrid, Espagne"

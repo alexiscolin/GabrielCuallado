@@ -4,6 +4,7 @@ background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_l
 namespace = "awards"
 type = "awards"
 translationKey = "awards"
+section = "acerca"
 [[award]]
 country = "paris"
 date = "2021-06-25T09:04:51+00:00"

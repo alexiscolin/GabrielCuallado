@@ -804,7 +804,6 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.4s ease color;
 }
 .c-header_link > span,
 .c-nav_link > span {
@@ -856,16 +855,21 @@ a {
   right: 0;
   transform-origin: 50% 100%;
 }
-.c-header_link:hover,
+.c-header_link--current, .c-header_link:hover,
+.c-nav_link--current,
 .c-nav_link:hover {
   color: #000000 !important;
 }
-.c-header_link:hover > span::after, .c-header_link:hover > span::before,
+.c-header_link--current > span::after, .c-header_link--current > span::before, .c-header_link:hover > span::after, .c-header_link:hover > span::before,
+.c-nav_link--current > span::after,
+.c-nav_link--current > span::before,
 .c-nav_link:hover > span::after,
 .c-nav_link:hover > span::before {
   transform: scaleX(1);
 }
-.c-header_link:hover > span > span::after, .c-header_link:hover > span > span::before,
+.c-header_link--current > span > span::after, .c-header_link--current > span > span::before, .c-header_link:hover > span > span::after, .c-header_link:hover > span > span::before,
+.c-nav_link--current > span > span::after,
+.c-nav_link--current > span > span::before,
 .c-nav_link:hover > span > span::after,
 .c-nav_link:hover > span > span::before {
   transform: scaleY(1);
@@ -895,7 +899,7 @@ a {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: transparent;
 }
-.c-header_link:hover {
+.c-header_link--current, .c-header_link:hover {
   color: inherit !important;
   text-shadow: 0.7px 0.7px 0 white, -0.7px -0.7px 0 white, 0.7px -0.7px 0 white, -0.7px 0.7px 0 white, -0.7px 0px 0 white, 0.7px 0px 0 white, 0px 0.7px 0 white, 0px -0.7px 0 white;
 }
@@ -1002,7 +1006,6 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.4s ease color;
 }
 @media (min-width: 1025px) {
   .c-header_nav--langs_item_link {
@@ -1023,7 +1026,6 @@ a {
   letter-spacing: 5px;
   font-weight: 300;
   z-index: 99;
-  transition: 0.4s ease all;
   transform: scale(1);
   white-space: nowrap;
 }

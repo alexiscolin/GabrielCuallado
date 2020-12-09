@@ -5,6 +5,7 @@ meta_description = ""
 meta_title = ""
 namespace = "serie"
 type = "gallery"
+section = "galeria"
 translationKey = "serie2"
 weight = 2
 [[photos]]

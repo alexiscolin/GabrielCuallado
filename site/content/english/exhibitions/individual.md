@@ -5,7 +5,7 @@ menu = ["exhibitions"]
 type = "exhibitions"
 translationKey = "exhibitions-individual"
 weight = 1
-
+section = "exhibitions"
 
 [[exhibition]]
 date = "2020-05-31T22:00:00+00:00"

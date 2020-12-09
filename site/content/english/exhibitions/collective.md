@@ -5,6 +5,7 @@ menu = ["exhibitions"]
 namespace = "exhibitions"
 translationKey = "exhibitions-collective"
 weight = 2
+section = "exhibitions"
 
 [[exhibition]]
 date = "2020-05-31T22:00:00+00:00"

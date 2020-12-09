@@ -247,7 +247,7 @@
     // margin: .5rem 0;
     // padding: 1rem 0;
     cursor: pointer;
-    transition: .4s ease color;
+    // transition: .4s ease color;
 
     & > span {
         position: relative;
@@ -294,7 +294,8 @@
             }
         }
     }
-    
+
+    &--current,
     &:hover  {
         color: color(typography, 1) !important;
 
@@ -334,7 +335,9 @@
     color: color(typography, 2);
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: transparent;
-    
+
+  
+    &--current,
     &:hover {
         color: inherit !important;
         text-shadow: .7px .7px 0 rgb(255,255,255),

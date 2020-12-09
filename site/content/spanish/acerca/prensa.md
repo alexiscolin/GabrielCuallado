@@ -3,6 +3,7 @@ Title = "Prensa"
 namespace = "press"
 type = "press"
 translationKey = "press"
+section = "acerca"
 [[publication]]
 image = ""
 link = "#"

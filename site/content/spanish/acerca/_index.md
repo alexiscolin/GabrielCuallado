@@ -3,6 +3,8 @@ Title = "Acerca"
 namespace = "about"
 type = "about"
 translationKey = "about"
+section = "acerca"
+
 [[content]]
 left = "0"
 subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"

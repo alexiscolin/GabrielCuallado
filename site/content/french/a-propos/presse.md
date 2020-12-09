@@ -3,6 +3,8 @@ Title = "Presse"
 namespace = "press"
 type = "press"
 translationKey = "press"
+section = "à propos"
+
 [[publication]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085603/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-120_uyaf4d.jpg"
 link = "https://google.fr"

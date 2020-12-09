@@ -7,7 +7,7 @@ translationKey = "serie1"
 namespace = "serie"
 type = "gallery"
 weight = 1
-
+section = "galerie"
 
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"

@@ -4,6 +4,7 @@ type = "exhibitions"
 menu = ["exhibitions"]
 namespace = "exhibitions"
 translationKey = "exhibitions-collective"
+section = "exposiciones"
 weight = 2
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"

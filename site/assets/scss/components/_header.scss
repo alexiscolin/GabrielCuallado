@@ -84,7 +84,7 @@
                     text-decoration: none;
                     // padding: 1rem 0;
                     cursor: pointer;
-                    transition: .4s ease color;
+                    // transition: .4s ease color;
 
                     &--current {
                         @include font-weight(bold);
@@ -116,7 +116,7 @@
         letter-spacing: 5px;
         @include font-weight(light);
         z-index: 99;
-        transition: .4s ease all;
+        // transition: .4s ease all;
         transform: scale(1);
         white-space: nowrap;
 
