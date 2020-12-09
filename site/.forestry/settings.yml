@@ -10,7 +10,7 @@ sections:
   path: site/content/french/_index.fr.md
   label: Homepage
 - type: directory
-  path: site/content/gallery
+  path: site/content/french/galerie
   label: Galerie
   create: all
   match: "**/[!_]*.fr.md"
@@ -103,7 +103,6 @@ sections:
 - type: document
   path: site/content/english/about/press.md
   label: Press
-  match: "**/*"
 - type: document
   path: site/content/english/about/collectors.md
   label: Collectors
