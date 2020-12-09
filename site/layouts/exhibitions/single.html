@@ -11,7 +11,7 @@
 <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
   <div class="container">
     {{ range .Params.exhibition  }}
-    <section class="o-section c-timeline js-section" data-scroll-section>
+    <article class="o-section c-timeline js-section" data-scroll-section>
       <a class="c-timeline_link" href="{{ .link }}">
         <div class="c-timeline_section">
 
@@ -28,7 +28,7 @@
           </div>
         </div>
       </a>
-    </section>
+    </article>
     {{ end }}
   </div>
 </section>

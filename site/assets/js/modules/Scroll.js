@@ -15,6 +15,7 @@ export default class extends module {
         this.windowWidth = window.innerWidth;
         this.prlxEls = [];
         this.scrollPath = calcWinsize().width / 3;
+        this.timer = 0;
 
         this.events = {
             click: {
@@ -78,6 +79,7 @@ export default class extends module {
                 el,
                 glObject,
                 speed: el.dataset.speed || 0,
+                delay: el.dataset.delay || 0,
                 inView: false, // every view
                 isView: false, // first view
                 type: el.dataset.parallaxe,
@@ -124,14 +126,17 @@ export default class extends module {
                 if (prlxEl.right > scrollLeft && prlxEl.left < scrollRight) {
                     
                     if(prlxEl.isView === false) {
+                        const el = prlxEl.el
+
                         if(prlxEl.el.dataset.parallaxe === "img") {
-                            
                             prlxEl.glObject.isViewed()
-                            //gsap.to(el, {clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+                        }
+                        else if(prlxEl.el.dataset.parallaxe === "bg") {
+                            console.log(el.querySelector('.js-bg'))
+                            gsap.to(el.querySelector('.js-bg'), {scaleY: '1', duration: 1, delay: prlxEl.delay, ease: "Power3.easeInOut"});
                         }
                         else {
-                            const el = prlxEl.el
-                            gsap.to(el, {autoAlpha: 1, duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
+                            gsap.to(el, {autoAlpha: 1, duration: 1, delay: prlxEl.delay, ease: "Power3.easeInOut"});
                         }
                         prlxEl.isView = true;
                     }
@@ -139,7 +144,8 @@ export default class extends module {
                 } else {
                    prlxEl.inView = false;
                 }
-                if(prlxEl.inView && prlxEl.el.dataset.parallaxe === "img") {
+
+                if(prlxEl.inView && prlxEl.el.dataset.parallaxe === "img" || prlxEl.el.dataset.parallaxe === "illu" || prlxEl.el.dataset.parallaxe === "bg") {
                     prlxEl.dir = (prlxEl.initLeft - scrollRight) * prlxEl.speed;
                     prlxEl.el.style.transform = `matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,${prlxEl.dir},0,0,1)`;
                     prlxEl.right = prlxEl.el.getBoundingClientRect().left + prlxEl.el.getBoundingClientRect().width + scrollLeft;

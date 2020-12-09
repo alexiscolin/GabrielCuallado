@@ -22,7 +22,7 @@
             display: none;
         }
     }
-    &:last-child {
+    &:last-of-type {
         .c-timeline_section_line{
             @include media( '>medium' ) {
                 &::before {

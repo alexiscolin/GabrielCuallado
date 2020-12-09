@@ -324,6 +324,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             delay: config.delay || .1,
             direction: config.direction || 'vertical',
             speed: config.speed || 1,
+            delay: config.delay || 0,
             touchSpeed: config.touchSpeed || 1.5,
             jump: config.jump || 110,
             callback: config.callback || false,

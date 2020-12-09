@@ -90,7 +90,7 @@
     font-size: 38px;
     letter-spacing: 4px;
     margin-top: 4rem;
-    text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
+    // text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
     @include media( '>medium' ) {
         margin-top: 0;
     }
@@ -99,7 +99,7 @@
 .o-text {
     white-space: normal;
     margin-top: 1.5rem;
-    text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
+    // text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
     @include media( '>medium' ) {
         margin-top: 0;
     }

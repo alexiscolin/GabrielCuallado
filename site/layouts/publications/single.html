@@ -8,6 +8,9 @@
     {{ end }}
 </nav>
   <section data-module-scroll="main" data-module-parallaxe class="o-scroll">
+    <!-- <div class="c-static" >
+      <img class="c-static_pic js-prlx-img" src="{{ .Params.background }}">
+    </div> -->
     <div class="container">
       {{/* get range data length */}}
       {{ $len := (len .Params.publication) }}
@@ -27,20 +30,21 @@
 
         {{/* open tag */}}
         <section class="o-section c-section_list js-section" data-scroll-section>
-          <ul class="c-list c-list--horizontal">
+          <ul class="c-publication c-publication--horizontal">
         {{ end }}
-            <li class="c-list_item">
-              <a class="c-list_link c-list_link--horizontal" href="{{ .link }}" data-parallaxe="text">
-                {{ with .logo }}<img alt="logo" class="c-list_logo" src="{{ . }}">{{ end }}
-                {{ if .image}}
-                  <div class="c-list_image {{ if eq .type "video" }}c-list_image--player{{ end}}" data-parallaxe="img" data-speed=".08"><img alt="{{ .title }}" class="js-prlx-img" src="{{ .image }}"></div>
-
-                  <div class="c-list--horizontal_infos">
-                    <div class="c-list_title c-list_title--cite">{{ .title }}</div>
-                    <div class="c-list_subtitle u-link">{{ if eq .type "video" }}{{ i18n "watchVideo" }}{{else}}{{ i18n "readArticle" }}{{ end }}</div>  
-                  </div>
-                {{ end }}
-              </a>
+            <li class="c-publication_item">
+              <div class="c-publication_item_background" data-parallaxe="bg" data-speed=".08">
+                <div class="c-publication_item_background_img js-bg"></div>
+              </div>
+              <div class="c-publication_illu" data-parallaxe="illu" data-speed="-.07">
+                <img class="c-publication_illu_img" src="{{ .img }}">
+              </div>
+              <div class="c-publication_wording" data-parallaxe="text" data-delay=".2">
+                <div class="c-publication_wording_date">{{ .date }}</div>
+                <div class="c-publication_wording_title">{{ .title }}</div>
+                <div class="c-publication_wording_editor">{{ .editor }}</div>
+                <a class="c-publication_wording_link u-link" href="{{ .link }}">{{ .cta }}</a>
+              </div>
             </li>
 
         {{/* only for last item */}}

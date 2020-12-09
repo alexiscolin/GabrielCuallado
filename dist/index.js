@@ -8303,6 +8303,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SmoothScroll = void 0;
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -8626,27 +8628,17 @@ SmoothScroll.prototype = function () {
 
 
   var init = function init(config, viewPortclass) {
+    var _this$config;
+
     // DOM elements
     this.DOM.scroller = config.section;
     this.DOM.container = this.DOM.scroller.parentNode; // configurations
 
-    this.config = {
+    this.config = (_this$config = {
       delay: config.delay || .1,
       direction: config.direction || 'vertical',
-      speed: config.speed || 1,
-      touchSpeed: config.touchSpeed || 1.5,
-      jump: config.jump || 110,
-      callback: config.callback || false,
-      touch: config.touch || false,
-      fixedClass: viewPortclass || false,
-      resize: config.resize || true,
-      preload: config.preload || true,
-      multFirefox: 15,
-      scrollMax: 0,
-      ticking: false,
-      initFuncs: config.initFuncs || [],
-      scrollFuncs: config.scrollFuncs || {}
-    }; // movement refresh variables
+      speed: config.speed || 1
+    }, _defineProperty(_this$config, "delay", config.delay || 0), _defineProperty(_this$config, "touchSpeed", config.touchSpeed || 1.5), _defineProperty(_this$config, "jump", config.jump || 110), _defineProperty(_this$config, "callback", config.callback || false), _defineProperty(_this$config, "touch", config.touch || false), _defineProperty(_this$config, "fixedClass", viewPortclass || false), _defineProperty(_this$config, "resize", config.resize || true), _defineProperty(_this$config, "preload", config.preload || true), _defineProperty(_this$config, "multFirefox", 15), _defineProperty(_this$config, "scrollMax", 0), _defineProperty(_this$config, "ticking", false), _defineProperty(_this$config, "initFuncs", config.initFuncs || []), _defineProperty(_this$config, "scrollFuncs", config.scrollFuncs || {}), _this$config); // movement refresh variables
 
     this.move = {
       current: 0,
@@ -45499,6 +45491,7 @@ function (_module) {
     _this.windowWidth = window.innerWidth;
     _this.prlxEls = [];
     _this.scrollPath = (0, _utils.calcWinsize)().width / 3;
+    _this.timer = 0;
     _this.events = {
       click: {
         scrollof: 'clickToMove'
@@ -45563,6 +45556,7 @@ function (_module) {
           el: el,
           glObject: glObject,
           speed: el.dataset.speed || 0,
+          delay: el.dataset.delay || 0,
           inView: false,
           // every view
           isView: false,
@@ -45617,8 +45611,6 @@ function (_module) {
   }, {
     key: "parallax",
     value: function parallax(moveTo, movePrev) {
-      var _this3 = this;
-
       // scroll level / viewport
       var scrollLeft = Math.abs(moveTo);
       var scrollRight = scrollLeft + this.windowWidth;
@@ -45627,19 +45619,25 @@ function (_module) {
         this.els.forEach(function (prlxEl) {
           if (prlxEl.right > scrollLeft && prlxEl.left < scrollRight) {
             if (prlxEl.isView === false) {
-              if (prlxEl.el.dataset.parallaxe === "img") {
-                prlxEl.glObject.isViewed(); //gsap.to(el, {clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, delay: this.timer, ease: "Power3.easeInOut", onComplete: _ => this.timer -= .2});
-              } else {
-                var el = prlxEl.el;
+              var el = prlxEl.el;
 
+              if (prlxEl.el.dataset.parallaxe === "img") {
+                prlxEl.glObject.isViewed();
+              } else if (prlxEl.el.dataset.parallaxe === "bg") {
+                console.log(el.querySelector('.js-bg'));
+
+                _gsap.gsap.to(el.querySelector('.js-bg'), {
+                  scaleY: '1',
+                  duration: 1,
+                  delay: prlxEl.delay,
+                  ease: "Power3.easeInOut"
+                });
+              } else {
                 _gsap.gsap.to(el, {
                   autoAlpha: 1,
                   duration: 1,
-                  delay: _this3.timer,
-                  ease: "Power3.easeInOut",
-                  onComplete: function onComplete(_) {
-                    return _this3.timer -= .2;
-                  }
+                  delay: prlxEl.delay,
+                  ease: "Power3.easeInOut"
                 });
               }
 
@@ -45651,7 +45649,7 @@ function (_module) {
             prlxEl.inView = false;
           }
 
-          if (prlxEl.inView && prlxEl.el.dataset.parallaxe === "img") {
+          if (prlxEl.inView && prlxEl.el.dataset.parallaxe === "img" || prlxEl.el.dataset.parallaxe === "illu" || prlxEl.el.dataset.parallaxe === "bg") {
             prlxEl.dir = (prlxEl.initLeft - scrollRight) * prlxEl.speed;
             prlxEl.el.style.transform = "matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,".concat(prlxEl.dir, ",0,0,1)");
             prlxEl.right = prlxEl.el.getBoundingClientRect().left + prlxEl.el.getBoundingClientRect().width + scrollLeft;
@@ -46640,7 +46638,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49923" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60914" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
