@@ -51,13 +51,13 @@ sections:
   match: "**/[!_]*.es.md"
   new_doc_ext: es.md
 - type: document
-  path: site/content/exhibitions/_index.es.md
+  path: site/content/spanish/exposiciones/individual.md
   label: " Exposiciones individuales"
 - type: document
-  path: site/content/exhibitions-collective/_index.es.md
+  path: site/content/spanish/exposiciones/colectivo.md
   label: " Exposiciones públicas"
 - type: document
-  path: site/content/about/_index.es.md
+  path: site/content/spanish/acerca/_index.md
   label: Acerca
 - type: document
   path: site/content/awards/_index.es.md
