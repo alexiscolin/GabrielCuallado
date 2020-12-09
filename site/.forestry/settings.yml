@@ -13,7 +13,7 @@ sections:
   path: site/content/french/galerie
   label: Galerie
   create: all
-  match: "**/[!_]*.fr.md"
+  match: "**/[!_]*.md"
   new_doc_ext: fr.md
 - type: document
   path: site/content/french/expositions/individuelle.md
