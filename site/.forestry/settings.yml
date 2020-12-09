@@ -17,12 +17,12 @@ sections:
   new_doc_ext: fr.md
 - type: document
   path: site/content/french/expositions/individuelle.md
-  label: Expositions individuelles
+  label: Expo individuelles
 - type: document
   path: site/content/french/expositions/collective.md
-  label: Expositions collectives
+  label: Expo collectives
 - type: document
-  path: site/content/about/_index.fr.md
+  path: site/content/french/a-propos/_index.md
   label: A Propos
 - type: document
   path: site/content/awards/_index.fr.md
