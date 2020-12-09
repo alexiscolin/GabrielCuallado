@@ -52,21 +52,25 @@ sections:
   new_doc_ext: es.md
 - type: document
   path: site/content/spanish/exposiciones/individual.md
-  label: " Exposiciones individuales"
+  label: " Expo individuales"
 - type: document
   path: site/content/spanish/exposiciones/colectivo.md
-  label: " Exposiciones públicas"
+  label: " Expo públicas"
 - type: document
   path: site/content/spanish/acerca/_index.md
   label: Acerca
 - type: document
-  path: site/content/awards/_index.es.md
+  path: site/content/spanish/acerca/premios.md
   label: Premios
 - type: document
-  path: site/content/publications/_index.es.md
+  path: site/content/spanish/acerca/publicaciones.md
   label: Publicaciones
 - type: document
-  path: site/content/collectors/_index.es.md
+  path: site/content/spanish/acerca/prensa.md
+  label: Prensa
+  match: "**/*"
+- type: document
+  path: site/content/spanish/acerca/coleccionistas.md
   label: Colección
 - type: document
   path: site/data/es/links.toml
