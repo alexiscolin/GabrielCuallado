@@ -40,9 +40,8 @@ sections:
   path: site/data/fr/links.toml
   label: Nav Links
 - type: document
-  path: site/data/fr/presskit.toml
+  path: site/data/fr/presskits.toml
   label: PressKit
-  match: "**/*"
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: document
