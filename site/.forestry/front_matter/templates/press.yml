@@ -47,5 +47,6 @@ fields:
       required: true
     label: Lien vers le média
 pages:
+- site/content/english/about/press.md
 - site/content/french/a-propos/presse.md
 - site/content/spanish/acerca/prensa.md
