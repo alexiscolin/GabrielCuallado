@@ -5,6 +5,7 @@ meta_description = ""
 meta_title = ""
 namespace = "exhibitions"
 section = "expositions"
+menu = ["exhibitions"]
 translationkey = "exhibitions-collective"
 type = "exhibitions"
 weight = 2

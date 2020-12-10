@@ -3,6 +3,7 @@ Title = "collective"
 layout = ""
 meta_description = ""
 meta_title = ""
+menu = ["exhibitions"]
 namespace = "exhibitions"
 section = "exposiciones"
 translationkey = "exhibitions-collective"
