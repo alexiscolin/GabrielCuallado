@@ -1,6 +1,6 @@
 +++
 Title = "Familia"
-menu = []
+menu = ["serie"]
 meta_description = ""
 meta_title = ""
 namespace = "serie"
