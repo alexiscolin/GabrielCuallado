@@ -1057,6 +1057,7 @@ a {
 }
 @media (min-width: 641px) {
   .c-header_item--nav {
+    display: none;
     width: 40px;
     bottom: 2vw;
     top: initial;
