@@ -9,7 +9,7 @@ translationkey = "Publications"
 type = "publications"
 [[publication]]
 cta = "Get the book"
-date = 1985
+date = "1985-01-01T23:00:00+00:00"
 editor = "Generalitat Valenciana"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_357/v1607426534/Homenatge_-_Gabriel_Cuallado__j84zbd.png"
 link = "https://google.fr"

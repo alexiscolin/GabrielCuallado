@@ -54,16 +54,14 @@ fields:
     config:
       required: true
   - name: date
-    type: number
+    type: datetime
     label: Date
     description: ''
-    default: 0
-    required: true
     config:
-      min: 
-      max: 
-      step: 
-      required: true
+      required: false
+      date_format: 
+      time_format: 
+      display_utc: false
   - name: editor
     type: text
     config:
