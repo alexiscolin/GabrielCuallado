@@ -6,6 +6,7 @@ meta_title = ""
 namespace = "publications"
 publication = []
 section = "acerca"
+translationkey = "Publications"
 type = "publications"
 
 +++
