@@ -11,6 +11,7 @@ fields:
   name: namespace
   label: namespace
   hidden: true
+  default: publications
 - name: meta_title
   type: text
   config:
