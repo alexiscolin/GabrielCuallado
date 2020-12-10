@@ -48,3 +48,4 @@ fields:
     label: Lien vers le média
 pages:
 - site/content/french/a-propos/presse.md
+- site/content/spanish/acerca/prensa.md

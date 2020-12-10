@@ -1,9 +1,9 @@
 +++
 Title = "Prensa"
 namespace = "press"
-type = "press"
-translationKey = "press"
 section = "acerca"
+translationKey = "press"
+type = "press"
 [[publication]]
 image = ""
 link = "#"
