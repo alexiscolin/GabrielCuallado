@@ -1,9 +1,15 @@
 +++
 Title = "Acerca"
+introImage = ""
+introSubtitle = ""
+introText = ""
+introTitle = ""
+meta_description = ""
+meta_title = ""
 namespace = "about"
-type = "about"
 section = "acerca"
-
+translationkey = ""
+type = "about"
 [[content]]
 left = "0"
 subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
