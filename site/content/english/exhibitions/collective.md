@@ -1,12 +1,13 @@
 +++
 Title = "collective"
 layout = "exhibitions"
-menu = ["exhibitions"]
+meta_description = ""
+meta_title = ""
 namespace = "exhibitions"
-translationKey = "exhibitions-collective"
-weight = 2
 section = "exhibitions"
-
+translationKey = "exhibitions-collective"
+translationkey = ""
+weight = 2
 [[exhibition]]
 date = "2020-05-31T22:00:00+00:00"
 illustration = ""

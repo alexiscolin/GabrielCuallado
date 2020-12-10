@@ -90,3 +90,5 @@ fields:
   label: Expositions
   description: Ajoutez ici les différentes expositions avant de remplir les champs
     en cliquant sur l'onglet créé
+pages:
+- site/content/english/exhibitions/collective.md
