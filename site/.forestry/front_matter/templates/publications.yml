@@ -55,15 +55,16 @@ fields:
       min: 
       max: 
       step: 
+      required: true
   - name: editor
     type: text
     config:
-      required: false
+      required: true
     label: Editeur
   - name: cta
     type: text
     config:
-      required: false
+      required: true
     label: Cta
     description: Titre du lien à afficher
   - type: text
