@@ -93,3 +93,5 @@ fields:
   default: acerca
   hidden: true
   description: relier le nom de la page au menu
+pages:
+- site/content/english/about/publications.md
