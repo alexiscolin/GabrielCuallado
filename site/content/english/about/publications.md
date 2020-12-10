@@ -4,8 +4,9 @@ background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_l
 meta_description = "publication"
 meta_title = "publication"
 namespace = "publications"
-section = "acerca"
+section = "about"
 translationKey = "publications"
+translationkey = ""
 type = "publications"
 [[publication]]
 cta = "Get the book"
