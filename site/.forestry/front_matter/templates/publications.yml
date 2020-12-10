@@ -60,9 +60,10 @@ fields:
     config:
       required: false
       date_format: YYYY
-      time_format: YYYY
-      display_utc: false
-      export_format: YYYY
+      time_format: ''
+      display_utc: true
+      export_format: ''
+    default: now
   - name: editor
     type: text
     config:
