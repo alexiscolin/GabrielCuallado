@@ -12,11 +12,11 @@ fields:
   config:
     required: false
   label: Meta description
-- name: background
-  type: file
-  config:
-    maxSize: 64
-  label: Image de fond de page
+- name: slider
+  type: image_gallery
+  config: {}
+  label: Slider
+  description: Image à mettre dans le slider
 - name: namespace
   type: text
   config:
@@ -25,3 +25,5 @@ fields:
   hidden: true
 pages:
 - site/content/english/_index.en.md
+- site/content/french/_index.fr.md
+- site/content/spanish/_index.es.md
