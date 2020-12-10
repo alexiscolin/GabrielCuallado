@@ -59,9 +59,10 @@ fields:
     description: ''
     config:
       required: false
-      date_format: 
-      time_format: 
+      date_format: YYYY
+      time_format: YYYY
       display_utc: false
+      export_format: YYYY
   - name: editor
     type: text
     config:
