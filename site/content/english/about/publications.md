@@ -6,6 +6,7 @@ meta_title = "publication"
 namespace = "publications"
 section = "about"
 translationKey = "publications"
+translationkey = "Publications"
 type = "publications"
 [[publication]]
 cta = "Get the book"
