@@ -5,34 +5,42 @@ fields:
 - type: text
   name: Title
   label: Title
+  hidden: true
 - type: text
   name: namespace
   label: namespace
+  hidden: true
 - type: text
   name: type
   label: type
+  hidden: true
+- type: text
+  name: section
+  label: Menu parent
 - type: text
   name: translationKey
   label: translationKey
-- type: text
-  name: section
-  label: section
 - type: field_group_list
   name: publication
   label: publication
   fields:
+  - type: text
+    name: title
+    label: Titre
+    config:
+      required: true
   - type: file
     name: image
     label: image
   - type: text
-    name: link
-    label: link
+    name: type
+    label: 'Type de média '
+    description: ("video" ou "article")
   - type: file
     name: logo
-    label: logo
+    label: Logo du média
   - type: text
-    name: title
-    label: title
-  - type: text
-    name: type
-    label: type
+    name: link
+    config:
+      required: true
+    label: Lien vers le média
