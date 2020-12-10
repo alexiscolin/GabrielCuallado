@@ -1,10 +1,12 @@
 +++
 Title = "Individual"
 layout = ""
+menu = ""
 meta_description = ""
 meta_title = ""
 namespace = "exhibitions"
 section = "exhibitions"
+translationkey = ""
 type = "exhibitions"
 weight = 1
 [[exhibition]]
