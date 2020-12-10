@@ -98,6 +98,11 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/es/acerca/publicaciones/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/es/exposiciones/</loc>
   </url>
   
@@ -216,25 +221,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/acerca/prensa/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/es/acerca/publicaciones/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/a-propos/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/acerca/publicaciones/"
                 />
   </url>
   

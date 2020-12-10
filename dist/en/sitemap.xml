@@ -237,11 +237,6 @@
     <loc>http://localhost:1313/about/publications/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/acerca/publicaciones/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/a-propos/publications/"
                 />
