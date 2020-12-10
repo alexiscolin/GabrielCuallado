@@ -67,4 +67,5 @@ fields:
       required: true
 pages:
 - site/content/english/about/awards.md
+- site/content/french/a-propos/prix.md
 - site/content/spanish/acerca/premios.md
