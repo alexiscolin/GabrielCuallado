@@ -16,6 +16,12 @@ fields:
   label: Namespace
   hidden: true
   default: collectors
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
 - name: section
   type: text
   config:
@@ -68,4 +74,5 @@ fields:
   label: Collection
 pages:
 - site/content/english/about/collectors.md
+- site/content/french/a-propos/collections.md
 - site/content/spanish/acerca/coleccionistas.md

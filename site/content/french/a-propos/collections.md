@@ -1,10 +1,11 @@
 +++
 Title = "Collections"
 background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085604/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-132_dt5yp9.jpg"
+meta_description = ""
+meta_title = ""
 namespace = "collectors"
 type = "collectors"
 section = "à propos"
-
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
