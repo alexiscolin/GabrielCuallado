@@ -1,6 +1,6 @@
 +++
 Title = "Familia"
-draft = true
+menu = []
 meta_description = ""
 meta_title = ""
 namespace = "serie"
