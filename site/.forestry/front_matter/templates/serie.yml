@@ -88,3 +88,5 @@ fields:
   default: serie
   config:
     required: true
+pages:
+- site/content/english/gallery/paris.md
