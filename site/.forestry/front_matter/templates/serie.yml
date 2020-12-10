@@ -90,3 +90,4 @@ fields:
     required: true
 pages:
 - site/content/english/gallery/paris.md
+- site/content/french/galerie/familia.md
