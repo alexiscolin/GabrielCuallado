@@ -1,11 +1,13 @@
 +++
 Title = "collective"
+layout = ""
+meta_description = ""
+meta_title = ""
 namespace = "exhibitions"
-menu = ["exhibitions"]
+section = "expositions"
+translationkey = "exhibitions-collective"
 type = "exhibitions"
 weight = 2
-section = "expositions"
-
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""
