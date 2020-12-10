@@ -9,6 +9,25 @@ fields:
   label: Nom de la page
   description: Titre de page
   hidden: true
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: Namespace
+  hidden: true
+  default: collectors
+- name: section
+  type: text
+  config:
+    required: false
+  label: Menu parent
+  description: Relie la page au menu parent (en minuscule)
+- name: translationkey
+  type: text
+  config:
+    required: false
+  label: Clé de traduction
+  description: Relie les pages à traduire ensemble
 - name: background
   type: file
   config:
@@ -47,16 +66,6 @@ fields:
     max: 
     labelField: 
   label: Collection
-- name: namespace
-  type: text
-  config:
-    required: false
-  label: Namespace
-  hidden: true
-  default: collectors
-- name: url
-  type: text
-  config:
-    required: false
-  label: url
-  hidden: true
+pages:
+- site/content/english/about/collectors.md
+- site/content/spanish/acerca/coleccionistas.md

@@ -1,6 +1,8 @@
 +++
 Title = "Coleccionistas"
-background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
+background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085606/CATALOGO-CUALLADO-EXPO-CANAL-103_xi1ums.jpg"
+meta_description = ""
+meta_title = ""
 namespace = "collectors"
 type = "collectors"
 section = "acerca"
