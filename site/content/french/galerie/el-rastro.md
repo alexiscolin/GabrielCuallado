@@ -4,10 +4,10 @@ menu = ["serie"]
 meta_description = "Et ma meta description"
 meta_title = "Ma meta title"
 namespace = "serie"
+section = "galerie"
+translationkey = "serie1"
 type = "gallery"
 weight = 1
-section = "galerie"
-
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "/img/sofia/6.jpg"

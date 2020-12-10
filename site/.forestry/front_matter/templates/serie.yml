@@ -90,5 +90,6 @@ fields:
     required: true
 pages:
 - site/content/english/gallery/paris.md
+- site/content/french/galerie/el-rastro.md
 - site/content/french/galerie/familia.md
 - site/content/french/galerie/paris.md
