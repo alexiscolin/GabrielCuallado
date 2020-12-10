@@ -11,32 +11,28 @@ type = "publications"
 cta = "Get the book"
 date = 1985
 editor = "Generalitat Valenciana"
-image = ""
-img = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_357/v1607426534/Homenatge_-_Gabriel_Cuallado__j84zbd.png"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_357/v1607426534/Homenatge_-_Gabriel_Cuallado__j84zbd.png"
 link = "https://google.fr"
 title = "L'Albufera Visio Tangencial"
 [[publication]]
 cta = "Get the book"
 date = 1985
 editor = "Generalitat Valenciana"
-image = ""
-img = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_350/v1607426916/Esenciales_-_Gabriel_Cuallado__yentw9.png"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_350/v1607426916/Esenciales_-_Gabriel_Cuallado__yentw9.png"
 link = "https://google.fr"
 title = "L'Albufera Visio Tangencial"
 [[publication]]
 cta = "Get the book"
 date = 1985
 editor = "Generalitat Valenciana"
-image = ""
-img = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_357/v1607426534/Homenatge_-_Gabriel_Cuallado__j84zbd.png"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_357/v1607426534/Homenatge_-_Gabriel_Cuallado__j84zbd.png"
 link = "https://google.fr"
 title = "L'Albufera Visio Tangencial"
 [[publication]]
 cta = "Get the book"
 date = 1985
 editor = "Generalitat Valenciana"
-image = ""
-img = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_350/v1607426916/Esenciales_-_Gabriel_Cuallado__yentw9.png"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/c_scale,w_350/v1607426916/Esenciales_-_Gabriel_Cuallado__yentw9.png"
 link = "https://google.fr"
 title = "L'Albufera Visio Tangencial"
 
