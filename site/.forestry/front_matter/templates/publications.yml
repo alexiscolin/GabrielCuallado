@@ -18,7 +18,7 @@ fields:
     required: false
   label: Menu parent
   default: ''
-  hidden: true
+  hidden: false
   description: Relier le nom de la page au menu parent
 - name: meta_title
   type: text
