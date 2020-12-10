@@ -81,3 +81,5 @@ fields:
     min: 
     max: 
   description: Ajouter des blocs de textes ou d'image
+pages:
+- site/content/english/about/_index.md
