@@ -6,34 +6,7 @@ meta_title = ""
 namespace = "publications"
 section = "acerca"
 translationKey = "publications"
-translationkey = "publications"
 type = "publications"
-[[publication]]
-cta = ""
-date = nil
-editor = ""
-image = ""
-link = "#"
-logo = ""
-title = "Center for creative photography of the university of Tuscon Arizona"
-type = "video"
-[[publication]]
-cta = ""
-date = nil
-editor = ""
-image = ""
-link = "#"
-logo = ""
-title = "Center for creative photography of the university of Tuscon Arizona"
-type = "article"
-[[publication]]
-cta = ""
-date = nil
-editor = ""
-image = ""
-link = "#"
-logo = ""
-title = "Center for creative photography of the university of Tuscon Arizona"
-type = "video"
+
 
 +++
