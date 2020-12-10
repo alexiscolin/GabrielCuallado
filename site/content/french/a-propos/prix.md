@@ -5,6 +5,7 @@ meta_description = ""
 meta_title = ""
 namespace = "awards"
 section = "à propos"
+translationkey = "awards"
 type = "awards"
 [[award]]
 country = "Madrid, Espagne"
