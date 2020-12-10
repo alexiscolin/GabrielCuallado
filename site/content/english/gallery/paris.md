@@ -1,10 +1,12 @@
 +++
 Title = "Paris"
-menu = ["serie"]
+menu = []
 meta_description = ""
 meta_title = ""
 namespace = "serie"
 section = "gallery"
+translationkey = "serie2"
+type = ""
 weight = 2
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
