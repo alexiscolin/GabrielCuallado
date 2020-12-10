@@ -4,7 +4,6 @@ menu = ["serie"]
 meta_description = ""
 meta_title = ""
 namespace = "serie"
-translationKey = "serie2"
 type = "gallery"
 weight = 2
 section = "galerie"

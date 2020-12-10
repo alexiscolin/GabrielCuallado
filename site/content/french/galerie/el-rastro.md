@@ -3,7 +3,6 @@ Title = "El Rastro"
 menu = ["serie"]
 meta_description = "Et ma meta description"
 meta_title = "Ma meta title"
-translationKey = "serie1"
 namespace = "serie"
 type = "gallery"
 weight = 1

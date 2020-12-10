@@ -5,8 +5,6 @@ meta_description = ""
 meta_title = ""
 namespace = "serie"
 section = "gallery"
-translationKey = "serie2"
-translationkey = ""
 weight = 2
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
