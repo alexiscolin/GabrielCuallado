@@ -1761,6 +1761,13 @@ a {
   background-size: cover;
   transition: 0.3s ease transform;
 }
+.u-link--simple {
+  font-weight: 500;
+  text-transform: none;
+}
+.u-link--simple::before {
+  display: none;
+}
 
 a:hover .u-link::after,
 a:hover.u-link::after {

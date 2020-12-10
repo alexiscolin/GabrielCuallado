@@ -539,7 +539,17 @@
         background-size: cover;
         transition: .3s ease transform;
     }
+
+    &--simple {
+        @include font-weight(medium);
+        text-transform: none;
+        &::before {
+            display: none;
+        }
+    }
 }
+
+
 
 a:hover .u-link,
 a:hover.u-link {
