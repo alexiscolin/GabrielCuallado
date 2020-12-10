@@ -1554,9 +1554,11 @@ a {
   left: 0;
   top: 0;
   bottom: 0;
+  z-index: -1;
 }
 .c-static_pic {
   max-width: 90%;
+  z-index: -1;
 }
 
 .c-list {
