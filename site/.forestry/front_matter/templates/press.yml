@@ -1,0 +1,38 @@
+---
+label: Press
+hide_body: true
+fields:
+- type: text
+  name: Title
+  label: Title
+- type: text
+  name: namespace
+  label: namespace
+- type: text
+  name: type
+  label: type
+- type: text
+  name: translationKey
+  label: translationKey
+- type: text
+  name: section
+  label: section
+- type: field_group_list
+  name: publication
+  label: publication
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: link
+    label: link
+  - type: file
+    name: logo
+    label: logo
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: type
+    label: type
