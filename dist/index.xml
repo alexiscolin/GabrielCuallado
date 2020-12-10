@@ -28,6 +28,15 @@
     </item>
     
     <item>
+      <title>collective</title>
+      <link>http://localhost:1313/exhibitions/collective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/exhibitions/collective/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Paris</title>
       <link>http://localhost:1313/gallery/paris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,15 +51,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/gallery/familia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/exhibitions/collective/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/exhibitions/collective/</guid>
       <description></description>
     </item>
     

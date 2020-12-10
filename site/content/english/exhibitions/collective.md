@@ -6,7 +6,7 @@ meta_title = ""
 namespace = "exhibitions"
 section = "exhibitions"
 menu = ["exhibitions"]
-translationkey = "exhibitions-collective"D
+translationkey = "exhibitions-collective"
 weight = 2
 [[exhibition]]
 date = "2020-05-31T22:00:00+00:00"

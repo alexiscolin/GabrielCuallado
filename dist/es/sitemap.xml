@@ -29,6 +29,11 @@
     <loc>http://localhost:1313/es/exposiciones/colectivo/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/exhibitions/collective/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/expositions/collective/"
                 />
