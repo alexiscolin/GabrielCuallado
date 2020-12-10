@@ -85,6 +85,7 @@ fields:
   default:
   - exhibitions
   label: menu
+  hidden: true
 - name: weight
   type: number
   label: Ordre
@@ -95,6 +96,7 @@ fields:
     min: 
     max: 
     step: 
+  hidden: true
 pages:
 - site/content/english/exhibitions/collective.md
 - site/content/english/exhibitions/individual.md
