@@ -44,3 +44,5 @@ fields:
     config:
       required: true
     label: Lien vers le média
+pages:
+- site/content/french/a-propos/presse.md
