@@ -19,7 +19,7 @@ fields:
   label: Menu parent
   default: ''
   hidden: false
-  description: Relier le nom de la page au menu parent
+  description: Relier la page au menu parent (en minuscule)
 - name: meta_title
   type: text
   config:
