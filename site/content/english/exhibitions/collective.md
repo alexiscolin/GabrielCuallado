@@ -1,11 +1,11 @@
 +++
 Title = "collective"
 layout = "exhibitions"
+menu = ["exhibitions"]
 meta_description = ""
 meta_title = ""
 namespace = "exhibitions"
 section = "exhibitions"
-menu = ["exhibitions"]
 translationkey = "exhibitions-collective"
 weight = 2
 [[exhibition]]
