@@ -99,12 +99,18 @@ a {
     display: flex;
     flex-direction: column;
     padding: 0 4vw;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
+
+    &--center {
+        align-items: center;
+
+    }
 
     @include media( '>medium' ) {
         display: inline-flex;
         flex-direction: row;
+        align-items: center;
         padding: 0;
         height: 100vh;
 
