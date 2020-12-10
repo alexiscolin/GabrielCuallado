@@ -7,6 +7,22 @@ fields:
   label: Titre de la page
   description: Visible dans le menu latéral
   hidden: true
+- type: text
+  name: namespace
+  label: namespace
+  hidden: true
+- name: section
+  type: text
+  config:
+    required: false
+  label: Menu parent
+  description: Relier la page au menu parent (en minuscule)
+- name: translationkey
+  type: text
+  config:
+    required: false
+  label: clé de traduction
+  description: Relie les pages à traduire ensemble
 - name: meta_title
   type: text
   config:
@@ -21,10 +37,6 @@ fields:
   name: background
   label: Image de fond de page
   description: Lien vers l'image statique au fond de la page
-- type: text
-  name: namespace
-  label: namespace
-  hidden: true
 - type: field_group_list
   name: award
   label: Liste des prix
@@ -53,9 +65,3 @@ fields:
     description: Ville, Pays
     config:
       required: true
-- name: url
-  type: text
-  config:
-    required: false
-  label: url
-  hidden: true
