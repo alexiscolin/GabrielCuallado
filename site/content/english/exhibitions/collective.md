@@ -5,8 +5,6 @@ meta_description = ""
 meta_title = ""
 namespace = "exhibitions"
 section = "exhibitions"
-translationKey = "exhibitions-collective"
-translationkey = ""
 weight = 2
 [[exhibition]]
 date = "2020-05-31T22:00:00+00:00"
