@@ -7,99 +7,117 @@ sections:
 - type: heading
   label: "Français \U0001F1EB\U0001F1F7"
 - type: document
-  path: site/content/_index.fr.md
+  path: site/content/french/_index.fr.md
   label: Homepage
 - type: directory
-  path: site/content/gallery
+  path: site/content/french/galerie
   label: Galerie
   create: all
-  match: "**/[!_]*.fr.md"
-  new_doc_ext: fr.md
+  match: "**/[!_]*.md"
+  new_doc_ext: md
 - type: document
-  path: site/content/exhibitions/_index.fr.md
-  label: Expositions individuelles
+  path: site/content/french/expositions/individuelle.md
+  label: Expo individuelles
 - type: document
-  path: site/content/exhibitions-collective/_index.fr.md
-  label: Expositions collectives
+  path: site/content/french/expositions/collective.md
+  label: Expo collectives
 - type: document
-  path: site/content/about/_index.fr.md
+  path: site/content/french/a-propos/_index.md
   label: A Propos
 - type: document
-  path: site/content/awards/_index.fr.md
+  path: site/content/french/a-propos/prix.md
   label: Prix
 - type: document
-  path: site/content/publications/_index.fr.md
+  path: site/content/french/a-propos/presse.md
+  label: Presse
+- type: document
+  path: site/content/french/a-propos/publications.md
   label: Publications
 - type: document
-  path: site/content/collectors/_index.fr.md
+  path: site/content/french/a-propos/collections.md
   label: Collections
 - type: document
   path: site/data/fr/links.toml
   label: Nav Links
+- type: document
+  path: site/data/fr/presskits.toml
+  label: PressKit
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: document
-  path: site/content/_index.es.md
+  path: site/content/spanish/_index.es.md
   label: Homepage
 - type: directory
-  path: site/content/gallery
+  path: site/content/spanish/galeria
   label: Galeria
   create: all
-  match: "**/[!_]*.es.md"
-  new_doc_ext: es.md
+  match: "**/[!_]*.md"
+  new_doc_ext: md
 - type: document
-  path: site/content/exhibitions/_index.es.md
-  label: " Exposiciones individuales"
+  path: site/content/spanish/exposiciones/individual.md
+  label: " Expo individuales"
 - type: document
-  path: site/content/exhibitions-collective/_index.es.md
-  label: " Exposiciones públicas"
+  path: site/content/spanish/exposiciones/colectivo.md
+  label: " Expo públicas"
 - type: document
-  path: site/content/about/_index.es.md
+  path: site/content/spanish/acerca/_index.md
   label: Acerca
 - type: document
-  path: site/content/awards/_index.es.md
+  path: site/content/spanish/acerca/premios.md
   label: Premios
 - type: document
-  path: site/content/publications/_index.es.md
+  path: site/content/spanish/acerca/coleccionistas.md
+  label: Colección
+- type: document
+  path: site/content/spanish/acerca/publicaciones.md
   label: Publicaciones
 - type: document
-  path: site/content/collectors/_index.es.md
-  label: Colección
+  path: site/content/spanish/acerca/prensa.md
+  label: Prensa
 - type: document
   path: site/data/es/links.toml
   label: Nav Links
+- type: document
+  path: site/data/es/presskits.toml
+  label: PressKit
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: document
-  path: site/content/_index.en.md
+  path: site/content/english/_index.en.md
   label: Hompage
 - type: directory
-  path: site/content/gallery
+  path: site/content/english/gallery
   label: Gallery
   create: all
-  match: "**/[!_]*.en.md"
-  new_doc_ext: en.md
+  match: "**/[!_]*.md"
+  new_doc_ext: md
 - type: document
-  path: site/content/exhibitions/_index.en.md
+  path: site/content/english/exhibitions/individual.md
   label: Individual exhibitions
 - type: document
-  path: site/content/exhibitions-collective/_index.en.md
+  path: site/content/english/exhibitions/collective.md
   label: 'Collective exhibitions '
 - type: document
-  path: site/content/about/_index.en.md
+  path: site/content/english/about/_index.md
   label: About
 - type: document
-  path: site/content/awards/_index.en.md
+  path: site/content/english/about/awards.md
   label: Awards
 - type: document
-  path: site/content/publications/_index.en.md
+  path: site/content/english/about/publications.md
   label: Publications
 - type: document
-  path: site/content/collectors/_index.en.md
+  path: site/content/english/about/press.md
+  label: Press
+- type: document
+  path: site/content/english/about/collectors.md
   label: Collectors
 - type: document
   path: site/data/en/links.toml
   label: Nav Links
+- type: document
+  path: site/data/en/presskits.toml
+  label: Presskit
 upload_dir: ''
 public_path: https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60
 front_matter_path: ''

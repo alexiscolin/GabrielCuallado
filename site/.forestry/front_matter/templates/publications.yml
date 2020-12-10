@@ -63,13 +63,26 @@ fields:
     description: url externe vers la publication (https://www...)
     config:
       required: true
-- name: url
+- name: type
   type: text
   config:
     required: false
-  label: url
+  label: type
   hidden: true
-pages:
-- site/content/publications/_index.en.md
-- site/content/publications/_index.es.md
-- site/content/publications/_index.fr.md
+  default: publications
+- name: translationkey
+  type: text
+  config:
+    required: false
+  label: translationKey
+  description: clé de traduction (relie les trad ensemble)
+  hidden: true
+  default: publications
+- name: section
+  type: text
+  config:
+    required: false
+  label: section
+  default: acerca
+  hidden: true
+  description: relier le nom de la page au menu
