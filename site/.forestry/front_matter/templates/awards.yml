@@ -65,6 +65,12 @@ fields:
     description: Ville, Pays
     config:
       required: true
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
 pages:
 - site/content/english/about/awards.md
 - site/content/french/a-propos/prix.md
