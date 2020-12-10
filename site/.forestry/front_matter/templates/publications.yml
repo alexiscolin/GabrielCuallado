@@ -20,6 +20,14 @@ fields:
   default: ''
   hidden: false
   description: Relier la page au menu parent (en minuscule)
+- name: translationkey
+  type: text
+  config:
+    required: false
+  label: Clé de traduction
+  description: Relie les pages à traduire ensemble
+  hidden: false
+  default: ''
 - name: meta_title
   type: text
   config:
@@ -84,14 +92,6 @@ fields:
   config:
     required: false
   label: type
-  hidden: true
-  default: publications
-- name: translationkey
-  type: text
-  config:
-    required: false
-  label: translationKey
-  description: clé de traduction (relie les trad ensemble)
   hidden: true
   default: publications
 pages:
