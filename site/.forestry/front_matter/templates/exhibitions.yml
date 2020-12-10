@@ -27,16 +27,6 @@ fields:
     required: false
   label: Clé de traduction
   description: Relier les pages à traduire ensemble
-- name: weight
-  type: number
-  label: Ordre
-  description: Ordre de la page dans le menu latéral
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
 - name: meta_title
   type: text
   config:
@@ -95,6 +85,16 @@ fields:
   default:
   - exhibitions
   label: menu
+- name: weight
+  type: number
+  label: Ordre
+  description: Ordre de la page dans le menu latéral
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - site/content/english/exhibitions/collective.md
 - site/content/english/exhibitions/individual.md
