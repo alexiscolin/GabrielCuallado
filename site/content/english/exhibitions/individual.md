@@ -1,7 +1,7 @@
 +++
 Title = "Individual"
 layout = ""
-menu = ""
+menu = ["exhibitions"]
 meta_description = ""
 meta_title = "expo"
 namespace = "exhibitions"
