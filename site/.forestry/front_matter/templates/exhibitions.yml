@@ -90,6 +90,20 @@ fields:
   label: Expositions
   description: Ajoutez ici les différentes expositions avant de remplir les champs
     en cliquant sur l'onglet créé
+- name: menu
+  type: select
+  default: exhibitions
+  config:
+    required: false
+    options:
+    - exhibitions
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: menu
+  hidden: true
 pages:
 - site/content/english/exhibitions/collective.md
 - site/content/english/exhibitions/individual.md
