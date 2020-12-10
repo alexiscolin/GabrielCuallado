@@ -68,4 +68,5 @@ fields:
   label: Collection
 pages:
 - site/content/english/about/collectors.md
+- site/content/french/a-propos/collections.md
 - site/content/spanish/acerca/coleccionistas.md
