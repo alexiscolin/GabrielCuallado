@@ -95,4 +95,5 @@ fields:
   default: publications
 pages:
 - site/content/english/about/publications.md
+- site/content/french/a-propos/publications.md
 - site/content/spanish/acerca/publicaciones.md
