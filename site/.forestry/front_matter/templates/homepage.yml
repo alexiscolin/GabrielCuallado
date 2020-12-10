@@ -23,3 +23,5 @@ fields:
     required: false
   label: namespace
   hidden: true
+pages:
+- site/content/english/_index.en.md
