@@ -1642,6 +1642,7 @@ a {
   .c-list_image > img {
     position: relative;
     max-width: 35vw;
+    max-height: 50vh;
   }
 }
 .c-list_image--player {

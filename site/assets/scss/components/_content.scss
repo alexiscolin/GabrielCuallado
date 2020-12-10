@@ -414,6 +414,7 @@
             @include media( '>medium' ) {
                 position: relative;
                 max-width: 35vw;
+                max-height: 50vh;
             }
         }
 
