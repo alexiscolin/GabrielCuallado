@@ -2,7 +2,6 @@
 Title = "Acerca"
 namespace = "about"
 type = "about"
-translationKey = "about"
 section = "acerca"
 
 [[content]]

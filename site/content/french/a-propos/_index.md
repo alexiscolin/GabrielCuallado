@@ -1,7 +1,6 @@
 +++
 Title = "A propos"
 namespace = "about"
-translationKey = "about"
 type = "about"
 section = "à propos"
 
