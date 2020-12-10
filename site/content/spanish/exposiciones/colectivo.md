@@ -1,9 +1,9 @@
 +++
 Title = "collective"
 layout = ""
+menu = ""
 meta_description = ""
-meta_title = ""
-menu = ["exhibitions"]
+meta_title = "test"
 namespace = "exhibitions"
 section = "exposiciones"
 translationkey = "exhibitions-collective"
