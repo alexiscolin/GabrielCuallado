@@ -1,12 +1,15 @@
-@media (any-pointer: fine) {
+
 	.cursor {
 		position: fixed;
 		top: 0;
 		left: 0;
-		display: block;
+		display: none;
 		pointer-events: none;
 		z-index: 90;
 		//opacity: 0;
+		@include media( '>large' ) {
+			display: block;
+		}
 	}
 	.cursor__inner {
 		fill: transparent;
@@ -20,4 +23,3 @@
 			transform-origin: 2% 5%;
 		}
 	}
-}
