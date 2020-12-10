@@ -159,21 +159,6 @@
   
   <url>
     <loc>http://localhost:1313/about/collectors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/acerca/coleccionistas/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/a-propos/collections/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about/collectors/"
-                />
   </url>
   
   <url>

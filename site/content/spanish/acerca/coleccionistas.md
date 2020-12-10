@@ -3,7 +3,6 @@ Title = "Coleccionistas"
 background = "/img/FOTOS-PRUEBA/CATALOGO-CUALLADO-EXPO-CANAL-115.jpg"
 namespace = "collectors"
 type = "collectors"
-translationKey = "collectors"
 section = "acerca"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"

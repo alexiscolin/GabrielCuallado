@@ -4,7 +4,6 @@ background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_l
 namespace = "collectors"
 type = "collectors"
 section = "about"
-translationKey = "collectors"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
