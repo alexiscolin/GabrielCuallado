@@ -12,6 +12,14 @@ fields:
     required: false
   label: Menu parent
   description: Relier la page à son menu parent
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type de page
+  hidden: false
+  default: gallery
+  description: il faut entrer "gallery" si vide
 - name: menu
   type: tag_list
   default:
@@ -75,12 +83,6 @@ fields:
     label: Photo
     config:
       maxSize: 1
-- name: type
-  type: text
-  config:
-    required: false
-  label: type
-  hidden: true
 - type: text
   name: namespace
   label: namespace
