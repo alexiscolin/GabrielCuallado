@@ -5,6 +5,7 @@ meta_description = ""
 meta_title = ""
 namespace = "collectors"
 section = "about"
+translationkey = "collectors"
 type = "collectors"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
