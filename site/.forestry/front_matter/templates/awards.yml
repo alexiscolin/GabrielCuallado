@@ -65,3 +65,5 @@ fields:
     description: Ville, Pays
     config:
       required: true
+pages:
+- site/content/english/about/awards.md
