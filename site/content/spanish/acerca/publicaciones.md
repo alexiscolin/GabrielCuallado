@@ -4,9 +4,10 @@ background = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1607597606/F001
 meta_description = ""
 meta_title = ""
 namespace = "publications"
+publication = []
 section = "acerca"
 translationKey = "publications"
+translationkey = "Publications"
 type = "publications"
-
 
 +++
