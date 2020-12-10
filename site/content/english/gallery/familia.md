@@ -4,8 +4,8 @@ menu = ["serie"]
 meta_description = ""
 meta_title = ""
 namespace = "serie"
-type = "gallery"
 section = "gallery"
+translationkey = "serie3"
 weight = 3
 [[photos]]
 date = "2020-06-01T22:00:00+00:00"
