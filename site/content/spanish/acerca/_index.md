@@ -8,7 +8,7 @@ meta_description = ""
 meta_title = ""
 namespace = "about"
 section = "acerca"
-translationkey = ""
+translationkey = "about"
 type = "about"
 [[content]]
 left = "0"
