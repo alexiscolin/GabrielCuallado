@@ -33,42 +33,42 @@ fields:
   fields:
   - type: text
     name: title
-    label: Titre de la publication
+    label: Titre de l'ouvrage
     config:
       required: true
-  - name: logo
-    type: file
+  - name: date
+    type: number
+    label: Date
+    description: ''
+    default: 0
+    required: true
     config:
-      maxSize: 0.1
-    label: Logo du média
-    description: Logo du média ayant rédigé l'article ou publié la vidéo
+      min: 
+      max: 
+      step: 
+  - name: editor
+    type: text
+    config:
+      required: false
+    label: Editeur
+  - name: cta
+    type: text
+    config:
+      required: false
+    label: Cta
+    description: Titre du lien à afficher
+  - type: text
+    name: link
+    label: Lien
+    description: url externe vers la publication (https://www...)
+    config:
+      required: true
   - name: image
     type: file
     config:
       maxSize: 0.6
     label: Image d'illustration
     description: "(requis)"
-  - name: type
-    type: select
-    default: article
-    config:
-      required: true
-      options:
-      - video
-      - article
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: type de publication
-    description: la publication est-elle une vidéo ou un article ?
-  - type: text
-    name: link
-    label: Lien de publication
-    description: url externe vers la publication (https://www...)
-    config:
-      required: true
 - name: type
   type: text
   config:
