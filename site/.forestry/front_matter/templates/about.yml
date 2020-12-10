@@ -14,6 +14,13 @@ fields:
     required: false
   label: type
   hidden: true
+- name: namespace
+  type: text
+  config:
+    required: false
+  label: Namespace
+  description: type de page
+  hidden: true
 - name: section
   type: text
   config:
@@ -21,17 +28,12 @@ fields:
   label: Menu parent
   description: Relie la page au menu parent
   hidden: false
-- name: introTitle
-  type: text
-  config:
-    required: false
-  label: Titre d'introduction
 - name: translationkey
   type: text
   config:
     required: false
   label: Clé de traduction
-  description: Relier les traductions ensemble
+  description: Relie les pages à traduire ensemble
 - name: meta_title
   type: text
   config:
@@ -42,20 +44,32 @@ fields:
   config:
     required: false
   label: Meta description
-- name: url
+- name: introTitle
   type: text
   config:
     required: false
-  label: URL
-  description: Url relatif de la page
-  hidden: true
-- name: namespace
+  label: Titre d'introduction
+- name: introSubtitle
   type: text
   config:
     required: false
-  label: Namespace
-  description: type de page
-  hidden: true
+  label: Sous titre d'introduction
+- name: introText
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Texte d'introduction
+  description: Premier paragraphe avant la timeline
+- name: introImage
+  type: file
+  config:
+    maxSize: 64
+  label: Image d'introduction
+  description: Première image avant timeline
 - name: content
   type: blocks
   label: Contenu
