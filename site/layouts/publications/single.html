@@ -40,7 +40,7 @@
                 <img class="c-publication_illu_img" src="{{ .image }}">
               </div>
               <div class="c-publication_wording">
-                <div class="c-publication_wording_date" data-parallaxe="text" data-delay=".2">{{ .date }}</div>
+                <div class="c-publication_wording_date" data-parallaxe="text" data-delay=".2">{{ dateFormat "2006" .date }}</div>
                 <div class="c-publication_wording_title" data-parallaxe="text" data-delay=".35">{{ .title }}</div>
                 <div class="c-publication_wording_editor" data-parallaxe="text" data-delay=".5">{{ .editor }}</div>
                 <a class="c-publication_wording_link u-link" href="{{ .link }}" data-parallaxe="text" data-delay=".65">{{ .cta }}</a>
