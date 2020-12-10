@@ -1,7 +1,7 @@
 +++
 Title = "collective"
 layout = ""
-menu = ""
+menu = ["exhibitions"]
 meta_description = ""
 meta_title = "test"
 namespace = "exhibitions"
