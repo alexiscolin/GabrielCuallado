@@ -1,10 +1,14 @@
 +++
 Title = "Individual"
-type = "exhibitions"
-menu = ["exhibitions"]
+layout = ""
+menu = "exhibitions"
+meta_description = ""
+meta_title = ""
 namespace = "exhibitions"
-weight = 1
 section = "exposiciones"
+translationkey = ""
+type = "exhibitions"
+weight = 1
 [[exhibition]]
 date = "2019-01-31T23:00:00+00:00"
 illustration = ""
