@@ -5,8 +5,6 @@ meta_description = ""
 meta_title = ""
 namespace = "exhibitions"
 section = "exhibitions"
-translationKey = "exhibitions-individual"
-translationkey = ""
 type = "exhibitions"
 weight = 1
 [[exhibition]]

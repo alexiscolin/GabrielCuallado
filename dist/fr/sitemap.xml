@@ -23,25 +23,25 @@
   
   <url>
     <loc>http://localhost:1313/fr/expositions/individuelle/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/exhibitions/individual/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/exposiciones/individual/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/expositions/individuelle/"
-                />
   </url>
   
   <url>
     <loc>http://localhost:1313/fr/expositions/collective/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/exhibitions/collective/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/exposiciones/colectivo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/expositions/collective/"
+                />
   </url>
   
   <url>

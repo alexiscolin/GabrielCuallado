@@ -3,7 +3,6 @@ Title = "Individual"
 type = "exhibitions"
 menu = ["exhibitions"]
 namespace = "exhibitions"
-translationKey = "exhibitions-individual"
 weight = 1
 section = "exposiciones"
 [[exhibition]]
