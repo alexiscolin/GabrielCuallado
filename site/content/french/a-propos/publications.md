@@ -7,7 +7,6 @@ namespace = "publications"
 publication = []
 section = "à propos"
 translationKey = "publications"
-translationkey = "publications"
 type = "publications"
 
 +++
