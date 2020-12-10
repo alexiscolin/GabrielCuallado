@@ -2,7 +2,7 @@
 Title = "collective"
 layout = ""
 menu = ["exhibitions"]
-meta_description = ""
+meta_description = "test"
 meta_title = "test"
 namespace = "exhibitions"
 section = "expositions"
