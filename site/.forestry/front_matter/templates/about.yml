@@ -8,6 +8,30 @@ fields:
     required: false
   label: Titre de la page
   hidden: true
+- name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
+- name: section
+  type: text
+  config:
+    required: false
+  label: Menu parent
+  description: Relie la page au menu parent
+  hidden: false
+- name: introTitle
+  type: text
+  config:
+    required: false
+  label: Titre d'introduction
+- name: translationkey
+  type: text
+  config:
+    required: false
+  label: Clé de traduction
+  description: Relier les traductions ensemble
 - name: meta_title
   type: text
   config:
