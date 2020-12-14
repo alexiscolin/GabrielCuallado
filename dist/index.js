@@ -45627,7 +45627,7 @@ function (_module) {
                 console.log(el.querySelector('.js-bg'));
 
                 _gsap.gsap.to(el.querySelector('.js-bg'), {
-                  scaleY: '1',
+                  scaleY: 1,
                   duration: 1,
                   delay: prlxEl.delay,
                   ease: "Power3.easeInOut"
@@ -46638,7 +46638,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63477" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52588" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
