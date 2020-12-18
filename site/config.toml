@@ -15,6 +15,36 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "About"
                 url = "/about/"
                 weight = 1
+                [[languages.en.menu.main]]
+                    identifier = "Aboutsub"
+                    name = "Biography"
+                    parent = "About"
+                    url = "/about/"
+                    weight = 1
+                [[languages.en.menu.main]]
+                    identifier = "Collectors"
+                    name = "Collectors"
+                    parent = "About"
+                    url = "/about/collectors/"
+                    weight = 2
+                [[languages.en.menu.main]]
+                    name = "Awards"
+                    parent = "About"
+                    identifier = "Awards"
+                    url = "/about/awards/"
+                    weight = 3
+                [[languages.en.menu.main]]
+                    identifier = "Publications"
+                    name = "Publications"
+                    parent = "About"
+                    url = "/about/publications/"
+                    weight = 4
+                [[languages.en.menu.main]]
+                    identifier = "Press"
+                    name = "Press"
+                    parent = "About"
+                    url = "/about/press/"
+                    weight = 5
             [[languages.en.menu.main]]
                 identifier = "Gallery"
                 name = "Gallery"
@@ -25,6 +55,18 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Exhibitions"
                 url = "/exhibitions/individual/"
                 weight = 3
+                [[languages.en.menu.main]]
+                    identifier = "Individual"
+                    name = "Individual"
+                    parent = "Expositions"
+                    url = "/exhibitions/individual/"
+                    weight = 1
+                [[languages.en.menu.main]]
+                    identifier = "Collective"
+                    name = "Collective"
+                    parent = "Expositions"
+                    url = "/exhibitions/collective/"
+                    weight = 2
             [[languages.en.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
@@ -51,9 +93,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Contact"
                 url = "https://gabrielcuallado.typeform.com/to/EfepgT"
                 weight = 4
-
-            
-
             
             [[languages.en.menu.about]]
                 identifier = "About"
@@ -92,6 +131,36 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Acerca"
                 url = "/es/acerca/"
                 weight = 1
+                [[languages.es.menu.main]]
+                    identifier = "Aboutsub"
+                    name = "biografía"
+                    parent = "About"
+                    url = "/es/acerca/"
+                    weight = 1
+                [[languages.es.menu.main]]
+                    identifier = "Coleccionistas"
+                    name = "Coleccionistas"
+                    parent = "About"
+                    url = "/es/acerca/coleccionistas/"
+                    weight = 2
+                [[languages.es.menu.main]]
+                    name = "Premios"
+                    parent = "About"
+                    identifier = "premios"
+                    url = "/es/acerca/premios/"
+                    weight = 3
+                [[languages.es.menu.main]]
+                    identifier = "publicaciones"
+                    name = "Publicaciones"
+                    parent = "About"
+                    url = "/es/acerca/publicaciones/"
+                    weight = 4
+                [[languages.es.menu.main]]
+                    identifier = "Prensa"
+                    name = "Prensa"
+                    parent = "About"
+                    url = "/es/acerca/prensa/"
+                    weight = 5
             [[languages.es.menu.main]]
                 identifier = "Gallery"
                 name = "Galeria"
@@ -102,6 +171,18 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Exposiciones"
                 url = "/es/exposiciones/individual/"
                 weight = 3
+                [[languages.es.menu.main]]
+                    identifier = "Individual"
+                    name = "Individual"
+                    parent = "Expositions"
+                    url = "/es/exposiciones/individual/"
+                    weight = 1
+                [[languages.es.menu.main]]
+                    identifier = "Colectivo"
+                    name = "Colectivo"
+                    parent = "Expositions"
+                    url = "/es/exposiciones/colectivo/"
+                    weight = 2
             [[languages.es.menu.main]]
                 identifier = "Contact"
                 name = "Contactos"
@@ -169,6 +250,36 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "À Propos"
                 url = "/fr/a-propos/"
                 weight = 1
+                [[languages.fr.menu.main]]
+                    identifier = "Aboutsub"
+                    name = "Biographie"
+                    parent = "About"
+                    url = "/fr/a-propos/"
+                    weight = 1
+                [[languages.fr.menu.main]]
+                    identifier = "Collectors"
+                    name = "Collections"
+                    parent = "About"
+                    url = "/fr/a-propos/collections/"
+                    weight = 2
+                [[languages.fr.menu.main]]
+                    name = "Prix"
+                    parent = "About"
+                    identifier = "Prix"
+                    url = "/fr/a-propos/prix/"
+                    weight = 3
+                [[languages.fr.menu.main]]
+                    identifier = "Publications"
+                    name = "Publications"
+                    parent = "About"
+                    url = "/fr/a-propos/publications/"
+                    weight = 4
+                [[languages.fr.menu.main]]
+                    identifier = "Press"
+                    name = "Presse"
+                    parent = "About"
+                    url = "/fr/a-propos/presse/"
+                    weight = 5
             [[languages.fr.menu.main]]
                 identifier = "Gallery"
                 name = "Galerie"
@@ -179,6 +290,18 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 name = "Expositions"
                 url = "/fr/expositions/individuelle/"
                 weight = 3
+                [[languages.fr.menu.main]]
+                    identifier = "Individuelle"
+                    name = "Individuelle"
+                    parent = "Expositions"
+                    url = "/fr/expositions/individuelle/"
+                    weight = 1
+                [[languages.fr.menu.main]]
+                    identifier = "Collective"
+                    name = "Collectives"
+                    parent = "Expositions"
+                    url = "/fr/expositions/collective/"
+                    weight = 2
             [[languages.fr.menu.main]]
                 identifier = "Contact"
                 name = "Contact"

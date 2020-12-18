@@ -46273,9 +46273,11 @@ function (_module) {
     _this.menu = _this.$('menu');
     _this.menuToogle = _toConsumableArray(_this.$('menuToogle')[0].querySelectorAll('.js-header-bar'));
     _this.isOpen = false;
+    _this.sublist = false;
     _this.events = {
       click: {
-        menuToogle: 'toogleNav'
+        menuToogle: 'toogleNav',
+        submenuToogle: 'submenuToogle'
       }
     };
     return _this;
@@ -46284,6 +46286,33 @@ function (_module) {
   _createClass(_default, [{
     key: "init",
     value: function init() {}
+  }, {
+    key: "submenuToogle",
+    value: function submenuToogle(e) {
+      var el = e.currentTarget.nextElementSibling.firstElementChild;
+      var dif = this.sublistEl !== el;
+      this.sublist = !dif ? this.sublist : !this.sublist;
+
+      if (this.sublistEl) {
+        _gsap.gsap.to(this.sublistEl, {
+          height: 0,
+          autoAlpha: 0,
+          duration: 1
+        });
+
+        this.sublistEl.dataset.open = dif ? "false" : this.sublistEl.dataset.open;
+      }
+
+      this.sublistEl = el;
+
+      _gsap.gsap.to(this.sublistEl, {
+        height: dif ? 'auto' : this.sublistEl.dataset.open === "true" ? 0 : 'auto',
+        autoAlpha: dif ? 1 : this.sublistEl.dataset.open === "true" ? 0 : 1,
+        duration: 1
+      });
+
+      this.sublistEl.dataset.open = this.sublistEl.dataset.open === "true" ? "false" : "true";
+    }
   }, {
     key: "toogleNav",
     value: function toogleNav() {
@@ -46638,7 +46667,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52588" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50832" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

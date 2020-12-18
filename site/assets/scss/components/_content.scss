@@ -274,7 +274,7 @@
 
 .c-innernav {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     z-index: 10;
@@ -283,6 +283,7 @@
 
     @include media( '>medium' ) {
         position: fixed;
+        display: flex;
         flex-direction: column;
         justify-content: initial;
         left: 2vw;
