@@ -1211,6 +1211,18 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+@media (min-width: 641px) {
+  .c-slider_img {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@media (max-width: 639px) {
+  .c-slider_img:first-child {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 
 .c-serie_def {
   margin: 1rem 0 4rem 0;

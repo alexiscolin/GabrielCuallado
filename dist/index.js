@@ -46034,27 +46034,29 @@ function (_module) {
     value: function init() {
       var _this2 = this;
 
-      (0, _utils.preloadImages)().then(function () {
-        var homeImg = _this2.el.querySelector('[data-parallaxe="img"]');
+      if (window.matchMedia("(min-width: 640px)").matches) {
+        (0, _utils.preloadImages)().then(function () {
+          var homeImg = _this2.el.querySelector('[data-parallaxe="img"]');
 
-        _this2.glObject = new _Slider.default();
+          _this2.glObject = new _Slider.default();
 
-        _this2.glObject.init(homeImg, 0);
+          _this2.glObject.init(homeImg, 0);
 
-        var el = {
-          el: homeImg,
-          glObject: _this2.glObject,
-          speed: homeImg.dataset.speed,
-          type: homeImg.dataset.parallaxe,
-          dir: 0
-        };
+          var el = {
+            el: homeImg,
+            glObject: _this2.glObject,
+            speed: homeImg.dataset.speed,
+            type: homeImg.dataset.parallaxe,
+            dir: 0
+          };
 
-        _events.Events.emit('scroll', {
-          els: [el],
-          x: 0
+          _events.Events.emit('scroll', {
+            els: [el],
+            x: 0
+          });
         });
-      });
-      this.slider = (0, _utils.requestInterval)(this.slide.bind(this), 5000);
+        this.slider = (0, _utils.requestInterval)(this.slide.bind(this), 5000);
+      }
     }
   }, {
     key: "slide",

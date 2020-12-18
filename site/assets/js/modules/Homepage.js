@@ -14,22 +14,24 @@ export default class extends module {
     } 
 
     init() {
-        preloadImages().then(() => {
-            const homeImg = this.el.querySelector('[data-parallaxe="img"]');
-            this.glObject = new Slider(); 
-            this.glObject.init(homeImg, 0);
+        if (window.matchMedia("(min-width: 640px)").matches) {
+            preloadImages().then(() => {
+                const homeImg = this.el.querySelector('[data-parallaxe="img"]');
+                this.glObject = new Slider(); 
+                this.glObject.init(homeImg, 0);
 
-            const el = {
-                el: homeImg,
-                glObject: this.glObject,
-                speed: homeImg.dataset.speed,
-                type: homeImg.dataset.parallaxe,
-                dir: 0
-            };
-            Events.emit('scroll', {els: [el], x: 0});
-        }); 
+                const el = {
+                    el: homeImg,
+                    glObject: this.glObject,
+                    speed: homeImg.dataset.speed,
+                    type: homeImg.dataset.parallaxe,
+                    dir: 0
+                };
+                Events.emit('scroll', {els: [el], x: 0});
+            }); 
 
-        this.slider = requestInterval(this.slide.bind(this), 5000);
+            this.slider = requestInterval(this.slide.bind(this), 5000);
+        }
     }
     slide() {
         this.glObject.slide();

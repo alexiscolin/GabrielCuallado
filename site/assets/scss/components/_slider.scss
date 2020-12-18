@@ -18,8 +18,16 @@
         transform: translate3d(-50%,-50%,0);
         visibility: hidden;
         opacity: 0;
-        // visibility: visible !important;
-        // opacity: 1 !important;
 
+        @include media( '>medium' ) {
+            visibility: hidden;
+            opacity: 0;
+        }
+        @include media( '<medium' ) {
+            &:first-child {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 }
