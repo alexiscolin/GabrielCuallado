@@ -12,10 +12,10 @@ title = "\"La photographie élégante de Gabriel Cuallado\""
 type = "article"
 [[publication]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085603/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-118_nwlodu.jpg"
-link = "https://google.fr"
+link = "https://youtu.be/a1E2-pTj4xc"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
-title = "Center for creative photography of the university of Tuscon Arizona"
-type = "article"
+title = "Exposition \"Cualladó Esencial\""
+type = "video"
 [[publication]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085604/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-117_gj29pb.jpg"
 link = "https://www.google.fr"
