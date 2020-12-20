@@ -12,7 +12,7 @@ weight = 6
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484442/PARIS/F0007-MUJER_DE_ESPALDAS_Y_NIN%CC%83A_yo9q23.jpg"
 name = "Mujer de espaldas y nina"
-speed = "-.3"
+speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484442/PARIS/F0028-PAREJA_DE_LA_MANO_vd0b7v.jpg"
