@@ -16,11 +16,11 @@ link = "https://www.lapedrera.com/en/agenda-activities-barcelona/previous-exhibi
 name = "“Cuallado Essentiel”, La Pedrera"
 place = "Barcelone, Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
-link = ""
-name = ""
-place = ""
+date = "2019-11-30T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608492988/Cuallado_Esencial_Canal_Isabel_II_dbin6b.jpg"
+link = "https://www.madridiario.es/453379/cuallado-esencial.-la-nueva-exposicion-del-canal-de-isabel-ii"
+name = "“Cuallado Essentiel”, Salle Canal Isabel II"
+place = "Madrid, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
