@@ -60,9 +60,9 @@ from = "Ministère de la culture"
 name = "Prix National de Photograhie"
 [[award]]
 country = "Madrid, Espagne"
-date = "2002-01-31T23:00:00+00:00"
-from = "Ministère de la culture"
-name = "Nartional Photography Award"
+date = "1998-01-31T23:00:00+00:00"
+from = "Circuit des Beaux-Arts"
+name = "Médaille d'Or"
 [[award]]
 country = "Madrid, Espagne"
 date = "2002-01-31T23:00:00+00:00"
