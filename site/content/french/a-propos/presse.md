@@ -17,10 +17,10 @@ logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q
 title = "\"Découvrez l'exposition Cualladó Esencial\""
 type = "video"
 [[publication]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085604/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-117_gj29pb.jpg"
-link = "https://www.google.fr"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608506659/Documentaire_Le_Chemin_Gabriel_Cuallado_nsvhq5.jpg"
+link = "https://youtu.be/nmRFzz3qQEE"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
-title = "Une autre vidéo au sujet de notre projet"
+title = "\"Le chemin\" ⎮ Documentaire sur le photographe Gabriel Cualladó"
 type = "video"
 [[publication]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg"
