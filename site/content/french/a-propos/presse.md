@@ -11,7 +11,7 @@ logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q
 title = "\"La photographie élégante de Gabriel Cuallado\""
 type = "article"
 [[publication]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085603/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-118_nwlodu.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608506720/cuallado-exposicion_cbdl0a.jpg"
 link = "https://youtu.be/a1E2-pTj4xc"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
 title = "\"Découvrez l'exposition Cualladó Esencial\""
