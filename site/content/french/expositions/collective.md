@@ -52,11 +52,11 @@ link = "https://www.museoreinasofia.es/en/exhibitions/cuatro-direcciones-fotogra
 name = "“4 Directions de la photographie Espagnole contemporaine\" Musée National Reina Sofia"
 place = "Madrid, Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
+date = "1985-11-30T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502180/Cuallado_Bellas_Artes_fg0l8v.jpg"
 link = ""
-name = ""
-place = ""
+name = "“Photographie actuelle en Espagne”, Circuit des Beaux Arts"
+place = "Madrid, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
