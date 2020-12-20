@@ -64,11 +64,11 @@ link = "https://www.20minutos.es/noticia/3549471/0/30-aniversario-ivam-exposicio
 name = "IVAM"
 place = "Valence, Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
+date = "1987-11-30T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608495419/Cuallado_Spectrum_cwuq3m.jpg"
 link = ""
-name = ""
-place = ""
+name = "Spectrum Sotos Photography School"
+place = "Saragosse, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
