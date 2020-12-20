@@ -85,5 +85,12 @@ link_description = "Voir un lien ici"
 template = "about-link"
 top = "15"
 url = "https://www.google.fr"
+[[content]]
+left = "0"
+subtitle = "Années 2000"
+template = "about-text"
+text = "Il décède en 2003, laissant derrière lui un héritage qui perdure, racontant l'histoire d'une Europe d'après-guerre aussi fragmentée que touchante. Tout au long des années 2000, diverses expositions ont lieu pour rendre hommage à son oeuvre. De l'IVAM en 2003, au Cercle des Beaux-Arts de Madrid en 2014 et jusqu'à la grande exposition « Cuallado Essential », présentée en 2019 à Sala Canal (Madrid), ainsi qu'à La Pedrera (Barcelone)."
+title = "L'héritage"
+top = "0"
 
 +++
