@@ -12,10 +12,10 @@ translationkey = "about"
 type = "about"
 [[content]]
 left = "0"
-subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
+subtitle = "Années 1920 - 40"
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit.c"
-title = " GABRIEL CUALLADO"
+text = "Né de parents horticulteurs, dans un petit village espagnol, Cuallado grandit dans une Espagne enchevêtrée et autoritaire. Enveloppé de la douce odeur des oranges de son père, d’un côté et submergé par l'austérité d’un pays qui s’embrase dans la dictature de Franco, de l’autre; son enfance est profondément marquée par le clinquant et la rigidité. En 1941, il se rend à Madrid pour travailler au sein de la société de son oncle, marquant ainsi le début de son aventure cosmopolite."
+title = "L'enfance orange"
 top = "0"
 [[content]]
 citation = true
