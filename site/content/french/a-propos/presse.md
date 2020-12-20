@@ -14,7 +14,7 @@ type = "article"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085603/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-118_nwlodu.jpg"
 link = "https://youtu.be/a1E2-pTj4xc"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
-title = "Exposition \"Cualladó Esencial\""
+title = "\"Découvrez l'exposition Cualladó Esencial\""
 type = "video"
 [[publication]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085604/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-117_gj29pb.jpg"
