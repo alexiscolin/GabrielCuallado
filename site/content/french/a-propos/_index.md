@@ -79,18 +79,26 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
-left = "0"
-link_description = "Voir un lien ici"
-template = "about-link"
-top = "15"
-url = "https://www.google.fr"
-[[content]]
 left = "0"
 subtitle = "Années 2000"
 template = "about-text"
 text = "Il décède en 2003, laissant derrière lui un héritage qui perdure, racontant l'histoire d'une Europe d'après-guerre aussi fragmentée que touchante. Tout au long des années 2000, diverses expositions ont lieu pour rendre hommage à son oeuvre. De l'IVAM en 2003, au Cercle des Beaux-Arts de Madrid en 2014 et jusqu'à la grande exposition « Cuallado Essential », présentée en 2019 à Sala Canal (Madrid), ainsi qu'à La Pedrera (Barcelone)."
 title = "L'héritage"
 top = "0"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608504396/Press_conference_Madrid_Gabriel_Cuallado_mxtzyw.jpg"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
+left = "0"
+link_description = "Voir un lien ici"
+template = "about-link"
+top = "15"
+url = "https://www.google.fr"
 
 +++
