@@ -81,23 +81,5 @@ illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c
 link = ""
 name = "Exposition à Moscow Interpress Photo"
 place = "Moscou, Russie"
-[[exhibition]]
-date = ""
-illustration = ""
-link = ""
-name = ""
-place = ""
-[[exhibition]]
-date = ""
-illustration = ""
-link = ""
-name = ""
-place = ""
-[[exhibition]]
-date = ""
-illustration = ""
-link = ""
-name = ""
-place = ""
 
 +++
