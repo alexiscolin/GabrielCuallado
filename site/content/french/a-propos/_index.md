@@ -64,6 +64,13 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
+left = "0"
+subtitle = "Années 1970 - 90"
+template = "about-text"
+text = "En 1978, les photos de Cuallado sont présentées au Festival des Rencontres de la Photographie d’Arles, ainsi (sincronizar con la version en español)qu’au Musée National d’Art Contemporain de Madrid et au Musée d’Art Moderne de Valence (IVAM). Quelques années plus tard, ses photos sont publiées dans les livres d’art \"The Complete Book of Photographers\" (Mac Millan, Los Angeles), ainsi que dans \"Contemporary Photographers\" (St. James Press, Londres). En 1992, l'IVAM organise une grande exposition individuelle qui marque sa consécration en tant que photographe espagnol majeur du milieu du siècle. En 1994, il reçoit le premier Prix National de la Photographie Espagnole, ainsi que la première médaille d’or du Cercle des Beaux-Arts de Madrid, consolidant ainsi officiellement sa consécration."
+title = "La consécration"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Voir un lien ici"
