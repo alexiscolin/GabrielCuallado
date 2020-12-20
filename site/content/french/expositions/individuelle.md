@@ -34,11 +34,11 @@ link = "https://www.ivam.es/en/exposiciones/homenaje-a-gabriel-cuallado-massanas
 name = "\"Hommage à Gabriel Cuallado\", IVAM"
 place = "Valence, Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
-link = ""
-name = ""
-place = ""
+date = "2019-11-30T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608493766/IVAM_Gabriel_Cuallado_2019_-_c_Eduardo_Alapont_wszumx.jpg"
+link = "https://www.uv.es/uvweb/culture/en/exhibitions-preparation/people-places-div-gabriel-cuallado-ivam-s-collection-/div-1285866236311/Activitat.html?id=1286059646547"
+name = "\"Gens et lieux\", Centre Culturel La Nau"
+place = "Valence, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
