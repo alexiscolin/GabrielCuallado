@@ -50,10 +50,10 @@ template = "about-image"
 top = "0"
 [[content]]
 left = ""
-subtitle = ""
+subtitle = "Années 60"
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit."
-title = ""
+text = "En 1961, Cuallado reçoit le trophée Luis Navarro de la Photographie d’Avant-Garde. Cette période marque ainsi le début de la diffusion du travail, non pas seulement du groupe et, mais aussi de son oeuvre individuelle, en dehors de leur Espagne natale. Tout au long de la décennie, leurs oeuvres sont exposées dans des évènements et centres d’art majeurs de grandes villes européennes ; de la Biennale de Pescara en Italie, à la bibliothèque de l’ambassade d’Espagne à Paris, au Musée Fodor à Amsterdam et jusqu’à l’exposition « Interpress-Photo » de la ville de Moscou. La photo « Fille à la rose » de Cuallado, entre dans la collection de la Bibliothèque Nationale de France et ses images commencent à être publiées dans l’édition annuelle du livre britannique de renommée « Photography Year Book »."
+title = "La diffusion mondiale"
 top = ""
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
