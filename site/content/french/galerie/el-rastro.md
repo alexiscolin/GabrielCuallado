@@ -1,49 +1,17 @@
 +++
 Title = "El Rastro"
-menu = ["serie"]
-meta_description = "Et ma meta description"
-meta_title = "Ma meta title"
+menu = []
+meta_description = ""
+meta_title = "El Rastro"
 namespace = "serie"
 section = "galerie"
-translationkey = "serie1"
+translationkey = "serie3"
 type = "gallery"
-weight = 1
-
+weight = 3
 [[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/6.jpg"
-link = "#"
-name = "El Rastro"
-speed = "-.1"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/7.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".2"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/8.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".4"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/9.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".2"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/10.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".26"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/11.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".26"
+date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484440/EL%20RASTRO/F0343-VENDEDORA_PENSATIVA_mvnkf4.jpg"
+name = "Vendedora pensativa"
+speed = ".1"
 
 +++
