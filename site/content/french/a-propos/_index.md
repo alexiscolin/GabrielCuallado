@@ -71,6 +71,14 @@ text = "En 1978, les photos de Cuallado sont présentées au Festival des Rencon
 title = "La consécration"
 top = "0"
 [[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608503815/Cuallado_Bellas_Artes_wr0awa.png"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Voir un lien ici"
