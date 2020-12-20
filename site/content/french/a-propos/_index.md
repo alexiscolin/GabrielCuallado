@@ -1,6 +1,6 @@
 +++
 Title = "A propos"
-introImage = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502724/Cuallado_Arles_France_fmjhss.jpg"
+introImage = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608495009/Gabriel_Cuallado_IVAM_joxmnd.jpg"
 introSubtitle = "Un regard quotidien austère et poétique"
 introText = "Né en 1925, Gabriel Cualladó est considéré comme l'un des pionniers du mouvement de rénovation de la photographie espagnole de la seconde moitié du XXe siècle. Parmi les traits les plus marquants de son travail, il y a le regard humaniste et poétique avec lequel il dépeint la réalité grise de la société espagnole d'après-guerre. Loin des grands événements, Cualladó se concentre sur les détails intimes et proches de la vie quotidienne, au travers des photographies de ses amis, de sa famille et de personnes anonymes qu’il capture à la volée. Ses années les plus prolifiques sont celles des années 50, 60 et 70, au cours desquelles il signe des séries photographiques se déroulant à Madrid, Paris, ainsi qu’aux Asturies."
 introTitle = "GABRIEL CUALLADO"
