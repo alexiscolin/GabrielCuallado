@@ -10,6 +10,11 @@ type = "gallery"
 weight = 4
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484441/FAMILIA/F0195-NENA_EN_EL_CAMINO_ro5dof.jpg"
+name = "Nena en el camino"
+speed = ".15"
+[[photos]]
+date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484441/FAMILIA/F0194-NENA_PEINANDOSE_yasyot.jpg"
 name = "Nina peinandose"
 speed = ".4"
