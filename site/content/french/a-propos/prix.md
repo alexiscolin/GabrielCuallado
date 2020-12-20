@@ -68,5 +68,10 @@ country = "Madrid, Espagne"
 date = "2002-01-31T23:00:00+00:00"
 from = "Ministère de la culture"
 name = "Nartional Photography Award"
+[[award]]
+country = "Valence, Espagne"
+date = "2002-12-20T23:05:54+00:00"
+from = "Conseil départemental de Valence"
+name = "Prix Alfons Roig"
 
 +++
