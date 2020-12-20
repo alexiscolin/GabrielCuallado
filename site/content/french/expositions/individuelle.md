@@ -22,11 +22,11 @@ link = "https://www.madridiario.es/453379/cuallado-esencial.-la-nueva-exposicion
 name = "“Cuallado Essentiel”, Salle Canal Isabel II"
 place = "Madrid, Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
+date = "2005-12-31T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608493428/Fondation_Astroc_Photo_Gabriel_Cuallado_aasnxi.jpg"
 link = ""
-name = ""
-place = ""
+name = "\"Gabriel Cuallado\", Fondation Astroc Photo"
+place = "Madrid, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
