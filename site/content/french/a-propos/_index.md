@@ -19,9 +19,9 @@ title = " GABRIEL CUALLADO"
 top = "0"
 [[content]]
 citation = true
-citation_author = "Antonio tabernero"
-citation_text = "AN IMAGE IS SILENCE"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085251/CATALOGO-CUALLADO-EXPO-CANAL-115_cgof8a.jpg"
+citation_author = "Jean Claude Lemagny"
+citation_text = "LE MYSTÈRE DE LA SIMPLICITÉ."
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608503319/PORTRAIT_LEMAGNY_cuallado_l77gu5.jpg"
 left = ""
 template = "about-image"
 top = 40
