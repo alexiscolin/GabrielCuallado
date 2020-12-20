@@ -58,11 +58,11 @@ link = "https://www.gijon.es/es/publicaciones/150-anos-de-fotografia-propuestas-
 name = "Fondation Municipale de la Culture de l'Éducation et de l'Université Populaire"
 place = "Gijon,  Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
-link = ""
-name = ""
-place = ""
+date = "1989-12-20T20:07:14+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608495009/Gabriel_Cuallado_IVAM_joxmnd.jpg"
+link = "https://www.20minutos.es/noticia/3549471/0/30-aniversario-ivam-exposiciones-1989-el-fin-del-siglo-xx-caso-estudio/"
+name = "IVAM"
+place = "Valence, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
