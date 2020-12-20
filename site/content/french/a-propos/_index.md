@@ -27,10 +27,10 @@ template = "about-image"
 top = 40
 [[content]]
 left = ""
-subtitle = ""
+subtitle = "Années 1950"
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius ero."
-title = ""
+text = "En 1951, son premier fils naît et il achète un appareil photo Capta pour une poignée de pain, afin de capturer ses premiers pas. En 1956, il intègre la Société de Photographie Réelle de Madrid (RSF) et est invité à rejoindre le groupe de photographes Afal. Ensemble, ils lancent le Mouvement de Rénovation de la Photographie Espagnole. En 1957, ils organisent la première exposition officielle du mouvement dans l’une des galeries d’art de la ville et, quelques années plus tard, l’une des images de Cuallado (« Le Mariage de Ramón Masats ») est récompensée par le magazine américain Popular Photography."
+title = "La naissance d'un mouvement"
 top = ""
 [[content]]
 left = ""
