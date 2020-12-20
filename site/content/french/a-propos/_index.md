@@ -30,9 +30,9 @@ citation = false
 citation_author = ""
 citation_text = ""
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Naranjas_l7mgu8.jpg"
-left = "50"
+left = ""
 template = "about-image"
-top = "30"
+top = ""
 [[content]]
 left = ""
 subtitle = "Années 1950"
