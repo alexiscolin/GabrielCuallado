@@ -22,7 +22,7 @@ name = "Medaille d'Or "
 country = "Paris, France"
 date = "1962-01-31T23:00:00+00:00"
 from = "Conseil du Tourisme Français"
-name = "Nomination \"10 photographes espagnols à Paris\""
+name = "Nomination pour le prix \"10 Photographes Espagnols à Paris\""
 [[award]]
 country = "Madrid, Espagne"
 date = "2002-01-31T23:00:00+00:00"
