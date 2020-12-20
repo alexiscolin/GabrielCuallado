@@ -14,10 +14,10 @@ date = "1961-07-17T23:00:00+00:00"
 from = "Groupement Photographique de Catalogne"
 name = "Trophée Luis Navarro Photographie de l'Avant-Garde"
 [[award]]
-country = "Madrid, Espagne"
+country = "Sandness, Norvège"
 date = "2003-01-31T23:00:00+00:00"
-from = "Ministère de la culture"
-name = "Nartional Photography Award"
+from = "Salon Internacional de la Photographie de Sandness"
+name = "Medaille d'Or "
 [[award]]
 country = "Madrid, Espagne"
 date = "2001-01-31T23:00:00+00:00"
