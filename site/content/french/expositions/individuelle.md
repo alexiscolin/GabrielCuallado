@@ -28,6 +28,12 @@ link = "https://www.madridiario.es/453379/cuallado-esencial.-la-nueva-exposicion
 name = "“Cuallado Essentiel”, Canal Isabel II"
 place = "Madrid, Espagne"
 [[exhibition]]
+date = "2017-11-30T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608495832/Zarautz_Cuallado_bdodjp.jpg"
+link = "http://photography-now.com/exhibition/138393"
+name = "\"Gabriel Cualladó Fotografías\", Photomuseum"
+place = "Zarautz, Espagne"
+[[exhibition]]
 date = "2005-12-31T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608493428/Fondation_Astroc_Photo_Gabriel_Cuallado_aasnxi.jpg"
 link = ""
@@ -69,12 +75,6 @@ illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c
 link = ""
 name = "Spectrum Sotos Photography School"
 place = "Saragosse, Espagne"
-[[exhibition]]
-date = "1986-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608495675/Galeria_de_la_Agrupacio%CC%81n_Fotogra%CC%81fica_de_Guadalajara_Cuallado_zulwvc.jpg"
-link = "http://photography-now.com/exhibition/138393"
-name = "Photomuseum"
-place = "Zarautz, Espagne"
 [[exhibition]]
 date = ""
 illustration = ""
