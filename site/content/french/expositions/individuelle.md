@@ -112,11 +112,11 @@ link = ""
 name = "\"Printemps de la Photographie\", Centre International de la Photographie, Spectrum Canon"
 place = "Barcelone, Espagne"
 [[exhibition]]
-date = ""
-illustration = ""
+date = "1981-11-30T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484440/EL%20RASTRO/F0362-HOMBRE_CON_CARA_EN_LA_SOMBRA_esh8js.jpg"
 link = ""
-name = ""
-place = ""
+name = "\"El Rastro\", Real Sociedad Fotográfica"
+place = "Madrid, Espagne"
 
 +++
 expo contenu fr
