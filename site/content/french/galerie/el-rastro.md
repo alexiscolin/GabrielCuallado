@@ -1,7 +1,7 @@
 +++
 Title = "El Rastro"
 menu = ["serie"]
-meta_description = ""
+meta_description = "Rastros."
 meta_title = "El Rastro"
 namespace = "serie"
 section = "galerie"
