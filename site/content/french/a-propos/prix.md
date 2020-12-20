@@ -50,9 +50,9 @@ from = "National Museum of Photography Film & Television"
 name = "Prix ICI du meilleur photographe européen"
 [[award]]
 country = "Madrid, Espagne"
-date = "2002-01-31T23:00:00+00:00"
-from = "Ministère de la culture"
-name = "Nartional Photography Award"
+date = "1993-01-31T23:00:00+00:00"
+from = "Museo Thyssen Bornemisza"
+name = "Prix du Musée Thyssen Bornemisza"
 [[award]]
 country = "Madrid, Espagne"
 date = "2002-01-31T23:00:00+00:00"
