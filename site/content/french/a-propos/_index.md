@@ -56,6 +56,14 @@ text = "En 1961, Cuallado reçoit le trophée Luis Navarro de la Photographie d�
 title = "La diffusion mondiale"
 top = ""
 [[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608503815/Cuallado_exposicion_ukperb.png"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Voir un lien ici"
