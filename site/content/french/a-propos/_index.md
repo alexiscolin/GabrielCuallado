@@ -11,13 +11,6 @@ section = "à propos"
 translationkey = "about"
 type = "about"
 [[content]]
-left = "0"
-subtitle = "Années 1920 - 40"
-template = "about-text"
-text = "Né de parents horticulteurs, dans un petit village espagnol, Cuallado grandit dans une Espagne enchevêtrée et autoritaire. Enveloppé de la douce odeur des oranges de son père, d’un côté et submergé par l'austérité d’un pays qui s’embrase dans la dictature de Franco, de l’autre; son enfance est profondément marquée par le clinquant et la rigidité. En 1941, il se rend à Madrid pour travailler au sein de la société de son oncle, marquant ainsi le début de son aventure cosmopolite."
-title = "L'enfance orange"
-top = "0"
-[[content]]
 citation = true
 citation_author = "Jean Claude Lemagny"
 citation_text = "LE MYSTÈRE DE LA SIMPLICITÉ."
@@ -25,6 +18,21 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 left = ""
 template = "about-image"
 top = 40
+[[content]]
+left = "0"
+subtitle = "Années 1920 - 40"
+template = "about-text"
+text = "Né de parents horticulteurs, dans un petit village espagnol, Cuallado grandit dans une Espagne enchevêtrée et autoritaire. Enveloppé de la douce odeur des oranges de son père, d’un côté et submergé par l'austérité d’un pays qui s’embrase dans la dictature de Franco, de l’autre; son enfance est profondément marquée par le clinquant et la rigidité. En 1941, il se rend à Madrid pour travailler au sein de la société de son oncle, marquant ainsi le début de son aventure cosmopolite."
+title = "L'enfance orange"
+top = "0"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608503815/Cuallado_Naranjas_ij7cpk.png"
+left = "0"
+template = "about-image"
+top = "0"
 [[content]]
 left = ""
 subtitle = "Années 1950"
