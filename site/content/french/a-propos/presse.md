@@ -23,10 +23,10 @@ logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q
 title = "\"Le chemin\" ⎮ Documentaire sur le photographe Gabriel Cualladó"
 type = "video"
 [[publication]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg"
-link = "https://google.fr"
-logo = ""
-title = "Le dernier article de test sera une vidéo"
-type = "article"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608507006/Visite_Guide%CC%81e_Antonio_Tabernero_Cuallado_Esencial_zrejxr.jpg"
+link = "https://youtu.be/Eft9oUXlGHg"
+logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
+title = "Visite guidée par Antonio Tabernero de l'exposition \"Cualladó Esencial\""
+type = "video"
 
 +++
