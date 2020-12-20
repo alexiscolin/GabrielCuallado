@@ -1,48 +1,20 @@
 +++
 Title = "Individuelle"
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = ""
-meta_title = ""
+meta_title = "Expositions individuelles"
 namespace = "exhibitions"
 section = "expositions"
 translationkey = "exhibitions-individual"
 type = "exhibitions"
 weight = 1
 [[exhibition]]
-date = "2020-05-31T22:00:00+00:00"
-illustration = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
-link = "https://google.fr"
-name = "Nouvelle exposition"
-place = "Paris"
-[[exhibition]]
-date = "2019-01-31T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
-link = ""
-name = "“Cuallado Essential” La Pedrera"
-place = "Barcellone"
-type = "individual"
-[[exhibition]]
-date = "2018-01-31T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
-link = ""
-name = "“Cuallado Essentiel”, Salle Canal Isabel II, Communauté Autonome de Madrid"
-place = "Barcelonne"
-type = "individual"
-[[exhibition]]
-date = "2017-01-31T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
-link = ""
-name = "“Cuallado Essentiel”, Salle Canal Isabel II, Communauté Autonome de Madrid"
-place = "Barcelonne"
-type = "individual"
-[[exhibition]]
-date = "2015-01-31T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/di5lpqxmy/image/upload/w_1000,h_800,c_limit,q_60/v1589148824/IMG_7747_polarr_qycyuj.jpg"
-link = ""
-name = "“Cuallado Essential” La Pedrera"
-place = "Barcellone"
-type = "individual"
+date = "2018-12-31T23:00:00+00:00"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608492986/Cuallado_Esencial_La_Pedrera_k0echv.jpg"
+link = "https://www.lapedrera.com/en/agenda-activities-barcelona/previous-exhibitions/essential-cuallado"
+name = "“Cuallado Essentiel”, La Pedrera"
+place = "Barcelone, Espagne"
 
 +++
 expo contenu fr
