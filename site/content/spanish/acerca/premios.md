@@ -1,6 +1,6 @@
 +++
 Title = "Premios"
-background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085605/CATALOGO-CUALLADO-EXPO-CANAL-115_odbhf7.jpg"
+background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608504212/Cuallado_Esencial_La_Pedrera_3_Reina_Sofia_jqplze.jpg"
 meta_description = "Premios y reconocimientos de Gabriel Cualladó."
 meta_title = "Premios"
 namespace = "awards"
