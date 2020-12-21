@@ -9,6 +9,13 @@ translationkey = "Publications"
 type = "publications"
 [[publication]]
 cta = "En savoir plus"
+date = "2014-12-21T00:43:51+00:00"
+editor = "VV.AA"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608511432/La_Palangana_-_Gabriel_Cuallado_tvdlew.png"
+link = "https://amzn.to/3payVdl"
+title = "La Palangana"
+[[publication]]
+cta = "En savoir plus"
 date = "1985-12-21T00:28:48+00:00"
 editor = "Generalitat Valenciana"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608507429/Albufera_-_Gabriel_Cuallado__1_olbctz.png"
