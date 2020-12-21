@@ -79,6 +79,21 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
+left = "0"
+subtitle = "Años 2000"
+template = "about-text"
+text = "Fallece en 2003, dejando un legado duradero, contando la historia de una Europa de posguerra tan fragmentada como conmovedora. A lo largo de la década de 2000 se realizaron diversas exposiciones para rendir homenaje a su obra. Desde el IVAM en 2003, al Cercle des Beaux-Arts de Madrid en 2014 y hasta la gran exposición “Cuallado Essential”, presentada en 2019 2018 en Sala Canal (Madrid), así como en 2019 en La Pedrera (Barcelona)."
+title = "La herencia"
+top = "0"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505947/Press_conference_Madrid_Gabriel_Cuallado_copy_vfnrwx.jpg"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Voir un lien ici"
