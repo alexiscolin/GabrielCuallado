@@ -22,7 +22,7 @@ link = "http://i-ac.eu/fr/artistes/461_gabriel-cuallado"
 [[collector]]
 collectorname = "Center for Creative Photography of the University of Tuscon Arizona"
 country = "Tucson, États-Unis"
-link = "#"
+link = "https://ccp.arizona.edu/home"
 [[collector]]
 collectorname = "Musée Nacional Reine Sofia (MNCARS)"
 country = "Madrid, Espagne"
