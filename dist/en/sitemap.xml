@@ -11,11 +11,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/galerie/el-rastro/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/gallery/el-rastro/"
                 />
@@ -68,11 +63,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/galerie/paris/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/gallery/paris/"
                 />
@@ -88,7 +78,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/galerie/familia/"
+                href="http://localhost:1313/fr/galerie/el-rastro/"
                 />
     <xhtml:link
                 rel="alternate"

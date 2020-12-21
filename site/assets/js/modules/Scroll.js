@@ -132,7 +132,6 @@ export default class extends module {
                             prlxEl.glObject.isViewed()
                         }
                         else if(prlxEl.el.dataset.parallaxe === "bg") {
-                            console.log(el.querySelector('.js-bg'))
                             gsap.to(el.querySelector('.js-bg'), {scaleY: 1, duration: 1, delay: prlxEl.delay, ease: "Power3.easeInOut"});
                         }
                         else {

@@ -169,7 +169,7 @@
             cursor: pointer;
 
             @include media( '>medium' ) {
-                // display: none;
+                display: none;
                 width: 40px;
                 bottom: 2vw;
                 top: initial;
