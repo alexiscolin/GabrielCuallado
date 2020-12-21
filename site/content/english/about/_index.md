@@ -20,11 +20,19 @@ template = "about-image"
 top = 20
 [[content]]
 left = "0"
-subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
+subtitle = "From Massanassa to Madrid, 1920s and 40s"
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit.c"
-title = " GABRIEL CUALLADO"
+text = "Born of horticulturist parents, in a small Spanish village, Cuallado grew up in a tangled, authoritarian Spain. Enveloped by the smell of his father’s oranges, while watching his country’s austerity blaze in Franco’s dictatorship; his childhood was deeply marked by a frugal rigidity. In 1941, he traveled to Madrid to work at his uncle’s company, marking the beginning of his cosmopolitan journey."
+title = "The Orange Childhood"
 top = "0"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Naranjas_l7mgu8.jpg"
+left = ""
+template = "about-image"
+top = 20
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "-10"
@@ -56,14 +64,6 @@ template = "about-text"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius ero."
 title = ""
 top = "20"
-[[content]]
-citation = false
-citation_author = ""
-citation_text = ""
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085606/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-51_cw0tuj.jpg"
-left = ""
-template = "about-image"
-top = 20
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085251/CATALOGO-CUALLADO-EXPO-CANAL-115_cgof8a.jpg"
 left = "-10"
