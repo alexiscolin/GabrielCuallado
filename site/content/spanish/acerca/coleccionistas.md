@@ -28,9 +28,9 @@ collectorname = "Instituto Valenciano de Arte Moderno (IVAM)"
 country = "Valencia, España"
 link = "https://www.ivam.es/en/publicaciones/gabriel-cuallado/"
 [[collector]]
-collectorname = "National library of france (BNF)"
-country = "France"
-link = "#"
+collectorname = "Centro Andaluz de Arte Contemporáneo (CAAC)"
+country = "Sevilla, España"
+link = "http://www.caac.es/"
 [[collector]]
 collectorname = "Maison européenne de la photographie"
 country = "France"
