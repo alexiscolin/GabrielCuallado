@@ -20,10 +20,10 @@ template = "about-image"
 top = "40"
 [[content]]
 left = "0"
-subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
+subtitle = "Años 1920 - 40"
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit.c"
-title = " GABRIEL CUALLADO"
+text = "Nacido de padres horticultores en un pequeño pueblo español, Cuallado crece en una España autoritaria endurecida. Envuelto en el dulce aroma de las naranjas de su padre por un lado y abrumado por la austeridad de un país incendiado por la dictadura de Franco por el otro; su infancia se ve profundamente marcada por la frugalidad y la rigidez. En 1941 se marcha a Madrid para trabajar en la empresa de su tío, marcando así el inicio de su aventura cosmopolita."
+title = "Infancia naranja"
 top = "0"
 [[content]]
 left = ""
