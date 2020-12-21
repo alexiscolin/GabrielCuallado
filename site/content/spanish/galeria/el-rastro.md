@@ -1,13 +1,13 @@
 +++
 Title = "El rastro"
-menu = []
+menu = ["serie"]
 meta_description = ""
-meta_title = ""
+meta_title = "El Rastro"
 namespace = "serie"
 section = "galeria"
-translationkey = "serie1"
+translationkey = "serie4"
 type = "gallery"
-weight = 1
+weight = 4
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554230/F0365-VENDEDOR_DE_CUADROS_yeq1xb.jpg"
