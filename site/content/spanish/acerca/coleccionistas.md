@@ -32,9 +32,9 @@ collectorname = "Centro Andaluz de Arte Contemporáneo (CAAC)"
 country = "Sevilla, España"
 link = "http://www.caac.es/"
 [[collector]]
-collectorname = "Maison européenne de la photographie"
-country = "France"
-link = "#"
+collectorname = "Museo Nacional Reina Sofia (MNCARS)"
+country = "Madrid, España"
+link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
 [[collector]]
 collectorname = "Center for creative photography of the university of Tuscon Arizona"
 country = "france"
