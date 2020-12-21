@@ -2,8 +2,8 @@
 Title = "collective"
 layout = ""
 menu = []
-meta_description = ""
-meta_title = ""
+meta_description = "Expositions collectives de Gabriel Cuallado."
+meta_title = "Expositions collectives"
 namespace = "exhibitions"
 section = "expositions"
 translationkey = "exhibitions-collective"
