@@ -1,9 +1,9 @@
 +++
 Title = "Individual"
 layout = ""
-menu = ["exhibitions"]
-meta_description = ""
-meta_title = ""
+menu = []
+meta_description = " Exposiciónes individuales de Gabriel Cualladó."
+meta_title = " Exposiciónes individuales"
 namespace = "exhibitions"
 section = "exposiciones"
 translationkey = "exhibitions-individual"
