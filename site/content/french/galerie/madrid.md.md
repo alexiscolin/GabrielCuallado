@@ -31,13 +31,13 @@ name = "Señora Estacion"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555888/F0488-HOMBRE_EN_PASILLO_CON_RAMO_DE_FLORES_jfbps2.jpg"
-name = "Ombre con flores"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556305/F0462-MANO_EN_VENTANA_dnkjaz.jpg"
+name = "Mano en ventana"
 speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555951/F0598-NIN%CC%83A_EN_PORTAL_MASANASA_c7x7gh.jpg"
-name = "Niña en el portal (Masanasa)"
+name = "Guardia urbano y muros"
 speed = "-.26"
 
 +++
