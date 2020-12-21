@@ -36,8 +36,8 @@ name = "Ombre con flores"
 speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555074/F0571-PADRE_DE_CARMITA_tvbj7w.jpg"
-name = "Padre de Carmita"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555951/F0598-NIN%CC%83A_EN_PORTAL_MASANASA_c7x7gh.jpg"
+name = "Niña en el portal (Masanasa)"
 speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
