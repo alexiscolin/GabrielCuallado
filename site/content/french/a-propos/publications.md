@@ -1,18 +1,18 @@
 +++
 Title = "Publications"
-background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1607597606/F0017-AL_ESTE_DEL_EDEN_bdacqi.jpg"
-meta_description = "publications"
-meta_title = "publications"
+background = ""
+meta_description = "Livres d'art et publications de Gabriel Cuallado."
+meta_title = "Publications"
 namespace = "publications"
 section = "à propos"
 translationkey = "Publications"
 type = "publications"
 [[publication]]
-cta = "Lorem ipsum"
-date = 2019
-editor = "Lorem ipsum"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1607426916/Esenciales_-_Gabriel_Cuallado__yentw9.png"
-link = "https://google.com"
-title = "Lorem ipsum"
+cta = "En savoir plus"
+date = "2019-12-31T23:00:00+00:00"
+editor = "Comunidad de Madrid. Official Publications"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608507416/Cuallado_Esencial_-_Gabriel_Cuallado__7_ipsuzy.png"
+link = "https://amzn.to/2KdEGIF"
+title = "Cualladó Esencial"
 
 +++
