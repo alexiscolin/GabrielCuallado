@@ -1,7 +1,7 @@
 +++
 Title = "Individual"
 layout = ""
-menu = []
+menu = ["exhibitions"]
 meta_description = " Exposiciónes individuales de Gabriel Cualladó."
 meta_title = " Exposiciónes individuales"
 namespace = "exhibitions"
