@@ -1,8 +1,8 @@
 +++
-Title = "cotid"
-draft = true
+Title = "Asturies"
+menu = ["serie"]
 meta_description = ""
-meta_title = "Cotid"
+meta_title = "Asturies"
 namespace = "serie"
 section = "galerie"
 title = "asturias.md"
@@ -11,13 +11,13 @@ type = "gallery"
 weight = 1
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555643/F0460-NIN%CC%83O_CON_PAN_j5wbsd.jpg"
-name = "Niño con pan"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554686/F0467-PEPE_LUIS_cvglrf.jpg"
+name = "Pepe Luis"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555719/F0461-FIFI_bluerc.jpg"
-name = "Fifi"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554728/F0560-BODEGA_EN_ASTURIAS_jpfjbi.jpg"
+name = "Bodega en Asturias"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
