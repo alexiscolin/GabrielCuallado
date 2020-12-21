@@ -1,44 +1,44 @@
 +++
-Title = "Famille"
-draft = true
+Title = "Asturies"
+menu = []
 meta_description = ""
-meta_title = "Famille"
+meta_title = "Asturies"
 namespace = "serie"
 section = "galerie"
 title = "astrurias.md"
-translationkey = "serie4"
+translationkey = "serie1"
 type = "gallery"
-weight = 4
+weight = 1
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484441/FAMILIA/F0197-NIN%CC%83A_DE_LA_ROSA_g5otv6.jpg"
-name = "Nina de la rosa"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554686/F0467-PEPE_LUIS_cvglrf.jpg"
+name = "Pepe Luis"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608487007/F0195-NENA_EN_EL_CAMINO-_clkqtg.jpg"
-name = "Nena en el camino"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554728/F0560-BODEGA_EN_ASTURIAS_jpfjbi.jpg"
+name = "Bodega en Asturias"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484441/FAMILIA/F0194-NENA_PEINANDOSE_yasyot.jpg"
-name = "Nina peinandose"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554799/F0562-HIJA_DE_JESUS_l10mmi.jpg"
+name = "Hija de Jesus"
 speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484440/FAMILIA/F0167-NIN%CC%83OS_EN_EL_CAMINO_xnjm4n.jpg"
-name = "Ninos en el camino"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554954/F0567-PEPE_CON_CABALLO_BLANCO_bzjifc.jpg"
+name = "Pepe con caballo blanco"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484441/FAMILIA/F0135-GABRIEL_CON_POTRANCO_bizkeu.jpg"
-name = "Gabriel con Potranco"
-speed = "-.1"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554993/F0570-FAMILIA_CAMPESINA_ASTURIANA_cgkn19.jpg"
+name = "Familia Asturiana"
+speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484440/FAMILIA/F0122-MARINA_DE_PERFIL_zq6itq.jpg"
-name = "Marina de Perfil"
-speed = "-.2"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555074/F0571-PADRE_DE_CARMITA_tvbj7w.jpg"
+name = "Padre de Carmita"
+speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608487541/-_xh7tyv.png"
