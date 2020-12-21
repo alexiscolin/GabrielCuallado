@@ -82,19 +82,26 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
+left = "0"
+subtitle = "2000s ⎮ Tributes and grand exhibitions "
+template = "about-text"
+text = "Cuallado passed away in 2003, leaving a legacy which continues to live and tell the story of a fragmented post-war Europe. Throughout the 2000s various exhibitions take place to pay tribute to his work. From the IVAM in 2003, to Madrid’s Circle of Fine Arts in 2014 and up to the major “Cuallado Essential” exhibition which was presented in 2019 in Sala Canal (Madrid), as well as in La Pedrera (Barcelona)."
+title = "The Legacy"
+top = "0"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505947/Press_conference_Madrid_Gabriel_Cuallado_copy_vfnrwx.jpg"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Voir un lien ici"
 template = "about-link"
 top = "10"
 url = "https://www.google.fr"
-[[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085251/CATALOGO-CUALLADO-EXPO-CANAL-115_cgof8a.jpg"
-left = "-10"
-subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
-template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit.c"
-title = " GABRIEL CUALLADO"
-top = "15"
 
 +++
