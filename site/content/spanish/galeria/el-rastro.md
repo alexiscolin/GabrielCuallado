@@ -27,6 +27,11 @@ link = "#"
 name = "Titere"
 speed = "-.3"
 [[photos]]
+date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608487541/-_xh7tyv.png"
+name = "."
+speed = "-.5"
+[[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554428/F0343-VENDEDORA_PENSATIVA_qmna9s.jpg"
 link = "#"
