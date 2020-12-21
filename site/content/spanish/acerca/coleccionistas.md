@@ -52,8 +52,12 @@ collectorname = "Fototeca Ayuntamiento de Córdoba"
 country = "Córdoba, España"
 link = "https://archivo.cordoba.es/"
 [[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
-link = "#"
+collectorname = "Museo de Bellas Artes de Bilbao"
+country = "Bilbao, España"
+link = "https://www.museobilbao.com/"
+[[collector]]
+collectorname = "Galeria Colectania"
+country = "Barcelona, España"
+link = "http://fotocolectania.org/"
 
 +++
