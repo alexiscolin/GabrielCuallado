@@ -40,5 +40,4 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 name = "Niña en el portal (Masanasa)"
 speed = "-.26"
 
-
 +++
