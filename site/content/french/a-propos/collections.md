@@ -24,6 +24,10 @@ collectorname = "Center for Creative Photography of the University of Tuscon Ari
 country = "Tucson, États-Unis"
 link = "#"
 [[collector]]
+collectorname = "Musée Nacional Reine Sofia (MNCARS)"
+country = "Madrid, Espagne"
+link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
+[[collector]]
 collectorname = "Galerie Colectania"
 country = "Barcelone, Espagne"
 link = "http://fotocolectania.org/"
@@ -35,10 +39,6 @@ link = "https://www.museobilbao.com/"
 collectorname = "Phototèque de l'Alcadie de Cordoue"
 country = "Cordoue, Espagne"
 link = "https://archivo.cordoba.es/"
-[[collector]]
-collectorname = "Musée Nacional Reine Sofia (MNCARS)"
-country = "Madrid, Espagne"
-link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
 [[collector]]
 collectorname = "Fondation pour l'Art Telefónica"
 country = "Madrid, Espagne"
