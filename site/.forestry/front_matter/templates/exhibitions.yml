@@ -21,6 +21,14 @@ fields:
     required: false
   label: Menu parent
   description: Relie la page à son menu parent (en minuscule)
+- name: menu
+  type: tag_list
+  default:
+  - exhibitions
+  label: Menu latéral
+  hidden: false
+  description: Doit être "exhibitions" pour apparaître dans le menu latéral de la
+    page
 - name: translationkey
   type: text
   config:
@@ -80,12 +88,6 @@ fields:
   label: Expositions
   description: Ajoutez ici les différentes expositions avant de remplir les champs
     en cliquant sur l'onglet créé
-- name: menu
-  type: tag_list
-  default:
-  - exhibitions
-  label: menu
-  hidden: true
 - name: weight
   type: number
   label: Ordre
