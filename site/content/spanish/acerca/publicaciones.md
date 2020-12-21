@@ -26,7 +26,7 @@ cta = "Obtener"
 date = "2017-12-21T16:33:10+00:00"
 editor = "La Fábrica"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608551943/Esenciales_-_Gabriel_Cuallado__xwzaed.png"
-link = "https://www.abebooks.com/servlet/BookDetailsPL?bi=30527060680&searchurl=kn%3Dcuallado%26sortby%3D17&cm_sp=snippet-_-srp1-_-title4"
+link = "http://bit.ly/cuallado-essentials-2017"
 title = "Spanish Photography Essentials - 17 Gabriel Cualladó"
 [[publication]]
 cta = "Obtener"
@@ -68,7 +68,7 @@ cta = "Obtener"
 date = "1985-12-21T16:32:53+00:00"
 editor = "Generalitat Valenciana, IVAM"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608551940/Albufera_-_Gabriel_Cuallado__lvqki1.png"
-link = "https://www.abebooks.com/LAlbufera-Visio-Tangencial-Derek-bennett-Diana/30129133472/bd"
+link = "http://bit.ly/albufera-cuallado-1985"
 title = "L'Albufera Visio Tangencial"
 
 +++
