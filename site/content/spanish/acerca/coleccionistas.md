@@ -24,9 +24,9 @@ collectorname = "Center for Creative Photography of the University of Tucson Ari
 country = "Tucson, Estados Unidos"
 link = "https://ccp.arizona.edu/home"
 [[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
-link = "#"
+collectorname = "Instituto Valenciano de Arte Moderno (IVAM)"
+country = "Valencia, España"
+link = "https://www.ivam.es/en/publicaciones/gabriel-cuallado/"
 [[collector]]
 collectorname = "National library of france (BNF)"
 country = "France"
