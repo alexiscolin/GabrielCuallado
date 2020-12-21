@@ -1,15 +1,23 @@
 +++
 Title = "Acerca"
-introImage = ""
-introSubtitle = ""
-introText = ""
-introTitle = ""
+introImage = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505961/Gabriel_Cuallado_Autoretrato_copy_n0nvpe.jpg"
+introSubtitle = "Una mirada sobria y poética de lo cotidiano"
+introText = "Nacido en 1925, Gabriel Cualladó es considerado como uno de los pioneros del movimiento de renovación de la fotografía española de la segunda mitad del siglo XX. Entre los rasgos más emblemáticos de su obra está la mirada humanista y poética con la que retrata la realidad gris de la sociedad española de posguerra. Lejos de los grandes eventos, Cualladó se enfoca en los detalles íntimos y cercanos de la vida cotidiana, a través de fotografías de sus amigos, familiares y personas anónimas. Sus años más prolíficos son los de los años 50, 60 y 70, durante los cuales firma series fotográficas ambientadas en Madrid, París, así como Asturias."
+introTitle = "GABRIEL CUALLADO"
 meta_description = ""
-meta_title = ""
+meta_title = "Biografía"
 namespace = "about"
 section = "acerca"
 translationkey = "about"
 type = "about"
+[[content]]
+citation = true
+citation_author = "Jean Claude Lemagny"
+citation_text = "EL MISTERIO DE LA SIMPLICIDAD."
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505947/PORTRAIT_LEMAGNY_cuallado_copy_eryag2.jpg"
+left = ""
+template = "about-image"
+top = "40"
 [[content]]
 left = "0"
 subtitle = "FROM MASSANASSA TO MADRID, VALENCIA AND PARIS"
@@ -17,14 +25,6 @@ template = "about-text"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit.c"
 title = " GABRIEL CUALLADO"
 top = "0"
-[[content]]
-citation = true
-citation_author = "Antonio tabernero"
-citation_text = "AN IMAGE IS SILENCE"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085251/CATALOGO-CUALLADO-EXPO-CANAL-115_cgof8a.jpg"
-left = ""
-template = "about-image"
-top = 40
 [[content]]
 left = ""
 subtitle = ""
