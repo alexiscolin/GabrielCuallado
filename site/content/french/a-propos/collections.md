@@ -8,20 +8,24 @@ section = "à propos"
 translationkey = "collectors"
 type = "collectors"
 [[collector]]
+collectorname = "Galerie Colectania"
+country = "Barcelone, Espagne"
+link = ""
+[[collector]]
 collectorname = "Bibliothèque Nationale de France (BnF)"
 country = "Paris, France"
 link = "https://data.bnf.fr/fr/12517276/gabriel_cuallado/"
 [[collector]]
 collectorname = "Maison européenne de la photographie"
 country = "Paris, France"
-link = "#"
+link = "https://www.mep-fr.org/"
 [[collector]]
 collectorname = "Institut d`Art Contemporain FRAC (Rhône Alpes)"
 country = "Lyon, France"
 link = "http://i-ac.eu/fr/artistes/461_gabriel-cuallado"
 [[collector]]
-collectorname = "Center for creative photography of the university of Tuscon Arizona"
-country = "france"
+collectorname = "Center for Creative Photography of the University of Tuscon Arizona"
+country = "Tucson, États-Unis"
 link = "#"
 
 +++
