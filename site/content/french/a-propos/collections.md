@@ -35,5 +35,29 @@ link = "https://www.museobilbao.com/"
 collectorname = "Phototèque de l'Alcadie de Cordoue"
 country = "Cordoue, Espagne"
 link = "https://archivo.cordoba.es/"
+[[collector]]
+collectorname = "Musée Nacional Reine Sofia (MNCARS)"
+country = "Madrid, Espagne"
+link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
+[[collector]]
+collectorname = "Fondation pour l'Art Telefónica"
+country = "Madrid, Espagne"
+link = "https://www.fundaciontelefonica.com/"
+[[collector]]
+collectorname = "Centre d'Art d'Alcobendas"
+country = "Madrid, Espagne"
+link = "http://www.centrodeartealcobendas.org/es/search"
+[[collector]]
+collectorname = "Académie Royale des Beaux Arts de San Fernando"
+country = "Madrid, Espagne"
+link = "https://www.realacademiabellasartessanfernando.com/es"
+[[collector]]
+collectorname = "Centre Andalou d'Art Contemporain (CAAC)"
+country = "Séville, Espagne"
+link = "http://www.caac.es/"
+[[collector]]
+collectorname = "Institut d’Art Moderne de Valence (IVAM)"
+country = "Valence, Espagne"
+link = "https://www.ivam.es/en/publicaciones/gabriel-cuallado/"
 
 +++
