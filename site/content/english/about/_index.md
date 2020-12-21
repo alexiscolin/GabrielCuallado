@@ -99,9 +99,9 @@ top = "0"
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
-link_description = "Voir un lien ici"
+link_description = "Discover artworks"
 template = "about-link"
 top = "10"
-url = "https://www.google.fr"
+url = "https://www.artsy.net/artist/gabriel-cuallado/works-for-sale"
 
 +++
