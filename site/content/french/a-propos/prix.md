@@ -9,7 +9,7 @@ section = "à propos"
 translationkey = "awards"
 type = "awards"
 [[award]]
-country = "Barcelogne, Espagne"
+country = "Barcelone, Espagne"
 date = "1961-07-17T23:00:00+00:00"
 from = "Groupement Photographique de Catalogne"
 name = "Trophée Luis Navarro Photographie de l'Avant-Garde"
