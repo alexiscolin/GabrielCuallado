@@ -1,7 +1,7 @@
 +++
 Title = "collective"
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = "Expositions collectives de Gabriel Cuallado."
 meta_title = "Expositions collectives"
 namespace = "exhibitions"
@@ -26,7 +26,7 @@ date = "2017-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608498624/Colectania_Fenomeno_Libro_foto_Cuallado_gsnver.jpg"
 link = "https://elpais.com/ccaa/2017/03/29/catalunya/1490811347_069447.html"
 name = "“Phénomène livre-photo” par CCCB et Fundació Foto Colectania (comprenant les photos de Cartier Bresson, Alvarez Bravo e Cuallado)"
-place = "Barcelone, Espagne"
+place = "Bilbao, Espagne"
 [[exhibition]]
 date = "2014-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608498782/PhotoEspan%CC%83a_La_Palangana_22_Bellas_Artes_Cuallado_ydu8ob.jpg"
