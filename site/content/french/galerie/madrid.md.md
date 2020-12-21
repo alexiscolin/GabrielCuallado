@@ -1,34 +1,33 @@
 +++
-Title = "Asturies"
-draft = true
+Title = "Madrid"
 menu = []
 meta_description = ""
-meta_title = "Asturies"
+meta_title = "Madrid"
 namespace = "serie"
 section = "galerie"
 title = "madrid.md"
-translationkey = "serie6"
+translationkey = "serie2"
 type = "gallery"
-weight = 6
+weight = 2
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554686/F0467-PEPE_LUIS_cvglrf.jpg"
-name = "Pepe Luis"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556157/F023-FELIZ_1959_de8kfa.jpg"
+name = "Felix 1959"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554728/F0560-BODEGA_EN_ASTURIAS_jpfjbi.jpg"
-name = "Bodega en Asturias"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556172/F0235-NIN%CC%83O_CON_FLORES_PLAZA_MAYOR_cmazeg.jpg"
+name = "Niño con flores Plaza Mayor"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554799/F0562-HIJA_DE_JESUS_l10mmi.jpg"
-name = "Hija de Jesus"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556215/F0324-ORGANILLEROS_qjrx4h.jpg"
+name = "Organilleros"
 speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554954/F0567-PEPE_CON_CABALLO_BLANCO_bzjifc.jpg"
-name = "Pepe con caballo blanco"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556241/F0459-SEN%CC%83ORA_ESTACIO%CC%81N_ja3ida.jpg"
+name = "Señora Estación"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
