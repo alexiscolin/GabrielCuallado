@@ -36,18 +36,26 @@ top = 20
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "-10"
-subtitle = ""
+subtitle = "1950s ⎮ Afal Group, first exhibition, first award"
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius ero."
-title = ""
+text = "In 1951, his first son was born and he bought a 90-peseta Capta camera to capture his first steps. After integrating Madrid’s Real Photographic Society (RSF) in 1956, Cuallado joined the renowned Afal Group of photographers. Together, they started the Movement of the Renovation of Spanish Photography. In 1957 they set up the movement’s first official exhibition in one of the city’s art galleries and a couple of years later, one of Cuallado’s pictures (“Ramon Masat’s Wedding”) was awarded by the American magazine Popular Photography. "
+title = "The Birth of a Movement"
 top = "23"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Afal_Grupo_oh3ndf.jpg"
+left = "0"
+template = "about-image"
+top = "0"
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = ""
-subtitle = ""
+subtitle = "1960s ⎮ From Madrid to Paris, Venice, Amsterdam and Moscow "
 template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit."
-title = ""
+text = "In 1961 Cuallado was awarded with the Luis Navarro Avant-Garde Photography trophy. This period marked the start of dissemination of both the group’s and his individual work outside of their natal Spain. Throughout the decade, the Afal Group’s work was exhibited from the Pescara Bienal in Italy, to the library of Paris’ Spanish embassy, the Fodor Museum in Amsterdam and up to Moscow’s “Interpress-Photo” exhibition. Cuallado’s picture “Girl with a rose” together with some others entered the French National Library’s collection and his pictures started to be annually published in the British “Photography Year Book”."
+title = "The Global Dissemination"
 top = ""
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
