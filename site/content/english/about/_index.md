@@ -102,6 +102,6 @@ left = "0"
 link_description = "Discover artworks"
 template = "about-link"
 top = "10"
-url = "https://www.artsy.net/artist/gabriel-cuallado/works-for-sale"
+url = "http://bit.ly/gabriel-cuallado"
 
 +++
