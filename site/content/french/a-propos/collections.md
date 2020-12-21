@@ -12,7 +12,7 @@ collectorname = "Bibliothèque Nationale de France (BnF)"
 country = "Paris, France"
 link = "https://data.bnf.fr/fr/12517276/gabriel_cuallado/"
 [[collector]]
-collectorname = "Maison européenne de la photographie"
+collectorname = "Maison Européenne de la Photographie"
 country = "Paris, France"
 link = "https://www.mep-fr.org/"
 [[collector]]
