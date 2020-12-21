@@ -21,8 +21,8 @@ name = "Bodega en Asturias"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555790/F0465-LA_GITANILLA_e8swfr.jpg"
-name = "La gitana"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608496903/F0572-NINA_BRAZO_ESTIRADO_jit0ma.jpg"
+name = "Niña brazo estirado"
 speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
