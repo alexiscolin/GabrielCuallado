@@ -58,20 +58,36 @@ text = "In 1961 Cuallado was awarded with the Luis Navarro Avant-Garde Photograp
 title = "The Global Dissemination"
 top = ""
 [[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_exposicion_i21vwr.jpg"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
+left = "-10"
+subtitle = "1970s and 90s ⎮ Spain's First National Photography Award and Gold Medal  "
+template = "about-text"
+text = "In 1978 Cuallado’s pictures were presented in Arles’ annual Photography Festival, amongst others. A couple of years later his pictures were published in \"The Complete Book of Photographers\" (Mac Millan, Los Angeles), as well as in \"Contemporary Photographers\" (St. James Press, London). In 1985 the Bilbao Museum of Fine Arts, The Spanish Museum of Contemporary Art and  the IVAM organized a major solo exhibitions which marked his consecration as a major Spanish photographer of the mid Century. In 1994, he was attributed Spain’s first National Photography award, as well as Madrid’s first Circle of Fine Arts first gold medal, thus officially consolidating his consecration."
+title = "The Acknowledgment"
+top = "20"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Bellas_Artes_cjxdug.jpg"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Voir un lien ici"
 template = "about-link"
 top = "10"
 url = "https://www.google.fr"
-[[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
-left = "-10"
-subtitle = ""
-template = "about-text"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius eros maximus at. Nunc porta, est sit amet viverra auctor, ex lorem accumsan eros, sit amet placerat lectus magna id velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum leo scelerisque metus tristique consectetur. In tincidunt dui et felis ullamcorper mattis. Donec ornare ornare ipsum, vel varius ero."
-title = ""
-top = "20"
 [[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085251/CATALOGO-CUALLADO-EXPO-CANAL-115_cgof8a.jpg"
 left = "-10"
