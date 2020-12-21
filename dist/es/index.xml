@@ -10,15 +10,6 @@
     
     
     <item>
-      <title>El rastro</title>
-      <link>http://localhost:1313/es/galeria/el-rastro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/es/galeria/el-rastro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Individual</title>
       <link>http://localhost:1313/es/exposiciones/individual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -51,6 +42,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/es/galeria/familia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>El rastro</title>
+      <link>http://localhost:1313/es/galeria/el-rastro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/galeria/el-rastro/</guid>
       <description></description>
     </item>
     

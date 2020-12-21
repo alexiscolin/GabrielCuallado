@@ -361,7 +361,7 @@ a {
     padding-left: 10vw;
   }
   .o-section:last-child {
-    padding-right: 7vw;
+    padding-right: 20vw;
   }
 }
 .o-section_content {
@@ -1187,9 +1187,9 @@ a {
   opacity: 1;
   mix-blend-mode: unset;
 }
-@supports (-webkit-text-stroke: 0.5px #FFFFFF) {
+@supports (-webkit-text-stroke: 1px #FFFFFF) {
   .c-main_cuallado--outlined {
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFFFFF;
   }
 }
@@ -2129,7 +2129,7 @@ a:hover.u-link::before {
   margin: auto;
   left: 5%;
   transform: rotate(11.83deg);
-  opacity: 0.5;
+  opacity: 0.1;
   transition: 1s ease opacity;
 }
 @media (min-width: 641px) {

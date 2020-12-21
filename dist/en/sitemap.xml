@@ -6,8 +6,8 @@
     <loc>http://localhost:1313/gallery/el-rastro/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/galeria/el-rastro/"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/cotid/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -60,6 +60,11 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/galeria/paris/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/madrid/"
                 />
     <xhtml:link
                 rel="alternate"

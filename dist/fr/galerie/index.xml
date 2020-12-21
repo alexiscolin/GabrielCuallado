@@ -10,6 +10,24 @@
     
     
     <item>
+      <title>cotid</title>
+      <link>http://localhost:1313/fr/galerie/cotid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/galerie/cotid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Madrid</title>
+      <link>http://localhost:1313/fr/galerie/madrid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/galerie/madrid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>El Rastro</title>
       <link>http://localhost:1313/fr/galerie/el-rastro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -33,6 +51,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/fr/galerie/paris/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asturies</title>
+      <link>http://localhost:1313/fr/galerie/astruria/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/galerie/astruria/</guid>
       <description></description>
     </item>
     

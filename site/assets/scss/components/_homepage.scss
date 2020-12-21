@@ -53,8 +53,8 @@
         opacity: 0;
 
         &--outlined {
-            @supports (-webkit-text-stroke: .5px color(typography, 2)) {
-                -webkit-text-stroke-width: .5px;
+            @supports (-webkit-text-stroke: 1px color(typography, 2)) {
+                -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: color(typography, 2);
             }
             color: transparent;

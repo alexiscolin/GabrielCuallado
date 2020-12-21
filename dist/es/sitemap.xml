@@ -3,20 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/es/galeria/el-rastro/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/gallery/el-rastro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/galeria/el-rastro/"
-                />
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/es/exposiciones/individual/</loc>
     <xhtml:link
                 rel="alternate"
@@ -63,6 +49,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/madrid/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/galeria/paris/"
                 />
@@ -84,6 +75,20 @@
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/galeria/familia/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/es/galeria/el-rastro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/familia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/galeria/el-rastro/"
                 />
   </url>
   
