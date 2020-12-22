@@ -1,8 +1,8 @@
 +++
-Title = "Asturias"
-menu = []
+Title = "Madrid"
+menu = ["serie"]
 meta_description = ""
-meta_title = "Asturias"
+meta_title = "Madrid"
 namespace = "serie"
 section = "galeria"
 title = "madrid.md"
