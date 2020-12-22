@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Cotid</title>
+      <link>http://localhost:1313/es/galeria/cotid.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/galeria/cotid.md/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Individual</title>
       <link>http://localhost:1313/es/exposiciones/individual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,11 +37,20 @@
     </item>
     
     <item>
-      <title>Paris</title>
-      <link>http://localhost:1313/es/galeria/paris/</link>
+      <title>Madrid</title>
+      <link>http://localhost:1313/es/galeria/madrid.md/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/galeria/paris/</guid>
+      <guid>http://localhost:1313/es/galeria/madrid.md/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>El rastro</title>
+      <link>http://localhost:1313/es/galeria/el-rastro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/galeria/el-rastro/</guid>
       <description></description>
     </item>
     
@@ -46,11 +64,20 @@
     </item>
     
     <item>
-      <title>El rastro</title>
-      <link>http://localhost:1313/es/galeria/el-rastro/</link>
+      <title>Paris</title>
+      <link>http://localhost:1313/es/galeria/paris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/galeria/el-rastro/</guid>
+      <guid>http://localhost:1313/es/galeria/paris/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asturias</title>
+      <link>http://localhost:1313/es/galeria/asturias.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/galeria/asturias.md/</guid>
       <description></description>
     </item>
     

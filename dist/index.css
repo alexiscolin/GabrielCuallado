@@ -1551,7 +1551,7 @@ a {
   .c-about_link--alone,
 .c-about_img--alone {
     height: auto;
-    max-width: 50%;
+    max-width: 68%;
   }
   .c-about_link--intro,
 .c-about_img--intro {
@@ -1643,7 +1643,8 @@ a {
   }
 }
 .c-list--centered {
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 20vh;
 }
 @media (min-width: 641px) {
   .c-list--horizontal {

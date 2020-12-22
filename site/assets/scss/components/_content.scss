@@ -224,7 +224,7 @@
 
         &--alone {
             height: auto;
-            max-width: 50%;
+            max-width: 68%;
         }
 
         &--intro {
@@ -354,7 +354,8 @@
     }
 
     &--centered {
-        justify-content: center;
+        justify-content: flex-start;
+        margin-top: 20vh;
     }
 
     &--horizontal {
