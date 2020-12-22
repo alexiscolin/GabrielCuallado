@@ -59,7 +59,7 @@ from = "Salon Internacional de la Fotografia de Sandness"
 name = "Medalla de Oro "
 [[award]]
 country = "Paris, Francia"
-date = "2002-01-31T23:00:00+00:00"
+date = "1962-01-31T23:00:00+00:00"
 from = "Comisariado de Turismo de Francia"
 name = "Seleccionado para el trabajo \"10 fotografos españoles en Paris\""
 [[award]]
