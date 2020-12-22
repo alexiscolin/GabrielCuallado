@@ -67,10 +67,5 @@ country = "Barcelona, España"
 date = "1961-01-31T23:00:00+00:00"
 from = "Agrupación Fotografica Cataluña"
 name = "Trofeo Luis Navarro Fotografia de Vanguardia"
-[[award]]
-country = "Madrid, Espagne"
-date = "2002-01-31T23:00:00+00:00"
-from = "Ministère de la culture"
-name = "Nartional Photography Award"
 
 +++
