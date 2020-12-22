@@ -28,5 +28,15 @@ date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595113/F0167-NIN%CC%83OS_EN_EL_CAMINO_rqrzk3.jpg"
 name = "Niños en el camino"
 speed = ".4"
+[[photos]]
+date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595212/F0135-GABRIEL_CON_POTRANCO_sdmvhn.jpg"
+name = "Gabriel con Potranco"
+speed = ".26"
+[[photos]]
+date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608596818/F0122-MARINA_DE_PERFIL_w6bbwj.jpg"
+name = "Marina de perfil"
+speed = ".26"
 
 +++
