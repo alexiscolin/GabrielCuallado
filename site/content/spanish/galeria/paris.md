@@ -2,47 +2,47 @@
 Title = "Paris"
 menu = ["serie"]
 meta_description = ""
-meta_title = ""
+meta_title = "Paris"
 namespace = "serie"
 section = "galeria"
-translationkey = "serie2"
+translationkey = "serie5"
 type = "gallery"
-weight = 2
+weight = 5
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/6.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595405/F0007-MUJER_DE_ESPALDAS_Y_NIN%CC%83A_zcgwht.jpg"
 link = "#"
-name = "El Rastro"
+name = "Mujer de espaldas y niña"
 speed = "-.1"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/7.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595440/F0009-RUE_DE_LA_PAIX-PALOMA_n1k6rn.jpg"
 link = "#"
-name = "El Rastro"
+name = "Rue de la Paix Paloma"
 speed = ".2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/8.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-98_ptv504.jpg"
 link = "#"
-name = "El Rastro"
+name = "Al Este del Eden"
 speed = ".4"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/9.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg"
 link = "#"
-name = "El Rastro"
+name = "Pareja de la mano"
 speed = ".2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/10.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085601/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-81_aprgvi.jpg"
 link = "#"
-name = "El Rastro"
+name = "Cabeza de ombre con margarita"
 speed = ".26"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/11.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595676/F0038-RUE_DE_LA_PAIX_MUJER_CON_SOMBRERO_liisjx.jpg"
 link = "#"
-name = "El Rastro"
+name = "Rue de la Paix Mujer con Sombrero"
 speed = ".26"
 
 +++
