@@ -1,48 +1,35 @@
 +++
 Title = "Paris"
-menu = []
+menu = ["serie"]
 meta_description = ""
-meta_title = ""
+meta_title = "Paris"
 namespace = "serie"
 section = "gallery"
-translationkey = "serie2"
-type = ""
-weight = 2
+translationkey = "serie5"
+weight = 5
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/6.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595405/F0007-MUJER_DE_ESPALDAS_Y_NIN%CC%83A_zcgwht.jpg"
 link = "#"
-name = "El Rastro"
-speed = ".4"
+name = "Mujer de espaldas y niña"
+speed = "-.1"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/7.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg"
 link = "#"
-name = "El Rastro"
-speed = "-.2"
+name = "Pareja de la mano"
+speed = ".2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/8.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1607597606/F0017-AL_ESTE_DEL_EDEN_bdacqi.jpg"
 link = "#"
-name = "El Rastro"
+name = "Al Este del Eden"
 speed = "-.4"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/9.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085601/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-81_aprgvi.jpg"
 link = "#"
-name = "El Rastro"
+name = "Cabeza del ombre con margarita"
 speed = ".5"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/10.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".3"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "/img/sofia/11.jpg"
-link = "#"
-name = "El Rastro"
-speed = ".2"
 
 +++
