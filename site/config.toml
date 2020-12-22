@@ -48,7 +48,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.main]]
                 identifier = "Gallery"
                 name = "Gallery"
-                url = "/gallery/el-rastro/"
+                url = "/gallery/cotid/"
                 weight = 2
             [[languages.en.menu.main]]
                 identifier = "Expositions"
@@ -86,7 +86,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.en.menu.header]]
                 identifier = "Gallery"
                 name = "Gallery"
-                url = "/gallery/el-rastro/"
+                url = "/gallery/cotid/"
                 weight = 3
             [[languages.en.menu.header]]
                 identifier = "Contact"
@@ -164,7 +164,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.es.menu.main]]
                 identifier = "Gallery"
                 name = "Galeria"
-                url = "/es/galeria/el-rastro/"
+                url = "/es/galeria/cotid/"
                 weight = 2
             [[languages.es.menu.main]]
                 identifier = "Expositions"
@@ -203,7 +203,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
              [[languages.es.menu.header]]
                 identifier = "Galeria"
                 name = "Galeria"
-                url = "/es/galeria/el-rastro/"
+                url = "/es/galeria/cotid/"
                 weight = 3
             [[languages.es.menu.header]]
                 identifier = "Contact"
@@ -283,7 +283,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.main]]
                 identifier = "Gallery"
                 name = "Galerie"
-                url = "/fr/galerie/el-rastro/"
+                url = "/fr/galerie/cotid/"
                 weight = 2
             [[languages.fr.menu.main]]
                 identifier = "Expositions"
@@ -322,7 +322,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
             [[languages.fr.menu.header]]
                 identifier = "Galerie"
                 name = "Galerie"
-                url = "/fr/galerie/el-rastro/"
+                url = "/fr/galerie/cotid/"
                 weight = 3
             [[languages.fr.menu.header]]
                 identifier = "Contact"

@@ -5,9 +5,9 @@ meta_description = ""
 meta_title = "El Rastro"
 namespace = "serie"
 section = "galeria"
-translationkey = "serie4"
+translationkey = "serie3"
 type = "gallery"
-weight = 4
+weight = 3
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554230/F0365-VENDEDOR_DE_CUADROS_yeq1xb.jpg"
@@ -43,11 +43,5 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 link = "#"
 name = "La Moto"
 speed = "-.2"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608487541/-_xh7tyv.png"
-link = "#"
-name = "."
-speed = ".26"
 
 +++

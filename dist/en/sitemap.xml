@@ -3,16 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/gallery/cotid.md/</loc>
+    <loc>http://localhost:1313/gallery/cotid/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/galeria/cotid.md/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/galerie/asturias.md/"
+                href="http://localhost:1313/es/galeria/cotid/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -22,7 +17,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/gallery/cotid.md/"
+                href="http://localhost:1313/gallery/cotid/"
                 />
   </url>
   
@@ -65,26 +60,31 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/gallery/madrid.md/</loc>
+    <loc>http://localhost:1313/gallery/madrid/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/galeria/madrid.md/"
+                href="http://localhost:1313/es/galeria/madrid/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/galerie/madrid.md/"
+                href="http://localhost:1313/fr/galerie/madrid/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/gallery/madrid.md/"
+                href="http://localhost:1313/gallery/madrid/"
                 />
   </url>
   
   <url>
     <loc>http://localhost:1313/gallery/el-rastro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/galeria/el-rastro/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -99,11 +99,6 @@
   
   <url>
     <loc>http://localhost:1313/gallery/familia/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/galeria/el-rastro/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -141,16 +136,21 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/gallery/asturias.md/</loc>
+    <loc>http://localhost:1313/gallery/asturias/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/galeria/asturias.md/"
+                href="http://localhost:1313/es/galeria/asturias/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/galerie/asturias/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/gallery/asturias.md/"
+                href="http://localhost:1313/gallery/asturias/"
                 />
   </url>
   

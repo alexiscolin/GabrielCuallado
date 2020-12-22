@@ -10,15 +10,6 @@
     
     
     <item>
-      <title>Asturies</title>
-      <link>http://localhost:1313/fr/galerie/asturias.md/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/fr/galerie/asturias.md/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cotid</title>
       <link>http://localhost:1313/fr/galerie/cotid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,10 +20,10 @@
     
     <item>
       <title>Madrid</title>
-      <link>http://localhost:1313/fr/galerie/madrid.md/</link>
+      <link>http://localhost:1313/fr/galerie/madrid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/fr/galerie/madrid.md/</guid>
+      <guid>http://localhost:1313/fr/galerie/madrid/</guid>
       <description></description>
     </item>
     
@@ -60,6 +51,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/fr/galerie/paris/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asturies</title>
+      <link>http://localhost:1313/fr/galerie/asturias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fr/galerie/asturias/</guid>
       <description></description>
     </item>
     
