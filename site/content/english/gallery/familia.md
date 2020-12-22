@@ -6,7 +6,6 @@ meta_title = "Family"
 namespace = "serie"
 section = "gallery"
 translationkey = "serie4"
-type = "gallry"
 weight = 4
 [[photos]]
 date = "2020-06-01T22:00:00+00:00"
