@@ -1,36 +1,46 @@
 +++
-Title = "Paris"
-draft = true
+Title = "Madrid"
+menu = ["serie"]
 meta_description = ""
-meta_title = "Paris"
+meta_title = "Madrid"
 namespace = "serie"
 section = "gallery"
 title = "madrid.md"
-translationkey = "serie5"
-weight = 5
+translationkey = "serie2"
+weight = 2
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608595405/F0007-MUJER_DE_ESPALDAS_Y_NIN%CC%83A_zcgwht.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556157/F023-FELIZ_1959_de8kfa.jpg"
 link = "#"
-name = "Mujer de espaldas y niña"
+name = "Feliz 1959"
 speed = "-.1"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556172/F0235-NIN%CC%83O_CON_FLORES_PLAZA_MAYOR_cmazeg.jpg"
 link = "#"
-name = "Pareja de la mano"
+name = "Niño con flores Plaza Mayor"
 speed = ".2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1607597606/F0017-AL_ESTE_DEL_EDEN_bdacqi.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556215/F0324-ORGANILLEROS_qjrx4h.jpg"
 link = "#"
-name = "Al Este del Eden"
-speed = "-.4"
+name = "Organilleros"
+speed = ".4"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085601/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-81_aprgvi.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556241/F0459-SEN%CC%83ORA_ESTACIO%CC%81N_ja3ida.jpg"
 link = "#"
-name = "Cabeza del ombre con margarita"
-speed = ".5"
+name = "Señora Estacion"
+speed = ".26"
+[[photos]]
+date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556305/F0462-MANO_EN_VENTANA_dnkjaz.jpg"
+name = "Mano en ventana"
+speed = ".26"
+[[photos]]
+date = "2020-11-30T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556330/F0805-GUARDIA_URBANO_Y_MUROS_hefa8x.jpg"
+name = "Guardia urbano y muros"
+speed = ".26"
 
 +++
