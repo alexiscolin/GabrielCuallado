@@ -1,14 +1,14 @@
 +++
 Title = "Asturias"
-draft = true
+menu = []
 meta_description = ""
 meta_title = "Asturias"
 namespace = "serie"
 section = "galeria"
 title = "madrid.md"
-translationkey = "serie6"
+translationkey = "serie2"
 type = "gallery"
-weight = 6
+weight = 2
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554686/F0467-PEPE_LUIS_cvglrf.jpg"
