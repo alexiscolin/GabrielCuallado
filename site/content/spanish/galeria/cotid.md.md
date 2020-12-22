@@ -1,48 +1,48 @@
 +++
-Title = "Asturias"
-draft = true
+Title = "Cotid"
+menu = ["serie"]
 meta_description = ""
-meta_title = "Asturias"
+meta_title = "Cotid"
 namespace = "serie"
 section = "galeria"
 title = "cotid.md"
-translationkey = "serie6"
+translationkey = "serie1"
 type = "gallery"
-weight = 6
+weight = 1
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554686/F0467-PEPE_LUIS_cvglrf.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555643/F0460-NIN%CC%83O_CON_PAN_j5wbsd.jpg"
 link = "#"
-name = "Pepe Luis"
+name = "Niño con pan"
 speed = "-.1"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554728/F0560-BODEGA_EN_ASTURIAS_jpfjbi.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555719/F0461-FIFI_bluerc.jpg"
 link = "#"
-name = "Bodega en Asturias"
+name = "Fifi"
 speed = ".2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608496903/F0572-NINA_BRAZO_ESTIRADO_jit0ma.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555790/F0465-LA_GITANILLA_e8swfr.jpg"
 link = "#"
-name = "Niña brazo estirado"
+name = "La gitana"
 speed = ".4"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554799/F0562-HIJA_DE_JESUS_l10mmi.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555835/F0466-LA_MUJER_DE_PENELLA_zqdpjt.jpg"
 link = "#"
-name = "Hija de Jesus"
+name = "Mujer de Penella"
 speed = "-.2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554954/F0567-PEPE_CON_CABALLO_BLANCO_bzjifc.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555888/F0488-HOMBRE_EN_PASILLO_CON_RAMO_DE_FLORES_jfbps2.jpg"
 link = "#"
-name = "Pepe con caballo blanco"
+name = "Ombre con flores"
 speed = ".26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-50_uv2eog.jpg"
-name = "Niño"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555951/F0598-NIN%CC%83A_EN_PORTAL_MASANASA_c7x7gh.jpg"
+name = "Niña en el portal (Masanasa)"
 speed = ".26"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
