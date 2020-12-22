@@ -17,10 +17,10 @@ logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q
 title = "\"La exposicion Cualladó Esencial\""
 type = "video"
 [[publication]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085604/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-117_gj29pb.jpg"
-link = "#"
-logo = ""
-title = "Center for creative photography of the university of Tuscon Arizona"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608506659/Documentaire_Le_Chemin_Gabriel_Cuallado_nsvhq5.jpg"
+link = "https://youtu.be/nmRFzz3qQEE"
+logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
+title = "\"El camino\" ⎮ Documentario sobre el fotografo Gabriel Cualladó"
 type = "video"
 
 +++
