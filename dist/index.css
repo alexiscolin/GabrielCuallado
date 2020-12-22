@@ -368,6 +368,10 @@ a {
   align-items: center;
 }
 
+[data-module-serie=main] .o-section:last-child {
+  padding-right: 35vw;
+}
+
 #app,
 .dom-gl {
   position: fixed;
