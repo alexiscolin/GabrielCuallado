@@ -27,6 +27,6 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 link = "https://youtu.be/Eft9oUXlGHg"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593113662/logo-communidad_sqhg5l.png"
 title = "Guided visit of the Cuallado Esencial exhibition"
-type = "article"
+type = "video"
 
 +++
