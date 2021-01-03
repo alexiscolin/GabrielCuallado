@@ -91,21 +91,13 @@ fields:
   config:
     required: true
 pages:
-- site/content/english/gallery/asturias.md.md
-- site/content/english/gallery/cotid.md.md
 - site/content/english/gallery/el-rastro.md
 - site/content/english/gallery/familia.md
-- site/content/english/gallery/madrid.md.md
 - site/content/english/gallery/paris.md
-- site/content/french/galerie/asturias.md.md
 - site/content/french/galerie/cotid.md
 - site/content/french/galerie/el-rastro.md
 - site/content/french/galerie/familia.md
-- site/content/french/galerie/madrid.md.md
 - site/content/french/galerie/paris.md
-- site/content/spanish/galeria/asturias.md.md
-- site/content/spanish/galeria/cotid.md.md
 - site/content/spanish/galeria/el-rastro.md
 - site/content/spanish/galeria/familia.md
-- site/content/spanish/galeria/madrid.md.md
 - site/content/spanish/galeria/paris.md
