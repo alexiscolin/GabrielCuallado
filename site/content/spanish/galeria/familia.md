@@ -38,5 +38,10 @@ date = "2020-12-15T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554799/F0562-HIJA_DE_JESUS_l10mmi.jpg"
 name = "Marina de perfil"
 speed = "-.1"
+[[photos]]
+date = "2020-12-31T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608496903/F0572-NINA_BRAZO_ESTIRADO_jit0ma.jpg"
+name = "Niña con brazo estirado"
+speed = ".4"
 
 +++
