@@ -19,6 +19,13 @@ left = ""
 template = "about-image"
 top = 20
 [[content]]
+left = ""
+subtitle = ""
+template = "about-text"
+text = "Photography has always been surrounded by the mystery of simplicity. The grasping simplicity of Walker Evans of André Kertesz of Manuel Álvarez of Gabriel Cualladó. Not the transfiguration itself but the photographic humility. Today, we have enough historical perspective to acknowledge that it is precisely between these things that lies the greatest. Those who have looked directly in the eyes of photography, to what photography really pretends to be. \nIn Cualladó, beauty lies within the fact of being there, simply there, whether it is standing up or sitting down.\nIn Cualladó, just like in Paul Strand, all of the people and things are in the highest moment of calm, severity’s simplicity of humble solemnity."
+title = ""
+top = "50"
+[[content]]
 left = "0"
 subtitle = "From Massanassa to Madrid, 1920s and 40s"
 template = "about-text"
