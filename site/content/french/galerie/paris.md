@@ -11,12 +11,12 @@ weight = 5
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484442/PARIS/F0007-MUJER_DE_ESPALDAS_Y_NIN%CC%83A_yo9q23.jpg"
-name = "Mujer de espaldas y nina"
+name = "Femme de dos avec fille"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484442/PARIS/F0028-PAREJA_DE_LA_MANO_vd0b7v.jpg"
-name = "Pareja de la mano"
+name = "Couple se tenant par la main"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
@@ -26,7 +26,7 @@ speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484443/PARIS/F0035-CABEZA_DE_HOMBRE_CON_MARGARITA_mihmek.jpg"
-name = "Cabeza del ombre con Margarita"
+name = "Cabeza de ombre con Margarita"
 speed = ".2"
 
 +++
