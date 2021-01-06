@@ -1,6 +1,5 @@
 +++
 Title = "Asturias"
-menu = ["serie"]
 meta_description = ""
 meta_title = "Asturias"
 namespace = "serie"
@@ -21,12 +20,6 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 link = "#"
 name = "Bodega en Asturias"
 speed = ".2"
-[[photos]]
-date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608496903/F0572-NINA_BRAZO_ESTIRADO_jit0ma.jpg"
-link = "#"
-name = "Niña brazo estirado"
-speed = ".4"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608554799/F0562-HIJA_DE_JESUS_l10mmi.jpg"
