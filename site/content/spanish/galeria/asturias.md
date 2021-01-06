@@ -32,10 +32,5 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 link = "#"
 name = "Pepe con caballo blanco"
 speed = ".26"
-[[photos]]
-date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-50_uv2eog.jpg"
-name = "Niño"
-speed = ".26"
 
 +++
