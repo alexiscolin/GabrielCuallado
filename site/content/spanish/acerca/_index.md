@@ -19,6 +19,13 @@ left = ""
 template = "about-image"
 top = "40"
 [[content]]
+left = "50"
+subtitle = ""
+template = "about-text"
+text = "Existe en fotografía un misterio de la simplicidad. La simplicidad de enfoque de un Walker  Evans de un André Kertesz de un Manuel Álvarez Bravo de un Gabriel Cualladó. No la transfiguración, sino la profundización de la humildad fotográfica. Y tenemos ahora la suficiente perspectiva histórica para saber que es entre estos donde se encuentran los más grandes. Los que han mirado la fotografía bien de frente, en lo que ella pretende en principio ser....\nEn Cualladó la belleza se confunde con el hecho de estar ahí, simplemente ahí, de pie o sentado.\nEn Cualladó las cosas y las gentes como en Paul Strand están en su más elevado momento de calma y de sencillez de gravedad y de solemnidad humilde."
+title = ""
+top = "0"
+[[content]]
 left = "0"
 subtitle = "Años 1920 - 40"
 template = "about-text"
@@ -30,6 +37,14 @@ citation = false
 citation_author = ""
 citation_text = ""
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Naranjas_l7mgu8.jpg"
+left = "0"
+template = "about-image"
+top = "0"
+[[content]]
+citation = false
+citation_author = ""
+citation_text = ""
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Bellas_Artes_cjxdug.jpg"
 left = "0"
 template = "about-image"
 top = "0"
@@ -69,14 +84,6 @@ subtitle = "Años 1970-1990"
 template = "about-text"
 text = "En 1978, las fotografías de Cuallado se exponen en el Festival de Fotografía de Arles, En 1985 las primeras grandes exposiciones individuales  en el Museo de Bellas Artes de Blibao así como en el Museo Nacional de Arte Contemporáneo de Madrid y el Instituto Valenciano de Arte Moderno (IVAM). Unos años más tarde, sus fotos se publican en los libros de arte \"The Complete Book of Photographers\" (Mac Millan, Los Ángeles), así como en \"Contemporary Photographers\" (St. James Press, Londres). En 1992, el IVAM organiza una gran exposición individual que marca su consagración como gran fotógrafo español de la mitad del siglo. En 1994 recibe el primer Premio Nacional de Fotografía de España, así como la primera medalla de oro del Círculo de Bellas Artes de Madrid, consolidando así oficialmente su consagración."
 title = "El reconocimiento"
-top = "0"
-[[content]]
-citation = false
-citation_author = ""
-citation_text = ""
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608505931/Cuallado_Bellas_Artes_cjxdug.jpg"
-left = "0"
-template = "about-image"
 top = "0"
 [[content]]
 left = "0"
