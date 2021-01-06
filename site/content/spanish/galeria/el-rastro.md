@@ -18,7 +18,7 @@ speed = "-.2"
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-108_gcq7qz.jpg"
 link = "#"
-name = "Ombre con cara en la sombra"
+name = "Hombre con cara en la sombra"
 speed = "-.1"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
