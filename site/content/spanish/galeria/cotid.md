@@ -1,6 +1,5 @@
 +++
 Title = "Cotid"
-menu = ["serie"]
 meta_description = ""
 meta_title = "Cotid"
 namespace = "serie"
@@ -9,6 +8,12 @@ title = "cotid.md"
 translationkey = "serie1"
 type = "gallery"
 weight = 1
+[[photos]]
+date = "2020-12-31T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-50_uv2eog.jpg"
+link = ""
+name = "Niño con señora de espaldas"
+speed = "-.26"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555643/F0460-NIN%CC%83O_CON_PAN_j5wbsd.jpg"
