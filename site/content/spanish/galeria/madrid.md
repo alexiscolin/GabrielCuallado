@@ -1,5 +1,6 @@
 +++
 Title = "Madrid"
+menu = ["serie"]
 meta_description = ""
 meta_title = "Madrid"
 namespace = "serie"
