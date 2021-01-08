@@ -1,5 +1,6 @@
 +++
 Title = "Cotid"
+menu = ["serie"]
 meta_description = ""
 meta_title = "Cotid"
 namespace = "serie"
