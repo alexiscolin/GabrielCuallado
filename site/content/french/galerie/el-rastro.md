@@ -1,6 +1,6 @@
 +++
 Title = "El Rastro"
-menu = []
+menu = ["serie"]
 meta_description = "Rastros."
 meta_title = "El Rastro"
 namespace = "serie"
