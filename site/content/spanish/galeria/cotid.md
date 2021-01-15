@@ -11,44 +11,44 @@ type = "gallery"
 weight = 1
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-50_uv2eog.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610649880/GALLERY/COTID/F0460_NINO_CON_SENORA_DE_ESPALDAS_iqhtlg.jpg"
 link = ""
 name = "Niño con señora de espaldas"
 speed = "-.26"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555643/F0460-NIN%CC%83O_CON_PAN_j5wbsd.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0460_NINO_CON_PAN_kykebd.jpg"
 link = "#"
 name = "Niño con pan"
 speed = "-.1"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555719/F0461-FIFI_bluerc.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0461_FIFI_oxboor.jpg"
 link = "#"
 name = "Fifi"
 speed = ".2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555790/F0465-LA_GITANILLA_e8swfr.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0465_LA_GITANILLA_yjdgwu.jpg"
 link = "#"
-name = "La gitana"
+name = "La gitanilla"
 speed = ".4"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555835/F0466-LA_MUJER_DE_PENELLA_zqdpjt.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0466_LA_MUJER_DE_PENELLA_a1jul8.jpg"
 link = "#"
 name = "Mujer de Penella"
 speed = "-.2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555888/F0488-HOMBRE_EN_PASILLO_CON_RAMO_DE_FLORES_jfbps2.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F0235_NINO_CON_FLORES_PLAZA_MAYOR_q6mjou.jpg"
 link = "#"
 name = "Ombre con flores"
 speed = ".26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555951/F0598-NIN%CC%83A_EN_PORTAL_MASANASA_c7x7gh.jpg"
-name = "Niña en el portal (Masanasa)"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0598_NINA_AFAL_ewbdtg.jpg"
+name = "Niña Afal"
 speed = ".26"
 
 +++
