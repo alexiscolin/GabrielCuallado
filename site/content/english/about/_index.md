@@ -109,6 +109,6 @@ left = "0"
 link_description = "Discover artworks"
 template = "about-link"
 top = "10"
-url = "http://bit.ly/gabriel-cuallado"
+url = "https://blancaberlingaleria.com/portfolios/seleccion-2/"
 
 +++

@@ -106,6 +106,6 @@ left = "0"
 link_description = "Descubrir sus obras"
 template = "about-link"
 top = "15"
-url = "http://bit.ly/gabriel-cuallado"
+url = "https://blancaberlingaleria.com/portfolios/seleccion-2/"
 
 +++
