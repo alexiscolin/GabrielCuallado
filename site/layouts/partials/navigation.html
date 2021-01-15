@@ -4,7 +4,7 @@
     <!-- <div class="c-nav_close">close</div> -->
     <div class="c-nav_wrapper">
     <ul class="c-nav_mainlist c-nav_list">
-        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}"><span><span>Homepage</span></span></a></li>
+        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}"><span><span>{{ i18n "Homepage" }}</span></span></a></li>
 
     {{ range .Site.Menus.main }}
         {{ if .HasChildren }} 
@@ -34,7 +34,7 @@
 
     <!-- langues disponibles -->
     <div class="c-nav_openlist c-nav_list">
-        <span class="c-nav_openlist_title c-nav_link"><span><span>LANGUAGE</span></span></span>
+        <span class="c-nav_openlist_title c-nav_link">{{ i18n "Language" }}</span>
         <ul class="c-nav_openlist_items">
             {{ if eq .Lang "en"}}
                 <!-- liste des langue en ordre => toujours anglais devant d'ou le if -->

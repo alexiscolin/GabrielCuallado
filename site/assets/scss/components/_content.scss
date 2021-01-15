@@ -149,6 +149,10 @@
     .c-about_link {
         margin-top: 0 !important;
         margin-left: 0 !important;
+
+        &_titles {
+            width: 100%;
+        }
     }
 
     .c-about_img,
@@ -200,7 +204,7 @@
             position: absolute;
             bottom: 50vh;
             left: 0;
-            padding: 0 15%
+            padding: 0 15%;
         }
 
         &_content {

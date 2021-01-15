@@ -173,13 +173,13 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
                 weight = 3
                 [[languages.es.menu.main]]
                     identifier = "Individual"
-                    name = "Individual"
+                    name = "Individuales"
                     parent = "Expositions"
                     url = "/es/exposiciones/individual/"
                     weight = 1
                 [[languages.es.menu.main]]
                     identifier = "Colectivo"
-                    name = "Colectivo"
+                    name = "Colectivas"
                     parent = "Expositions"
                     url = "/es/exposiciones/colectivo/"
                     weight = 2
