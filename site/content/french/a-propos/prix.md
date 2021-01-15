@@ -1,6 +1,6 @@
 +++
 Title = "Prix"
-background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608504212/Cuallado_Esencial_La_Pedrera_3_Reina_Sofia_jqplze.jpg"
+background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/AWARDS/Cuallado_Esencial_La_Pedrera_cvruwu.jpg"
 meta_description = "Prix et distinctions de Gabriel Cuallado."
 meta_title = "Prix"
 namespace = "awards"
