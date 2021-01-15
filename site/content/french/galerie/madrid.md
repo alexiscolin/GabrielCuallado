@@ -11,32 +11,32 @@ type = "gallery"
 weight = 2
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556157/F023-FELIZ_1959_de8kfa.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F023_FELIZ_1959_tcnh58.jpg"
 name = "Joyeux 1959"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556172/F0235-NIN%CC%83O_CON_FLORES_PLAZA_MAYOR_cmazeg.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F0235_NINO_CON_FLORES_PLAZA_MAYOR_q6mjou.jpg"
 name = "Garçon avec fleurs de la Place Mayor"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556215/F0324-ORGANILLEROS_qjrx4h.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F0324_ORGANILLEROS_oga5lx.jpg"
 name = "Joueurs d'orgue"
 speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556241/F0459-SEN%CC%83ORA_ESTACIO%CC%81N_ja3ida.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0459_SENORA_ESTACION_kcuwiy.jpg"
 name = "Madame Station"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556305/F0462-MANO_EN_VENTANA_dnkjaz.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0462_MANO_EN_VENTANA_roehau.jpg"
 name = "Main à la fenêtre de la brasserie allemande"
 speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608556330/F0805-GUARDIA_URBANO_Y_MUROS_hefa8x.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0805_GUARDIA_URBANO_Y_MUROS_u5iebf.jpg"
 name = "Policier urbain et murs"
 speed = "-.26"
 
