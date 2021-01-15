@@ -38,6 +38,7 @@ export default class extends module {
     }
 
     appear() {
+        if(!this.glObject) return;
         this.glObject.isViewed();
     }
 

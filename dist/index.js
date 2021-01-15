@@ -7150,43 +7150,44 @@ var homepageTransition = function homepageTransition(imgFunc) {
       var current = _ref.current,
           next = _ref.next,
           trigger = _ref.trigger;
+      window.addEventListener('load', function () {
+        var loader = _gsap.gsap.timeline();
 
-      var loader = _gsap.gsap.timeline();
+        loader.set("#js-loader-title-out", {
+          opacity: 0
+        });
+        loader.to("#js-loader-title", {
+          opacity: .8,
+          duration: 1
+        });
+        loader.to("#js-loader-slider", {
+          scaleY: 0,
+          duration: 1,
+          ease: "Power2.easeInOut"
+        }, "-=.5");
+        loader.call(imgFunc, null, "-=.25"); // loader.from(".js-hp-img", {y: 10, autoAlpha: 0, duration: .8}, "-=.3"); // avant slider
 
-      loader.set("#js-loader-title-out", {
-        opacity: 0
-      });
-      loader.to("#js-loader-title", {
-        opacity: .8,
-        duration: 1
-      });
-      loader.to("#js-loader-slider", {
-        scaleY: 0,
-        duration: 1,
-        ease: "Power2.easeInOut"
-      }, "-=.5");
-      loader.call(imgFunc, null, "-=.25"); // loader.from(".js-hp-img", {y: 10, autoAlpha: 0, duration: .8}, "-=.3"); // avant slider
+        loader.set("#js-loader-title-out", {
+          opacity: 1
+        }, "-=.5");
+        loader.from(".js-loader-infos", {
+          opacity: 0,
+          duration: 1
+        }, "-=.2");
+        loader.to("#js-loader-title", {
+          opacity: 0,
+          duration: 1
+        }, "-=1");
+        loader.from(".js-header", {
+          opacity: 0,
+          duration: 1
+        }, "-=1");
+        var canvas = document.querySelector('.dom-gl');
 
-      loader.set("#js-loader-title-out", {
-        opacity: 1
-      }, "-=.5");
-      loader.from(".js-loader-infos", {
-        opacity: 0,
-        duration: 1
-      }, "-=.2");
-      loader.to("#js-loader-title", {
-        opacity: 0,
-        duration: 1
-      }, "-=1");
-      loader.from(".js-header", {
-        opacity: 0,
-        duration: 1
-      }, "-=1");
-      var canvas = document.querySelector('.dom-gl');
-
-      _gsap.gsap.to(canvas, {
-        autoAlpha: 1,
-        duration: .5
+        _gsap.gsap.to(canvas, {
+          autoAlpha: 1,
+          duration: .5
+        });
       });
     },
     leave: function leave(_ref2) {
@@ -46064,6 +46065,7 @@ function (_module) {
   }, {
     key: "appear",
     value: function appear() {
+      if (!this.glObject) return;
       this.glObject.isViewed();
     }
   }, {
@@ -46316,6 +46318,7 @@ function (_module) {
   }, {
     key: "toogleNav",
     value: function toogleNav() {
+      console.log('in');
       this.isOpen = !this.isOpen;
 
       _gsap.gsap.to(this.menu, {
@@ -46667,7 +46670,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56011" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59718" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

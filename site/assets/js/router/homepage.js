@@ -17,6 +17,8 @@ const homepageTransition = function (imgFunc){
             ]
         },
         once({ current, next, trigger }) {
+            window.addEventListener('load', function () {
+            
             const loader = gsap.timeline();
             loader.set("#js-loader-title-out", {opacity: 0});
             loader.to("#js-loader-title", {opacity: .8, duration: 1});
@@ -32,6 +34,7 @@ const homepageTransition = function (imgFunc){
 
             const canvas = document.querySelector('.dom-gl');
             gsap.to(canvas, {autoAlpha: 1, duration: .5});
+        })
         },
         leave({ current, next, trigger }) {
             return new Promise(resolve => {
