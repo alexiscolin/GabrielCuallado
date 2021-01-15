@@ -11,6 +11,7 @@ export default class extends module {
         super(m);
 
         this.glObject = null;
+        this.slider = null;
     } 
 
     init() {
@@ -43,7 +44,8 @@ export default class extends module {
     }
 
     destroy() {
-        clearRequestInterval(this.slider);
+        if(this.slider) clearRequestInterval(this.slider);
+        if(!this.glObject) return;
         Gl.scroll = 0;
         this.glObject.destroy();
     }

@@ -46025,6 +46025,7 @@ function (_module) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, m));
     _this.glObject = null;
+    _this.slider = null;
     return _this;
   }
 
@@ -46071,7 +46072,8 @@ function (_module) {
   }, {
     key: "destroy",
     value: function destroy() {
-      (0, _utils.clearRequestInterval)(this.slider);
+      if (this.slider) (0, _utils.clearRequestInterval)(this.slider);
+      if (!this.glObject) return;
       _gl.default.scroll = 0;
       this.glObject.destroy();
     }
@@ -46318,7 +46320,6 @@ function (_module) {
   }, {
     key: "toogleNav",
     value: function toogleNav() {
-      console.log('in');
       this.isOpen = !this.isOpen;
 
       _gsap.gsap.to(this.menu, {
