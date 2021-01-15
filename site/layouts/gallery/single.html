@@ -39,19 +39,6 @@
 
 
                 <div class="c-container c-serie1_img{{ $i }}" data-parallaxe="img" data-speed="{{ .speed }}">
-                  <!-- <svg width="400" height="400" viewBox="0 0 600 600" preserveAspectRatio="xMinYMin meet" >
-                    <filter id='noise' x='0%' y='0%' width='100%' height='100%' >
-                      <feColorMatrix type="matrix" in="SourceGraphic" values=".33 .33 .33 0 0
-                                                          .33 .33 .33 0 0
-                                                          .33 .33 .33 0 0
-                                                          0 0 0 1 0">
-                      </feColorMatrix>
-                      <feTurbulence type="fractalNoise" baseFrequency="0.01" result="NOISE" numOctaves="1"/>
-                      <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="50" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>
-                    </filter>
-            
-                    <image filter='url(#noise class="distort__img o-img js-prlx-img" x="0" y="0" xlink:href="{{ .image }}" height="100%"/>
-                  </svg> -->
                   <span class="o-img_link a" data-serie="openImg" data-src="{{ .image }}" data-name="{{ .name }}"><img class="o-img js-prlx-img" src="{{ .image }}" ></span>
                   <span class="c-serie_def">{{ .name }}</span class="c-serie_def">
                 </div>
