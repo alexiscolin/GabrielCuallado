@@ -1,6 +1,6 @@
 +++
 Title = "Collections"
-background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608569337/Map_-_Colectors_Gabriel_Cuallado_zhuopl.svg"
+background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610650703/MAP-COLLECTORS-CUALLADO_ifwqg7.svg"
 meta_description = "Institutions ayant dans leur possession les oeuvres du photographe Gabriel Cuallado."
 meta_title = "Collectionneurs"
 namespace = "collectors"
