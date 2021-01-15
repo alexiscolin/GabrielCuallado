@@ -71,13 +71,6 @@ text = "En 1978, les photos de Cuallado sont présentées au Festival des Rencon
 title = "La consécration"
 top = "0"
 [[content]]
-left = "0"
-subtitle = "Années 2000"
-template = "about-text"
-text = "Il décède en 2003, laissant derrière lui un héritage qui perdure, racontant l'histoire d'une Europe d'après-guerre aussi fragmentée que touchante. Tout au long des années 2000, diverses expositions ont lieu pour rendre hommage à son oeuvre. De l'IVAM en 2003, au Cercle des Beaux-Arts de Madrid en 2014 et jusqu'à la grande exposition « Cuallado Essential », présentée en 2019 à Sala Canal (Madrid), ainsi qu'à La Pedrera (Barcelone)."
-title = "L'héritage"
-top = "0"
-[[content]]
 citation = false
 citation_author = ""
 citation_text = ""
@@ -86,11 +79,18 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
+left = "0"
+subtitle = "Années 2000"
+template = "about-text"
+text = "Il décède en 2003, laissant derrière lui un héritage qui perdure, racontant l'histoire d'une Europe d'après-guerre aussi fragmentée que touchante. Tout au long des années 2000, diverses expositions ont lieu pour rendre hommage à son oeuvre. De l'IVAM en 2003, au Cercle des Beaux-Arts de Madrid en 2014 et jusqu'à la grande exposition « Cuallado Essential », présentée en 2019 à Sala Canal (Madrid), ainsi qu'à La Pedrera (Barcelone)."
+title = "L'héritage"
+top = "0"
+[[content]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "0"
 link_description = "Découvrir ses oeuvres"
 template = "about-link"
 top = "15"
-url = "http://bit.ly/gabriel-cuallado"
+url = "https://blancaberlingaleria.com/portfolios/seleccion-2/"
 
 +++
