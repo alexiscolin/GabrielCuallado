@@ -11,37 +11,37 @@ type = "gallery"
 weight = 1
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555643/F0460-NIN%CC%83O_CON_PAN_j5wbsd.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0460_NINO_CON_PAN_kykebd.jpg"
 name = "Garçon avec pain"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555719/F0461-FIFI_bluerc.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0461_FIFI_oxboor.jpg"
 name = "Fifi"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555790/F0465-LA_GITANILLA_e8swfr.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0465_LA_GITANILLA_yjdgwu.jpg"
 name = "La petite gitane"
 speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555835/F0466-LA_MUJER_DE_PENELLA_zqdpjt.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0466_LA_MUJER_DE_PENELLA_a1jul8.jpg"
 name = "Femme de Penella"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555888/F0488-HOMBRE_EN_PASILLO_CON_RAMO_DE_FLORES_jfbps2.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0488_MISERACHS_smlac0.jpg"
 name = "Miserachs"
 speed = "-.26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608555951/F0598-NIN%CC%83A_EN_PORTAL_MASANASA_c7x7gh.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0598_NINA_AFAL_ewbdtg.jpg"
 name = "Fille d'Afal"
 speed = "-.26"
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-50_uv2eog.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610649880/GALLERY/COTID/F0460_NINO_CON_SENORA_DE_ESPALDAS_iqhtlg.jpg"
 name = "Garçon avec femme de dos"
 speed = "-.26"
 

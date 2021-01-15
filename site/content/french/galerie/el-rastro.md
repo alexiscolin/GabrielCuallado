@@ -1,7 +1,7 @@
 +++
 Title = "El Rastro"
 menu = ["serie"]
-meta_description = "Rastros."
+meta_description = "Visages."
 meta_title = "El Rastro"
 namespace = "serie"
 section = "galerie"
@@ -10,17 +10,17 @@ type = "gallery"
 weight = 3
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484439/EL%20RASTRO/F0365-VENDEDOR_DE_CUADROS_y2hhpf.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651685/GALLERY/EL%20RASTRO/F0365-VENDEDOR-DE-CUADROS_pbawnw.jpg"
 name = "Vendeur de cadres"
 speed = "-.2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-108_gcq7qz.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651685/GALLERY/EL%20RASTRO/F0362-HOMBRE-CON-CARA-EN-LA-SOMBRA_t3c1gf.jpg"
 name = "Homme avec visage dans l'ombre"
 speed = "-.1"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484439/EL%20RASTRO/F0364-TITERE_mccaiw.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651685/GALLERY/EL%20RASTRO/F0364-TITERE_pz4z4o.jpg"
 name = "Mime"
 speed = "-.3"
 [[photos]]
@@ -30,12 +30,12 @@ name = "."
 speed = "-.5"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484440/EL%20RASTRO/F0343-VENDEDORA_PENSATIVA_mvnkf4.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651685/GALLERY/EL%20RASTRO/F0343-VENDEDORA-PENSATIVA_jm8wvz.jpg"
 name = "Vendeuse pensive"
 speed = "-.2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608484439/EL%20RASTRO/F0346-LA_MOTO_onagvt.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651685/GALLERY/EL%20RASTRO/F0346-LA-MOTO_hlc3xu.jpg"
 name = "La Moto"
 speed = "-.1"
 
