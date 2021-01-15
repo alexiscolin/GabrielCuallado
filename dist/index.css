@@ -1251,19 +1251,19 @@ a {
     position: relative;
     top: 10vh;
     height: 50vh;
-    left: 10vw;
+    left: 15vw;
   }
 
   .c-serie1_img2 {
     position: relative;
-    margin-left: 20vw;
+    margin-left: 25vw;
     top: -10vh;
     height: 50vh;
   }
 
   .c-serie1_img3 {
     position: relative;
-    margin-left: 5vw;
+    margin-left: 10vw;
     top: 10vh;
     height: 30vh;
   }
@@ -1276,7 +1276,7 @@ a {
   .c-serie1_img5 {
     position: relative;
     height: 30vh;
-    margin-left: 8vw;
+    margin-left: 13vw;
     top: -5vh;
     z-index: 5;
   }
@@ -1285,7 +1285,7 @@ a {
     position: relative;
     height: 60vh;
     top: 6vh;
-    margin-left: -15vw;
+    margin-left: 10vw;
     z-index: 4;
   }
 }
