@@ -104,7 +104,7 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610749567/Gabriel-cuallado-press-kit-2021_t0zuez.jpg"
 left = "0"
 link_description = "Discover artworks"
 template = "about-link"
