@@ -5,7 +5,7 @@ section = "à propos"
 translationKey = "press"
 type = "press"
 [[publication]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622725/GALLERY/EL%20RASTRO/F0362-HOMBRE_CON_CARA_EN_LA_SOMBRA_ktudm5.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0362-HOMBRE-CON-CARA-EN-LA-SOMBRA_jt5xkq.jpg"
 link = "https://elpais.com/elpais/2018/02/16/album/1518784864_263217.html"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622725/PRESS/El_Pais_Gabriel_Cuallado_efffy1.png"
 title = "\"La photographie élégante de Gabriel Cuallado\""
