@@ -1,7 +1,7 @@
 +++
 Title = "Individuelle"
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = "Expositions individuelles de Gabriel Cuallado."
 meta_title = "Expositions individuelles"
 namespace = "exhibitions"
@@ -113,7 +113,7 @@ name = "\"Printemps de la Photographie\", Centre International de la Photographi
 place = "Barcelone, Espagne"
 [[exhibition]]
 date = "1981-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622725/GALLERY/EL%20RASTRO/F0362-HOMBRE_CON_CARA_EN_LA_SOMBRA_ktudm5.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0362-HOMBRE-CON-CARA-EN-LA-SOMBRA_jt5xkq.jpg"
 link = ""
 name = "\"El Rastro\", Real Sociedad Fotográfica"
 place = "Madrid, Espagne"
