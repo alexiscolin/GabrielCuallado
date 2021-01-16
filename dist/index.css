@@ -305,6 +305,7 @@ a {
     position: fixed;
     display: block;
     height: 100%;
+    pointer-events: none;
     width: 20vw;
     left: 0;
     top: 0;
