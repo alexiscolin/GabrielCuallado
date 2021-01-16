@@ -8499,33 +8499,13 @@ SmoothScroll.prototype = function () {
 
     if (medias.length <= 0) return;
     var isPromise = window.Promise ? true : false;
-    var loading = isPromise ? [] : null;
+    var loading = isPromise ? [] : null; // funcs
 
     var getSize = function getSize() {
       _this.config.scrollMax = _this.config.direction === 'vertical' ? _this.DOM.scroller.offsetHeight - (document.documentElement.clientHeight || window.innerHeight) : _this.DOM.scroller.offsetWidth - (document.documentElement.clientWidth || window.innerWidth);
     };
 
-    medias.forEach(function (media, key, array) {
-      var eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
-      var el = document.createElement(media.nodeName.toLowerCase());
-
-      if (isPromise) {
-        var loader = new Promise(function (resolve, error) {
-          return el.addEventListener(eventType, function () {
-            return resolve();
-          }, false);
-        });
-        loading.push(loader);
-      } else {
-        el.onloadstart = el.onload = function () {
-          array.splice(array.indexOf(media), 1);
-          array.length === 0 && getSize();
-        };
-      }
-
-      el.src = media.src;
-    });
-    isPromise && Promise.all(loading).then(function (values) {
+    var promiseCallback = function promiseCallback() {
       getSize();
 
       _this.resize(); // start all function called in initFunc array
@@ -8536,6 +8516,54 @@ SmoothScroll.prototype = function () {
           return fn();
         });
       }
+    }; // Loader
+
+
+    medias.forEach(function (media, key, array) {
+      var eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
+      var el = document.createElement(media.nodeName.toLowerCase());
+      el.src = media.src;
+
+      if (isPromise) {
+        var loader = null;
+
+        if (window.fetch) {
+          // If fetch available (no 400 error may be throwned - fetch only allow network error rejection)
+          loader = fetch(media.src).then(function (response) {
+            if (!response.ok) {
+              // make the promise be rejected if we didn't get a 2xx response
+              throw new Error(response.url + " Is not a 2xx response");
+            } else {
+              return response;
+            }
+          }).catch(function (error) {
+            return console.error('Fetch error: ' + error.message);
+          });
+        } else {
+          // If at least one media is not available, an error is throwned -> initFuncs will not work art all 
+          loader = new Promise(function (resolve, reject) {
+            el.addEventListener(eventType, function (e) {
+              return resolve();
+            }, false);
+            el.addEventListener("error", function (e) {
+              return reject(new Error("Media failed loading"));
+            }, false);
+          });
+        }
+
+        loading.push(loader);
+      } else {
+        // OLD way - No error message here (should add a timeout here for legacy)
+        el.onloadstart = el.onload = function () {
+          array.splice(array.indexOf(media), 1);
+          array.length === 0 && promiseCallback();
+        };
+      }
+    });
+    isPromise && Promise.all(loading).then(function (values) {
+      promiseCallback();
+    }).catch(function (error) {
+      console.error(error.message);
     });
   },
 
@@ -45354,18 +45382,7 @@ function (_GlObject) {
       this.mesh.position.z = z;
       this.add(this.mesh);
 
-      _index.default.scene.add(this); // this.interval = requestInterval(()=>{
-      //     console.log('blabl');
-      //     // this.texture = loader.load('https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085602/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-107_esnrag.jpg', (texture) => {
-      //     //     texture.minFilter = THREE.LinearFilter;
-      //     //     texture.generateMipmaps = false;
-      //     //     this.material.uniforms.uTexture.value = texture;
-      //     // })
-      // }, 3000);
-      // setTimeout(() => {
-      //     clearRequestInterval(this.interval);
-      // },20000)
-
+      _index.default.scene.add(this);
     }
   }, {
     key: "updateTime",
@@ -45397,29 +45414,7 @@ function (_GlObject) {
         delay: .4,
         ease: 'power.inOut'
       });
-    } // addEvents() {
-    //     this.mouseMove();
-    //     this.mouseLeave();
-    //   }
-    //   mouseMove() {
-    //     this.el.addEventListener('mousemove', e => {
-    //     //   gsap.to(this.material.uniforms.uMouse, {
-    //     //     // duration: 1,
-    //     //     value: {x: e.clientX, y: e.clientX},
-    //     //     ease: 'power.inOut',
-    //     //   });
-    //     });
-    //   }
-    //   mouseLeave() {
-    //     this.el.addEventListener('mouseleave', () => {
-    //       gsap.to(this.material.uniforms.uProg, {
-    //         // duration: 1,
-    //         value: 0,
-    //         ease: 'power.inOut',
-    //       });
-    //     });
-    //   }
-
+    }
   }]);
 
   return _default;

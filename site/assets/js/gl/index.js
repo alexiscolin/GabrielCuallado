@@ -6,6 +6,7 @@ import { calcWinsize } from '../utils';
 
 export default new class {
   constructor() { 
+
     this.scene = new THREE.Scene();
     this.winSize = calcWinsize();
     this.camera = new THREE.PerspectiveCamera(

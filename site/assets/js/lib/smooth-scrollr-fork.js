@@ -181,34 +181,11 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         const isPromise = window.Promise ? true : false;
         const loading = isPromise ? [] : null;
   
+        // funcs
         const getSize = () => {
             this.config.scrollMax = this.config.direction === 'vertical' ? (this.DOM.scroller.offsetHeight - (document.documentElement.clientHeight || window.innerHeight)) : (this.DOM.scroller.offsetWidth - (document.documentElement.clientWidth || window.innerWidth));
         };
-  
-        medias.forEach((media, key, array) => {
-  
-            const eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
-            const el = document.createElement(media.nodeName.toLowerCase());
-  
-            if (isPromise) {
-                const loader = new Promise((resolve, error) => {
-                    return el.addEventListener(eventType, () => {
-                        return resolve();
-                    }, false);
-                });
-                loading.push(loader);
-  
-            } else {
-                el.onloadstart = el.onload = () => {
-                    array.splice(array.indexOf(media), 1);
-                    array.length === 0 && getSize();
-                };
-            }
-  
-            el.src = media.src;
-        });
-  
-        isPromise && Promise.all(loading).then(values => { 
+        const promiseCallback = () => {
             getSize() 
             this.resize();
 
@@ -216,7 +193,56 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             if(this.config.initFuncs.length > 0) {
                 this.config.initFuncs.forEach(fn => fn());
             }
+        }
+  
+        // Loader
+        medias.forEach((media, key, array) => {
+  
+            const eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
+            const el = document.createElement(media.nodeName.toLowerCase());
+            el.src = media.src;
+
+            if (isPromise) {
+                let loader = null;
+                if (window.fetch) {
+                    // If fetch available (no 400 error may be throwned - fetch only allow network error rejection)
+                    loader = fetch(media.src)
+                        .then(response => {
+                            if (!response.ok) {
+                                // make the promise be rejected if we didn't get a 2xx response
+                                throw new Error(response.url + " Is not a 2xx response")
+                            } else {
+                                 return response
+                            }
+                        })
+                        .catch(error => console.error('Fetch error: ' + error.message));
+                } else {
+                    // If at least one media is not available, an error is throwned -> initFuncs will not work art all 
+                    loader = new Promise((resolve, reject) => {
+                        el.addEventListener(eventType, e => {
+                                return resolve();
+                        }, false);
+                        el.addEventListener("error", e => {
+                            return reject(new Error("Media failed loading"));
+                        }, false);
+                    });
+                }
+                loading.push(loader);
+  
+            } else {
+                // OLD way - No error message here (should add a timeout here for legacy)
+                el.onloadstart = el.onload = () => {
+                    array.splice(array.indexOf(media), 1);
+                    array.length === 0 && promiseCallback();
+                };
+            }
         });
+        
+        isPromise && Promise.all(loading).then(values => { 
+            promiseCallback()
+        }).catch(error => {
+            console.error(error.message)
+        })
     },
   
   
