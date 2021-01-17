@@ -11,8 +11,6 @@ export default class extends module {
                 leaveZoom: 'leaveZoom'
             }
         }
-
-        this.init()
     }
     
     openImg(e) {

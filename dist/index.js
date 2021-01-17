@@ -46127,9 +46127,6 @@ function (_module) {
         leaveZoom: 'leaveZoom'
       }
     };
-
-    _this.init();
-
     return _this;
   }
 
