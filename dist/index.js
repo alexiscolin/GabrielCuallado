@@ -46620,8 +46620,8 @@ var website = website || {};
       var white = ['padding: 20px 5px 16px', 'background-color: #FFFFFF', 'color: #000000'].join(';');
       var whiteBold = ['padding: 20px 5px 16px', 'background-color: #000000', 'color: #FFFFFF'].join(';');
       var spacer = ['background-color: transparent'].join(';');
-      var msg = '\n\n %c DE JAUNE ET DE BLEU %c https://www.jaunebleu.co %c \n';
-      var msgBold = '\n %c BOLK %c https://www.bolk.studio %c \n\n\n';
+      var msg = '\n\n %c DE JAUNE ET DE BLEU %c code | https://www.jaunebleu.co %c \n';
+      var msgBold = '\n %c BOLK %c design | https://www.bolk.studio %c \n\n\n';
       console.log(msg, dark, white, spacer);
       console.log(msgBold, darkBold, whiteBold, spacer);
     } else if (window.console) {
