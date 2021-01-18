@@ -130,7 +130,9 @@ a {
 }
 
 [data-module-serie="main"] .o-section:last-child {
-    padding-right: 35vw;
+    @include media( '>medium' ) {
+        padding-right: 35vw;
+    }
 }
 
 #app,

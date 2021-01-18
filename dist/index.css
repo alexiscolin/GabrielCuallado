@@ -370,8 +370,10 @@ a {
   align-items: center;
 }
 
-[data-module-serie=main] .o-section:last-child {
-  padding-right: 35vw;
+@media (min-width: 641px) {
+  [data-module-serie=main] .o-section:last-child {
+    padding-right: 35vw;
+  }
 }
 
 #app,
