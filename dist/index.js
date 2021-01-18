@@ -8499,6 +8499,7 @@ SmoothScroll.prototype = function () {
 
     if (medias.length <= 0) return;
     var isPromise = window.Promise ? true : false;
+    var isFetch = window.fetch ? true : false;
     var loading = isPromise ? [] : null; // funcs
 
     var getSize = function getSize() {
@@ -8522,12 +8523,11 @@ SmoothScroll.prototype = function () {
     medias.forEach(function (media, key, array) {
       var eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
       var el = document.createElement(media.nodeName.toLowerCase());
-      el.src = media.src;
 
       if (isPromise) {
         var loader = null;
 
-        if (window.fetch) {
+        if (isFetch) {
           // If fetch available (no 400 error may be throwned - fetch only allow network error rejection)
           loader = fetch(media.src).then(function (response) {
             if (!response.ok) {
@@ -8542,6 +8542,7 @@ SmoothScroll.prototype = function () {
         } else {
           // If at least one media is not available, an error is throwned -> initFuncs will not work art all 
           loader = new Promise(function (resolve, reject) {
+            el.src = media.src;
             el.addEventListener(eventType, function (e) {
               return resolve();
             }, false);

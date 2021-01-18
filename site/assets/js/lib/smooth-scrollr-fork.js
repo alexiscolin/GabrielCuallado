@@ -179,6 +179,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         if (medias.length <= 0) return;
   
         const isPromise = window.Promise ? true : false;
+        const isFetch = window.fetch ? true : false;
         const loading = isPromise ? [] : null;
   
         // funcs
@@ -200,11 +201,10 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
   
             const eventType = media.nodeName.toLowerCase() === 'img' ? 'load' : 'loadstart';
             const el = document.createElement(media.nodeName.toLowerCase());
-            el.src = media.src;
 
             if (isPromise) {
                 let loader = null;
-                if (window.fetch) {
+                if (isFetch) {
                     // If fetch available (no 400 error may be throwned - fetch only allow network error rejection)
                     loader = fetch(media.src)
                         .then(response => {
@@ -219,6 +219,8 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
                 } else {
                     // If at least one media is not available, an error is throwned -> initFuncs will not work art all 
                     loader = new Promise((resolve, reject) => {
+                        el.src = media.src;
+
                         el.addEventListener(eventType, e => {
                                 return resolve();
                         }, false);
