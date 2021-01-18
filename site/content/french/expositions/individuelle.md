@@ -1,7 +1,7 @@
 +++
 Title = "Individuelle"
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = "Expositions individuelles de Gabriel Cuallado."
 meta_title = "Expositions individuelles"
 namespace = "exhibitions"
@@ -10,7 +10,7 @@ translationkey = "exhibitions-individual"
 type = "exhibitions"
 weight = 1
 [[exhibition]]
-date = "2018-12-31T23:00:00+00:00"
+date = "2016-12-31T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622720/EXHIBITIONS_INDIVIDUAL/Cuallado_Esencial_La_Pedrera_seppxl.jpg"
 link = "https://www.lapedrera.com/en/agenda-activities-barcelona/previous-exhibitions/essential-cuallado"
 name = "“Cuallado Essentiel”, La Pedrera"
