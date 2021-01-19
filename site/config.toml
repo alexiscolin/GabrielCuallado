@@ -1,6 +1,7 @@
 baseURL = "https://gabriel-cuallado.com/"
 DefaultContentLanguage = "en"
 title = "Gabriel Cuallado"
+enableGitInfo = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [languages]

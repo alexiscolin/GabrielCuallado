@@ -1,317 +1,183 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" >
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/cotid/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/gallery/cotid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/galerie/cotid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/galeria/cotid/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/cotid/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/exposiciones/individual/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/exhibitions/individual/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/expositions/individuelle/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/exposiciones/individual/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/exposiciones/individual/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/exposiciones/colectivo/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/exhibitions/collective/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/expositions/collective/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/exposiciones/colectivo/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/exposiciones/colectivo/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/madrid/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/gallery/madrid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/galerie/madrid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/galeria/madrid/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/madrid/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/el-rastro/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/gallery/el-rastro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/galerie/el-rastro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/galeria/el-rastro/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/el-rastro/</loc>
+      
+      <lastmod>2021-01-18</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/familia/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/gallery/familia/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/galerie/familia/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/galeria/familia/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/familia/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/paris/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/gallery/paris/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/galerie/paris/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/galeria/paris/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/paris/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/asturias/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/gallery/asturias/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/galerie/asturias/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/galeria/asturias/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/asturias/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/exposiciones/</loc>
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/exposiciones/</loc>
+      
+      <lastmod>2020-11-09</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/galeria/</loc>
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/galeria/</loc>
+      
+      <lastmod>2020-11-09</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/acerca/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/a-propos/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/acerca/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/acerca/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/acerca/coleccionistas/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/about/collectors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/a-propos/collections/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/acerca/coleccionistas/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/acerca/coleccionistas/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/credits/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/credits/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/credits/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/credits/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/credits/</loc>
+      
+      <lastmod>2020-11-09</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/legal/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/legal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/legal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/legal/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/legal/</loc>
+      
+      <lastmod>2020-11-09</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/acerca/premios/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/about/awards/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/a-propos/prix/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/acerca/premios/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/acerca/premios/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/acerca/prensa/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/about/press/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/a-propos/presse/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/acerca/prensa/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/acerca/prensa/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
-  <url>
-    <loc>http://localhost:59068/es/acerca/publicaciones/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:59068/about/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:59068/fr/a-propos/publications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:59068/es/acerca/publicaciones/"
-                />
-  </url>
+    
+    
+    <url>
+      <loc>http://localhost:55221/es/acerca/publicaciones/</loc>
+      
+      <lastmod>2021-01-15</lastmod>
+      
+    </url>
+    
   
 </urlset>

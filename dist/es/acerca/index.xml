@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Acerca on Gabriel Cuallado</title>
-    <link>http://localhost:59068/es/acerca/</link>
+    <link>http://localhost:55221/es/acerca/</link>
     <description>Recent content in Acerca on Gabriel Cuallado</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost:59068/es/acerca/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:55221/es/acerca/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Coleccionistas</title>
-      <link>http://localhost:59068/es/acerca/coleccionistas/</link>
+      <link>http://localhost:55221/es/acerca/coleccionistas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:59068/es/acerca/coleccionistas/</guid>
+      <guid>http://localhost:55221/es/acerca/coleccionistas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Premios</title>
-      <link>http://localhost:59068/es/acerca/premios/</link>
+      <link>http://localhost:55221/es/acerca/premios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:59068/es/acerca/premios/</guid>
+      <guid>http://localhost:55221/es/acerca/premios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Prensa</title>
-      <link>http://localhost:59068/es/acerca/prensa/</link>
+      <link>http://localhost:55221/es/acerca/prensa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:59068/es/acerca/prensa/</guid>
+      <guid>http://localhost:55221/es/acerca/prensa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publicaciones</title>
-      <link>http://localhost:59068/es/acerca/publicaciones/</link>
+      <link>http://localhost:55221/es/acerca/publicaciones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:59068/es/acerca/publicaciones/</guid>
+      <guid>http://localhost:55221/es/acerca/publicaciones/</guid>
       <description></description>
     </item>
     

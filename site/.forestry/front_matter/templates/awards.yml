@@ -72,17 +72,6 @@ fields:
     required: false
   label: type
   hidden: true
-- name: lastmod
-  type: datetime
-  label: lastmod
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: true
-  hidden: true
-  default: now
 pages:
 - site/content/english/about/awards.md
 - site/content/french/a-propos/prix.md
