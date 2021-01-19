@@ -44,6 +44,11 @@ fields:
   config:
     required: false
   label: Meta description
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
+  description: Jusqu'à 10 mots-clefs supplémentaires pour référencer la page
 - name: introTitle
   type: text
   config:

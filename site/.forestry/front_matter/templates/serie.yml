@@ -38,22 +38,27 @@ fields:
     min: 
     max: 
     step: 
-- name: meta_title
-  type: text
-  config:
-    required: false
-  label: Meta title
 - name: translationkey
   type: text
   config:
     required: false
   label: Clé de traduction
   description: Relie les pages à traduire ensemble<em> (serie1, serie2...)</em>
+- name: meta_title
+  type: text
+  config:
+    required: false
+  label: Meta title
 - name: meta_description
   type: text
   config:
     required: false
   label: Meta description
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
+  description: Jusqu'à 10 mots-clefs supplémentaires pour référencer la page
 - type: field_group_list
   name: photos
   label: photos
