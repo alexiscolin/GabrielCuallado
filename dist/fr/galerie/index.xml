@@ -2,64 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gabriel Cuallado</title>
-    <link>http://localhost:55221/fr/galerie/</link>
+    <link>http://localhost:1313/fr/galerie/</link>
     <description>Recent content on Gabriel Cuallado</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost:55221/fr/galerie/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/fr/galerie/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cotid</title>
-      <link>http://localhost:55221/fr/galerie/cotid/</link>
+      <link>http://localhost:1313/fr/galerie/cotid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/fr/galerie/cotid/</guid>
+      <guid>http://localhost:1313/fr/galerie/cotid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Madrid</title>
-      <link>http://localhost:55221/fr/galerie/madrid/</link>
+      <link>http://localhost:1313/fr/galerie/madrid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/fr/galerie/madrid/</guid>
+      <guid>http://localhost:1313/fr/galerie/madrid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>El Rastro</title>
-      <link>http://localhost:55221/fr/galerie/el-rastro/</link>
+      <link>http://localhost:1313/fr/galerie/el-rastro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/fr/galerie/el-rastro/</guid>
+      <guid>http://localhost:1313/fr/galerie/el-rastro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Famille</title>
-      <link>http://localhost:55221/fr/galerie/familia/</link>
+      <link>http://localhost:1313/fr/galerie/familia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/fr/galerie/familia/</guid>
+      <guid>http://localhost:1313/fr/galerie/familia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Paris</title>
-      <link>http://localhost:55221/fr/galerie/paris/</link>
+      <link>http://localhost:1313/fr/galerie/paris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/fr/galerie/paris/</guid>
+      <guid>http://localhost:1313/fr/galerie/paris/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Asturies</title>
-      <link>http://localhost:55221/fr/galerie/asturias/</link>
+      <link>http://localhost:1313/fr/galerie/asturias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/fr/galerie/asturias/</guid>
+      <guid>http://localhost:1313/fr/galerie/asturias/</guid>
       <description></description>
     </item>
     

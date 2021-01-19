@@ -3,7 +3,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/cotid/</loc>
+      <loc>http://localhost:1313/fr/galerie/cotid/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -13,7 +13,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/expositions/individuelle/</loc>
+      <loc>http://localhost:1313/fr/expositions/individuelle/</loc>
       
       <lastmod>2021-01-18</lastmod>
       
@@ -23,7 +23,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/expositions/collective/</loc>
+      <loc>http://localhost:1313/fr/expositions/collective/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -33,7 +33,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/madrid/</loc>
+      <loc>http://localhost:1313/fr/galerie/madrid/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -43,7 +43,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/el-rastro/</loc>
+      <loc>http://localhost:1313/fr/galerie/el-rastro/</loc>
       
       <lastmod>2021-01-18</lastmod>
       
@@ -53,7 +53,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/familia/</loc>
+      <loc>http://localhost:1313/fr/galerie/familia/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -63,7 +63,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/paris/</loc>
+      <loc>http://localhost:1313/fr/galerie/paris/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -73,7 +73,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/asturias/</loc>
+      <loc>http://localhost:1313/fr/galerie/asturias/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -83,7 +83,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/</loc>
+      <loc>http://localhost:1313/fr/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -93,7 +93,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/expositions/</loc>
+      <loc>http://localhost:1313/fr/expositions/</loc>
       
       <lastmod>2020-11-09</lastmod>
       
@@ -103,7 +103,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/galerie/</loc>
+      <loc>http://localhost:1313/fr/galerie/</loc>
       
       <lastmod>2020-11-09</lastmod>
       
@@ -113,7 +113,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/a-propos/</loc>
+      <loc>http://localhost:1313/fr/a-propos/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -123,7 +123,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/a-propos/collections/</loc>
+      <loc>http://localhost:1313/fr/a-propos/collections/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -133,27 +133,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/credits/</loc>
-      
-      <lastmod>2020-11-09</lastmod>
-      
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://localhost:55221/fr/legal/</loc>
-      
-      <lastmod>2020-11-09</lastmod>
-      
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://localhost:55221/fr/a-propos/presse/</loc>
+      <loc>http://localhost:1313/fr/a-propos/presse/</loc>
       
       <lastmod>2021-01-16</lastmod>
       
@@ -163,7 +143,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/a-propos/prix/</loc>
+      <loc>http://localhost:1313/fr/a-propos/prix/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -173,7 +153,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/fr/a-propos/publications/</loc>
+      <loc>http://localhost:1313/fr/a-propos/publications/</loc>
       
       <lastmod>2021-01-15</lastmod>
       

@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gabriel Cuallado</title>
-    <link>http://localhost:55221/es/exposiciones/</link>
+    <link>http://localhost:1313/es/exposiciones/</link>
     <description>Recent content on Gabriel Cuallado</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost:55221/es/exposiciones/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/es/exposiciones/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Individual</title>
-      <link>http://localhost:55221/es/exposiciones/individual/</link>
+      <link>http://localhost:1313/es/exposiciones/individual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/es/exposiciones/individual/</guid>
+      <guid>http://localhost:1313/es/exposiciones/individual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>collective</title>
-      <link>http://localhost:55221/es/exposiciones/colectivo/</link>
+      <link>http://localhost:1313/es/exposiciones/colectivo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/es/exposiciones/colectivo/</guid>
+      <guid>http://localhost:1313/es/exposiciones/colectivo/</guid>
       <description></description>
     </item>
     

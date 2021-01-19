@@ -2,118 +2,118 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gabriel Cuallado</title>
-    <link>http://localhost:55221/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Gabriel Cuallado</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://localhost:55221/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cotid</title>
-      <link>http://localhost:55221/gallery/cotid/</link>
+      <link>http://localhost:1313/gallery/cotid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/gallery/cotid/</guid>
+      <guid>http://localhost:1313/gallery/cotid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Individual</title>
-      <link>http://localhost:55221/exhibitions/individual/</link>
+      <link>http://localhost:1313/exhibitions/individual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/exhibitions/individual/</guid>
+      <guid>http://localhost:1313/exhibitions/individual/</guid>
       <description>expo contenu en</description>
     </item>
     
     <item>
       <title>collective</title>
-      <link>http://localhost:55221/exhibitions/collective/</link>
+      <link>http://localhost:1313/exhibitions/collective/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/exhibitions/collective/</guid>
+      <guid>http://localhost:1313/exhibitions/collective/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Madrid</title>
-      <link>http://localhost:55221/gallery/madrid/</link>
+      <link>http://localhost:1313/gallery/madrid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/gallery/madrid/</guid>
+      <guid>http://localhost:1313/gallery/madrid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>El rastro</title>
-      <link>http://localhost:55221/gallery/el-rastro/</link>
+      <link>http://localhost:1313/gallery/el-rastro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/gallery/el-rastro/</guid>
+      <guid>http://localhost:1313/gallery/el-rastro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Family</title>
-      <link>http://localhost:55221/gallery/familia/</link>
+      <link>http://localhost:1313/gallery/familia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/gallery/familia/</guid>
+      <guid>http://localhost:1313/gallery/familia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Paris</title>
-      <link>http://localhost:55221/gallery/paris/</link>
+      <link>http://localhost:1313/gallery/paris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/gallery/paris/</guid>
+      <guid>http://localhost:1313/gallery/paris/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Asturias</title>
-      <link>http://localhost:55221/gallery/asturias/</link>
+      <link>http://localhost:1313/gallery/asturias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/gallery/asturias/</guid>
+      <guid>http://localhost:1313/gallery/asturias/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Awards</title>
-      <link>http://localhost:55221/about/awards/</link>
+      <link>http://localhost:1313/about/awards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/about/awards/</guid>
+      <guid>http://localhost:1313/about/awards/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Collectors</title>
-      <link>http://localhost:55221/about/collectors/</link>
+      <link>http://localhost:1313/about/collectors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/about/collectors/</guid>
+      <guid>http://localhost:1313/about/collectors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Press</title>
-      <link>http://localhost:55221/about/press/</link>
+      <link>http://localhost:1313/about/press/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/about/press/</guid>
+      <guid>http://localhost:1313/about/press/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>http://localhost:55221/about/publications/</link>
+      <link>http://localhost:1313/about/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:55221/about/publications/</guid>
+      <guid>http://localhost:1313/about/publications/</guid>
       <description></description>
     </item>
     

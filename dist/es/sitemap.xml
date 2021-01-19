@@ -3,7 +3,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/cotid/</loc>
+      <loc>http://localhost:1313/es/galeria/cotid/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -13,7 +13,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/exposiciones/individual/</loc>
+      <loc>http://localhost:1313/es/exposiciones/individual/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -23,7 +23,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/exposiciones/colectivo/</loc>
+      <loc>http://localhost:1313/es/exposiciones/colectivo/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -33,7 +33,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/madrid/</loc>
+      <loc>http://localhost:1313/es/galeria/madrid/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -43,7 +43,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/el-rastro/</loc>
+      <loc>http://localhost:1313/es/galeria/el-rastro/</loc>
       
       <lastmod>2021-01-18</lastmod>
       
@@ -53,7 +53,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/familia/</loc>
+      <loc>http://localhost:1313/es/galeria/familia/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -63,7 +63,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/paris/</loc>
+      <loc>http://localhost:1313/es/galeria/paris/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -73,7 +73,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/asturias/</loc>
+      <loc>http://localhost:1313/es/galeria/asturias/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -83,7 +83,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/</loc>
+      <loc>http://localhost:1313/es/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -93,7 +93,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/exposiciones/</loc>
+      <loc>http://localhost:1313/es/exposiciones/</loc>
       
       <lastmod>2020-11-09</lastmod>
       
@@ -103,7 +103,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/galeria/</loc>
+      <loc>http://localhost:1313/es/galeria/</loc>
       
       <lastmod>2020-11-09</lastmod>
       
@@ -113,7 +113,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/acerca/</loc>
+      <loc>http://localhost:1313/es/acerca/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -123,7 +123,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/acerca/coleccionistas/</loc>
+      <loc>http://localhost:1313/es/acerca/coleccionistas/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -133,27 +133,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/credits/</loc>
-      
-      <lastmod>2020-11-09</lastmod>
-      
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://localhost:55221/es/legal/</loc>
-      
-      <lastmod>2020-11-09</lastmod>
-      
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://localhost:55221/es/acerca/premios/</loc>
+      <loc>http://localhost:1313/es/acerca/premios/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -163,7 +143,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/acerca/prensa/</loc>
+      <loc>http://localhost:1313/es/acerca/prensa/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -173,7 +153,7 @@
     
     
     <url>
-      <loc>http://localhost:55221/es/acerca/publicaciones/</loc>
+      <loc>http://localhost:1313/es/acerca/publicaciones/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
