@@ -1382,6 +1382,7 @@ a {
 @media (min-width: 641px) {
   .c-section_para {
     max-width: 60vw;
+    font-size: 1.5vh;
   }
 }
 @media (min-width: 641px) {
