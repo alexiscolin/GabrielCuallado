@@ -33,6 +33,11 @@ fields:
   config:
     required: false
   label: Meta description
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
+  description: Jusqu'à 10 mots-clefs supplémentaires pour référencer la page
 - type: file
   name: background
   label: Image de fond de page
@@ -72,17 +77,6 @@ fields:
     required: false
   label: type
   hidden: true
-- name: lastmod
-  type: datetime
-  label: lastmod
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: true
-  hidden: true
-  default: now
 pages:
 - site/content/english/about/awards.md
 - site/content/french/a-propos/prix.md
