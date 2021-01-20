@@ -1,5 +1,5 @@
 +++
-keywords = ["Gabriel Cualladó", "IVAM", "Spanish photographer", "AFAL", "Spanish National Photography award"]
+keywords = ["Gabriel Cualladó", "IVAM", "Fotógrafo español", "AFAL", "Premio Nacional de Fotografia"]
 meta_description = "Página web oficial de Gabriel Cualladó, fotógrafo español del grupo AFAL, primer ganador del Premio Nacional de Fotografía, ampliamente representado en las colecciones del IVAM y otros museos."
 meta_title = "Gabriel Cuallado︱Fotógrafo"
 namespace = "homepage"
