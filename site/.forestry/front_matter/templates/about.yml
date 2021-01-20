@@ -79,8 +79,8 @@ fields:
   type: text
   config:
     required: false
-  description: 'Invisible : utile au SEO'
-  label: Légende de la photo d'intro
+  description: 'Non visible : utilisé pour le SEO'
+  label: Légende de l'image d'introduction
 - name: content
   type: blocks
   label: Contenu

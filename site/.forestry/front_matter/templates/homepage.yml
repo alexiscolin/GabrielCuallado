@@ -30,7 +30,7 @@ fields:
     type: text
     config:
       required: false
-    label: Titre de la photo
+    label: Légende de la photo
     description: 'Non visible : utilisé pour le SEO'
   - name: image
     type: file
