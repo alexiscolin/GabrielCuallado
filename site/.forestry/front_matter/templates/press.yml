@@ -35,7 +35,6 @@ fields:
   type: tag_list
   default: []
   label: Keywords
-  description: Jusqu'à 10 mots-clefs supplémentaires pour référencer la page
   description: Relie les pages à traduire ensemble
 - type: field_group_list
   name: publication
