@@ -1,5 +1,30 @@
 
 
-    X-Robots-Tag: none
+/*
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: origin-when-cross-origin
+  Content-Security-Policy: script-src https: 'unsafe-inline' https://www.google-analytics.com;
+
+  Link: </index.js>; rel=preload; as=script
+  Link: </index.css>; rel=preload; as=style
+
+*/
+
+# desindexer pages fantomes:
+/fr/expositions/index.html
+  Header set X-Robots-Tag "noindex"
+/es/exposiciones/index.html
+  Header set X-Robots-Tag "noindex"
+/exhibitions/index.html
+  Header set X-Robots-Tag "noindex"
+
+/fr/galerie/index.html
+  Header set X-Robots-Tag "noindex"
+/es/galeria/index.html
+  Header set X-Robots-Tag "noindex"
+/gallery/index.html
+  Header set X-Robots-Tag "noindex"
+
 
 
