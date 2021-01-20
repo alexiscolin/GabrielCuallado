@@ -8,6 +8,7 @@
     {{ with $assets.css }}
     <link href="{{ relURL . }}" rel="stylesheet" />
     {{ end }}
+
     <!-- <link rel="preload" url="/Morganite-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" url="/Morganite-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" url="/Morganite-Black.woff2" as="font" type="font/woff2" crossorigin> -->
@@ -23,7 +24,7 @@
       {{ end }}
       
 
-      <main aria-role="main" class="o-wrapper">
+      <main class="o-wrapper">
         {{ block "main" . }}{{ end }}
       </main>
       
