@@ -75,6 +75,12 @@ fields:
     maxSize: 64
   label: Image d'introduction
   description: Première image avant timeline
+- name: intro_photo_name
+  type: text
+  config:
+    required: false
+  description: 'Invisible : utile au SEO'
+  label: Légende de la photo d'intro
 - name: content
   type: blocks
   label: Contenu
