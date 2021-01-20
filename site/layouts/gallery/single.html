@@ -43,7 +43,7 @@
 
 
                 <figure class="c-container c-serie1_img{{ $i }}" data-parallaxe="img" data-speed="{{ .speed }}">
-                  <span class="o-img_link a" data-serie="openImg" data-src="{{ .image }}" data-name="{{ .name }}"><img class="o-img js-prlx-img" src="{{ .image }}" alt="{{ i18n "galleryPhotoTitle" }}{{ .name }}"></span>
+                  <span class="o-img_link a" data-serie="openImg" data-src="{{ .image }}" data-name="{{ .name }}"><img class="o-img js-prlx-img" src="{{ .image }}" alt="{{ i18n "galleryPhotoTitle" }}{{ .name }} ({{ $.Name }})"></span>
                   <figcaption class="c-serie_def">{{ .name }}</figcaption>
                 </figure>
     
