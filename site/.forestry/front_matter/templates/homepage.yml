@@ -31,7 +31,7 @@ fields:
     config:
       required: false
     label: Titre de la photo
-    description: Ajouter le titre de la photo
+    description: 'Non visible : utilisé pour le SEO'
   - name: image
     type: file
     config:
