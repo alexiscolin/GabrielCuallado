@@ -68,15 +68,17 @@ const website = website || {};
               'background-color: transparent',
             ].join(';');
         
-            var msg = '\n\n %c DE JAUNE ET DE BLEU %c code | https://www.jaunebleu.co %c \n';
-            var msgBold = '\n %c BOLK %c design | https://www.bolk.studio %c \n\n\n';
+            var msg = '\n %c DE JAUNE ET DE BLEU %c code | https://www.jaunebleu.co %c \n\n\n';
+            var msgBold = '\n\n %c BOLK %c design | https://www.bolk.studio %c \n';
         
-            console.log(msg, dark, white, spacer);
             console.log(msgBold, darkBold, whiteBold, spacer);
+            console.log(msg, dark, white, spacer);
+
 
         } else if (window.console) {
             console.log('Design by BOLK - https://www.bolk.studio');
             console.log('Code by DE JAUNE ET DE BLEU - https://www.jaunebleu.co');
+
         }      
     }
   

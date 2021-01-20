@@ -46621,10 +46621,10 @@ var website = website || {};
       var white = ['padding: 20px 5px 16px', 'background-color: #FFFFFF', 'color: #000000'].join(';');
       var whiteBold = ['padding: 20px 5px 16px', 'background-color: #000000', 'color: #FFFFFF'].join(';');
       var spacer = ['background-color: transparent'].join(';');
-      var msg = '\n\n %c DE JAUNE ET DE BLEU %c code | https://www.jaunebleu.co %c \n';
-      var msgBold = '\n %c BOLK %c design | https://www.bolk.studio %c \n\n\n';
-      console.log(msg, dark, white, spacer);
+      var msg = '\n %c DE JAUNE ET DE BLEU %c code | https://www.jaunebleu.co %c \n\n\n';
+      var msgBold = '\n\n %c BOLK %c design | https://www.bolk.studio %c \n';
       console.log(msgBold, darkBold, whiteBold, spacer);
+      console.log(msg, dark, white, spacer);
     } else if (window.console) {
       console.log('Design by BOLK - https://www.bolk.studio');
       console.log('Code by DE JAUNE ET DE BLEU - https://www.jaunebleu.co');
@@ -46671,7 +46671,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55409" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58548" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
