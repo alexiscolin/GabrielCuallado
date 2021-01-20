@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}" class="notranslate">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}</title>
-
-    <meta name="description" content="{{ if .Params.meta_description }}{{ .Params.meta_description }}{{ end }}" />
-    {{ if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords ", " }}">{{ else if .Params.meta.keywords }}<meta name="keywords" content="{{ delimit .Params.meta.keywords ", " }}">{{ end }}
-
-    {{ range .Translations }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .URL | absURL}}">
-    {{ end}}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .URL | absURL}}">
-    <link rel="canonical" href="{{ .URL | absURL }}">
+    {{ block "meta" . }}{{ end }}
 
     {{ $assets := .Site.Data.assets }}
     {{ with $assets.css }}
     <link href="{{ relURL . }}" rel="stylesheet" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-
+    {{ end }}
     <!-- <link rel="preload" url="/Morganite-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" url="/Morganite-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" url="/Morganite-Black.woff2" as="font" type="font/woff2" crossorigin> -->
-    {{ end }}
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}">
-    <meta property="og:title" content="{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}">
-    <meta property="og:description" content="{{ if .Params.meta_description }}{{ .Params.meta_description }}{{ end }}">
-    <meta property="og:url" content="{{ .URL | absURL }}">
-    <meta property="og:image" content="https://res.cloudinary.com/dgzqhksfz/image/upload/v1611074302/Gabriel-Cuallado-official-website_c0lvct.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="pinterest" content="nohover">
+
   </head>
   <body data-barba="wrapper" data-module-load>
     <div data-barba="container" data-barba-namespace="{{ .Params.namespace }}">

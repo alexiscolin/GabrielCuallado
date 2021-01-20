@@ -10,6 +10,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         weight = 1
         contentDir = "content/english"
         languageName = "English"
+        personTitle = "Gabriel Cuallado"
+        personDescription = "Gabriel Cualladó is a Spanish photographer, part of the AFAL group, first winner of the National Photography Prize, widely represented in the collections of the IVAM and other international museums."
+        siteTitle = "Official website of Gabriel Cuallado"
+        siteDescription = "The official website of the award-winning Spanish photographer Gabriel Cuallado, created by the photographer's rights holders to ensure the conservation and representation of his work."
 
         [languages.en.menu]
             [[languages.en.menu.main]]
@@ -127,6 +131,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         weight = 2
         contentDir = "content/spanish"
         languageName = "Español"
+        personTitle = "Gabriel Cuallado"
+        personDescription = "Gabriel Cualladó es un fotógrafo español del grupo AFAL, primer ganador del Premio Nacional de Fotografía, ampliamente representado en las colecciones del IVAM y otros museos."
+        siteTitle = "Página web oficial de Gabriel Cuallado"
+        siteDescription = "La página web oficial del premiado fotógrafo español Gabriel Cuallado, creado por los titulares de los derechos del fotógrafo para garantizar la conservación y representación de su obra."
+
         [languages.es.menu]
             [[languages.es.menu.main]]
                 identifier = "About"
@@ -246,6 +255,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         weight = 3
         contentDir = "content/french"
         languageName = "Français"
+        personTitle = "Gabriel Cuallado"
+        personDescription = "Gabriel Cualladó est un photographe espagnol du groupe AFAL, premier lauréat du Prix National de la Photographie, présent dans les collections de plusieurs musées internationaux dont l’IVAM."
+        siteTitle = "Site officiel de Gabriel Cuallado"
+        siteDescription = "Le site officiel du photographe espagnol primé Gabriel Cuallado, créé par les ayants-droits du photographe pour assurer la conservation et la représentation de son œuvre."
+
         [languages.fr.menu]
             [[languages.fr.menu.main]]
                 identifier = "About"
