@@ -42,10 +42,10 @@
             {{ end }}
 
 
-                <div class="c-container c-serie1_img{{ $i }}" data-parallaxe="img" data-speed="{{ .speed }}">
-                  <span class="o-img_link a" data-serie="openImg" data-src="{{ .image }}" data-name="{{ .name }}"><img class="o-img js-prlx-img" src="{{ .image }}" ></span>
-                  <span class="c-serie_def">{{ .name }}</span class="c-serie_def">
-                </div>
+                <figure class="c-container c-serie1_img{{ $i }}" data-parallaxe="img" data-speed="{{ .speed }}">
+                  <span class="o-img_link a" data-serie="openImg" data-src="{{ .image }}" data-name="{{ .name }}"><img class="o-img js-prlx-img" src="{{ .image }}" alt="{{ i18n "galleryPhotoTitle" }}{{ .name }}"></span>
+                  <figcaption class="c-serie_def">{{ .name }}</figcaption>
+                </figure>
     
             {{/* only for last item */}}
             {{ if eq (sub $len 1) $i }}

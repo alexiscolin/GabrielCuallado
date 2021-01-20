@@ -22,10 +22,10 @@
         {{ partial "header.html" .}}
       {{ end }}
       
-      <div class="o-wrapper">
-          {{ block "main" . }}{{ end }}
-          <!-- <canvas id="app"></canvas> -->
-      </div>
+
+      <main aria-role="main" class="o-wrapper">
+        {{ block "main" . }}{{ end }}
+      </main>
       
     </div>
     <svg class="cursor" width="140" height="140" viewBox="0 0 140 140" data-module-cursor="main">
