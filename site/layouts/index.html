@@ -1,4 +1,8 @@
-
+{{ define "meta" }}
+  {{ partial "meta.html" . }}
+  {{ partial "jsonld" (dict "context" . "content" "schema/schema-person.html") }} {{/* hack for HUGO & JSONDLD -> safeJS doesnt work : https://discourse.gohugo.io/t/hugo-0-55-breaks-structured-data-rendering/18316 */}}
+  {{ partial "jsonld" (dict "context" . "content" "schema/schema-website.html") }}
+{{ end }}
 
 {{ define "main" }}
     <div aria-role="main" data-module-homepage="main" class="c-main">
