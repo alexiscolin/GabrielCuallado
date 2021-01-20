@@ -32,16 +32,16 @@ fields:
       required: false
     label: Titre de la photo
     description: Ajouter le titre de la photo
-  - name: photo
+  - name: image
     type: file
     config:
       maxSize: 64
-    label: Photo
+    label: Image
   config:
     min: 
     max: 
     labelField: 
-  label: Slider de photos
+  label: photo
 pages:
 - site/content/english/_index.en.md
 - site/content/french/_index.fr.md
