@@ -1,5 +1,5 @@
 +++
-keywords = []
+keywords = ["Gabriel Cualladó", "IVAM", "Spanish photographer", "AFAL", "Spanish National Photography award"]
 meta_description = "Official website of Gabriel Cualladó, Spanish photographer, part of the AFAL group, first winner of the National Photography Prize, widely represented in the collections of the IVAM and other international museums."
 meta_title = "Gabriel Cuallado ︱Photographer"
 namespace = "homepage"
