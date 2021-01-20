@@ -23,7 +23,7 @@ fields:
     required: false
   label: namespace
   hidden: true
-- name: slider
+- name: slider_photo
   type: field_group_list
   fields:
   - name: photo_title
@@ -41,7 +41,7 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Slider
+  label: Slider de photos
 pages:
 - site/content/english/_index.en.md
 - site/content/french/_index.fr.md
