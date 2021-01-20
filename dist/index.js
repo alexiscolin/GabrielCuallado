@@ -46626,8 +46626,8 @@ var website = website || {};
       console.log(msg, dark, white, spacer);
       console.log(msgBold, darkBold, whiteBold, spacer);
     } else if (window.console) {
-      console.log('Code by DE JAUNE ET DE BLEU - https://www.jaunebleu.co');
       console.log('Design by BOLK - https://www.bolk.studio');
+      console.log('Code by DE JAUNE ET DE BLEU - https://www.jaunebleu.co');
     }
   };
 })(website);
