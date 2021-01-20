@@ -10,10 +10,9 @@
         <div class="c-loader__container">
 			<div class="c-main_pic" data-parallaxe="img" data-speed="0">
 				{{/* test iteration sur gallery -> marche pas -> type ?? */}}
-				{{ $paginator := .Paginate (where .Data.Pages "Type" "gallery") }}
+				{{/*  {{ $paginator := .Paginate (where .Data.Pages "Type" "gallery") }}
 				{{ range $paginator.Pages }}
-					
-				{{ end }}
+				{{ end }} */}}
 
 				{{ range .Params.slider }}
 					<img class="c-main_pic_img c-slider_img js-hp-img js-prlx-img" src="{{ . }}" alt="Gabriel Cuallado background">
@@ -26,10 +25,10 @@
 				</div>
 				<div class="c-main_title">
 					<span class="o-cuallado c-main_cuallado c-loader_title" id="js-loader-title">GABRIEL CUALLADO</span>
-					<span class="o-cuallado c-main_cuallado--outlined c-loader_title" id="js-loader-title-out">GABRIEL CUALLADO</span>	
+					<h1 class="o-cuallado c-main_cuallado--outlined c-loader_title" id="js-loader-title-out">GABRIEL CUALLADO</h1>	
 					<span class="o-cuallado o-cuallado--rel o-cuallado--invisible">GABRIEL CUALLADO</span>	
 				</div>
-				<div class="o-job js-loader-infos">Photographer</div>
+				<h1 class="o-job js-loader-infos">Photographer</h1>
 				<div class="c-loader__slider" id="js-loader-slider"></div>
 			</div>
         </div>
