@@ -1,12 +1,3 @@
 ########
 # REDIRECTIONS  -> SEE NETLIFY.TOML FILE
 ########
-
-
-########
-# 404 DEFAULT EN/FR (toujours à la fin -> cascade pour dernier appel)
-########
-
-/fr/*     /fr/404/     404
-/es/*     /es/404/     404
-/*     /404/     404
