@@ -80,7 +80,7 @@ fields:
   config:
     required: false
   description: 'Invisible : utile au SEO'
-  label: Légende de la photo d'intro
+  label: Légende de l'image d'introduction
 - name: content
   type: blocks
   label: Contenu
