@@ -14,8 +14,9 @@
 				{{ range $paginator.Pages }}
 				{{ end }} */}}
 
-				{{ range .Params.slider }}
-					<img class="c-main_pic_img c-slider_img js-hp-img js-prlx-img" src="{{ . }}" alt="Gabriel Cuallado background">
+				{{ range $i, $v := .Params.slider_photo }}
+					<img class="c-main_pic_img c-slider_img js-hp-img js-prlx-img" src="{{ .image }}" alt="{{ i18n "sliderTitle" }}{{ .photo_title }}">
+
 				{{ end }}
 			</div>
 

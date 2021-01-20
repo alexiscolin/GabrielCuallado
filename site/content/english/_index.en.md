@@ -3,7 +3,6 @@ keywords = ["Gabriel Cualladó", "IVAM", "Spanish photographer", "AFAL", "Spanis
 meta_description = "Official website of Gabriel Cualladó, Spanish photographer, part of the AFAL group, first winner of the National Photography Prize, widely represented in the collections of the IVAM and other international museums."
 meta_title = "Gabriel Cuallado ︱Photographer"
 namespace = "homepage"
-slider = ["", "", "", "", "", "", ""]
 
 [[slider_photo]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622189/F0191-AUTORRETRATO_xyksum.jpg"
