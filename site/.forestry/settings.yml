@@ -84,7 +84,7 @@ sections:
   label: "English \U0001F1EC\U0001F1E7"
 - type: document
   path: site/content/english/_index.en.md
-  label: Hompage
+  label: Homepage
 - type: directory
   path: site/content/english/gallery
   label: Gallery
