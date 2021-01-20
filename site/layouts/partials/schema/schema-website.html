@@ -1,7 +1,8 @@
+{{ $url := urls.Parse (.URL | absLangURL)  }}
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "@id": "{{ .URL | absLangURL | safeJS}}",
+  "@id": "{{ $url.Scheme }}://official.{{ $url.Host }}{{ $url.Path }}",
 	"name": "{{ .context.Site.Params.siteTitle}}",
   "description": "{{ .context.Site.Params.siteDescription}}",
   "url": "{{ .URL | absLangURL }}",

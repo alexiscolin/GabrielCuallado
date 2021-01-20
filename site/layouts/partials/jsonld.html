@@ -1,3 +1,7 @@
 <script type="application/ld+json">
-    {{ partial .content . }}
+    {{ if eq (getenv "NODE_ENV") "production" }}
+    {{ partial .content .  }}
+    {{ else}}
+    {{ partial .content . | safeJS }}
+    {{end }}
 </script>
