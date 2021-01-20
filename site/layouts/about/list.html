@@ -17,9 +17,9 @@
       <section class="o-section o-section_content js-section" data-scroll-section>
 
         <div class="c-container c-about_img c-about_img--intro">
-          {{ with .Params.introImage }}
+          {{ if .Params.introImage }}
           <div class="c-serie_container" data-parallaxe="img" data-speed="-.15">
-            <img class="o-img c-about_img_img js-prlx-img" src="{{ . }}">
+            <img class="o-img c-about_img_img js-prlx-img" src="{{ .Params.introImage }}" alt="{{ .Params.intro_photo_name }}">
           </div>
           {{ end }}
         </div>
@@ -40,7 +40,7 @@
               {{ $top := .top}}
               <div class="c-container c-timeline_section c-about_txt">
                 <div class="c-about_txt_titles" data-parallaxe="text">
-                  {{ with .title }}<h1 class="o-text o-title">{{ . }}</h1>{{ end }}
+                  {{ with .title }}<h2 class="o-text o-title">{{ . }}</h2>{{ end }}
                   {{ with .subtitle }}<h2 class="o-text o-subtitle">{{ . }}</h2>{{ end }}
                 </div>
 
@@ -64,16 +64,16 @@
             <div class="c-container c-timeline_section" >
               {{ with .image }}
               <div class="c-serie_container c-about_img" data-parallaxe="img" data-speed="-.15" style="{{ if ne $top "0" }}margin-top: {{ $top }}vh;{{ end }}{{ with $left }}margin-left: {{ . }}vw{{ end }}">
-                <img class="o-img c-about_img--alone js-prlx-img" src="{{ . }}">
+                <img class="o-img c-about_img--alone js-prlx-img" src="{{ . }}" alt="">
               </div>
               {{ end }}
               <div class="c-timeline_section_line"></div>
 
               {{ if eq .citation true}}
-              <div class="c-quote c-quote_about" data-parallaxe="text">
-                <span class="c-quote_cite">{{ .citation_text }}</span>
-                <span class="c-quote_author">{{ .citation_author }}</span>
-              </div>
+              <figure class="c-quote c-quote_about" data-parallaxe="text">
+                <blockquote><p class="c-quote_cite">{{ .citation_text }}</p></blockquote>
+                <figcaption class="c-quote_author">{{ .citation_author }}</figcaption>
+              </figure>
               {{ end }}
             </div>
             
@@ -84,7 +84,7 @@
             <div class="c-container  c-timeline_section" >
               {{ with .image }}
               <div class="c-serie_container c-about_link" data-parallaxe="img" data-speed="-.15" style="{{ if ne $top "0" }}margin-top: {{ $top }}vh;{{ end }}{{ with $left }}margin-left: {{ . }}vw{{ end }}">
-                <img class="o-img js-prlx-img" src="{{ . }}">
+                <img class="o-img js-prlx-img" src="{{ . }}" alt="">
               </div>
               {{ end }}
               <div class="c-timeline_section_line"></div>

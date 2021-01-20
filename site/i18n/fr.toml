@@ -17,7 +17,13 @@ other = "Accueil"
 other = "Langage"
 
 [sliderTitle]
-other = "Photographie en noir et blanc populaire de Gabriel Cualladó intitulée"
+other = "Photo populaire du photographe espagnol Gabriel Cualladó, intitulée"
 
 [galleryPhotoTitle]
-other = "Photo en noir et blanc de Gabriel Cuallado intitulée "
+other = "Photo en noir et blanc de Gabriel Cuallado, intitulée "
+
+[exhibitionIndAlt]
+other = "Photo d'une exposition individuelle de l'oeuvre de Gabriel Cualladó, intitulée"
+
+[exhibitionColAlt]
+other = "Photo d'une exposition collective de l'oeuvre de Gabriel Cualladó, intitulée"

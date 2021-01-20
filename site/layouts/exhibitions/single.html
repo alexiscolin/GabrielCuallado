@@ -17,20 +17,20 @@
     {{ range .Params.exhibition  }}
     <article class="o-section c-timeline js-section" data-scroll-section>
       <a class="c-timeline_link" href="{{ .link }}">
-        <div class="c-timeline_section">
+        <figure class="c-timeline_section">
 
           <div class="c-timeline_section_line"></div>
 
           <div class="c-timeline_date" data-parallaxe="text">{{ with .date}}{{ dateFormat "2006" . }}{{ end }}</div>
           <div class="c-timeline_point"></div>
           <div class="c-timeline_name" data-parallaxe="text">
-            <span class="u-link">{{ .name }}</span>
+            <figcaption><h2 class="u-link">{{ .name }}</h2></figcaption>
             <div class="c-timeline_name_place">{{ .place }}</div>
           </div>
-          <div class="c-timeline_img" data-parallaxe="img" data-speed="-.15">
-            <img class="js-prlx-img" src="{{ .illustration }}" >
+          <div class="c-timeline_img" data-parallaxe="img" data-speed="-.15" >
+            <img class="js-prlx-img" src="{{ .illustration }}" alt="{{ if eq $.TranslationKey "page/exhibitions-collective" }}{{ i18n "exhibitionColAlt" }}{{ else }}{{ i18n "exhibitionIndAlt" }} {{ end }} {{ .name }}">
           </div>
-        </div>
+        </figure>
       </a>
     </article>
     {{ end }}

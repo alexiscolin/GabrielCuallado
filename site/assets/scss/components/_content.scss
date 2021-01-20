@@ -476,6 +476,7 @@
         @include font-weight(bold);
         text-transform: uppercase;
         letter-spacing: 2px;
+        margin: 0;
         z-index: 2;
         font-style: italic;
 
@@ -495,7 +496,7 @@
             @include font-weight(light);
 
             @include media( '>medium' ) {
-                margin: 0;
+                margin: 0 0 1rem;
             }
         }
     }
