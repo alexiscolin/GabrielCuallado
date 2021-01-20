@@ -4,6 +4,21 @@ title = "Gabriel Cuallado"
 enableGitInfo = true
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
+[mediaTypes."text/netlify"]
+delimiter = ""
+suffixes = [""]
+[outputFormats.HEADERS]
+baseName = "_headers"
+isPlainText = true
+mediatype = "text/netlify"
+notAlternative = true
+[outputFormats.REDIR]
+baseName = "_redirects"
+isPlainText = true
+mediatype = "text/netlify"
+notAlternative = true
+[outputs]
+home = ["HTML", "REDIR", "HEADERS"]
 
 [languages]
     [languages.en]
