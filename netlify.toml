@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/fr/galerie"
+  to = "/fr/galerie/cotid/"
+  status = 301
+  force = true

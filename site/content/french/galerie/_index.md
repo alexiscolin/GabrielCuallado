@@ -1,6 +1,6 @@
 +++
 headless = true
-url = "/fr/galerie"
+url = "/fr/galerie/"
 layout = "empty"
 robots = "noindex"
 +++
