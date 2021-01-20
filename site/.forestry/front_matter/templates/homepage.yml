@@ -17,17 +17,31 @@ fields:
   default: []
   label: Keywords
   description: Jusqu'à 10 mots-clefs supplémentaires pour référencer la page
-- name: slider
-  type: image_gallery
-  config: {}
-  label: Slider
-  description: Image à mettre dans le slider
 - name: namespace
   type: text
   config:
     required: false
   label: namespace
   hidden: true
+- name: slider
+  type: field_group_list
+  fields:
+  - name: photo_title
+    type: text
+    config:
+      required: false
+    label: Titre de la photo
+    description: Ajouter le titre de la photo
+  - name: photo
+    type: file
+    config:
+      maxSize: 64
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Slider
 pages:
 - site/content/english/_index.en.md
 - site/content/french/_index.fr.md
