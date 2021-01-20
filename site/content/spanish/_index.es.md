@@ -8,7 +8,7 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 photo_title = " Self-portrait"
 [[slider_photo]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0362-HOMBRE-CON-CARA-EN-LA-SOMBRA_jt5xkq.jpg"
-photo_title = " Self-portrait"
+photo_title = "Hombre con cara en la sombra"
 [[slider_photo]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0369-ANARQUIA_wkkctm.jpg"
 photo_title = " Self-portrait"

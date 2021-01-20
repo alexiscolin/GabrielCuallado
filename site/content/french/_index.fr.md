@@ -3,13 +3,12 @@ keywords = ["Gabriel Cualladó", "IVAM", "Photographe espagnol", "AFAL", "Prix N
 meta_description = "Site officiel de Gabriel Cualladó, photographe espagnol du groupe AFAL, premier lauréat du Prix National de la Photographie, présent dans les collections de plusieurs musées internationaux dont l’IVAM."
 meta_title = "Gabriel Cuallado ︱Photographe"
 namespace = "homepage"
-
 [[slider_photo]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622189/F0191-AUTORRETRATO_xyksum.jpg"
 photo_title = " Self-portrait"
 [[slider_photo]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0362-HOMBRE-CON-CARA-EN-LA-SOMBRA_jt5xkq.jpg"
-photo_title = " Self-portrait"
+photo_title = "Homme avec visage dans l'ombre"
 [[slider_photo]]
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0369-ANARQUIA_wkkctm.jpg"
 photo_title = " Self-portrait"
