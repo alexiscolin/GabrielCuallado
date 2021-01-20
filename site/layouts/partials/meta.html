@@ -5,7 +5,7 @@
 {{ .Hugo.Generator }}
 
 <!-- Description -->
-<title>{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+<title>{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ if not .IsHome }} | {{ .Site.Title }}, {{ i18n "official"}}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .Params.meta_description }}{{ .Params.meta_description }}{{ end }}" />
 {{ if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords ", " }}">{{ else if .Params.meta.keywords }}<meta name="keywords" content="{{ delimit .Params.meta.keywords ", " }}">{{ end }}
 
