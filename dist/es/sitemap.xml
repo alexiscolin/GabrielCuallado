@@ -3,7 +3,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/galeria/cotid/</loc>
+      <loc>http://localhost:1313/es/galeria/cotid/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -13,7 +13,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/exposiciones/individual/</loc>
+      <loc>http://localhost:1313/es/exposiciones/individual/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -23,7 +23,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/exposiciones/colectivo/</loc>
+      <loc>http://localhost:1313/es/exposiciones/colectivo/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -33,7 +33,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/galeria/madrid/</loc>
+      <loc>http://localhost:1313/es/galeria/madrid/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -43,7 +43,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/galeria/el-rastro/</loc>
+      <loc>http://localhost:1313/es/galeria/el-rastro/</loc>
       
       <lastmod>2021-01-18</lastmod>
       
@@ -53,7 +53,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/galeria/familia/</loc>
+      <loc>http://localhost:1313/es/galeria/familia/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -63,7 +63,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/galeria/paris/</loc>
+      <loc>http://localhost:1313/es/galeria/paris/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -73,7 +73,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/galeria/asturias/</loc>
+      <loc>http://localhost:1313/es/galeria/asturias/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -83,7 +83,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/</loc>
+      <loc>http://localhost:1313/es/</loc>
       
       <lastmod>2021-01-20</lastmod>
       
@@ -97,7 +97,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/acerca/</loc>
+      <loc>http://localhost:1313/es/acerca/</loc>
       
       <lastmod>2021-01-20</lastmod>
       
@@ -107,7 +107,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/acerca/coleccionistas/</loc>
+      <loc>http://localhost:1313/es/acerca/coleccionistas/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -117,7 +117,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/acerca/premios/</loc>
+      <loc>http://localhost:1313/es/acerca/premios/</loc>
       
       <lastmod>2021-01-19</lastmod>
       
@@ -127,7 +127,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/acerca/prensa/</loc>
+      <loc>http://localhost:1313/es/acerca/prensa/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
@@ -137,7 +137,7 @@
     
     
     <url>
-      <loc>https://gabriel-cuallado.com/es/acerca/publicaciones/</loc>
+      <loc>http://localhost:1313/es/acerca/publicaciones/</loc>
       
       <lastmod>2021-01-15</lastmod>
       
