@@ -3,3 +3,29 @@
   to = "/fr/galerie/cotid/"
   status = 301
   force = true
+[[redirects]]
+  from = "/es/galeria"
+  to = "/es/galeria/cotid/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/gallery"
+  to = "/gallery/cotid/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/expositions"
+  to = "/fr/expositions/individuelle/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/es/exposiciones"
+  to = "/es/exposiciones/individual/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/exhibitions"
+  to = "/exhibitions/individual/"
+  status = 301
+  force = true

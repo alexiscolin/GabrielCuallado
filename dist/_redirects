@@ -1,15 +1,7 @@
 ########
-# REDIRECTIONS 
+# REDIRECTIONS  -> SEE NETLIFY.TOML FILE
 ########
 
-/fr/galerie/    /fr/galerie/cotid/    301
-/es/galeria/    /es/galeria/cotid/     301
-/gallery/     /gallery/cotid/      301
-
-
-/fr/expositions/     /fr/expositions/individuelle/      301
-/es/exposiciones/     /es/exposiciones/individual/      301
-/exhibitions/     /exhibitions/individual/      301
 
 ########
 # 404 DEFAULT EN/FR (toujours à la fin -> cascade pour dernier appel)
