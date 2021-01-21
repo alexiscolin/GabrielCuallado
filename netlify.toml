@@ -1,3 +1,6 @@
+#########
+## REDIRECTIONS
+#########
 [[redirects]]
   from = "/fr/galerie"
   to = "/fr/galerie/cotid/"
@@ -29,3 +32,14 @@
   to = "/exhibitions/individual/"
   status = 301
   force = true
+
+#########
+## CONFIG
+#########
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[context.staging]
+    command = "npm run stage"
+    publish = "stage"

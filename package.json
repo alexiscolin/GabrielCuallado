@@ -6,10 +6,12 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "run-s clean build:parcel build:hugo",
+    "stage": "run-s clean build:parcel stage:hugo",
     "start": "run-s clean dev",
     "dev": "run-p dev:**",
     "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F",
     "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/index.js --no-cache",
+    "stage:hugo": "cross-env NODE_ENV=production hugo -d ../stage -s site -b https://staging.gabriel-cuallado.com --gc",
     "build:hugo": "cross-env NODE_ENV=production hugo -d ../dist -s site --gc",
     "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/index.js --experimental-scope-hoisting  --no-cache"
   },
