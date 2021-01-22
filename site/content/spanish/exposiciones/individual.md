@@ -84,7 +84,7 @@ place = "Bilbao, España"
 date = "1985-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/Museo_Reina_Sofia_Cuallado_izpohy.jpg"
 link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
-name = "\"Exposición antológica (150 imágenes)\", Museo Reina Sofía"
+name = "\"Exposición antológica (150 imágenes)\", Museo Nacional Centro de Arte Reina Sofía"
 place = "Madrid, España"
 [[exhibition]]
 date = "1984-11-30T23:00:00+00:00"
