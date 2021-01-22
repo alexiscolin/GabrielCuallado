@@ -1,5 +1,6 @@
 +++
 Title = "collective"
+keywords = []
 layout = ""
 menu = ["exhibitions"]
 meta_description = "Expositions collectives de Gabriel Cuallado."
@@ -19,7 +20,7 @@ place = "Valladolid, Espagne"
 date = "2018-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/Museo_Reina_Sofia_Afal_ml3h9s.jpg"
 link = "https://www.museoreinasofia.es/en/exhibitions/approach-afal"
-name = "“Une approximation” par l’AFAL Donations Autric-Tamayo Musée National d’Art Contemporain Reina Sofia"
+name = "Une Aproximation par l`AFAL Donation Autric Tamayo, Musée National Centre d`Art Reina Sofia"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "2017-11-30T23:00:00+00:00"
