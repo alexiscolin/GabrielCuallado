@@ -1,7 +1,8 @@
 +++
 Title = "collective"
+keywords = []
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = " Exposiciónes colectivas de Gabriel Cualladó."
 meta_title = " Exposiciónes colectivas"
 namespace = "exhibitions"
@@ -20,15 +21,15 @@ type = "individual"
 date = "2018-01-31T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/Museo_Reina_Sofia_Afal_ml3h9s.jpg"
 link = "https://www.museoreinasofia.es/en/exhibitions/approach-afal"
-name = "“Una aproximación” del AFAL, Autric-Tamayo, Museo Nacional de Arte Contemporaneo Reina Sofia"
+name = "Una aproximación a AFAL. Donación Autric Tamayo, Museo Nacional Centro de Arte Reina Sofia"
 place = "Madrid, Espagne"
 type = "individual"
 [[exhibition]]
 date = "2017-01-31T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/Colectania_Fenomeno_Libro_foto_Cuallado_yr696p.jpg"
 link = "https://elpais.com/ccaa/2017/03/29/catalunya/1490811347_069447.html"
-name = "Fenómeno fotolibro (con Alvarez Bravo y Cartier Bresson Colectania) Museo de Bellas Artes de Bilbao"
-place = "Bilbao, España"
+name = "Fenómeno fotolibro CCCB y Fundació Foto Colectania (Con Álvarez Bravo  Cartier Bresson y Cuallado)"
+place = "Barcelona, España"
 type = "individual"
 [[exhibition]]
 date = "2014-01-31T23:00:00+00:00"
@@ -47,7 +48,7 @@ place = "Sevilla, España"
 date = "1992-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/New_York_Cuallado_jq2fc3.jpg"
 link = ""
-name = "The Spanish Vision, Contemporary Art Photography 1970-1990"
+name = "\"The Spanish Vision\", Contemporary Art Photography 1970-1990, The Spanish Institute Nueva York"
 place = "Nueva York, Estados Unidos"
 [[exhibition]]
 date = "1991-11-30T23:00:00+00:00"

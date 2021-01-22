@@ -1,5 +1,6 @@
 +++
 Title = "collective"
+keywords = []
 layout = ""
 menu = ["exhibitions"]
 meta_description = "Expositions collectives de Gabriel Cuallado."
@@ -19,19 +20,19 @@ place = "Valladolid, Espagne"
 date = "2018-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/Museo_Reina_Sofia_Afal_ml3h9s.jpg"
 link = "https://www.museoreinasofia.es/en/exhibitions/approach-afal"
-name = "“Une approximation” par l’AFAL Donations Autric-Tamayo Musée National d’Art Contemporain Reina Sofia"
+name = "Une Aproximation par l`AFAL Donation Autric Tamayo, Musée National Centre d`Art Reina Sofia"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "2017-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/Colectania_Fenomeno_Libro_foto_Cuallado_yr696p.jpg"
 link = "https://elpais.com/ccaa/2017/03/29/catalunya/1490811347_069447.html"
-name = "“Phénomène livre-photo” par CCCB et Fundació Foto Colectania (comprenant les photos de Cartier Bresson, Alvarez Bravo e Cuallado)"
-place = "Bilbao, Espagne"
+name = "\"Phénomène Livre Photo\" par CCCB et Fundació Foto Colectania comprenant les photos de Cartier Bresson, Álvarez Bravo et Cuallado"
+place = "Barcelone, Espagne"
 [[exhibition]]
 date = "2014-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspan%CC%83a_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
 link = ""
-name = "PhotoEspaña “La Palangana\" Circuit des Beaux Arts"
+name = "Photoespaña \"La Palangana\", Circulo De Bellas Artes"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "2006-11-30T23:00:00+00:00"
@@ -44,7 +45,7 @@ date = "1992-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/New_York_Cuallado_jq2fc3.jpg"
 link = ""
 name = "\"The Spanish Vision, Contemporary Art Photography 1970-1990\""
-place = "New York, USA"
+place = "New York, États-Unis"
 [[exhibition]]
 date = "1991-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/4_Direcciones_fotografi%CC%81a_espan%CC%83ola_contempora%CC%81nea_MNCARS_Cuallado_Reina_Sofia_lfiucu.jpg"
@@ -55,7 +56,7 @@ place = "Madrid, Espagne"
 date = "1985-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502180/Cuallado_Bellas_Artes_fg0l8v.jpg"
 link = ""
-name = "“Photographie actuelle en Espagne”, Circuit des Beaux Arts"
+name = "“Photographie actuelle en Espagne”, Circulo de Bellas Artes"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "1984-11-30T23:00:00+00:00"
