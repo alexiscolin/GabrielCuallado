@@ -25,7 +25,7 @@ place = "Madrid, Spain"
 date = "2017-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/Colectania_Fenomeno_Libro_foto_Cuallado_yr696p.jpg"
 link = "https://elpais.com/ccaa/2017/03/29/catalunya/1490811347_069447.html"
-name = "The photo-book phenomenon by CCCB and Fundació Foto Colectania (including photos of Cartier Bresson, Alvarez Bravo and Gabriel Cualladó)"
+name = "\"The photo-book phenomenon\" by CCCB and Fundació Foto Colectania (including photos of Cartier Bresson, Alvarez Bravo and Gabriel Cualladó)"
 place = "Barcelona, Spain"
 [[exhibition]]
 date = "2014-11-30T23:00:00+00:00"
