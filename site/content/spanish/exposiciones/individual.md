@@ -1,7 +1,8 @@
 +++
 Title = "Individual"
+keywords = []
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = " Exposiciónes individuales de Gabriel Cualladó."
 meta_title = " Exposiciónes individuales"
 namespace = "exhibitions"
@@ -27,7 +28,7 @@ type = "individual"
 date = "2018-01-31T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622720/EXHIBITIONS_INDIVIDUAL/Cuallado_Esencial_Canal_Isabel_II_yfinzp.jpg"
 link = "https://www.madridiario.es/453379/cuallado-esencial.-la-nueva-exposicion-del-canal-de-isabel-ii"
-name = "“Cualladó Esencial”, Canal Isabel II"
+name = "“Cualladó Esencial”, Comunidad de Madrid"
 place = "Madrid, España"
 type = "individual"
 [[exhibition]]
