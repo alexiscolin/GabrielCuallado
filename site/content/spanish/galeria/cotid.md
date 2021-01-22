@@ -1,5 +1,5 @@
 +++
-Title = "cotidiano"
+Title = "daily"
 keywords = []
 menu = ["serie"]
 meta_description = ""
