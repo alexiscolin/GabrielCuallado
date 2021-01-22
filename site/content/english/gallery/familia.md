@@ -1,11 +1,13 @@
 +++
 Title = "Family"
-menu = ["serie"]
+keywords = []
+menu = []
 meta_description = ""
 meta_title = "Family"
 namespace = "serie"
 section = "gallery"
 translationkey = "serie4"
+type = ""
 weight = 4
 [[photos]]
 date = "2020-06-01T22:00:00+00:00"
@@ -30,7 +32,7 @@ speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/FAMILIA/F0135-GABRIEL_CON_POTRANCO_itve83.jpg"
-name = "Gabriel with Potranco"
+name = "Gabriel with White Horse"
 speed = ".26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
