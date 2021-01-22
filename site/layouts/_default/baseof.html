@@ -49,5 +49,8 @@
     {{ with $assets.js }}
     <script src="{{ relURL .}}"></script>
     {{ end }}
+    {{ if eq (getenv "NODE_ENV") "stage"}}
+    <script>console.log("STAGING")</script>
+    {{ end }}
   </body>
 </html>
