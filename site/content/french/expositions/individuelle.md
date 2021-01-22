@@ -86,7 +86,7 @@ place = "Bilbao, Espagne"
 date = "1985-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/Museo_Reina_Sofia_Cuallado_izpohy.jpg"
 link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
-name = "\"Exposition antologique de 150 photographies\", Musée National Reina Sofía"
+name = "\"Exposition antologique de 150 photographies\", Musée Espagnol d'Art Contemporain"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "1984-11-30T23:00:00+00:00"
