@@ -1,5 +1,5 @@
 <script type="application/ld+json">
-    {{ if eq (getenv "NODE_ENV") "production" }}
+    {{ if (or (eq (getenv "NODE_ENV") "production") (eq (getenv "NODE_ENV") "stage")) }}
     {{ partial .content .  }}
     {{ else}}
     {{ partial .content . | safeJS }}

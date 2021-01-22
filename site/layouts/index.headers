@@ -15,9 +15,13 @@
 /gallery/index.html
   X-Robots-Tag: "noindex"
 
+{{ else if eq (getenv "NODE_ENV") "stage"}}
+
+/*
+  X-Robots-Tag: "noindex"
 
 {{ else }}
 
-    X-Robots-Tag: none
+    X-Robots-Tag: "noindex"
 
 {{ end }}
