@@ -48,7 +48,7 @@ place = "Sevilla, España"
 date = "1992-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/New_York_Cuallado_jq2fc3.jpg"
 link = ""
-name = "The Spanish Vision, Contemporary Art Photography 1970-1990"
+name = "\"The Spanish Vision\", Contemporary Art Photography 1970-1990, The Spanish Institute Nueva York"
 place = "Nueva York, Estados Unidos"
 [[exhibition]]
 date = "1991-11-30T23:00:00+00:00"
