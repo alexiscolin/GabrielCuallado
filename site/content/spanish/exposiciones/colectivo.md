@@ -21,7 +21,7 @@ type = "individual"
 date = "2018-01-31T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/Museo_Reina_Sofia_Afal_ml3h9s.jpg"
 link = "https://www.museoreinasofia.es/en/exhibitions/approach-afal"
-name = "Una aproximación a AFAL. Donación Autric Tamayo Museo Nacional Centro de Arte Reina Sofia"
+name = "Una aproximación a AFAL. Donación Autric Tamayo, Museo Nacional Centro de Arte Reina Sofia"
 place = "Madrid, Espagne"
 type = "individual"
 [[exhibition]]
