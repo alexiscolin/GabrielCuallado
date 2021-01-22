@@ -1,7 +1,8 @@
 +++
 Title = "Individual"
+keywords = []
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = "Gabriel Cuallado's individual exhibitions."
 meta_title = "Individual exhibitions"
 namespace = "exhibitions"
@@ -13,7 +14,7 @@ weight = 1
 date = "2019-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622720/EXHIBITIONS_INDIVIDUAL/Cuallado_Esencial_La_Pedrera_seppxl.jpg"
 link = ""
-name = "“Cuallado Essential”, La Pedrera"
+name = "\"Cuallado Esencial\", La Pedrera"
 place = "Barcelona, Spain"
 [[exhibition]]
 date = "2019-11-30T23:00:00+00:00"
@@ -25,7 +26,7 @@ place = " Valencia, Spain"
 date = "2018-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622720/EXHIBITIONS_INDIVIDUAL/Cuallado_Esencial_Canal_Isabel_II_yfinzp.jpg"
 link = "https://www.madridiario.es/453379/cuallado-esencial.-la-nueva-exposicion-del-canal-de-isabel-ii"
-name = "“Cuallado Essential”, Canal Isabel II"
+name = "“Cuallado Esencial”, Comunidad de Madrid"
 place = "Madrid, Spain"
 [[exhibition]]
 date = "2017-11-30T23:00:00+00:00"
