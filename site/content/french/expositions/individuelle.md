@@ -26,7 +26,7 @@ place = "Valence, Espagne"
 date = "2018-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622720/EXHIBITIONS_INDIVIDUAL/Cuallado_Esencial_Canal_Isabel_II_yfinzp.jpg"
 link = "https://www.madridiario.es/453379/cuallado-esencial.-la-nueva-exposicion-del-canal-de-isabel-ii"
-name = "“Cuallado Essentiel”, Canal Isabel II"
+name = "“Cuallado Esencial”, Comunidad de Madrid"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "2017-11-30T23:00:00+00:00"
