@@ -1,7 +1,7 @@
 +++
 Title = "Family"
 keywords = []
-menu = []
+menu = ["serie"]
 meta_description = ""
 meta_title = "Family"
 namespace = "serie"
