@@ -32,7 +32,7 @@ place = "Barcelone, Espagne"
 date = "2014-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspan%CC%83a_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
 link = ""
-name = "PhotoEspaña “La Palangana\" Circuit des Beaux Arts"
+name = "Photoespaña \"La Palangana\", Circulo De Bellas Artes"
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "2006-11-30T23:00:00+00:00"
