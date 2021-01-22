@@ -1,5 +1,6 @@
 +++
-Title = "Cotid"
+Title = "daily"
+keywords = []
 menu = ["serie"]
 meta_description = ""
 meta_title = "Cotid"
@@ -7,6 +8,7 @@ namespace = "serie"
 section = "gallery"
 title = "cotid.md"
 translationkey = "serie1"
+type = ""
 weight = 1
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
