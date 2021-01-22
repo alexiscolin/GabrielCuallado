@@ -8,14 +8,16 @@
     {{ with $assets.css }}
     <link href="{{ relURL . }}" rel="stylesheet" />
     {{ end }}
-
-    <!-- <link rel="preload" url="/Morganite-Light.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" url="/Morganite-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" url="/Morganite-Black.woff2" as="font" type="font/woff2" crossorigin> -->
-
-
   </head>
   <body data-barba="wrapper" data-module-load>
+    <!-- Google Tag Manager (noscript) -->
+    {{ if eq (getenv "NODE_ENV") "production" }}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJL38CB&gtm_auth=1hVdQYb_ZUUZR2Wxs_i7VA&gtm_preview=env-1&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>    {{ else if eq (getenv "NODE_ENV") "stage"}}
+    {{ else if eq (getenv "NODE_ENV") "stage"}}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJL38CB&gtm_auth=t2MFuWLYbJWkQOLxsR_VxA&gtm_preview=env-16&gtm_cookies_win=x"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {{ end }}
+    <!-- End Google Tag Manager (noscript) -->
+
     <div data-barba="container" data-barba-namespace="{{ .Params.namespace }}">
      
       {{ block "header" . }}

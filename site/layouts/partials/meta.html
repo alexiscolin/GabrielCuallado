@@ -9,6 +9,23 @@
 <meta name="description" content="{{ if .Params.meta_description }}{{ .Params.meta_description }}{{ end }}" />
 {{ if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords ", " }}">{{ else if .Params.meta.keywords }}<meta name="keywords" content="{{ delimit .Params.meta.keywords ", " }}">{{ end }}
 
+<!-- Google Tag Manager -->
+{{ if eq (getenv "NODE_ENV") "production" }}
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=1hVdQYb_ZUUZR2Wxs_i7VA&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJL38CB');</script>
+{{ else if eq (getenv "NODE_ENV") "stage"}}
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=t2MFuWLYbJWkQOLxsR_VxA&gtm_preview=env-16&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJL38CB');</script>
+{{ end }}
+<!-- End Google Tag Manager -->
+
+  
 <!-- Gestion Langues page -->
 {{ range .Translations }}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .URL | absURL}}">
