@@ -55,7 +55,7 @@ place = "Madrid, Spain"
 date = "1985-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/Cuallado_Fotografia_Espanola_hoy_mixkui.jpg"
 link = ""
-name = "Photography today in Spain, Museum of Fine Arts"
+name = "Photography today in Spain, Circulo de Bellas Artes"
 place = "Madrid, Spain"
 [[exhibition]]
 date = "1984-11-30T23:00:00+00:00"
