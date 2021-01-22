@@ -2,26 +2,26 @@
 
 # desindexer pages fantomes:
 /fr/expositions/index.html
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 /es/exposiciones/index.html
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 /exhibitions/index.html
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 
 /fr/galerie/index.html
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 /es/galeria/index.html
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 /gallery/index.html
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 
 {{ else if eq (getenv "NODE_ENV") "stage"}}
 
 /*
-  X-Robots-Tag: "noindex"
+  X-Robots-Tag: noindex
 
 {{ else }}
 
-    X-Robots-Tag: "noindex"
+    X-Robots-Tag: noindex
 
 {{ end }}
