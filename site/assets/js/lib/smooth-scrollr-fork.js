@@ -10,7 +10,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
     this.DOM = {};
     this.config = {};
     this.move = {};
-    this.callback = false;
+    this.callback = [];
     this.scrollStatut = 'start';
   
     this.init(config, viewPortclass);
@@ -120,8 +120,8 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
                 }
             }
             // this.DOM.scroller.style.transform = this.enableSmoothScroll && !this.prevent && `translate3D(${this.config.direction === 'horizontal' ? moveTo : 0}px,${this.config.direction === 'vertical' ? moveTo : 0}px, 0)`;
-            if (typeof this.callback === "function") {
-                this.callback(moveTo, this.move.prev)
+            if (this.callback.length > 0) {
+                this.callback.forEach(fn => typeof fn === "function" && (fn(moveTo, this.move.prev, this.config.scrollMax)));
             }
   
             this.move.prev = Math.round(this.move.current);
@@ -355,7 +355,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             delay: config.delay || 0,
             touchSpeed: config.touchSpeed || 1.5,
             jump: config.jump || 110,
-            callback: config.callback || false,
+            callback: config.callback || [],
             touch: config.touch || false,
             fixedClass: viewPortclass || false,
             resize: config.resize || true,

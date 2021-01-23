@@ -35,7 +35,7 @@ export default class extends module {
             if (window.matchMedia("(min-width: 640px)").matches) {
 
                 const opts = {
-                    callback: this.parallax.bind(this),
+                    callback: [this.parallax.bind(this), this.scroller.bind(this)],
                     touch: false,
                     delay: .1,
                     direction: "horizontal",
@@ -43,7 +43,7 @@ export default class extends module {
                     section: this.el,
                     touchSpeed: 2,
                     jump: 120,
-                    initFuncs: [this.addElements.bind(this), this.parallax.bind(this, 1)],
+                    initFuncs: [this.addElements.bind(this), this.parallax.bind(this, .1,  0, 1)],
                     scrollFuncs: {
                         'startFunc': this.atStart.bind(this),
                         'runningFunc': this.atRun.bind(this),
@@ -52,7 +52,6 @@ export default class extends module {
                 };
 
                 this.scroll = new SmoothScroll(opts, 'fixedClass');
-                this.parallax(1);
             } else {
                 this.scroll = null;
             }
@@ -114,11 +113,16 @@ export default class extends module {
         this.$('scrollof').length > 0 && ([...this.$('scrollof')].forEach(el => el.style.display = "block"));
     }
 
-    parallax (moveTo, movePrev) {
+    // Scroll bar
+    scroller (moveTo, movePrev = 0, scrollMax = 0) {
+        const clip = ((Math.abs(moveTo) * 100) / scrollMax).toFixed(0);
+        gsap.to('.js-scroller', {clipPath: `polygon(${clip}% 0,100% 0%, 100% 100%, ${clip}% 100%)`})
+    }
+
+    parallax (moveTo, movePrev = 0, scrollMax = 0) {
         // scroll level / viewport
         const scrollLeft = Math.abs(moveTo);
         const scrollRight = scrollLeft + this.windowWidth;
-
 
         if (this.els.length > 0) {
             this.els.forEach((prlxEl) => {
