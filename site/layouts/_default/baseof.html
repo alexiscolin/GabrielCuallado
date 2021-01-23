@@ -29,6 +29,11 @@
       <main class="o-wrapper">
         {{ block "main" . }}{{ end }}
       </main>
+      {{ if not .IsHome }} 
+      <div class="o-scroller js-scroller">
+        <img src="/img/scroller.svg" alt="" class="o-scroller_img">
+      </div>
+      {{end}}
       
     </div>
     <svg class="cursor" width="140" height="140" viewBox="0 0 140 140" data-module-cursor="main">

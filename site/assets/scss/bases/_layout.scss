@@ -27,6 +27,23 @@ p, blockquote {
     margin: 0;
 }
 
+.o-scroller {
+    display: none;
+    @include media( '>medium' ) {
+        position: absolute;
+        display: block;
+        bottom: 5vh;
+        left: calc(50vw - 70px);
+        width: 100px;
+        height: 11.5px;
+        clip-path: polygon(0 0,100% 0%, 100% 100%, 0 100%);
+
+        &_img {
+            width: 100%;
+        }
+    }
+}
+
 .o-scroll {
     position: relative;
     top: 0;
