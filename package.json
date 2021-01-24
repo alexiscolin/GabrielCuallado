@@ -2,7 +2,7 @@
   "name": "gabrielcuallado",
   "version": "1.0.0",
   "description": "gabrielcuallado's personnal website",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "clean": "rimraf dist",
     "cleanStage": "rimraf stage",
@@ -11,11 +11,11 @@
     "start": "run-s clean dev",
     "dev": "run-p dev:**",
     "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F",
-    "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/index.js --no-cache",
+    "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/app.js --no-cache",
     "stage:hugo": "cross-env NODE_ENV=stage hugo -d ../stage -s site -b https://staging.gabriel-cuallado.com --gc",
-    "stage:parcel": "cross-env NODE_ENV=stage parcel build ./site/assets/index.js -d ./stage --experimental-scope-hoisting  --no-cache",
+    "stage:parcel": "cross-env NODE_ENV=stage parcel build ./site/assets/app.js -d ./stage --experimental-scope-hoisting  --no-cache",
     "build:hugo": "cross-env NODE_ENV=production hugo -d ../dist -s site --gc",
-    "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/index.js --experimental-scope-hoisting  --no-cache"
+    "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/app.js --experimental-scope-hoisting  --no-cache"
   },
   "repository": {
     "type": "git",

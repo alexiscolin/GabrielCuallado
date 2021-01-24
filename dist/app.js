@@ -46592,7 +46592,7 @@ var _Press = _interopRequireDefault(require("./modules/Press"));
 var _Awards = _interopRequireDefault(require("./modules/Awards"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./modules/Load":"js/modules/Load.js","./modules/Cursor":"js/modules/Cursor.js","./modules/Scroll":"js/modules/Scroll.js","./modules/Homepage":"js/modules/Homepage.js","./modules/Serie":"js/modules/Serie.js","./modules/Navigation":"js/modules/Navigation.js","./modules/Publications":"js/modules/Publications.js","./modules/Press":"js/modules/Press.js","./modules/Awards":"js/modules/Awards.js"}],"index.js":[function(require,module,exports) {
+},{"./modules/Load":"js/modules/Load.js","./modules/Cursor":"js/modules/Cursor.js","./modules/Scroll":"js/modules/Scroll.js","./modules/Homepage":"js/modules/Homepage.js","./modules/Serie":"js/modules/Serie.js","./modules/Navigation":"js/modules/Navigation.js","./modules/Publications":"js/modules/Publications.js","./modules/Press":"js/modules/Press.js","./modules/Awards":"js/modules/Awards.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 require("./scss/main.scss");
@@ -46687,7 +46687,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65263" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53695" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -46863,5 +46863,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/index.js.map
+},{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
+//# sourceMappingURL=/app.js.map
