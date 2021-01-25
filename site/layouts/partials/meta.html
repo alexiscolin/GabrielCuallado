@@ -10,6 +10,13 @@
 {{ if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords ", " }}">{{ else if .Params.meta.keywords }}<meta name="keywords" content="{{ delimit .Params.meta.keywords ", " }}">{{ end }}
 
 <!-- Google Tag Manager -->
+<script> {{/* SPA */}}
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    pageTitle: document.title,
+  });
+</script>
+
 {{ if eq (getenv "NODE_ENV") "production" }}
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
