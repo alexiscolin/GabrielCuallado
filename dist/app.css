@@ -2266,7 +2266,7 @@ a:hover.u-link::before {
     display: block;
   }
 }
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
   .cursor {
     display: none;
   }

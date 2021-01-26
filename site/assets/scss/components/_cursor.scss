@@ -10,7 +10,7 @@
 		@include media( '>large' ) {
 			display: block;
 		}
-		@media (hover: none) {
+		@media (hover: none) and (pointer: coarse) {
 			display: none;
 		}
 	}
