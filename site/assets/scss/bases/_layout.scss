@@ -27,6 +27,11 @@ p, blockquote {
     margin: 0;
 }
 
+.o-overflow{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
 .o-scroller {
     display: none;
     @include media( '>medium' ) {
@@ -178,6 +183,8 @@ p, blockquote {
         width: auto;
         flex-direction: row;
         padding: 0;
+        // width: 100vw;
+        // overflow-y: hidden;
     }
 }
 

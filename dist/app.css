@@ -301,6 +301,12 @@ p, blockquote {
   margin: 0;
 }
 
+.o-overflow {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
 .o-scroller {
   display: none;
 }
@@ -2258,6 +2264,11 @@ a:hover.u-link::before {
 @media (min-width: 1025px) {
   .cursor {
     display: block;
+  }
+}
+@media (hover: none) {
+  .cursor {
+    display: none;
   }
 }
 

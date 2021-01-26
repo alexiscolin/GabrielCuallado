@@ -36,7 +36,7 @@ export default class extends module {
 
                 const opts = {
                     callback: [this.parallax.bind(this), this.scroller.bind(this)],
-                    touch: false,
+                    touch: true,
                     delay: .1,
                     direction: "horizontal",
                     speed: .9,

@@ -8365,15 +8365,24 @@ SmoothScroll.prototype = function () {
 
   var _onTouchStart = function _onTouchStart(e) {
     var t = e.targetTouches ? e.targetTouches[0] : e;
-    this.move.touch = t.pageY;
+    this.move.touch = {
+      pageY: t.pageY,
+      pageX: t.pageX
+    };
   };
 
   var _onTouchMove = function _onTouchMove(e) {
-    e.preventDefault();
     var t = e.targetTouches ? e.targetTouches[0] : e;
-    this.move.dest += (t.pageY - this.move.touch) * this.config.touchSpeed; //mouvement
+    var moveY = t.pageY;
+    var moveX = t.pageX;
+    var dir = Math.abs(t.pageY - this.move.touch.pageY) > Math.abs(t.pageX - this.move.touch.pageX) ? 'pageY' : 'pageX';
+    var move = dir === "pageY" ? moveY : moveX;
+    this.move.dest += -(move - this.move.touch[dir]) * this.config.touchSpeed; //mouvement
 
-    this.move.touch = t.pageY; // update touch
+    this.move.touch = {
+      pageY: moveY,
+      pageX: moveX
+    }; // update touch
 
     _requestTick.call(this); // start animation
 
@@ -8641,7 +8650,7 @@ SmoothScroll.prototype = function () {
     return {
       wheel: 'onwheel' in document,
       mouseWheel: 'onmousewheel' in document,
-      touch: 'ontouchstart' in document,
+      touch: 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
       keys: 'onkeydown' in document
     };
   },
@@ -45522,7 +45531,7 @@ function (_module) {
         if (window.matchMedia("(min-width: 640px)").matches) {
           var opts = {
             callback: [_this2.parallax.bind(_this2), _this2.scroller.bind(_this2)],
-            touch: false,
+            touch: true,
             delay: .1,
             direction: "horizontal",
             speed: .9,
@@ -46693,7 +46702,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50453" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50150" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
