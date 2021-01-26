@@ -1,5 +1,8 @@
 +++
 Title = "Prensa"
+keywords = []
+meta_description = ""
+meta_title = ""
 namespace = "press"
 section = "acerca"
 translationKey = "press"
@@ -23,7 +26,7 @@ logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q
 title = "\"El camino\" ⎮ Documentario sobre el fotografo Gabriel Cualladó"
 type = "video"
 [[publication]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610650177/PRESS/Visite_Guide%CC%81e_Antonio_Tabernero_Cuallado_Esencial_mhypvh.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610650177/PRESS/Visite_Guide_Antonio_Tabernero_Cuallado_Esencial_mhypvh.jpg"
 link = "https://youtu.be/Eft9oUXlGHg"
 logo = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622725/PRESS/logo-communidad_bnqaqd.png"
 title = "Visita guiada por Antonio Tabernero de la exposicion \"Cualladó Esencial\""

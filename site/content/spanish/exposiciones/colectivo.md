@@ -33,7 +33,7 @@ place = "Barcelona, España"
 type = "individual"
 [[exhibition]]
 date = "2014-01-31T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspan%CC%83a_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspanna_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
 link = ""
 name = "FotoEspaña “La Palangana\" Circulo de Bellas Artes"
 place = "Madrid, España"
@@ -52,7 +52,7 @@ name = "\"The Spanish Vision\", Contemporary Art Photography 1970-1990, The Span
 place = "Nueva York, Estados Unidos"
 [[exhibition]]
 date = "1991-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/4_Direcciones_fotografi%CC%81a_espan%CC%83ola_contempora%CC%81nea_MNCARS_Cuallado_Reina_Sofia_lfiucu.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/4_Direcciones_fotografiia_espanola_contemporanea_MNCARS_Cuallado_Reina_Sofia_lfiucu.jpg"
 link = "https://www.museoreinasofia.es/en/exhibitions/cuatro-direcciones-fotografia-contemporanea-espanola-1970-1990"
 name = "“4 Direcciones de la Fotografía Española Contemporánea” Museo Nacional Reina Sofia"
 place = "Madrid, España"

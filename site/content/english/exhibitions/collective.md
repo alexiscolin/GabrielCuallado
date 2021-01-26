@@ -29,7 +29,7 @@ name = "\"The photo-book phenomenon\" by CCCB and Fundació Foto Colectania (inc
 place = "Barcelona, Spain"
 [[exhibition]]
 date = "2014-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspan%CC%83a_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspanna_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
 link = ""
 name = "Photoespaña \"La Palangana\", Circulo De Bellas Artes"
 place = "Madrid, Spain"
@@ -47,7 +47,7 @@ name = "The Spanish Vision, Contemporary Art Photography 1970-1990, The Spanish 
 place = "New-York, USA"
 [[exhibition]]
 date = "1991-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/4_Direcciones_fotografi%CC%81a_espan%CC%83ola_contempora%CC%81nea_MNCARS_Cuallado_Reina_Sofia_lfiucu.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622718/EXHIBITIONS_COLLECTIVE/4_Direcciones_fotografiia_espanola_contemporanea_MNCARS_Cuallado_Reina_Sofia_lfiucu.jpg"
 link = "https://www.museoreinasofia.es/en/exhibitions/cuatro-direcciones-fotografia-contemporanea-espanola-1970-1990"
 name = "\"4 Directions of Spanish Contemporary Photography\", Reina Sofia National Museum"
 place = "Madrid, Spain"
