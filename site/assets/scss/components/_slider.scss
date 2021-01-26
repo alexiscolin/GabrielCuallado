@@ -23,11 +23,11 @@
             visibility: hidden;
             opacity: 0;
         }
-        @include media( '<medium' ) {
-            &:first-child {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
+        // @include media( '<medium' ) {
+        //     &:first-child {
+        //         visibility: visible;
+        //         opacity: 1;
+        //     }
+        // }
     }
 }

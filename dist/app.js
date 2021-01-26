@@ -45287,9 +45287,9 @@ function (_THREE$Object3D) {
 
 exports.default = _default;
 },{"three":"../../node_modules/three/build/three.module.js","./index":"js/gl/index.js","gsap":"../../node_modules/gsap/index.js","../events":"js/events/index.js"}],"js/gl/glsl/vertex.glsl":[function(require,module,exports) {
-module.exports = "precision mediump float;\n#define GLSLIFY 1\nvarying vec2 vUv;\nuniform float uTime;\nuniform float uProg;\nuniform float uIndex;\nuniform vec2 uMouse;\n\n//\n// Description : Array and textureless GLSL 2D/3D/4D simplex\n//               noise functions.\n//      Author : Ian McEwan, Ashima Arts.\n//  Maintainer : ijm\n//     Lastmod : 20110822 (ijm)\n//     License : Copyright (C) 2011 Ashima Arts. All rights reserved.\n//               Distributed under the MIT License. See LICENSE file.\n//               https://github.com/ashima/webgl-noise\n//\n\nvec3 mod289(vec3 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n\nvec4 mod289(vec4 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n\nvec4 permute(vec4 x) {\n     return mod289(((x*34.0)+1.0)*x);\n}\n\nvec4 taylorInvSqrt(vec4 r)\n{\n  return 1.79284291400159 - 0.85373472095314 * r;\n}\n\nfloat snoise(vec3 v)\n  {\n  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;\n  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);\n\n// First corner\n  vec3 i  = floor(v + dot(v, C.yyy) );\n  vec3 x0 =   v - i + dot(i, C.xxx) ;\n\n// Other corners\n  vec3 g = step(x0.yzx, x0.xyz);\n  vec3 l = 1.0 - g;\n  vec3 i1 = min( g.xyz, l.zxy );\n  vec3 i2 = max( g.xyz, l.zxy );\n\n  //   x0 = x0 - 0.0 + 0.0 * C.xxx;\n  //   x1 = x0 - i1  + 1.0 * C.xxx;\n  //   x2 = x0 - i2  + 2.0 * C.xxx;\n  //   x3 = x0 - 1.0 + 3.0 * C.xxx;\n  vec3 x1 = x0 - i1 + C.xxx;\n  vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y\n  vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y\n\n// Permutations\n  i = mod289(i);\n  vec4 p = permute( permute( permute(\n             i.z + vec4(0.0, i1.z, i2.z, 1.0 ))\n           + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))\n           + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));\n\n// Gradients: 7x7 points over a square, mapped onto an octahedron.\n// The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)\n  float n_ = 0.142857142857; // 1.0/7.0\n  vec3  ns = n_ * D.wyz - D.xzx;\n\n  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)\n\n  vec4 x_ = floor(j * ns.z);\n  vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)\n\n  vec4 x = x_ *ns.x + ns.yyyy;\n  vec4 y = y_ *ns.x + ns.yyyy;\n  vec4 h = 1.0 - abs(x) - abs(y);\n\n  vec4 b0 = vec4( x.xy, y.xy );\n  vec4 b1 = vec4( x.zw, y.zw );\n\n  //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;\n  //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;\n  vec4 s0 = floor(b0)*2.0 + 1.0;\n  vec4 s1 = floor(b1)*2.0 + 1.0;\n  vec4 sh = -step(h, vec4(0.0));\n\n  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;\n  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;\n\n  vec3 p0 = vec3(a0.xy,h.x);\n  vec3 p1 = vec3(a0.zw,h.y);\n  vec3 p2 = vec3(a1.xy,h.z);\n  vec3 p3 = vec3(a1.zw,h.w);\n\n//Normalise gradients\n  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));\n  p0 *= norm.x;\n  p1 *= norm.y;\n  p2 *= norm.z;\n  p3 *= norm.w;\n\n// Mix final noise value\n  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n  m = m * m;\n  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),\n                                dot(p2,x2), dot(p3,x3) ) );\n  }\n\nvoid main() {\n    vec3 pos = position;\n \n    pos.z += snoise(vec3(pos.x * 4. + uTime, pos.y, 0.)) * uProg;\n    pos.z *= 1.5; \n\n    vUv = uv;\n\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.);\n}";
+module.exports = "precision highp float;\n#define GLSLIFY 1\nvarying vec2 vUv;\nuniform float uTime;\nuniform float uProg;\nuniform float uIndex;\nuniform vec2 uMouse;\n\n//\n// Description : Array and textureless GLSL 2D/3D/4D simplex\n//               noise functions.\n//      Author : Ian McEwan, Ashima Arts.\n//  Maintainer : ijm\n//     Lastmod : 20110822 (ijm)\n//     License : Copyright (C) 2011 Ashima Arts. All rights reserved.\n//               Distributed under the MIT License. See LICENSE file.\n//               https://github.com/ashima/webgl-noise\n//\n\nvec3 mod289(vec3 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n\nvec4 mod289(vec4 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n\nvec4 permute(vec4 x) {\n     return mod289(((x*34.0)+1.0)*x);\n}\n\nvec4 taylorInvSqrt(vec4 r)\n{\n  return 1.79284291400159 - 0.85373472095314 * r;\n}\n\nfloat snoise(vec3 v)\n  {\n  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;\n  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);\n\n// First corner\n  vec3 i  = floor(v + dot(v, C.yyy) );\n  vec3 x0 =   v - i + dot(i, C.xxx) ;\n\n// Other corners\n  vec3 g = step(x0.yzx, x0.xyz);\n  vec3 l = 1.0 - g;\n  vec3 i1 = min( g.xyz, l.zxy );\n  vec3 i2 = max( g.xyz, l.zxy );\n\n  //   x0 = x0 - 0.0 + 0.0 * C.xxx;\n  //   x1 = x0 - i1  + 1.0 * C.xxx;\n  //   x2 = x0 - i2  + 2.0 * C.xxx;\n  //   x3 = x0 - 1.0 + 3.0 * C.xxx;\n  vec3 x1 = x0 - i1 + C.xxx;\n  vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y\n  vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y\n\n// Permutations\n  i = mod289(i);\n  vec4 p = permute( permute( permute(\n             i.z + vec4(0.0, i1.z, i2.z, 1.0 ))\n           + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))\n           + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));\n\n// Gradients: 7x7 points over a square, mapped onto an octahedron.\n// The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)\n  float n_ = 0.142857142857; // 1.0/7.0\n  vec3  ns = n_ * D.wyz - D.xzx;\n\n  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)\n\n  vec4 x_ = floor(j * ns.z);\n  vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)\n\n  vec4 x = x_ *ns.x + ns.yyyy;\n  vec4 y = y_ *ns.x + ns.yyyy;\n  vec4 h = 1.0 - abs(x) - abs(y);\n\n  vec4 b0 = vec4( x.xy, y.xy );\n  vec4 b1 = vec4( x.zw, y.zw );\n\n  //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;\n  //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;\n  vec4 s0 = floor(b0)*2.0 + 1.0;\n  vec4 s1 = floor(b1)*2.0 + 1.0;\n  vec4 sh = -step(h, vec4(0.0));\n\n  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;\n  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;\n\n  vec3 p0 = vec3(a0.xy,h.x);\n  vec3 p1 = vec3(a0.zw,h.y);\n  vec3 p2 = vec3(a1.xy,h.z);\n  vec3 p3 = vec3(a1.zw,h.w);\n\n//Normalise gradients\n  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));\n  p0 *= norm.x;\n  p1 *= norm.y;\n  p2 *= norm.z;\n  p3 *= norm.w;\n\n// Mix final noise value\n  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n  m = m * m;\n  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),\n                                dot(p2,x2), dot(p3,x3) ) );\n  }\n\nvoid main() {\n    vec3 pos = position;\n \n    pos.z += snoise(vec3(pos.x * 4. + uTime, pos.y, 0.)) * uProg;\n    pos.z *= 1.5; \n\n    vUv = uv;\n\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.);\n}";
 },{}],"js/gl/glsl/fragment.glsl":[function(require,module,exports) {
-module.exports = "precision mediump float;\n#define GLSLIFY 1\n\nvarying vec2 vUv;\n// varying float wave;\n\nuniform sampler2D uTexture;\nuniform float uTime;\nuniform float uFlash;\nuniform float uClip;\nuniform float uProg;\n  \nvoid main() {\n    vec2 uv = vUv;\n    vec2 dUv = vec2(uv.x, uv.y);\n      \n    // Flash (alpha channel and mapping texture);\n    float r = max(texture2D(uTexture, dUv).r, uFlash);\n    float g = max(texture2D(uTexture, dUv).g, uFlash);\n    float b = max(texture2D(uTexture, dUv).b, uFlash);\n    vec3 texture = vec3(r, g, b);  \n\n    // Clip effect with short smoothstep [.0,.005] -> no gradient\n    float clip = smoothstep(.0,.005,(uClip - dUv.y));\n    \n    gl_FragColor = vec4(texture, clip);\n}";
+module.exports = "precision highp float;\n#define GLSLIFY 1\n\nvarying vec2 vUv;\n// varying float wave;\n\nuniform sampler2D uTexture;\nuniform float uTime;\nuniform float uFlash;\nuniform float uClip;\nuniform float uProg;\n  \nvoid main() {\n    vec2 uv = vUv;\n    vec2 dUv = vec2(uv.x, uv.y);\n      \n    // Flash (alpha channel and mapping texture);\n    float r = max(texture2D(uTexture, dUv).r, uFlash);\n    float g = max(texture2D(uTexture, dUv).g, uFlash);\n    float b = max(texture2D(uTexture, dUv).b, uFlash);\n    vec3 texture = vec3(r, g, b);  \n\n    // Clip effect with short smoothstep [.0,.005] -> no gradient\n    float clip = smoothstep(.0,.005,(uClip - dUv.y));\n    \n    gl_FragColor = vec4(texture, clip);\n}";
 },{}],"js/gl/Plane.js":[function(require,module,exports) {
 "use strict";
 
@@ -45714,7 +45714,7 @@ function (_module) {
 
 exports.default = _default;
 },{"modujs":"../../node_modules/modujs/dist/main.esm.js","../lib/smooth-scrollr-fork":"js/lib/smooth-scrollr-fork.js","gsap":"../../node_modules/gsap/index.js","../gl":"js/gl/index.js","../gl/Plane":"js/gl/Plane.js","../utils":"js/utils/index.js","../events":"js/events/index.js"}],"js/gl/glsl/fragmentSlider.glsl":[function(require,module,exports) {
-module.exports = "precision mediump float;\n#define GLSLIFY 1\nvarying vec2 vUv;\n\nuniform sampler2D uCurrTex;\nuniform sampler2D uNextTex;\nuniform float uFlash;\nuniform float uClip;\nuniform float uTime;\nuniform float uSlide;\nuniform vec4 resolution;\n\nmat2 rotate(float a) {\n\tfloat s = sin(a);\n\tfloat c = cos(a);\n\treturn mat2(c, -s, s, c);\n}\nconst float PI = 3.1415;\nconst float angle1 = PI *0.25;\nconst float angle2 = -PI *0.75;\nconst float noiseSeed = 2.;\nfloat random() { \n\treturn fract(sin(noiseSeed + dot(gl_FragCoord.xy / resolution.xy / 10.0, vec2(12.9898, 4.1414))) * 43758.5453);\n}\nfloat hash(float n) { return fract(sin(n) * 1e4); }\nfloat hash(vec2 p) { return fract(1e4 * sin(17.0 * p.x + p.y * 0.1) * (0.1 + abs(sin(p.y * 13.0 + p.x)))); }\nfloat hnoise(vec2 x) {\n\tvec2 i = floor(x);\n\tvec2 f = fract(x);\n\tfloat a = hash(i);\n\tfloat b = hash(i + vec2(1.0, 0.0));\n\tfloat c = hash(i + vec2(0.0, 1.0));\n\tfloat d = hash(i + vec2(1.0, 1.0));\n\tvec2 u = f * f * (3.0 - 2.0 * f);\n\treturn mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;\n}\n\nvoid main()\t{\n\tvec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);\n\t\t\t\n\tfloat hn = hnoise(newUV.xy * resolution.xy / 100.0);\n\tvec2 d = vec2(0.,normalize(vec2(0.5,0.5) - newUV.xy).y);\n\tvec2 uv1 = newUV + d * uSlide / 5.0 * (1.0 + hn / 2.0);\n\tvec2 uv2 = newUV - d * (1.0 - uSlide) / 5.0 * (1.0 + hn / 2.0);\n\n    // Clip effect with short smoothstep [.0,.005] -> no gradient\n    float clip = smoothstep(.0,.005,(uClip - uv1.y));\n\n    // Flash (alpha channel and mapping texture);\n    float t1r = max(texture2D(uCurrTex, uv1).r, uFlash);\n    float t1g = max(texture2D(uCurrTex, uv1).g, uFlash);\n    float t1b = max(texture2D(uCurrTex, uv1).b, uFlash);\n    vec4 t1 = vec4(t1r, t1g, t1b, clip);\n\n    float t2r = max(texture2D(uNextTex, uv2).r, uFlash);\n    float t2g = max(texture2D(uNextTex, uv2).g, uFlash);\n    float t2b = max(texture2D(uNextTex, uv2).b, uFlash);\n    vec4 t2 = vec4(t2r,t2g,t2b, clip);\n\n\tgl_FragColor = mix(t1, t2, uSlide);\n}\n\n";
+module.exports = "precision highp float;\n#define GLSLIFY 1\nvarying vec2 vUv;\n\nuniform sampler2D uCurrTex;\nuniform sampler2D uNextTex;\nuniform float uFlash;\nuniform float uClip;\nuniform float uTime;\nuniform float uSlide;\nuniform vec4 resolution;\n\nmat2 rotate(float a) {\n\tfloat s = sin(a);\n\tfloat c = cos(a);\n\treturn mat2(c, -s, s, c);\n}\nconst float PI = 3.1415;\nconst float angle1 = PI *0.25;\nconst float angle2 = -PI *0.75;\nconst float noiseSeed = 2.;\nfloat random() { \n\treturn fract(sin(noiseSeed + dot(gl_FragCoord.xy / resolution.xy / 10.0, vec2(12.9898, 4.1414))) * 43758.5453);\n}\nfloat hash(float n) { return fract(sin(n) * 1e4); }\nfloat hash(vec2 p) { return fract(1e4 * sin(17.0 * p.x + p.y * 0.1) * (0.1 + abs(sin(p.y * 13.0 + p.x)))); }\nfloat hnoise(vec2 x) {\n\tvec2 i = floor(x);\n\tvec2 f = fract(x);\n\tfloat a = hash(i);\n\tfloat b = hash(i + vec2(1.0, 0.0));\n\tfloat c = hash(i + vec2(0.0, 1.0));\n\tfloat d = hash(i + vec2(1.0, 1.0));\n\tvec2 u = f * f * (3.0 - 2.0 * f);\n\treturn mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;\n}\n\nvoid main()\t{\n\tvec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);\n\t\t\t\n\tfloat hn = hnoise(newUV.xy * resolution.xy / 100.0);\n\tvec2 d = vec2(0.,normalize(vec2(0.5,0.5) - newUV.xy).y);\n\tvec2 uv1 = newUV + d * uSlide / 5.0 * (1.0 + hn / 2.0);\n\tvec2 uv2 = newUV - d * (1.0 - uSlide) / 5.0 * (1.0 + hn / 2.0);\n\n    // Clip effect with short smoothstep [.0,.005] -> no gradient\n    float clip = smoothstep(.0,.005,(uClip - uv1.y));\n\n    // Flash (alpha channel and mapping texture);\n    float t1r = max(texture2D(uCurrTex, uv1).r, uFlash);\n    float t1g = max(texture2D(uCurrTex, uv1).g, uFlash);\n    float t1b = max(texture2D(uCurrTex, uv1).b, uFlash);\n    vec4 t1 = vec4(t1r, t1g, t1b, clip);\n\n    float t2r = max(texture2D(uNextTex, uv2).r, uFlash);\n    float t2g = max(texture2D(uNextTex, uv2).g, uFlash);\n    float t2b = max(texture2D(uNextTex, uv2).b, uFlash);\n    vec4 t2 = vec4(t2r,t2g,t2b, clip);\n\n\tgl_FragColor = mix(t1, t2, uSlide);\n}\n\n";
 },{}],"../static/img/disp-02.png":[function(require,module,exports) {
 module.exports = "/disp-02.ba5b121c.png";
 },{}],"js/gl/Slider.js":[function(require,module,exports) {
@@ -46061,29 +46061,28 @@ function (_module) {
     value: function init() {
       var _this2 = this;
 
-      if (window.matchMedia("(min-width: 640px)").matches) {
-        (0, _utils.preloadImages)().then(function () {
-          var homeImg = _this2.el.querySelector('[data-parallaxe="img"]');
+      // if (window.matchMedia("(min-width: 640px)").matches) {
+      (0, _utils.preloadImages)().then(function () {
+        var homeImg = _this2.el.querySelector('[data-parallaxe="img"]');
 
-          _this2.glObject = new _Slider.default();
+        _this2.glObject = new _Slider.default();
 
-          _this2.glObject.init(homeImg, 0);
+        _this2.glObject.init(homeImg, 0);
 
-          var el = {
-            el: homeImg,
-            glObject: _this2.glObject,
-            speed: homeImg.dataset.speed,
-            type: homeImg.dataset.parallaxe,
-            dir: 0
-          };
+        var el = {
+          el: homeImg,
+          glObject: _this2.glObject,
+          speed: homeImg.dataset.speed,
+          type: homeImg.dataset.parallaxe,
+          dir: 0
+        };
 
-          _events.Events.emit('scroll', {
-            els: [el],
-            x: 0
-          });
+        _events.Events.emit('scroll', {
+          els: [el],
+          x: 0
         });
-        this.slider = (0, _utils.requestInterval)(this.slide.bind(this), 5000);
-      }
+      });
+      this.slider = (0, _utils.requestInterval)(this.slide.bind(this), 5000); // }
     }
   }, {
     key: "slide",
@@ -46702,7 +46701,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50150" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60452" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
