@@ -30,7 +30,7 @@ name = "\"Phénomène Livre Photo\" par CCCB et Fundació Foto Colectania compre
 place = "Barcelone, Espagne"
 [[exhibition]]
 date = "2014-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspan%CC%83a_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622719/EXHIBITIONS_COLLECTIVE/PhotoEspanna_La_Palangana_22_Bellas_Artes_Cuallado_klfgol.jpg"
 link = ""
 name = "Photoespaña \"La Palangana\", Circulo De Bellas Artes"
 place = "Madrid, Espagne"
