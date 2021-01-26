@@ -108,6 +108,13 @@ export default class extends module {
                     el.addEventListener('mouseleave', cursorLeave);
                 });
 
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                'event': 'Pageview',
+                'pagePath': data.next.url.path,
+                'pageTitle': document.title,
+                });
+
                 /** if not first load -> modularjs already init in general index.js */
                 if (data.current.container) {
                     this.call('destroy', data.current.container, 'app');

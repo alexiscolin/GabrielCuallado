@@ -15,7 +15,7 @@ export default class extends module {
     } 
 
     init() {
-        if (window.matchMedia("(min-width: 640px)").matches) {
+        // if (window.matchMedia("(min-width: 640px)").matches) {
             preloadImages().then(() => {
                 const homeImg = this.el.querySelector('[data-parallaxe="img"]');
                 this.glObject = new Slider(); 
@@ -32,7 +32,7 @@ export default class extends module {
             }); 
 
             this.slider = requestInterval(this.slide.bind(this), 5000);
-        }
+        // }
     }
     slide() {
         this.glObject.slide();

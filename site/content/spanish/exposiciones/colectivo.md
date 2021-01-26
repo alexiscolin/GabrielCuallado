@@ -2,7 +2,7 @@
 Title = "collective"
 keywords = []
 layout = ""
-menu = []
+menu = ["exhibitions"]
 meta_description = " Exposiciónes colectivas de Gabriel Cualladó."
 meta_title = " Exposiciónes colectivas"
 namespace = "exhibitions"

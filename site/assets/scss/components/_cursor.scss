@@ -10,6 +10,9 @@
 		@include media( '>large' ) {
 			display: block;
 		}
+		@media (hover: none) and (pointer: coarse) {
+			display: none;
+		}
 	}
 	.cursor__inner {
 		fill: transparent;

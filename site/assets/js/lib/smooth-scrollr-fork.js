@@ -38,15 +38,25 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
   
     const _onTouchStart = function (e) {
         const t = (e.targetTouches) ? e.targetTouches[0] : e;
-        this.move.touch = t.pageY;
+        this.move.touch = {
+            pageY:  t.pageY,
+            pageX: t.pageX
+        };
     };
   
     const _onTouchMove = function (e) {
-        e.preventDefault();
         const t = (e.targetTouches) ? e.targetTouches[0] : e;
-  
-        this.move.dest += (t.pageY - this.move.touch) * this.config.touchSpeed; //mouvement
-        this.move.touch = t.pageY; // update touch
+        const moveY = t.pageY;
+        const moveX = t.pageX;
+        const dir = Math.abs(t.pageY - this.move.touch.pageY) > Math.abs(t.pageX - this.move.touch.pageX) ? 'pageY' : 'pageX';
+        const move = (dir === "pageY" ? moveY : moveX);
+
+        this.move.dest += -(move -  this.move.touch[dir]) * this.config.touchSpeed; //mouvement
+
+        this.move.touch = {
+            pageY: moveY,
+            pageX: moveX
+        }; // update touch
   
         _requestTick.call(this); // start animation
     };
@@ -91,6 +101,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         } else if(this.move.dest <= 0 && this.scrollStatut !== 'start') {
             this.config.scrollFuncs.startFunc();
             this.scrollStatut = 'start';
+
         } else if (this.move.dest > 0 && this.move.dest < this.config.scrollMax && this.scrollStatut !== 'running') {
             this.config.scrollFuncs.runningFunc();
             this.scrollStatut = 'running';
@@ -308,7 +319,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         return {
             wheel: 'onwheel' in document,
             mouseWheel: 'onmousewheel' in document,
-            touch: 'ontouchstart' in document,
+            touch: ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0),
             keys: 'onkeydown' in document
         }
     }, 
@@ -389,7 +400,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         // get event compatibility and allowance for scroll
         this.deviceHasEvents = _deviceDetectEvent();
         this.enableSmoothScroll = !this.deviceHasEvents.touch || this.config.touch;
-  
+
         // if parallax, get elements to move
         this.callback = this.config.callback;
   
