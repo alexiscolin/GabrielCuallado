@@ -301,10 +301,12 @@ p, blockquote {
   margin: 0;
 }
 
-.o-overflow {
-  overflow: hidden;
-  position: relative;
-  height: 100vh;
+@media (min-width: 641px) {
+  .o-overflow {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
 }
 
 .o-scroller {

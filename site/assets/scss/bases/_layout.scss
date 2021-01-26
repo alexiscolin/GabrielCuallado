@@ -28,9 +28,11 @@ p, blockquote {
 }
 
 .o-overflow{
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
+    @include media( '>medium' ) {
+        overflow: hidden;
+        position: relative;
+        height: 100vh;
+    }
 }
 .o-scroller {
     display: none;
