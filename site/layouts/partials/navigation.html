@@ -27,7 +27,7 @@
         </li>
 
         {{ else }}
-            <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a></li>
+            <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" {{ if eq .Identifier "Contact" }}data-context="contact" data-position="navbar" {{ end }}href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a></li>
         {{end}} 
     {{ end }}
     </ul>

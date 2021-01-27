@@ -16,7 +16,7 @@
   <div class="container">
     {{ range .Params.exhibition  }}
     <article class="o-section c-timeline js-section" data-scroll-section>
-      <a class="c-timeline_link" href="{{ .link }}">
+      <a class="c-timeline_link" data-context="exhibition" href="{{ .link }}">
         <figure class="c-timeline_section">
 
           <div class="c-timeline_section_line"></div>

@@ -8,7 +8,7 @@
             {{ range .Site.Menus.header }}
                 <li class="c-header_item c-header_item--about js-header">
                     {{ $isMenuCurrent := or (eq (lower $.Params.section) (lower .Name)) }} 
-                    <a class="c-header_link {{ if $isMenuCurrent }}c-header_link--current{{ end }}" href="{{.URL | absLangURL}}" data-link="menu"><span><span>{{ .Name }}</span></span></a>         
+                    <a class="c-header_link {{ if $isMenuCurrent }}c-header_link--current{{ end }}" {{ if eq .Identifier "Contact" }}data-context="contact" data-position="navbar" {{ end }} href="{{.URL | absLangURL}}" data-link="menu"><span><span>{{ .Name }}</span></span></a>         
                 </li>
             {{ end }}
 
