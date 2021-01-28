@@ -110,11 +110,16 @@ export default class extends module {
                     el.addEventListener('mouseleave', cursorLeave);
                 });
 
+                // get Lang
+                const doc = new DOMParser().parseFromString(data.next.html, "text/html");
+                const lang = doc.documentElement.lang;
+
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
                 'event': 'Pageview',
                 'pagePath': data.next.url.path,
                 'pageTitle': document.title,
+                'pagelang': lang,
                 });
 
                 /** if not first load -> modularjs already init in general index.js */
