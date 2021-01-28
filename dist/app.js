@@ -8078,17 +8078,13 @@ function (_module) {
           _this3.links.forEach(function (el) {
             el.addEventListener('mouseenter', cursorEnter);
             el.addEventListener('mouseleave', cursorLeave);
-          }); // get Lang
+          });
 
-
-          var doc = new DOMParser().parseFromString(data.next.html, "text/html");
-          var lang = doc.documentElement.lang;
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
             'event': 'Pageview',
             'pagePath': data.next.url.path,
-            'pageTitle': document.title,
-            'pagelang': lang
+            'pageTitle': document.title
           });
           /** if not first load -> modularjs already init in general index.js */
 
