@@ -38,17 +38,14 @@
   from = "/es/*"
   to = "/es/404/"
   status = 404
-  force = true
 [[redirects]]
   from = "/fr/*"
   to = "/fr/404/"
   status = 404
-  force = true
 [[redirects]]
   from = "/*"
   to = "/404/"
   status = 404
-  force = true
 
 
 #########
