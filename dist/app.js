@@ -7836,6 +7836,82 @@ var contactTransition = {
   }
 };
 exports.contactTransition = contactTransition;
+},{"gsap":"../../node_modules/gsap/index.js"}],"js/router/error.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.errorTransition = exports.errorView = void 0;
+
+var _gsap = require("gsap");
+
+var errorView = {
+  namespace: 'error',
+  beforeEnter: function beforeEnter(data) {},
+  afterEnter: function afterEnter(data) {}
+};
+exports.errorView = errorView;
+var errorTransition = {
+  name: 'error-transition',
+  leave: function leave(_ref) {
+    var current = _ref.current,
+        next = _ref.next,
+        trigger = _ref.trigger;
+    return new Promise(function (resolve) {
+      var canvas = document.querySelector('.dom-gl');
+
+      _gsap.gsap.to(canvas, {
+        autoAlpha: 0,
+        duration: .6
+      });
+
+      _gsap.gsap.to(current.container, {
+        autoAlpha: 0,
+        duration: .6,
+        onComplete: function onComplete() {
+          resolve();
+        }
+      });
+    });
+  },
+  enter: function enter(_ref2) {
+    var current = _ref2.current,
+        next = _ref2.next,
+        trigger = _ref2.trigger;
+    var canvas = document.querySelector('.dom-gl');
+
+    _gsap.gsap.to(canvas, {
+      autoAlpha: 1,
+      duration: .5
+    });
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  once: function once(_ref3) {
+    var current = _ref3.current,
+        next = _ref3.next,
+        trigger = _ref3.trigger;
+    var canvas = document.querySelector('.dom-gl');
+
+    _gsap.gsap.to(canvas, {
+      autoAlpha: 1,
+      duration: .5
+    });
+
+    _gsap.gsap.from(next.container, {
+      autoAlpha: 0,
+      duration: 1
+    });
+  },
+  to: {
+    namespace: ['error']
+  }
+};
+exports.errorTransition = errorTransition;
 },{"gsap":"../../node_modules/gsap/index.js"}],"js/modules/Load.js":[function(require,module,exports) {
 "use strict";
 
@@ -7867,6 +7943,8 @@ var _publications = require("../router/publications.js");
 var _press = require("../router/press.js");
 
 var _contact = require("../router/contact.js");
+
+var _error = require("../router/error.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7917,11 +7995,11 @@ function (_module) {
       var _this = this;
 
       this.links = [];
-      this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView, _press.pressView, _contact.contactView];
+      this.loadedViews = [_serie.serieView, _homepage.homepageView, _about.aboutView, _exhibition.exhibitionsView, _collectors.collectorsView, _awards.awardsView, _publications.publicationsView, _press.pressView, _contact.contactView, _error.errorView];
       this.loadedTransition = [_serie.serieTransition, (0, _homepage.homepageTransition)(function (_) {
         return _this.call('appear', '', 'Homepage');
       }), //Link modus module method for enterAnimation
-      _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition, _press.pressTransition, _contact.contactTransition];
+      _about.aboutTransition, _exhibition.exhibitionsTransition, _collectors.collectorsTransition, _awards.awardsTransition, _publications.publicationsTransition, _press.pressTransition, _contact.contactTransition, _error.errorTransition];
       this.views = [];
       this.transitions = [];
 
@@ -8033,7 +8111,7 @@ function (_module) {
 }(_modujs.module);
 
 exports.default = _default;
-},{"modujs":"../../node_modules/modujs/dist/main.esm.js","@barba/core":"../../node_modules/@barba/core/dist/barba.umd.js","../events":"js/events/index.js","../router/homepage.js":"js/router/homepage.js","../router/serie.js":"js/router/serie.js","../router/about.js":"js/router/about.js","../router/exhibition.js":"js/router/exhibition.js","../router/collectors.js":"js/router/collectors.js","../router/awards.js":"js/router/awards.js","../router/publications.js":"js/router/publications.js","../router/press.js":"js/router/press.js","../router/contact.js":"js/router/contact.js"}],"js/modules/Cursor.js":[function(require,module,exports) {
+},{"modujs":"../../node_modules/modujs/dist/main.esm.js","@barba/core":"../../node_modules/@barba/core/dist/barba.umd.js","../events":"js/events/index.js","../router/homepage.js":"js/router/homepage.js","../router/serie.js":"js/router/serie.js","../router/about.js":"js/router/about.js","../router/exhibition.js":"js/router/exhibition.js","../router/collectors.js":"js/router/collectors.js","../router/awards.js":"js/router/awards.js","../router/publications.js":"js/router/publications.js","../router/press.js":"js/router/press.js","../router/contact.js":"js/router/contact.js","../router/error.js":"js/router/error.js"}],"js/modules/Cursor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46701,7 +46779,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60949" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57536" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

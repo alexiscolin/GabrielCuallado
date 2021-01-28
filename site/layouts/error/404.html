@@ -1,0 +1,20 @@
+{{ define "meta" }}
+{{ partial "meta.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="c-main_container c-error_container">
+    <div class="c-error_panel">
+      <div class="c-error_header">
+        <h1>{{ .Title }}</h1>
+      </div>
+      <div class="c-error_body">
+
+        <p class="c-error_body_desc o-text o-subtitle">{{ .Params.Description }}</p>
+        <p class="c-error_body_link">
+          <a id="back-link" href="{{ .Site.BaseURL}}{{ .Lang }}/">← {{ .Params.Link }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+{{ end }}

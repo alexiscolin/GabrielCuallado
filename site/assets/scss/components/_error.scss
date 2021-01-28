@@ -1,0 +1,40 @@
+.c-error {
+    &_container {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+    }
+    &_header {
+        text-align: center;
+        @include font-weight(black);
+        color: color(typography, 2);
+        letter-spacing: -6vw;
+        margin-left: -6vw;
+        font-size: 24vw;
+        background: url(https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622717/ABOUT/Gabriel_Cuallado_Autoretrato_uyplwb.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include media( '>medium' ) {
+            margin-top: 5vw;
+            letter-spacing: -2.8vw;
+            font-size: 12vw;    
+        }
+    }
+
+    &_body {
+        text-align: center;
+        padding: 2vw 5vw;
+
+        &_desc {
+            margin: 0 0 20px 0;
+
+        }
+
+        &_link {
+            font-size: 16px;
+        }
+    }
+}

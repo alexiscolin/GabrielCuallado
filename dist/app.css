@@ -2280,4 +2280,40 @@ a:hover.u-link::before {
   transform-origin: 2% 5%;
 }
 
+.c-error_container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+.c-error_header {
+  text-align: center;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -6vw;
+  margin-left: -6vw;
+  font-size: 24vw;
+  background: url(https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622717/ABOUT/Gabriel_Cuallado_Autoretrato_uyplwb.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 641px) {
+  .c-error_header {
+    margin-top: 5vw;
+    letter-spacing: -2.8vw;
+    font-size: 12vw;
+  }
+}
+.c-error_body {
+  text-align: center;
+  padding: 2vw 5vw;
+}
+.c-error_body_desc {
+  margin: 0 0 20px 0;
+}
+.c-error_body_link {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=/app.css.map */

@@ -12,7 +12,7 @@ import { awardsView, awardsTransition } from '../router/awards.js';
 import { publicationsView, publicationsTransition } from '../router/publications.js';
 import { pressView, pressTransition } from '../router/press.js';
 import { contactView, contactTransition } from '../router/contact.js';
-
+import { errorView, errorTransition } from '../router/error.js';
 export default class extends module {
     constructor(m) {
         super(m);
@@ -33,7 +33,8 @@ export default class extends module {
             awardsView,
             publicationsView,
             pressView,
-            contactView
+            contactView,
+            errorView
         ];
 
         this.loadedTransition = [
@@ -45,7 +46,8 @@ export default class extends module {
             awardsTransition,
             publicationsTransition,
             pressTransition,
-            contactTransition
+            contactTransition,
+            errorTransition
         ]
         this.views = [];
         this.transitions = [];
