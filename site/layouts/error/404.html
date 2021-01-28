@@ -12,7 +12,7 @@
 
         <p class="c-error_body_desc o-text o-subtitle">{{ .Params.Description }}</p>
         <p class="c-error_body_link">
-          <a id="back-link" href="{{ .Site.BaseURL}}{{ .Lang }}/">← {{ .Params.Link }}</a>
+          <a id="back-link" href="/{{ if ne .Lang "en" }}{{.Lang}}/{{end}}">← {{ .Params.Link }}</a>
         </p>
       </div>
     </div>
