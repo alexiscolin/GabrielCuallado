@@ -26,6 +26,10 @@ a {
 p, blockquote {
     margin: 0;
 }
+figure {
+    margin: 0;
+    padding: 0;
+}
 
 .o-overflow{
     @include media( '>medium' ) {

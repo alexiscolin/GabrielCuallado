@@ -10,11 +10,11 @@
     "stage": "run-s cleanStage stage:parcel stage:hugo",
     "start": "run-s clean dev",
     "dev": "run-p dev:**",
-    "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F",
+    "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F --minify",
     "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/app.js --no-cache",
-    "stage:hugo": "cross-env NODE_ENV=stage hugo -d ../stage -s site -b https://staging.gabriel-cuallado.com --gc",
+    "stage:hugo": "cross-env NODE_ENV=stage hugo -d ../stage -s site -b https://staging.gabriel-cuallado.com --gc --minify",
     "stage:parcel": "cross-env NODE_ENV=stage parcel build ./site/assets/app.js -d ./stage --experimental-scope-hoisting  --no-cache",
-    "build:hugo": "cross-env NODE_ENV=production hugo -d ../dist -s site --gc",
+    "build:hugo": "cross-env NODE_ENV=production hugo -d ../dist -s site --gc --minify",
     "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/app.js --experimental-scope-hoisting  --no-cache"
   },
   "repository": {
