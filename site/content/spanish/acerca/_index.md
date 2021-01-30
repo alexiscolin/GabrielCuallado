@@ -55,7 +55,7 @@ left = ""
 subtitle = "Años 1950"
 template = "about-text"
 text = "En 1951 nace su primer hijo y compra una cámara Capta por 90 pesetas, pensando captar sus primeros pasos. En 1956 integra la Real Sociedad Fotográfica de Madrid (RSF) y se une al renovador grupo de fotógrafos Afal. Juntos lanzan el Movimiento de Renovación de la Fotografía Española, on que marcará la historia de la Fotografía Española. En 1957 organizan la primera exposición oficial del movimiento en una de las galerías de arte de la ciudad y, unos años después, una de las imágenes de Cuallado (“La boda de Ramón Masats”) recibe el premio de la Revista norteamericana Popular Photography."
-title = "El nacimiento de un movimiento"
+title = "Nace un movimiento"
 top = ""
 [[content]]
 citation = false
