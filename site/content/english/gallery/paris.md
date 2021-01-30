@@ -1,7 +1,7 @@
 +++
 Title = "Paris"
 keywords = []
-menu = ["serie"]
+menu = []
 meta_description = ""
 meta_title = "Paris"
 namespace = "serie"
@@ -26,12 +26,17 @@ date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/GALLERY/PARIS/F0017_AL_ESTE_DEL_EDEN_ijdsnp.jpg"
 link = "#"
 name = "East of Eden"
-speed = "-.4"
+speed = "-.6"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/GALLERY/PARIS/F0035_CABEZA_DE_HOMBRE_CON_MARGARITA_zjljjq.jpg"
 link = "#"
 name = "Man's head with daisy"
 speed = ".5"
+[[photos]]
+date = "2020-12-31T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612014834/space_ajlghv.png"
+name = "."
+speed = "-.6"
 
 +++
