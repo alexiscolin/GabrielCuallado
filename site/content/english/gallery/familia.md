@@ -39,5 +39,10 @@ date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608596818/F0122-MARINA_DE_PERFIL_w6bbwj.jpg"
 name = "Marina's profile"
 speed = ".26"
+[[photos]]
+date = "2020-12-31T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622724/GALLERY/FAMILIA/F0572-NINA_BRAZO_ESTIRADO_r4zqi8.jpg"
+name = "Girl with stretched arm"
+speed = ".4"
 
 +++
