@@ -108,11 +108,10 @@ export default class extends module {
     // preload error for GTM
     onPreloadError (data) {
         window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
+        window.dataLayer.push({
             'event': 'loadingFailure',
             'url': data.url,
             'status': data.status,
-            'page': window.location.href
         });
     }
 

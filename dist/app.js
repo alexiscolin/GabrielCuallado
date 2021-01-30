@@ -45693,8 +45693,7 @@ function (_module) {
       window.dataLayer.push({
         'event': 'loadingFailure',
         'url': data.url,
-        'status': data.status,
-        'page': window.location.href
+        'status': data.status
       });
     } // function to remove click to scroll depending on scroll position
 
