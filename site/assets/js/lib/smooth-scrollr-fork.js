@@ -94,7 +94,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
         cancelAnimationFrame(this.rAF);
         this.rAF = requestAnimationFrame(_update.bind(this));
         
-        // scroll action in function of scroll position (statut)
+        // scroll action in function of scroll position (statut) -> a passer en fonction de callback ?
         if(this.move.dest >= this.config.scrollMax && this.scrollStatut !== 'end'){
             this.config.scrollFuncs.endFunc();
             this.scrollStatut = 'end';
@@ -221,12 +221,13 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
                         .then(response => {
                             if (!response.ok) {
                                 // make the promise be rejected if we didn't get a 2xx response
+                                this.config.preloadFuncs.error(response);
                                 throw new Error(response.url + " Is not a 2xx response")
                             } else {
                                  return response
                             }
                         })
-                        .catch(error => console.error('Fetch error: ' + error.message));
+                        .catch(error => console.error('Fetch error: ' + error.message))
                 } else {
                     // If at least one media is not available, an error is throwned -> initFuncs will not work art all 
                     loader = new Promise((resolve, reject) => {
@@ -236,6 +237,7 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
                                 return resolve();
                         }, false);
                         el.addEventListener("error", e => {
+                            this.config.preloadFuncs.error();
                             return reject(new Error("Media failed loading"));
                         }, false);
                     });
@@ -375,7 +377,8 @@ var SmoothScroll = function (config = {}, viewPortclass = null) {
             scrollMax: 0,
             ticking: false,
             initFuncs: config.initFuncs || [],
-            scrollFuncs: config.scrollFuncs || {}
+            scrollFuncs: config.scrollFuncs || {},
+            preloadFuncs : config.preloadFuncs || {}
         };
   
         // movement refresh variables

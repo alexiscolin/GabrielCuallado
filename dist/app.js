@@ -8502,7 +8502,7 @@ SmoothScroll.prototype = function () {
     var _this = this;
 
     cancelAnimationFrame(this.rAF);
-    this.rAF = requestAnimationFrame(_update.bind(this)); // scroll action in function of scroll position (statut)
+    this.rAF = requestAnimationFrame(_update.bind(this)); // scroll action in function of scroll position (statut) -> a passer en fonction de callback ?
 
     if (this.move.dest >= this.config.scrollMax && this.scrollStatut !== 'end') {
       this.config.scrollFuncs.endFunc();
@@ -8629,6 +8629,8 @@ SmoothScroll.prototype = function () {
           loader = fetch(media.src).then(function (response) {
             if (!response.ok) {
               // make the promise be rejected if we didn't get a 2xx response
+              _this2.config.preloadFuncs.error(response);
+
               throw new Error(response.url + " Is not a 2xx response");
             } else {
               return response;
@@ -8644,6 +8646,8 @@ SmoothScroll.prototype = function () {
               return resolve();
             }, false);
             el.addEventListener("error", function (e) {
+              _this2.config.preloadFuncs.error();
+
               return reject(new Error("Media failed loading"));
             }, false);
           });
@@ -8765,7 +8769,7 @@ SmoothScroll.prototype = function () {
       delay: config.delay || .1,
       direction: config.direction || 'vertical',
       speed: config.speed || 1
-    }, _defineProperty(_this$config, "delay", config.delay || 0), _defineProperty(_this$config, "touchSpeed", config.touchSpeed || 1.5), _defineProperty(_this$config, "jump", config.jump || 110), _defineProperty(_this$config, "callback", config.callback || []), _defineProperty(_this$config, "touch", config.touch || false), _defineProperty(_this$config, "fixedClass", viewPortclass || false), _defineProperty(_this$config, "resize", config.resize || true), _defineProperty(_this$config, "preload", config.preload || true), _defineProperty(_this$config, "multFirefox", 15), _defineProperty(_this$config, "scrollMax", 0), _defineProperty(_this$config, "ticking", false), _defineProperty(_this$config, "initFuncs", config.initFuncs || []), _defineProperty(_this$config, "scrollFuncs", config.scrollFuncs || {}), _this$config); // movement refresh variables
+    }, _defineProperty(_this$config, "delay", config.delay || 0), _defineProperty(_this$config, "touchSpeed", config.touchSpeed || 1.5), _defineProperty(_this$config, "jump", config.jump || 110), _defineProperty(_this$config, "callback", config.callback || []), _defineProperty(_this$config, "touch", config.touch || false), _defineProperty(_this$config, "fixedClass", viewPortclass || false), _defineProperty(_this$config, "resize", config.resize || true), _defineProperty(_this$config, "preload", config.preload || true), _defineProperty(_this$config, "multFirefox", 15), _defineProperty(_this$config, "scrollMax", 0), _defineProperty(_this$config, "ticking", false), _defineProperty(_this$config, "initFuncs", config.initFuncs || []), _defineProperty(_this$config, "scrollFuncs", config.scrollFuncs || {}), _defineProperty(_this$config, "preloadFuncs", config.preloadFuncs || {}), _this$config); // movement refresh variables
 
     this.move = {
       current: 0,
@@ -45616,6 +45620,9 @@ function (_module) {
             section: _this2.el,
             touchSpeed: 2,
             jump: 120,
+            preloadFuncs: {
+              'error': _this2.onPreloadError.bind(_this2)
+            },
             initFuncs: [_this2.addElements.bind(_this2), _this2.parallax.bind(_this2, .1, 0, 1)],
             scrollFuncs: {
               'startFunc': _this2.atStart.bind(_this2),
@@ -45677,6 +45684,18 @@ function (_module) {
     value: function clickToMove(e) {
       var dir = e.currentTarget.dataset.scrollDir === 'next' ? this.scrollPath : -this.scrollPath;
       this.scroll.scrollOf(dir);
+    } // preload error for GTM
+
+  }, {
+    key: "onPreloadError",
+    value: function onPreloadError(data) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'loadingFailure',
+        'url': data.url,
+        'status': data.status,
+        'page': window.location.href
+      });
     } // function to remove click to scroll depending on scroll position
 
   }, {
@@ -46779,7 +46798,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57052" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64557" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

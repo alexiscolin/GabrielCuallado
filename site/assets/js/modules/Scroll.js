@@ -43,6 +43,9 @@ export default class extends module {
                     section: this.el,
                     touchSpeed: 2,
                     jump: 120,
+                    preloadFuncs: {
+                        'error': this.onPreloadError.bind(this)
+                    },
                     initFuncs: [this.addElements.bind(this), this.parallax.bind(this, .1,  0, 1)],
                     scrollFuncs: {
                         'startFunc': this.atStart.bind(this),
@@ -100,6 +103,17 @@ export default class extends module {
     clickToMove (e) {
         const dir = e.currentTarget.dataset.scrollDir === 'next' ? this.scrollPath : -this.scrollPath
         this.scroll.scrollOf(dir);
+    }
+
+    // preload error for GTM
+    onPreloadError (data) {
+        window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+            'event': 'loadingFailure',
+            'url': data.url,
+            'status': data.status,
+            'page': window.location.href
+        });
     }
 
     // function to remove click to scroll depending on scroll position
