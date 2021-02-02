@@ -1,7 +1,7 @@
 +++
 Title = "About"
 introImage = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622717/ABOUT/Gabriel_Cuallado_Autoretrato_uyplwb.jpg"
-introSubtitle = "A subtle and poetic at daily life"
+introSubtitle = "A subtle and poetic look at daily life."
 introText = "Born in 1925, Gabriel Cuallado is considered one of the most outstanding representatives of the movement of the renovation of Spanish photography of the second half of the 20th century. Among the most outstanding features of his work is the humanist and poetry-laden look with which he portrayed the gray reality of post-war Spanish society. Far from the great events, Cuallado focused on the intimate and close details of everyday life, through photographs of his friends, family and anonymous people. His most prolific years were those comprised in the decades of the fifties, sixties and seventies, in which he signed photographic series set in Madrid, Paris and Asturias."
 introTitle = "GABRIEL CUALLADO"
 intro_photo_name = "Photographer's Gabriel Cuallado portrait taken by French photographer Bernard Plossu, in Madrid, in 1994."
@@ -106,7 +106,7 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610750598/Gabriel-cuallado-press-kit-2021-print-me-_agxicd.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612309732/ABOUT/Gabriel_Cuallado_Gallery_Blanca_Berlin_s2usdo.jpg"
 left = "0"
 link_description = "Discover artworks"
 template = "about-link"
