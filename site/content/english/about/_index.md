@@ -79,7 +79,7 @@ image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,
 left = "-10"
 subtitle = "1970s and 90s ⎮ Spain's First National Photography Award and Gold Medal  "
 template = "about-text"
-text = "In 1978 Cuallado’s pictures were presented in Arles’ annual Photography Festival, amongst others. A couple of years later his pictures were published in \"The Complete Book of Photographers\" (Mac Millan, Los Angeles), as well as in \"Contemporary Photographers\" (St. James Press, London). In 1985 the Bilbao Museum of Fine Arts, The Spanish Museum of Contemporary Art and  the IVAM organized a major solo exhibitions which marked his consecration as a major Spanish photographer of the mid Century. In 1994, he was attributed Spain’s first National Photography award, as well as Madrid’s first Circle of Fine Arts first gold medal, thus officially consolidating his consecration."
+text = "In 1978 Cuallado’s pictures were presented in Arles’ annual Photography Festival, amongst others. A couple of years later his pictures were published in \"The Complete Book of Photographers\" (Mac Millan, Los Angeles), as well as in \"Contemporary Photographers\" (St. James Press, London). In 1985 the Bilbao Museum of Fine Arts and the Spanish Museum of Contemporary Art organized a major solo exhibitions which marked his consecration as a major Spanish photographer of the mid Century. In 1994, he was attributed Spain’s first National Photography award, as well as Madrid’s first Circle of Fine Arts first gold medal, thus officially consolidating his consecration."
 title = "The Acknowledgment"
 top = "20"
 [[content]]
