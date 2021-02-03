@@ -1,7 +1,7 @@
 +++
 Title = "daily"
 keywords = []
-menu = []
+menu = ["serie"]
 meta_description = ""
 meta_title = "Cotid"
 namespace = "serie"
@@ -53,7 +53,7 @@ speed = ".26"
 date = "2021-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0057_ZAPATERO_qzveep.jpg"
 name = "Shoe maker"
-speed = ".28"
+speed = ".17"
 [[photos]]
 date = "2021-02-08T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0454_CLEMENTE_EL_CARRITO_hdnt50.jpg"
