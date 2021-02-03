@@ -78,6 +78,6 @@ speed = ".19"
 date = "2021-02-01T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0591-MALVARROSA_yey2kg.jpg"
 name = "Malvarossa"
-speed = ".30"
+speed = ".18"
 
 +++
