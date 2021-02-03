@@ -25,6 +25,7 @@ export default new class {
     this.renderer.setClearColor(0x000000, 0.0);
 
     this.clock = new THREE.Clock();
+
     this.scroll = 0;
     
     this.init();

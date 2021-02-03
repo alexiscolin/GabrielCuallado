@@ -33,6 +33,7 @@ class Raf {
 
   on() {
     gsap.ticker.add(this.tickFunc);
+
     Events.on('scroll', this.onScroll.bind(this));
     Events.on('stopRaf', this.off.bind(this));
   }

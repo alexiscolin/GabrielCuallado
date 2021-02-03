@@ -13,9 +13,9 @@
     "dev:hugo": "cross-env NODE_ENV=development hugo server -d ../dist -s site -D -F --minify",
     "dev:parcel": "cross-env NODE_ENV=development parcel watch ./site/assets/app.js --no-cache",
     "stage:hugo": "cross-env NODE_ENV=stage hugo -d ../stage -s site -b https://staging.gabriel-cuallado.com --gc --minify",
-    "stage:parcel": "cross-env NODE_ENV=stage parcel build ./site/assets/app.js -d ./stage --experimental-scope-hoisting  --no-cache",
+    "stage:parcel": "cross-env NODE_ENV=stage parcel build ./site/assets/app.js -d ./stage --experimental-scope-hoisting --no-cache",
     "build:hugo": "cross-env NODE_ENV=production hugo -d ../dist -s site --gc --minify",
-    "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/app.js --experimental-scope-hoisting  --no-cache"
+    "build:parcel": "cross-env NODE_ENV=development parcel build ./site/assets/app.js --experimental-scope-hoisting --no-cache"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,6 @@
     "glslify-bundle": "^5.1.1",
     "glslify-deps": "^1.3.2",
     "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.2",
     "sass": "^1.29.0"
   },
@@ -47,6 +46,7 @@
     "minimist": "^1.2.5",
     "modujs": "^1.4.2",
     "node-forge": "^0.10.0",
+    "parcel-bundler": "^1.12.4",
     "smooth-scrollr": "^0.3.2",
     "three": "^0.118.3",
     "tiny-emitter": "^2.1.0"
