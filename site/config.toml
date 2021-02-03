@@ -117,7 +117,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             
             [[languages.en.menu.about]]
                 identifier = "About"
-                name = "About"
+                name = "Biography"
                 url = "/about/"
                 weight = 1
             [[languages.en.menu.about]]
@@ -240,7 +240,7 @@ home = ["HTML", "REDIR", "HEADERS"]
 
             [[languages.es.menu.about]]
                 identifier = "About"
-                name = "Acerca"
+                name = "Biografia"
                 url = "/es/acerca/"
                 weight = 1
             [[languages.es.menu.about]]
@@ -364,7 +364,7 @@ home = ["HTML", "REDIR", "HEADERS"]
 
             [[languages.fr.menu.about]]
                 identifier = "About"
-                name = "À Propos"
+                name = "Biographie"
                 url = "/fr/a-propos/"
                 weight = 1
             [[languages.fr.menu.about]]
