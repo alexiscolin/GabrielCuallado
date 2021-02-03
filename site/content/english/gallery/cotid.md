@@ -1,7 +1,7 @@
 +++
 Title = "daily"
 keywords = []
-menu = ["serie"]
+menu = []
 meta_description = ""
 meta_title = "Cotid"
 namespace = "serie"
@@ -49,5 +49,10 @@ date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0598_NINA_AFAL_ewbdtg.jpg"
 name = "Afal girl"
 speed = ".26"
+[[photos]]
+date = "2021-01-31T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0057_ZAPATERO_qzveep.jpg"
+name = "Shoe maker"
+speed = ".2"
 
 +++
