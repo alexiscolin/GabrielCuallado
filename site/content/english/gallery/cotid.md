@@ -53,6 +53,6 @@ speed = ".26"
 date = "2021-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0057_ZAPATERO_qzveep.jpg"
 name = "Shoe maker"
-speed = ".2"
+speed = ".28"
 
 +++
