@@ -11,11 +11,6 @@ translationkey = "serie1"
 type = ""
 weight = 1
 [[photos]]
-date = "2021-02-16T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0271_COMUNION_MARIA_JOSE_hfkyjo.jpg"
-name = "Maria Jose's Communion"
-speed = ".29"
-[[photos]]
 date = "2020-12-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610649880/GALLERY/COTID/F0460_NINO_CON_SENORA_DE_ESPALDAS_iqhtlg.jpg"
 name = "Boy with woman from behind"
@@ -74,5 +69,15 @@ date = "2021-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0452_ESCUELA_DE_FLAMENCO_qxjmeb.jpg"
 name = "Flamenco School"
 speed = ".29"
+[[photos]]
+date = "2021-02-16T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0271_COMUNION_MARIA_JOSE_hfkyjo.jpg"
+name = "Maria Jose's Communion"
+speed = ".29"
+[[photos]]
+date = "2021-02-01T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0591-MALVARROSA_yey2kg.jpg"
+name = "Malvarossa"
+speed = ".30"
 
 +++
