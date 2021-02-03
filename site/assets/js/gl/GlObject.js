@@ -16,6 +16,9 @@ export default class extends THREE.Object3D {
   setBounds(index = 0) {
 
     const boundCalc = (els) => {
+      console.log('gl.scroll : ' + gl.scroll)
+      console.log('this.dir : ' + this.dir )
+
       els.forEach(el => {
         const rect = el.getBoundingClientRect();
     
@@ -25,8 +28,6 @@ export default class extends THREE.Object3D {
           width: rect.width,
           height: rect.height
         };
-        console.log(el)
-        console.log(bounds)
 
         this.elArray.push(bounds);
       });
@@ -87,7 +88,6 @@ export default class extends THREE.Object3D {
   destroy() {
         this.geometry.dispose();
         this.material.dispose();
-        console.log(this.updateY)
         gl.scene.remove( this );
         
   }

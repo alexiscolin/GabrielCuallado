@@ -182,7 +182,6 @@ export default class extends module {
 
         this.scroll && this.scroll.destroy();
         Gl.scroll = 0;
-
         for (let prop in this) {
             if (!Object.prototype.hasOwnProperty.call(this, prop)) continue;
   
