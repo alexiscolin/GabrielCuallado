@@ -49,35 +49,5 @@ date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0598_NINA_AFAL_ewbdtg.jpg"
 name = "Afal girl"
 speed = ".26"
-[[photos]]
-date = "2021-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0057_ZAPATERO_qzveep.jpg"
-name = "Shoe maker"
-speed = "-.26"
-[[photos]]
-date = "2021-02-08T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0454_CLEMENTE_EL_CARRITO_hdnt50.jpg"
-name = "Clemente the cart"
-speed = "-.1"
-[[photos]]
-date = "2021-02-08T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310737/GALLERY/COTID/F0496_Camarero_columna_c35oyj.jpg"
-name = "Waiter Column"
-speed = ".2"
-[[photos]]
-date = "2021-01-31T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0452_ESCUELA_DE_FLAMENCO_qxjmeb.jpg"
-name = "Flamenco School"
-speed = ".4"
-[[photos]]
-date = "2021-02-16T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0271_COMUNION_MARIA_JOSE_hfkyjo.jpg"
-name = "Maria Jose's Communion"
-speed = "-.2"
-[[photos]]
-date = "2021-02-01T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0591-MALVARROSA_yey2kg.jpg"
-name = "Malvarossa"
-speed = ".3"
 
 +++
