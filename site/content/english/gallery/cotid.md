@@ -11,15 +11,10 @@ translationkey = "serie1"
 type = ""
 weight = 1
 [[photos]]
-date = "2021-02-08T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0454_CLEMENTE_EL_CARRITO_hdnt50.jpg"
-name = "Clemente the cart"
-speed = ".28"
-[[photos]]
-date = "2021-02-08T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310737/GALLERY/COTID/F0496_Camarero_columna_c35oyj.jpg"
-name = "Waiter Column"
-speed = ".28"
+date = "2021-01-31T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0452_ESCUELA_DE_FLAMENCO_qxjmeb.jpg"
+name = "Flamenco School"
+speed = ".29"
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610649880/GALLERY/COTID/F0460_NINO_CON_SENORA_DE_ESPALDAS_iqhtlg.jpg"
@@ -63,6 +58,16 @@ speed = ".26"
 date = "2021-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310739/GALLERY/COTID/F0057_ZAPATERO_qzveep.jpg"
 name = "Shoe maker"
+speed = ".28"
+[[photos]]
+date = "2021-02-08T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310738/GALLERY/COTID/F0454_CLEMENTE_EL_CARRITO_hdnt50.jpg"
+name = "Clemente the cart"
+speed = ".28"
+[[photos]]
+date = "2021-02-08T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1612310737/GALLERY/COTID/F0496_Camarero_columna_c35oyj.jpg"
+name = "Waiter Column"
 speed = ".28"
 
 +++
