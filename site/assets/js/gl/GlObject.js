@@ -26,6 +26,8 @@ export default class extends THREE.Object3D {
           height: rect.height
         };
 
+        console.log(bounds)
+
         this.elArray.push(bounds);
       });
     }
@@ -86,5 +88,5 @@ export default class extends THREE.Object3D {
         this.geometry.dispose();
         this.material.dispose();
         gl.scene.remove( this );
-    }
+  }
 }
