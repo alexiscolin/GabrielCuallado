@@ -15,6 +15,7 @@ export default class extends module {
     } 
 
     init() {
+        Gl.scroll = 0;
         // if (window.matchMedia("(min-width: 640px)").matches) {
             preloadImages().then(() => {
                 const homeImg = this.el.querySelector('[data-parallaxe="img"]');
