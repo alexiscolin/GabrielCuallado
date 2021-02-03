@@ -80,7 +80,7 @@ left = "-10"
 subtitle = "1970s and 90s ⎮ Spain's First National Photography Award and Gold Medal  "
 template = "about-text"
 text = "In 1978 Cuallado’s pictures were presented in Arles’ annual Photography Festival, amongst others. A couple of years later his pictures were published in \"The Complete Book of Photographers\" (Mac Millan, Los Angeles), as well as in \"Contemporary Photographers\" (St. James Press, London). In 1992, the IVAM organized a major individual exhibition which marked his consecration as one of the great Spanish photographer of the mid-20th century. He received the ICI award for best European photographer at the National Museum of Photography, Film and Television (Bradford UK). In 1994, he received the First Spanish National Photography Prize, followed, in 1998, by the gold medal of the Círculo de Bellas Artes in Madrid, thus officially consolidating his consecration."
-title = "The Acknowledgment"
+title = "The recognition"
 top = "20"
 [[content]]
 citation = false

@@ -87,7 +87,7 @@
 
 .o-title {
     @include font-weight(light);
-    font-size: 38px;
+    font-size: 33px;
     letter-spacing: 4px;
     margin: 0;
     margin-top: 4rem;
@@ -95,6 +95,7 @@
     // text-shadow: 0 0 10px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,.8);
     @include media( '>medium' ) {
         margin-top: 0;
+        font-size: 38px;
     }
 }
 
