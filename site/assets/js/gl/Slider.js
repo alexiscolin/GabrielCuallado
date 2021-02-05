@@ -3,7 +3,6 @@ import Gl from './index'
 import GlObject from './GlObject'
 import vertex from './glsl/vertex.glsl'
 import fragment from './glsl/fragmentSlider.glsl'
-import disp from '../../../static/img/disp-02.png';
 import gsap from 'gsap';
 
 const planeGeometry = new THREE.PlaneBufferGeometry(1, 1, 32, 32);
