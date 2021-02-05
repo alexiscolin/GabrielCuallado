@@ -124,7 +124,6 @@ public/
 
 #design 
 design/
-dist/
 stage/
 
 # End of https://www.gitignore.io/api/node,macos
