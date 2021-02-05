@@ -122,6 +122,12 @@ public/
 # DynamoDB Local files
 .dynamodb/
 
+# Parcel
+.parcel-cache/
+
+#VS
+.vscode/
+
 #design 
 design/
 stage/
