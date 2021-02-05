@@ -14,11 +14,6 @@ jobs:
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-          
-    - name: Remove File
-      uses: JesseTG/rm@v1.0.2
-      with:
-        path: /dist
       
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
