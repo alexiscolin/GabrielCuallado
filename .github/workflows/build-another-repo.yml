@@ -1,13 +1,14 @@
 name: Build and Release
-on: [push]
+on: 
+ push:
+  branches:
+    - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [10.x]
-
     steps:
     - uses: actions/checkout@v2
       with:
@@ -51,7 +52,8 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: dcb882dbea82ffc515b1be110857e088b835421e
-        src_path: dist
+        src_path: dist/.
+        dst_path: www
         dst_owner: alexiscolin
         dst_repo_name: gabrielcuallado-website
         src_branch: action 
@@ -59,4 +61,15 @@ jobs:
         email: alexis@de-jaune-et-de-bleu.com
         username: alexiscolin 
         commit_message: '[GHA] Update the dist folder.'
+    
+  delete-branch:
+    runs-on: ubuntu-latest
+    needs: copy
+    steps:
+      - name: Close action branch
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: dcb882dbea82ffc515b1be110857e088b835421e
+          branches: action
+   
  
