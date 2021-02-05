@@ -10,22 +10,53 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+          
+    - name: Remove File
+      uses: JesseTG/rm@v1.0.2
+      with:
+        path: /dist
+      
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.79.1'
+        # extended: true
+      
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    
     - name: npm install, build
       run: |
         npm install
         npm run build
-    - name: Release build
-      uses: hpcodecraft/action-deploy-workspace-to-repo@v2.2
-
-      env:
-        GITHUB_ACCESS_TOKEN: dcb882dbea82ffc515b1be110857e088b835421e
-        SRC_FOLDER: dist
-        DEST_OWNER: alexiscolin
-        DEST_REPO: alexiscolin/gabrielcuallado-website.git
-        DEST_BRANCH: master
-        DEST_FOLDER: site
-        DEST_PREDEPLOY_CLEANUP: "rm bundle* && rm index.html"
+        
+    - name: Commit & Push changes
+      uses: actions-js/push@v1.2
+      with:
+        github_token: dcb882dbea82ffc515b1be110857e088b835421e
+        author_email: alexis@de-jaune-et-de-bleu.com
+        author_name: alexiscolin
+        branch: action  
+  
+  copy:
+    runs-on: ubuntu-latest
+    needs: build-and-deploy
+    steps:
+    - name: Copy dist folder to public repo
+      uses: andstor/copycat-action@v3
+      with:
+        personal_token: dcb882dbea82ffc515b1be110857e088b835421e
+        src_path: dist
+        dst_owner: alexiscolin
+        dst_repo_name: gabrielcuallado-website
+        src_branch: action 
+        clean: true
+        email: alexis@de-jaune-et-de-bleu.com
+        username: alexiscolin 
+        commit_message: '[GHA] Update the dist folder.'
+ 
