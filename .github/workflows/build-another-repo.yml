@@ -30,14 +30,16 @@ jobs:
       run: |
         npm install
         npm run build
-         
-    - name: Pushes dist folder
-      uses: crykn/copy_folder_to_another_repo_action@v1.0.6
-      env:
-        API_TOKEN_GITHUB: dcb882dbea82ffc515b1be110857e088b835421e
+        
+    - name: Copy dist
+      uses: andstor/copycat-action@v3
       with:
-        source_folder: 'dist'
-        destination_repo: 'alexiscolin/gabrielcuallado-website'
-        user_email: 'nesquimo@gmail.com'
-        user_name: 'alexiscolin'
-        commit_msg: '[GHA] Update the dist folder.'  
+        personal_token: dcb882dbea82ffc515b1be110857e088b835421e
+        src_path: /dist
+        dst_path: /www/
+        dst_owner: alexiscolin
+        dst_repo_name: gabrielcuallado-website
+        clean: true
+        email: alexis@de-jaune-et-de-bleu.com
+        username: alexiscolin 
+        commit_message: '[GHA] Update the dist folder.'
