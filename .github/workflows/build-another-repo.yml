@@ -60,4 +60,15 @@ jobs:
         email: alexis@de-jaune-et-de-bleu.com
         username: alexiscolin 
         commit_message: '[GHA] Update the dist folder.'
+    
+  delete-branch:
+    runs-on: ubuntu-latest
+    needs: copy
+    steps:
+      - name: Close action branch
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: dcb882dbea82ffc515b1be110857e088b835421e
+          branches: action
+   
  
