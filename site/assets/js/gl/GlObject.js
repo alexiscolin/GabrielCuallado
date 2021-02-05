@@ -14,7 +14,6 @@ export default class extends THREE.Object3D {
   }
 
   setBounds(index = 0) {
-
     const boundCalc = (els) => {
       els.forEach(el => {
         const rect = el.getBoundingClientRect();
@@ -86,6 +85,5 @@ export default class extends THREE.Object3D {
         this.geometry.dispose();
         this.material.dispose();
         gl.scene.remove( this );
-        
   }
 }
