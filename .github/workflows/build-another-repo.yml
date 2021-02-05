@@ -18,14 +18,15 @@ jobs:
       run: |
         npm install
         npm run build
-    - name: Release build
-      uses: hpcodecraft/action-deploy-workspace-to-repo@v2.2
-
+         
+    - name: Pushes test folder
+      uses: crykn/copy_folder_to_another_repo_action@v1.0.6
       env:
-        GITHUB_ACCESS_TOKEN: dcb882dbea82ffc515b1be110857e088b835421e
-        SRC_FOLDER: dist
-        DEST_OWNER: alexiscolin
-        DEST_REPO: alexiscolin/gabrielcuallado-website.git
-        DEST_BRANCH: master
-        DEST_FOLDER: site
-        DEST_PREDEPLOY_CLEANUP: "rm bundle* && rm index.html"
+        API_TOKEN_GITHUB: dcb882dbea82ffc515b1be110857e088b835421e
+      with:
+        source_folder: 'dist'
+        destination_repo: 'alexiscolin/gabrielcuallado-website'
+        destination_folder: ''
+        user_email: 'nesquimo@gmail.com'
+        user_name: 'alexiscolin'
+        commit_msg: '[GHA] Update the dist folder.'  
