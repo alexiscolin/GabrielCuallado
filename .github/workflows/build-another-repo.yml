@@ -35,7 +35,7 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: dcb882dbea82ffc515b1be110857e088b835421e
-        src_path: dist
+        src_path: /home/runner/work/GabrielCuallado/GabrielCuallado/dist
         dst_owner: alexiscolin
         dst_repo_name: gabrielcuallado-website
         clean: true
