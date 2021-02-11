@@ -1,5 +1,18 @@
 
 
-    X-Robots-Tag: noindex
+# desindexer pages fantomes:
+/fr/expositions/index.html
+  X-Robots-Tag: noindex
+/es/exposiciones/index.html
+  X-Robots-Tag: noindex
+/exhibitions/index.html
+  X-Robots-Tag: noindex
+
+/fr/galerie/index.html
+  X-Robots-Tag: noindex
+/es/galeria/index.html
+  X-Robots-Tag: noindex
+/gallery/index.html
+  X-Robots-Tag: noindex
 
 
