@@ -1,7 +1,7 @@
 +++
 Title = "Madrid"
 keywords = []
-menu = ["serie"]
+menu = []
 meta_description = ""
 meta_title = "Madrid"
 namespace = "serie"
@@ -10,6 +10,11 @@ title = "madrid.md"
 translationkey = "serie2"
 type = "gallery"
 weight = 2
+[[photos]]
+date = "2021-02-01T23:00:00+00:00"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1614362159/GALLERY/MADRID/F1197_NINNA_CON_FLORES_jxabld.jpg"
+name = "Nina Avec de Fleurs"
+speed = 1
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F023_FELIZ_1959_tcnh58.jpg"
