@@ -2,7 +2,7 @@
 Title = "Individual"
 keywords = []
 layout = ""
-menu = ["exhibitions"]
+menu = []
 meta_description = "Gabriel Cuallado's individual exhibitions."
 meta_title = "Individual exhibitions"
 namespace = "exhibitions"
@@ -83,7 +83,7 @@ link = "https://www.museoreinasofia.es/en/coleccion/autor/cuallado-gabriel"
 name = "\"Antological exhibition of 150 photographs\", Spanish Contemporary Art Museum"
 place = "Madrid, Spain"
 [[exhibition]]
-date = "1984-11-30T23:00:00+00:00"
+date = "1983-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622724/GALLERY/FAMILIA/F0572-NINA_BRAZO_ESTIRADO_r4zqi8.jpg"
 link = ""
 name = "Gallery Marion - Valentine"
