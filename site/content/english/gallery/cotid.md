@@ -1,7 +1,7 @@
 +++
 Title = "daily"
 keywords = []
-menu = ["serie"]
+menu = []
 meta_description = ""
 meta_title = "Cotid"
 namespace = "serie"
@@ -37,7 +37,7 @@ speed = ".4"
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0466_LA_MUJER_DE_PENELLA_a1jul8.jpg"
 link = "#"
-name = "Mujer de Penella"
+name = "Woman of Penella"
 speed = ".26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
