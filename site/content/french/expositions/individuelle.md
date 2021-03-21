@@ -1,6 +1,5 @@
 +++
 Title = "Individuelle"
-draft = true
 keywords = []
 layout = ""
 menu = []
