@@ -7,7 +7,6 @@ meta_title = "Paris"
 namespace = "serie"
 section = "gallery"
 translationkey = "serie5"
-type = ""
 weight = 5
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
