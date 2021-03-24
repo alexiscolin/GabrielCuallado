@@ -1,7 +1,7 @@
 +++
 Title = "Famille"
 keywords = ["photo noir et blanc", "famille"]
-menu = []
+menu = ["serie"]
 meta_description = "Série de photos de la famille du photographe espagnol Gabriel Cuallado."
 meta_title = "Famille"
 namespace = "serie"

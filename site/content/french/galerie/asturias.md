@@ -1,7 +1,7 @@
 +++
 Title = "Asturies"
 keywords = []
-menu = []
+menu = ["serie"]
 meta_description = ""
 meta_title = "Asturies"
 namespace = "serie"
