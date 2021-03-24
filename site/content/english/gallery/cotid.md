@@ -1,7 +1,7 @@
 +++
 Title = "daily"
 keywords = []
-menu = []
+menu = ["serie"]
 meta_description = ""
 meta_title = "Cotid"
 namespace = "serie"
