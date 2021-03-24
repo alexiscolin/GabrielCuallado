@@ -8,7 +8,6 @@ namespace = "serie"
 section = "gallery"
 title = "asturias.md"
 translationkey = "serie6"
-type = ""
 weight = 6
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"

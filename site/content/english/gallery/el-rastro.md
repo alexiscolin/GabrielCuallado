@@ -7,7 +7,6 @@ meta_title = "El Rastro"
 namespace = "serie"
 section = "gallery"
 translationkey = "serie3"
-type = ""
 weight = 3
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
