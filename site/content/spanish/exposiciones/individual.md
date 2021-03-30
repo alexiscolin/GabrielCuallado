@@ -48,7 +48,7 @@ place = "Madrid, España"
 date = "2003-11-30T23:00:00+00:00"
 illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/EXHIBITIONS_INDIVIDUAL/IVAM_Homenage_Cuallado_onutqi.jpg"
 link = "https://www.ivam.es/en/exposiciones/homenaje-a-gabriel-cuallado-massanassa-valencia-1925-madrid-2003/"
-name = "\"Homenaje to Gabriel Cualladó\", IVAM"
+name = "\"Homenaje a Gabriel Cualladó\", IVAM"
 place = "Valencia, España"
 [[exhibition]]
 date = "1996-11-30T23:00:00+00:00"
