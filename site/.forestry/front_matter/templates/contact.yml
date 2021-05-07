@@ -55,3 +55,32 @@ fields:
         format: markdown
     label: countries
   label: buy
+- name: general
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: label
+  - name: email
+    type: text
+    config:
+      required: false
+    label: email
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: phone
+  - name: countries
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: countries
+  label: general
