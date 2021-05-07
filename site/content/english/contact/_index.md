@@ -1,8 +1,10 @@
 +++
 Title = ""
+keywords = ["contact"]
 meta_description = ""
 meta_title = "Contact"
 namespace = ""
+translationkey = "contact"
 type = ""
 url = ""
 [buy]
