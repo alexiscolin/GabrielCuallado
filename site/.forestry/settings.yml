@@ -113,15 +113,14 @@ sections:
   path: site/content/english/about/collectors.md
   label: Collectors
 - type: document
-  path: site/content/english/contact/_index.md
-  label: Contact
-  match: "**/*"
-- type: document
   path: site/data/en/links.toml
   label: Nav Links
 - type: document
   path: site/data/en/presskits.toml
   label: Presskit
+- type: document
+  path: site/content/english/contact/_index.md
+  label: Contact
 upload_dir: ''
 public_path: https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60
 front_matter_path: ''
