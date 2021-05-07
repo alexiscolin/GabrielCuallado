@@ -113,6 +113,10 @@ sections:
   path: site/content/english/about/collectors.md
   label: Collectors
 - type: document
+  path: site/content/english/contact/_index.md
+  label: Contact
+  match: "**/*"
+- type: document
   path: site/data/en/links.toml
   label: Nav Links
 - type: document
