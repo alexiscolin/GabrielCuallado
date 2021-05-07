@@ -1,4 +1,4 @@
-import { module } from 'modujs';
+import module from '../lib/module.js';
 import gsap from 'gsap';
 
 export default class extends module {

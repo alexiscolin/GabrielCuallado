@@ -2,7 +2,7 @@
 import './scss/main.scss';
 
 /** JS */
-import modular from 'modujs';
+import modular from './js/lib/main.js';
 import * as modules from './js/modules';
 
 
@@ -92,7 +92,9 @@ const website = website || {};
   const app = new modular({
       modules: modules
   });
+  console.log(JSON.stringify(app));
   app.init(app);
+  console.log(app);
 
     website.init()
 }())
