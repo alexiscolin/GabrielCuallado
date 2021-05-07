@@ -16,10 +16,19 @@ fields:
   config:
     required: false
   label: Meta description
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
 - type: text
   name: namespace
   label: namespace
   hidden: true
+- name: translationkey
+  type: text
+  config:
+    required: false
+  label: clé de traduction
 - name: url
   type: text
   config:
