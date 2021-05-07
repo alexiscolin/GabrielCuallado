@@ -8,7 +8,7 @@ translationkey = "contact"
 type = ""
 url = ""
 [buy]
-countries = "Galeria Blanca Berlin\nCaille del Limón, 28\n28015, Madrid\nSpain"
+countries = "<p>Galeria Blanca Berlin&lt;br&gt;Caille del Limón, 28 &lt;br&gt;28015, Madrid&lt;br&gt; Spain</p>"
 email = "galeria@blancaberlingaleria.com"
 label = "TO BUY AN ARTWORK"
 phone = "+34 91 54 29 313"
