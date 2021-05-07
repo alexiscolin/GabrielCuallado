@@ -47,10 +47,10 @@ export default class extends module {
                 this.glObject.init(homeImg, 0);
 
                 this.prevObject = new Slider(); 
-                this.prevObject.init(prevImg, 0);
+                this.prevObject.init(prevImg, 5);
 
                 this.nextObject = new Slider(); 
-                this.nextObject.init(nextImg, 0);
+                this.nextObject.init(nextImg, 1);
 
             }); 
 
@@ -140,6 +140,7 @@ export default class extends module {
                 descChars: [...el.querySelectorAll('.js-main-desc > .char')]
             }
         })
+        console.log(this.infos)
     }
 
     bindEvent() {
@@ -209,7 +210,9 @@ export default class extends module {
         const to = this.seriesTitles[dir ? index-1 : index+1];
         
         // match series and datas (from)
+        console.log(this.seriesTitles[index])
         const dataFrom = this.infos[this.infos.findIndex(info => info.id === this.seriesTitles[index].id)];
+        console.log(this.infos.findIndex(info => info.id === this.seriesTitles[index].id))
 
         if(to.content !== "true") {
             const id = to.id.split('_').splice(1)[0];
@@ -224,6 +227,8 @@ export default class extends module {
         const desk = window.matchMedia("(min-width: 640px)").matches;
 
         // slide description
+        console.log(this.seriesTitles)
+        console.log(dataFrom)
         gsap.to(dataFrom.descChars, {autoAlpha: 0,duration: (this.sliderDelay/2 - .1), stagger: {amount: (this.sliderDelay/2 - .1), from: "random"}})
         gsap.to(dataTo.descChars, {autoAlpha: 1, duration: (this.sliderDelay/2 - .1), delay: (this.sliderDelay/2 - .1), stagger: {amount: (this.sliderDelay/2 - .1), from: "random"}})
 

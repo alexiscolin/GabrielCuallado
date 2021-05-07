@@ -12,6 +12,8 @@ title = "asturias.md"
 translationkey = "serie6"
 type = "gallery"
 weight = 6
+description = "Think out the box and see the light"
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-asturias_kifjys"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622724/GALLERY/ASTURIAS/F0467_PEPE_LUIS_kl8exs.jpg"

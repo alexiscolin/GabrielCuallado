@@ -129,7 +129,8 @@
         &:last-child {
             margin-bottom: 0;
             @include media( '>medium' ) {
-                margin-top: initial;
+                margin-top: 0;
+                margin-bottom: -3vw;
                 margin-right: 0;
             }
         }
