@@ -59,7 +59,7 @@ export default class extends GlObject {
         
         // textures
         this.textures = [];
-        this.loadTexture();
+        this.loadTexture(index);
 
         // animation
         this.sliderAnim = gsap.timeline({paused: true, onComplete: () => {
@@ -82,10 +82,10 @@ export default class extends GlObject {
         }, 0)
     }
 
-    loadTexture() {
+    loadTexture(index = 0) {
         const manager = new THREE.LoadingManager(() => {
             // Set first texture as default
-            this.material.uniforms.uCurrTex.value = this.textures[0];
+            this.material.uniforms.uCurrTex.value = this.textures[index];
         }); 
 
         const loader = new THREE.TextureLoader(manager);

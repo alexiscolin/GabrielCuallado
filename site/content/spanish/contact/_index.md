@@ -9,7 +9,7 @@ type = "contact"
 url = ""
 [legal]
 label = "legal"
-link = "https://www.google.fr"
+link = "https://www.google.com"
 [buy]
 countries = "<p>Galeria Blanca Berlin&lt;br&gt;Caille del Limón, 28 &lt;br&gt;28015, Madrid&lt;br&gt; Spain</p>"
 email = "galeria@blancaberlingaleria.com"

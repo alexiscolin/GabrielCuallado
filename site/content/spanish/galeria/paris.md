@@ -9,6 +9,8 @@ section = "galeria"
 translationkey = "serie5"
 type = "gallery"
 weight = 5
+description = "A sentence to describe the serie"
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-paris_ysr8b2"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/GALLERY/PARIS/F0007_MUJER_DE_ESPALDAS_Y_NINA_xwr8bf.jpg"

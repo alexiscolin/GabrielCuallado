@@ -13,7 +13,7 @@
 			<div class="c-loader__container_zone c-loader__container_zone--next"></div>
 
 
-			{{ $paginator := .Paginate (where .Site.Pages "Type" "gallery") }}
+			{{ $paginator := .Paginate (where .Site.RegularPages "Type" "gallery") }}
 
 			<div class="c-main_pic"  data-speed="0">
 				
@@ -56,9 +56,8 @@
 			{{/* all title */}}
 			<div class="c-main_series js-main-series-cont">
 				<ul class="c-main_series_wrapper">
-					
 					{{/* two fake last - one more for useless _index*/}}
-					{{ range last 3 $paginator.Pages }}
+					{{ range last 2 $paginator.Pages }}
 						{{ if isset .Params "title" }}
 							<li class="c-main_serie js-main-series" data-content="end" data-id="fake_{{.Params.title | urlize}}">{{ .Params.title }}</li>
 						{{ end }}
