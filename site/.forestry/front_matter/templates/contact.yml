@@ -20,13 +20,38 @@ fields:
   name: namespace
   label: namespace
   hidden: true
-- type: text
-  name: typeform
-  label: Script Typeform
-  description: 'URL A trouver dans le code généré par Typeform (format : https://form.typeform.com/to/P8Aal4DD)'
 - name: url
   type: text
   config:
     required: false
   label: url
   hidden: true
+- name: buy
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: label
+  - name: email
+    type: text
+    config:
+      required: false
+    label: email
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: phone
+  - name: countries
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: countries
+  label: buy
