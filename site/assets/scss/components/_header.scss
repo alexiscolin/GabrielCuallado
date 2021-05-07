@@ -23,7 +23,7 @@
         text-transform: uppercase;
         letter-spacing: 5px;
         @include font-family(heading);
-        @include font-weight(semibold);
+        @include font-weight(medium);
         color: transparent;
         text-decoration: none;
         z-index: 12;

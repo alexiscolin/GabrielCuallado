@@ -1,0 +1,112 @@
+.c-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4vw;
+    flex-direction: column;
+
+    @include media( '>medium' ) {
+        height: 62vh;
+        margin: 28vh 0 0;
+        flex-direction: row;
+    }
+
+    &_zone {
+        margin: 0 2vw 14vh;
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+        @include media( '>medium' ) {
+            width: 50%;
+            justify-content:center;
+            margin: 0 2vw;
+        }
+
+        &_inner {
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -4vw;
+                width: 250px;
+                height: 60px;
+                background: #C4C4C4;
+                opacity: .1;
+                transform: rotate(12deg);
+            }
+        }
+    }
+
+    &_desc {
+        position: relative;
+        font-size: 14px;
+        @include font-weight(light);
+        padding-left: 5vw;
+        margin-bottom: 1.5rem;
+
+        @include media( '>medium' ) {
+            font-size: 16px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 0;
+            width: 4vw;
+            height: 1px;
+            transform: translate3d(0,-50%,0);
+            background: color(typography, 2);
+        }
+    }
+
+    &_info {
+        @include font-family(heading);
+        @include font-weight(semibold);
+        font-style: italic;
+        letter-spacing: 3px;
+        font-size: 20px;
+        min-height: 1.5ex;
+        margin-bottom: .4rem;
+        text-transform: uppercase;
+
+        @include media( '>medium' ) {
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+
+        & > a {
+            position: relative;
+            text-decoration: none;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: .5px;
+                background: color(typography,2);
+                bottom: 3px;
+                left: 0;
+            }
+        }
+    }
+    
+    &_country {
+        @include font-family(heading);
+        margin-top: 1rem;
+        font-size: 26px;
+        line-height: 1.4;
+    }
+}
+
+.c-ml{
+    position: absolute;
+    bottom: 4vw;
+    left: 5vw;
+    font-size: 12px;
+} 
