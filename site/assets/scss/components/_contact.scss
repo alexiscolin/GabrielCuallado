@@ -99,8 +99,9 @@
     &_country {
         @include font-family(heading);
         margin-top: 1rem;
-        font-size: 26px;
+        font-size: 28px;
         line-height: 1.4;
+        white-space: pre;
     }
 }
 
