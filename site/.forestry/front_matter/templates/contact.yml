@@ -99,5 +99,22 @@ fields:
     required: false
   label: type
   hidden: true
+- name: legal
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: label
+    description: Label du lien de mention légale
+  - name: link
+    type: text
+    config:
+      required: false
+    label: link
+    description: Lien vers le fichier pdf des mentions légales
+  label: legal
 pages:
 - site/content/english/contact/_index.md
