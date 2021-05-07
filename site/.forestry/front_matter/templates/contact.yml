@@ -59,9 +59,9 @@ fields:
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
       schema:
-        format: markdown
+        format: html
     label: countries
   label: buy
 - name: general
@@ -88,9 +88,9 @@ fields:
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
       schema:
-        format: markdown
+        format: html
     label: countries
   label: general
 - name: type
