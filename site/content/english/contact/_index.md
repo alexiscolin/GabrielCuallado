@@ -1,4 +1,5 @@
 +++
+<<<<<<< HEAD
 Title = ""
 keywords = ["contact"]
 meta_description = ""
@@ -23,3 +24,13 @@ link = "https://pdfhost.io/v/py61MkLRh_GabrielCualladoLegalNoticepdf.pdf"
 
 +++
 +++ Title = "Contact" meta_description = "" meta_title = "" namespace = "contact" section = "contact" translationkey = "contact" type = "contact" +++
+=======
+Title = "Contact"
+meta_description = ""
+meta_title = ""
+namespace = "contact"
+section = "contact"
+translationkey = "contact"
+type = "contact"
++++
+>>>>>>> add contact page

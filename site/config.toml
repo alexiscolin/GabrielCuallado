@@ -91,7 +91,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.en.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
-                url = "https://oko4.typeform.com/to/lvAGfzUG"
+                url = "/contact/"
                 weight = 4
 
             [[languages.en.menu.header]]
@@ -112,7 +112,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.en.menu.header]]
                 identifier = "Contact"
                 name = "Contact"
-                url = "https://oko4.typeform.com/to/lvAGfzUG"
+                url = "/contact/"
                 weight = 4
             
             [[languages.en.menu.about]]
@@ -212,7 +212,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.es.menu.main]]
                 identifier = "Contact"
                 name = "Contactos"
-                url = "https://oko4.typeform.com/to/lvAGfzUG"
+                url = "es/contactos/"
                 weight = 4
 
 
@@ -234,7 +234,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.es.menu.header]]
                 identifier = "Contact"
                 name = "Contactos"
-                url = "https://oko4.typeform.com/to/lvAGfzUG"
+                url = "es/contactos/"
                 weight = 4
                 
 
@@ -336,7 +336,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.fr.menu.main]]
                 identifier = "Contact"
                 name = "Contact"
-                url = "https://oko4.typeform.com/to/lvAGfzUG"
+                url = "fr/contact/"
                 weight = 4
 
 
@@ -358,7 +358,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.fr.menu.header]]
                 identifier = "Contact"
                 name = "Contact"
-                url = "https://oko4.typeform.com/to/lvAGfzUG"
+                url = "fr/contact/"
                 weight = 4
             
 
