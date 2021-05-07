@@ -23,7 +23,8 @@ fields:
 - type: text
   name: namespace
   label: namespace
-  hidden: true
+  hidden: false
+  description: must be "contact"
 - name: translationkey
   type: text
   config:
