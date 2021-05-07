@@ -84,7 +84,7 @@ fields:
         format: markdown
     label: countries
   label: general
-  - name: type
+- name: type
   type: text
   config:
     required: false
