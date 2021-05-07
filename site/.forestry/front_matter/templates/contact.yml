@@ -90,3 +90,5 @@ fields:
     required: false
   label: type
   hidden: true
+pages:
+- site/content/english/contact/_index.md
