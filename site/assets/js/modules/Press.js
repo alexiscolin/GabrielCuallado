@@ -1,4 +1,4 @@
-import { module } from 'modujs';
+import module from '../lib/module.js';
 
 export default class extends module {
     constructor(m) {

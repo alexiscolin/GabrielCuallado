@@ -32,6 +32,8 @@ const homepageTransition = function (imgFunc){
             loader.to("#js-loader-title", {opacity: 0, duration: 1}, "-=1");
             loader.from(".js-header", {opacity: 0, duration: 1}, "-=1");
 
+            loader.to("#js-loader-indic", {autoAlpha: 1, duration: 1});
+
             const canvas = document.querySelector('.dom-gl');
             gsap.to(canvas, {autoAlpha: 1, duration: .5});
         })

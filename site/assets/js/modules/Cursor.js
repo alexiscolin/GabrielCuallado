@@ -1,4 +1,4 @@
-import { module } from 'modujs';
+import module from '../lib/module.js';
 import gsap from 'gsap';
 import Events from '../events/Events';
 import { lerp, calcWinsize, getMousePos } from '../utils';
