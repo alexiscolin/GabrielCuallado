@@ -84,3 +84,9 @@ fields:
         format: markdown
     label: countries
   label: general
+  - name: type
+  type: text
+  config:
+    required: false
+  label: type
+  hidden: true
