@@ -4,33 +4,32 @@
 {{ end }}
 
 {{ define "main" }}
-
   <section>
     <div class="container">
       <section class="c-contact js-section">
           <div class="c-contact_zone">
             <div class="c-contact_zone_inner">
-              <div class="c-contact_desc">TO BUY AN ARTWORK</div>
-              <div class="c-contact_info c-contact_info--email"><a href="mailto:">galeria@blancaberlingaleria.com</a></div>
-              <div class="c-contact_info c-contact_info--phone">+34 91 54 29 313</div>
+              <div class="c-contact_desc">{{.Params.buy.label}}</div>
+              <div class="c-contact_info c-contact_info--email"><a href="mailto:{{.Params.buy.email}}">{{.Params.buy.email}}</a></div>
+              <div class="c-contact_info c-contact_info--phone">{{.Params.buy.phone}}</div>
               <div class="c-contact_country">
-                Galeria Blanca Berlin<br>Galeria Blanca Berlin
+                {{ htmlUnescape .Params.buy.countries | safeHTML}}
               </div>
             </div>
           </div>
 
           <div class="c-contact_zone">
             <div class="c-contact_zone_inner">
-              <div class="c-contact_desc">FOR GENERAL INQUIRIES</div>
-              <div class="c-contact_info c-contact_info--email"><a href="mailto:">galeria@blancaberlingaleria.com</a></div>
-              <div class="c-contact_info c-contact_info--phone"></div>              
+              <div class="c-contact_desc">{{.Params.general.label}}</div>
+              <div class="c-contact_info c-contact_info--email"><a href="mailto:{{.Params.general.email}}">{{.Params.general.email}}</a></div>
+              <div class="c-contact_info c-contact_info--phone">{{.Params.general.phone}}</div>              
               <div class="c-contact_country">
-                Galeria Blanca Berlin<br>Galeria Blanca Berlin
+                {{ htmlUnescape .Params.general.countries | safeHTML}}
               </div>
             </div>
           </div>
       </section>
-      <div class="c-ml">© Gabriel Cualladó - <a href="">Legal</a></div>
+      <div class="c-ml">© Gabriel Cualladó - <a href="{{.Params.legal.link}}" target="_blank">{{.Params.legal.label}}</a></div>
     </div>
   </section>
 {{ end }}
