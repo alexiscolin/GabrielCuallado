@@ -98,6 +98,7 @@
     
     &_country {
         @include font-family(heading);
+        @include font-weight(light);
         margin-top: 1rem;
         font-size: 28px;
         line-height: 1.4;
