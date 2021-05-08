@@ -92,10 +92,7 @@ const website = website || {};
   const app = new modular({
       modules: modules
   });
-  console.log(JSON.stringify(app));
   app.init(app);
-  console.log(app);
-
     website.init()
 }())
 
