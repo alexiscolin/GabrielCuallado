@@ -83,6 +83,7 @@
 
     &_mainlist {
         &_item {
+
             
             &_link {
                 font-size: 60px;
@@ -363,6 +364,10 @@
             color: black;
         }
     }
+}
+
+.js-nav-list {
+    opacity: 0;
 }
 
 
