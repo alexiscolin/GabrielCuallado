@@ -42,18 +42,18 @@ home = ["HTML", "REDIR", "HEADERS"]
                     parent = "About"
                     url = "/about/"
                     weight = 1
-                [[languages.en.menu.main]]
-                    identifier = "Collectors"
-                    name = "Collectors"
-                    parent = "About"
-                    url = "/about/collectors/"
-                    weight = 2
-                [[languages.en.menu.main]]
-                    name = "Awards"
-                    parent = "About"
-                    identifier = "Awards"
-                    url = "/about/awards/"
-                    weight = 3
+                # [[languages.en.menu.main]]
+                #     identifier = "Collectors"
+                #     name = "Collectors"
+                #     parent = "About"
+                #     url = "/about/collectors/"
+                #     weight = 2
+                # [[languages.en.menu.main]]
+                #     name = "Awards"
+                #     parent = "About"
+                #     identifier = "Awards"
+                #     url = "/about/awards/"
+                #     weight = 3
                 [[languages.en.menu.main]]
                     identifier = "Publications"
                     name = "Publications"
@@ -120,16 +120,16 @@ home = ["HTML", "REDIR", "HEADERS"]
                 name = "Biography"
                 url = "/about/"
                 weight = 1
-            [[languages.en.menu.about]]
-                identifier = "Collectors"
-                name = "Collectors"
-                url = "/about/collectors/"
-                weight = 2
-            [[languages.en.menu.about]]
-                identifier = "Awards"
-                name = "Awards"
-                url = "/about/awards/"
-                weight = 3
+            # [[languages.en.menu.about]]
+            #     identifier = "Collectors"
+            #     name = "Collectors"
+            #     url = "/about/collectors/"
+            #     weight = 2
+            # [[languages.en.menu.about]]
+            #     identifier = "Awards"
+            #     name = "Awards"
+            #     url = "/about/awards/"
+            #     weight = 3
             [[languages.en.menu.about]]
                 identifier = "Publications"
                 name = "Publications"
@@ -163,18 +163,18 @@ home = ["HTML", "REDIR", "HEADERS"]
                     parent = "About"
                     url = "/es/acerca/"
                     weight = 1
-                [[languages.es.menu.main]]
-                    identifier = "Coleccionistas"
-                    name = "Coleccionistas"
-                    parent = "About"
-                    url = "/es/acerca/coleccionistas/"
-                    weight = 2
-                [[languages.es.menu.main]]
-                    name = "Premios"
-                    parent = "About"
-                    identifier = "premios"
-                    url = "/es/acerca/premios/"
-                    weight = 3
+                # [[languages.es.menu.main]]
+                #     identifier = "Coleccionistas"
+                #     name = "Coleccionistas"
+                #     parent = "About"
+                #     url = "/es/acerca/coleccionistas/"
+                #     weight = 2
+                # [[languages.es.menu.main]]
+                #     name = "Premios"
+                #     parent = "About"
+                #     identifier = "premios"
+                #     url = "/es/acerca/premios/"
+                #     weight = 3
                 [[languages.es.menu.main]]
                     identifier = "publicaciones"
                     name = "Publicaciones"
@@ -243,16 +243,16 @@ home = ["HTML", "REDIR", "HEADERS"]
                 name = "Biografia"
                 url = "/es/acerca/"
                 weight = 1
-            [[languages.es.menu.about]]
-                identifier = "Collectors"
-                name = "Coleccionistas"
-                url = "/es/acerca/coleccionistas/"
-                weight = 2
-            [[languages.es.menu.about]]
-                identifier = "Awards"
-                name = "Premios"
-                url = "/es/acerca/premios/"
-                weight = 3
+            # [[languages.es.menu.about]]
+            #     identifier = "Collectors"
+            #     name = "Coleccionistas"
+            #     url = "/es/acerca/coleccionistas/"
+            #     weight = 2
+            # [[languages.es.menu.about]]
+            #     identifier = "Awards"
+            #     name = "Premios"
+            #     url = "/es/acerca/premios/"
+            #     weight = 3
             [[languages.es.menu.about]]
                 identifier = "Publications"
                 name = "Publicaciones"
@@ -287,18 +287,18 @@ home = ["HTML", "REDIR", "HEADERS"]
                     parent = "About"
                     url = "/fr/a-propos/"
                     weight = 1
-                [[languages.fr.menu.main]]
-                    identifier = "Collectors"
-                    name = "Collections"
-                    parent = "About"
-                    url = "/fr/a-propos/collections/"
-                    weight = 2
-                [[languages.fr.menu.main]]
-                    name = "Prix"
-                    parent = "About"
-                    identifier = "Prix"
-                    url = "/fr/a-propos/prix/"
-                    weight = 3
+                # [[languages.fr.menu.main]]
+                #     identifier = "Collectors"
+                #     name = "Collections"
+                #     parent = "About"
+                #     url = "/fr/a-propos/collections/"
+                #     weight = 2
+                # [[languages.fr.menu.main]]
+                #     name = "Prix"
+                #     parent = "About"
+                #     identifier = "Prix"
+                #     url = "/fr/a-propos/prix/"
+                #     weight = 3
                 [[languages.fr.menu.main]]
                     identifier = "Publications"
                     name = "Publications"
@@ -367,16 +367,16 @@ home = ["HTML", "REDIR", "HEADERS"]
                 name = "Biographie"
                 url = "/fr/a-propos/"
                 weight = 1
-            [[languages.fr.menu.about]]
-                identifier = "Collectors"
-                name = "Collections"
-                url = "/fr/a-propos/collections/"
-                weight = 2
-            [[languages.fr.menu.about]]
-                identifier = "Awards"
-                name = "Prix"
-                url = "/fr/a-propos/prix/"
-                weight = 3
+            # [[languages.fr.menu.about]]
+            #     identifier = "Collectors"
+            #     name = "Collections"
+            #     url = "/fr/a-propos/collections/"
+            #     weight = 2
+            # [[languages.fr.menu.about]]
+            #     identifier = "Awards"
+            #     name = "Prix"
+            #     url = "/fr/a-propos/prix/"
+            #     weight = 3
             [[languages.fr.menu.about]]
                 identifier = "Publications"
                 name = "Publications"

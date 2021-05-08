@@ -51,7 +51,11 @@ const homepageTransition = function (imgFunc){
             const canvas = document.querySelector('.dom-gl');
             gsap.to(canvas, {autoAlpha: 1, duration: .5});
             gsap.set("#js-loader-slider", {scaleY: 0});
-            gsap.from(next.container, {autoAlpha: 0, duration: 1, onComplete: () => imgFunc.call(this)})
+
+            gsap.to("#js-loader-indic", {autoAlpha: 1, duration: 1});
+
+            gsap.from(next.container, {autoAlpha: 0, duration: 1});
+            setTimeout(_=>imgFunc.call(this), 100)
         },
     }
 }
