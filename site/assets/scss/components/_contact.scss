@@ -35,7 +35,7 @@
                 height: 60px;
                 background: #C4C4C4;
                 opacity: .1;
-                transform: rotate(12deg);
+                transform: var(--rotate-contact) var(--scale-contact);
             }
         }
     }
@@ -111,3 +111,13 @@
     left: 5vw;
     font-size: 12px;
 } 
+
+.js-contact-anim {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.js-contact {
+    --rotate-contact: rotate(-10deg);
+    --scale-contact: scaleY(0);
+}
