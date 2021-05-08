@@ -9,7 +9,7 @@
   {{- $currentPage := . -}}
     {{ range .Site.Menus.about }}
       {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
-      <a class="c-innernav_link {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}" data-link="menu">{{ .Name }}</a>
+      <a class="c-innernav_link js-sub-links {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}" data-link="menu">{{ .Name }}</a>
     {{ end }}
 </nav>
 
