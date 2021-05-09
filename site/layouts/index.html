@@ -66,7 +66,7 @@
 					{{/* items series */}}
 					{{ range $paginator.Pages }}
 						{{ if isset .Params "title" }}
-							<li class="c-main_serie js-main-series" data-content="true" data-id="{{.Params.title | urlize}}"><a href="{{.URL | absLangURL}}">{{ .Params.title }}</a></li>
+							<li class="c-main_serie js-main-series" data-content="true" data-id="{{.Params.title | urlize}}"><a href="{{.URL | absLangURL}}" data-context="Serie" data-name="{{ .Params.title }}" data-position="Homepage">{{ .Params.title }}</a></li>
 						{{end}}
 					{{ end }}
 
