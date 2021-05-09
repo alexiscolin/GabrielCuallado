@@ -230,6 +230,9 @@ export default class extends module {
 
         // slide url
         this.DOM.link.setAttribute('href', dataTo.url);
+        const name = dataTo.id.replace('-', ' ');
+        this.DOM.link.dataset.name = name[0].toUpperCase() + name.slice(1);
+        console.log(dataTo)
         const setStart = dir ? '100% 50%' : '0% 50%';
         const setEnd = dir ? '0% 50%' : '100% 50%';
         gsap.set(this.DOM.linkBar, {transformOrigin: setStart})
