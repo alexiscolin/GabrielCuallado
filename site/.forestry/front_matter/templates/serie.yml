@@ -19,7 +19,7 @@ fields:
   config:
     required: false
   label: Cover
-  description: url de la cover à utiliser sur la homepage. ⚠️ Must be 800x523px
+  description: url de la cover à utiliser sur la homepage. ⚠️ Must be 800x523px !
 - name: section
   type: text
   config:
