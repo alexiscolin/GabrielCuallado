@@ -64,6 +64,7 @@ export default class extends module {
         this.DOM.loading = document.querySelector("#js-main-container");
         this.DOM.content = document.querySelector("#js-loader-content");
         this.DOM.circle = document.querySelector("#js-loader-circle");
+        this.DOM.arrow = document.querySelector("#js-loader-arrow");
 
         charming(this.DOM.subtitle, {
             setClassName: function (index, letter) {
@@ -184,7 +185,7 @@ export default class extends module {
             gsap.to(this.DOM.subtitleChar, {autoAlpha: 0, stagger: .04} ).then(_=> gsap.set(this.DOM.loading, {autoAlpha: 0}))
             gsap.to(this.DOM.content,{autoAlpha: 0, duration: this.sliderDelay /1.5})
             gsap.to(this.DOM.circle,{strokeDashoffset: 500, duration: this.sliderDelay/ 1.5})
-
+            gsap.to(this.DOM.arrow, {autoAlpha: 0,duration: this.sliderDelay /1.5})
             // slider apparition 
             gsap.to(this.DOM.link, {autoAlpha: 1, duration: this.sliderDelay, delay: (this.sliderDelay),})
             gsap.to(this.DOM.container, {autoAlpha: 1, duration: this.sliderDelay * 2, delay: (this.sliderDelay /2)})

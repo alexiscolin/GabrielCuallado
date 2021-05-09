@@ -44,6 +44,7 @@ const homepageTransition = function (imgFunc){
 
             loader.to("#js-loader-content", {autoAlpha: 1, duration: 1},"-=.6");
             loader.to("#js-loader-circle",{strokeDashoffset: 0, duration: 1},"-=1.6")
+            loader.to("#js-loader-arrow",{autoAlpha:1, duration: 1},"-=.8")
 
             const canvas = document.querySelector('.dom-gl');
             gsap.to(canvas, {autoAlpha: 1, duration: .5});
@@ -73,6 +74,7 @@ const homepageTransition = function (imgFunc){
 
             gsap.to("#js-loader-content", {autoAlpha: 1, duration: 1, delay: 1});
             gsap.to("#js-loader-circle",{strokeDashoffset: 0, duration: 1, delay: 1})
+            gsap.to("#js-loader-arrow",{autoAlpha:1, duration: 1, delay: 1.2})
 
             gsap.from(next.container, {autoAlpha: 0, duration: 1});
             setTimeout(_=>imgFunc.call(this), 100)
