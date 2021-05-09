@@ -8,7 +8,7 @@
     {{- $currentPage := . -}}
     {{ range .Site.Menus.serie }}
       {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
-      <a class="c-innernav_link js-sub-links {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}" data-link="menu" data-context="Serie" data-name="{{ .Params.title }}" data-position="Gallery">{{ .Name }}</a>
+      <a class="c-innernav_link js-sub-links {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}" data-link="menu" data-context="Serie" data-name="{{ .Name }}" data-position="Gallery">{{ .Name }}</a>
     {{ end }}
   </nav>
 
