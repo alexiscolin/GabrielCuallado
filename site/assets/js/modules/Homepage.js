@@ -264,16 +264,8 @@ export default class extends module {
         const mainSlider = this.glObject.isViewed();
         mainSlider.then(()=>{
             this.isAppear = true;
-            this.slideIsRunning = false;
-
-
-            // ENABLE scroll action
-            // -> will view others
-            // -> will disapear loader
-
-            
+            this.slideIsRunning = false;          
         })
-
     }
 
     resize () {
