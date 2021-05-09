@@ -10,7 +10,7 @@
           <div class="c-contact_zone">
             <div class="c-contact_zone_inner">
               <div class="c-contact_desc js-contact-anim">{{.Params.buy.label}}</div>
-              <div class="c-contact_info c-contact_info--email js-contact-anim"><a href="mailto:{{.Params.buy.email}}">{{.Params.buy.email}}</a></div>
+              <div class="c-contact_info c-contact_info--email js-contact-anim"><a href="mailto:{{.Params.buy.email}}" data-context="Email">{{.Params.buy.email}}</a></div>
               <div class="c-contact_info c-contact_info--phone {{if isset .Params.buy "phone"}}js-contact-anim{{end}}">{{.Params.buy.phone}}</div>
               <div class="c-contact_country js-contact-anim">
                 {{ htmlUnescape .Params.buy.countries | safeHTML}}
@@ -21,7 +21,7 @@
           <div class="c-contact_zone">
             <div class="c-contact_zone_inner">
               <div class="c-contact_desc js-contact-anim">{{.Params.general.label}}</div>
-              <div class="c-contact_info c-contact_info--email js-contact-anim"><a href="mailto:{{.Params.general.email}}">{{.Params.general.email}}</a></div>
+              <div class="c-contact_info c-contact_info--email js-contact-anim"><a href="mailto:{{.Params.general.email}}" data-context="Email">{{.Params.general.email}}</a></div>
               <div class="c-contact_info c-contact_info--phone js-contact-anim {{if isset .Params.general "phone"}}js-contact-anim{{end}}">{{.Params.general.phone}}</div>              
               <div class="c-contact_country js-contact-anim">
                 {{ htmlUnescape .Params.general.countries | safeHTML}}
