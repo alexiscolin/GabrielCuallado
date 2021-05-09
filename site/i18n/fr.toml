@@ -17,7 +17,7 @@ other = "Accueil"
 other = "Langage"
 
 [sliderTitle]
-other = "Photo populaire du photographe espagnol Gabriel Cualladó, intitulée"
+other = "Photo populaire de la série intitulée"
 
 [galleryPhotoTitle]
 other = "Photo en noir et blanc de Gabriel Cuallado, intitulée "
@@ -30,3 +30,6 @@ other = "Photo d'une exposition collective de l'oeuvre de Gabriel Cualladó, int
 
 [official]
 other = "le site officiel"
+
+[goToSerie]
+other = "Voir la série"

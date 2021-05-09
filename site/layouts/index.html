@@ -86,7 +86,7 @@
 					<div class="c-main_info js-main-info" data-id="{{.Params.title | urlize}}">
 						<img class="c-main_info_cover js-main-cover" src="{{.Params.cover }}">
 						<h1 class="c-main_info_desc js-main-desc">{{ .Params.description }}</h1>
-						<a class="c-main_info_link js-main-link {{if eq $index 0}}js-main-link-displayed{{end}}" href="{{.URL | absLangURL}}" data-context="Serie" data-name="{{humanize .Params.title }}" data-position="Homepage"><span class="c-main_info_link_text">Go to Serie</span><span class="c-main_info_link_line js-link-bar"></span></a>
+						<a class="c-main_info_link js-main-link {{if eq $index 0}}js-main-link-displayed{{end}}" href="{{.URL | absLangURL}}" data-context="Serie" data-name="{{humanize .Params.title }}" data-position="Homepage"><span class="c-main_info_link_text">{{ i18n "goToSerie" }}</span><span class="c-main_info_link_line js-link-bar"></span></a>
 					</div>
 					{{end}}
 				{{ end }}
