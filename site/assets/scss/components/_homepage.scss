@@ -15,12 +15,11 @@
         height: 20vw;
 
         @include media( '>medium' ) {
-            width: 7vw;
-            height: 7vw;
+            width: 7.5vw;
+            height: 7.5vw;
         }
 
-        opacity: 0;
-        visibility: hidden;
+       
 
         &_svg {
             width: 100%;
@@ -30,7 +29,7 @@
             & > circle {
                 stroke: color(typography, 2);
                 stroke-dasharray: 500;
-                stroke-dashoffset: 0; //2
+                stroke-dashoffset: 500; //500
             }
         }
 
@@ -39,18 +38,20 @@
             text-align: center;
             width: 100%;
             position: absolute;
-            @include font-family(heading);
-            @include font-weight(semibold);  
+            opacity: 0;
+            visibility: hidden;
+            // @include font-family(heading);
+            @include font-weight(bold);  
             font-style: italic;  
             text-transform: uppercase;
             font-size: 3vw;
             letter-spacing: .2vw;
             top: 50%;
             left: 50%;
-            transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-48%,0);
 
             @include media( '>medium' ) {
-                font-size: 1vw;
+                font-size: .8vw;
                 letter-spacing: .05vw;
             }
         }
