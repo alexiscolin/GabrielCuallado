@@ -212,7 +212,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.es.menu.main]]
                 identifier = "Contact"
                 name = "Contactos"
-                url = "es/contactos/"
+                url = "/es/contactos/"
                 weight = 4
 
 
@@ -234,7 +234,7 @@ home = ["HTML", "REDIR", "HEADERS"]
             [[languages.es.menu.header]]
                 identifier = "Contact"
                 name = "Contactos"
-                url = "es/contactos/"
+                url = "/es/contactos/"
                 weight = 4
                 
 
