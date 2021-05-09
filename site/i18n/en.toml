@@ -17,7 +17,7 @@ other = "Homepage"
 other = "Language"
 
 [sliderTitle]
-other = "Famous photo of Spanish photographer Gabriel Cualladó, entitled"
+other = "Famous photo of the gallery named"
 
 [galleryPhotoTitle]
 other = "Black and white photo of Gabriel Cuallado, entitled "
@@ -30,3 +30,7 @@ other = "Photo of an collective exhibition of Gabriel Cualladó's work, entitled
 
 [official]
 other = "official website"
+
+
+[goToSerie]
+other = "Go to serie"
