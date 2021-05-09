@@ -6,6 +6,20 @@ fields:
   name: Title
   label: Titre de la série
   description: Visible sur le menu latéral
+- name: description
+  type: text
+  config:
+    required: false
+    min: 5
+    max: 40
+  label: Description
+  description: Description de la série en 40char max (pour le slider)
+- name: cover
+  type: text
+  config:
+    required: false
+  label: Cover
+  description: url de la cover à utiliser sur la homepage. ⚠️ Must be 800x523px
 - name: section
   type: text
   config:
