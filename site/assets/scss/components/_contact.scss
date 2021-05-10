@@ -111,6 +111,21 @@
     bottom: 4vw;
     left: 5vw;
     font-size: 12px;
+    line-height: 2;
+
+    & > a {
+        position: relative;
+        text-decoration: none;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom: -1px;
+            left: 0;
+            height: .1px;
+            background: color(typography, 2);
+        }
+    }
 } 
 
 .js-contact-anim {
