@@ -38,7 +38,7 @@ name = "Gabriel con Potranco"
 speed = ".2"
 [[photos]]
 date = "2020-12-15T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/FAMILIA/F0122-MARINA_DE_PERFIL_ucspnn.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1620307368/SLIDER/slider-familia_wvyce1.jpg"
 name = "Marina de perfil"
 speed = "-.1"
 [[photos]]
