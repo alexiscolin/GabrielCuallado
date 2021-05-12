@@ -1,8 +1,10 @@
 +++
 Title = "El Rastro"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-elrastro_xnp6sd.jpg"
+description = "Visages anonymes"
+keywords = ["noir et blanc", "photographie de rue", "cuallado", "visages"]
 menu = ["serie"]
-meta_description = "Visages."
+meta_description = "Série de photographies de visages du photographe espagnol Gabriel Cuallado."
 meta_title = "El Rastro"
 namespace = "serie"
 section = "galerie"
