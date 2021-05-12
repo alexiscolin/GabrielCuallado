@@ -11,6 +11,7 @@ section = "gallery"
 title = "cotid.md"
 translationkey = "serie1"
 type = ""
+
 weight = 1
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"
