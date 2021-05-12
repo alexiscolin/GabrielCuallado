@@ -1,8 +1,10 @@
 +++
 Title = "El rastro"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-elrastro_xnp6sd.jpg"
+description = "Rastros anonymos"
+keywords = ["blanco y negro", "cuallado", "fotografias archivos", "fotografia de calle", "rastros", "rostros"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Serie de fotografías de rastros del fotógrafo español Gabriel Cuallado."
 meta_title = "El Rastro"
 namespace = "serie"
 section = "galeria"
