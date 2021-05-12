@@ -1,8 +1,10 @@
 +++
 Title = "Paris"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-paris_ysr8b2.jpg"
+description = "The praise of the shadow"
+keywords = ["black and white", "Paris", "Archive photographs", "cuallado", "street photography"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Paris series of photographs by Spanish photographer Gabriel Cuallado."
 meta_title = "Paris"
 namespace = "serie"
 section = "gallery"
