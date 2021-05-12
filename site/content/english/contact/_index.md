@@ -17,6 +17,9 @@ countries = "Spain&lt;br&gt;28018 Madrid&lt;br&gt;France&lt;br&gt;75011 Paris"
 email = "contact@gabriel-cuallado.com "
 label = "FOR GENERAL INQUIRIES"
 phone = ""
+[legal]
+label = "Mentions légales"
+link = "https://pdfhost.io/v/py61MkLRh_GabrielCualladoLegalNoticepdf.pdf"
 
 +++
 +++ Title = "Contact" meta_description = "" meta_title = "" namespace = "contact" section = "contact" translationkey = "contact" type = "contact" +++
