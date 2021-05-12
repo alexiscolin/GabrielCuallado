@@ -1,8 +1,10 @@
 +++
 Title = "au quotidien"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620305117/SLIDER/slider-cotid_dca2ii.jpg"
+description = "Images du quotidien"
+keywords = ["noir et blanc", "cuallado", "quotidien", "archives photo", "photo de village", "espagne", "asturies", "sobrepiedra"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Series of daily photographs by Spanish photographer Gabriel Cuallado."
 meta_title = "Cotid"
 namespace = "serie"
 section = "galerie"
