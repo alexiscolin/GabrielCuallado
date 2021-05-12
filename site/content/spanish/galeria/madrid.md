@@ -1,8 +1,10 @@
 +++
 Title = "Madrid"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620314336/SLIDER/slider-madrid_ipwnps.jpg"
+description = "La cuidad vista por Cuallado"
+keywords = ["madrid", "fotografias de archivos", "fotografia de calle", "cuallado", "blanco y negro"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Serie de fotografías de Madrid del fotógrafo español Gabriel Cuallado."
 meta_title = "Madrid"
 namespace = "serie"
 section = "galeria"
