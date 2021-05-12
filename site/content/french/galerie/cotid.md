@@ -12,8 +12,6 @@ title = "Cotid"
 translationkey = "serie1"
 type = "gallery"
 weight = 1
-description = "A subtle an poetic look at daily life"
-cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-cotid_dca2ii.jpg"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0460_NINO_CON_PAN_kykebd.jpg"

@@ -10,13 +10,7 @@ namespace = "serie"
 section = "gallery"
 title = "cotid.md"
 translationkey = "serie1"
-<<<<<<< HEAD
-=======
 type = ""
-description = "A subtle an poetic look at daily life"
-cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-cotid_dca2ii.jpg"
-
->>>>>>> New slider
 weight = 1
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"

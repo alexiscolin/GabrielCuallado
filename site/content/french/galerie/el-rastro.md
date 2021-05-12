@@ -11,8 +11,6 @@ section = "galerie"
 translationkey = "serie3"
 type = "gallery"
 weight = 3
-description = "The mystery of simplicity"
-cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-elrastro_xnp6sd"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610651836/GALLERY/EL_RASTRO/F0365-VENDEDOR-DE-CUADROS_ap5tm4.jpg"

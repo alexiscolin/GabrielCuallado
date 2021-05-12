@@ -12,8 +12,6 @@ title = "madrid.md"
 translationkey = "serie2"
 type = "gallery"
 weight = 2
-description = "description test"
-cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-madrid_ipwnps.jpg"
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F023_FELIZ_1959_tcnh58.jpg"

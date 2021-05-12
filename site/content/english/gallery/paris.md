@@ -11,8 +11,6 @@ section = "gallery"
 translationkey = "serie5"
 type = ""
 weight = 5
-description = "A sentence to describe the serie"
-cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/SLIDER/slider-paris_ysr8b2"
 
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
