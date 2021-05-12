@@ -35,7 +35,7 @@ jobs:
       uses: actions-js/push@v1.2
       with:
         github_token: dcb882dbea82ffc515b1be110857e088b835421e
-        author_email: alexis@de-jaune-et-de-bleu.com
+        author_email: alexis@jaunebleu.co
         author_name: alexiscolin
         branch: action  
   
@@ -53,7 +53,7 @@ jobs:
         dst_repo_name: gabrielcuallado-website
         src_branch: action 
         clean: true
-        email: alexis@de-jaune-et-de-bleu.com
+        email: alexis@jaunebleu.co
         username: alexiscolin 
         commit_message: '[GHA] Update the dist folder.'
     
