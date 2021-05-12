@@ -21,13 +21,19 @@ const collectorsTransition = {
     },
     enter({ current, next, trigger }) {
         const canvas = document.querySelector('.dom-gl');
+        const menu = [...next.container.querySelectorAll('.js-sub-links')];
         gsap.to(canvas, {autoAlpha: 1, duration: .5});
-        gsap.from(next.container, {autoAlpha: 0, duration: 1})
+        gsap.from(next.container, {autoAlpha: 0, duration: 1});
+        gsap.fromTo(menu, {autoAlpha: 0},{autoAlpha: (i,target)=>{return target.classList.contains('c-innernav_link--active') ? 1 : .5}, duration: .6, stagger: .1})
+
     },
     once({ current, next, trigger }) {
         const canvas = document.querySelector('.dom-gl');
+        const menu = [...next.container.querySelectorAll('.js-sub-links')];
+
         gsap.to(canvas, {autoAlpha: 1, duration: .5});
-        gsap.from(next.container, {autoAlpha: 0, duration: 1})
+        gsap.from(next.container, {autoAlpha: 0, duration: 1});
+        gsap.fromTo(menu, {autoAlpha: 0},{autoAlpha: (i,target)=>{return target.classList.contains('c-innernav_link--active') ? 1 : .5}, duration: .6, stagger: .1})
     },
     to: {
         namespace: [

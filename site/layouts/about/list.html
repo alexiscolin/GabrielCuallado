@@ -8,7 +8,7 @@
   {{- $currentPage := . -}}
     {{ range .Site.Menus.about }}
       {{ $isMenuCurrent := eq (.URL | absLangURL ) ($currentPage.Permalink | absLangURL)}}
-      <a class="c-innernav_link {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}" data-link="menu">{{ .Name }}</a>
+      <a class="c-innernav_link js-sub-links {{ if $isMenuCurrent}} c-innernav_link--active {{ end }}" href="{{ .URL | absLangURL }}" data-link="menu">{{ .Name }}</a>
     {{ end }}
 </nav>
 
@@ -101,7 +101,7 @@
         
           {{ range $data.presskits.presskit }}
             <div class="c-presskit">
-              <a class="c-presskit_content" data-context="Presskit" data-position="bottom page" href="{{ .link }}">
+              <a class="c-presskit_content" data-context="Presskit" data-position="bottom page of biography" href="{{ .link }}">
                 <div class="c-presskit_imgcontainer" data-parallaxe="img" data-speed="0">
                   <img src="{{ .img }}" class="o-img c-presskit_img js-prlx-img" >
                 </div>

@@ -9,7 +9,9 @@ meta_title = "Paris"
 namespace = "serie"
 section = "gallery"
 translationkey = "serie5"
+type = ""
 weight = 5
+
 [[photos]]
 date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/GALLERY/PARIS/F0007_MUJER_DE_ESPALDAS_Y_NINA_xwr8bf.jpg"

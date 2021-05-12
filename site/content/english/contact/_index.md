@@ -1,11 +1,11 @@
 +++
-Title = ""
+Title = "Contact"
 keywords = ["contact"]
 meta_description = ""
 meta_title = "Contact"
-namespace = ""
+namespace = "contact"
 translationkey = "contact"
-type = ""
+type = "contact"
 url = ""
 [buy]
 countries = "<p>Galeria Blanca Berlin&lt;br&gt;Caille del Limón, 28 &lt;br&gt;28015, Madrid&lt;br&gt; Spain</p>"
@@ -22,4 +22,3 @@ label = "Mentions légales"
 link = "https://pdfhost.io/v/py61MkLRh_GabrielCualladoLegalNoticepdf.pdf"
 
 +++
-+++ Title = "Contact" meta_description = "" meta_title = "" namespace = "contact" section = "contact" translationkey = "contact" type = "contact" +++

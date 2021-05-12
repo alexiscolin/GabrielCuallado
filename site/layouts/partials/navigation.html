@@ -4,11 +4,11 @@
     <!-- <div class="c-nav_close">close</div> -->
     <div class="c-nav_wrapper">
     <ul class="c-nav_mainlist c-nav_list">
-        <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}"><span><span>{{ i18n "Homepage" }}</span></span></a></li>
+        <li class="c-nav_mainlist_item js-nav-list"><a class="c-nav_mainlist_item_link c-nav_link" href="{{ "/" | absLangURL }}"><span><span>{{ i18n "Homepage" }}</span></span></a></li>
 
     {{ range .Site.Menus.main }}
         {{ if .HasChildren }} 
-            <li class="c-nav_mainlist_item" data-navigation="submenuToogle"><span class="c-nav_mainlist_item_link c-nav_link" ><span><span>{{ .Name }}</span></span></span></li>
+            <li class="c-nav_mainlist_item js-nav-list" data-navigation="submenuToogle"><span class="c-nav_mainlist_item_link c-nav_link" ><span><span>{{ .Name }}</span></span></span></li>
             <li class="js-menuchildren">
                 <ul class="c-nav_mainlist_children" data-open="false">
                 {{ range .Children }}
@@ -17,7 +17,7 @@
                 </ul>
             </li>
         {{ else if  (eq .Identifier "Gallery") }}
-        <li class="c-nav_mainlist_item" data-navigation="submenuToogle"><span class="c-nav_mainlist_item_link c-nav_link" ><span><span>{{ .Name }}</span></span></span></li>
+        <li class="c-nav_mainlist_item js-nav-list" data-navigation="submenuToogle"><span class="c-nav_mainlist_item_link c-nav_link" ><span><span>{{ .Name }}</span></span></span></li>
         <li class="js-menuchildren">
             <ul class="c-nav_mainlist_children" data-open="false">
             {{ range $.Site.Menus.serie }}
@@ -27,13 +27,13 @@
         </li>
 
         {{ else }}
-            <li class="c-nav_mainlist_item"><a class="c-nav_mainlist_item_link c-nav_link" {{ if eq .Identifier "Contact" }}data-context="Contact" data-position="navbar" {{ end }}href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a></li>
+            <li class="c-nav_mainlist_item js-nav-list"><a class="c-nav_mainlist_item_link c-nav_link" {{ if eq .Identifier "Contact" }}data-context="Contact" data-position="navbar" {{ end }}href="{{.URL | absLangURL}}"><span><span>{{ .Name }}</span></span></a></li>
         {{end}} 
     {{ end }}
     </ul>
 
     <!-- langues disponibles -->
-    <div class="c-nav_openlist c-nav_list">
+    <div class="c-nav_openlist c-nav_list js-nav-list">
         <span class="c-nav_openlist_title c-nav_link">{{ i18n "Language" }}</span>
         <ul class="c-nav_openlist_items">
             {{ if eq .Lang "en"}}

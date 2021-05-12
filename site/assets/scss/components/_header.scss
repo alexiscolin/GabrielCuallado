@@ -1,32 +1,37 @@
 .c-header {
     &_wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        padding-top: 3rem;
+        padding-top: 5vw;
         z-index: 1;
 
         @include media( '>medium' ) {
+            padding-top: 3rem;
             justify-content: space-between;
         }
     }
     &_name {
         position: relative;
-        margin: 0 0 0 2vw;
+        margin: 0 0 0 5vw;
         @include media( '>large' ) {
             margin: 0 0 0 6vw;
         }
         display: block;
         text-align: center;
-        font-size: 45px;
+        font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 5px;
         @include font-family(heading);
-        @include font-weight(black);
+        @include font-weight(medium);
         color: transparent;
         text-decoration: none;
         z-index: 12;
-        visibility: hidden;
+        @include media( '>medium' ) {
+            @include font-weight(black);
+
+            visibility: hidden;
+        }
         
         @supports (-webkit-text-stroke: .5px color(typography, 2)) {
             -webkit-text-stroke-width: .5px;
@@ -44,6 +49,14 @@
 
         &--appear {
             visibility: visible;
+        }
+
+        &--home {
+            visibility: visible;
+            @include media( '<medium' ) {
+                color: color(typography, 2);
+                -webkit-text-stroke-width: unset;
+            }
         }
     }
 

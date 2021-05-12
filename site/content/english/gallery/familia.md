@@ -10,6 +10,7 @@ namespace = "serie"
 section = "gallery"
 translationkey = "serie4"
 weight = 4
+
 [[photos]]
 date = "2020-06-01T22:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622724/GALLERY/FAMILIA/F0197-NINA_DE_LA_ROSA_wzxglw.jpg"
@@ -22,7 +23,7 @@ name = "Girl in the path"
 speed = ".2"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502724/Cuallado_Arles_France_fmjhss.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502724/GALLERY/FAMILIA/F0194-NENA_PEINANDOSE_sdca11.jpg"
 name = "Girl brushing her hair"
 speed = ".4"
 [[photos]]
@@ -37,7 +38,7 @@ name = "Gabriel with White Horse"
 speed = ".26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1620307368/SLIDER/slider-familia_wvyce1.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1620307368/GALLERY/FAMILIA/F0122-MARINA_DE_PERFIL_ucspnn.jpg"
 name = "Marina's profile"
 speed = ".26"
 [[photos]]

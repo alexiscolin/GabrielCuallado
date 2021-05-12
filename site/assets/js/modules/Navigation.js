@@ -1,4 +1,4 @@
-import { module } from 'modujs';
+import module from '../lib/module.js';
 import { gsap } from "gsap";
 
 export default class extends module {
@@ -42,6 +42,7 @@ export default class extends module {
         gsap.to(this.menu, {autoAlpha: this.isOpen ? 1 : 0, duration: 1});
         gsap.to(this.menuToogle[0], {transform: this.isOpen ? 'rotate(45deg) translateY(5px)' : 'rotate(0deg)', background: this.isOpen ? '#000' : '#FFF', duration: .5});
         gsap.to(this.menuToogle[1], {transform: this.isOpen ? 'rotate(-45deg) translateY(-5px)' : 'rotate(0deg)', background: this.isOpen ? '#000' : '#FFF', duration: .5});
+        gsap.to('.js-nav-list', {autoAlpha: this.isOpen ? 1 : 0, duration: 1.2, stagger: .1})
     }
 
     destroy() {

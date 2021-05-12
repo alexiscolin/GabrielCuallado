@@ -6,6 +6,233 @@
     width: 100%;
     height: 100%;
     position: fixed;
+    touch-action: none;
+
+    &_indic {
+        position: absolute;
+        bottom: 4vh;
+        width: 20vw;
+        height: 20vw;
+
+        @include media( '>medium' ) {
+            width: 7.5vw;
+            height: 7.5vw;
+        }
+
+       
+
+        &_svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+
+            & > circle {
+                stroke: color(typography, 2);
+                stroke-dasharray: 500;
+                stroke-dashoffset: 500; //500
+            }
+        }
+
+        &_arrow {
+            position: absolute;
+            width: 3vw;
+            height: 3vw;
+            bottom: 4vw;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            visibility: hidden;
+            &>*{
+                stroke: color(typography, 2);
+            }
+
+            @include media( '>medium' ) {
+                width: 1vw;
+                height: 1vw;
+                bottom: 1.9vw;
+            }
+        }
+
+        &_text {
+            display: block;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            // @include font-family(heading);
+            @include font-weight(medium);  
+            font-style: italic;  
+            text-transform: uppercase;
+            font-size: 2.7vw;
+            letter-spacing: .2vw;
+            top: 39%;
+            left: 50%;
+            transform: translate3d(-50%,0,0);
+
+            @include media( '>medium' ) {
+                font-size: .8vw;
+                letter-spacing: .2vw;
+                padding-left: .2vw;
+            }
+        }
+    }
+
+    &_series {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        will-change: transform;
+        opacity: 0;
+        visibility: hidden;
+        @include media( '>medium' ) {
+            top: initial;
+        }
+    
+        &_wrapper {
+            position: relative;
+            display: flex;
+            list-style: none;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            @include media( '>medium' ) {
+                flex-direction: row;
+            }
+        }
+    }
+    &_serie {
+        @include font-family(heading);
+        @include font-weight(black);
+        letter-spacing: 1.6vw;
+        font-size: 20vw;
+        flex-shrink: 0;
+        width: auto;
+        margin: 6vh 0;
+        color: transparent;
+        text-transform: uppercase;
+
+        @include media( '>medium' ) {
+            margin: 0 10vw -3vw;
+            padding-left: 1.5vw;
+            font-size: 18.2vw;
+        }
+
+        & > a {
+            text-decoration: none;
+            color: transparent;
+            @supports (-webkit-text-stroke: 1px color(typography, 2)) {
+                color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: color(typography, 2);
+            }
+        }
+
+        @supports (-webkit-text-stroke: 1px color(typography, 2)) {
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: color(typography, 2);
+        }
+
+        &:first-child {
+            margin-top: 0;
+            @include media( '>medium' ) {
+                margin-top: initial;
+                margin-left: 0;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+            @include media( '>medium' ) {
+                margin-top: 0;
+                margin-bottom: -3vw;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &_infos {
+        position: absolute;
+        text-align: center;
+        top: 55%;
+        width: 100%;
+        @include media( '>medium' ) {
+            width: 50vw;
+            left: 25vw; 
+            top: 66%;
+        }               
+    }
+
+    &_info {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @include media( '>medium' ) {
+            width: initial;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:not(:first-child) > a {
+            display: none;
+        } 
+
+        &_desc {
+            @include font-weight(light);
+            @include font-family(heading);
+            letter-spacing: .3vw;
+            font-size: 7.5vw;
+            margin: 0 0 8vw; 
+
+            @include media( '>medium' ) {
+                font-size: 2.5vw;
+            }
+
+            & > .char {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        &_cover {
+            display: none;
+        }
+
+        &_link {
+            position: relative;
+            @include font-weight(medium);
+            @include font-family(heading);
+            font-size: 1.6vw;
+            letter-spacing: .1vw;
+            font-style: italic;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            opacity: 0;
+            visibility: hidden;
+            @include media( '<medium' ) { // messy hack...
+                opacity: 0 !important;
+            }
+
+            &_line {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: .5px;
+                transform: scaleX(0);
+                background: color(typography, 2);
+            }
+        }
+    }
 
     &_pic {
         position: absolute;
@@ -24,7 +251,7 @@
     }
 
     &_container {
-        position: relative;
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,6 +259,7 @@
         width: 100%;
         height: 100%;   
         z-index: 2;
+        //display: none; // remove after dev
     }
 
     &_title {

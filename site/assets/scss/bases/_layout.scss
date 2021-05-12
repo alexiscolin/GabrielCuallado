@@ -93,7 +93,7 @@ figure {
             left: 0;
             top: 0;
             background: linear-gradient(to right, $color1, transparent);
-            z-index: 8;
+            z-index: 9;
         }
 
         &::after{
@@ -163,7 +163,7 @@ figure {
 
 [data-module-serie="main"] .o-section:last-child {
     @include media( '>medium' ) {
-        padding-right: 35vw;
+        padding-right: 12vw;
     }
 }
 
@@ -178,6 +178,7 @@ figure {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;

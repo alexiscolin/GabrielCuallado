@@ -1,4 +1,6 @@
 import { gsap } from "gsap";
+import charming from 'charming'
+
 
 const homepageView = {
     namespace: 'homepage',
@@ -17,8 +19,15 @@ const homepageTransition = function (imgFunc){
             ]
         },
         once({ current, next, trigger }) {
-            window.addEventListener('load', function () {
             
+            window.addEventListener('load', function () {
+            const sub = document.getElementById('js-loader-subtitle');
+            charming(sub, {
+                setClassName: function (index, letter) {
+                    return `char letter-${letter}`
+                }
+            });
+
             const loader = gsap.timeline();
             loader.set("#js-loader-title-out", {opacity: 0});
             loader.to("#js-loader-title", {opacity: .8, duration: 1});
@@ -28,9 +37,14 @@ const homepageTransition = function (imgFunc){
 
             // loader.from(".js-hp-img", {y: 10, autoAlpha: 0, duration: .8}, "-=.3"); // avant slider
             loader.set("#js-loader-title-out", {opacity: 1}, "-=.5");
-            loader.from(".js-loader-infos", {opacity: 0, duration: 1}, "-=.2");
+            loader.from("#js-loader-date", {opacity: 0, duration: 1}, "-=.2");
+            loader.from(sub.querySelectorAll('.char'), {opacity: 0, duration: 1, stagger: {from: 'random', amount: 1}}, "-=1.2");
             loader.to("#js-loader-title", {opacity: 0, duration: 1}, "-=1");
             loader.from(".js-header", {opacity: 0, duration: 1}, "-=1");
+
+            loader.to("#js-loader-content", {autoAlpha: 1, duration: 1},"-=.6");
+            loader.to("#js-loader-circle",{strokeDashoffset: 0, duration: 1},"-=1.6")
+            loader.to("#js-loader-arrow",{autoAlpha:1, duration: 1},"-=.8")
 
             const canvas = document.querySelector('.dom-gl');
             gsap.to(canvas, {autoAlpha: 1, duration: .5});
@@ -47,9 +61,23 @@ const homepageTransition = function (imgFunc){
         },
         enter({ current, next, trigger }) {
             const canvas = document.querySelector('.dom-gl');
+            const sub = document.getElementById('js-loader-subtitle');
+            charming(sub, {
+                setClassName: function (index, letter) {
+                    return `char letter-${letter}`
+                }
+            });
             gsap.to(canvas, {autoAlpha: 1, duration: .5});
             gsap.set("#js-loader-slider", {scaleY: 0});
-            gsap.from(next.container, {autoAlpha: 0, duration: 1, onComplete: () => imgFunc.call(this)})
+            gsap.from("#js-loader-date", {opacity: 0, duration: 1});
+            gsap.from(sub.querySelectorAll('.char'), {opacity: 0, duration: 1, stagger: {from: 'random', amount: 1}});
+
+            gsap.to("#js-loader-content", {autoAlpha: 1, duration: 1, delay: 1});
+            gsap.to("#js-loader-circle",{strokeDashoffset: 0, duration: 1, delay: 1})
+            gsap.to("#js-loader-arrow",{autoAlpha:1, duration: 1, delay: 1.2})
+
+            gsap.from(next.container, {autoAlpha: 0, duration: 1});
+            setTimeout(_=>imgFunc.call(this), 100)
         },
     }
 }

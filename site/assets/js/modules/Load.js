@@ -1,4 +1,4 @@
-import { module } from 'modujs';
+import module from '../lib/module.js';
 import barba from '@barba/core';
 import { Events } from '../events';
 
@@ -13,6 +13,7 @@ import { publicationsView, publicationsTransition } from '../router/publications
 import { pressView, pressTransition } from '../router/press.js';
 import { contactView, contactTransition } from '../router/contact.js';
 import { errorView, errorTransition } from '../router/error.js';
+
 export default class extends module {
     constructor(m) {
         super(m);

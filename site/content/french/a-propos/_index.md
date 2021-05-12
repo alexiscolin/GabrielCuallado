@@ -19,7 +19,7 @@ citation_text = "LE MYSTÈRE DE LA SIMPLICITÉ."
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622717/ABOUT/PORTRAIT_LEMAGNY_kcxzd8.jpg"
 left = ""
 template = "about-image"
-top = 40
+top = -10
 [[content]]
 left = "0"
 subtitle = "Années 1920 - 40"

@@ -10,6 +10,11 @@
     height: 100vh;
     top: 0;
     z-index: 999;
+    max-height: -webkit-fill-available;
+    
+    @include media( '>medium' ) {
+        top: 0;
+    }
     // background: color(bg, 1);
     //display: none;
 
@@ -17,9 +22,65 @@
         position: absolute;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         width: 100%;
         height: 100%;   
+
+        &_zone {
+            position: absolute;
+            height: 20vh;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(0,0,0,1) 43%, rgba(0,0,0,0) 100%);
+
+            @include media( '>medium' ) {
+                background: rgba(0,0,0,.7);
+                height: 100%;
+                width: 15%;
+                z-index: initial;
+                
+            }
+
+            &--prev {
+                cursor: pointer;
+            }
+
+            &--next {
+                top: initial;
+                bottom: 0;
+                background: linear-gradient(0deg, rgba(0,0,0,1) 43%, rgba(0,0,0,0) 100%);
+                @include media( '>medium' ) {
+                    left: initial;
+                    right: 0;
+                    background: rgba(0,0,0,.7);
+                    cursor: pointer;
+                }
+            }
+
+            &--central {
+                height: 100vh;
+                background: rgba(0,0,0,.3);
+                z-index: initial;
+
+
+                @include media( '>medium' ) {
+                    width: 100%;
+                }
+            }
+
+            &--link {
+                height: 40%;
+                background: transparent;
+
+                @include media( '>medium' ) {
+                    height: 50%;
+                    top: 25%;
+                }
+            }
+        }
     }
 
     &__title {

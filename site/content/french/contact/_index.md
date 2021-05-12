@@ -1,5 +1,5 @@
 +++
-Title = ""
+Title = "Contact"
 keywords = ["contact"]
 meta_description = ""
 meta_title = "Contact"

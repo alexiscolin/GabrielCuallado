@@ -229,7 +229,7 @@
 
         &--alone {
             height: auto;
-            max-width: 68%;
+            max-width: 100%;
         }
 
         &--intro {
@@ -437,19 +437,28 @@
                 height: 0;
                 transform: translateX(10%);
                 border-style: solid;
-                border-width: 25px 0 25px 43.3px;
+                border-width: 13px 0 13px 25px;
                 border-color: transparent transparent transparent #ffffff;
+
+                @include media( '>medium' ) {
+                    border-width: 25px 0 25px 43.3px;
+                }
             }
 
             &::before {
                 content: '';
                 position: absolute;
                 display: block;
-                width: 100px;
-                height: 100px;
-                border: 5px solid white;
+                width: 75px;
+                height: 75px;
+                border: 3px solid white;
                 border-radius: 100%;
                 z-index: 99;
+
+                @include media( '>medium' ) {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
     }
@@ -582,4 +591,9 @@ a:hover.u-link {
     &::before {
         transform: scaleY(-1);
     }
+}
+
+.js-sub-links {
+    opacity: 0;
+    visibility: hidden;
 }

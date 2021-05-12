@@ -1,4 +1,4 @@
-import { module } from 'modujs';
+import module from '../lib/module.js';
 import gsap from 'gsap';
 import Events from '../events/Events';
 import { lerp, calcWinsize, getMousePos } from '../utils';
@@ -23,7 +23,7 @@ export default class extends module {
         this.DOM = { el: this.el };
         this.DOM.el.style.opacity = 0;
         this.DOM.circleInner = this.DOM.el.querySelector('.cursor__inner');
-
+        this.firstLaod = true;
         this.filterId = '#filter-1';
         this.DOM.feTurbulence = document.querySelector(`${this.filterId} > feTurbulence`);
 
@@ -43,6 +43,7 @@ export default class extends module {
         this.listen();
 
         this.onMouseMoveEv = () => {
+            this.firstLaod = false;
             this.renderedStyles.tx.previous = this.renderedStyles.tx.current = mouse.x - this.bounds.width/2;
             this.renderedStyles.ty.previous = this.renderedStyles.ty.previous = mouse.y - this.bounds.height/2;
             gsap.to(this.DOM.el, {duration: 0.9, ease: 'Power3.easeOut', opacity: 1});
@@ -127,7 +128,7 @@ export default class extends module {
     listen() {
         Events.on('cursorEnter', ({target}) => this.enter(target));
         Events.on('cursorLeave', () => this.leave());
-        Events.on('pageLoad', () => this.leave());
+        Events.on('pageLoad', () => this.firstLaod || this.leave());
         Events.on('cursorAppear', () => this.appear());
         Events.on('cursorDisapear', () => this.disapear());
     }

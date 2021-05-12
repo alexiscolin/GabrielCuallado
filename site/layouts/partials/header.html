@@ -1,6 +1,6 @@
 <header class="c-header" data-module-navigation="main">
     <nav class="c-header_wrapper">
-        <a class="c-header_name js-header {{ if not .IsHome }}c-header_name--appear{{ end }}" href="{{ "/" | absLangURL }}">Gabriel Cuallado</a>
+        <a class="c-header_name js-header {{ if not .IsHome }}c-header_name--appear{{else}}c-header_name--home{{ end }}" href="{{ "/" | absLangURL }}">Gabriel Cuallado</a>
         <ul class="c-header_nav">
             {{ $currentPage := . }}
             
