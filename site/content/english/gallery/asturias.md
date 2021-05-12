@@ -1,8 +1,10 @@
 +++
 Title = "Asturias"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620305261/SLIDER/slider-asturias_kifjys.jpg"
+description = "Stories from Asturias"
+keywords = ["black and white", "photography", "asturias", "village", "cuallado"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Asturias series of photographs by Spanish photographer Gabriel Cuallado."
 meta_title = "Asturias"
 namespace = "serie"
 section = "gallery"
