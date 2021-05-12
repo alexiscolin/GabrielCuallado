@@ -84,6 +84,10 @@ sections:
 - type: document
   path: site/data/es/presskits.toml
   label: PressKit
+- type: document
+  path: site/content/spanish/contactos/_index.md
+  label: Contactos
+  match: "**/*"
 - type: heading
   label: "English \U0001F1EC\U0001F1E7"
 - type: document
