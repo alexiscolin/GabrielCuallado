@@ -42,6 +42,10 @@ sections:
 - type: document
   path: site/data/fr/presskits.toml
   label: PressKit
+- type: document
+  path: site/content/french/contact/_index.md
+  label: Contact
+  match: "**/*"
 - type: heading
   label: "Español \U0001F1EA\U0001F1F8"
 - type: document
