@@ -1,8 +1,10 @@
 +++
 Title = "Madrid"
-keywords = []
-menu = []
-meta_description = ""
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620314336/SLIDER/slider-madrid_ipwnps.jpg"
+description = "Le Madrid de Cuallado"
+keywords = ["madrid", "cuallado", "photographie de rue", "photographie espagne", "archives espagne", "annees 70"]
+menu = ["serie"]
+meta_description = "Série de photographies Madrid du photographe espagnol Gabriel Cuallado."
 meta_title = "Madrid"
 namespace = "serie"
 section = "galerie"
@@ -14,7 +16,7 @@ weight = 2
 date = "2021-02-01T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1614362159/GALLERY/MADRID/F1197_NINNA_CON_FLORES_jxabld.jpg"
 name = "Nina Avec de Fleurs"
-speed = 1
+speed = -0.2
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/MADRID/F023_FELIZ_1959_tcnh58.jpg"
