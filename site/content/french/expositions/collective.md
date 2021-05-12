@@ -54,7 +54,7 @@ name = "“4 Directions de la photographie Espagnole contemporaine\" Musée Nati
 place = "Madrid, Espagne"
 [[exhibition]]
 date = "1985-11-30T23:00:00+00:00"
-illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502180/Cuallado_Bellas_Artes_fg0l8v.jpg"
+illustration = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1608502180//EXHIBITIONS_COLLECTIVE/Cuallado_Fotografia_Espanola_hoy_mixkui.jpg"
 link = ""
 name = "“Photographie actuelle en Espagne”, Circulo de Bellas Artes"
 place = "Madrid, Espagne"

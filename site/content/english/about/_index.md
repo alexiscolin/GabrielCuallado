@@ -19,7 +19,7 @@ citation_text = "THE MYSTERY OF SIMPLICITY."
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622717/ABOUT/PORTRAIT_LEMAGNY_kcxzd8.jpg"
 left = ""
 template = "about-image"
-top = 20
+top = -10
 [[content]]
 left = ""
 subtitle = ""
@@ -43,7 +43,7 @@ left = ""
 template = "about-image"
 top = 20
 [[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
+image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATALOGO_CUALLADO_EXPO_CANAL-39_joydtx"
 left = "-10"
 subtitle = "1950s ⎮ Afal Group, first exhibition, first award"
 template = "about-text"
@@ -59,7 +59,6 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = ""
 subtitle = "1960s ⎮ From Madrid to Paris, Venice, Amsterdam and Moscow "
 template = "about-text"
@@ -75,7 +74,6 @@ left = "0"
 template = "about-image"
 top = "0"
 [[content]]
-image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1593085597/CATA%CC%81LOGO_CUALLADO%CC%81_EXPO_CANAL-39_joydtx.jpg"
 left = "-10"
 subtitle = "1970s and 90s ⎮ Spain's First National Photography Award and Gold Medal  "
 template = "about-text"
