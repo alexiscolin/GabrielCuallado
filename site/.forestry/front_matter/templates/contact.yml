@@ -119,3 +119,4 @@ fields:
   label: legal
 pages:
 - site/content/english/contact/_index.md
+- site/content/french/contact/_index.md
