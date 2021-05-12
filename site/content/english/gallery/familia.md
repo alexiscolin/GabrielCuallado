@@ -1,8 +1,10 @@
 +++
 Title = "Family"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-familia_wvyce1.jpg"
+description = "A family story"
+keywords = ["black and white", "cuallado", "family", "archive photographs"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Series of photographs of the family of Spanish photographer Gabriel Cuallado."
 meta_title = "Family"
 namespace = "serie"
 section = "gallery"
