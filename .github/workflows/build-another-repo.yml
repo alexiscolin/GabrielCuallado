@@ -28,6 +28,7 @@ jobs:
     
     - name: npm install, build
       run: |
+        rm .gitignore
         npm install
         npm run build
         
