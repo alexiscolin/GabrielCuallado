@@ -1,8 +1,10 @@
 +++
 Title = "Paris"
-keywords = []
-menu = ["serie"]
-meta_description = ""
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-paris_ysr8b2.jpg"
+description = "L'éloge de l'ombre"
+keywords = ["paris", "cuallado", "photos d'archives Paris", "photographie de rue", "noir et blanc"]
+menu = []
+meta_description = "Série de photographies Paris du photographe espagnol Gabriel Cuallado."
 meta_title = "Paris"
 namespace = "serie"
 section = "galerie"
