@@ -1,9 +1,11 @@
 +++
 Title = "Familia"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-familia_wvyce1.jpg"
+description = "Historias de familia"
+keywords = ["familia", "blanco y negro", "cuallado", "archivos fotografias", "Sobrepiedra", "Asturias"]
 menu = ["serie"]
-meta_description = ""
-meta_title = ""
+meta_description = "Serie de fotografías de la familia del fotógrafo español Gabriel Cuallado."
+meta_title = "Familia"
 namespace = "serie"
 section = "galeria"
 translationkey = "serie4"
