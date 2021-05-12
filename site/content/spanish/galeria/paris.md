@@ -1,8 +1,10 @@
 +++
 Title = "Paris"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620307368/SLIDER/slider-paris_ysr8b2.jpg"
+description = "El elogio de la sombra"
+keywords = ["blanco y negro", "cuallado", "fotografias Paris", "fotografias de archivos", "paloma en la caille"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Serie de fotografías de París del fotógrafo español Gabriel Cuallado."
 meta_title = "Paris"
 namespace = "serie"
 section = "galeria"
