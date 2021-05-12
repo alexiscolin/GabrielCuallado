@@ -38,6 +38,7 @@ jobs:
         author_email: alexis@jaunebleu.co
         author_name: alexiscolin
         branch: action  
+        force: true
   
   copy:
     runs-on: ubuntu-latest
