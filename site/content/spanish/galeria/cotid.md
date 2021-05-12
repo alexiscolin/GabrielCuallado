@@ -1,8 +1,10 @@
 +++
 Title = "cotidiano"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620305117/SLIDER/slider-cotid_dca2ii.jpg"
+description = "Imágenes cotidianas"
+keywords = ["blanco y negro", "cuallado", "cotidianas", "archivos", "espana", "fotografia", "asturias", "sobrepiedra"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Serie de fotografías cotidianas del fotógrafo español Gabriel Cuallado."
 meta_title = "Cotid"
 namespace = "serie"
 section = "galeria"
