@@ -1,8 +1,10 @@
 +++
 Title = "Madrid"
-keywords = []
+cover = "https://res.cloudinary.com/dgzqhksfz/image/upload/v1620314336/SLIDER/slider-madrid_ipwnps.jpg"
+description = "The city seen by Cuallado"
+keywords = ["madrid", "street photography", "cuallado", "spanish photographers", "70s", "black and white photography", "archive photography"]
 menu = ["serie"]
-meta_description = ""
+meta_description = "Madrid series of photographs by Spanish photographer Gabriel Cuallado."
 meta_title = "Madrid"
 namespace = "serie"
 section = "gallery"
