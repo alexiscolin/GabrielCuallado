@@ -19,7 +19,7 @@ const aboutTransition = {
             const canvas = document.querySelector('.dom-gl');
             gsap.to(canvas, {autoAlpha: 0, duration: .6});
 
-            gsap.to(current.container, {autoAlpha: 0, duration: .6, onComplete: () => {
+            gsap.to(current.container, {autoAlpha: 0, duration: .6, delay: .3,onComplete: () => {
                 resolve()
             }})
         })

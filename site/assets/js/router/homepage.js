@@ -53,8 +53,8 @@ const homepageTransition = function (imgFunc){
         leave({ current, next, trigger }) {
             return new Promise(resolve => {
                 const canvas = document.querySelector('.dom-gl');
-                gsap.to(canvas, {autoAlpha: 0, duration: .5});
-                gsap.to(current.container, {autoAlpha: 0, duration: .6, onComplete: () => {
+                gsap.to(canvas, {autoAlpha: 0, duration: .6});
+                gsap.to(current.container, {autoAlpha: 0, duration: .6, delay: .05,onComplete: () => {
                     resolve()
                 }})
             })
