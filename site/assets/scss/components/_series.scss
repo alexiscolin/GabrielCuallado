@@ -18,19 +18,28 @@
 .c-next{
     position: absolute;
     display: flex;
-    right: 3vw;
+    right: calc(50% - 35px);
+    bottom: 3vh;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 0 5vw 0 0;
-    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    font-size: 1.4rem;
     text-decoration: none;
     @include font-family(heading);
     @include font-weight(bold);
     padding: .5rem 0 0 .2rem;
     z-index: 9999;
     text-transform: uppercase;
+
+    @include media( '>medium' ) {
+        right: 6.5vw;
+        bottom: initial;
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+
+    }
 
     &::before {
         content: '';
