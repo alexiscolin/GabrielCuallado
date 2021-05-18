@@ -34,7 +34,7 @@ date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0459_SENORA_ESTACION_kcuwiy.jpg"
 link = "#"
 name = "Old woman at the railway station"
-speed = ".26"
+speed = ".4"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0462_MANO_EN_VENTANA_roehau.jpg"
@@ -44,6 +44,6 @@ speed = ".26"
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0805_GUARDIA_URBANO_Y_MUROS_u5iebf.jpg"
 name = "Traffic warden and walls"
-speed = ".26"
+speed = ".5"
 
 +++

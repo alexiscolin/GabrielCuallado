@@ -41,11 +41,11 @@ speed = ".2"
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0462_MANO_EN_VENTANA_roehau.jpg"
 name = "Main à la fenêtre de la brasserie allemande"
-speed = "-.26"
+speed = ".26"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/MADRID/F0805_GUARDIA_URBANO_Y_MUROS_u5iebf.jpg"
 name = "Policier urbain et murs"
-speed = "-.26"
+speed = ".15"
 
 +++

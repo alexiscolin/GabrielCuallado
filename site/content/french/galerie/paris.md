@@ -40,6 +40,6 @@ speed = ".26"
 date = "2020-12-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/GALLERY/PARIS/F0038_RUE_DE_LA_PAIX_MUJER_CON_SOMBRERO_o7ljuu.jpg"
 name = "Rue de la Paix femme avec chapeau"
-speed = ".26"
+speed = ".6"
 
 +++

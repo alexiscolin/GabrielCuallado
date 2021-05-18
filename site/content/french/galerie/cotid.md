@@ -36,16 +36,16 @@ speed = ".2"
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0488_MISERACHS_smlac0.jpg"
 name = "Miserachs"
-speed = "-.26"
+speed = "-.05"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622722/GALLERY/COTID/F0598_NINA_AFAL_ewbdtg.jpg"
 name = "Fille d'Afal"
-speed = "-.26"
+speed = ".15"
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610649880/GALLERY/COTID/F0460_NINO_CON_SENORA_DE_ESPALDAS_iqhtlg.jpg"
 name = "Garçon avec femme de dos"
-speed = "-.26"
+speed = ".1"
 
 +++

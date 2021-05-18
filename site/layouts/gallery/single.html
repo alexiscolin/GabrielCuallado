@@ -21,6 +21,7 @@
       <div class="o-scroll_button o-scroll_button--prev" data-scroll="scrollof" data-scroll-dir="prev"></div>
       <div class="o-scroll_button" data-scroll="scrollof" data-scroll-dir="next"></div>
    
+      {{ $currentWeight :=  .Weight }}
 
           {{/* get range data length */}}
           {{ $len := (len .Params.photos) }}
@@ -50,6 +51,12 @@
             {{/* only for last item */}}
             {{ if eq (sub $len 1) $i }}
               {{/* closed tag */}}
+              {{ .Params.Weight}}
+              {{ range $.Site.Menus.serie }}
+                {{ if eq .Page.Weight (add $currentWeight 1 )}}
+                  <a class="c-next" href="{{ .URL | absLangURL }}" data-link="menu" data-context="Serie" data-name="{{ humanize .Name }}" data-position="Gallery">{{i18n "next"}}</a>
+                  {{ end }}
+              {{ end }}
               </section>
             {{ end }}
           {{ end }}

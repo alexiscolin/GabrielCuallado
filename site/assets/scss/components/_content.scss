@@ -319,7 +319,8 @@
         }
 
         &:hover {
-            opacity: 1;
+            transition-duration: .2s;
+            opacity: 1 !important;
         }
     }
 }

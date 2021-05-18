@@ -35,16 +35,16 @@ speed = ".2"
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622723/GALLERY/FAMILIA/F0135-GABRIEL_CON_POTRANCO_itve83.jpg"
 name = "Gabriel avec Cheval Blanc"
-speed = "-.1"
+speed = "-.05"
 [[photos]]
 date = "2020-11-30T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1620307368/SLIDER/slider-familia_wvyce1.jpg"
 name = "Marina de profil"
-speed = "-.2"
+speed = "-.02"
 [[photos]]
 date = "2020-12-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622724/GALLERY/FAMILIA/F0572-NINA_BRAZO_ESTIRADO_r4zqi8.jpg"
 name = "Fille avec bras étiré"
-speed = 0.4
+speed = ".25"
 
 +++

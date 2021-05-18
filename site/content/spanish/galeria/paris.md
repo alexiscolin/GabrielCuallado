@@ -46,6 +46,6 @@ date = "2019-01-31T23:00:00+00:00"
 image = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622721/GALLERY/PARIS/F0038_RUE_DE_LA_PAIX_MUJER_CON_SOMBRERO_o7ljuu.jpg"
 link = "#"
 name = "Rue de la Paix Mujer con Sombrero"
-speed = ".26"
+speed = ".6"
 
 +++
