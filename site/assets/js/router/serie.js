@@ -21,6 +21,8 @@ const serieTransition = {
         })
     },
     enter({ current, next, trigger }) {
+        window.scrollTo(0, 0);
+
         const canvas = document.querySelector('.dom-gl');
         const menu = [...next.container.querySelectorAll('.js-sub-links')];
         gsap.to(canvas, {autoAlpha: 1, duration: .5});
