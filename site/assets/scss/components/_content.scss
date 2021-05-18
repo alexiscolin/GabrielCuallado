@@ -92,7 +92,8 @@
     }
 }
 @include media( '>medium' ) {
-    [data-parallaxe="text"] {
+    [data-parallaxe="text"],
+    [data-parallaxe="illu"] {
         opacity: 0;
     }
 }

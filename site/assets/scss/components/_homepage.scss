@@ -15,8 +15,8 @@
         height: 20vw;
 
         @include media( '>medium' ) {
-            width: 7.5vw;
-            height: 7.5vw;
+            width: 6.2vw;
+            height: 6.2vw;
         }
 
        
@@ -47,9 +47,9 @@
             }
 
             @include media( '>medium' ) {
-                width: 1vw;
-                height: 1vw;
-                bottom: 1.9vw;
+                width: .9vw;
+                height: .9vw;
+                bottom: 1.3vw;
             }
         }
 
@@ -71,7 +71,7 @@
             transform: translate3d(-50%,0,0);
 
             @include media( '>medium' ) {
-                font-size: .8vw;
+                font-size: .7vw;
                 letter-spacing: .2vw;
                 padding-left: .2vw;
             }

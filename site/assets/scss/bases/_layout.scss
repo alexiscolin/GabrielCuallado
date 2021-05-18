@@ -202,7 +202,7 @@ figure {
         &:first-child {
             margin-left: 15vw;
         }
-        &:last-child {
+        &:not(.c-section_list--short):last-child {
             margin-right: 15vw;
         }
     }
