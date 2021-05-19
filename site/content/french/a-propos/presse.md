@@ -2,7 +2,7 @@
 Title = "Presse"
 keywords = []
 meta_description = ""
-meta_title = ""
+meta_title = "Presse"
 namespace = "press"
 section = "à propos"
 translationKey = "press"

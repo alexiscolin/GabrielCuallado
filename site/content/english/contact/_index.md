@@ -1,7 +1,7 @@
 +++
 Title = "Contact"
 keywords = ["contact"]
-meta_description = ""
+meta_description = "Buy an artwork or make an inquiry."
 meta_title = "Contact"
 namespace = "contact"
 translationkey = "contact"
@@ -18,7 +18,7 @@ email = "contact@gabriel-cuallado.com "
 label = "FOR GENERAL INQUIRIES"
 phone = ""
 [legal]
-label = "Mentions légales"
+label = "Legal terms"
 link = "https://pdfhost.io/v/py61MkLRh_GabrielCualladoLegalNoticepdf.pdf"
 
 +++
