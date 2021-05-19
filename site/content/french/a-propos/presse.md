@@ -1,7 +1,7 @@
 +++
 Title = "Presse"
 keywords = []
-meta_description = ""
+meta_description = "Gabriel Cuallado dans les médias."
 meta_title = "Presse"
 namespace = "press"
 section = "à propos"

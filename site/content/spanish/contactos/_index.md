@@ -1,7 +1,7 @@
 +++
 Title = "Contact"
 keywords = ["contact"]
-meta_description = "Comprar una obra de arte o otra solicitud"
+meta_description = "Comprar una obra de arte o realizar una otra solicitud."
 meta_title = "Contact"
 namespace = "contact"
 translationkey = "contact"
