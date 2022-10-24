@@ -1,6 +1,8 @@
 +++
 Title = "Publications"
 background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610622734/PUBLICATIONS/Gabriel_Cuallado_Publications_v1oyu1.jpg"
+draft = true
+keywords = []
 meta_description = "Livres d'art et publications de Gabriel Cuallado."
 meta_title = "Publications"
 namespace = "publications"
