@@ -1,8 +1,6 @@
 +++
 Title = "Coleccionistas"
 background = "https://res.cloudinary.com/dgzqhksfz/image/upload/w_1000,h_800,c_limit,q_60/v1610650703/MAP-COLLECTORS-CUALLADO_ifwqg7.svg"
-draft = true
-keywords = []
 meta_description = "Coleccionadores de la obra fotografica de Gabriel Cualladó."
 meta_title = "Coleccionadores"
 namespace = "collectors"
